@@ -1,93 +1,116 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Mill Farm T/A Bradleys Sports Bar, Aroma Cafe and Mill Farm Hotel - FHRS Info</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mill Farm T/A Bradleys Sports Bar, Aroma Cafe and Mill Farm Hotel - Food Hygiene Rating</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-      .establishment {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        color: #333;
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-      }
-      a {
-        color: #1e90ff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .establishment {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p, address, td, th {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img.rating-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="establishment" data-establishment-id="878260">
-        <h1>Mill Farm T/A Bradleys Sports Bar, Aroma Cafe and Mill Farm Hotel</h1>
-        <img src="/images/fhrs/fhrs_1_en-gb.svg" alt="Rating Image" style="width: 100%; max-width: 400px; height: auto;">
+      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="878260">
+        <h1 itemprop="name">Mill Farm T/A Bradleys Sports Bar, Aroma Cafe and Mill Farm Hotel</h1>
+        <img src="/images/fhrs/fhrs_1_en-gb.svg" alt="Food Hygiene Rating: 1 out of 5" class="rating-image" itemprop="image">
         
-        <p>
-          Address:
-          <address>
-            Mill Farm Stadium
-            <br>Coronation Way
-            
-            <br>Mill Farm Sports Village
-            <br>PR4 3JZ
-            
-          </address>
-          <a href="https://geohack.toolforge.org/geohack.php?title=Mill%20Farm%20T%2FA%20Bradleys%20Sports%20Bar%2C%20Aroma%20Cafe%20and%20Mill%20Farm%20Hotel&params=53.7960302_N_-2.8901819_E_type:landmark_dim:20" target="_blank">View on Map</a>
-        </p>
-        <p>Business Type: Restaurant/Cafe/Canteen</p>
+      <p>
+        Address:
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Mill Farm Stadium</span><br><span>Coronation Way</span><br><span>Mill Farm Sports Village</span><br><span itemprop="postalCode">PR4 3JZ</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Mill%20Farm%20T%2FA%20Bradleys%20Sports%20Bar%2C%20Aroma%20Cafe%20and%20Mill%20Farm%20Hotel&params=53.7960302_N_-2.8901819_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
+      </p>
+        <p>Business Type: <span itemprop="servesCuisine">Restaurant/Cafe/Canteen</span></p>
         <p>Rating: 1</p>
         
-        <p>Rating Date: <time datetime="2024-10-17">2024-10-17</time></p>
+  <p>Rating Date: <time datetime="2024-10-17" itemprop="fhrsRatingDate">2024-10-17</time></p>
+  
         
-        
-        <table>
-          <tr>
-            <th>Hygiene</th>
-            <td>15</td>
-            <td>Improvement Necessary</td>
-          </tr>
-          <tr>
-            <th>Structural</th>
-            <td>10</td>
-            <td>Good</td>
-          </tr>
-          <tr>
-            <th>Confidence in Management</th>
-            <td>20</td>
-            <td>Major Improvement Necessary</td>
-          </tr>
-        </table>
-        
-      </div>
+      <table>
+        <tr>
+          <th>Hygiene</th>
+          <td>15</td>
+          <td>Improvement Necessary</td>
+        </tr>
+        <tr>
+          <th>Structural</th>
+          <td>10</td>
+          <td>Good</td>
+        </tr>
+        <tr>
+          <th>Confidence in Management</th>
+          <td>20</td>
+          <td>Major Improvement Necessary</td>
+        </tr>
+      </table>
+      
+      </article>
     </div>
   </body>
 </html>

@@ -1,75 +1,98 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Glenurquhart House Hotel - FHRS Info</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glenurquhart House Hotel - Food Hygiene Rating</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-      .establishment {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        color: #333;
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-      }
-      a {
-        color: #1e90ff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .establishment {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p, address, td, th {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img.rating-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="establishment" data-establishment-id="560694">
-        <h1>Glenurquhart House Hotel</h1>
-        <img src="/images/fhis/fhis_pass.jpg" alt="Rating Image" style="width: 100%; max-width: 400px; height: auto;">
+      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="560694">
+        <h1 itemprop="name">Glenurquhart House Hotel</h1>
+        <img src="/images/fhis/fhis_pass.jpg" alt="Pass" class="rating-image" itemprop="image">
         
-        <p>
-          Address:
-          <address>
-            undefined
-            <br>Drumnadrochit
-            <br>Inverness
-            
-            <br>IV63 6TJ
-            
-          </address>
-          <a href="https://geohack.toolforge.org/geohack.php?title=Glenurquhart%20House%20Hotel&params=57.337952_N_-4.584379_E_type:landmark_dim:20" target="_blank">View on Map</a>
-        </p>
-        <p>Business Type: Other catering premises</p>
+      <p>
+        Address:
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Drumnadrochit</span><br><span>Inverness</span><br><span itemprop="postalCode">IV63 6TJ</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Glenurquhart%20House%20Hotel&params=57.337952_N_-4.584379_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
+      </p>
+        <p>Business Type: <span itemprop="servesCuisine">Other catering premises</span></p>
         <p>Rating: Pass</p>
         
-        <p>Rating Date: <time datetime="2008-04-24">2008-04-24</time></p>
+  <p>Rating Date: <time datetime="2008-04-24" itemprop="fhrsRatingDate">2008-04-24</time></p>
+  
         
-        
-      </div>
+      </article>
     </div>
   </body>
 </html>

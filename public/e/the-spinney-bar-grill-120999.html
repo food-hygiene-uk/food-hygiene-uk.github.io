@@ -1,73 +1,96 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>The Spinney Bar & Grill - FHRS Info</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spinney Bar & Grill - Food Hygiene Rating</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-      .establishment {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        color: #333;
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-      }
-      a {
-        color: #1e90ff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .establishment {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p, address, td, th {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img.rating-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="establishment" data-establishment-id="120999">
-        <h1>The Spinney Bar & Grill</h1>
-        <img src="/images/fhrs/fhrs_awaitinginspection_en-gb.svg" alt="Rating Image" style="width: 100%; max-width: 400px; height: auto;">
+      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="120999">
+        <h1 itemprop="name">The Spinney Bar & Grill</h1>
+        <img src="/images/fhrs/fhrs_awaitinginspection_en-gb.svg" alt="Awaiting Inspection" class="rating-image" itemprop="image">
         
-        <p>
-          Address:
-          <address>
-            The Spinney                                                                                          Smithmoor Crescent
-            <br>West Bromwich
-            
-            
-            <br>B71 3EZ
-            
-          </address>
-          <a href="https://geohack.toolforge.org/geohack.php?title=The%20Spinney%20Bar%20%26%20Grill&params=52.5427072_N_-1.9771948_E_type:landmark_dim:20" target="_blank">View on Map</a>
-        </p>
-        <p>Business Type: Pub/bar/nightclub</p>
+      <p>
+        Address:
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>The Spinney                                                                                          Smithmoor Crescent</span><br><span>West Bromwich</span><br><span itemprop="postalCode">B71 3EZ</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=The%20Spinney%20Bar%20%26%20Grill&params=52.5427072_N_-1.9771948_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
+      </p>
+        <p>Business Type: <span itemprop="servesCuisine">Pub/bar/nightclub</span></p>
         <p>Rating: AwaitingInspection</p>
         
         
-      </div>
+      </article>
     </div>
   </body>
 </html>

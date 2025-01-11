@@ -1,73 +1,96 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Llys Y Fran Lake View Campsite - FHRS Info</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llys Y Fran Lake View Campsite - Food Hygiene Rating</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-      .establishment {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        color: #333;
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-      }
-      a {
-        color: #1e90ff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .establishment {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p, address, td, th {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img.rating-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="establishment" data-establishment-id="1594797">
-        <h1>Llys Y Fran Lake View Campsite</h1>
-        <img src="/images/fhrs/fhrs_awaitinginspection_en-gb.svg" alt="Rating Image" style="width: 100%; max-width: 400px; height: auto;">
+      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="1594797">
+        <h1 itemprop="name">Llys Y Fran Lake View Campsite</h1>
+        <img src="/images/fhrs/fhrs_awaitinginspection_en-gb.svg" alt="Awaiting Inspection" class="rating-image" itemprop="image">
         
-        <p>
-          Address:
-          <address>
-            Llysyfran Visitor Centre
-            <br>Llys Y Fran
-            <br>Clarbeston Road
-            <br>Pembrokeshire
-            <br>SA63 4RR
-            
-          </address>
-          <a href="https://geohack.toolforge.org/geohack.php?title=Llys%20Y%20Fran%20Lake%20View%20Campsite&params=51.885704_N_-4.844726_E_type:landmark_dim:20" target="_blank">View on Map</a>
-        </p>
-        <p>Business Type: Retailers - other</p>
+      <p>
+        Address:
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Llysyfran Visitor Centre</span><br><span>Llys Y Fran</span><br><span>Clarbeston Road</span><br><span>Pembrokeshire</span><br><span itemprop="postalCode">SA63 4RR</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Llys%20Y%20Fran%20Lake%20View%20Campsite&params=51.885704_N_-4.844726_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
+      </p>
+        <p>Business Type: <span itemprop="servesCuisine">Retailers - other</span></p>
         <p>Rating: AwaitingInspection</p>
         
         
-      </div>
+      </article>
     </div>
   </body>
 </html>

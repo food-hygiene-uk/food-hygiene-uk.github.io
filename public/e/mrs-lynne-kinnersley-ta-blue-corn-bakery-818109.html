@@ -1,93 +1,116 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Mrs Lynne Kinnersley t/a Blue Corn Bakery - FHRS Info</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrs Lynne Kinnersley t/a Blue Corn Bakery - Food Hygiene Rating</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-      .establishment {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        color: #333;
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-      }
-      a {
-        color: #1e90ff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .establishment {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p, address, td, th {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img.rating-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="establishment" data-establishment-id="818109">
-        <h1>Mrs Lynne Kinnersley t/a Blue Corn Bakery</h1>
-        <img src="/images/fhrs/fhrs_5_en-gb.svg" alt="Rating Image" style="width: 100%; max-width: 400px; height: auto;">
+      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="818109">
+        <h1 itemprop="name">Mrs Lynne Kinnersley t/a Blue Corn Bakery</h1>
+        <img src="/images/fhrs/fhrs_5_en-gb.svg" alt="Food Hygiene Rating: 5 out of 5" class="rating-image" itemprop="image">
         
-        <p>
-          Address:
-          <address>
-            Wynyard Park House
-            <br>Wynyard Avenue
-            
-            <br>Wynyard
-            <br>TS22 5TB
-            
-          </address>
-          <a href="https://geohack.toolforge.org/geohack.php?title=Mrs%20Lynne%20Kinnersley%20t%2Fa%20Blue%20Corn%20Bakery&params=54.632172_N_-1.318987_E_type:landmark_dim:20" target="_blank">View on Map</a>
-        </p>
-        <p>Business Type: Restaurant/Cafe/Canteen</p>
+      <p>
+        Address:
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Wynyard Park House</span><br><span>Wynyard Avenue</span><br><span>Wynyard</span><br><span itemprop="postalCode">TS22 5TB</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Mrs%20Lynne%20Kinnersley%20t%2Fa%20Blue%20Corn%20Bakery&params=54.632172_N_-1.318987_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
+      </p>
+        <p>Business Type: <span itemprop="servesCuisine">Restaurant/Cafe/Canteen</span></p>
         <p>Rating: 5</p>
         
-        <p>Rating Date: <time datetime="2024-05-15">2024-05-15</time></p>
+  <p>Rating Date: <time datetime="2024-05-15" itemprop="fhrsRatingDate">2024-05-15</time></p>
+  
         
-        
-        <table>
-          <tr>
-            <th>Hygiene</th>
-            <td>0</td>
-            <td>Very Good</td>
-          </tr>
-          <tr>
-            <th>Structural</th>
-            <td>0</td>
-            <td>Very Good</td>
-          </tr>
-          <tr>
-            <th>Confidence in Management</th>
-            <td>5</td>
-            <td>Very Good</td>
-          </tr>
-        </table>
-        
-      </div>
+      <table>
+        <tr>
+          <th>Hygiene</th>
+          <td>0</td>
+          <td>Very Good</td>
+        </tr>
+        <tr>
+          <th>Structural</th>
+          <td>0</td>
+          <td>Very Good</td>
+        </tr>
+        <tr>
+          <th>Confidence in Management</th>
+          <td>5</td>
+          <td>Very Good</td>
+        </tr>
+      </table>
+      
+      </article>
     </div>
   </body>
 </html>

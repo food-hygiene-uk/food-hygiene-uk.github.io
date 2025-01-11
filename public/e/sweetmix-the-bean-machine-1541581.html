@@ -1,73 +1,96 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Sweetmix & The Bean Machine - FHRS Info</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweetmix & The Bean Machine - Food Hygiene Rating</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-      .establishment {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        color: #333;
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-      }
-      a {
-        color: #1e90ff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .establishment {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p, address, td, th {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img.rating-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="establishment" data-establishment-id="1541581">
-        <h1>Sweetmix & The Bean Machine</h1>
-        <img src="/images/fhrs/fhrs_awaitinginspection_en-gb.svg" alt="Rating Image" style="width: 100%; max-width: 400px; height: auto;">
+      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="1541581">
+        <h1 itemprop="name">Sweetmix & The Bean Machine</h1>
+        <img src="/images/fhrs/fhrs_awaitinginspection_en-gb.svg" alt="Awaiting Inspection" class="rating-image" itemprop="image">
         
-        <p>
-          Address:
-          <address>
-            Clifford Hill Warehouse
-            <br>Clifford Hill Mill
-            <br>Clifford Hill
-            <br>Little Houghton
-            <br>NN7 1AL
-            
-          </address>
-          <a href="https://geohack.toolforge.org/geohack.php?title=Sweetmix%20%26%20The%20Bean%20Machine&params=52.2373938_N_-0.8240592_E_type:landmark_dim:20" target="_blank">View on Map</a>
-        </p>
-        <p>Business Type: Mobile caterer</p>
+      <p>
+        Address:
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Clifford Hill Warehouse</span><br><span>Clifford Hill Mill</span><br><span>Clifford Hill</span><br><span>Little Houghton</span><br><span itemprop="postalCode">NN7 1AL</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Sweetmix%20%26%20The%20Bean%20Machine&params=52.2373938_N_-0.8240592_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
+      </p>
+        <p>Business Type: <span itemprop="servesCuisine">Mobile caterer</span></p>
         <p>Rating: AwaitingInspection</p>
         
         
-      </div>
+      </article>
     </div>
   </body>
 </html>

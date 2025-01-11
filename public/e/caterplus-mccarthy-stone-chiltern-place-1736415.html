@@ -1,73 +1,96 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Caterplus @ McCarthy & Stone Chiltern Place - FHRS Info</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caterplus @ McCarthy & Stone Chiltern Place - Food Hygiene Rating</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-      .establishment {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        color: #333;
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-      }
-      a {
-        color: #1e90ff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .establishment {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p, address, td, th {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img.rating-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="establishment" data-establishment-id="1736415">
-        <h1>Caterplus @ McCarthy & Stone Chiltern Place</h1>
-        <img src="/images/fhrs/fhrs_awaitinginspection_en-gb.svg" alt="Rating Image" style="width: 100%; max-width: 400px; height: auto;">
+      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="1736415">
+        <h1 itemprop="name">Caterplus @ McCarthy & Stone Chiltern Place</h1>
+        <img src="/images/fhrs/fhrs_awaitinginspection_en-gb.svg" alt="Awaiting Inspection" class="rating-image" itemprop="image">
         
-        <p>
-          Address:
-          <address>
-            1 Chiltern Place
-            <br>59 - 61 The Broadway
-            <br>Amersham
-            <br>Buckinghamshire
-            <br>HP7 0HL
-            
-          </address>
-          <a href="https://geohack.toolforge.org/geohack.php?title=Caterplus%20%40%20McCarthy%20%26%20Stone%20Chiltern%20Place&params=51.6661734_N_-0.6134998_E_type:landmark_dim:20" target="_blank">View on Map</a>
-        </p>
-        <p>Business Type: Hospitals/Childcare/Caring Premises</p>
+      <p>
+        Address:
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>1 Chiltern Place</span><br><span>59 - 61 The Broadway</span><br><span>Amersham</span><br><span>Buckinghamshire</span><br><span itemprop="postalCode">HP7 0HL</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Caterplus%20%40%20McCarthy%20%26%20Stone%20Chiltern%20Place&params=51.6661734_N_-0.6134998_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
+      </p>
+        <p>Business Type: <span itemprop="servesCuisine">Hospitals/Childcare/Caring Premises</span></p>
         <p>Rating: AwaitingInspection</p>
         
         
-      </div>
+      </article>
     </div>
   </body>
 </html>

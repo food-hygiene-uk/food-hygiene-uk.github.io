@@ -1,93 +1,116 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Akropolis / Elysian Restaurant - FHRS Info</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akropolis / Elysian Restaurant - Food Hygiene Rating</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-      .establishment {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        color: #333;
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-      }
-      a {
-        color: #1e90ff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .establishment {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p, address, td, th {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img.rating-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="establishment" data-establishment-id="664794">
-        <h1>Akropolis / Elysian Restaurant</h1>
-        <img src="/images/fhrs/fhrs_5_en-gb.svg" alt="Rating Image" style="width: 100%; max-width: 400px; height: auto;">
+      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="664794">
+        <h1 itemprop="name">Akropolis / Elysian Restaurant</h1>
+        <img src="/images/fhrs/fhrs_5_en-gb.svg" alt="Food Hygiene Rating: 5 out of 5" class="rating-image" itemprop="image">
         
-        <p>
-          Address:
-          <address>
-            Unit 3B
-            <br>5 New Road
-            <br>Bridgwater
-            
-            <br>TA6 5AX
-            
-          </address>
-          <a href="https://geohack.toolforge.org/geohack.php?title=Akropolis%20%2F%20Elysian%20Restaurant&params=51.129285_N_-2.999765_E_type:landmark_dim:20" target="_blank">View on Map</a>
-        </p>
-        <p>Business Type: Restaurant/Cafe/Canteen</p>
+      <p>
+        Address:
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 3B</span><br><span>5 New Road</span><br><span>Bridgwater</span><br><span itemprop="postalCode">TA6 5AX</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Akropolis%20%2F%20Elysian%20Restaurant&params=51.129285_N_-2.999765_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
+      </p>
+        <p>Business Type: <span itemprop="servesCuisine">Restaurant/Cafe/Canteen</span></p>
         <p>Rating: 5</p>
         
-        <p>Rating Date: <time datetime="2023-09-05">2023-09-05</time></p>
+  <p>Rating Date: <time datetime="2023-09-05" itemprop="fhrsRatingDate">2023-09-05</time></p>
+  
         
-        
-        <table>
-          <tr>
-            <th>Hygiene</th>
-            <td>0</td>
-            <td>Very Good</td>
-          </tr>
-          <tr>
-            <th>Structural</th>
-            <td>5</td>
-            <td>Very Good</td>
-          </tr>
-          <tr>
-            <th>Confidence in Management</th>
-            <td>5</td>
-            <td>Very Good</td>
-          </tr>
-        </table>
-        
-      </div>
+      <table>
+        <tr>
+          <th>Hygiene</th>
+          <td>0</td>
+          <td>Very Good</td>
+        </tr>
+        <tr>
+          <th>Structural</th>
+          <td>5</td>
+          <td>Very Good</td>
+        </tr>
+        <tr>
+          <th>Confidence in Management</th>
+          <td>5</td>
+          <td>Very Good</td>
+        </tr>
+      </table>
+      
+      </article>
     </div>
   </body>
 </html>

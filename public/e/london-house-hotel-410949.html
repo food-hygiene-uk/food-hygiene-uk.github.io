@@ -1,93 +1,116 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>London House Hotel - FHRS Info</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London House Hotel - Food Hygiene Rating</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-      .establishment {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        color: #333;
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-      }
-      a {
-        color: #1e90ff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .establishment {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p, address, td, th {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img.rating-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="establishment" data-establishment-id="410949">
-        <h1>London House Hotel</h1>
-        <img src="/images/fhrs/fhrs_4_en-gb.svg" alt="Rating Image" style="width: 100%; max-width: 400px; height: auto;">
+      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="410949">
+        <h1 itemprop="name">London House Hotel</h1>
+        <img src="/images/fhrs/fhrs_4_en-gb.svg" alt="Food Hygiene Rating: 4 out of 5" class="rating-image" itemprop="image">
         
-        <p>
-          Address:
-          <address>
-            78-82 KENSINGTON GARDENS SQUARE
-            
-            <br>LONDON
-            
-            <br>W2 4DJ
-            
-          </address>
-          <a href="https://geohack.toolforge.org/geohack.php?title=London%20House%20Hotel&params=51.5141779_N_-0.1894381_E_type:landmark_dim:20" target="_blank">View on Map</a>
-        </p>
-        <p>Business Type: Hotel/bed & breakfast/guest house</p>
+      <p>
+        Address:
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>78-82 KENSINGTON GARDENS SQUARE</span><br><span>LONDON</span><br><span itemprop="postalCode">W2 4DJ</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=London%20House%20Hotel&params=51.5141779_N_-0.1894381_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
+      </p>
+        <p>Business Type: <span itemprop="servesCuisine">Hotel/bed & breakfast/guest house</span></p>
         <p>Rating: 4</p>
         
-        <p>Rating Date: <time datetime="2023-12-13">2023-12-13</time></p>
+  <p>Rating Date: <time datetime="2023-12-13" itemprop="fhrsRatingDate">2023-12-13</time></p>
+  
         
-        
-        <table>
-          <tr>
-            <th>Hygiene</th>
-            <td>5</td>
-            <td>Very Good</td>
-          </tr>
-          <tr>
-            <th>Structural</th>
-            <td>0</td>
-            <td>Very Good</td>
-          </tr>
-          <tr>
-            <th>Confidence in Management</th>
-            <td>10</td>
-            <td>Good</td>
-          </tr>
-        </table>
-        
-      </div>
+      <table>
+        <tr>
+          <th>Hygiene</th>
+          <td>5</td>
+          <td>Very Good</td>
+        </tr>
+        <tr>
+          <th>Structural</th>
+          <td>0</td>
+          <td>Very Good</td>
+        </tr>
+        <tr>
+          <th>Confidence in Management</th>
+          <td>10</td>
+          <td>Good</td>
+        </tr>
+      </table>
+      
+      </article>
     </div>
   </body>
 </html>

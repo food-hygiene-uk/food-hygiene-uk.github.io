@@ -1,75 +1,98 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Tartan Tikka Tikka - FHRS Info</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tartan Tikka Tikka - Food Hygiene Rating</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-      .establishment {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        color: #333;
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-      }
-      a {
-        color: #1e90ff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .establishment {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p, address, td, th {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img.rating-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="establishment" data-establishment-id="692757">
-        <h1>Tartan Tikka Tikka</h1>
-        <img src="/images/fhis/fhis_pass.jpg" alt="Rating Image" style="width: 100%; max-width: 400px; height: auto;">
+      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="692757">
+        <h1 itemprop="name">Tartan Tikka Tikka</h1>
+        <img src="/images/fhis/fhis_pass.jpg" alt="Pass" class="rating-image" itemprop="image">
         
-        <p>
-          Address:
-          <address>
-            Unit B
-            <br>Schawpark
-            <br>Main Street
-            <br>Sauchie
-            <br>FK10 3JW
-            
-          </address>
-          <a href="https://geohack.toolforge.org/geohack.php?title=Tartan%20Tikka%20Tikka&params=56.1318967_N_-3.7740011_E_type:landmark_dim:20" target="_blank">View on Map</a>
-        </p>
-        <p>Business Type: Takeaway/sandwich shop</p>
+      <p>
+        Address:
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit B</span><br><span>Schawpark</span><br><span>Main Street</span><br><span>Sauchie</span><br><span itemprop="postalCode">FK10 3JW</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Tartan%20Tikka%20Tikka&params=56.1318967_N_-3.7740011_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
+      </p>
+        <p>Business Type: <span itemprop="servesCuisine">Takeaway/sandwich shop</span></p>
         <p>Rating: Pass</p>
         
-        <p>Rating Date: <time datetime="2024-01-08">2024-01-08</time></p>
+  <p>Rating Date: <time datetime="2024-01-08" itemprop="fhrsRatingDate">2024-01-08</time></p>
+  
         
-        
-      </div>
+      </article>
     </div>
   </body>
 </html>

@@ -1,75 +1,98 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>T G F S [THE GOOD FOOD SHOP] - FHRS Info</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T G F S [THE GOOD FOOD SHOP] - Food Hygiene Rating</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-      .establishment {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        color: #333;
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-      }
-      a {
-        color: #1e90ff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .establishment {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p, address, td, th {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img.rating-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="establishment" data-establishment-id="593351">
-        <h1>T G F S [THE GOOD FOOD SHOP]</h1>
-        <img src="/images/fhis/fhis_pass.jpg" alt="Rating Image" style="width: 100%; max-width: 400px; height: auto;">
+      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="593351">
+        <h1 itemprop="name">T G F S [THE GOOD FOOD SHOP]</h1>
+        <img src="/images/fhis/fhis_pass.jpg" alt="Pass" class="rating-image" itemprop="image">
         
-        <p>
-          Address:
-          <address>
-            undefined
-            <br>UNIT 29 Trinity Centre
-            <br>Union Street
-            <br>Aberdeen
-            <br>AB11 6BP
-            
-          </address>
-          <a href="https://geohack.toolforge.org/geohack.php?title=T%20G%20F%20S%20%5BTHE%20GOOD%20FOOD%20SHOP%5D&params=57.145226_N_-2.10218_E_type:landmark_dim:20" target="_blank">View on Map</a>
-        </p>
-        <p>Business Type: Takeaway/sandwich shop</p>
+      <p>
+        Address:
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>UNIT 29 Trinity Centre</span><br><span>Union Street</span><br><span>Aberdeen</span><br><span itemprop="postalCode">AB11 6BP</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=T%20G%20F%20S%20%5BTHE%20GOOD%20FOOD%20SHOP%5D&params=57.145226_N_-2.10218_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
+      </p>
+        <p>Business Type: <span itemprop="servesCuisine">Takeaway/sandwich shop</span></p>
         <p>Rating: Pass</p>
         
-        <p>Rating Date: <time datetime="2014-07-17">2014-07-17</time></p>
+  <p>Rating Date: <time datetime="2014-07-17" itemprop="fhrsRatingDate">2014-07-17</time></p>
+  
         
-        
-      </div>
+      </article>
     </div>
   </body>
 </html>

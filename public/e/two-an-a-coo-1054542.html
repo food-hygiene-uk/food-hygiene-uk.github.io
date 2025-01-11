@@ -1,75 +1,98 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Two An A Coo - FHRS Info</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two An A Coo - Food Hygiene Rating</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-      .establishment {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        color: #333;
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-      }
-      a {
-        color: #1e90ff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .establishment {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p, address, td, th {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img.rating-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="establishment" data-establishment-id="1054542">
-        <h1>Two An A Coo</h1>
-        <img src="/images/fhis/fhis_improvement_required.jpg" alt="Rating Image" style="width: 100%; max-width: 400px; height: auto;">
+      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="1054542">
+        <h1 itemprop="name">Two An A Coo</h1>
+        <img src="/images/fhis/fhis_improvement_required.jpg" alt="Improvement Required" class="rating-image" itemprop="image">
         
-        <p>
-          Address:
-          <address>
-            116 Bonnygate Cupar Fife
-            
-            
-            
-            <br>KY15 4LF
-            
-          </address>
-          <a href="https://geohack.toolforge.org/geohack.php?title=Two%20An%20A%20Coo&params=56.3190422_N_-3.0166703_E_type:landmark_dim:20" target="_blank">View on Map</a>
-        </p>
-        <p>Business Type: Takeaway/sandwich shop</p>
+      <p>
+        Address:
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>116 Bonnygate Cupar Fife</span><br><span itemprop="postalCode">KY15 4LF</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Two%20An%20A%20Coo&params=56.3190422_N_-3.0166703_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
+      </p>
+        <p>Business Type: <span itemprop="servesCuisine">Takeaway/sandwich shop</span></p>
         <p>Rating: Improvement Required</p>
         
-        <p>Rating Date: <time datetime="2024-08-28">2024-08-28</time></p>
+  <p>Rating Date: <time datetime="2024-08-28" itemprop="fhrsRatingDate">2024-08-28</time></p>
+  
         
-        
-      </div>
+      </article>
     </div>
   </body>
 </html>

@@ -1,75 +1,98 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Mina Lodge - Abbotsford Nursing Home - FHRS Info</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina Lodge - Abbotsford Nursing Home - Food Hygiene Rating</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-      .establishment {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        color: #333;
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-      }
-      a {
-        color: #1e90ff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .establishment {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p, address, td, th {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img.rating-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="establishment" data-establishment-id="125360">
-        <h1>Mina Lodge - Abbotsford Nursing Home</h1>
-        <img src="/images/fhis/fhis_pass.jpg" alt="Rating Image" style="width: 100%; max-width: 400px; height: auto;">
+      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="125360">
+        <h1 itemprop="name">Mina Lodge - Abbotsford Nursing Home</h1>
+        <img src="/images/fhis/fhis_pass.jpg" alt="Pass" class="rating-image" itemprop="image">
         
-        <p>
-          Address:
-          <address>
-            Mina Crescent Kinglassie Lochgelly Fife
-            
-            
-            
-            <br>KY5 0XT
-            
-          </address>
-          <a href="https://geohack.toolforge.org/geohack.php?title=Mina%20Lodge%20-%20Abbotsford%20Nursing%20Home&params=56.174658_N_-3.23605_E_type:landmark_dim:20" target="_blank">View on Map</a>
-        </p>
-        <p>Business Type: Hospitals/Childcare/Caring Premises</p>
+      <p>
+        Address:
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Mina Crescent Kinglassie Lochgelly Fife</span><br><span itemprop="postalCode">KY5 0XT</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Mina%20Lodge%20-%20Abbotsford%20Nursing%20Home&params=56.174658_N_-3.23605_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
+      </p>
+        <p>Business Type: <span itemprop="servesCuisine">Hospitals/Childcare/Caring Premises</span></p>
         <p>Rating: Pass</p>
         
-        <p>Rating Date: <time datetime="2023-05-22">2023-05-22</time></p>
+  <p>Rating Date: <time datetime="2023-05-22" itemprop="fhrsRatingDate">2023-05-22</time></p>
+  
         
-        
-      </div>
+      </article>
     </div>
   </body>
 </html>

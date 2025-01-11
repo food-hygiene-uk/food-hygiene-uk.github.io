@@ -1,93 +1,116 @@
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Cegin Iau, Ysgol Bro Pedr - FHRS Info</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cegin Iau, Ysgol Bro Pedr - Food Hygiene Rating</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-      .establishment {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        color: #333;
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-      }
-      a {
-        color: #1e90ff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .establishment {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p, address, td, th {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img.rating-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="establishment" data-establishment-id="863278">
-        <h1>Cegin Iau, Ysgol Bro Pedr</h1>
-        <img src="/images/fhrs/fhrs_5_en-gb.svg" alt="Rating Image" style="width: 100%; max-width: 400px; height: auto;">
+      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="863278">
+        <h1 itemprop="name">Cegin Iau, Ysgol Bro Pedr</h1>
+        <img src="/images/fhrs/fhrs_5_en-gb.svg" alt="Food Hygiene Rating: 5 out of 5" class="rating-image" itemprop="image">
         
-        <p>
-          Address:
-          <address>
-            Ysgol Bro Pedr Peterwell Terrace
-            
-            <br>Lampeter
-            <br>Ceredigion
-            <br>SA48 7BX
-            
-          </address>
-          <a href="https://geohack.toolforge.org/geohack.php?title=Cegin%20Iau%2C%20Ysgol%20Bro%20Pedr&params=52.111988067627_N_-4.0812840461731_E_type:landmark_dim:20" target="_blank">View on Map</a>
-        </p>
-        <p>Business Type: School/college/university</p>
+      <p>
+        Address:
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Ysgol Bro Pedr Peterwell Terrace</span><br><span>Lampeter</span><br><span>Ceredigion</span><br><span itemprop="postalCode">SA48 7BX</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Cegin%20Iau%2C%20Ysgol%20Bro%20Pedr&params=52.111988067627_N_-4.0812840461731_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
+      </p>
+        <p>Business Type: <span itemprop="servesCuisine">School/college/university</span></p>
         <p>Rating: 5</p>
         
-        <p>Rating Date: <time datetime="2023-10-25">2023-10-25</time></p>
+  <p>Rating Date: <time datetime="2023-10-25" itemprop="fhrsRatingDate">2023-10-25</time></p>
+  
         
-        
-        <table>
-          <tr>
-            <th>Hygiene</th>
-            <td>5</td>
-            <td>Very Good</td>
-          </tr>
-          <tr>
-            <th>Structural</th>
-            <td>5</td>
-            <td>Very Good</td>
-          </tr>
-          <tr>
-            <th>Confidence in Management</th>
-            <td>0</td>
-            <td>Very Good</td>
-          </tr>
-        </table>
-        
-      </div>
+      <table>
+        <tr>
+          <th>Hygiene</th>
+          <td>5</td>
+          <td>Very Good</td>
+        </tr>
+        <tr>
+          <th>Structural</th>
+          <td>5</td>
+          <td>Very Good</td>
+        </tr>
+        <tr>
+          <th>Confidence in Management</th>
+          <td>0</td>
+          <td>Very Good</td>
+        </tr>
+      </table>
+      
+      </article>
     </div>
   </body>
 </html>
