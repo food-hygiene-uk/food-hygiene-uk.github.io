@@ -6,79 +6,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friday Mood - Food Hygiene Rating</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+        
+            :root {
+                /* Information and background colors */
+                --primary-blue: #2c4c6b;
+                --light-blue: #f5f7fa;
+                --teal: #3c7b8e;
+                --grey: #687789;
+                --light-grey: #eef2f6;
+                
+                /* Call to action colors */
+                --cta-default: #9e66ff;
+            }
+            
+            body {
+                font-family: system-ui, -apple-system, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: var(--light-blue);
+                color: var(--primary-blue);
+            }
+                
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 2rem;
+            }
 
-        .container {
-            max-width: 800px;
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
+        .content-kkc41u {
+            display: contents;
 
-        .establishment {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
+          .establishment {
+              border-bottom: 1px solid #ccc;
+              padding: 1rem;
+              margin: 20px 0;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              border-radius: 8px;
+          }
 
-        h1 {
-            font-size: 2em;
-            color: #333;
-        }
+          h1 {
+              font-size: 2em;
+              color: #333;
+          }
 
-        p, address, td, th {
-            font-size: 1em;
-            color: #666;
-            line-height: 1.5;
-        }
+          p, address, td, th {
+              font-size: 1em;
+              color: #666;
+              line-height: 1.5;
+          }
 
-        a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
+          a {
+              color: #1e90ff;
+              text-decoration: none;
+          }
 
-        a:hover {
-            text-decoration: underline;
-        }
+          a:hover {
+              text-decoration: underline;
+          }
 
-        img.rating-image {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            display: block;
-            margin: 10px auto;
-        }
+          img.rating-image {
+              width: 100%;
+              max-width: 400px;
+              height: auto;
+              display: block;
+              margin: 10px auto;
+          }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1em;
-        }
+          table {
+              width: 100%;
+              border-collapse: collapse;
+              margin-top: 1em;
+          }
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 0.5em;
-            text-align: left;
+          th, td {
+              border: 1px solid #ddd;
+              padding: 0.5em;
+              text-align: left;
+          }
+        }  
+
+        
+        .component-header-efcuxd {
+            display: contents;
+
+            header {
+                background-color: #f8f9fa;
+                padding: 1rem 2rem;
+                border-bottom: 1px solid #e0e0e0;
+
+                overflow: hidden;
+            }
+
+            .navbar-efcuxd {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .logo-efcuxd img {
+                height: 50px;
+            }
+
+            .nav-links-efcuxd {
+                list-style: none;
+                display: flex;
+                gap: 1.5rem;
+
+                li {
+                    display: inline;
+
+                    a {
+                        text-decoration: none;
+                        color: #333;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        
+        .component-footer-c7kznq {
+            display: contents;
+
+            footer {
+                background-color: var(--primary-blue);
+                color: var(--light-blue);
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                text-align: center;
+                margin-top: 2rem;
+
+                overflow: hidden;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    border-bottom: 1px solid rgba(255,255,255,0.3);
+                    transition: border-color 0.3s;
+
+                    &:hover {
+                        border-color: white;
+                    }
+                }
+            }
         }
     </style>
   </head>
   <body>
-    <div class="container">
-      <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="1763958">
-        <h1 itemprop="name">Friday Mood</h1>
-        <img src="/images/fhrs/fhrs_5_en-gb.svg" alt="Food Hygiene Rating: 5 out of 5" class="rating-image" itemprop="image">
-        
+    
+        <div class="component-header-efcuxd" data-suffix="efcuxd">
+            <header class="container">
+                <nav class="navbar-efcuxd">
+                    <div class="logo-efcuxd">
+                        <img src="/images/logo.svg" alt="Site Logo">
+                    </div>
+                    <ul class="nav-links-efcuxd">
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/l/">Regions</a></li>
+                        <li><a href="/search/">Search</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    <div class="content-kkc41u">
+      <div class="container">
+        <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="1763958">
+          <h1 class="name" itemprop="name">Friday Mood</h1>
+          <img src="/images/fhrs/fhrs_5_en-gb.svg" alt="Food Hygiene Rating: 5 out of 5" class="rating-image" itemprop="image">
+          
       <p>
         Address:
         <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
@@ -86,12 +181,12 @@
         </address>
         <a href="https://geohack.toolforge.org/geohack.php?title=Friday%20Mood&params=51.4980686_N_-0.1449096_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
       </p>
-        <p>Business Type: <span itemprop="servesCuisine">Retailers - other</span></p>
-        <p>Rating: 5</p>
-        
+          <p>Business Type: <span itemprop="servesCuisine">Retailers - other</span></p>
+          <p>Rating: 5</p>
+          
   <p>Rating Date: <time datetime="2024-10-28" itemprop="fhrsRatingDate">2024-10-28</time></p>
   
-        
+          
       <table>
         
         <tr>
@@ -111,7 +206,18 @@
         
       </table>
       
-      </article>
+        </article>
+      </div>
     </div>
+    
+        <div class="component-footer-c7kznq">
+            <footer>
+                <div class="container">
+                    <p>Food Hygiene Ratings UK - Open Source Project</p>
+                    <p>Data provided by local authorities across the UK</p>
+                    <a href="https://github.com/food-hygiene-ratings-uk/food-hygiene-rating-scheme">GitHub Repository</a>
+                </div>
+            </footer>
+        </div>
   </body>
 </html>
