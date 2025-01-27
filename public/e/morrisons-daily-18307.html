@@ -50,10 +50,22 @@
               color: #333;
           }
 
+          h2 {
+              font-size: 1.2em;
+              color: #84be00;
+              margin: 1em 0 0 0;
+          }
+
+          h2::after {
+              content: ":";
+          }
+
+
           p, address, td, th {
               font-size: 1em;
               color: #666;
               line-height: 1.5;
+              font-style: normal;
           }
 
           a {
@@ -66,11 +78,10 @@
           }
 
           img.rating-image {
-              width: 100%;
               max-width: 400px;
               height: auto;
               display: block;
-              margin: 10px auto;
+              margin: 10px 0;
           }
 
           table {
@@ -79,10 +90,29 @@
               margin-top: 1em;
           }
 
+          th {
+              background-color: #1b5f7b;
+              color: #ffffff;
+              font-weight: bold;
+          }
+
+          .scores tbody tr:hover {
+            background-color: #f0f0f0;
+            color: #333;
+          }
+
           th, td {
               border: 1px solid #ddd;
               padding: 0.5em;
               text-align: left;
+              vertical-align: top;
+          }
+
+          .title {
+              white-space: nowrap;
+          }
+          .score {
+              white-space: nowrap;
           }
         }  
 
@@ -136,8 +166,6 @@
                 text-align: center;
                 margin-top: 2rem;
 
-                overflow: hidden;
-
                 a {
                     color: white;
                     text-decoration: none;
@@ -172,26 +200,28 @@
       <div class="container">
         <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="18307">
           <h1 class="name" itemprop="name">Morrisons Daily</h1>
-          <img src="/images/fhis/fhis_pass.jpg" alt="Pass" class="rating-image" itemprop="image">
+          <h2>Business Type</h2>
+          <div itemprop="servesCuisine">Retailers - other</div>
+          <h2>Rating</h2>
+          <div>Pass</div>
+          <img src="/images/fhis/fhis_pass.jpg" alt="Food Hygiene Rating: Pass" class="rating-image" itemprop="image">
           
-      <p>
-        Address:
-        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>11 St. Andrews Square  Buckie  Moray</span><br><span itemprop="postalCode">AB56 1BT</span>
-        </address>
-        <a href="https://geohack.toolforge.org/geohack.php?title=Morrisons%20Daily&params=57.6731452941895_N_-2.97627902030945_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
-      </p>
-          <p>Business Type: <span itemprop="servesCuisine">Retailers - other</span></p>
-          <p>Rating: Pass</p>
+      <h2>Address</h2>
+      <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <span>11 St. Andrews Square  Buckie  Moray</span><br><span itemprop="postalCode">AB56 1BT</span>
+      </address>
+      <a href="https://geohack.toolforge.org/geohack.php?title=Morrisons%20Daily&params=57.6731452941895_N_-2.97627902030945_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
           
-  <p>Rating Date: <time datetime="2024-08-28" itemprop="fhrsRatingDate">2024-08-28</time></p>
+          
+  <h2>Rating Date</h2>
+  <time datetime="2024-08-28" itemprop="fhrsRatingDate">28 August 2024</time>
   
           
         </article>
       </div>
     </div>
     
-        <div class="component-footer-bo1sdt">
+        <div class="component-footer-bo1sdt" data-suffix="bo1sdt">
             <footer>
                 <div class="container">
                     <p>Food Hygiene Ratings UK - Open Source Project</p>

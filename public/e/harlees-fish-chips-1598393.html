@@ -50,10 +50,22 @@
               color: #333;
           }
 
+          h2 {
+              font-size: 1.2em;
+              color: #84be00;
+              margin: 1em 0 0 0;
+          }
+
+          h2::after {
+              content: ":";
+          }
+
+
           p, address, td, th {
               font-size: 1em;
               color: #666;
               line-height: 1.5;
+              font-style: normal;
           }
 
           a {
@@ -66,11 +78,10 @@
           }
 
           img.rating-image {
-              width: 100%;
               max-width: 400px;
               height: auto;
               display: block;
-              margin: 10px auto;
+              margin: 10px 0;
           }
 
           table {
@@ -79,10 +90,29 @@
               margin-top: 1em;
           }
 
+          th {
+              background-color: #1b5f7b;
+              color: #ffffff;
+              font-weight: bold;
+          }
+
+          .scores tbody tr:hover {
+            background-color: #f0f0f0;
+            color: #333;
+          }
+
           th, td {
               border: 1px solid #ddd;
               padding: 0.5em;
               text-align: left;
+              vertical-align: top;
+          }
+
+          .title {
+              white-space: nowrap;
+          }
+          .score {
+              white-space: nowrap;
           }
         }  
 
@@ -136,8 +166,6 @@
                 text-align: center;
                 margin-top: 2rem;
 
-                overflow: hidden;
-
                 a {
                     color: white;
                     text-decoration: none;
@@ -172,45 +200,58 @@
       <div class="container">
         <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="1598393">
           <h1 class="name" itemprop="name">Harlees Fish & Chips</h1>
-          <img src="/images/fhrs/fhrs_5_en-gb.svg" alt="Food Hygiene Rating: 5 out of 5" class="rating-image" itemprop="image">
+          <h2>Business Type</h2>
+          <div itemprop="servesCuisine">Takeaway/sandwich shop</div>
+          <h2>Rating</h2>
+          <div>5 out of 5. Very Good</div>
+          <img src="/images/fhrs/fhrs_5_en-gb.svg" alt="Food Hygiene Rating: 5 out of 5. Very Good" class="rating-image" itemprop="image">
           
-      <p>
-        Address:
-        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>94 Manor Road</span><br><span>Verwood</span><br><span>Dorset</span><br><span itemprop="postalCode">BH31 6EB</span>
-        </address>
-        <a href="https://geohack.toolforge.org/geohack.php?title=Harlees%20Fish%20%26%20Chips&params=50.8739994_N_-1.87699_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
-      </p>
-          <p>Business Type: <span itemprop="servesCuisine">Takeaway/sandwich shop</span></p>
-          <p>Rating: 5</p>
+      <h2>Address</h2>
+      <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <span>94 Manor Road</span><br><span>Verwood</span><br><span>Dorset</span><br><span itemprop="postalCode">BH31 6EB</span>
+      </address>
+      <a href="https://geohack.toolforge.org/geohack.php?title=Harlees%20Fish%20%26%20Chips&params=50.8739994_N_-1.87699_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer">View on Map</a>
           
-  <p>Rating Date: <time datetime="2024-06-11" itemprop="fhrsRatingDate">2024-06-11</time></p>
+          
+  <h2>Rating Date</h2>
+  <time datetime="2024-06-11" itemprop="fhrsRatingDate">11 June 2024</time>
   
           
-      <table>
+      <h2>Score parts</h2>
+      <table class="scores">
+        <thead>
+          <th>Category</th>
+          <th>Score</th>
+          <th>Description</th>
+        </thead>
+        <tbody>
         
-        <tr>
-          <th>Hygiene</th>
-          <td>Very good</td>
-        </tr>
+          <tr>
+            <td class="title">Hygiene</td>
+            <td class="score">Very good</td>
+            <td>High standard of compliance with statutory obligations and industry codes of recommended practice, conforms to accepted good practices in the trade. </td>
+          </tr>
         
-        <tr>
-          <th>Structural</th>
-          <td>Good</td>
-        </tr>
+          <tr>
+            <td class="title">Structural</td>
+            <td class="score">Good</td>
+            <td>High standard of compliance with statutory obligations and industry codes of recommended practice, conforms to accepted good practices in the trade. </td>
+          </tr>
         
-        <tr>
-          <th>Confidence in Management</th>
-          <td>Very good</td>
-        </tr>
+          <tr>
+            <td class="title">Confidence in Management</td>
+            <td class="score">Very good</td>
+            <td>High standard of compliance with statutory obligations and industry codes of recommended practice, conforms to accepted good practices in the trade. </td>
+          </tr>
         
+        </tbody>
       </table>
       
         </article>
       </div>
     </div>
     
-        <div class="component-footer-bo1sdt">
+        <div class="component-footer-bo1sdt" data-suffix="bo1sdt">
             <footer>
                 <div class="container">
                     <p>Food Hygiene Ratings UK - Open Source Project</p>
