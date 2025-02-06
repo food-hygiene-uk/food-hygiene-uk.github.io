@@ -1,40 +1,85 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wild Seed Kitchen - Food Hygiene Rating</title>
+    <title>Wild Seed Kitchen - Food Hygiene Ratings UK</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <script>
+      "use strict";
+      {
+        const updateColorScheme = (mql) => {
+          const prefers = mql?.matches ? 'dark' : 'light';
+          const setting = localStorage.getItem('color-scheme');
+
+          document.documentElement.setAttribute("data-color-scheme", setting ?? prefers);
+        }
+        const colorSchemeMLQ = globalThis?.matchMedia?.('(prefers-color-scheme:dark)')
+        colorSchemeMQL.addEventListener('change', function(e) { updateColorScheme(e);});
+        updateColorScheme(colorSchemeMQL);
+      }
+    </script>
     <style>
         
             :root {
-                /* Information and background colors */
-                --primary-blue: #2c4c6b;
-                --light-blue: #f5f7fa;
-                --teal: #3c7b8e;
-                --grey: #687789;
-                --light-grey: #eef2f6;
-                
-                /* Call to action colors */
-                --cta-default: #9e66ff;
+              /* Information and background colors */
+              --primary-blue: #2c4c6b;
+              --light-blue: #f5f7fa;
+              --teal: #3c7b8e;
+              --grey: #687789;
+              --light-grey: #eef2f6;
+              --hygiene-green: #84be00;
+              
+              /* Call to action colors */
+              --cta-default: #9e66ff;
+
+              --body-background: var(--light-blue);
+              --text-color: #000;
+              --header-background-color: #f8f9fa;
+              --header-text-color: var(--text-color);
+              --header-rule-color: #e0e0e0;
             }
+
+            @media (not (scripting: none)) or (prefers-color-scheme: dark) {
+              html:not([data-color-scheme='light']) {
+                --body-background: #000;
+                --text-color: #757575;
+                --header-background-color: #1f2021;
+                --header-text-color: #dfdfdf;
+                --header-rule-color: #383838;
+              }
+            } 
             
             body {
-                font-family: system-ui, -apple-system, sans-serif;
-                line-height: 1.6;
-                margin: 0;
-                padding: 0;
-                background-color: var(--light-blue);
-                color: var(--primary-blue);
+              font-family: system-ui, -apple-system, sans-serif;
+              line-height: 1.6;
+              margin: 0;
+              padding: 0;
+              background-color: var(--body-background);
+              color: var(--text-color);
+            }
+            
+            address {
+              font-style: normal;
+            }
+
+            a {
+              color: #0052a3;
+              text-decoration: none;
+            }
+
+            a:hover {
+              text-decoration: underline;
             }
                 
             .container {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 0 2rem;
+              max-width: 1200px;
+              margin: 0 auto;
+              padding: 0 2rem;
             }
-
+        
         .content-qc3xkd {
             display: contents;
 
@@ -48,12 +93,11 @@
 
           h1 {
               font-size: 2em;
-              color: #333;
+              border-bottom: 1px solid var(--hygiene-green);
           }
 
           h2 {
               font-size: 1.2em;
-              color: #84be00;
               margin: 1em 0 0 0;
           }
 
@@ -64,18 +108,7 @@
 
           p, address, td, th {
               font-size: 1em;
-              color: #666;
               line-height: 1.5;
-              font-style: normal;
-          }
-
-          a {
-              color: #1e90ff;
-              text-decoration: none;
-          }
-
-          a:hover {
-              text-decoration: underline;
           }
 
           img.rating-image {
@@ -83,6 +116,8 @@
               height: auto;
               display: block;
               margin: 10px 0;
+              box-shadow: white 0 0 0 1px;
+              border-radius: 9px;
           }
 
           table {
@@ -119,16 +154,16 @@
                   }
               }
           }
-        }  
-
+        }
+  
         
         .component-header-hxvahn {
             display: contents;
 
             header {
-                background-color: #f8f9fa;
+                background-color: var(--header-background-color);
                 padding: 1rem 2rem;
-                border-bottom: 1px solid #e0e0e0;
+                border-bottom: 1px solid var(--header-rule-color);
 
                 overflow: hidden;
             }
@@ -153,7 +188,7 @@
 
                     a {
                         text-decoration: none;
-                        color: #333;
+                        color: var(--header-text-color);
                         font-weight: bold;
                     }
                 }
@@ -185,6 +220,7 @@
         }
     </style>
   </head>
+    
   <body>
     
         <div class="component-header-hxvahn" data-suffix="hxvahn">

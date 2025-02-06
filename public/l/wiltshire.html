@@ -1,57 +1,102 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiltshire - Local Authority - Food Hygiene Rating</title>
+    <title>Wiltshire - Local Authority - Food Hygiene Ratings UK</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <script>
+      "use strict";
+      {
+        const updateColorScheme = (mql) => {
+          const prefers = mql?.matches ? 'dark' : 'light';
+          const setting = localStorage.getItem('color-scheme');
+
+          document.documentElement.setAttribute("data-color-scheme", setting ?? prefers);
+        }
+        const colorSchemeMLQ = globalThis?.matchMedia?.('(prefers-color-scheme:dark)')
+        colorSchemeMQL.addEventListener('change', function(e) { updateColorScheme(e);});
+        updateColorScheme(colorSchemeMQL);
+      }
+    </script>
     <style>
         
             :root {
-                /* Information and background colors */
-                --primary-blue: #2c4c6b;
-                --light-blue: #f5f7fa;
-                --teal: #3c7b8e;
-                --grey: #687789;
-                --light-grey: #eef2f6;
-                
-                /* Call to action colors */
-                --cta-default: #9e66ff;
+              /* Information and background colors */
+              --primary-blue: #2c4c6b;
+              --light-blue: #f5f7fa;
+              --teal: #3c7b8e;
+              --grey: #687789;
+              --light-grey: #eef2f6;
+              --hygiene-green: #84be00;
+              
+              /* Call to action colors */
+              --cta-default: #9e66ff;
+
+              --body-background: var(--light-blue);
+              --text-color: #000;
+              --header-background-color: #f8f9fa;
+              --header-text-color: var(--text-color);
+              --header-rule-color: #e0e0e0;
             }
+
+            @media (not (scripting: none)) or (prefers-color-scheme: dark) {
+              html:not([data-color-scheme='light']) {
+                --body-background: #000;
+                --text-color: #757575;
+                --header-background-color: #1f2021;
+                --header-text-color: #dfdfdf;
+                --header-rule-color: #383838;
+              }
+            } 
             
             body {
-                font-family: system-ui, -apple-system, sans-serif;
-                line-height: 1.6;
-                margin: 0;
-                padding: 0;
-                background-color: var(--light-blue);
-                color: var(--primary-blue);
+              font-family: system-ui, -apple-system, sans-serif;
+              line-height: 1.6;
+              margin: 0;
+              padding: 0;
+              background-color: var(--body-background);
+              color: var(--text-color);
+            }
+            
+            address {
+              font-style: normal;
+            }
+
+            a {
+              color: #0052a3;
+              text-decoration: none;
+            }
+
+            a:hover {
+              text-decoration: underline;
             }
                 
             .container {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 0 2rem;
+              max-width: 1200px;
+              margin: 0 auto;
+              padding: 0 2rem;
             }
+        
+    .content-cd4ue {
+        display: contents;
 
-        .content-g5o6zh {
-            display: contents;
-
-          h1 {
-              font-size: 2em;
-              color: #333;
-          }
-        }  
-
+      h1 {
+          font-size: 2em;
+          color: #333;
+      }
+    }  
+  
         
         .component-header-6c0tbc {
             display: contents;
 
             header {
-                background-color: #f8f9fa;
+                background-color: var(--header-background-color);
                 padding: 1rem 2rem;
-                border-bottom: 1px solid #e0e0e0;
+                border-bottom: 1px solid var(--header-rule-color);
 
                 overflow: hidden;
             }
@@ -76,7 +121,7 @@
 
                     a {
                         text-decoration: none;
-                        color: #333;
+                        color: var(--header-text-color);
                         font-weight: bold;
                     }
                 }
@@ -108,6 +153,7 @@
         }
     </style>
   </head>
+    
   <body>
     
         <div class="component-header-6c0tbc" data-suffix="6c0tbc">
@@ -124,7 +170,7 @@
                 </nav>
             </header>
         </div>
-    <div class="content-g5o6zh">
+    <div class="content-cd4ue">
       <div class="container">
         <article class="local-authority" itemscope itemtype="https://schema.org/GovernmentOrganization">
           <h1 class="name" itemprop="name">Wiltshire</h1>
