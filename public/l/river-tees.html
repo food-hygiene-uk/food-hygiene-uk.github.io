@@ -40,6 +40,8 @@
               --header-background-color: #f8f9fa;
               --header-text-color: var(--text-color);
               --header-rule-color: #e0e0e0;
+              --background-highlight-color: #e5e8f1;
+              --text-highlight-color: var(--text-color);
             }
 
             @media (not (scripting: none)) or (prefers-color-scheme: dark) {
@@ -49,6 +51,8 @@
                 --header-background-color: #1f2021;
                 --header-text-color: #dfdfdf;
                 --header-rule-color: #383838;
+                --background-highlight-color: var(--light-blue);
+                --text-highlight-color: var(--text-color);
               }
             } 
             
@@ -59,10 +63,6 @@
               padding: 0;
               background-color: var(--body-background);
               color: var(--text-color);
-            }
-            
-            address {
-              font-style: normal;
             }
 
             a {
@@ -84,13 +84,78 @@
         display: contents;
 
       h1 {
-          font-size: 2em;
-          color: #333;
+        font-size: 2em;
+        border-bottom: 1px solid var(--hygiene-green);
       }
+
+      h3 {
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 0;
+      }
+
+      .establishment {
+        padding: 1rem 0;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        /* Link the entire establishment to the details page */
+        position: relative;
+
+        .details-link {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1;
+          text-indent: -9999px; /* Hide the text inside the link */
+
+          &:hover {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: right;
+            padding-right: 1rem;
+            padding-bottom: 1rem;
+          }
+        }
+
+        &:has(a:hover) {
+          background-color: var(--background-highlight-color);
+          color: var(--text-highlight-color);
+          margin-left: -1rem;
+          margin-right: -1rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          border-radius: 9px;
+        }
+      }
+
+      .map-link {
+        position: relative;
+        z-index: 2;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid var(--hygiene-green);
+      }
+      
+      
+        .component-address-cd4ue {
+            display: contents;
+
+            address {
+              font-style: normal;
+            }
+        }
     }  
   
         
-        .component-header-6c0tbc {
+        .component-header-xgvp1f {
             display: contents;
 
             header {
@@ -101,17 +166,17 @@
                 overflow: hidden;
             }
 
-            .navbar-6c0tbc {
+            .navbar-xgvp1f {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
             }
 
-            .logo-6c0tbc img {
+            .logo-xgvp1f img {
                 height: 50px;
             }
 
-            .nav-links-6c0tbc {
+            .nav-links-xgvp1f {
                 list-style: none;
                 display: flex;
                 gap: 1.5rem;
@@ -128,7 +193,7 @@
             }
         }
         
-        .component-footer-xgvp1f {
+        .component-footer-g5o6zh {
             display: contents;
 
             footer {
@@ -156,13 +221,13 @@
     
   <body>
     
-        <div class="component-header-6c0tbc" data-suffix="6c0tbc">
+        <div class="component-header-xgvp1f" data-suffix="xgvp1f">
             <header class="container">
-                <nav class="navbar-6c0tbc">
-                    <div class="logo-6c0tbc">
+                <nav class="navbar-xgvp1f">
+                    <div class="logo-xgvp1f">
                         <img src="/images/logo.svg" alt="Site Logo">
                     </div>
-                    <ul class="nav-links-6c0tbc">
+                    <ul class="nav-links-xgvp1f">
                         <li><a href="/about/">About</a></li>
                         <li><a href="/l/">Regions</a></li>
                         <li><a href="/search/">Search</a></li>
@@ -175,45 +240,103 @@
         <article class="local-authority" itemscope itemtype="https://schema.org/GovernmentOrganization">
           <h1 class="name" itemprop="name">River Tees</h1>
           
-    <ol>
+    <h2>Establishments</h2>
       
-        <li>
-          <a href="/e/border-force-1689009.html">
-            Border Force
-          </a>
-        </li>
-      
-        <li>
-          <a href="/e/compass-group-uk-ireland-ltd-1018650.html">
-            Compass Group UK & Ireland Ltd
-          </a>
-        </li>
-      
-        <li>
-          <a href="/e/tesco-colleague-room-1108162.html">
-            Tesco (Colleague Room)
-          </a>
-        </li>
-      
-        <li>
-          <a href="/e/the-mission-to-seafarers-746361.html">
-            The Mission to Seafarers
-          </a>
-        </li>
-      
-        <li>
-          <a href="/e/the-old-butchers-at-the-port-1423646.html">
-            The Old Butchers at the Port
-          </a>
-        </li>
-      
-    </ol>
+      <div class="establishment" data-establishment-id="1689009">
+        <h3>Border Force</h3>
+        
+        <div class="component-address-cd4ue" data-suffix="cd4ue">
+            <div>No address information available</div>
+        </div>
+    
+        <a href="/e/border-force-1689009.html" class="details-link">
+          More
+        </a>
+      </div>
+    
+<hr>
+
+      <div class="establishment" data-establishment-id="1018650">
+        <h3>Compass Group UK & Ireland Ltd</h3>
+        
+        <div class="component-address-cd4ue" data-suffix="cd4ue">
+            
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span>Tees Dock Road</span><br><span>Grangetown</span><br><span>TS6 6UD</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Compass%20Group%20UK%20%26%20Ireland%20Ltd&params=54.59476_N_-1.14209_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer" class="map-link">View on Map</a>
+        
+        </div>
+    
+        <a href="/e/compass-group-uk-ireland-ltd-1018650.html" class="details-link">
+          More
+        </a>
+      </div>
+    
+<hr>
+
+      <div class="establishment" data-establishment-id="1108162">
+        <h3>Tesco (Colleague Room)</h3>
+        
+        <div class="component-address-cd4ue" data-suffix="cd4ue">
+            
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span>Dabholme Road</span><br><span>Teesport</span><br><span>TS6 6UD</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Tesco%20(Colleague%20Room)&params=54.5983438607744_N_-1.13874285522292_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer" class="map-link">View on Map</a>
+        
+        </div>
+    
+        <a href="/e/tesco-colleague-room-1108162.html" class="details-link">
+          More
+        </a>
+      </div>
+    
+<hr>
+
+      <div class="establishment" data-establishment-id="746361">
+        <h3>The Mission to Seafarers</h3>
+        
+        <div class="component-address-cd4ue" data-suffix="cd4ue">
+            
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span>Kinkerdale House</span><br><span>Tees Dock</span><br><span>TS6 6UD</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=The%20Mission%20to%20Seafarers&params=54.6021014_N_-1.140322_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer" class="map-link">View on Map</a>
+        
+        </div>
+    
+        <a href="/e/the-mission-to-seafarers-746361.html" class="details-link">
+          More
+        </a>
+      </div>
+    
+<hr>
+
+      <div class="establishment" data-establishment-id="1423646">
+        <h3>The Old Butchers at the Port</h3>
+        
+        <div class="component-address-cd4ue" data-suffix="cd4ue">
+            
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span>Port of Middlesbrough</span><br><span>Riverside Park Road</span><br><span>TS2 1UT</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=The%20Old%20Butchers%20at%20the%20Port&params=54.5872637_N_-1.2440184_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer" class="map-link">View on Map</a>
+        
+        </div>
+    
+        <a href="/e/the-old-butchers-at-the-port-1423646.html" class="details-link">
+          More
+        </a>
+      </div>
+    
+    </div>
   
         </article>
       </div>
     </div>
     
-        <div class="component-footer-xgvp1f" data-suffix="xgvp1f">
+        <div class="component-footer-g5o6zh" data-suffix="g5o6zh">
             <footer>
                 <div class="container">
                     <p>Food Hygiene Ratings UK - Open Source Project</p>

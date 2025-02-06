@@ -40,6 +40,8 @@
               --header-background-color: #f8f9fa;
               --header-text-color: var(--text-color);
               --header-rule-color: #e0e0e0;
+              --background-highlight-color: #e5e8f1;
+              --text-highlight-color: var(--text-color);
             }
 
             @media (not (scripting: none)) or (prefers-color-scheme: dark) {
@@ -49,6 +51,8 @@
                 --header-background-color: #1f2021;
                 --header-text-color: #dfdfdf;
                 --header-rule-color: #383838;
+                --background-highlight-color: var(--light-blue);
+                --text-highlight-color: var(--text-color);
               }
             } 
             
@@ -59,10 +63,6 @@
               padding: 0;
               background-color: var(--body-background);
               color: var(--text-color);
-            }
-            
-            address {
-              font-style: normal;
             }
 
             a {
@@ -80,17 +80,82 @@
               padding: 0 2rem;
             }
         
-    .content-y16cp8 {
+    .content-cd4ue {
         display: contents;
 
       h1 {
-          font-size: 2em;
-          color: #333;
+        font-size: 2em;
+        border-bottom: 1px solid var(--hygiene-green);
       }
+
+      h3 {
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 0;
+      }
+
+      .establishment {
+        padding: 1rem 0;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        /* Link the entire establishment to the details page */
+        position: relative;
+
+        .details-link {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1;
+          text-indent: -9999px; /* Hide the text inside the link */
+
+          &:hover {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: right;
+            padding-right: 1rem;
+            padding-bottom: 1rem;
+          }
+        }
+
+        &:has(a:hover) {
+          background-color: var(--background-highlight-color);
+          color: var(--text-highlight-color);
+          margin-left: -1rem;
+          margin-right: -1rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          border-radius: 9px;
+        }
+      }
+
+      .map-link {
+        position: relative;
+        z-index: 2;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid var(--hygiene-green);
+      }
+      
+      
+        .component-address-cd4ue {
+            display: contents;
+
+            address {
+              font-style: normal;
+            }
+        }
     }  
   
         
-        .component-header-6c0tbc {
+        .component-header-xgvp1f {
             display: contents;
 
             header {
@@ -101,17 +166,17 @@
                 overflow: hidden;
             }
 
-            .navbar-6c0tbc {
+            .navbar-xgvp1f {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
             }
 
-            .logo-6c0tbc img {
+            .logo-xgvp1f img {
                 height: 50px;
             }
 
-            .nav-links-6c0tbc {
+            .nav-links-xgvp1f {
                 list-style: none;
                 display: flex;
                 gap: 1.5rem;
@@ -128,7 +193,7 @@
             }
         }
         
-        .component-footer-xgvp1f {
+        .component-footer-g5o6zh {
             display: contents;
 
             footer {
@@ -156,13 +221,13 @@
     
   <body>
     
-        <div class="component-header-6c0tbc" data-suffix="6c0tbc">
+        <div class="component-header-xgvp1f" data-suffix="xgvp1f">
             <header class="container">
-                <nav class="navbar-6c0tbc">
-                    <div class="logo-6c0tbc">
+                <nav class="navbar-xgvp1f">
+                    <div class="logo-xgvp1f">
                         <img src="/images/logo.svg" alt="Site Logo">
                     </div>
-                    <ul class="nav-links-6c0tbc">
+                    <ul class="nav-links-xgvp1f">
                         <li><a href="/about/">About</a></li>
                         <li><a href="/l/">Regions</a></li>
                         <li><a href="/search/">Search</a></li>
@@ -170,50 +235,108 @@
                 </nav>
             </header>
         </div>
-    <div class="content-y16cp8">
+    <div class="content-cd4ue">
       <div class="container">
         <article class="local-authority" itemscope itemtype="https://schema.org/GovernmentOrganization">
           <h1 class="name" itemprop="name">Hull and Goole Port</h1>
           
-    <ol>
+    <h2>Establishments</h2>
       
-        <li>
-          <a href="/e/baxterstorey-ltd-1073404.html">
-            BaxterStorey Ltd
-          </a>
-        </li>
-      
-        <li>
-          <a href="/e/humberside-offshore-training-association-ltd-1073403.html">
-            Humberside Offshore Training Association Ltd
-          </a>
-        </li>
-      
-        <li>
-          <a href="/e/olive-catering-ltd-1541779.html">
-            Olive Catering Ltd
-          </a>
-        </li>
-      
-        <li>
-          <a href="/e/pride-of-hull-1073399.html">
-            Pride of Hull
-          </a>
-        </li>
-      
-        <li>
-          <a href="/e/pride-of-rotterdam-1073401.html">
-            Pride of Rotterdam
-          </a>
-        </li>
-      
-    </ol>
+      <div class="establishment" data-establishment-id="1073404">
+        <h3>BaxterStorey Ltd</h3>
+        
+        <div class="component-address-cd4ue" data-suffix="cd4ue">
+            
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span>Siemens Blade Factory</span><br><span>Alexandra Dock</span><br><span>Hull</span><br><span itemprop="postalCode">HU9 1TA</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=BaxterStorey%20Ltd&params=53.7461891174316_N_-0.293038994073868_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer" class="map-link">View on Map</a>
+        
+        </div>
+    
+        <a href="/e/baxterstorey-ltd-1073404.html" class="details-link">
+          More
+        </a>
+      </div>
+    
+<hr>
+
+      <div class="establishment" data-establishment-id="1073403">
+        <h3>Humberside Offshore Training Association Ltd</h3>
+        
+        <div class="component-address-cd4ue" data-suffix="cd4ue">
+            
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span>Humberside Offshore Training</span><br><span>Albert Dock</span><br><span>Hull</span><br><span itemprop="postalCode">HU3 1AB</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Humberside%20Offshore%20Training%20Association%20Ltd&params=53.7494239807129_N_-0.350008010864258_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer" class="map-link">View on Map</a>
+        
+        </div>
+    
+        <a href="/e/humberside-offshore-training-association-ltd-1073403.html" class="details-link">
+          More
+        </a>
+      </div>
+    
+<hr>
+
+      <div class="establishment" data-establishment-id="1541779">
+        <h3>Olive Catering Ltd</h3>
+        
+        <div class="component-address-cd4ue" data-suffix="cd4ue">
+            <div>No address information available</div>
+        </div>
+    
+        <a href="/e/olive-catering-ltd-1541779.html" class="details-link">
+          More
+        </a>
+      </div>
+    
+<hr>
+
+      <div class="establishment" data-establishment-id="1073399">
+        <h3>Pride of Hull</h3>
+        
+        <div class="component-address-cd4ue" data-suffix="cd4ue">
+            
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span>Terminal 1</span><br><span>King George Dock</span><br><span>Hedon Road</span><br><span>Hull</span><br><span itemprop="postalCode">HU9 5QR</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Pride%20of%20Hull&params=53.7488784790039_N_-0.278809994459152_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer" class="map-link">View on Map</a>
+        
+        </div>
+    
+        <a href="/e/pride-of-hull-1073399.html" class="details-link">
+          More
+        </a>
+      </div>
+    
+<hr>
+
+      <div class="establishment" data-establishment-id="1073401">
+        <h3>Pride of Rotterdam</h3>
+        
+        <div class="component-address-cd4ue" data-suffix="cd4ue">
+            
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span>Terminal 1</span><br><span>King George Dock</span><br><span>Hedon Road</span><br><span>Hull</span><br><span itemprop="postalCode">HU9 5QR</span>
+        </address>
+        <a href="https://geohack.toolforge.org/geohack.php?title=Pride%20of%20Rotterdam&params=53.7488784790039_N_-0.278809994459152_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer" class="map-link">View on Map</a>
+        
+        </div>
+    
+        <a href="/e/pride-of-rotterdam-1073401.html" class="details-link">
+          More
+        </a>
+      </div>
+    
+    </div>
   
         </article>
       </div>
     </div>
     
-        <div class="component-footer-xgvp1f" data-suffix="xgvp1f">
+        <div class="component-footer-g5o6zh" data-suffix="g5o6zh">
             <footer>
                 <div class="container">
                     <p>Food Hygiene Ratings UK - Open Source Project</p>
