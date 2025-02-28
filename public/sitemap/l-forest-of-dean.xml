@@ -49,13 +49,13 @@
     <loc>https://food-hygiene-uk.github.io/e/appledown-house-1798216</loc>
   </url>
   <url>
-    <loc>https://food-hygiene-uk.github.io/e/aramark-hartpury-enquire-cafe-1740018</loc>
-  </url>
-  <url>
-    <loc>https://food-hygiene-uk.github.io/e/aramark-hartpury-graze-1740019</loc>
-  </url>
-  <url>
     <loc>https://food-hygiene-uk.github.io/e/aramark-hartpury-mobile-van-1752634</loc>
+  </url>
+  <url>
+    <loc>https://food-hygiene-uk.github.io/e/aramark-at-hartpury-graze-1740019</loc>
+  </url>
+  <url>
+    <loc>https://food-hygiene-uk.github.io/e/aramark-hartpury-enquire-cafe-1740018</loc>
   </url>
   <url>
     <loc>https://food-hygiene-uk.github.io/e/aramark-ltd-forest-high-school-1210319</loc>
@@ -239,6 +239,9 @@
   </url>
   <url>
     <loc>https://food-hygiene-uk.github.io/e/brockweirhewelsfield-shop-and-cafe-10723</loc>
+  </url>
+  <url>
+    <loc>https://food-hygiene-uk.github.io/e/brook-farm-bakery-1803230</loc>
   </url>
   <url>
     <loc>https://food-hygiene-uk.github.io/e/brook-lodge-voyage-1-limited-656958</loc>
@@ -560,9 +563,6 @@
   </url>
   <url>
     <loc>https://food-hygiene-uk.github.io/e/crown-inn-1702204</loc>
-  </url>
-  <url>
-    <loc>https://food-hygiene-uk.github.io/e/crows-nest-1260830</loc>
   </url>
   <url>
     <loc>https://food-hygiene-uk.github.io/e/curry-leaf-29220</loc>
@@ -1070,6 +1070,9 @@
   </url>
   <url>
     <loc>https://food-hygiene-uk.github.io/e/littledean-house-hotel-34600</loc>
+  </url>
+  <url>
+    <loc>https://food-hygiene-uk.github.io/e/loaf-latte-1803226</loc>
   </url>
   <url>
     <loc>https://food-hygiene-uk.github.io/e/lotus-cantonese-restaurant-10928</loc>
@@ -2110,6 +2113,9 @@
     <loc>https://food-hygiene-uk.github.io/e/vegantarian-foods-1525022</loc>
   </url>
   <url>
+    <loc>https://food-hygiene-uk.github.io/e/vics-bargin-cakes-and-biscuits-1803227</loc>
+  </url>
+  <url>
     <loc>https://food-hygiene-uk.github.io/e/victoria-centre-10213</loc>
   </url>
   <url>
@@ -2189,5 +2195,8 @@
   </url>
   <url>
     <loc>https://food-hygiene-uk.github.io/e/zaza-pizza-1702205</loc>
+  </url>
+  <url>
+    <loc>https://food-hygiene-uk.github.io/e/zio-toto-ice-cream-1803228</loc>
   </url>
 </urlset>
