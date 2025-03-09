@@ -9,206 +9,215 @@
     <link rel="canonical" href="/l/" />
     <script>
       "use strict";
-      {
-        const updateColorScheme = (mql) => {
-          const prefers = mql?.matches ? 'dark' : 'light';
-          const setting = localStorage.getItem('color-scheme');
+{
+  const updateColorScheme = (mql) => {
+    const prefers = mql?.matches ? "dark" : "light";
+    const setting = localStorage.getItem("color-scheme");
 
-          document.documentElement.setAttribute("data-color-scheme", setting ?? prefers);
-        }
-        const colorSchemeMQL = globalThis?.matchMedia?.('(prefers-color-scheme:dark)')
-        colorSchemeMQL.addEventListener('change', function(e) { updateColorScheme(e);});
-        updateColorScheme(colorSchemeMQL);
-      }
+    document.documentElement.setAttribute(
+      "data-color-scheme",
+      setting ?? prefers,
+    );
+  };
+  const colorSchemeMQL = globalThis?.matchMedia?.(
+    "(prefers-color-scheme:dark)",
+  );
+  colorSchemeMQL.addEventListener("change", function (e) {
+    updateColorScheme(e);
+  });
+
+  updateColorScheme(colorSchemeMQL);
+}
+
     </script>
     <style>
-        
-            :root {
-              /* Information and background colors */
-              --primary-blue: #2c4c6b;
-              --light-blue: #f5f7fa;
-              --teal: #3c7b8e;
-              --grey: #687789;
-              --light-grey: #eef2f6;
-              --hygiene-green: #84be00;
-              
-              /* Call to action colors */
-              --cta-default: #9e66ff;
+        :root {
+  /* Information and background colors */
+  --primary-blue: #2c4c6b;
+  --light-blue: #f5f7fa;
+  --teal: #3c7b8e;
+  --grey: #687789;
+  --light-grey: #eef2f6;
+  --hygiene-green: #84be00;
 
-              --body-background: var(--light-blue);
-              --text-color: #000;
-              --header-background-color: #f8f9fa;
-              --header-text-color: var(--text-color);
-              --header-rule-color: #e0e0e0;
-              --background-highlight-color: #e5e8f1;
-              --text-highlight-color: var(--text-color);
-            }
+  /* Call to action colors */
+  --cta-default: #9e66ff;
 
-            @media (not (scripting: none)) or (prefers-color-scheme: dark) {
-              html:not([data-color-scheme='light']) {
-                --body-background: #000;
-                --text-color: #757575;
-                --header-background-color: #1f2021;
-                --header-text-color: #dfdfdf;
-                --header-rule-color: #383838;
-                --background-highlight-color: var(--light-blue);
-                --text-highlight-color: var(--text-color);
-              }
-            } 
-            
-            body {
-              font-family: system-ui, -apple-system, sans-serif;
-              line-height: 1.6;
-              margin: 0;
-              padding: 0;
-              background-color: var(--body-background);
-              color: var(--text-color);
-            }
+  --body-background: var(--light-blue);
+  --text-color: #000;
+  --header-background-color: #f8f9fa;
+  --header-text-color: var(--text-color);
+  --header-rule-color: #e0e0e0;
+  --background-highlight-color: #e5e8f1;
+  --text-highlight-color: var(--text-color);
+}
 
-            a {
-              color: #0052a3;
-              text-decoration: none;
-            }
+@media (not (scripting: none)) or (prefers-color-scheme: dark) {
+  html:not([data-color-scheme="light"]) {
+    --body-background: #000;
+    --text-color: #757575;
+    --header-background-color: #1f2021;
+    --header-text-color: #dfdfdf;
+    --header-rule-color: #383838;
+    --background-highlight-color: var(--light-blue);
+    --text-highlight-color: var(--text-color);
+  }
+}
 
-            a:hover {
-              text-decoration: underline;
-            }
-                
-            .container {
-              max-width: 1200px;
-              margin: 0 auto;
-              padding: 0 2rem;
-            }
-        
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-background);
+  color: var(--text-color);
+}
+
+a {
+  color: #0052a3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
         .authorities {
-            background-color: white;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-        .authorities h2 {
-            color: var(--primary-blue);
-        }
+  h2 {
+    color: var(--primary-blue);
+  }
 
-        .authorities p {
-            color: var(--grey);
-        }
+  p {
+    color: var(--grey);
+  }
+}
 
-        .region-group {
-            margin-top: 2rem;
-            margin-top: 2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.region-group {
+  margin-top: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-        .region-group h3 {
-            color: var(--teal);
-            margin-bottom: 1rem;
-        }
+.region-group h3 {
+  color: var(--teal);
+  margin-bottom: 1rem;
+}
 
-        .authority-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1rem;
-            width: 100%;
-            max-width: 1200px;
-        }
+.authority-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+}
 
-        .authority-link {
-            background-color: var(--light-grey);
-            padding: 1rem;
-            border-radius: 4px;
-            text-decoration: none;
-            color: var(--teal);
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            border: 2px solid transparent;
-            text-align: center;
-        }
+.authority-link {
+  background-color: var(--light-grey);
+  padding: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--teal);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  text-align: center;
+}
 
-        .authority-link:hover {
-            transform: translateY(-2px);
-            border-color: var(--teal);
-            background-color: white;
-        }
-        
-        .component-header-ct9m2i {
-            display: contents;
+.authority-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--teal);
+  background-color: white;
+}
 
-            header {
-                background-color: var(--header-background-color);
-                padding: 1rem 2rem;
-                border-bottom: 1px solid var(--header-rule-color);
+        .component-header-g5o6zh {
+  display: contents;
 
-                overflow: hidden;
-            }
+  header {
+    background-color: var(--header-background-color);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--header-rule-color);
 
-            .navbar-ct9m2i {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
+    overflow: hidden;
+  }
 
-            .logo-ct9m2i img {
-                height: 50px;
-            }
+  .navbar-g5o6zh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-            .nav-links-ct9m2i {
-                list-style: none;
-                display: flex;
-                gap: 1.5rem;
+  .logo-g5o6zh img {
+    height: 50px;
+  }
 
-                li {
-                    display: inline;
+  .nav-links-g5o6zh {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
 
-                    a {
-                        text-decoration: none;
-                        color: var(--header-text-color);
-                        font-weight: bold;
-                    }
-                }
-            }
-        }
-        
-        .component-footer-6c0tbc {
-            display: contents;
+    li {
+      display: inline;
 
-            footer {
-                background-color: var(--primary-blue);
-                color: var(--light-blue);
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-                text-align: center;
-                margin-top: 2rem;
+      a {
+        text-decoration: none;
+        color: var(--header-text-color);
+        font-weight: bold;
+      }
+    }
+  }
+}
 
-                a {
-                    color: white;
-                    text-decoration: none;
-                    border-bottom: 1px solid rgba(255,255,255,0.3);
-                    transition: border-color 0.3s;
+        .component-footer-cd4ue {
+  display: contents;
 
-                    &:hover {
-                        border-color: white;
-                    }
-                }
-            }
-        }
+  footer {
+    background-color: var(--primary-blue);
+    color: var(--light-blue);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      transition: border-color 0.3s;
+
+      &:hover {
+        border-color: white;
+      }
+    }
+  }
+}
+
     </style>
   </head>
     
 <body>
     
-        <div class="component-header-ct9m2i" data-suffix="ct9m2i">
+        <div class="component-header-g5o6zh" data-suffix="g5o6zh">
             <header class="container">
-                <nav class="navbar-ct9m2i">
-                    <div class="logo-ct9m2i">
+                <nav class="navbar-g5o6zh">
+                    <div class="logo-g5o6zh">
                         <a href="/">
                             <img src="/images/logo.svg" alt="Site Logo">
                         </a>
                     </div>
-                    <ul class="nav-links-ct9m2i">
+                    <ul class="nav-links-g5o6zh">
                         <li><a href="/about/">About</a></li>
                         <li><a href="/l/">Regions</a></li>
                         <li><a href="/search/">Search</a></li>
@@ -217,13 +226,14 @@
             </header>
         </div>
 
-    <section class="container">
-        <section class="authorities">
-            <h2>Local Authorities of the United Kingdom</h2>
-            <p>View food hygiene ratings for local authorities in the UK.</p>
-            <p>Select a local authority to view ratings in that area:</p>
-            <div>
-                
+    <div class="content-buzt5">
+      <section class="container">
+          <section class="authorities">
+              <h2>Local Authorities of the United Kingdom</h2>
+              <p>View food hygiene ratings for local authorities in the UK.</p>
+              <p>Select a local authority to view ratings in that area:</p>
+              <div>
+                  
         <div class="region-group">
           <h3>East of England</h3>
           <div class="authority-grid">
@@ -1385,12 +1395,13 @@
           </a>
           </div>
         </div>
-            </div>
-        </section>
-    </section>
+              </div>
+          </section>
+      </section>
+    </div>
 
     
-        <div class="component-footer-6c0tbc" data-suffix="6c0tbc">
+        <div class="component-footer-cd4ue" data-suffix="cd4ue">
             <footer>
                 <div class="container">
                     <p>Food Hygiene Ratings UK - Open Source Project</p>

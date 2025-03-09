@@ -10,252 +10,261 @@
     <link rel="canonical" href="https://food-hygiene-uk.github.io/l/hull-and-goole-port" />
     <script>
       "use strict";
-      {
-        const updateColorScheme = (mql) => {
-          const prefers = mql?.matches ? 'dark' : 'light';
-          const setting = localStorage.getItem('color-scheme');
+{
+  const updateColorScheme = (mql) => {
+    const prefers = mql?.matches ? "dark" : "light";
+    const setting = localStorage.getItem("color-scheme");
 
-          document.documentElement.setAttribute("data-color-scheme", setting ?? prefers);
-        }
-        const colorSchemeMQL = globalThis?.matchMedia?.('(prefers-color-scheme:dark)')
-        colorSchemeMQL.addEventListener('change', function(e) { updateColorScheme(e);});
-        updateColorScheme(colorSchemeMQL);
-      }
+    document.documentElement.setAttribute(
+      "data-color-scheme",
+      setting ?? prefers,
+    );
+  };
+  const colorSchemeMQL = globalThis?.matchMedia?.(
+    "(prefers-color-scheme:dark)",
+  );
+  colorSchemeMQL.addEventListener("change", function (e) {
+    updateColorScheme(e);
+  });
+
+  updateColorScheme(colorSchemeMQL);
+}
+
     </script>
     <style>
-        
-            :root {
-              /* Information and background colors */
-              --primary-blue: #2c4c6b;
-              --light-blue: #f5f7fa;
-              --teal: #3c7b8e;
-              --grey: #687789;
-              --light-grey: #eef2f6;
-              --hygiene-green: #84be00;
-              
-              /* Call to action colors */
-              --cta-default: #9e66ff;
+        :root {
+  /* Information and background colors */
+  --primary-blue: #2c4c6b;
+  --light-blue: #f5f7fa;
+  --teal: #3c7b8e;
+  --grey: #687789;
+  --light-grey: #eef2f6;
+  --hygiene-green: #84be00;
 
-              --body-background: var(--light-blue);
-              --text-color: #000;
-              --header-background-color: #f8f9fa;
-              --header-text-color: var(--text-color);
-              --header-rule-color: #e0e0e0;
-              --background-highlight-color: #e5e8f1;
-              --text-highlight-color: var(--text-color);
-            }
+  /* Call to action colors */
+  --cta-default: #9e66ff;
 
-            @media (not (scripting: none)) or (prefers-color-scheme: dark) {
-              html:not([data-color-scheme='light']) {
-                --body-background: #000;
-                --text-color: #757575;
-                --header-background-color: #1f2021;
-                --header-text-color: #dfdfdf;
-                --header-rule-color: #383838;
-                --background-highlight-color: var(--light-blue);
-                --text-highlight-color: var(--text-color);
-              }
-            } 
-            
-            body {
-              font-family: system-ui, -apple-system, sans-serif;
-              line-height: 1.6;
-              margin: 0;
-              padding: 0;
-              background-color: var(--body-background);
-              color: var(--text-color);
-            }
+  --body-background: var(--light-blue);
+  --text-color: #000;
+  --header-background-color: #f8f9fa;
+  --header-text-color: var(--text-color);
+  --header-rule-color: #e0e0e0;
+  --background-highlight-color: #e5e8f1;
+  --text-highlight-color: var(--text-color);
+}
 
-            a {
-              color: #0052a3;
-              text-decoration: none;
-            }
+@media (not (scripting: none)) or (prefers-color-scheme: dark) {
+  html:not([data-color-scheme="light"]) {
+    --body-background: #000;
+    --text-color: #757575;
+    --header-background-color: #1f2021;
+    --header-text-color: #dfdfdf;
+    --header-rule-color: #383838;
+    --background-highlight-color: var(--light-blue);
+    --text-highlight-color: var(--text-color);
+  }
+}
 
-            a:hover {
-              text-decoration: underline;
-            }
-                
-            .container {
-              max-width: 1200px;
-              margin: 0 auto;
-              padding: 0 2rem;
-            }
-        
-    .content-cd4ue {
-        display: contents;
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-background);
+  color: var(--text-color);
+}
 
-      h1 {
-        font-size: 2em;
-        border-bottom: 1px solid var(--hygiene-green);
+a {
+  color: #0052a3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+        .content-ywuw5j {
+  display: contents;
+
+  h1 {
+    font-size: 2em;
+    border-bottom: 1px solid var(--hygiene-green);
+  }
+
+  h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  label[for="filter-input"] {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  #filter-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .establishment {
+    padding: 1rem 0;
+    display: block;
+
+    &.hidden {
+      display: none;
+    }
+
+    /* Link the entire establishment to the details page */
+    position: relative;
+
+    .details-link {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      text-indent: -9999px; /* Hide the text inside the link */
+
+      &:hover {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: right;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
       }
+    }
 
-      h3 {
-        font-size: 1em;
-        font-weight: bold;
-        margin-top: 0;
-      }
+    &:has(a:hover) {
+      background-color: var(--background-highlight-color);
+      color: var(--text-highlight-color);
+      margin-left: -1rem;
+      margin-right: -1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      border-radius: 9px;
+    }
+  }
 
-      label[for="filter-input"] {
-        display: block;
-        margin-bottom: 0.5rem;
-      }
-      #filter-input {
-        width: 100%;
-        padding: 0.5rem;
-        margin-bottom: 1rem;
-      }
+  .map-link {
+    position: relative;
+    z-index: 2;
+  }
 
-      .establishment {
-        padding: 1rem 0;
-        display: block;
+  hr {
+    border: none;
+    border-top: 1px solid var(--hygiene-green);
 
-        &.hidden {
-          display: none;
-        }
+    /* 
+      Hide by default
+     */
+    display: none;
+  }
 
-        /* Link the entire establishment to the details page */
-        position: relative;
+  /*
+    Only show the hr between two visible establishments
+    i.e. for establishments that are not hidden show the hr after it
+    but only if that hr has another establishment after it that is not hidden
+   */
+  .establishment:not(.hidden) ~ hr:has(+ .establishment:not(.hidden)) {
+    display: block;
+  }
 
-        .details-link {
-          display: block;
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          z-index: 1;
-          text-indent: -9999px; /* Hide the text inside the link */
-
-          &:hover {
-            display: flex;
-            flex-direction: column-reverse;
-            text-align: right;
-            padding-right: 1rem;
-            padding-bottom: 1rem;
-          }
-        }
-
-        &:has(a:hover) {
-          background-color: var(--background-highlight-color);
-          color: var(--text-highlight-color);
-          margin-left: -1rem;
-          margin-right: -1rem;
-          padding-left: 1rem;
-          padding-right: 1rem;
-          border-radius: 9px;
-        }
-      }
-
-      .map-link {
-        position: relative;
-        z-index: 2;
-      }
-
-      hr {
-        border: none;
-        border-top: 1px solid var(--hygiene-green);
-
-        /* 
-          Hide by default
-         */
-        display: none;
-      }
-
-      /*
-        Only show the hr between two visible establishments
-        i.e. for establishments that are not hidden show the hr after it
-        but only if that hr has another establishment after it that is not hidden
-       */
-      .establishment:not(.hidden) ~ hr:has(+ .establishment:not(.hidden)) {
-        display: block;
-      }
-      
-      
-        .component-address-cd4ue {
-            display: contents;
-
-            address {
-              font-style: normal;
-            }
-        }
-    }  
   
-        
-        .component-header-xgvp1f {
-            display: contents;
+.component-address-9sv7z1 {
+  display: contents;
 
-            header {
-                background-color: var(--header-background-color);
-                padding: 1rem 2rem;
-                border-bottom: 1px solid var(--header-rule-color);
+  address {
+    font-style: normal;
+  }
+}
 
-                overflow: hidden;
-            }
+}
 
-            .navbar-xgvp1f {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
+        .component-header-145qa {
+  display: contents;
 
-            .logo-xgvp1f img {
-                height: 50px;
-            }
+  header {
+    background-color: var(--header-background-color);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--header-rule-color);
 
-            .nav-links-xgvp1f {
-                list-style: none;
-                display: flex;
-                gap: 1.5rem;
+    overflow: hidden;
+  }
 
-                li {
-                    display: inline;
+  .navbar-145qa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-                    a {
-                        text-decoration: none;
-                        color: var(--header-text-color);
-                        font-weight: bold;
-                    }
-                }
-            }
-        }
-        
-        .component-footer-g5o6zh {
-            display: contents;
+  .logo-145qa img {
+    height: 50px;
+  }
 
-            footer {
-                background-color: var(--primary-blue);
-                color: var(--light-blue);
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-                text-align: center;
-                margin-top: 2rem;
+  .nav-links-145qa {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
 
-                a {
-                    color: white;
-                    text-decoration: none;
-                    border-bottom: 1px solid rgba(255,255,255,0.3);
-                    transition: border-color 0.3s;
+    li {
+      display: inline;
 
-                    &:hover {
-                        border-color: white;
-                    }
-                }
-            }
-        }
+      a {
+        text-decoration: none;
+        color: var(--header-text-color);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+        .component-footer-cq1k6e {
+  display: contents;
+
+  footer {
+    background-color: var(--primary-blue);
+    color: var(--light-blue);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      transition: border-color 0.3s;
+
+      &:hover {
+        border-color: white;
+      }
+    }
+  }
+}
+
     </style>
   </head>
     
   <body>
     
-        <div class="component-header-xgvp1f" data-suffix="xgvp1f">
+        <div class="component-header-145qa" data-suffix="145qa">
             <header class="container">
-                <nav class="navbar-xgvp1f">
-                    <div class="logo-xgvp1f">
+                <nav class="navbar-145qa">
+                    <div class="logo-145qa">
                         <a href="/">
                             <img src="/images/logo.svg" alt="Site Logo">
                         </a>
                     </div>
-                    <ul class="nav-links-xgvp1f">
+                    <ul class="nav-links-145qa">
                         <li><a href="/about/">About</a></li>
                         <li><a href="/l/">Regions</a></li>
                         <li><a href="/search/">Search</a></li>
@@ -263,7 +272,7 @@
                 </nav>
             </header>
         </div>
-    <div class="content-cd4ue">
+    <div class="content-ywuw5j">
       <div class="container">
         <article class="local-authority" itemscope itemtype="https://schema.org/GovernmentOrganization">
           <h1 class="name" itemprop="name">Hull and Goole Port</h1>
@@ -278,7 +287,7 @@
       <div class="establishment" data-establishment-id="1073404">
         <h3>BaxterStorey Ltd</h3>
         
-        <div class="component-address-cd4ue" data-suffix="cd4ue">
+        <div class="component-address-9sv7z1" data-suffix="9sv7z1">
             
         <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
             <span>Siemens Blade Factory</span><br><span>Alexandra Dock</span><br><span>Hull</span><br><span itemprop="postalCode">HU9 1TA</span>
@@ -297,7 +306,7 @@
       <div class="establishment" data-establishment-id="1073403">
         <h3>Humberside Offshore Training Association Ltd</h3>
         
-        <div class="component-address-cd4ue" data-suffix="cd4ue">
+        <div class="component-address-9sv7z1" data-suffix="9sv7z1">
             
         <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
             <span>Humberside Offshore Training</span><br><span>Albert Dock</span><br><span>Hull</span><br><span itemprop="postalCode">HU3 1AB</span>
@@ -316,7 +325,7 @@
       <div class="establishment" data-establishment-id="1541779">
         <h3>Olive Catering Ltd</h3>
         
-        <div class="component-address-cd4ue" data-suffix="cd4ue">
+        <div class="component-address-9sv7z1" data-suffix="9sv7z1">
             <div>No address information available</div>
         </div>
     
@@ -330,7 +339,7 @@
       <div class="establishment" data-establishment-id="1073399">
         <h3>Pride of Hull</h3>
         
-        <div class="component-address-cd4ue" data-suffix="cd4ue">
+        <div class="component-address-9sv7z1" data-suffix="9sv7z1">
             
         <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
             <span>Terminal 1</span><br><span>King George Dock</span><br><span>Hedon Road</span><br><span>Hull</span><br><span itemprop="postalCode">HU9 5QR</span>
@@ -349,7 +358,7 @@
       <div class="establishment" data-establishment-id="1073401">
         <h3>Pride of Rotterdam</h3>
         
-        <div class="component-address-cd4ue" data-suffix="cd4ue">
+        <div class="component-address-9sv7z1" data-suffix="9sv7z1">
             
         <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
             <span>Terminal 1</span><br><span>King George Dock</span><br><span>Hedon Road</span><br><span>Hull</span><br><span itemprop="postalCode">HU9 5QR</span>
@@ -371,7 +380,7 @@
     <script type="module">
       // Cache DOM queries and use more specific selectors
 const searchInput = document.querySelector(
-  ".content-cd4ue #filter-input",
+  ".content-ywuw5j #filter-input",
 );
 const container = document.querySelector(".establishments-container");
 
@@ -417,7 +426,10 @@ function parseSearchTerms(searchTerm) {
   const terms = [];
   let match;
   while ((match = regex.exec(searchTerm)) !== null) {
-    terms.push((match[1] || match[2]).toLowerCase());
+    let term = (match[1] || match[2]).toLowerCase();
+    // Remove stray quotes from beginning and end of the term
+    term = term.replace(/^"+|"+$/g, "");
+    terms.push(term);
   }
   return terms;
 }
@@ -528,7 +540,7 @@ searchInput.addEventListener(
 
     </script>
     
-        <div class="component-footer-g5o6zh" data-suffix="g5o6zh">
+        <div class="component-footer-cq1k6e" data-suffix="cq1k6e">
             <footer>
                 <div class="container">
                     <p>Food Hygiene Ratings UK - Open Source Project</p>

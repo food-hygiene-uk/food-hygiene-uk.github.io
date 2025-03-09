@@ -9,229 +9,241 @@
     <link rel="canonical" href="https://food-hygiene-uk.github.io/" />
     <script>
       "use strict";
-      {
-        const updateColorScheme = (mql) => {
-          const prefers = mql?.matches ? 'dark' : 'light';
-          const setting = localStorage.getItem('color-scheme');
+{
+  const updateColorScheme = (mql) => {
+    const prefers = mql?.matches ? "dark" : "light";
+    const setting = localStorage.getItem("color-scheme");
 
-          document.documentElement.setAttribute("data-color-scheme", setting ?? prefers);
-        }
-        const colorSchemeMQL = globalThis?.matchMedia?.('(prefers-color-scheme:dark)')
-        colorSchemeMQL.addEventListener('change', function(e) { updateColorScheme(e);});
-        updateColorScheme(colorSchemeMQL);
-      }
+    document.documentElement.setAttribute(
+      "data-color-scheme",
+      setting ?? prefers,
+    );
+  };
+  const colorSchemeMQL = globalThis?.matchMedia?.(
+    "(prefers-color-scheme:dark)",
+  );
+  colorSchemeMQL.addEventListener("change", function (e) {
+    updateColorScheme(e);
+  });
+
+  updateColorScheme(colorSchemeMQL);
+}
+
     </script>
     <style>
-        
-            :root {
-              /* Information and background colors */
-              --primary-blue: #2c4c6b;
-              --light-blue: #f5f7fa;
-              --teal: #3c7b8e;
-              --grey: #687789;
-              --light-grey: #eef2f6;
-              --hygiene-green: #84be00;
-              
-              /* Call to action colors */
-              --cta-default: #9e66ff;
+        :root {
+  /* Information and background colors */
+  --primary-blue: #2c4c6b;
+  --light-blue: #f5f7fa;
+  --teal: #3c7b8e;
+  --grey: #687789;
+  --light-grey: #eef2f6;
+  --hygiene-green: #84be00;
 
-              --body-background: var(--light-blue);
-              --text-color: #000;
-              --header-background-color: #f8f9fa;
-              --header-text-color: var(--text-color);
-              --header-rule-color: #e0e0e0;
-              --background-highlight-color: #e5e8f1;
-              --text-highlight-color: var(--text-color);
-            }
+  /* Call to action colors */
+  --cta-default: #9e66ff;
 
-            @media (not (scripting: none)) or (prefers-color-scheme: dark) {
-              html:not([data-color-scheme='light']) {
-                --body-background: #000;
-                --text-color: #757575;
-                --header-background-color: #1f2021;
-                --header-text-color: #dfdfdf;
-                --header-rule-color: #383838;
-                --background-highlight-color: var(--light-blue);
-                --text-highlight-color: var(--text-color);
-              }
-            } 
-            
-            body {
-              font-family: system-ui, -apple-system, sans-serif;
-              line-height: 1.6;
-              margin: 0;
-              padding: 0;
-              background-color: var(--body-background);
-              color: var(--text-color);
-            }
+  --body-background: var(--light-blue);
+  --text-color: #000;
+  --header-background-color: #f8f9fa;
+  --header-text-color: var(--text-color);
+  --header-rule-color: #e0e0e0;
+  --background-highlight-color: #e5e8f1;
+  --text-highlight-color: var(--text-color);
+}
 
-            a {
-              color: #0052a3;
-              text-decoration: none;
-            }
+@media (not (scripting: none)) or (prefers-color-scheme: dark) {
+  html:not([data-color-scheme="light"]) {
+    --body-background: #000;
+    --text-color: #757575;
+    --header-background-color: #1f2021;
+    --header-text-color: #dfdfdf;
+    --header-rule-color: #383838;
+    --background-highlight-color: var(--light-blue);
+    --text-highlight-color: var(--text-color);
+  }
+}
 
-            a:hover {
-              text-decoration: underline;
-            }
-                
-            .container {
-              max-width: 1200px;
-              margin: 0 auto;
-              padding: 0 2rem;
-            }
-        
-    .hero-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0.7;
-        max-width: 500px;
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-background);
+  color: var(--text-color);
+}
+
+a {
+  color: #0052a3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+        .content-fptg0k {
+  display: contents;
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    max-width: 500px;
+  }
+
+  .hero-image > img {
+    max-width: 300px;
+    max-height: 300px;
+    transform: translateY(-25px);
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: center;
+    margin-top: -6rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    flex-direction: row;
+    text-align: center;
+    background: linear-gradient(180deg, #ffc2cb 0%, #fbe4e7 100%);
+    max-width: 100%;
+
+    @media screen and (max-width: 768px) {
+      & {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
     }
-    
-    .hero-image > img {
-        max-width: 300px;
-        max-height: 300px;
-        transform: translateY(-25px);
+  }
+
+  .left-side {
+    text-align: left;
+  }
+
+  .contribute {
+    background-color: white;
+    padding: 2rem 0;
+    margin-top: -3rem;
+    text-align: center;
+    border-radius: 8px;
+
+    @media screen and (max-width: 768px) {
+      & {
+        padding: 1rem 0;
+      }
     }
+  }
 
-    .main-content {
-        display: flex;
-        justify-content: center;
-        margin-top: -6rem;
-        padding-top: 8rem;
-        padding-bottom: 5rem;
-        flex-direction: row;
-        text-align: center;
-        background: linear-gradient(180deg, #ffc2cb 0%, #fbe4e7 100%);
-        max-width: 100%;
+  .contribute h2 {
+    color: var(--primary-blue);
+  }
 
-        @media screen and (max-width: 768px) { 
-            & {
-                flex-direction: column-reverse;
-                align-items: center;
-            }
-        }
-    }
+  .contribute p {
+    color: var(--grey);
+  }
 
-    .left-side {
-        text-align: left;
-    }
+  .cta-button {
+    display: inline-block;
+    background-color: var(--cta-default);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 1rem;
+    transition: background-color 0.3s;
+    font-weight: 500;
+  }
 
-    .contribute {
-        background-color: white;
-        padding: 2rem 0;
-        margin-top: -3rem;
-        text-align: center;
-        border-radius: 8px;
+  .cta-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+}
 
-        @media screen and (max-width: 768px) { 
-            & {
-                padding: 1rem 0;
-            }
-        }
-    }
+        .component-header-ct9m2i {
+  display: contents;
 
-    .contribute h2 {
-        color: var(--primary-blue);
-    }
+  header {
+    background-color: var(--header-background-color);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--header-rule-color);
 
-    .contribute p {
-        color: var(--grey);
-    }
+    overflow: hidden;
+  }
 
-    .cta-button {
-        display: inline-block;
-        background-color: var(--cta-default);
-        color: white;
-        padding: 1rem 2rem;
+  .navbar-ct9m2i {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-ct9m2i img {
+    height: 50px;
+  }
+
+  .nav-links-ct9m2i {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+    li {
+      display: inline;
+
+      a {
         text-decoration: none;
-        border-radius: 4px;
-        margin: 1rem;
-        transition: background-color 0.3s;
-        font-weight: 500;
+        color: var(--header-text-color);
+        font-weight: bold;
+      }
     }
+  }
+}
 
-    .cta-button:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 8px 15px rgba(0,0,0,.2);
+        .component-footer-6c0tbc {
+  display: contents;
+
+  footer {
+    background-color: var(--primary-blue);
+    color: var(--light-blue);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      transition: border-color 0.3s;
+
+      &:hover {
+        border-color: white;
+      }
     }
-    
-        
-        .component-header-qpdbi8 {
-            display: contents;
+  }
+}
 
-            header {
-                background-color: var(--header-background-color);
-                padding: 1rem 2rem;
-                border-bottom: 1px solid var(--header-rule-color);
-
-                overflow: hidden;
-            }
-
-            .navbar-qpdbi8 {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            .logo-qpdbi8 img {
-                height: 50px;
-            }
-
-            .nav-links-qpdbi8 {
-                list-style: none;
-                display: flex;
-                gap: 1.5rem;
-
-                li {
-                    display: inline;
-
-                    a {
-                        text-decoration: none;
-                        color: var(--header-text-color);
-                        font-weight: bold;
-                    }
-                }
-            }
-        }
-        
-        .component-footer-sucd9i {
-            display: contents;
-
-            footer {
-                background-color: var(--primary-blue);
-                color: var(--light-blue);
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-                text-align: center;
-                margin-top: 2rem;
-
-                a {
-                    color: white;
-                    text-decoration: none;
-                    border-bottom: 1px solid rgba(255,255,255,0.3);
-                    transition: border-color 0.3s;
-
-                    &:hover {
-                        border-color: white;
-                    }
-                }
-            }
-        }
     </style>
   </head>
     
 <body>
     
-        <div class="component-header-qpdbi8" data-suffix="qpdbi8">
+        <div class="component-header-ct9m2i" data-suffix="ct9m2i">
             <header class="container">
-                <nav class="navbar-qpdbi8">
-                    <div class="logo-qpdbi8">
+                <nav class="navbar-ct9m2i">
+                    <div class="logo-ct9m2i">
                         <a href="/">
                             <img src="/images/logo.svg" alt="Site Logo">
                         </a>
                     </div>
-                    <ul class="nav-links-qpdbi8">
+                    <ul class="nav-links-ct9m2i">
                         <li><a href="/about/">About</a></li>
                         <li><a href="/l/">Regions</a></li>
                         <li><a href="/search/">Search</a></li>
@@ -240,32 +252,34 @@
             </header>
         </div>
 
-    <main class="container main-content">
-        <div class="description">
-            <h2>Food Hygiene Ratings UK</h2>
-            <p>Feeling hungry? Check to make sure your food is as hygienic as you want it to be.</p>
-            <a href="/l/" class="cta-button">Browse By Region</a>
-            <a href="/search/" class="cta-button">Search</a>
-        </div>
-        <div class="hero-image">
-            <img src="/images/mascot.svg" alt="Cute chef mascot with chef's hat">
-        </div>
-    </main>
-
-    <section class="container">
-        <section class="contribute">
-            <h2>Open Source Project</h2>
-            <p>This is an open source project that aims to make food hygiene data more accessible.</p>
-            <p>Help us improve by contributing to the project:</p>
-            <div>
-                <a href="https://github.com/food-hygiene-uk/main-site-builder" class="cta-button">View on GitHub</a>
-                <a href="https://github.com/food-hygiene-uk/main-site-builder/contribute" class="cta-button">Contribute</a>
+    <div class="content-fptg0k">
+        <main class="container main-content">
+            <div class="description">
+                <h2>Food Hygiene Ratings UK</h2>
+                <p>Feeling hungry? Check to make sure your food is as hygienic as you want it to be.</p>
+                <a href="/l/" class="cta-button">Browse By Region</a>
+                <a href="/search/" class="cta-button">Search</a>
             </div>
+            <div class="hero-image">
+                <img src="/images/mascot.svg" alt="Cute chef mascot with chef's hat">
+            </div>
+        </main>
+
+        <section class="container">
+            <section class="contribute">
+                <h2>Open Source Project</h2>
+                <p>This is an open source project that aims to make food hygiene data more accessible.</p>
+                <p>Help us improve by contributing to the project:</p>
+                <div>
+                    <a href="https://github.com/food-hygiene-uk/main-site-builder" class="cta-button">View on GitHub</a>
+                    <a href="https://github.com/food-hygiene-uk/main-site-builder/contribute" class="cta-button">Contribute</a>
+                </div>
+            </section>
         </section>
-    </section>
+    </div>
 
     
-        <div class="component-footer-sucd9i" data-suffix="sucd9i">
+        <div class="component-footer-6c0tbc" data-suffix="6c0tbc">
             <footer>
                 <div class="container">
                     <p>Food Hygiene Ratings UK - Open Source Project</p>
