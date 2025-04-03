@@ -1,15 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Food Hygiene Ratings UK</title>
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="canonical" href="https://food-hygiene-uk.github.io/" />
-    <script>
-      "use strict";
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Food Hygiene Ratings UK</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://food-hygiene-uk.github.io/" />
+  <script type="importmap">
+    {
+      "imports": {
+        "components/": "/components/",
+        "scripts/": "/scripts/"
+      }
+    }
+  </script>
+  <script>
+    "use strict";
 {
   const updateColorScheme = (mql) => {
     const prefers = mql?.matches ? "dark" : "light";
@@ -30,9 +36,9 @@
   updateColorScheme(colorSchemeMQL);
 }
 
-    </script>
-    <style>
-        :root {
+  </script>
+  <style>
+    :root {
   /* Information and background colors */
   --primary-blue: #2c4c6b;
   --light-blue: #f5f7fa;
@@ -90,7 +96,7 @@ a:hover {
   padding: 0 2rem;
 }
 
-        .content-vg7ow {
+    .content-vg7ow {
   display: contents;
 
   article {
@@ -157,28 +163,29 @@ a:hover {
   }
 }
 
-        .component-header-y16cp8 {
+    .component-header-xgvp1f {
   display: contents;
 
   header {
     background-color: var(--header-background-color);
     padding: 1rem 2rem;
     border-bottom: 1px solid var(--header-rule-color);
+    position: relative;
 
     overflow: hidden;
   }
 
-  .navbar-y16cp8 {
+  .navbar-xgvp1f {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .logo-y16cp8 img {
+  .logo-xgvp1f img {
     height: 50px;
   }
 
-  .nav-links-y16cp8 {
+  .nav-links-xgvp1f {
     list-style: none;
     display: flex;
     gap: 1.5rem;
@@ -193,9 +200,89 @@ a:hover {
       }
     }
   }
+
+  /* Hamburger menu checkbox (hidden) */
+  .menu-toggle-xgvp1f {
+    display: none;
+  }
+
+  /* Hamburger icon */
+  .hamburger-xgvp1f {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .hamburger-xgvp1f span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--header-text-color);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .hamburger-xgvp1f {
+      display: flex;
+    }
+
+    .nav-links-xgvp1f {
+      position: fixed;
+      top: 84px; /* Ensures it doesn't cover the title bar */
+      right: -100%;
+      width: 100%;
+      height: calc(100vh - 84px);
+      flex-direction: column;
+      background-color: var(--header-background-color);
+      padding: 2rem;
+      transition: right 0.3s ease-in-out;
+      z-index: 5;
+      text-align: right;
+      gap: 2rem;
+
+      li {
+        display: block;
+        margin-bottom: 1.5rem;
+
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    /* Show menu when checkbox is checked */
+    .menu-toggle-xgvp1f:checked ~ .nav-links-xgvp1f {
+      right: 0;
+    }
+
+    /* Hamburger animation */
+    .menu-toggle-xgvp1f:checked
+      ~ .hamburger-xgvp1f
+      span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle-xgvp1f:checked
+      ~ .hamburger-xgvp1f
+      span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle-xgvp1f:checked
+      ~ .hamburger-xgvp1f
+      span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+  }
 }
 
-        .component-footer-6h83 {
+    .component-footer-g5o6zh {
   display: contents;
 
   footer {
@@ -219,27 +306,33 @@ a:hover {
   }
 }
 
-    </style>
-  </head>
-    
+  </style>
+</head>
+
   <body>
-    
-        <div class="component-header-y16cp8" data-suffix="y16cp8">
-            <header class="container">
-                <nav class="navbar-y16cp8">
-                    <div class="logo-y16cp8">
-                        <a href="/">
-                            <img src="/images/logo.svg" alt="Site Logo">
-                        </a>
-                    </div>
-                    <ul class="nav-links-y16cp8">
-                        <li><a href="/about/">About</a></li>
-                        <li><a href="/l/">Regions</a></li>
-                        <li><a href="/search/">Search</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
+    <div class="component-header-xgvp1f" data-suffix="xgvp1f">
+  <header class="container">
+    <nav class="navbar-xgvp1f">
+      <div class="logo-xgvp1f">
+        <a href="/">
+          <img src="/images/logo.svg" alt="Site Logo">
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle-xgvp1f" class="menu-toggle-xgvp1f">
+      <label for="menu-toggle-xgvp1f" class="hamburger-xgvp1f">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links-xgvp1f">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/l/">Regions</a></li>
+        <li><a href="/search/">Search</a></li>
+        <li><a href="/lists/">My Lists</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
     <div class="content-vg7ow">
       <div class="container">
         <article>
@@ -312,15 +405,14 @@ a:hover {
         </article>
       </div>
     </div>
-    
-        <div class="component-footer-6h83" data-suffix="6h83">
-            <footer>
-                <div class="container">
-                    <p>Food Hygiene Ratings UK - Open Source Project</p>
-                    <p>Data provided by local authorities across the UK</p>
-                    <a href="https://github.com/food-hygiene-uk/main-site-builder">GitHub Repository</a>
-                </div>
-            </footer>
-        </div>
+    <div class="component-footer-g5o6zh" data-suffix="g5o6zh">
+  <footer>
+    <div class="container">
+      <p>Food Hygiene Ratings UK - Open Source Project</p>
+      <p>Data provided by local authorities across the UK</p>
+      <a href="https://github.com/food-hygiene-uk/main-site-builder">GitHub Repository</a>
+    </div>
+  </footer>
+</div>
   </body>
 </html>

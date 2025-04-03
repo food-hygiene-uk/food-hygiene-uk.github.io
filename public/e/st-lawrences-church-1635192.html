@@ -1,15 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>St Lawrence's Church - Food Hygiene Ratings UK</title>
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="canonical" href="https://food-hygiene-uk.github.io/e/st-lawrences-church-1635192" />
-    <script>
-      "use strict";
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>St Lawrence's Church - Food Hygiene Ratings UK</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://food-hygiene-uk.github.io/e/st-lawrences-church-1635192" />
+  <script type="importmap">
+    {
+      "imports": {
+        "components/": "/components/",
+        "scripts/": "/scripts/"
+      }
+    }
+  </script>
+  <script>
+    "use strict";
 {
   const updateColorScheme = (mql) => {
     const prefers = mql?.matches ? "dark" : "light";
@@ -30,9 +36,9 @@
   updateColorScheme(colorSchemeMQL);
 }
 
-    </script>
-    <style>
-        :root {
+  </script>
+  <style>
+    :root {
   /* Information and background colors */
   --primary-blue: #2c4c6b;
   --light-blue: #f5f7fa;
@@ -90,7 +96,7 @@ a:hover {
   padding: 0 2rem;
 }
 
-        .content-qo9tve {
+    .content-cex67z {
   display: contents;
 
   .establishment {
@@ -165,7 +171,7 @@ a:hover {
   }
 
   
-.component-address-qpdbi8 {
+.component-address-cq1k6e {
   display: contents;
 
   address {
@@ -175,28 +181,29 @@ a:hover {
 
 }
 
-        .component-header-bo1sdt {
+    .component-header-ywuw5j {
   display: contents;
 
   header {
     background-color: var(--header-background-color);
     padding: 1rem 2rem;
     border-bottom: 1px solid var(--header-rule-color);
+    position: relative;
 
     overflow: hidden;
   }
 
-  .navbar-bo1sdt {
+  .navbar-ywuw5j {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .logo-bo1sdt img {
+  .logo-ywuw5j img {
     height: 50px;
   }
 
-  .nav-links-bo1sdt {
+  .nav-links-ywuw5j {
     list-style: none;
     display: flex;
     gap: 1.5rem;
@@ -211,9 +218,89 @@ a:hover {
       }
     }
   }
+
+  /* Hamburger menu checkbox (hidden) */
+  .menu-toggle-ywuw5j {
+    display: none;
+  }
+
+  /* Hamburger icon */
+  .hamburger-ywuw5j {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .hamburger-ywuw5j span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--header-text-color);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .hamburger-ywuw5j {
+      display: flex;
+    }
+
+    .nav-links-ywuw5j {
+      position: fixed;
+      top: 84px; /* Ensures it doesn't cover the title bar */
+      right: -100%;
+      width: 100%;
+      height: calc(100vh - 84px);
+      flex-direction: column;
+      background-color: var(--header-background-color);
+      padding: 2rem;
+      transition: right 0.3s ease-in-out;
+      z-index: 5;
+      text-align: right;
+      gap: 2rem;
+
+      li {
+        display: block;
+        margin-bottom: 1.5rem;
+
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    /* Show menu when checkbox is checked */
+    .menu-toggle-ywuw5j:checked ~ .nav-links-ywuw5j {
+      right: 0;
+    }
+
+    /* Hamburger animation */
+    .menu-toggle-ywuw5j:checked
+      ~ .hamburger-ywuw5j
+      span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle-ywuw5j:checked
+      ~ .hamburger-ywuw5j
+      span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle-ywuw5j:checked
+      ~ .hamburger-ywuw5j
+      span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+  }
 }
 
-        .component-footer-ea969k {
+    .component-footer-145qa {
   display: contents;
 
   footer {
@@ -237,104 +324,122 @@ a:hover {
   }
 }
 
-    </style>
-  </head>
-    
+  </style>
+</head>
+
   <body>
-    
-        <div class="component-header-bo1sdt" data-suffix="bo1sdt">
-            <header class="container">
-                <nav class="navbar-bo1sdt">
-                    <div class="logo-bo1sdt">
-                        <a href="/">
-                            <img src="/images/logo.svg" alt="Site Logo">
-                        </a>
-                    </div>
-                    <ul class="nav-links-bo1sdt">
-                        <li><a href="/about/">About</a></li>
-                        <li><a href="/l/">Regions</a></li>
-                        <li><a href="/search/">Search</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-    <div class="content-qo9tve">
+    <div class="component-header-ywuw5j" data-suffix="ywuw5j">
+  <header class="container">
+    <nav class="navbar-ywuw5j">
+      <div class="logo-ywuw5j">
+        <a href="/">
+          <img src="/images/logo.svg" alt="Site Logo">
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle-ywuw5j" class="menu-toggle-ywuw5j">
+      <label for="menu-toggle-ywuw5j" class="hamburger-ywuw5j">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links-ywuw5j">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/l/">Regions</a></li>
+        <li><a href="/search/">Search</a></li>
+        <li><a href="/lists/">My Lists</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+    <div class="content-cex67z">
       <div class="container">
         <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="1635192">
-          <h1 class="name" itemprop="name">St Lawrence's Church</h1>
+          <h1 class="name" itemprop="name">St Lawrence&#39;s Church</h1>
+
           <h2>Business Type</h2>
           <div itemprop="servesCuisine">Other catering premises</div>
+
           <h2>Rating</h2>
           <div>5 out of 5. Very Good</div>
           <img src="/images/fhrs/fhrs_5_en-gb.svg" alt="Food Hygiene Rating: 5 out of 5. Very Good" class="rating-image" itemprop="image">
+
+          <h2>Address</h2>
+          <div class="component-address-cq1k6e" data-suffix="cq1k6e">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>St Lawrence Church</span><br>          <span>Lower Church Road</span><br>          <span>Skellingthorpe</span><br>        <span itemprop="postalCode">LN6 5UZ</span>
+  </address>
+  <a href="https://geohack.toolforge.org/geohack.php?title=St%20Lawrence's%20Church&params=53.2379056_N_-0.6148601_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer" class="map-link">View on Map</a>
+</div>
+
+
           
-    <h2>Address</h2>
-    
-        <div class="component-address-qpdbi8" data-suffix="qpdbi8">
-            
-        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-            <span>St Lawrence Church</span><br><span>Lower Church Road</span><br><span>Skellingthorpe</span><br><span itemprop="postalCode">LN6 5UZ</span>
-        </address>
-        <a href="https://geohack.toolforge.org/geohack.php?title=St%20Lawrence's%20Church&params=53.2379056_N_-0.6148601_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer" class="map-link">View on Map</a>
-        
-        </div>
-    
-  
-          
-          
-  <h2>Rating Date</h2>
-  <time datetime="2023-09-27" itemprop="fhrsRatingDate">27 September 2023</time>
-  
-          
-      <h2>Score parts</h2>
-      <table class="scores">
-        <thead>
-          <th>Category</th>
-          <th>Score</th>
-          <th>Description</th>
-        </thead>
-        <tbody>
-        
-          <tr>
-            <td class="title">Hygiene</td>
-            <td class="score">Very good</td>
-            <td>High standard of compliance with statutory obligations and industry codes of recommended practice, conforms to accepted good practices in the trade. </td>
-          </tr>
-        
-          <tr>
-            <td class="title">Structural</td>
-            <td class="score">Very good</td>
-            <td>High standard of compliance with statutory obligations and industry codes of recommended practice, conforms to accepted good practices in the trade. </td>
-          </tr>
-        
-          <tr>
-            <td class="title">Confidence in Management</td>
-            <td class="score">Very good</td>
-            <td>High standard of compliance with statutory obligations and industry codes of recommended practice, conforms to accepted good practices in the trade. </td>
-          </tr>
-        
-        </tbody>
-      </table>
-      
-          
-    <h2>Local Authority</h2>
-    <div itemprop="department" itemscope itemtype="https://schema.org/GovernmentOrganization">
-      <span itemprop="name">North Kesteven</span><br>
-      <a href="http://www.n-kesteven.gov.uk" itemprop="url">http://www.n-kesteven.gov.uk</a>
-    </div>
-  
+
+          <h2>Rating Date</h2>
+          <time datetime="2023-09-27" itemprop="fhrsRatingDate">27 September 2023</time>
+
+          <h2>Score parts</h2>
+          <table class="scores">
+            <thead>
+              <th>Category</th>
+              <th>Score</th>
+              <th>Description</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Hygiene</td>
+                <td class="score">Very good</td>
+                <td>High standard of compliance with statutory obligations and industry codes of recommended practice, conforms to accepted good practices in the trade. </td>
+              </tr>
+              <tr>
+                <td class="title">Structural</td>
+                <td class="score">Very good</td>
+                <td>High standard of compliance with statutory obligations and industry codes of recommended practice, conforms to accepted good practices in the trade. </td>
+              </tr>
+              <tr>
+                <td class="title">Confidence in Management</td>
+                <td class="score">Very good</td>
+                <td>High standard of compliance with statutory obligations and industry codes of recommended practice, conforms to accepted good practices in the trade. </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Local Authority</h2>
+          <div itemprop="department" itemscope itemtype="https://schema.org/GovernmentOrganization">
+            <span itemprop="name">North Kesteven</span><br>
+            <a href="http://www.n-kesteven.gov.uk" itemprop="url">http://www.n-kesteven.gov.uk</a>
+          </div>
         </article>
       </div>
     </div>
-    
-        <div class="component-footer-ea969k" data-suffix="ea969k">
-            <footer>
-                <div class="container">
-                    <p>Food Hygiene Ratings UK - Open Source Project</p>
-                    <p>Data provided by local authorities across the UK</p>
-                    <a href="https://github.com/food-hygiene-uk/main-site-builder">GitHub Repository</a>
-                </div>
-            </footer>
-        </div>
+    <div class="component-footer-145qa" data-suffix="145qa">
+  <footer>
+    <div class="container">
+      <p>Food Hygiene Ratings UK - Open Source Project</p>
+      <p>Data provided by local authorities across the UK</p>
+      <a href="https://github.com/food-hygiene-uk/main-site-builder">GitHub Repository</a>
+    </div>
+  </footer>
+</div>
+    <script type="module">
+      import recentEstablishmentsService from '/scripts/recent-establishments-service.mjs';
+
+      document.addEventListener("DOMContentLoaded", () => {
+  // Find the establishment element and extract data
+  const establishmentElement = document.querySelector(".establishment");
+  if (!establishmentElement) return;
+
+  const establishmentId = establishmentElement.getAttribute(
+    "data-establishment-id",
+  );
+
+  if (!establishmentId) return;
+
+  // Add this establishment to the recently viewed list
+  recentEstablishmentsService.addEstablishment({
+    FHRSID: establishmentId,
+  });
+});
+
+    </script>
   </body>
 </html>

@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Hygiene Ratings UK</title>
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="canonical" href="https://food-hygiene-uk.github.io/" />
-    <script>
-      "use strict";
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Hygiene Ratings UK</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://food-hygiene-uk.github.io/" />
+  <script type="importmap">
+    {
+      "imports": {
+        "components/": "/components/",
+        "scripts/": "/scripts/"
+      }
+    }
+  </script>
+  <script>
+    "use strict";
 {
   const updateColorScheme = (mql) => {
     const prefers = mql?.matches ? "dark" : "light";
@@ -29,9 +36,9 @@
   updateColorScheme(colorSchemeMQL);
 }
 
-    </script>
-    <style>
-        :root {
+  </script>
+  <style>
+    :root {
   /* Information and background colors */
   --primary-blue: #2c4c6b;
   --light-blue: #f5f7fa;
@@ -89,7 +96,7 @@ a:hover {
   padding: 0 2rem;
 }
 
-        .content-fptg0k {
+    .content-bwf3u {
   display: contents;
 
   .hero-image {
@@ -169,28 +176,29 @@ a:hover {
   }
 }
 
-        .component-header-ct9m2i {
+    .component-header-bo1sdt {
   display: contents;
 
   header {
     background-color: var(--header-background-color);
     padding: 1rem 2rem;
     border-bottom: 1px solid var(--header-rule-color);
+    position: relative;
 
     overflow: hidden;
   }
 
-  .navbar-ct9m2i {
+  .navbar-bo1sdt {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .logo-ct9m2i img {
+  .logo-bo1sdt img {
     height: 50px;
   }
 
-  .nav-links-ct9m2i {
+  .nav-links-bo1sdt {
     list-style: none;
     display: flex;
     gap: 1.5rem;
@@ -205,9 +213,89 @@ a:hover {
       }
     }
   }
+
+  /* Hamburger menu checkbox (hidden) */
+  .menu-toggle-bo1sdt {
+    display: none;
+  }
+
+  /* Hamburger icon */
+  .hamburger-bo1sdt {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .hamburger-bo1sdt span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--header-text-color);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .hamburger-bo1sdt {
+      display: flex;
+    }
+
+    .nav-links-bo1sdt {
+      position: fixed;
+      top: 84px; /* Ensures it doesn't cover the title bar */
+      right: -100%;
+      width: 100%;
+      height: calc(100vh - 84px);
+      flex-direction: column;
+      background-color: var(--header-background-color);
+      padding: 2rem;
+      transition: right 0.3s ease-in-out;
+      z-index: 5;
+      text-align: right;
+      gap: 2rem;
+
+      li {
+        display: block;
+        margin-bottom: 1.5rem;
+
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    /* Show menu when checkbox is checked */
+    .menu-toggle-bo1sdt:checked ~ .nav-links-bo1sdt {
+      right: 0;
+    }
+
+    /* Hamburger animation */
+    .menu-toggle-bo1sdt:checked
+      ~ .hamburger-bo1sdt
+      span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle-bo1sdt:checked
+      ~ .hamburger-bo1sdt
+      span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle-bo1sdt:checked
+      ~ .hamburger-bo1sdt
+      span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+  }
 }
 
-        .component-footer-6c0tbc {
+    .component-footer-ea969k {
   display: contents;
 
   footer {
@@ -231,63 +319,68 @@ a:hover {
   }
 }
 
-    </style>
-  </head>
-    
-<body>
-    
-        <div class="component-header-ct9m2i" data-suffix="ct9m2i">
-            <header class="container">
-                <nav class="navbar-ct9m2i">
-                    <div class="logo-ct9m2i">
-                        <a href="/">
-                            <img src="/images/logo.svg" alt="Site Logo">
-                        </a>
-                    </div>
-                    <ul class="nav-links-ct9m2i">
-                        <li><a href="/about/">About</a></li>
-                        <li><a href="/l/">Regions</a></li>
-                        <li><a href="/search/">Search</a></li>
-                    </ul>
-                </nav>
-            </header>
+  </style>
+</head>
+
+  <body>
+    <div class="component-header-bo1sdt" data-suffix="bo1sdt">
+  <header class="container">
+    <nav class="navbar-bo1sdt">
+      <div class="logo-bo1sdt">
+        <a href="/">
+          <img src="/images/logo.svg" alt="Site Logo">
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle-bo1sdt" class="menu-toggle-bo1sdt">
+      <label for="menu-toggle-bo1sdt" class="hamburger-bo1sdt">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links-bo1sdt">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/l/">Regions</a></li>
+        <li><a href="/search/">Search</a></li>
+        <li><a href="/lists/">My Lists</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+    <div class="content-bwf3u">
+      <main class="container main-content">
+        <div class="description">
+          <h2>Food Hygiene Ratings UK</h2>
+          <p>Feeling hungry? Check to make sure your food is as hygienic as you want it to be.</p>
+          <a href="/l/" class="cta-button">Browse By Region</a>
+          <a href="/search/" class="cta-button">Search</a>
         </div>
+        <div class="hero-image">
+          <img src="/images/mascot.svg" alt="Cute chef mascot with chef's hat">
+        </div>
+      </main>
 
-    <div class="content-fptg0k">
-        <main class="container main-content">
-            <div class="description">
-                <h2>Food Hygiene Ratings UK</h2>
-                <p>Feeling hungry? Check to make sure your food is as hygienic as you want it to be.</p>
-                <a href="/l/" class="cta-button">Browse By Region</a>
-                <a href="/search/" class="cta-button">Search</a>
-            </div>
-            <div class="hero-image">
-                <img src="/images/mascot.svg" alt="Cute chef mascot with chef's hat">
-            </div>
-        </main>
-
-        <section class="container">
-            <section class="contribute">
-                <h2>Open Source Project</h2>
-                <p>This is an open source project that aims to make food hygiene data more accessible.</p>
-                <p>Help us improve by contributing to the project:</p>
-                <div>
-                    <a href="https://github.com/food-hygiene-uk/main-site-builder" class="cta-button">View on GitHub</a>
-                    <a href="https://github.com/food-hygiene-uk/main-site-builder/contribute" class="cta-button">Contribute</a>
-                </div>
-            </section>
+      <section class="container">
+        <section class="contribute">
+          <h2>Open Source Project</h2>
+          <p>This is an open source project that aims to make food hygiene data more accessible.</p>
+          <p>Help us improve by contributing to the project:</p>
+          <div>
+            <a href="https://github.com/food-hygiene-uk/main-site-builder" class="cta-button">View on GitHub</a>
+            <a href="https://github.com/food-hygiene-uk/main-site-builder/contribute" class="cta-button">Contribute</a>
+          </div>
         </section>
+      </section>
     </div>
 
-    
-        <div class="component-footer-6c0tbc" data-suffix="6c0tbc">
-            <footer>
-                <div class="container">
-                    <p>Food Hygiene Ratings UK - Open Source Project</p>
-                    <p>Data provided by local authorities across the UK</p>
-                    <a href="https://github.com/food-hygiene-uk/main-site-builder">GitHub Repository</a>
-                </div>
-            </footer>
-        </div>
-</body>
+    <div class="component-footer-ea969k" data-suffix="ea969k">
+  <footer>
+    <div class="container">
+      <p>Food Hygiene Ratings UK - Open Source Project</p>
+      <p>Data provided by local authorities across the UK</p>
+      <a href="https://github.com/food-hygiene-uk/main-site-builder">GitHub Repository</a>
+    </div>
+  </footer>
+</div>
+  </body>
 </html>

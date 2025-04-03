@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Details - Food Hygiene Ratings UK</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://food-hygiene-uk.github.io/lists/detail/" />
+  <script type="importmap">
+    {
+      "imports": {
+        "components/": "/components/",
+        "scripts/": "/scripts/"
+      }
+    }
+  </script>
+  <script>
+    "use strict";
+{
+  const updateColorScheme = (mql) => {
+    const prefers = mql?.matches ? "dark" : "light";
+    const setting = localStorage.getItem("color-scheme");
+
+    document.documentElement.setAttribute(
+      "data-color-scheme",
+      setting ?? prefers,
+    );
+  };
+  const colorSchemeMQL = globalThis?.matchMedia?.(
+    "(prefers-color-scheme:dark)",
+  );
+  colorSchemeMQL.addEventListener("change", function (e) {
+    updateColorScheme(e);
+  });
+
+  updateColorScheme(colorSchemeMQL);
+}
+
+  </script>
+  <style>
+    :root {
+  /* Information and background colors */
+  --primary-blue: #2c4c6b;
+  --light-blue: #f5f7fa;
+  --teal: #3c7b8e;
+  --grey: #687789;
+  --light-grey: #eef2f6;
+  --hygiene-green-rgb: 132, 190, 0;
+  --hygiene-green: rgb(var(--hygiene-green-rgb));
+
+  /* Call to action colors */
+  --cta-default: #9e66ff;
+
+  --body-background: var(--light-blue);
+  --text-color: #000;
+  --header-background-color: #f8f9fa;
+  --header-text-color: var(--text-color);
+  --header-rule-color: #e0e0e0;
+  --background-highlight-color: #e5e8f1;
+  --text-highlight-color: var(--text-color);
+}
+
+@media (not (scripting: none)) or (prefers-color-scheme: dark) {
+  html:not([data-color-scheme="light"]) {
+    --body-background: #000;
+    --text-color: #757575;
+    --header-background-color: #1f2021;
+    --header-text-color: #dfdfdf;
+    --header-rule-color: #383838;
+    --background-highlight-color: var(--light-blue);
+    --text-highlight-color: var(--text-color);
+  }
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-background);
+  color: var(--text-color);
+}
+
+a {
+  color: #0052a3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+    .content-unlqm {
+  display: contents;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5rem;
+    color: var(--hygiene-green);
+  }
+
+  .list-header {
+    margin-bottom: 30px;
+  }
+
+  .list-description {
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .back-button {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--hygiene-green);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .back-button:hover {
+    text-decoration: underline;
+  }
+
+  .loading-indicator {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-style: italic;
+  }
+
+  .empty-list-message, .error-message {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    color: #666;
+  }
+
+  .error-message {
+    border-left: 4px solid #ed1c24;
+  }
+
+  .empty-list-message a, .error-message a {
+    color: var(--hygiene-green);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .empty-list-message a:hover, .error-message a:hover {
+    text-decoration: underline;
+  }
+
+  /* Dark mode support */
+  @media (not (scripting: none)) or (prefers-color-scheme: dark) {
+    html:not([data-color-scheme="light"]) {
+      .list-description {
+        color: #aaa;
+      }
+
+      .loading-indicator {
+        color: #aaa;
+      }
+
+      .empty-list-message,
+      .error-message {
+        background-color: #333;
+        color: #ccc;
+      }
+    }
+  }
+
+  
+      .component-address-2809h {
+  display: contents;
+
+  address {
+    font-style: normal;
+  }
+}
+
+      .establishment-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.establishment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.establishment-content {
+  padding: 15px;
+}
+
+.establishment-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: var(--hygiene-green);
+}
+
+.establishment-type {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.establishment-details {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.establishment-rating {
+  margin-bottom: 10px;
+}
+
+.rating-date {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.view-details {
+  display: inline-block;
+  background-color: var(--hygiene-green);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.view-details:hover {
+  background-color: #005a30;
+}
+
+/* Rating badges */
+.rating-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.rating-5 {
+  background-color: #00a651;
+  color: white;
+}
+
+.rating-4 {
+  background-color: #8dc63f;
+  color: white;
+}
+
+.rating-3 {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.rating-2 {
+  background-color: #f7941d;
+  color: white;
+}
+
+.rating-1 {
+  background-color: #ed1c24;
+  color: white;
+}
+
+.rating-0 {
+  background-color: #ed1c24;
+  color: white;
+}
+
+/* Dark mode support */
+@media (not (scripting: none)) or (prefers-color-scheme: dark) {
+  html:not([data-color-scheme="light"]) {
+    .establishment-card {
+      background-color: #2d2d2d;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .establishment-type {
+      color: #bbb;
+    }
+
+    .establishment-details,
+    .rating-date {
+      color: #aaa;
+    }
+  }
+}
+
+      /* Make sure our element is visible and has appropriate styling */
+.establishment-list-component {
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+/* View toggle buttons */
+.view-toggle {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.toggle-button {
+  background-color: var(--hygiene-green);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.toggle-button.active {
+  background-color: #005a30;
+}
+
+.establishments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.establishments-list .establishment {
+  padding: 15px;
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.establishments-list .establishment h3 {
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--hygiene-green);
+}
+
+.establishments-list .establishment-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .establishments-list .establishment-details {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.establishments-list .business-type {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.establishments-list .viewed-time {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.establishments-list .details-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  text-indent: -9999px; /* Hide the text */
+}
+
+.establishments-list .establishment:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.establishments-list hr {
+  border: none;
+  border-top: 1px solid var(--hygiene-green);
+  margin: 0;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 40px;
+  text-align: center;
+}
+
+.pagination button.active {
+  background-color: var(--hygiene-green);
+  color: white;
+  border-color: var(--hygiene-green);
+}
+
+.pagination button:hover:not(.active) {
+  background-color: #e0e0e0;
+}
+
+/* Dark mode support */
+@media (not (scripting: none)) or (prefers-color-scheme: dark) {
+  html:not([data-color-scheme="light"]) {
+    .establishments-list .establishment {
+      background-color: #2d2d2d;
+      border-color: #444;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .establishments-list .business-type {
+      color: #bbb;
+    }
+
+    .establishments-list .viewed-time {
+      color: #aaa;
+    }
+
+    .pagination button {
+      background-color: #333;
+      border-color: #444;
+      color: #ddd;
+    }
+
+    .pagination button:hover:not(.active) {
+      background-color: #444;
+    }
+  }
+}
+
+    
+}
+
+    .component-header-97mkn {
+  display: contents;
+
+  header {
+    background-color: var(--header-background-color);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--header-rule-color);
+    position: relative;
+
+    overflow: hidden;
+  }
+
+  .navbar-97mkn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-97mkn img {
+    height: 50px;
+  }
+
+  .nav-links-97mkn {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+    li {
+      display: inline;
+
+      a {
+        text-decoration: none;
+        color: var(--header-text-color);
+        font-weight: bold;
+      }
+    }
+  }
+
+  /* Hamburger menu checkbox (hidden) */
+  .menu-toggle-97mkn {
+    display: none;
+  }
+
+  /* Hamburger icon */
+  .hamburger-97mkn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .hamburger-97mkn span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--header-text-color);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .hamburger-97mkn {
+      display: flex;
+    }
+
+    .nav-links-97mkn {
+      position: fixed;
+      top: 84px; /* Ensures it doesn't cover the title bar */
+      right: -100%;
+      width: 100%;
+      height: calc(100vh - 84px);
+      flex-direction: column;
+      background-color: var(--header-background-color);
+      padding: 2rem;
+      transition: right 0.3s ease-in-out;
+      z-index: 5;
+      text-align: right;
+      gap: 2rem;
+
+      li {
+        display: block;
+        margin-bottom: 1.5rem;
+
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    /* Show menu when checkbox is checked */
+    .menu-toggle-97mkn:checked ~ .nav-links-97mkn {
+      right: 0;
+    }
+
+    /* Hamburger animation */
+    .menu-toggle-97mkn:checked
+      ~ .hamburger-97mkn
+      span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle-97mkn:checked
+      ~ .hamburger-97mkn
+      span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle-97mkn:checked
+      ~ .hamburger-97mkn
+      span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+  }
+}
+
+    .component-footer-ucae4d {
+  display: contents;
+
+  footer {
+    background-color: var(--primary-blue);
+    color: var(--light-blue);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      transition: border-color 0.3s;
+
+      &:hover {
+        border-color: white;
+      }
+    }
+  }
+}
+
+  </style>
+</head>
+
+  <body>
+    <div class="component-header-97mkn" data-suffix="97mkn">
+  <header class="container">
+    <nav class="navbar-97mkn">
+      <div class="logo-97mkn">
+        <a href="/">
+          <img src="/images/logo.svg" alt="Site Logo">
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle-97mkn" class="menu-toggle-97mkn">
+      <label for="menu-toggle-97mkn" class="hamburger-97mkn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links-97mkn">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/l/">Regions</a></li>
+        <li><a href="/search/">Search</a></li>
+        <li><a href="/lists/">My Lists</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+    <div class="content-unlqm">
+      <div class="container">
+        <div class="list-header">
+          <h1 id="listTitle">Loading list...</h1>
+          <p id="listDescription" class="list-description"></p>
+          <a href="/lists/" class="back-button">← Back to Lists</a>
+        </div>
+
+        <div id="loading" class="loading-indicator">Loading establishments...</div>
+
+        <div id="establishmentsList" class="establishments-container" style="display: none;">
+          <!-- This will be populated via JavaScript -->
+        </div>
+
+        <div id="emptyList" class="empty-list-message" style="display: none;">
+          <p>This list doesn't have any establishments yet.</p>
+          <p>When you view establishment details, they'll automatically be added to your "Recent" list.</p>
+        </div>
+
+        <div id="errorMessage" class="error-message" style="display: none;">
+          <p>Sorry, we couldn't find the requested list.</p>
+          <p>Please return to the <a href="/lists/">Lists page</a> and try again.</p>
+        </div>
+      </div>
+    </div>
+    <div class="component-footer-ucae4d" data-suffix="ucae4d">
+  <footer>
+    <div class="container">
+      <p>Food Hygiene Ratings UK - Open Source Project</p>
+      <p>Data provided by local authorities across the UK</p>
+      <a href="https://github.com/food-hygiene-uk/main-site-builder">GitHub Repository</a>
+    </div>
+  </footer>
+</div>
+
+    <script type="module">
+      import { EstablishmentList } from "components/establishment-list/establishment-list.mjs";
+import recentEstablishmentsService from "scripts/recent-establishments-service.mjs";
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Get DOM elements
+  const listTitle = document.getElementById("listTitle");
+  const listDescription = document.getElementById("listDescription");
+  const establishmentsContainer = document.getElementById("establishmentsList");
+  const emptyListMessage = document.getElementById("emptyList");
+  const errorMessage = document.getElementById("errorMessage");
+  const loadingIndicator = document.getElementById("loading");
+
+  // Get list ID from URL
+  const urlParams = new URLSearchParams(globalThis.location.search);
+  const listId = urlParams.get("id") || "recent";
+
+  // Initialize the establishment list component with explicit defaultView
+  const establishmentList = new EstablishmentList({
+    container: establishmentsContainer,
+    loadingElement: loadingIndicator,
+    emptyElement: emptyListMessage,
+    errorElement: errorMessage,
+    pageSize: 10,
+    enableViewToggle: true,
+  });
+
+  // Function to load and display establishments from the specified list
+  async function loadEstablishments() {
+    // Show loading state
+    await establishmentList.loadEstablishments({ establishments: [] }, true);
+
+    // Initialize list info
+    let listInfo = { title: "", description: "" };
+    let establishments = [];
+
+    // Set list details based on ID
+    if (listId === "recent") {
+      listInfo = {
+        title: "Recent Establishments",
+        description: "Establishments you've recently viewed",
+      };
+
+      // Get recent establishments from service
+      establishments = recentEstablishmentsService.getRecentEstablishments();
+    } else {
+      // In the future, this would handle custom user lists
+      // For now, we'll just show an error for non-recent lists
+      establishmentList.showError("The requested list could not be found");
+      return;
+    }
+
+    // Update page title and description
+    listTitle.textContent = listInfo.title;
+    listDescription.textContent = listInfo.description;
+    document.title = `${listInfo.title} - Food Hygiene Ratings`;
+
+    // Make sure the container is visible before loading establishments
+    establishmentsContainer.style.display = "block";
+
+    // Simulate a short loading delay for better UX
+    setTimeout(async () => {
+      await establishmentList.loadEstablishments({
+        establishments: establishments,
+        totalResults: establishments.length,
+        currentPage: 1,
+        pageSize: 10,
+      });
+    }, 300);
+  }
+
+  // Load establishments when the page loads
+  loadEstablishments();
+});
+
+    </script>
+  </body>
+</html>
