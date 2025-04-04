@@ -3,9 +3,9 @@
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>List Details - Food Hygiene Ratings UK</title>
+  <title>Shared List - Food Hygiene Ratings UK</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="canonical" href="https://food-hygiene-uk.github.io/lists/detail/" />
+  <link rel="canonical" href="https://food-hygiene-uk.github.io/lists/shared/" />
   <script type="importmap">
     {
       "imports": {
@@ -887,33 +887,16 @@ a:hover {
     <div class="content-unlqm">
       <div class="container">
         <div class="list-header">
-          <h1 id="listTitle">Loading list...</h1>
-          <p id="listDescription" class="list-description"></p>
+          <h1 id="listTitle">Shared List</h1>
+          <p id="listDescription" class="list-description">Loading shared establishments...</p>
           <div class="list-actions">
-            <a href="/lists/" class="back-button">← Back to Lists</a>
-            <button id="shareButton" class="share-button" style="display: none;">
+            <button id="saveListButton" class="save-list-button" style="display: none;">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
-                <polyline points="16 6 12 2 8 6"></polyline>
-                <line x1="12" y1="2" x2="12" y2="15"></line>
+                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                <polyline points="7 3 7 8 15 8"></polyline>
               </svg>
-              Share List
-            </button>
-            <button id="clearButton" class="clear-list-button" style="display: none;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="3 6 5 6 21 6"></polyline>
-                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1-2-2h4a2 2 0 0 1-2 2v2"></path>
-              </svg>
-              Clear List
-            </button>
-            <button id="deleteButton" class="delete-list-button" style="display: none;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="3 6 5 6 21 6"></polyline>
-                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1-2-2h4a2 2 0 0 1-2 2v2"></path>
-                <line x1="10" y1="11" x2="10" y2="17"></line>
-                <line x1="14" y1="11" x2="14" y2="17"></line>
-              </svg>
-              Delete List
+              Save List
             </button>
           </div>
         </div>
@@ -925,24 +908,26 @@ a:hover {
         </div>
 
         <div id="emptyList" class="empty-list-message" style="display: none;">
-          <p>This list doesn't have any establishments yet.</p>
-          <p>When you view establishment details, they'll automatically be added to your "Recent" list.</p>
+          <p>This shared list doesn't have any establishments.</p>
+          <p>The link may be invalid or the establishments no longer exist.</p>
         </div>
 
         <div id="errorMessage" class="error-message" style="display: none;">
-          <p>Sorry, we couldn't find the requested list.</p>
-          <p>Please return to the <a href="/lists/">Lists page</a> and try again.</p>
+          <p>Sorry, we couldn't load the shared list.</p>
+          <p>Please check the URL and try again.</p>
         </div>
 
-        <div id="shareModal" class="share-modal" style="display: none;">
-          <div class="share-modal-content">
-            <h3>Share This List</h3>
-            <p>Copy this link to share your list:</p>
-            <div class="share-url-container">
-              <input type="text" id="shareUrl" readonly />
-              <button id="copyShareUrl">Copy</button>
+        <div id="saveModal" class="save-modal" style="display: none;">
+          <div class="save-modal-content">
+            <h3>Save This List</h3>
+            <p>Give this list a name to save it to your lists:</p>
+            <div class="save-form">
+              <input type="text" id="listNameInput" placeholder="Enter a name for this list" />
+              <div class="save-form-buttons">
+                <button id="confirmSaveButton" class="primary-button">Save</button>
+                <button id="cancelSaveButton" class="secondary-button">Cancel</button>
+              </div>
             </div>
-            <button id="closeShareModal" class="close-modal-button">Close</button>
           </div>
         </div>
       </div>
@@ -959,7 +944,13 @@ a:hover {
 
     <script type="module">
       import { EstablishmentList } from "components/establishment-list/establishment-list.mjs";
-import recentEstablishmentsService from "scripts/recent-establishments-service.mjs";
+
+// FHRS API Configuration
+const API_BASE = "https://api.ratings.food.gov.uk";
+const API_HEADERS = {
+  "accept": "application/json",
+  "x-api-version": "2",
+};
 
 // Storage key for saved lists
 const SAVED_LISTS_STORAGE_KEY = "saved-establishment-lists";
@@ -972,19 +963,49 @@ document.addEventListener("DOMContentLoaded", () => {
   const emptyListMessage = document.getElementById("emptyList");
   const errorMessage = document.getElementById("errorMessage");
   const loadingIndicator = document.getElementById("loading");
-  const shareButton = document.getElementById("shareButton");
-  const clearButton = document.getElementById("clearButton");
-  const deleteButton = document.getElementById("deleteButton");
-  const shareModal = document.getElementById("shareModal");
-  const shareUrlInput = document.getElementById("shareUrl");
-  const copyShareUrlButton = document.getElementById("copyShareUrl");
-  const closeShareModalButton = document.getElementById("closeShareModal");
+  const saveListButton = document.getElementById("saveListButton");
+  const saveModal = document.getElementById("saveModal");
+  const listNameInput = document.getElementById("listNameInput");
+  const confirmSaveButton = document.getElementById("confirmSaveButton");
+  const cancelSaveButton = document.getElementById("cancelSaveButton");
 
-  // Get list ID from URL
+  // Store loaded establishments for saving
+  let loadedEstablishments = [];
+
+  // Get shared list parameters from URL
   const urlParams = new URLSearchParams(globalThis.location.search);
-  const listId = urlParams.get("id") || "recent";
+  const sharedTitle = urlParams.get("title") || "Shared List";
 
-  // Initialize the establishment list component with explicit defaultView
+  /**
+   * Decodes a compact string representation back into an array of establishment IDs
+   *
+   * @param {string} encoded - The encoded string to decode
+   * @returns {Array<string>} Array of decoded establishment IDs
+   */
+  const decodeEstablishmentIds = (encoded) => {
+    try {
+      // Decode the base64 string
+      const jsonString = atob(encoded);
+
+      // Parse the JSON
+      const dataObj = JSON.parse(jsonString);
+
+      // Convert the base36 ids back to decimal
+      return dataObj.i.map((id) => parseInt(id, 36).toString());
+    } catch (error) {
+      console.error("Error decoding establishment IDs:", error);
+      return [];
+    }
+  };
+
+  // Get the encoded data and decode it
+  let establishmentIds = [];
+  if (urlParams.has("data")) {
+    const encodedData = urlParams.get("data");
+    establishmentIds = decodeEstablishmentIds(encodedData);
+  }
+
+  // Initialize the establishment list component
   const establishmentList = new EstablishmentList({
     container: establishmentsContainer,
     loadingElement: loadingIndicator,
@@ -994,297 +1015,248 @@ document.addEventListener("DOMContentLoaded", () => {
     enableViewToggle: true,
   });
 
-  // Stores the current list of establishments for sharing
-  let currentEstablishments = [];
-  let currentListTitle = "";
-
   /**
-   * Encodes an array of establishment IDs into a compact string representation
+   * Loads establishment details for a single establishment by ID
    *
-   * @param {Array<string>} ids - Array of establishment IDs to encode
-   * @returns {string} Encoded string representation
+   * @param {string} id - The FHRSID of the establishment to load
+   * @returns {Promise<object|null>} The establishment data or null if not found
    */
-  const encodeEstablishmentIds = (ids) => {
-    // Convert to base36 representation for more compact encoding
-    const base36Ids = ids.map((id) => parseInt(id).toString(36));
-
-    // Create a compact JSON object with the ids
-    const dataObj = { i: base36Ids };
-
-    // Convert to JSON and then to base64 for URL safety
-    const jsonString = JSON.stringify(dataObj);
-
-    // Use built-in btoa for base64 encoding (browser-compatible)
-    return btoa(jsonString);
-  };
-
-  /**
-   * Gets a saved list by ID
-   *
-   * @param {string} id - The ID of the saved list to retrieve
-   * @returns {object|null} The saved list or null if not found
-   */
-  const getSavedList = (id) => {
-    if (typeof globalThis.localStorage === "undefined") return null;
-
+  const loadEstablishmentById = async (id) => {
     try {
-      const savedListsJson = globalThis.localStorage.getItem(
-        SAVED_LISTS_STORAGE_KEY,
-      );
-      if (!savedListsJson) return null;
+      const response = await fetch(`${API_BASE}/Establishments/${id}`, {
+        headers: API_HEADERS,
+      });
 
-      const savedLists = JSON.parse(savedListsJson);
-      return savedLists[id] || null;
+      if (!response.ok) {
+        console.error(
+          `Failed to fetch establishment ${id}: ${response.status}`,
+        );
+        return null;
+      }
+
+      return await response.json();
     } catch (error) {
-      console.error("Error retrieving saved list:", error);
+      console.error(`Error fetching establishment ${id}:`, error);
       return null;
     }
   };
 
   /**
-   * Deletes a saved list by ID
+   * Saves a list of establishments to localStorage
    *
-   * @param {string} id - The ID of the list to delete
-   * @returns {boolean} True if deletion was successful
+   * @param {string} listName - The name of the list to save
+   * @param {Array<object>} establishments - Array of establishment objects to save
+   * @returns {string} The ID of the saved list
    */
-  const deleteList = (id) => {
-    if (typeof globalThis.localStorage === "undefined") return false;
+  const saveList = (listName, establishments) => {
+    // Don't run in server-side code
+    if (typeof globalThis.localStorage === "undefined") return null;
 
     try {
+      // Get existing saved lists
+      let savedLists = {};
       const savedListsJson = globalThis.localStorage.getItem(
         SAVED_LISTS_STORAGE_KEY,
       );
-      if (!savedListsJson) return false;
 
-      const savedLists = JSON.parse(savedListsJson);
-
-      // Check if the list exists
-      if (!savedLists[id]) {
-        return false;
+      if (savedListsJson) {
+        savedLists = JSON.parse(savedListsJson);
       }
 
-      // Delete the list
-      delete savedLists[id];
+      // Create a unique ID for the list
+      const listId = `list_${Date.now()}`;
 
-      // Save back to localStorage
+      // Create minimal establishment objects (just essential data)
+      const minimalEstablishments = establishments.map((est) => ({
+        FHRSID: est.FHRSID,
+        BusinessName: est.BusinessName,
+        BusinessType: est.BusinessType,
+        AddressLine1: est.AddressLine1,
+        PostCode: est.PostCode,
+        RatingValue: est.RatingValue,
+        RatingDate: est.RatingDate,
+      }));
+
+      // Save the list
+      savedLists[listId] = {
+        name: listName,
+        created: new Date().toISOString(),
+        establishments: minimalEstablishments,
+      };
+
+      // Store back to localStorage
       globalThis.localStorage.setItem(
         SAVED_LISTS_STORAGE_KEY,
         JSON.stringify(savedLists),
       );
 
-      return true;
+      console.log(
+        `Saved list "${listName}" with ${establishments.length} establishments`,
+      );
+      return listId;
     } catch (error) {
-      console.error("Error deleting list:", error);
-      return false;
+      console.error("Error saving list:", error);
+      return null;
     }
   };
-
-  // Share modal event handlers
-  if (shareButton) {
-    shareButton.addEventListener("click", () => {
-      generateShareUrl();
-      shareModal.style.display = "flex";
-    });
-  }
-
-  if (closeShareModalButton) {
-    closeShareModalButton.addEventListener("click", () => {
-      shareModal.style.display = "none";
-    });
-  }
-
-  if (copyShareUrlButton && shareUrlInput) {
-    copyShareUrlButton.addEventListener("click", () => {
-      shareUrlInput.select();
-      document.execCommand("copy");
-
-      // Provide feedback that the URL was copied
-      const originalText = copyShareUrlButton.textContent;
-      copyShareUrlButton.textContent = "Copied!";
-      setTimeout(() => {
-        copyShareUrlButton.textContent = originalText;
-      }, 2000);
-    });
-  }
-
-  // Clear button handler for Recent list
-  if (clearButton) {
-    clearButton.addEventListener("click", () => {
-      if (
-        confirm(
-          "Are you sure you want to clear your recent establishments list? This action cannot be undone.",
-        )
-      ) {
-        // Clear the recent establishments
-        recentEstablishmentsService.clearRecentEstablishments();
-
-        // Reload the list to show empty state
-        loadEstablishments();
-      }
-    });
-  }
-
-  // Delete button handler for saved lists
-  if (deleteButton) {
-    deleteButton.addEventListener("click", () => {
-      if (
-        confirm(
-          "Are you sure you want to delete this list? This action cannot be undone.",
-        )
-      ) {
-        if (deleteList(listId)) {
-          // Redirect back to the lists page
-          globalThis.location.href = "/lists/";
-        } else {
-          alert("There was a problem deleting the list. Please try again.");
-        }
-      }
-    });
-  }
-
-  // Also close modal when clicking outside
-  if (shareModal) {
-    shareModal.addEventListener("click", (e) => {
-      if (e.target === shareModal) {
-        shareModal.style.display = "none";
-      }
-    });
-  }
 
   /**
-   * Generates a shareable URL containing the list title and establishment IDs
+   * Shows the save list modal
    */
-  const generateShareUrl = () => {
-    if (currentEstablishments.length === 0) return;
-
-    // Extract just the FHRSID from each establishment
-    const ids = currentEstablishments.map((est) => est.FHRSID);
-
-    // Create URL parameters with efficient encoding
-    const params = new URLSearchParams();
-    params.set("title", currentListTitle);
-    params.set("data", encodeEstablishmentIds(ids));
-
-    // Generate the complete share URL
-    const shareUrl =
-      `${globalThis.location.origin}/lists/shared/?${params.toString()}`;
-
-    // Set the URL in the input field
-    if (shareUrlInput) {
-      shareUrlInput.value = shareUrl;
-    }
+  const showSaveModal = () => {
+    // Pre-populate with the shared title
+    listNameInput.value = sharedTitle;
+    saveModal.style.display = "flex";
+    listNameInput.focus();
+    listNameInput.select();
   };
 
-  // Function to load and display establishments from the specified list
-  async function loadEstablishments() {
-    // Show loading state
-    await establishmentList.loadEstablishments({ establishments: [] }, true);
+  /**
+   * Hides the save list modal
+   */
+  const hideSaveModal = () => {
+    saveModal.style.display = "none";
+  };
 
-    // Initialize list info
-    let listInfo = { title: "", description: "" };
-    let establishments = [];
+  /**
+   * Handles saving the list and redirecting to the saved list page
+   */
+  const handleSaveList = () => {
+    const listName = listNameInput.value.trim() || sharedTitle;
 
-    // Hide all action buttons by default
-    if (shareButton) shareButton.style.display = "none";
-    if (clearButton) clearButton.style.display = "none";
-    if (deleteButton) deleteButton.style.display = "none";
-
-    // Set list details based on ID
-    if (listId === "recent") {
-      listInfo = {
-        title: "Recent Establishments",
-        description: "Establishments you've recently viewed",
-      };
-
-      // Get recent establishments from service
-      establishments = recentEstablishmentsService.getRecentEstablishments();
-
-      // Show the clear button for recent list
-      if (clearButton) {
-        clearButton.style.display = "inline-flex";
-      }
-    } else if (listId.startsWith("list_")) {
-      // This is a saved list
-      const savedList = getSavedList(listId);
-
-      if (savedList) {
-        listInfo = {
-          title: savedList.name,
-          description: `Saved on ${
-            new Date(savedList.created).toLocaleDateString()
-          }`,
-        };
-
-        establishments = savedList.establishments;
-
-        // Show delete button for saved lists
-        if (deleteButton) {
-          deleteButton.style.display = "inline-flex";
-        }
-      } else {
-        establishmentList.showError("The requested list could not be found");
-        return;
-      }
-    } else {
-      // In the future, this would handle other list types
-      establishmentList.showError("The requested list could not be found");
+    if (loadedEstablishments.length === 0) {
+      alert("Cannot save an empty list.");
       return;
     }
 
-    // Store current establishments and title for sharing
-    currentEstablishments = establishments;
-    currentListTitle = listInfo.title;
+    const listId = saveList(listName, loadedEstablishments);
 
-    // Show share button if we have establishments
-    if (establishments.length > 0 && shareButton) {
-      shareButton.style.display = "inline-flex";
+    if (listId) {
+      // Redirect to the saved list
+      globalThis.location.href = `/lists/detail/?id=${listId}`;
+    } else {
+      alert("Sorry, there was an error saving your list. Please try again.");
     }
+  };
+
+  // Set up event listeners for the save functionality
+  if (saveListButton) {
+    saveListButton.addEventListener("click", showSaveModal);
+  }
+
+  if (confirmSaveButton) {
+    confirmSaveButton.addEventListener("click", handleSaveList);
+  }
+
+  if (cancelSaveButton) {
+    cancelSaveButton.addEventListener("click", hideSaveModal);
+  }
+
+  if (listNameInput) {
+    // Allow pressing Enter to save
+    listNameInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        handleSaveList();
+      }
+    });
+  }
+
+  // Close modal when clicking outside
+  saveModal.addEventListener("click", (e) => {
+    if (e.target === saveModal) {
+      hideSaveModal();
+    }
+  });
+
+  /**
+   * Loads all establishments from the shared list
+   */
+  const loadSharedList = async () => {
+    // Show loading state
+    await establishmentList.loadEstablishments({ establishments: [] }, true);
 
     // Update page title and description
-    listTitle.textContent = listInfo.title;
-    listDescription.textContent = listInfo.description;
-    document.title = `${listInfo.title} - Food Hygiene Ratings`;
+    listTitle.textContent = sharedTitle;
+    listDescription.textContent = "Loading shared establishments...";
+    document.title = `${sharedTitle} - Food Hygiene Ratings`;
 
-    // Make sure the container is visible before loading establishments
-    establishmentsContainer.style.display = "block";
+    // Check if we have IDs to load
+    if (!establishmentIds.length) {
+      establishmentList.showError("No establishments found in the shared list");
+      return;
+    }
 
-    // For client-side pagination, we need a page change handler that updates the view
-    // without loading new data from the server
-    const handleClientPageChange = async (page) => {
-      // Make sure container stays visible
-      establishmentsContainer.style.display = "block";
+    try {
+      // Load all establishments in parallel
+      const establishmentPromises = establishmentIds.map((id) =>
+        loadEstablishmentById(id)
+      );
+      const establishments = await Promise.all(establishmentPromises);
 
-      // Just re-render the current page with the existing establishments
+      // Filter out any failed loads (nulls)
+      const validEstablishments = establishments.filter((e) => e !== null);
+
+      // Store the loaded establishments for saving later
+      loadedEstablishments = validEstablishments;
+
+      // Update description
+      listDescription.textContent =
+        `${validEstablishments.length} establishments shared with you`;
+
+      // Show save button if we have establishments
+      if (validEstablishments.length > 0 && saveListButton) {
+        saveListButton.style.display = "inline-flex";
+      }
+
+      // Handle empty result
+      if (validEstablishments.length === 0) {
+        if (emptyListMessage) {
+          emptyListMessage.style.display = "block";
+        }
+        if (establishmentsContainer) {
+          establishmentsContainer.style.display = "none";
+        }
+        return;
+      }
+
+      // For client-side pagination
+      const handleClientPageChange = async (page) => {
+        establishmentsContainer.style.display = "block";
+
+        await establishmentList.loadEstablishments(
+          {
+            establishments: validEstablishments,
+            totalResults: validEstablishments.length,
+            currentPage: page,
+            pageSize: 10,
+          },
+          false,
+          handleClientPageChange,
+        );
+      };
+
+      // Load all establishments for client-side pagination
       await establishmentList.loadEstablishments(
         {
-          establishments: establishments,
-          totalResults: establishments.length,
-          currentPage: page,
+          establishments: validEstablishments,
+          totalResults: validEstablishments.length,
+          currentPage: 1,
           pageSize: 10,
         },
         false,
         handleClientPageChange,
       );
-    };
 
-    // Load all establishments at once for client-side pagination
-    await establishmentList.loadEstablishments(
-      {
-        establishments: establishments,
-        totalResults: establishments.length,
-        currentPage: 1,
-        pageSize: 10,
-      },
-      false,
-      handleClientPageChange,
-    );
+      // Ensure visibility
+      establishmentsContainer.style.display = "block";
+    } catch (error) {
+      console.error("Error loading shared list:", error);
+      establishmentList.showError("Failed to load the shared establishments");
+    }
+  };
 
-    // Double-check visibility after loading
-    establishmentsContainer.style.display = "block";
-  }
-
-  // Load establishments when the page loads
-  loadEstablishments();
+  // Load shared list on page load
+  loadSharedList();
 });
 
     </script>
