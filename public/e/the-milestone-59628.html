@@ -170,6 +170,104 @@ a:hover {
     }
   }
 
+  /* Recently Viewed Section */
+  .recently-viewed-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+  }
+
+  .recently-viewed-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 1.5rem;
+    color: var(--hygiene-green);
+  }
+
+  .recent-establishments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .recent-establishment-item {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .recent-establishment-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .recent-establishment-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.1em;
+    color: var(--hygiene-green);
+  }
+
+  .recent-establishment-item .business-type {
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 0.5rem 0;
+  }
+
+  .visited-time {
+    color: #666;
+    font-size: 0.9em;
+    margin: 0;
+  }
+
+  .establishment-link {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+  }
+
+  .view-all-link {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+
+  .view-all-link a {
+    color: var(--hygiene-green);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .view-all-link a:hover {
+    color: #005a30;
+    text-decoration: underline;
+  }
+
+  /* Dark mode support */
+  @media (not (scripting: none)) or (prefers-color-scheme: dark) {
+    html:not([data-color-scheme="light"]) {
+      .recently-viewed-section {
+        border-top-color: #444;
+      }
+
+      .recent-establishment-item {
+        background-color: #333;
+      }
+
+      .recent-establishment-item .business-type {
+        color: #bbb;
+      }
+
+      .visited-time {
+        color: #bbb;
+      }
+    }
+  }
+
   
 .component-address-cq1k6e {
   display: contents;
@@ -384,6 +482,15 @@ a:hover {
             <a href="http://www.hinckley-bosworth.gov.uk" itemprop="url">http://www.hinckley-bosworth.gov.uk</a>
           </div>
         </article>
+
+        <!-- Recently Viewed Section -->
+        <section id="recentlyViewed" class="recently-viewed-section" style="display: none;">
+          <h2>Recently Viewed</h2>
+          <div id="recentEstablishments" class="recent-establishments-grid"></div>
+          <div class="view-all-link">
+            <a href="/lists/detail/?id=recent">View all recently viewed establishments →</a>
+          </div>
+        </section>
       </div>
     </div>
     <div class="component-footer-145qa" data-suffix="145qa">
@@ -396,9 +503,9 @@ a:hover {
   </footer>
 </div>
     <script type="module">
-      import recentEstablishmentsService from '/scripts/recent-establishments-service.mjs';
+      import recentEstablishmentsService from "scripts/recent-establishments-service.mjs";
 
-      document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   // Find the establishment element and extract data
   const establishmentElement = document.querySelector(".establishment");
   if (!establishmentElement) return;
@@ -409,11 +516,150 @@ a:hover {
 
   if (!establishmentId) return;
 
-  // Add this establishment to the recently viewed list
+  // Get the business name from the h1 element
+  const businessNameElement = establishmentElement.querySelector("h1.name");
+  const businessName = businessNameElement
+    ? businessNameElement.textContent.trim()
+    : "";
+
+  // Get the business type if available
+  const businessTypeElement = establishmentElement.querySelector(
+    "div[itemprop='servesCuisine']",
+  );
+  const businessType = businessTypeElement
+    ? businessTypeElement.textContent.trim()
+    : "";
+
+  // Add this establishment to the recently viewed list with name and type
   recentEstablishmentsService.addEstablishment({
     FHRSID: establishmentId,
+    BusinessName: businessName,
+    BusinessType: businessType,
   });
+
+  // Load and display recently viewed establishments (excluding current one)
+  displayRecentlyViewed(establishmentId);
 });
+
+/**
+ * Displays recently viewed establishments excluding the current one
+ *
+ * @param {string} currentId - The ID of the current establishment to exclude
+ */
+const displayRecentlyViewed = (currentId) => {
+  const recentSection = document.getElementById("recentlyViewed");
+  const recentContainer = document.getElementById("recentEstablishments");
+
+  if (!recentSection || !recentContainer) return;
+
+  // Get all recent establishments and filter out the current one
+  const allRecent = recentEstablishmentsService.getRecentEstablishments();
+  const recentToShow = allRecent.filter((est) => est.FHRSID !== currentId);
+
+  // Only show section if we have other recent establishments
+  if (recentToShow.length === 0) return;
+
+  // Show maximum 4 recent establishments
+  const recentLimit = recentToShow.slice(0, 4);
+
+  // Create HTML for each recent establishment
+  recentLimit.forEach((establishment) => {
+    // Create link that will wrap the entire item
+    const link = document.createElement("a");
+    link.href = `/e/${
+      slugify(establishment.BusinessName)
+    }-${establishment.FHRSID}`;
+    link.className = "establishment-link";
+
+    // Create container
+    const item = document.createElement("div");
+    item.className = "recent-establishment-item";
+
+    // Create content wrapper to help with consistent height
+    const contentWrapper = document.createElement("div");
+    contentWrapper.className = "content-wrapper";
+
+    // Add content - Use the stored name or a fallback
+    const name = document.createElement("h3");
+    name.className = "establishment-name";
+    name.textContent = establishment.BusinessName || "Unknown Establishment";
+
+    // business type
+    const type = document.createElement("p");
+    type.className = "business-type";
+    type.textContent = establishment.BusinessType;
+
+    // Footer section for the visited time
+    const footer = document.createElement("div");
+    footer.className = "card-footer";
+
+    const visitedTime = document.createElement("p");
+    visitedTime.className = "visited-time";
+    visitedTime.textContent = formatRelativeTime(establishment.lastVisited);
+
+    // Assemble the structure
+    contentWrapper.appendChild(name);
+    contentWrapper.appendChild(type);
+
+    footer.appendChild(visitedTime);
+
+    item.appendChild(contentWrapper);
+    item.appendChild(footer);
+
+    // Add item to link (making the entire card clickable)
+    link.appendChild(item);
+
+    // Add to container
+    recentContainer.appendChild(link);
+  });
+
+  // Show the recently viewed section
+  recentSection.style.display = "block";
+};
+
+/**
+ * Formats a date as a relative time (e.g., "2 days ago")
+ *
+ * @param {string} date - ISO date string to format
+ * @returns {string} Formatted relative time string
+ */
+const formatRelativeTime = (date) => {
+  const now = new Date();
+  const diffMs = now - new Date(date);
+  const diffSec = Math.floor(diffMs / 1000);
+  const diffMin = Math.floor(diffSec / 60);
+  const diffHour = Math.floor(diffMin / 60);
+  const diffDay = Math.floor(diffHour / 24);
+
+  if (diffDay > 30) {
+    return `${Math.floor(diffDay / 30)} months ago`;
+  } else if (diffDay > 0) {
+    return `${diffDay} day${diffDay === 1 ? "" : "s"} ago`;
+  } else if (diffHour > 0) {
+    return `${diffHour} hour${diffHour === 1 ? "" : "s"} ago`;
+  } else if (diffMin > 0) {
+    return `${diffMin} minute${diffMin === 1 ? "" : "s"} ago`;
+  } else {
+    return "just now";
+  }
+};
+
+/**
+ * Creates a URL-friendly slug from a text string
+ *
+ * @param {string} text - The text to convert to a slug
+ * @returns {string} URL-friendly slug
+ */
+const slugify = (text) => {
+  return text
+    .toString()
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w\-]+/g, "")
+    .replace(/\-\-+/g, "-")
+    .replace(/^-+/, "")
+    .replace(/-+$/, "");
+};
 
     </script>
   </body>
