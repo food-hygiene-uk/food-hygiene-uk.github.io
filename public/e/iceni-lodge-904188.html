@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iceni Lodge - Food Hygiene Ratings UK</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://food-hygiene-uk.github.io/e/iceni-lodge-904188" />
+  <script type="importmap">
+    {
+      "imports": {
+        "components/": "/components/",
+        "scripts/": "/scripts/"
+      }
+    }
+  </script>
+  <script>
+    "use strict";
+{
+  const updateColorScheme = (mql) => {
+    const prefers = mql?.matches ? "dark" : "light";
+    const setting = localStorage.getItem("color-scheme");
+
+    document.documentElement.setAttribute(
+      "data-color-scheme",
+      setting ?? prefers,
+    );
+  };
+  const colorSchemeMQL = globalThis?.matchMedia?.(
+    "(prefers-color-scheme:dark)",
+  );
+  colorSchemeMQL.addEventListener("change", function (e) {
+    updateColorScheme(e);
+  });
+
+  updateColorScheme(colorSchemeMQL);
+}
+
+  </script>
+  <style>
+    :root {
+  /* Information and background colors */
+  --primary-blue: #2c4c6b;
+  --light-blue: #f5f7fa;
+  --teal: #3c7b8e;
+  --grey: #687789;
+  --light-grey: #eef2f6;
+  --hygiene-green-rgb: 132, 190, 0;
+  --hygiene-green: rgb(var(--hygiene-green-rgb));
+
+  /* Call to action colors */
+  --cta-default: #9e66ff;
+
+  --body-background: var(--light-blue);
+  --text-color: #000;
+  --header-background-color: #f8f9fa;
+  --header-text-color: var(--text-color);
+  --header-rule-color: #e0e0e0;
+  --background-highlight-color: #e5e8f1;
+  --text-highlight-color: var(--text-color);
+}
+
+@media (not (scripting: none)) or (prefers-color-scheme: dark) {
+  html:not([data-color-scheme="light"]) {
+    --body-background: #000;
+    --text-color: #757575;
+    --header-background-color: #1f2021;
+    --header-text-color: #dfdfdf;
+    --header-rule-color: #383838;
+    --background-highlight-color: var(--light-blue);
+    --text-highlight-color: var(--text-color);
+  }
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-background);
+  color: var(--text-color);
+}
+
+a {
+  color: #0052a3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+    .content-caeyec {
+  display: contents;
+
+  .establishment {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 2em;
+    border-bottom: 1px solid var(--hygiene-green);
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin: 1em 0 0 0;
+  }
+
+  h2::after {
+    content: ":";
+  }
+
+  p, address, td, th {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  img.rating-image {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    box-shadow: white 0 0 0 1px;
+    border-radius: 9px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+  }
+
+  th {
+    background-color: #1b5f7b;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .scores tbody tr:hover {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .title,
+  .score {
+    white-space: nowrap;
+
+    @media screen and (max-width: 820px) {
+      & {
+        white-space: normal;
+      }
+    }
+  }
+
+  /* Recently Viewed Section */
+  .recently-viewed-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+  }
+
+  .recently-viewed-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 1.5rem;
+    color: var(--hygiene-green);
+  }
+
+  .recent-establishments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .recent-establishment-item {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .recent-establishment-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .recent-establishment-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.1em;
+    color: var(--hygiene-green);
+  }
+
+  .recent-establishment-item .business-type {
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 0.5rem 0;
+  }
+
+  .visited-time {
+    color: #666;
+    font-size: 0.9em;
+    margin: 0;
+  }
+
+  .establishment-link {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+  }
+
+  .view-all-link {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+
+  .view-all-link a {
+    color: var(--hygiene-green);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .view-all-link a:hover {
+    color: #005a30;
+    text-decoration: underline;
+  }
+
+  /* Dark mode support */
+  @media (not (scripting: none)) or (prefers-color-scheme: dark) {
+    html:not([data-color-scheme="light"]) {
+      .recently-viewed-section {
+        border-top-color: #444;
+      }
+
+      .recent-establishment-item {
+        background-color: #333;
+      }
+
+      .recent-establishment-item .business-type {
+        color: #bbb;
+      }
+
+      .visited-time {
+        color: #bbb;
+      }
+    }
+  }
+
+  
+.component-address-cq1k6e {
+  display: contents;
+
+  address {
+    font-style: normal;
+  }
+}
+
+}
+
+    .component-header-ywuw5j {
+  display: contents;
+
+  header {
+    background-color: var(--header-background-color);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--header-rule-color);
+    position: relative;
+
+    overflow: hidden;
+  }
+
+  .navbar-ywuw5j {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-ywuw5j img {
+    height: 50px;
+  }
+
+  .nav-links-ywuw5j {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+    li {
+      display: inline;
+
+      a {
+        text-decoration: none;
+        color: var(--header-text-color);
+        font-weight: bold;
+      }
+    }
+  }
+
+  /* Hamburger menu checkbox (hidden) */
+  .menu-toggle-ywuw5j {
+    display: none;
+  }
+
+  /* Hamburger icon */
+  .hamburger-ywuw5j {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .hamburger-ywuw5j span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--header-text-color);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .hamburger-ywuw5j {
+      display: flex;
+    }
+
+    .nav-links-ywuw5j {
+      position: fixed;
+      top: 84px; /* Ensures it doesn't cover the title bar */
+      right: -100%;
+      width: 100%;
+      height: calc(100vh - 84px);
+      flex-direction: column;
+      background-color: var(--header-background-color);
+      padding: 2rem;
+      transition: right 0.3s ease-in-out;
+      z-index: 5;
+      text-align: right;
+      gap: 2rem;
+
+      li {
+        display: block;
+        margin-bottom: 1.5rem;
+
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    /* Show menu when checkbox is checked */
+    .menu-toggle-ywuw5j:checked ~ .nav-links-ywuw5j {
+      right: 0;
+    }
+
+    /* Hamburger animation */
+    .menu-toggle-ywuw5j:checked
+      ~ .hamburger-ywuw5j
+      span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle-ywuw5j:checked
+      ~ .hamburger-ywuw5j
+      span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle-ywuw5j:checked
+      ~ .hamburger-ywuw5j
+      span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+  }
+}
+
+    .component-footer-145qa {
+  display: contents;
+
+  footer {
+    background-color: var(--primary-blue);
+    color: var(--light-blue);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      transition: border-color 0.3s;
+
+      &:hover {
+        border-color: white;
+      }
+    }
+  }
+}
+
+  </style>
+</head>
+
+  <body>
+    <div class="component-header-ywuw5j" data-suffix="ywuw5j">
+  <header class="container">
+    <nav class="navbar-ywuw5j">
+      <div class="logo-ywuw5j">
+        <a href="/">
+          <img src="/images/logo.svg" alt="Site Logo">
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle-ywuw5j" class="menu-toggle-ywuw5j">
+      <label for="menu-toggle-ywuw5j" class="hamburger-ywuw5j">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links-ywuw5j">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/l/">Regions</a></li>
+        <li><a href="/search/">Search</a></li>
+        <li><a href="/lists/">My Lists</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+    <div class="content-caeyec">
+      <div class="container">
+        <article class="establishment" itemscope itemtype="https://schema.org/FoodEstablishment" data-establishment-id="904188">
+          <h1 class="name" itemprop="name">Iceni Lodge</h1>
+
+          <h2>Business Type</h2>
+          <div itemprop="servesCuisine">Hospitals/Childcare/Caring Premises</div>
+
+          <h2>Rating</h2>
+          <div>Exempt</div>
+          <img src="/images/fhrs/fhrs_exempt_en-gb.svg" alt="Food Hygiene Rating: Exempt" class="rating-image" itemprop="image">
+
+          <h2>Address</h2>
+          <div class="component-address-cq1k6e" data-suffix="cq1k6e">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>34 Amhurst Gardens</span><br>          <span>Belton</span><br>          <span>Belton With Browston</span><br>        <span itemprop="postalCode">NR31 9PH</span>
+  </address>
+  <a href="https://geohack.toolforge.org/geohack.php?title=Iceni%20Lodge&params=52.567304_N_1.661183_E_type:landmark_dim:20" target="_blank" rel="noopener noreferrer" class="map-link">View on Map</a>
+</div>
+
+
+          
+
+
+
+          <h2>Local Authority</h2>
+          <div itemprop="department" itemscope itemtype="https://schema.org/GovernmentOrganization">
+            <span itemprop="name">Great Yarmouth</span><br>
+            <a href="http://www.great-yarmouth.gov.uk/live/index.htm" itemprop="url">http://www.great-yarmouth.gov.uk/live/index.htm</a>
+          </div>
+        </article>
+
+        <!-- Recently Viewed Section -->
+        <section id="recentlyViewed" class="recently-viewed-section" style="display: none;">
+          <h2>Recently Viewed</h2>
+          <div id="recentEstablishments" class="recent-establishments-grid"></div>
+          <div class="view-all-link">
+            <a href="/lists/detail/?id=recent">View all recently viewed establishments →</a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="component-footer-145qa" data-suffix="145qa">
+  <footer>
+    <div class="container">
+      <p>Food Hygiene Ratings UK - Open Source Project</p>
+      <p>Data provided by local authorities across the UK</p>
+      <a href="https://github.com/food-hygiene-uk/main-site-builder">GitHub Repository</a>
+    </div>
+  </footer>
+</div>
+    <script type="module">
+      import recentEstablishmentsService from "scripts/recent-establishments-service.mjs";
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Find the establishment element and extract data
+  const establishmentElement = document.querySelector(".establishment");
+  if (!establishmentElement) return;
+
+  const establishmentId = establishmentElement.getAttribute(
+    "data-establishment-id",
+  );
+
+  if (!establishmentId) return;
+
+  // Get the business name from the h1 element
+  const businessNameElement = establishmentElement.querySelector("h1.name");
+  const businessName = businessNameElement
+    ? businessNameElement.textContent.trim()
+    : "";
+
+  // Get the business type if available
+  const businessTypeElement = establishmentElement.querySelector(
+    "div[itemprop='servesCuisine']",
+  );
+  const businessType = businessTypeElement
+    ? businessTypeElement.textContent.trim()
+    : "";
+
+  // Add this establishment to the recently viewed list with name and type
+  recentEstablishmentsService.addEstablishment({
+    FHRSID: establishmentId,
+    BusinessName: businessName,
+    BusinessType: businessType,
+  });
+
+  // Load and display recently viewed establishments (excluding current one)
+  displayRecentlyViewed(establishmentId);
+});
+
+/**
+ * Displays recently viewed establishments excluding the current one
+ *
+ * @param {string} currentId - The ID of the current establishment to exclude
+ */
+const displayRecentlyViewed = (currentId) => {
+  const recentSection = document.getElementById("recentlyViewed");
+  const recentContainer = document.getElementById("recentEstablishments");
+
+  if (!recentSection || !recentContainer) return;
+
+  // Get all recent establishments and filter out the current one
+  const allRecent = recentEstablishmentsService.getRecentEstablishments();
+  const recentToShow = allRecent.filter((est) => est.FHRSID !== currentId);
+
+  // Only show section if we have other recent establishments
+  if (recentToShow.length === 0) return;
+
+  // Show maximum 4 recent establishments
+  const recentLimit = recentToShow.slice(0, 4);
+
+  // Create HTML for each recent establishment
+  recentLimit.forEach((establishment) => {
+    // Create link that will wrap the entire item
+    const link = document.createElement("a");
+    link.href = `/e/${
+      slugify(establishment.BusinessName)
+    }-${establishment.FHRSID}`;
+    link.className = "establishment-link";
+
+    // Create container
+    const item = document.createElement("div");
+    item.className = "recent-establishment-item";
+
+    // Create content wrapper to help with consistent height
+    const contentWrapper = document.createElement("div");
+    contentWrapper.className = "content-wrapper";
+
+    // Add content - Use the stored name or a fallback
+    const name = document.createElement("h3");
+    name.className = "establishment-name";
+    name.textContent = establishment.BusinessName || "Unknown Establishment";
+
+    // business type
+    const type = document.createElement("p");
+    type.className = "business-type";
+    type.textContent = establishment.BusinessType;
+
+    // Footer section for the visited time
+    const footer = document.createElement("div");
+    footer.className = "card-footer";
+
+    const visitedTime = document.createElement("p");
+    visitedTime.className = "visited-time";
+    visitedTime.textContent = formatRelativeTime(establishment.lastVisited);
+
+    // Assemble the structure
+    contentWrapper.appendChild(name);
+    contentWrapper.appendChild(type);
+
+    footer.appendChild(visitedTime);
+
+    item.appendChild(contentWrapper);
+    item.appendChild(footer);
+
+    // Add item to link (making the entire card clickable)
+    link.appendChild(item);
+
+    // Add to container
+    recentContainer.appendChild(link);
+  });
+
+  // Show the recently viewed section
+  recentSection.style.display = "block";
+};
+
+/**
+ * Formats a date as a relative time (e.g., "2 days ago")
+ *
+ * @param {string} date - ISO date string to format
+ * @returns {string} Formatted relative time string
+ */
+const formatRelativeTime = (date) => {
+  const now = new Date();
+  const diffMs = now - new Date(date);
+  const diffSec = Math.floor(diffMs / 1000);
+  const diffMin = Math.floor(diffSec / 60);
+  const diffHour = Math.floor(diffMin / 60);
+  const diffDay = Math.floor(diffHour / 24);
+
+  if (diffDay > 30) {
+    return `${Math.floor(diffDay / 30)} months ago`;
+  } else if (diffDay > 0) {
+    return `${diffDay} day${diffDay === 1 ? "" : "s"} ago`;
+  } else if (diffHour > 0) {
+    return `${diffHour} hour${diffHour === 1 ? "" : "s"} ago`;
+  } else if (diffMin > 0) {
+    return `${diffMin} minute${diffMin === 1 ? "" : "s"} ago`;
+  } else {
+    return "just now";
+  }
+};
+
+/**
+ * Creates a URL-friendly slug from a text string
+ *
+ * @param {string} text - The text to convert to a slug
+ * @returns {string} URL-friendly slug
+ */
+const slugify = (text) => {
+  return text
+    .toString()
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w\-]+/g, "")
+    .replace(/\-\-+/g, "-")
+    .replace(/^-+/, "")
+    .replace(/-+$/, "");
+};
+
+    </script>
+  </body>
+</html>
