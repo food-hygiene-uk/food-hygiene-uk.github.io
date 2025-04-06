@@ -38,293 +38,29 @@
 
   </script>
   <style>
-    :root {
-  /* Information and background colors */
-  --primary-blue: #2c4c6b;
-  --light-blue: #f5f7fa;
-  --teal: #3c7b8e;
-  --grey: #687789;
-  --light-grey: #eef2f6;
-  --hygiene-green-rgb: 132, 190, 0;
-  --hygiene-green: rgb(var(--hygiene-green-rgb));
-
-  /* Call to action colors */
-  --cta-default: #9e66ff;
-
-  --body-background: var(--light-blue);
-  --text-color: #000;
-  --header-background-color: #f8f9fa;
-  --header-text-color: var(--text-color);
-  --header-rule-color: #e0e0e0;
-  --background-highlight-color: #e5e8f1;
-  --text-highlight-color: var(--text-color);
-}
-
-@media (not (scripting: none)) or (prefers-color-scheme: dark) {
-  html:not([data-color-scheme="light"]) {
-    --body-background: #000;
-    --text-color: #757575;
-    --header-background-color: #1f2021;
-    --header-text-color: #dfdfdf;
-    --header-rule-color: #383838;
-    --background-highlight-color: var(--light-blue);
-    --text-highlight-color: var(--text-color);
-  }
-}
-
-body {
-  font-family: system-ui, -apple-system, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: var(--body-background);
-  color: var(--text-color);
-}
-
-a {
-  color: #0052a3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-    .content-vg7ow {
-  display: contents;
-
-  article {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  h1 {
-    color: var(--primary-blue);
-    font-size: 2.5em;
-    border-bottom: 2px solid var(--hygiene-green);
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  h2 {
-    color: var(--primary-blue);
-    margin-top: 2rem;
-    font-size: 1.6em;
-  }
-
-  p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-  }
-
-  .contribution-links {
-    background-color: var(--light-grey);
-    padding: 1.5rem;
-    border-radius: 6px;
-    margin-top: 2rem;
-  }
-
-  .contribution-links h3 {
-    color: var(--primary-blue);
-    margin-top: 0;
-  }
-
-  .contribution-links ul {
-    padding-left: 1.5rem;
-  }
-
-  .contribution-links li {
-    margin-bottom: 0.75rem;
-  }
-
-  .data-source {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin: 1.5rem 0;
-    padding: 1rem;
-    border-left: 4px solid var(--hygiene-green);
-    background-color: var(--light-blue);
-  }
-
-  .fsa-logo {
-    max-width: 120px;
-    height: auto;
-  }
-}
-
-    .component-header-xgvp1f {
-  display: contents;
-
-  header {
-    background-color: var(--header-background-color);
-    padding: 1rem 2rem;
-    border-bottom: 1px solid var(--header-rule-color);
-    position: relative;
-
-    overflow: hidden;
-  }
-
-  .navbar-xgvp1f {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo-xgvp1f img {
-    height: 50px;
-  }
-
-  .nav-links-xgvp1f {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-
-    li {
-      display: inline;
-
-      a {
-        text-decoration: none;
-        color: var(--header-text-color);
-        font-weight: bold;
-      }
-    }
-  }
-
-  /* Hamburger menu checkbox (hidden) */
-  .menu-toggle-xgvp1f {
-    display: none;
-  }
-
-  /* Hamburger icon */
-  .hamburger-xgvp1f {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-    z-index: 10;
-  }
-
-  .hamburger-xgvp1f span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: var(--header-text-color);
-    border-radius: 3px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    .hamburger-xgvp1f {
-      display: flex;
-    }
-
-    .nav-links-xgvp1f {
-      position: fixed;
-      top: 84px; /* Ensures it doesn't cover the title bar */
-      right: -100%;
-      width: 100%;
-      height: calc(100vh - 84px);
-      flex-direction: column;
-      background-color: var(--header-background-color);
-      padding: 2rem;
-      transition: right 0.3s ease-in-out;
-      z-index: 5;
-      text-align: right;
-      gap: 2rem;
-
-      li {
-        display: block;
-        margin-bottom: 1.5rem;
-
-        a {
-          font-size: 1.2rem;
-        }
-      }
-    }
-
-    /* Show menu when checkbox is checked */
-    .menu-toggle-xgvp1f:checked ~ .nav-links-xgvp1f {
-      right: 0;
-    }
-
-    /* Hamburger animation */
-    .menu-toggle-xgvp1f:checked
-      ~ .hamburger-xgvp1f
-      span:nth-child(1) {
-      transform: translateY(9px) rotate(45deg);
-    }
-
-    .menu-toggle-xgvp1f:checked
-      ~ .hamburger-xgvp1f
-      span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .menu-toggle-xgvp1f:checked
-      ~ .hamburger-xgvp1f
-      span:nth-child(3) {
-      transform: translateY(-9px) rotate(-45deg);
-    }
-  }
-}
-
-    .component-footer-g5o6zh {
-  display: contents;
-
-  footer {
-    background-color: var(--primary-blue);
-    color: var(--light-blue);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    text-align: center;
-    margin-top: 2rem;
-
-    a {
-      color: white;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-      transition: border-color 0.3s;
-
-      &:hover {
-        border-color: white;
-      }
-    }
-  }
-}
-
+    :root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--cta-default:#9e66ff;--body-background:var(--light-blue);--text-color:#000;--header-background-color:#f8f9fa;--header-text-color:var(--text-color);--header-rule-color:#e0e0e0;--background-highlight-color:#e5e8f1;--text-highlight-color:var(--text-color)}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){--body-background:#000;--text-color:#757575;--header-background-color:#1f2021;--header-text-color:#dfdfdf;--header-rule-color:#383838;--background-highlight-color:var(--light-blue);--text-highlight-color:var(--text-color)}}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 2rem}
+    .content-vg7ow{display:contents;article{background-color:#fff;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.1);margin:2rem auto;max-width:800px;padding:2rem}h1{border-bottom:2px solid var(--hygiene-green);font-size:2.5em;margin-bottom:1.5rem;padding-bottom:.5rem}h1,h2{color:var(--primary-blue)}h2{font-size:1.6em;margin-top:2rem}p{line-height:1.6;margin-bottom:1rem}.contribution-links{background-color:var(--light-grey);border-radius:6px;margin-top:2rem;padding:1.5rem}.contribution-links h3{color:var(--primary-blue);margin-top:0}.contribution-links ul{padding-left:1.5rem}.contribution-links li{margin-bottom:.75rem}.data-source{align-items:center;background-color:var(--light-blue);border-left:4px solid var(--hygiene-green);display:flex;gap:1rem;margin:1.5rem 0;padding:1rem}.fsa-logo{height:auto;max-width:120px}}
+    .component-header-y16cp8{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);overflow:hidden;padding:1rem 2rem;position:relative}.navbar-y16cp8{align-items:center;display:flex;justify-content:space-between}.logo-y16cp8 img{height:50px}.nav-links-y16cp8{display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-y16cp8{display:none}.hamburger-y16cp8{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-y16cp8 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (max-width:768px){.hamburger-y16cp8{display:flex}.nav-links-y16cp8{background-color:var(--header-background-color);flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-y16cp8:checked~.nav-links-y16cp8{right:0}.menu-toggle-y16cp8:checked~.hamburger-y16cp8 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-y16cp8:checked~.hamburger-y16cp8 span:nth-child(2){opacity:0}.menu-toggle-y16cp8:checked~.hamburger-y16cp8 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
+    .component-footer-6h83{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;text-align:center;a{border-bottom:1px solid hsla(0,0%,100%,.3);color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}}}
   </style>
 </head>
 
   <body>
-    <div class="component-header-xgvp1f" data-suffix="xgvp1f">
+    <div class="component-header-y16cp8" data-suffix="y16cp8">
   <header class="container">
-    <nav class="navbar-xgvp1f">
-      <div class="logo-xgvp1f">
+    <nav class="navbar-y16cp8">
+      <div class="logo-y16cp8">
         <a href="/">
           <img src="/images/logo.svg" alt="Site Logo">
         </a>
       </div>
-      <input type="checkbox" id="menu-toggle-xgvp1f" class="menu-toggle-xgvp1f">
-      <label for="menu-toggle-xgvp1f" class="hamburger-xgvp1f">
+      <input type="checkbox" id="menu-toggle-y16cp8" class="menu-toggle-y16cp8">
+      <label for="menu-toggle-y16cp8" class="hamburger-y16cp8">
         <span></span>
         <span></span>
         <span></span>
       </label>
-      <ul class="nav-links-xgvp1f">
+      <ul class="nav-links-y16cp8">
         <li><a href="/about/">About</a></li>
         <li><a href="/l/">Regions</a></li>
         <li><a href="/search/">Search</a></li>
@@ -405,7 +141,7 @@ a:hover {
         </article>
       </div>
     </div>
-    <div class="component-footer-g5o6zh" data-suffix="g5o6zh">
+    <div class="component-footer-6h83" data-suffix="6h83">
   <footer>
     <div class="container">
       <p>Food Hygiene Ratings UK - Open Source Project</p>
