@@ -15,27 +15,8 @@
     }
   </script>
   <script>
-    "use strict";
-{
-  const updateColorScheme = (mql) => {
-    const prefers = mql?.matches ? "dark" : "light";
-    const setting = localStorage.getItem("color-scheme");
-
-    document.documentElement.setAttribute(
-      "data-color-scheme",
-      setting ?? prefers,
-    );
-  };
-  const colorSchemeMQL = globalThis?.matchMedia?.(
-    "(prefers-color-scheme:dark)",
-  );
-  colorSchemeMQL.addEventListener("change", function (e) {
-    updateColorScheme(e);
-  });
-
-  updateColorScheme(colorSchemeMQL);
-}
-
+    /* Minified JavaScript */
+{let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.setAttribute("data-color-scheme",t??e)};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
     :root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--cta-default:#9e66ff;--body-background:var(--light-blue);--text-color:#000;--header-background-color:#f8f9fa;--header-text-color:var(--text-color);--header-rule-color:#e0e0e0;--background-highlight-color:#e5e8f1;--text-highlight-color:var(--text-color)}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){--body-background:#000;--text-color:#757575;--header-background-color:#1f2021;--header-text-color:#dfdfdf;--header-rule-color:#383838;--background-highlight-color:var(--light-blue);--text-highlight-color:var(--text-color)}}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 2rem}

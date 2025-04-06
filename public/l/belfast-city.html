@@ -15,31 +15,12 @@
     }
   </script>
   <script>
-    "use strict";
-{
-  const updateColorScheme = (mql) => {
-    const prefers = mql?.matches ? "dark" : "light";
-    const setting = localStorage.getItem("color-scheme");
-
-    document.documentElement.setAttribute(
-      "data-color-scheme",
-      setting ?? prefers,
-    );
-  };
-  const colorSchemeMQL = globalThis?.matchMedia?.(
-    "(prefers-color-scheme:dark)",
-  );
-  colorSchemeMQL.addEventListener("change", function (e) {
-    updateColorScheme(e);
-  });
-
-  updateColorScheme(colorSchemeMQL);
-}
-
+    /* Minified JavaScript */
+{let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.setAttribute("data-color-scheme",t??e)};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
     :root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--cta-default:#9e66ff;--body-background:var(--light-blue);--text-color:#000;--header-background-color:#f8f9fa;--header-text-color:var(--text-color);--header-rule-color:#e0e0e0;--background-highlight-color:#e5e8f1;--text-highlight-color:var(--text-color)}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){--body-background:#000;--text-color:#757575;--header-background-color:#1f2021;--header-text-color:#dfdfdf;--header-rule-color:#383838;--background-highlight-color:var(--light-blue);--text-highlight-color:var(--text-color)}}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 2rem}
-    .content-stayh{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{bottom:0;display:block;left:0;position:absolute;right:0;text-indent:-9999px;top:0;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}}
+    .content-maxa0a{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{bottom:0;display:block;left:0;position:absolute;right:0;text-indent:-9999px;top:0;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}}
     .component-header-ek6bid{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);overflow:hidden;padding:1rem 2rem;position:relative}.navbar-ek6bid{align-items:center;display:flex;justify-content:space-between}.logo-ek6bid img{height:50px}.nav-links-ek6bid{display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-ek6bid{display:none}.hamburger-ek6bid{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-ek6bid span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (max-width:768px){.hamburger-ek6bid{display:flex}.nav-links-ek6bid{background-color:var(--header-background-color);flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-ek6bid:checked~.nav-links-ek6bid{right:0}.menu-toggle-ek6bid:checked~.hamburger-ek6bid span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-ek6bid:checked~.hamburger-ek6bid span:nth-child(2){opacity:0}.menu-toggle-ek6bid:checked~.hamburger-ek6bid span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-y16cp8{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;text-align:center;a{border-bottom:1px solid hsla(0,0%,100%,.3);color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}}}
   </style>
@@ -69,7 +50,7 @@
     </nav>
   </header>
 </div>
-    <div class="content-stayh">
+    <div class="content-maxa0a">
       <div class="container">
         <article class="local-authority" itemscope itemtype="https://schema.org/GovernmentOrganization">
           <h1 class="name" itemprop="name">Belfast City</h1>
@@ -41018,167 +40999,8 @@
       </div>
     </div>
     <script type="module">
-      const classSuffix = "stayh";
-
-// Cache DOM queries and use more specific selectors
-const searchInput = document.querySelector(
-  `.content-${classSuffix} #filter-input`,
-);
-const container = document.querySelector(".establishments-container");
-
-const establishments = Array.from(container.querySelectorAll(".establishment"));
-
-// Pre-cache establishment data to avoid DOM queries during search
-const establishmentData = establishments.map((establishment) => ({
-  element: establishment,
-  name: (establishment.querySelector("h3")?.textContent || "").toLowerCase(),
-  address: (establishment.querySelector("address")?.textContent || "")
-    .toLowerCase(),
-  clone: establishment.cloneNode(true), // Store a clone for the fragment
-}));
-
-/**
- * Debounces a function, delaying its execution until after a certain amount of time has passed
- * since the last invocation.
- *
- * @param {(args: any[]) => void} func - The function to debounce.
- * @param {number} wait - The number of milliseconds to wait before executing the function.
- * @returns {(args: any[]) => void} A debounced version of the function.
- */
-const debounce = (func, wait) => {
-  let timeout;
-  return (...args) => {
-    const later = () => {
-      clearTimeout(timeout);
-      func(...args);
-    };
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-  };
-};
-
-/**
- * Parses a search string into individual search terms, handling quoted phrases.
- *
- * @param {string} searchTerm - The search string to parse.
- * @returns {string[]} An array of lowercase search terms.
- */
-const parseSearchTerms = (searchTerm) => {
-  const regex = /"([^"]+)"|(\S+)/g;
-  const terms = [];
-  let match;
-  while ((match = regex.exec(searchTerm)) !== null) {
-    let term = (match[1] || match[2]).toLowerCase();
-    // Remove stray quotes from beginning and end of the term
-    term = term.replace(/^"+|"+$/g, "");
-    terms.push(term);
-  }
-  return terms;
-};
-
-/**
- * Appends a list of establishments to a container, clearing the container's existing content.
- * Each establishment is added with a horizontal rule separator.
- *
- * @param {HTMLElement} container - The container to append the establishments to.
- * @param {Array<{clone: Node}>} establishments - An array of establishment data objects, each containing a clone of the establishment's DOM node.
- */
-const appendEstablishments = (container, establishments) => {
-  // Remove all current establishments
-  container.innerHTML = "";
-
-  // Add visible establishments from fragment
-  const visibleFragment = document.createDocumentFragment();
-  const hrTemplate = document.createElement("hr");
-  establishments.forEach((data) => {
-    visibleFragment.appendChild(data.clone);
-    visibleFragment.appendChild(hrTemplate.cloneNode());
-  });
-  // Remove the last hr
-  if (visibleFragment.lastChild) {
-    visibleFragment.lastChild.remove();
-  }
-  container.appendChild(visibleFragment);
-};
-
-const updates = new Set(); // Store visibility updates
-
-/**
- * Processes a batch of establishments, determining their visibility based on search terms.
- *
- * @param {number} index - The starting index of the batch.
- * @param {number} batchSize - The size of the batch.
- * @param {string[]} searchTerms - The array of search terms.
- * @param {Function} resolve - The resolve function of the promise.
- * @returns {void}
- */
-const processBatch = (index, batchSize, searchTerms, resolve) => {
-  const end = Math.min(index + batchSize, establishmentData.length);
-
-  for (let i = index; i < end; i++) {
-    const data = establishmentData[i];
-    const matchesAll = searchTerms.every((term) =>
-      data.name.includes(term) || data.address.includes(term)
-    );
-    if (matchesAll) {
-      updates.add(data);
-    }
-  }
-
-  // Apply updates in a batch
-  if (end >= establishmentData.length) {
-    // Final batch - update the real DOM
-    requestAnimationFrame(() => {
-      appendEstablishments(container, updates);
-
-      resolve();
-    });
-  } else {
-    // Continue processing
-    const nextBatch = () => processBatch(end, batchSize, searchTerms, resolve);
-    if (globalThis.requestIdleCallback) {
-      requestIdleCallback(nextBatch);
-    } else {
-      requestAnimationFrame(nextBatch);
-    }
-  }
-};
-
-/**
- * Handles the search functionality, filtering establishments based on the search term.
- *
- * @param {string} searchTerm - The search term to filter by.
- * @returns {Promise<void>} A promise that resolves when the search is complete.
- * @async
- */
-const handleSearch = async (searchTerm) => {
-  const searchTerms = parseSearchTerms(searchTerm);
-
-  // If search is empty, restore all establishments
-  if (searchTerms.length === 0) {
-    requestAnimationFrame(() => {
-      appendEstablishments(container, establishmentData);
-    });
-    return;
-  }
-
-  return new Promise((resolve) => {
-    const batchSize = Math.min(50, Math.ceil(establishmentData.length / 4));
-    requestAnimationFrame(() => {
-      updates.clear();
-      processBatch(0, batchSize, searchTerms, resolve);
-    });
-  });
-};
-
-// Attach debounced event listener
-searchInput.addEventListener(
-  "input",
-  debounce((e) => {
-    handleSearch(e.target.value.toLowerCase());
-  }, 150),
-);
-
+      /* Minified JavaScript */
+var e=document.querySelector(".content-maxa0a #filter-input");let a=document.querySelector(".establishments-container"),o=Array.from(a.querySelectorAll(".establishment")).map(e=>({element:e,name:(e.querySelector("h3")?.textContent||"").toLowerCase(),address:(e.querySelector("address")?.textContent||"").toLowerCase(),clone:e.cloneNode(!0)}));let i=(e,t)=>{e.innerHTML="";let r=document.createDocumentFragment(),n=document.createElement("hr");t.forEach(e=>{r.appendChild(e.clone),r.appendChild(n.cloneNode())}),r.lastChild&&r.lastChild.remove(),e.appendChild(r)},s=new Set,c=(t,e,r,n)=>{let l=Math.min(t+e,o.length);for(let e=t;e<l;e++){let t=o[e];r.every(e=>t.name.includes(e)||t.address.includes(e))&&s.add(t)}l>=o.length?requestAnimationFrame(()=>{i(a,s),n()}):(t=()=>c(l,e,r,n),(globalThis.requestIdleCallback?requestIdleCallback:requestAnimationFrame)(t))};e.addEventListener("input",((t,r)=>{let n;return(...e)=>{clearTimeout(n),n=setTimeout(()=>{clearTimeout(n),t(...e)},r)}})(e=>{(async e=>{let r=(e=>{for(var t,r=/"([^"]+)"|(\S+)/g,n=[];null!==(t=r.exec(e));){let e=(t[1]||t[2]).toLowerCase();e=e.replace(/^"+|"+$/g,""),n.push(e)}return n})(e);if(0!==r.length)return new Promise(e=>{let t=Math.min(50,Math.ceil(o.length/4));requestAnimationFrame(()=>{s.clear(),c(0,t,r,e)})});requestAnimationFrame(()=>{i(a,o)})})(e.target.value.toLowerCase())},150));
     </script>
     <div class="component-footer-y16cp8" data-suffix="y16cp8">
   <footer>
