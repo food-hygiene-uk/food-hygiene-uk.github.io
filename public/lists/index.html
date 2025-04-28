@@ -16,13 +16,13 @@
   </script>
   <script>
     /* Minified JavaScript */
-{let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.setAttribute("data-color-scheme",t??e)};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
+{let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
     :root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--cta-default:#9e66ff;--body-background:var(--light-blue);--text-color:#000;--header-background-color:#f8f9fa;--header-text-color:var(--text-color);--header-rule-color:#e0e0e0;--background-highlight-color:#e5e8f1;--text-highlight-color:var(--text-color)}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){--body-background:#000;--text-color:#757575;--header-background-color:#1f2021;--header-text-color:#dfdfdf;--header-rule-color:#383838;--background-highlight-color:var(--light-blue);--text-highlight-color:var(--text-color)}}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 2rem}
     .content-unlqm{display:contents;.container{margin:0 auto;max-width:1200px;padding:20px}h1{color:var(--hygiene-green);font-size:2em;margin-bottom:1.5rem}.lists-container{display:flex;flex-direction:column;gap:1.5rem;margin-top:2rem}.list-item{background-color:#f8f8f8;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,.1);padding:1.5rem;transition:transform .2s,box-shadow .2s}.list-item:hover{box-shadow:0 4px 8px rgba(0,0,0,.15);transform:translateY(-3px)}.list-item h2{color:var(--hygiene-green);margin-bottom:.5rem;margin-top:0}.list-item p{color:#666;margin-bottom:1.5rem}.list-actions{display:flex;flex-wrap:wrap;gap:1rem}.view-list-button{background-color:var(--hygiene-green);border-radius:4px;color:#fff;display:inline-block;padding:.6rem 1.2rem;text-decoration:none;transition:background-color .2s}.view-list-button:hover{background-color:#005a30}.delete-list-button{background-color:#e74c3c;border:none;border-radius:4px;color:#fff;cursor:pointer;display:inline-block;padding:.6rem 1.2rem;transition:background-color .2s}.delete-list-button:hover{background-color:#c0392b}.clear-list-button{background-color:#f5f5f5;border:1px solid #ddd;border-radius:4px;color:#333;cursor:pointer;display:inline-block;padding:.6rem 1.2rem;transition:background-color .2s}.clear-list-button:hover{background-color:#e5e5e5}.recent-list{border-left:4px solid var(--hygiene-green)}.user-list{border-left:4px solid #3498db}.no-lists-message{background-color:#f8f8f8;border-radius:8px;color:#666;padding:2rem;text-align:center}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){.list-item{background-color:#333}.list-item p{color:#bbb}.no-lists-message{background-color:#333;color:#bbb}.clear-list-button{background-color:#444;border-color:#555;color:#ddd}.clear-list-button:hover{background-color:#505050}}}}
     .component-header-97mkn{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);overflow:hidden;padding:1rem 2rem;position:relative}.navbar-97mkn{align-items:center;display:flex;justify-content:space-between}.logo-97mkn img{height:50px}.nav-links-97mkn{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-97mkn{display:none}.hamburger-97mkn{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-97mkn span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (max-width:768px){.hamburger-97mkn{display:flex}.nav-links-97mkn{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-97mkn:checked~.nav-links-97mkn{right:0}.menu-toggle-97mkn:checked~.hamburger-97mkn span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-97mkn:checked~.hamburger-97mkn span:nth-child(2){opacity:0}.menu-toggle-97mkn:checked~.hamburger-97mkn span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
-    .component-footer-ucae4d{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;text-align:center;a{border-bottom:1px solid hsla(0,0%,100%,.3);color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}}}
+    .component-footer-ucae4d{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid hsla(0,0%,100%,.2);color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid hsla(0,0%,100%,.3);color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
   </style>
 </head>
 
@@ -75,17 +75,39 @@
     </div>
     <div class="component-footer-ucae4d" data-suffix="ucae4d">
   <footer>
-    <div class="container">
-      <p>Food Hygiene Ratings UK - Open Source Project</p>
-      <p>Data provided by local authorities across the UK</p>
-      <a href="https://github.com/food-hygiene-uk/main-site-builder">GitHub Repository</a>
+    <div class="container footer-columns">
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/regions">Regions</a></li>
+          <li><a href="/search">Search</a></li>
+          <li><a href="/lists">My Lists</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>About</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Project</h4>
+        <ul>
+          <li><a href="https://github.com/food-hygiene-uk/main-site-builder">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      Copyright © 2025 the Food Hygiene UK authors.
     </div>
   </footer>
 </div>
 
+
     <script type="module">
       /* Minified JavaScript */
-import{getListCreationDate as d}from"scripts/list-service.mjs";let s="saved-establishment-lists";document.addEventListener("DOMContentLoaded",()=>{let o=document.getElementById("userLists"),t=document.getElementById("noLists"),n=()=>{if(void 0===globalThis.localStorage)return{};try{var e=globalThis.localStorage.getItem(s);return e?JSON.parse(e):{}}catch(e){return{}}},a=e=>{if(void 0===globalThis.localStorage)return!1;try{var t=n();return t[e]?(delete t[e],globalThis.localStorage.setItem(s,JSON.stringify(t)),!0):!1}catch(e){return!1}},r=(e,t)=>{e.preventDefault(),e.stopPropagation(),confirm("Are you sure you want to delete this list? This action cannot be undone.")&&(a(t)?l():alert("There was a problem deleting the list. Please try again."))},l=()=>{var e=n(),e=Object.entries(e);o&&(o.innerHTML=""),0===e.length?t&&(t.style.display="block"):(t&&(t.style.display="none"),e.forEach(([t,e])=>{var n=document.createElement("div"),a=(n.className="list-item user-list",document.createElement("h2")),l=(a.textContent=e.name,document.createElement("p")),e=(l.textContent=e.establishments.length+" establishments • Saved on "+d(t).toLocaleDateString(),document.createElement("div")),s=(e.className="list-actions",document.createElement("a")),i=(s.href="/lists/detail/?id="+t,s.className="view-list-button",s.textContent="View List",document.createElement("button"));i.className="delete-list-button",i.textContent="Delete",i.addEventListener("click",e=>r(e,t)),e.appendChild(s),e.appendChild(i),n.appendChild(a),n.appendChild(l),n.appendChild(e),o.appendChild(n)}))};l()});
+import{getListCreationDate as m}from"scripts/list-service.mjs";let a="saved-establishment-lists",u=()=>{if("undefined"===globalThis.localStorage)return{};try{var e=globalThis.localStorage.getItem(a);return e?JSON.parse(e):{}}catch(e){return{}}};document.addEventListener("DOMContentLoaded",()=>{let c=document.querySelector("#userLists"),e=document.querySelector("#noLists"),d=(e,t)=>{e.preventDefault(),e.stopPropagation(),confirm("Are you sure you want to delete this list? This action cannot be undone.")&&((e=>{if(void 0===globalThis.localStorage)return!1;try{var t=u();return t[e]?(delete t[e],globalThis.localStorage.setItem(a,JSON.stringify(t)),!0):!1}catch(e){return!1}})(t)?n():alert("There was a problem deleting the list. Please try again."))},n=()=>{var n=u(),n=Object.entries(n);if(c&&(c.innerHTML=""),0===n.length)e&&(e.style.display="block");else{e&&(e.style.display="none");for(let[t,e]of n){var a=document.createElement("div"),l=(a.className="list-item user-list",document.createElement("h2")),s=(l.textContent=e.name,document.createElement("p")),r=(s.textContent=e.establishments.length+" establishments • Saved on "+m(t).toLocaleDateString(),document.createElement("div")),o=(r.className="list-actions",document.createElement("a")),i=(o.href="/lists/detail/?id="+t,o.className="view-list-button",o.textContent="View List",document.createElement("button"));i.className="delete-list-button",i.textContent="Delete",i.addEventListener("click",e=>d(e,t)),r.append(o),r.append(i),a.append(l),a.append(s),a.append(r),c.append(a)}}};n()});
     </script>
   </body>
 </html>
