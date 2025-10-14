@@ -1,0 +1,1 @@
+export const filterEstablishments=(e,s)=>{if(!s)return e;const t=s.toLowerCase();return e.filter(e=>e.BusinessName.toLowerCase().includes(t))};export const sliceEstablishments=(e,s,t)=>{const r=(s-1)*t,n=r+t;return e.slice(r,n)};
