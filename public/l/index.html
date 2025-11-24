@@ -1,8 +1,1278 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Regions - Food Hygiene Ratings UK</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://food-hygiene-uk.github.io/l/"><script type="importmap">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regions - Food Hygiene Ratings UK</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://food-hygiene-uk.github.io/l/" />
+  <script type="importmap">
     {
       "imports": {
         "components/": "/components/",
         "scripts/": "/scripts/"
       }
     }
-  </script><script>{let t=e=>{e=e?.matches?"dark":"light";var t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}</script><style>html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(var(--text-color),#757575);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:1px solid light-dark(#dedede,#393939);box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1),rgba(0,0,0,.15));box-sizing:border-box}.box-shadow-hover:hover{box-shadow:0 4px 8px light-dark(rgba(0,0,0,.15),rgba(0,0,0,.25))}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}.authorities{border-radius:8px;margin:2rem auto;padding:1rem;h2{color:var(--primary-blue)}p{color:var(--grey)}}.region-group{align-items:center;display:flex;flex-direction:column;margin-top:0}.region-group h3{color:var(--teal);margin-bottom:1rem;margin-top:0}.authority-grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));max-width:1200px;width:100%}.authority-link{border-radius:4px;padding:1rem;text-align:center;text-decoration:none;transition:transform .2s ease}.authority-link:hover{text-decoration:none;transform:scale(1.01)}.filter-group{align-items:center;display:flex;flex-direction:row;gap:1rem;.input{flex:1}}.component-header-sucd9i{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-sucd9i{align-items:center;display:flex;justify-content:space-between}.logo-sucd9i img{height:50px}.nav-links-sucd9i{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-sucd9i{display:none}.hamburger-sucd9i{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-sucd9i span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-sucd9i{display:flex}.nav-links-sucd9i{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-sucd9i:checked~.nav-links-sucd9i{right:0}.menu-toggle-sucd9i:checked~.hamburger-sucd9i span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-sucd9i:checked~.hamburger-sucd9i span:nth-child(2){opacity:0}.menu-toggle-sucd9i:checked~.hamburger-sucd9i span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}.component-footer-ct9m2i{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid hsla(0,0%,100%,.2);color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid hsla(0,0%,100%,.3);color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}</style></head><body> <div class="component-header-sucd9i" data-suffix="sucd9i"> <header class="container"> <nav class="navbar-sucd9i"> <div class="logo-sucd9i"> <a href="/"> <img src="/images/logo.svg" alt="Site Logo"> </a> </div> <input type="checkbox" id="menu-toggle-sucd9i" class="menu-toggle-sucd9i"> <label for="menu-toggle-sucd9i" class="hamburger-sucd9i"> <span></span> <span></span> <span></span> </label> <ul class="nav-links-sucd9i"> <li><a href="/about/">About</a></li> <li><a href="/l/">Regions</a></li> <li><a href="/search/">Search</a></li> <li><a href="/lists/">My Lists</a></li> </ul> </nav> </header> </div> <div class="content-flyzk"> <article class="container"> <h2>Local Authorities of the United Kingdom</h2> <p>Not all local authorities participate in the Food Hygiene Ratings. This is a list of all participating local authorities grouped by their region.</p> <p>Select a local authority to view businesses in that local authority.</p> <div class="filter-group" inert> <label for="filterInput">Filter by region:</label> <input type="text" id="filterInput" class="input" placeholder="Type to filter local authorities..."> </div> <section class="authorities box-shadow"> <div class="region-group"> <h3>East of England</h3> <div class="authority-grid"> <a href="/l/babergh" class="authority-link box-shadow-hover"> Babergh </a> <a href="/l/basildon" class="authority-link box-shadow-hover"> Basildon </a> <a href="/l/bedford" class="authority-link box-shadow-hover"> Bedford </a> <a href="/l/braintree" class="authority-link box-shadow-hover"> Braintree </a> <a href="/l/breckland" class="authority-link box-shadow-hover"> Breckland </a> <a href="/l/brentwood" class="authority-link box-shadow-hover"> Brentwood </a> <a href="/l/broadland" class="authority-link box-shadow-hover"> Broadland </a> <a href="/l/broxbourne" class="authority-link box-shadow-hover"> Broxbourne </a> <a href="/l/cambridge-city" class="authority-link box-shadow-hover"> Cambridge City </a> <a href="/l/castle-point" class="authority-link box-shadow-hover"> Castle Point </a> <a href="/l/central-bedfordshire" class="authority-link box-shadow-hover"> Central Bedfordshire </a> <a href="/l/chelmsford" class="authority-link box-shadow-hover"> Chelmsford </a> <a href="/l/colchester" class="authority-link box-shadow-hover"> Colchester </a> <a href="/l/dacorum" class="authority-link box-shadow-hover"> Dacorum </a> <a href="/l/east-cambridgeshire" class="authority-link box-shadow-hover"> East Cambridgeshire </a> <a href="/l/east-hertfordshire" class="authority-link box-shadow-hover"> East Hertfordshire </a> <a href="/l/east-suffolk" class="authority-link box-shadow-hover"> East Suffolk </a> <a href="/l/epping-forest" class="authority-link box-shadow-hover"> Epping Forest </a> <a href="/l/fenland" class="authority-link box-shadow-hover"> Fenland </a> <a href="/l/great-yarmouth" class="authority-link box-shadow-hover"> Great Yarmouth </a> <a href="/l/harlow" class="authority-link box-shadow-hover"> Harlow </a> <a href="/l/hertsmere" class="authority-link box-shadow-hover"> Hertsmere </a> <a href="/l/huntingdonshire" class="authority-link box-shadow-hover"> Huntingdonshire </a> <a href="/l/ipswich" class="authority-link box-shadow-hover"> Ipswich </a> <a href="/l/kings-lynn-and-west-norfolk" class="authority-link box-shadow-hover"> King's Lynn and West Norfolk </a> <a href="/l/luton" class="authority-link box-shadow-hover"> Luton </a> <a href="/l/maldon" class="authority-link box-shadow-hover"> Maldon </a> <a href="/l/mid-suffolk" class="authority-link box-shadow-hover"> Mid Suffolk </a> <a href="/l/north-hertfordshire" class="authority-link box-shadow-hover"> North Hertfordshire </a> <a href="/l/north-norfolk" class="authority-link box-shadow-hover"> North Norfolk </a> <a href="/l/norwich-city" class="authority-link box-shadow-hover"> Norwich City </a> <a href="/l/peterborough-city" class="authority-link box-shadow-hover"> Peterborough City </a> <a href="/l/rochford" class="authority-link box-shadow-hover"> Rochford </a> <a href="/l/south-cambridgeshire" class="authority-link box-shadow-hover"> South Cambridgeshire </a> <a href="/l/south-norfolk" class="authority-link box-shadow-hover"> South Norfolk </a> <a href="/l/southend-on-sea" class="authority-link box-shadow-hover"> Southend-On-Sea </a> <a href="/l/st-albans-city" class="authority-link box-shadow-hover"> St Albans City </a> <a href="/l/stevenage" class="authority-link box-shadow-hover"> Stevenage </a> <a href="/l/tendring" class="authority-link box-shadow-hover"> Tendring </a> <a href="/l/three-rivers" class="authority-link box-shadow-hover"> Three Rivers </a> <a href="/l/thurrock" class="authority-link box-shadow-hover"> Thurrock </a> <a href="/l/uttlesford" class="authority-link box-shadow-hover"> Uttlesford </a> <a href="/l/watford" class="authority-link box-shadow-hover"> Watford </a> <a href="/l/welwyn-hatfield" class="authority-link box-shadow-hover"> Welwyn Hatfield </a> <a href="/l/west-suffolk" class="authority-link box-shadow-hover"> West Suffolk </a> </div> </div> </section> <section class="authorities box-shadow"> <div class="region-group"> <h3>East Midlands</h3> <div class="authority-grid"> <a href="/l/amber-valley" class="authority-link box-shadow-hover"> Amber Valley </a> <a href="/l/ashfield" class="authority-link box-shadow-hover"> Ashfield </a> <a href="/l/bassetlaw" class="authority-link box-shadow-hover"> Bassetlaw </a> <a href="/l/blaby" class="authority-link box-shadow-hover"> Blaby </a> <a href="/l/bolsover" class="authority-link box-shadow-hover"> Bolsover </a> <a href="/l/boston" class="authority-link box-shadow-hover"> Boston </a> <a href="/l/broxtowe" class="authority-link box-shadow-hover"> Broxtowe </a> <a href="/l/charnwood" class="authority-link box-shadow-hover"> Charnwood </a> <a href="/l/chesterfield" class="authority-link box-shadow-hover"> Chesterfield </a> <a href="/l/derby-city" class="authority-link box-shadow-hover"> Derby City </a> <a href="/l/derbyshire-dales" class="authority-link box-shadow-hover"> Derbyshire Dales </a> <a href="/l/east-lindsey" class="authority-link box-shadow-hover"> East Lindsey </a> <a href="/l/erewash" class="authority-link box-shadow-hover"> Erewash </a> <a href="/l/gedling" class="authority-link box-shadow-hover"> Gedling </a> <a href="/l/harborough" class="authority-link box-shadow-hover"> Harborough </a> <a href="/l/high-peak" class="authority-link box-shadow-hover"> High Peak </a> <a href="/l/hinckley-and-bosworth" class="authority-link box-shadow-hover"> Hinckley and Bosworth </a> <a href="/l/leicester-city" class="authority-link box-shadow-hover"> Leicester City </a> <a href="/l/lincoln-city" class="authority-link box-shadow-hover"> Lincoln City </a> <a href="/l/mansfield" class="authority-link box-shadow-hover"> Mansfield </a> <a href="/l/melton" class="authority-link box-shadow-hover"> Melton </a> <a href="/l/newark-and-sherwood" class="authority-link box-shadow-hover"> Newark and Sherwood </a> <a href="/l/north-east-derbyshire" class="authority-link box-shadow-hover"> North East Derbyshire </a> <a href="/l/north-kesteven" class="authority-link box-shadow-hover"> North Kesteven </a> <a href="/l/north-northamptonshire" class="authority-link box-shadow-hover"> North Northamptonshire </a> <a href="/l/north-west-leicestershire" class="authority-link box-shadow-hover"> North West Leicestershire </a> <a href="/l/nottingham-city" class="authority-link box-shadow-hover"> Nottingham City </a> <a href="/l/oadby-and-wigston" class="authority-link box-shadow-hover"> Oadby and Wigston </a> <a href="/l/rushcliffe" class="authority-link box-shadow-hover"> Rushcliffe </a> <a href="/l/rutland" class="authority-link box-shadow-hover"> Rutland </a> <a href="/l/south-derbyshire" class="authority-link box-shadow-hover"> South Derbyshire </a> <a href="/l/south-holland" class="authority-link box-shadow-hover"> South Holland </a> <a href="/l/south-kesteven" class="authority-link box-shadow-hover"> South Kesteven </a> <a href="/l/west-lindsey" class="authority-link box-shadow-hover"> West Lindsey </a> <a href="/l/west-northamptonshire" class="authority-link box-shadow-hover"> West Northamptonshire </a> </div> </div> </section> <section class="authorities box-shadow"> <div class="region-group"> <h3>London</h3> <div class="authority-grid"> <a href="/l/barking-and-dagenham" class="authority-link box-shadow-hover"> Barking and Dagenham </a> <a href="/l/barnet" class="authority-link box-shadow-hover"> Barnet </a> <a href="/l/bexley" class="authority-link box-shadow-hover"> Bexley </a> <a href="/l/brent" class="authority-link box-shadow-hover"> Brent </a> <a href="/l/bromley" class="authority-link box-shadow-hover"> Bromley </a> <a href="/l/camden" class="authority-link box-shadow-hover"> Camden </a> <a href="/l/city-of-london-corporation" class="authority-link box-shadow-hover"> City of London Corporation </a> <a href="/l/croydon" class="authority-link box-shadow-hover"> Croydon </a> <a href="/l/ealing" class="authority-link box-shadow-hover"> Ealing </a> <a href="/l/enfield" class="authority-link box-shadow-hover"> Enfield </a> <a href="/l/greenwich" class="authority-link box-shadow-hover"> Greenwich </a> <a href="/l/hackney" class="authority-link box-shadow-hover"> Hackney </a> <a href="/l/hammersmith-and-fulham" class="authority-link box-shadow-hover"> Hammersmith and Fulham </a> <a href="/l/haringey" class="authority-link box-shadow-hover"> Haringey </a> <a href="/l/harrow" class="authority-link box-shadow-hover"> Harrow </a> <a href="/l/havering" class="authority-link box-shadow-hover"> Havering </a> <a href="/l/hillingdon" class="authority-link box-shadow-hover"> Hillingdon </a> <a href="/l/hounslow" class="authority-link box-shadow-hover"> Hounslow </a> <a href="/l/islington" class="authority-link box-shadow-hover"> Islington </a> <a href="/l/kensington-and-chelsea" class="authority-link box-shadow-hover"> Kensington and Chelsea </a> <a href="/l/kingston-upon-thames" class="authority-link box-shadow-hover"> Kingston-Upon-Thames </a> <a href="/l/lambeth" class="authority-link box-shadow-hover"> Lambeth </a> <a href="/l/lewisham" class="authority-link box-shadow-hover"> Lewisham </a> <a href="/l/merton" class="authority-link box-shadow-hover"> Merton </a> <a href="/l/newham" class="authority-link box-shadow-hover"> Newham </a> <a href="/l/redbridge" class="authority-link box-shadow-hover"> Redbridge </a> <a href="/l/richmond-upon-thames" class="authority-link box-shadow-hover"> Richmond-Upon-Thames </a> <a href="/l/southwark" class="authority-link box-shadow-hover"> Southwark </a> <a href="/l/sutton" class="authority-link box-shadow-hover"> Sutton </a> <a href="/l/tower-hamlets" class="authority-link box-shadow-hover"> Tower Hamlets </a> <a href="/l/waltham-forest" class="authority-link box-shadow-hover"> Waltham Forest </a> <a href="/l/wandsworth" class="authority-link box-shadow-hover"> Wandsworth </a> <a href="/l/westminster" class="authority-link box-shadow-hover"> Westminster </a> </div> </div> </section> <section class="authorities box-shadow"> <div class="region-group"> <h3>North East</h3> <div class="authority-grid"> <a href="/l/darlington" class="authority-link box-shadow-hover"> Darlington </a> <a href="/l/durham" class="authority-link box-shadow-hover"> Durham </a> <a href="/l/gateshead" class="authority-link box-shadow-hover"> Gateshead </a> <a href="/l/hartlepool" class="authority-link box-shadow-hover"> Hartlepool </a> <a href="/l/middlesbrough" class="authority-link box-shadow-hover"> Middlesbrough </a> <a href="/l/newcastle-upon-tyne" class="authority-link box-shadow-hover"> Newcastle Upon Tyne </a> <a href="/l/north-tyneside" class="authority-link box-shadow-hover"> North Tyneside </a> <a href="/l/northumberland" class="authority-link box-shadow-hover"> Northumberland </a> <a href="/l/redcar-and-cleveland" class="authority-link box-shadow-hover"> Redcar and Cleveland </a> <a href="/l/river-tees" class="authority-link box-shadow-hover"> River Tees </a> <a href="/l/south-tyneside" class="authority-link box-shadow-hover"> South Tyneside </a> <a href="/l/stockton-on-tees" class="authority-link box-shadow-hover"> Stockton On Tees </a> <a href="/l/sunderland" class="authority-link box-shadow-hover"> Sunderland </a> </div> </div> </section> <section class="authorities box-shadow"> <div class="region-group"> <h3>North West</h3> <div class="authority-grid"> <a href="/l/blackburn" class="authority-link box-shadow-hover"> Blackburn </a> <a href="/l/blackpool" class="authority-link box-shadow-hover"> Blackpool </a> <a href="/l/bolton" class="authority-link box-shadow-hover"> Bolton </a> <a href="/l/burnley" class="authority-link box-shadow-hover"> Burnley </a> <a href="/l/bury" class="authority-link box-shadow-hover"> Bury </a> <a href="/l/cheshire-east" class="authority-link box-shadow-hover"> Cheshire East </a> <a href="/l/cheshire-west-and-chester" class="authority-link box-shadow-hover"> Cheshire West and Chester </a> <a href="/l/chorley" class="authority-link box-shadow-hover"> Chorley </a> <a href="/l/cumberland" class="authority-link box-shadow-hover"> Cumberland </a> <a href="/l/fylde" class="authority-link box-shadow-hover"> Fylde </a> <a href="/l/halton" class="authority-link box-shadow-hover"> Halton </a> <a href="/l/hyndburn" class="authority-link box-shadow-hover"> Hyndburn </a> <a href="/l/knowsley" class="authority-link box-shadow-hover"> Knowsley </a> <a href="/l/lancaster-city" class="authority-link box-shadow-hover"> Lancaster City </a> <a href="/l/liverpool" class="authority-link box-shadow-hover"> Liverpool </a> <a href="/l/manchester" class="authority-link box-shadow-hover"> Manchester </a> <a href="/l/oldham" class="authority-link box-shadow-hover"> Oldham </a> <a href="/l/pendle" class="authority-link box-shadow-hover"> Pendle </a> <a href="/l/preston" class="authority-link box-shadow-hover"> Preston </a> <a href="/l/ribble-valley" class="authority-link box-shadow-hover"> Ribble Valley </a> <a href="/l/rochdale" class="authority-link box-shadow-hover"> Rochdale </a> <a href="/l/rossendale" class="authority-link box-shadow-hover"> Rossendale </a> <a href="/l/salford" class="authority-link box-shadow-hover"> Salford </a> <a href="/l/sefton" class="authority-link box-shadow-hover"> Sefton </a> <a href="/l/south-ribble" class="authority-link box-shadow-hover"> South Ribble </a> <a href="/l/st-helens" class="authority-link box-shadow-hover"> St Helens </a> <a href="/l/stockport" class="authority-link box-shadow-hover"> Stockport </a> <a href="/l/tameside" class="authority-link box-shadow-hover"> Tameside </a> <a href="/l/trafford" class="authority-link box-shadow-hover"> Trafford </a> <a href="/l/warrington" class="authority-link box-shadow-hover"> Warrington </a> <a href="/l/west-lancashire" class="authority-link box-shadow-hover"> West Lancashire </a> <a href="/l/westmorland-and-furness" class="authority-link box-shadow-hover"> Westmorland and Furness </a> <a href="/l/wigan" class="authority-link box-shadow-hover"> Wigan </a> <a href="/l/wirral" class="authority-link box-shadow-hover"> Wirral </a> <a href="/l/wyre" class="authority-link box-shadow-hover"> Wyre </a> </div> </div> </section> <section class="authorities box-shadow"> <div class="region-group"> <h3>South East</h3> <div class="authority-grid"> <a href="/l/adur" class="authority-link box-shadow-hover"> Adur </a> <a href="/l/arun" class="authority-link box-shadow-hover"> Arun </a> <a href="/l/ashford" class="authority-link box-shadow-hover"> Ashford </a> <a href="/l/basingstoke-and-deane" class="authority-link box-shadow-hover"> Basingstoke and Deane </a> <a href="/l/bracknell-forest" class="authority-link box-shadow-hover"> Bracknell Forest </a> <a href="/l/brighton-and-hove" class="authority-link box-shadow-hover"> Brighton and Hove </a> <a href="/l/buckinghamshire" class="authority-link box-shadow-hover"> Buckinghamshire </a> <a href="/l/canterbury-city" class="authority-link box-shadow-hover"> Canterbury City </a> <a href="/l/cherwell" class="authority-link box-shadow-hover"> Cherwell </a> <a href="/l/chichester" class="authority-link box-shadow-hover"> Chichester </a> <a href="/l/crawley" class="authority-link box-shadow-hover"> Crawley </a> <a href="/l/dartford" class="authority-link box-shadow-hover"> Dartford </a> <a href="/l/dover" class="authority-link box-shadow-hover"> Dover </a> <a href="/l/east-hampshire" class="authority-link box-shadow-hover"> East Hampshire </a> <a href="/l/eastbourne" class="authority-link box-shadow-hover"> Eastbourne </a> <a href="/l/eastleigh" class="authority-link box-shadow-hover"> Eastleigh </a> <a href="/l/elmbridge" class="authority-link box-shadow-hover"> Elmbridge </a> <a href="/l/epsom-and-ewell" class="authority-link box-shadow-hover"> Epsom and Ewell </a> <a href="/l/fareham" class="authority-link box-shadow-hover"> Fareham </a> <a href="/l/folkestone-and-hythe" class="authority-link box-shadow-hover"> Folkestone and Hythe </a> <a href="/l/gosport" class="authority-link box-shadow-hover"> Gosport </a> <a href="/l/gravesham" class="authority-link box-shadow-hover"> Gravesham </a> <a href="/l/guildford" class="authority-link box-shadow-hover"> Guildford </a> <a href="/l/hart" class="authority-link box-shadow-hover"> Hart </a> <a href="/l/hastings" class="authority-link box-shadow-hover"> Hastings </a> <a href="/l/havant" class="authority-link box-shadow-hover"> Havant </a> <a href="/l/horsham" class="authority-link box-shadow-hover"> Horsham </a> <a href="/l/isle-of-wight" class="authority-link box-shadow-hover"> Isle of Wight </a> <a href="/l/lewes" class="authority-link box-shadow-hover"> Lewes </a> <a href="/l/maidstone" class="authority-link box-shadow-hover"> Maidstone </a> <a href="/l/medway" class="authority-link box-shadow-hover"> Medway </a> <a href="/l/mid-sussex" class="authority-link box-shadow-hover"> Mid Sussex </a> <a href="/l/milton-keynes" class="authority-link box-shadow-hover"> Milton Keynes </a> <a href="/l/mole-valley" class="authority-link box-shadow-hover"> Mole Valley </a> <a href="/l/new-forest" class="authority-link box-shadow-hover"> New Forest </a> <a href="/l/oxford-city" class="authority-link box-shadow-hover"> Oxford City </a> <a href="/l/portsmouth" class="authority-link box-shadow-hover"> Portsmouth </a> <a href="/l/reading" class="authority-link box-shadow-hover"> Reading </a> <a href="/l/reigate-and-banstead" class="authority-link box-shadow-hover"> Reigate and Banstead </a> <a href="/l/rother" class="authority-link box-shadow-hover"> Rother </a> <a href="/l/runnymede" class="authority-link box-shadow-hover"> Runnymede </a> <a href="/l/rushmoor" class="authority-link box-shadow-hover"> Rushmoor </a> <a href="/l/sevenoaks" class="authority-link box-shadow-hover"> Sevenoaks </a> <a href="/l/slough" class="authority-link box-shadow-hover"> Slough </a> <a href="/l/south-oxfordshire" class="authority-link box-shadow-hover"> South Oxfordshire </a> <a href="/l/southampton" class="authority-link box-shadow-hover"> Southampton </a> <a href="/l/spelthorne" class="authority-link box-shadow-hover"> Spelthorne </a> <a href="/l/surrey-heath" class="authority-link box-shadow-hover"> Surrey Heath </a> <a href="/l/swale" class="authority-link box-shadow-hover"> Swale </a> <a href="/l/tandridge" class="authority-link box-shadow-hover"> Tandridge </a> <a href="/l/test-valley" class="authority-link box-shadow-hover"> Test Valley </a> <a href="/l/thanet" class="authority-link box-shadow-hover"> Thanet </a> <a href="/l/tonbridge-and-malling" class="authority-link box-shadow-hover"> Tonbridge and Malling </a> <a href="/l/tunbridge-wells" class="authority-link box-shadow-hover"> Tunbridge Wells </a> <a href="/l/vale-of-white-horse" class="authority-link box-shadow-hover"> Vale of White Horse </a> <a href="/l/waverley" class="authority-link box-shadow-hover"> Waverley </a> <a href="/l/wealden" class="authority-link box-shadow-hover"> Wealden </a> <a href="/l/west-berkshire" class="authority-link box-shadow-hover"> West Berkshire </a> <a href="/l/west-oxfordshire" class="authority-link box-shadow-hover"> West Oxfordshire </a> <a href="/l/winchester-city" class="authority-link box-shadow-hover"> Winchester City </a> <a href="/l/windsor-and-maidenhead" class="authority-link box-shadow-hover"> Windsor and Maidenhead </a> <a href="/l/woking" class="authority-link box-shadow-hover"> Woking </a> <a href="/l/wokingham" class="authority-link box-shadow-hover"> Wokingham </a> <a href="/l/worthing" class="authority-link box-shadow-hover"> Worthing </a> </div> </div> </section> <section class="authorities box-shadow"> <div class="region-group"> <h3>South West</h3> <div class="authority-grid"> <a href="/l/bath-and-north-east-somerset" class="authority-link box-shadow-hover"> Bath and North East Somerset </a> <a href="/l/bournemouth-christchurch-and-poole" class="authority-link box-shadow-hover"> Bournemouth, Christchurch and Poole </a> <a href="/l/bristol" class="authority-link box-shadow-hover"> Bristol </a> <a href="/l/cheltenham" class="authority-link box-shadow-hover"> Cheltenham </a> <a href="/l/cornwall" class="authority-link box-shadow-hover"> Cornwall </a> <a href="/l/cotswold" class="authority-link box-shadow-hover"> Cotswold </a> <a href="/l/dorset" class="authority-link box-shadow-hover"> Dorset </a> <a href="/l/east-devon" class="authority-link box-shadow-hover"> East Devon </a> <a href="/l/exeter-city" class="authority-link box-shadow-hover"> Exeter City </a> <a href="/l/forest-of-dean" class="authority-link box-shadow-hover"> Forest of Dean </a> <a href="/l/gloucester-city" class="authority-link box-shadow-hover"> Gloucester City </a> <a href="/l/isles-of-scilly" class="authority-link box-shadow-hover"> Isles of Scilly </a> <a href="/l/mid-devon" class="authority-link box-shadow-hover"> Mid Devon </a> <a href="/l/north-devon" class="authority-link box-shadow-hover"> North Devon </a> <a href="/l/north-somerset" class="authority-link box-shadow-hover"> North Somerset </a> <a href="/l/plymouth-city" class="authority-link box-shadow-hover"> Plymouth City </a> <a href="/l/somerset" class="authority-link box-shadow-hover"> Somerset </a> <a href="/l/south-gloucestershire" class="authority-link box-shadow-hover"> South Gloucestershire </a> <a href="/l/south-hams" class="authority-link box-shadow-hover"> South Hams </a> <a href="/l/stroud" class="authority-link box-shadow-hover"> Stroud </a> <a href="/l/swindon" class="authority-link box-shadow-hover"> Swindon </a> <a href="/l/teignbridge" class="authority-link box-shadow-hover"> Teignbridge </a> <a href="/l/tewkesbury" class="authority-link box-shadow-hover"> Tewkesbury </a> <a href="/l/torbay" class="authority-link box-shadow-hover"> Torbay </a> <a href="/l/torridge" class="authority-link box-shadow-hover"> Torridge </a> <a href="/l/west-devon" class="authority-link box-shadow-hover"> West Devon </a> <a href="/l/wiltshire" class="authority-link box-shadow-hover"> Wiltshire </a> </div> </div> </section> <section class="authorities box-shadow"> <div class="region-group"> <h3>West Midlands</h3> <div class="authority-grid"> <a href="/l/birmingham" class="authority-link box-shadow-hover"> Birmingham </a> <a href="/l/bromsgrove" class="authority-link box-shadow-hover"> Bromsgrove </a> <a href="/l/cannock-chase" class="authority-link box-shadow-hover"> Cannock Chase </a> <a href="/l/coventry" class="authority-link box-shadow-hover"> Coventry </a> <a href="/l/dudley" class="authority-link box-shadow-hover"> Dudley </a> <a href="/l/east-staffordshire" class="authority-link box-shadow-hover"> East Staffordshire </a> <a href="/l/herefordshire" class="authority-link box-shadow-hover"> Herefordshire </a> <a href="/l/lichfield" class="authority-link box-shadow-hover"> Lichfield </a> <a href="/l/malvern-hills" class="authority-link box-shadow-hover"> Malvern Hills </a> <a href="/l/newcastle-under-lyme" class="authority-link box-shadow-hover"> Newcastle-Under-Lyme </a> <a href="/l/north-warwickshire" class="authority-link box-shadow-hover"> North Warwickshire </a> <a href="/l/nuneaton-and-bedworth" class="authority-link box-shadow-hover"> Nuneaton and Bedworth </a> <a href="/l/redditch" class="authority-link box-shadow-hover"> Redditch </a> <a href="/l/rugby" class="authority-link box-shadow-hover"> Rugby </a> <a href="/l/sandwell" class="authority-link box-shadow-hover"> Sandwell </a> <a href="/l/shropshire" class="authority-link box-shadow-hover"> Shropshire </a> <a href="/l/solihull" class="authority-link box-shadow-hover"> Solihull </a> <a href="/l/south-staffordshire" class="authority-link box-shadow-hover"> South Staffordshire </a> <a href="/l/stafford" class="authority-link box-shadow-hover"> Stafford </a> <a href="/l/staffordshire-moorlands" class="authority-link box-shadow-hover"> Staffordshire Moorlands </a> <a href="/l/stoke-on-trent" class="authority-link box-shadow-hover"> Stoke-On-Trent </a> <a href="/l/stratford-on-avon" class="authority-link box-shadow-hover"> Stratford-on-Avon </a> <a href="/l/tamworth" class="authority-link box-shadow-hover"> Tamworth </a> <a href="/l/telford-and-wrekin-council" class="authority-link box-shadow-hover"> Telford and Wrekin Council </a> <a href="/l/walsall" class="authority-link box-shadow-hover"> Walsall </a> <a href="/l/warwick" class="authority-link box-shadow-hover"> Warwick </a> <a href="/l/wolverhampton" class="authority-link box-shadow-hover"> Wolverhampton </a> <a href="/l/worcester-city" class="authority-link box-shadow-hover"> Worcester City </a> <a href="/l/wychavon" class="authority-link box-shadow-hover"> Wychavon </a> <a href="/l/wyre-forest" class="authority-link box-shadow-hover"> Wyre Forest </a> </div> </div> </section> <section class="authorities box-shadow"> <div class="region-group"> <h3>Yorkshire and the Humber</h3> <div class="authority-grid"> <a href="/l/barnsley" class="authority-link box-shadow-hover"> Barnsley </a> <a href="/l/bradford" class="authority-link box-shadow-hover"> Bradford </a> <a href="/l/calderdale" class="authority-link box-shadow-hover"> Calderdale </a> <a href="/l/doncaster" class="authority-link box-shadow-hover"> Doncaster </a> <a href="/l/east-riding-of-yorkshire" class="authority-link box-shadow-hover"> East Riding of Yorkshire </a> <a href="/l/hull-and-goole-port" class="authority-link box-shadow-hover"> Hull and Goole Port </a> <a href="/l/hull-city" class="authority-link box-shadow-hover"> Hull City </a> <a href="/l/kirklees" class="authority-link box-shadow-hover"> Kirklees </a> <a href="/l/leeds" class="authority-link box-shadow-hover"> Leeds </a> <a href="/l/north-east-lincolnshire" class="authority-link box-shadow-hover"> North East Lincolnshire </a> <a href="/l/north-lincolnshire" class="authority-link box-shadow-hover"> North Lincolnshire </a> <a href="/l/north-yorkshire" class="authority-link box-shadow-hover"> North Yorkshire </a> <a href="/l/rotherham" class="authority-link box-shadow-hover"> Rotherham </a> <a href="/l/sheffield" class="authority-link box-shadow-hover"> Sheffield </a> <a href="/l/wakefield" class="authority-link box-shadow-hover"> Wakefield </a> <a href="/l/york" class="authority-link box-shadow-hover"> York </a> </div> </div> </section> <section class="authorities box-shadow"> <div class="region-group"> <h3>Northern Ireland</h3> <div class="authority-grid"> <a href="/l/antrim-and-newtownabbey" class="authority-link box-shadow-hover"> Antrim and Newtownabbey </a> <a href="/l/ards-and-north-down" class="authority-link box-shadow-hover"> Ards and North Down </a> <a href="/l/armagh-city-banbridge-and-craigavon" class="authority-link box-shadow-hover"> Armagh City, Banbridge and Craigavon </a> <a href="/l/belfast-city" class="authority-link box-shadow-hover"> Belfast City </a> <a href="/l/causeway-coast-and-glens" class="authority-link box-shadow-hover"> Causeway Coast and Glens </a> <a href="/l/derry-city-and-strabane" class="authority-link box-shadow-hover"> Derry City and Strabane </a> <a href="/l/fermanagh-and-omagh" class="authority-link box-shadow-hover"> Fermanagh and Omagh </a> <a href="/l/lisburn-and-castlereagh-city" class="authority-link box-shadow-hover"> Lisburn and Castlereagh City </a> <a href="/l/mid-and-east-antrim" class="authority-link box-shadow-hover"> Mid and East Antrim </a> <a href="/l/mid-ulster" class="authority-link box-shadow-hover"> Mid Ulster </a> <a href="/l/newry-mourne-and-down" class="authority-link box-shadow-hover"> Newry, Mourne and Down </a> </div> </div> </section> <section class="authorities box-shadow"> <div class="region-group"> <h3>Scotland</h3> <div class="authority-grid"> <a href="/l/aberdeen-city" class="authority-link box-shadow-hover"> Aberdeen City </a> <a href="/l/aberdeenshire" class="authority-link box-shadow-hover"> Aberdeenshire </a> <a href="/l/angus" class="authority-link box-shadow-hover"> Angus </a> <a href="/l/argyll-and-bute" class="authority-link box-shadow-hover"> Argyll and Bute </a> <a href="/l/clackmannanshire" class="authority-link box-shadow-hover"> Clackmannanshire </a> <a href="/l/comhairle-nan-eilean-siar--western-isles-" class="authority-link box-shadow-hover"> Comhairle nan Eilean Siar (Western Isles) </a> <a href="/l/dumfries-and-galloway" class="authority-link box-shadow-hover"> Dumfries and Galloway </a> <a href="/l/dundee-city" class="authority-link box-shadow-hover"> Dundee City </a> <a href="/l/east-ayrshire" class="authority-link box-shadow-hover"> East Ayrshire </a> <a href="/l/east-dunbartonshire" class="authority-link box-shadow-hover"> East Dunbartonshire </a> <a href="/l/east-lothian" class="authority-link box-shadow-hover"> East Lothian </a> <a href="/l/east-renfrewshire" class="authority-link box-shadow-hover"> East Renfrewshire </a> <a href="/l/edinburgh--city-of-" class="authority-link box-shadow-hover"> Edinburgh (City of) </a> <a href="/l/falkirk" class="authority-link box-shadow-hover"> Falkirk </a> <a href="/l/fife" class="authority-link box-shadow-hover"> Fife </a> <a href="/l/glasgow-city" class="authority-link box-shadow-hover"> Glasgow City </a> <a href="/l/highland" class="authority-link box-shadow-hover"> Highland </a> <a href="/l/inverclyde" class="authority-link box-shadow-hover"> Inverclyde </a> <a href="/l/midlothian" class="authority-link box-shadow-hover"> Midlothian </a> <a href="/l/moray" class="authority-link box-shadow-hover"> Moray </a> <a href="/l/north-ayrshire" class="authority-link box-shadow-hover"> North Ayrshire </a> <a href="/l/north-lanarkshire" class="authority-link box-shadow-hover"> North Lanarkshire </a> <a href="/l/orkney-islands" class="authority-link box-shadow-hover"> Orkney Islands </a> <a href="/l/perth-and-kinross" class="authority-link box-shadow-hover"> Perth and Kinross </a> <a href="/l/renfrewshire" class="authority-link box-shadow-hover"> Renfrewshire </a> <a href="/l/scottish-borders" class="authority-link box-shadow-hover"> Scottish Borders </a> <a href="/l/shetland-islands" class="authority-link box-shadow-hover"> Shetland Islands </a> <a href="/l/south-ayrshire" class="authority-link box-shadow-hover"> South Ayrshire </a> <a href="/l/south-lanarkshire" class="authority-link box-shadow-hover"> South Lanarkshire </a> <a href="/l/stirling" class="authority-link box-shadow-hover"> Stirling </a> <a href="/l/west-dunbartonshire" class="authority-link box-shadow-hover"> West Dunbartonshire </a> <a href="/l/west-lothian" class="authority-link box-shadow-hover"> West Lothian </a> </div> </div> </section> <section class="authorities box-shadow"> <div class="region-group"> <h3>Wales</h3> <div class="authority-grid"> <a href="/l/anglesey" class="authority-link box-shadow-hover"> Anglesey </a> <a href="/l/blaenau-gwent" class="authority-link box-shadow-hover"> Blaenau Gwent </a> <a href="/l/bridgend" class="authority-link box-shadow-hover"> Bridgend </a> <a href="/l/caerphilly" class="authority-link box-shadow-hover"> Caerphilly </a> <a href="/l/cardiff" class="authority-link box-shadow-hover"> Cardiff </a> <a href="/l/carmarthenshire" class="authority-link box-shadow-hover"> Carmarthenshire </a> <a href="/l/ceredigion" class="authority-link box-shadow-hover"> Ceredigion </a> <a href="/l/conwy" class="authority-link box-shadow-hover"> Conwy </a> <a href="/l/denbighshire" class="authority-link box-shadow-hover"> Denbighshire </a> <a href="/l/flintshire" class="authority-link box-shadow-hover"> Flintshire </a> <a href="/l/gwynedd" class="authority-link box-shadow-hover"> Gwynedd </a> <a href="/l/merthyr-tydfil" class="authority-link box-shadow-hover"> Merthyr Tydfil </a> <a href="/l/monmouthshire" class="authority-link box-shadow-hover"> Monmouthshire </a> <a href="/l/neath-port-talbot" class="authority-link box-shadow-hover"> Neath Port Talbot </a> <a href="/l/newport" class="authority-link box-shadow-hover"> Newport </a> <a href="/l/pembrokeshire" class="authority-link box-shadow-hover"> Pembrokeshire </a> <a href="/l/powys" class="authority-link box-shadow-hover"> Powys </a> <a href="/l/rhondda-cynon-taf" class="authority-link box-shadow-hover"> Rhondda Cynon Taf </a> <a href="/l/swansea" class="authority-link box-shadow-hover"> Swansea </a> <a href="/l/torfaen" class="authority-link box-shadow-hover"> Torfaen </a> <a href="/l/vale-of-glamorgan" class="authority-link box-shadow-hover"> Vale of Glamorgan </a> <a href="/l/wrexham" class="authority-link box-shadow-hover"> Wrexham </a> </div> </div> </section> </article> </div> <div class="component-footer-ct9m2i" data-suffix="ct9m2i"> <footer> <div class="container footer-columns"> <div class="footer-column"> <h4>Explore</h4> <ul> <li><a href="/l/">Regions</a></li> <li><a href="/search/">Search</a></li> <li><a href="/lists/">My Lists</a></li> </ul> </div> <div class="footer-column"> <h4>About</h4> <ul> <li><a href="/">Home</a></li> <li><a href="/about/">About</a></li> </ul> </div> <div class="footer-column"> <h4>Project</h4> <ul> <li><a href="https://github.com/food-hygiene-uk/main-site-builder">GitHub</a></li> </ul> </div> </div> <div class="copyright"> Copyright © 2025 the Food Hygiene UK authors. </div> </footer> </div> <script type="module">document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelector(".filter-group");e.querySelector("#filterInput").addEventListener("input",t=>{var o,l=t.target.value.toLowerCase();for(o of document.querySelectorAll(".authorities")){var r=o.querySelectorAll(".authority-link");if(o.querySelector("h3").textContent.toLowerCase().includes(l))for(var n of(o.style.display="block",r))n.style.display="block";else{for(var a of r){var s=a.textContent.toLowerCase();a.style.display=s.includes(l)?"block":"none"}r=0===o.querySelectorAll(".authority-link:not([style*='display: none'])").length,o.style.display=r?"none":"block"}}t=0===document.querySelectorAll(".authorities:not([style*='display: none'])").length;var i=document.querySelector("#noMatchesMessage");t?i||((t=document.createElement("p")).id="noMatchesMessage",t.textContent="No matches found.",t.style.textAlign="center",t.style.marginTop="1rem",e.parentNode.append(t)):i&&i.remove()}),e.removeAttribute("inert")});</script> </body></html>
+  </script>
+  <script>
+    /* Minified JavaScript */
+{let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
+  </script>
+  <style>
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(var(--text-color),#757575);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:1px solid light-dark(#dedede,#393939);box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1),rgba(0,0,0,.15));box-sizing:border-box}.box-shadow-hover:hover{box-shadow:0 4px 8px light-dark(rgba(0,0,0,.15),rgba(0,0,0,.25))}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}
+    .authorities{border-radius:8px;margin:2rem auto;padding:1rem;h2{color:var(--primary-blue)}p{color:var(--grey)}}.region-group{align-items:center;display:flex;flex-direction:column;margin-top:0}.region-group h3{color:var(--teal);margin-bottom:1rem;margin-top:0}.authority-grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));max-width:1200px;width:100%}.authority-link{border-radius:4px;padding:1rem;text-align:center;text-decoration:none;transition:transform .2s ease}.authority-link:hover{text-decoration:none;transform:scale(1.01)}.filter-group{align-items:center;display:flex;flex-direction:row;gap:1rem;.input{flex:1}}
+    .component-header-sucd9i{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-sucd9i{align-items:center;display:flex;justify-content:space-between}.logo-sucd9i img{height:50px}.nav-links-sucd9i{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-sucd9i{display:none}.hamburger-sucd9i{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-sucd9i span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-sucd9i{display:flex}.nav-links-sucd9i{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-sucd9i:checked~.nav-links-sucd9i{right:0}.menu-toggle-sucd9i:checked~.hamburger-sucd9i span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-sucd9i:checked~.hamburger-sucd9i span:nth-child(2){opacity:0}.menu-toggle-sucd9i:checked~.hamburger-sucd9i span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
+    .component-footer-ct9m2i{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid hsla(0,0%,100%,.2);color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid hsla(0,0%,100%,.3);color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
+  </style>
+</head>
+
+    <body>
+        <div class="component-header-sucd9i" data-suffix="sucd9i">
+  <header class="container">
+    <nav class="navbar-sucd9i">
+      <div class="logo-sucd9i">
+        <a href="/">
+          <img src="/images/logo.svg" alt="Site Logo">
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle-sucd9i" class="menu-toggle-sucd9i">
+      <label for="menu-toggle-sucd9i" class="hamburger-sucd9i">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links-sucd9i">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/l/">Regions</a></li>
+        <li><a href="/search/">Search</a></li>
+        <li><a href="/lists/">My Lists</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+        <div class="content-flyzk">
+        <article class="container">
+          <h2>Local Authorities of the United Kingdom</h2>
+          <p>Not all local authorities participate in the Food Hygiene Ratings. This is a list of all participating local authorities grouped by their region.</p>
+          <p>Select a local authority to view businesses in that local authority.</p>
+
+          <div class="filter-group" inert>
+            <label for="filterInput">Filter by region:</label>
+            <input type="text" id="filterInput" class="input" placeholder="Type to filter local authorities..." />
+          </div>
+
+            <section class="authorities box-shadow">
+              <div class="region-group">
+                <h3>East of England</h3>
+                <div class="authority-grid">
+                    <a href="/l/babergh" class="authority-link box-shadow-hover">
+                      Babergh
+                    </a>
+                    <a href="/l/basildon" class="authority-link box-shadow-hover">
+                      Basildon
+                    </a>
+                    <a href="/l/bedford" class="authority-link box-shadow-hover">
+                      Bedford
+                    </a>
+                    <a href="/l/braintree" class="authority-link box-shadow-hover">
+                      Braintree
+                    </a>
+                    <a href="/l/breckland" class="authority-link box-shadow-hover">
+                      Breckland
+                    </a>
+                    <a href="/l/brentwood" class="authority-link box-shadow-hover">
+                      Brentwood
+                    </a>
+                    <a href="/l/broadland" class="authority-link box-shadow-hover">
+                      Broadland
+                    </a>
+                    <a href="/l/broxbourne" class="authority-link box-shadow-hover">
+                      Broxbourne
+                    </a>
+                    <a href="/l/cambridge-city" class="authority-link box-shadow-hover">
+                      Cambridge City
+                    </a>
+                    <a href="/l/castle-point" class="authority-link box-shadow-hover">
+                      Castle Point
+                    </a>
+                    <a href="/l/central-bedfordshire" class="authority-link box-shadow-hover">
+                      Central Bedfordshire
+                    </a>
+                    <a href="/l/chelmsford" class="authority-link box-shadow-hover">
+                      Chelmsford
+                    </a>
+                    <a href="/l/colchester" class="authority-link box-shadow-hover">
+                      Colchester
+                    </a>
+                    <a href="/l/dacorum" class="authority-link box-shadow-hover">
+                      Dacorum
+                    </a>
+                    <a href="/l/east-cambridgeshire" class="authority-link box-shadow-hover">
+                      East Cambridgeshire
+                    </a>
+                    <a href="/l/east-hertfordshire" class="authority-link box-shadow-hover">
+                      East Hertfordshire
+                    </a>
+                    <a href="/l/east-suffolk" class="authority-link box-shadow-hover">
+                      East Suffolk
+                    </a>
+                    <a href="/l/epping-forest" class="authority-link box-shadow-hover">
+                      Epping Forest
+                    </a>
+                    <a href="/l/fenland" class="authority-link box-shadow-hover">
+                      Fenland
+                    </a>
+                    <a href="/l/great-yarmouth" class="authority-link box-shadow-hover">
+                      Great Yarmouth
+                    </a>
+                    <a href="/l/harlow" class="authority-link box-shadow-hover">
+                      Harlow
+                    </a>
+                    <a href="/l/hertsmere" class="authority-link box-shadow-hover">
+                      Hertsmere
+                    </a>
+                    <a href="/l/huntingdonshire" class="authority-link box-shadow-hover">
+                      Huntingdonshire
+                    </a>
+                    <a href="/l/ipswich" class="authority-link box-shadow-hover">
+                      Ipswich
+                    </a>
+                    <a href="/l/kings-lynn-and-west-norfolk" class="authority-link box-shadow-hover">
+                      King's Lynn and West Norfolk
+                    </a>
+                    <a href="/l/luton" class="authority-link box-shadow-hover">
+                      Luton
+                    </a>
+                    <a href="/l/maldon" class="authority-link box-shadow-hover">
+                      Maldon
+                    </a>
+                    <a href="/l/mid-suffolk" class="authority-link box-shadow-hover">
+                      Mid Suffolk
+                    </a>
+                    <a href="/l/north-hertfordshire" class="authority-link box-shadow-hover">
+                      North Hertfordshire
+                    </a>
+                    <a href="/l/north-norfolk" class="authority-link box-shadow-hover">
+                      North Norfolk
+                    </a>
+                    <a href="/l/norwich-city" class="authority-link box-shadow-hover">
+                      Norwich City
+                    </a>
+                    <a href="/l/peterborough-city" class="authority-link box-shadow-hover">
+                      Peterborough City
+                    </a>
+                    <a href="/l/rochford" class="authority-link box-shadow-hover">
+                      Rochford
+                    </a>
+                    <a href="/l/south-cambridgeshire" class="authority-link box-shadow-hover">
+                      South Cambridgeshire
+                    </a>
+                    <a href="/l/south-norfolk" class="authority-link box-shadow-hover">
+                      South Norfolk
+                    </a>
+                    <a href="/l/southend-on-sea" class="authority-link box-shadow-hover">
+                      Southend-On-Sea
+                    </a>
+                    <a href="/l/st-albans-city" class="authority-link box-shadow-hover">
+                      St Albans City
+                    </a>
+                    <a href="/l/stevenage" class="authority-link box-shadow-hover">
+                      Stevenage
+                    </a>
+                    <a href="/l/tendring" class="authority-link box-shadow-hover">
+                      Tendring
+                    </a>
+                    <a href="/l/three-rivers" class="authority-link box-shadow-hover">
+                      Three Rivers
+                    </a>
+                    <a href="/l/thurrock" class="authority-link box-shadow-hover">
+                      Thurrock
+                    </a>
+                    <a href="/l/uttlesford" class="authority-link box-shadow-hover">
+                      Uttlesford
+                    </a>
+                    <a href="/l/watford" class="authority-link box-shadow-hover">
+                      Watford
+                    </a>
+                    <a href="/l/welwyn-hatfield" class="authority-link box-shadow-hover">
+                      Welwyn Hatfield
+                    </a>
+                    <a href="/l/west-suffolk" class="authority-link box-shadow-hover">
+                      West Suffolk
+                    </a>
+                </div>
+              </div>
+            </section>
+            <section class="authorities box-shadow">
+              <div class="region-group">
+                <h3>East Midlands</h3>
+                <div class="authority-grid">
+                    <a href="/l/amber-valley" class="authority-link box-shadow-hover">
+                      Amber Valley
+                    </a>
+                    <a href="/l/ashfield" class="authority-link box-shadow-hover">
+                      Ashfield
+                    </a>
+                    <a href="/l/bassetlaw" class="authority-link box-shadow-hover">
+                      Bassetlaw
+                    </a>
+                    <a href="/l/blaby" class="authority-link box-shadow-hover">
+                      Blaby
+                    </a>
+                    <a href="/l/bolsover" class="authority-link box-shadow-hover">
+                      Bolsover
+                    </a>
+                    <a href="/l/boston" class="authority-link box-shadow-hover">
+                      Boston
+                    </a>
+                    <a href="/l/broxtowe" class="authority-link box-shadow-hover">
+                      Broxtowe
+                    </a>
+                    <a href="/l/charnwood" class="authority-link box-shadow-hover">
+                      Charnwood
+                    </a>
+                    <a href="/l/chesterfield" class="authority-link box-shadow-hover">
+                      Chesterfield
+                    </a>
+                    <a href="/l/derby-city" class="authority-link box-shadow-hover">
+                      Derby City
+                    </a>
+                    <a href="/l/derbyshire-dales" class="authority-link box-shadow-hover">
+                      Derbyshire Dales
+                    </a>
+                    <a href="/l/east-lindsey" class="authority-link box-shadow-hover">
+                      East Lindsey
+                    </a>
+                    <a href="/l/erewash" class="authority-link box-shadow-hover">
+                      Erewash
+                    </a>
+                    <a href="/l/gedling" class="authority-link box-shadow-hover">
+                      Gedling
+                    </a>
+                    <a href="/l/harborough" class="authority-link box-shadow-hover">
+                      Harborough
+                    </a>
+                    <a href="/l/high-peak" class="authority-link box-shadow-hover">
+                      High Peak
+                    </a>
+                    <a href="/l/hinckley-and-bosworth" class="authority-link box-shadow-hover">
+                      Hinckley and Bosworth
+                    </a>
+                    <a href="/l/leicester-city" class="authority-link box-shadow-hover">
+                      Leicester City
+                    </a>
+                    <a href="/l/lincoln-city" class="authority-link box-shadow-hover">
+                      Lincoln City
+                    </a>
+                    <a href="/l/mansfield" class="authority-link box-shadow-hover">
+                      Mansfield
+                    </a>
+                    <a href="/l/melton" class="authority-link box-shadow-hover">
+                      Melton
+                    </a>
+                    <a href="/l/newark-and-sherwood" class="authority-link box-shadow-hover">
+                      Newark and Sherwood
+                    </a>
+                    <a href="/l/north-east-derbyshire" class="authority-link box-shadow-hover">
+                      North East Derbyshire
+                    </a>
+                    <a href="/l/north-kesteven" class="authority-link box-shadow-hover">
+                      North Kesteven
+                    </a>
+                    <a href="/l/north-northamptonshire" class="authority-link box-shadow-hover">
+                      North Northamptonshire
+                    </a>
+                    <a href="/l/north-west-leicestershire" class="authority-link box-shadow-hover">
+                      North West Leicestershire
+                    </a>
+                    <a href="/l/nottingham-city" class="authority-link box-shadow-hover">
+                      Nottingham City
+                    </a>
+                    <a href="/l/oadby-and-wigston" class="authority-link box-shadow-hover">
+                      Oadby and Wigston
+                    </a>
+                    <a href="/l/rushcliffe" class="authority-link box-shadow-hover">
+                      Rushcliffe
+                    </a>
+                    <a href="/l/rutland" class="authority-link box-shadow-hover">
+                      Rutland
+                    </a>
+                    <a href="/l/south-derbyshire" class="authority-link box-shadow-hover">
+                      South Derbyshire
+                    </a>
+                    <a href="/l/south-holland" class="authority-link box-shadow-hover">
+                      South Holland
+                    </a>
+                    <a href="/l/south-kesteven" class="authority-link box-shadow-hover">
+                      South Kesteven
+                    </a>
+                    <a href="/l/west-lindsey" class="authority-link box-shadow-hover">
+                      West Lindsey
+                    </a>
+                    <a href="/l/west-northamptonshire" class="authority-link box-shadow-hover">
+                      West Northamptonshire
+                    </a>
+                </div>
+              </div>
+            </section>
+            <section class="authorities box-shadow">
+              <div class="region-group">
+                <h3>London</h3>
+                <div class="authority-grid">
+                    <a href="/l/barking-and-dagenham" class="authority-link box-shadow-hover">
+                      Barking and Dagenham
+                    </a>
+                    <a href="/l/barnet" class="authority-link box-shadow-hover">
+                      Barnet
+                    </a>
+                    <a href="/l/bexley" class="authority-link box-shadow-hover">
+                      Bexley
+                    </a>
+                    <a href="/l/brent" class="authority-link box-shadow-hover">
+                      Brent
+                    </a>
+                    <a href="/l/bromley" class="authority-link box-shadow-hover">
+                      Bromley
+                    </a>
+                    <a href="/l/camden" class="authority-link box-shadow-hover">
+                      Camden
+                    </a>
+                    <a href="/l/city-of-london-corporation" class="authority-link box-shadow-hover">
+                      City of London Corporation
+                    </a>
+                    <a href="/l/croydon" class="authority-link box-shadow-hover">
+                      Croydon
+                    </a>
+                    <a href="/l/ealing" class="authority-link box-shadow-hover">
+                      Ealing
+                    </a>
+                    <a href="/l/enfield" class="authority-link box-shadow-hover">
+                      Enfield
+                    </a>
+                    <a href="/l/greenwich" class="authority-link box-shadow-hover">
+                      Greenwich
+                    </a>
+                    <a href="/l/hackney" class="authority-link box-shadow-hover">
+                      Hackney
+                    </a>
+                    <a href="/l/hammersmith-and-fulham" class="authority-link box-shadow-hover">
+                      Hammersmith and Fulham
+                    </a>
+                    <a href="/l/haringey" class="authority-link box-shadow-hover">
+                      Haringey
+                    </a>
+                    <a href="/l/harrow" class="authority-link box-shadow-hover">
+                      Harrow
+                    </a>
+                    <a href="/l/havering" class="authority-link box-shadow-hover">
+                      Havering
+                    </a>
+                    <a href="/l/hillingdon" class="authority-link box-shadow-hover">
+                      Hillingdon
+                    </a>
+                    <a href="/l/hounslow" class="authority-link box-shadow-hover">
+                      Hounslow
+                    </a>
+                    <a href="/l/islington" class="authority-link box-shadow-hover">
+                      Islington
+                    </a>
+                    <a href="/l/kensington-and-chelsea" class="authority-link box-shadow-hover">
+                      Kensington and Chelsea
+                    </a>
+                    <a href="/l/kingston-upon-thames" class="authority-link box-shadow-hover">
+                      Kingston-Upon-Thames
+                    </a>
+                    <a href="/l/lambeth" class="authority-link box-shadow-hover">
+                      Lambeth
+                    </a>
+                    <a href="/l/lewisham" class="authority-link box-shadow-hover">
+                      Lewisham
+                    </a>
+                    <a href="/l/merton" class="authority-link box-shadow-hover">
+                      Merton
+                    </a>
+                    <a href="/l/newham" class="authority-link box-shadow-hover">
+                      Newham
+                    </a>
+                    <a href="/l/redbridge" class="authority-link box-shadow-hover">
+                      Redbridge
+                    </a>
+                    <a href="/l/richmond-upon-thames" class="authority-link box-shadow-hover">
+                      Richmond-Upon-Thames
+                    </a>
+                    <a href="/l/southwark" class="authority-link box-shadow-hover">
+                      Southwark
+                    </a>
+                    <a href="/l/sutton" class="authority-link box-shadow-hover">
+                      Sutton
+                    </a>
+                    <a href="/l/tower-hamlets" class="authority-link box-shadow-hover">
+                      Tower Hamlets
+                    </a>
+                    <a href="/l/waltham-forest" class="authority-link box-shadow-hover">
+                      Waltham Forest
+                    </a>
+                    <a href="/l/wandsworth" class="authority-link box-shadow-hover">
+                      Wandsworth
+                    </a>
+                    <a href="/l/westminster" class="authority-link box-shadow-hover">
+                      Westminster
+                    </a>
+                </div>
+              </div>
+            </section>
+            <section class="authorities box-shadow">
+              <div class="region-group">
+                <h3>North East</h3>
+                <div class="authority-grid">
+                    <a href="/l/darlington" class="authority-link box-shadow-hover">
+                      Darlington
+                    </a>
+                    <a href="/l/durham" class="authority-link box-shadow-hover">
+                      Durham
+                    </a>
+                    <a href="/l/gateshead" class="authority-link box-shadow-hover">
+                      Gateshead
+                    </a>
+                    <a href="/l/hartlepool" class="authority-link box-shadow-hover">
+                      Hartlepool
+                    </a>
+                    <a href="/l/middlesbrough" class="authority-link box-shadow-hover">
+                      Middlesbrough
+                    </a>
+                    <a href="/l/newcastle-upon-tyne" class="authority-link box-shadow-hover">
+                      Newcastle Upon Tyne
+                    </a>
+                    <a href="/l/north-tyneside" class="authority-link box-shadow-hover">
+                      North Tyneside
+                    </a>
+                    <a href="/l/northumberland" class="authority-link box-shadow-hover">
+                      Northumberland
+                    </a>
+                    <a href="/l/redcar-and-cleveland" class="authority-link box-shadow-hover">
+                      Redcar and Cleveland
+                    </a>
+                    <a href="/l/river-tees" class="authority-link box-shadow-hover">
+                      River Tees
+                    </a>
+                    <a href="/l/south-tyneside" class="authority-link box-shadow-hover">
+                      South Tyneside
+                    </a>
+                    <a href="/l/stockton-on-tees" class="authority-link box-shadow-hover">
+                      Stockton On Tees
+                    </a>
+                    <a href="/l/sunderland" class="authority-link box-shadow-hover">
+                      Sunderland
+                    </a>
+                </div>
+              </div>
+            </section>
+            <section class="authorities box-shadow">
+              <div class="region-group">
+                <h3>North West</h3>
+                <div class="authority-grid">
+                    <a href="/l/blackburn" class="authority-link box-shadow-hover">
+                      Blackburn
+                    </a>
+                    <a href="/l/blackpool" class="authority-link box-shadow-hover">
+                      Blackpool
+                    </a>
+                    <a href="/l/bolton" class="authority-link box-shadow-hover">
+                      Bolton
+                    </a>
+                    <a href="/l/burnley" class="authority-link box-shadow-hover">
+                      Burnley
+                    </a>
+                    <a href="/l/bury" class="authority-link box-shadow-hover">
+                      Bury
+                    </a>
+                    <a href="/l/cheshire-east" class="authority-link box-shadow-hover">
+                      Cheshire East
+                    </a>
+                    <a href="/l/cheshire-west-and-chester" class="authority-link box-shadow-hover">
+                      Cheshire West and Chester
+                    </a>
+                    <a href="/l/chorley" class="authority-link box-shadow-hover">
+                      Chorley
+                    </a>
+                    <a href="/l/cumberland" class="authority-link box-shadow-hover">
+                      Cumberland
+                    </a>
+                    <a href="/l/fylde" class="authority-link box-shadow-hover">
+                      Fylde
+                    </a>
+                    <a href="/l/halton" class="authority-link box-shadow-hover">
+                      Halton
+                    </a>
+                    <a href="/l/hyndburn" class="authority-link box-shadow-hover">
+                      Hyndburn
+                    </a>
+                    <a href="/l/knowsley" class="authority-link box-shadow-hover">
+                      Knowsley
+                    </a>
+                    <a href="/l/lancaster-city" class="authority-link box-shadow-hover">
+                      Lancaster City
+                    </a>
+                    <a href="/l/liverpool" class="authority-link box-shadow-hover">
+                      Liverpool
+                    </a>
+                    <a href="/l/manchester" class="authority-link box-shadow-hover">
+                      Manchester
+                    </a>
+                    <a href="/l/oldham" class="authority-link box-shadow-hover">
+                      Oldham
+                    </a>
+                    <a href="/l/pendle" class="authority-link box-shadow-hover">
+                      Pendle
+                    </a>
+                    <a href="/l/preston" class="authority-link box-shadow-hover">
+                      Preston
+                    </a>
+                    <a href="/l/ribble-valley" class="authority-link box-shadow-hover">
+                      Ribble Valley
+                    </a>
+                    <a href="/l/rochdale" class="authority-link box-shadow-hover">
+                      Rochdale
+                    </a>
+                    <a href="/l/rossendale" class="authority-link box-shadow-hover">
+                      Rossendale
+                    </a>
+                    <a href="/l/salford" class="authority-link box-shadow-hover">
+                      Salford
+                    </a>
+                    <a href="/l/sefton" class="authority-link box-shadow-hover">
+                      Sefton
+                    </a>
+                    <a href="/l/south-ribble" class="authority-link box-shadow-hover">
+                      South Ribble
+                    </a>
+                    <a href="/l/st-helens" class="authority-link box-shadow-hover">
+                      St Helens
+                    </a>
+                    <a href="/l/stockport" class="authority-link box-shadow-hover">
+                      Stockport
+                    </a>
+                    <a href="/l/tameside" class="authority-link box-shadow-hover">
+                      Tameside
+                    </a>
+                    <a href="/l/trafford" class="authority-link box-shadow-hover">
+                      Trafford
+                    </a>
+                    <a href="/l/warrington" class="authority-link box-shadow-hover">
+                      Warrington
+                    </a>
+                    <a href="/l/west-lancashire" class="authority-link box-shadow-hover">
+                      West Lancashire
+                    </a>
+                    <a href="/l/westmorland-and-furness" class="authority-link box-shadow-hover">
+                      Westmorland and Furness
+                    </a>
+                    <a href="/l/wigan" class="authority-link box-shadow-hover">
+                      Wigan
+                    </a>
+                    <a href="/l/wirral" class="authority-link box-shadow-hover">
+                      Wirral
+                    </a>
+                    <a href="/l/wyre" class="authority-link box-shadow-hover">
+                      Wyre
+                    </a>
+                </div>
+              </div>
+            </section>
+            <section class="authorities box-shadow">
+              <div class="region-group">
+                <h3>South East</h3>
+                <div class="authority-grid">
+                    <a href="/l/adur" class="authority-link box-shadow-hover">
+                      Adur
+                    </a>
+                    <a href="/l/arun" class="authority-link box-shadow-hover">
+                      Arun
+                    </a>
+                    <a href="/l/ashford" class="authority-link box-shadow-hover">
+                      Ashford
+                    </a>
+                    <a href="/l/basingstoke-and-deane" class="authority-link box-shadow-hover">
+                      Basingstoke and Deane
+                    </a>
+                    <a href="/l/bracknell-forest" class="authority-link box-shadow-hover">
+                      Bracknell Forest
+                    </a>
+                    <a href="/l/brighton-and-hove" class="authority-link box-shadow-hover">
+                      Brighton and Hove
+                    </a>
+                    <a href="/l/buckinghamshire" class="authority-link box-shadow-hover">
+                      Buckinghamshire
+                    </a>
+                    <a href="/l/canterbury-city" class="authority-link box-shadow-hover">
+                      Canterbury City
+                    </a>
+                    <a href="/l/cherwell" class="authority-link box-shadow-hover">
+                      Cherwell
+                    </a>
+                    <a href="/l/chichester" class="authority-link box-shadow-hover">
+                      Chichester
+                    </a>
+                    <a href="/l/crawley" class="authority-link box-shadow-hover">
+                      Crawley
+                    </a>
+                    <a href="/l/dartford" class="authority-link box-shadow-hover">
+                      Dartford
+                    </a>
+                    <a href="/l/dover" class="authority-link box-shadow-hover">
+                      Dover
+                    </a>
+                    <a href="/l/east-hampshire" class="authority-link box-shadow-hover">
+                      East Hampshire
+                    </a>
+                    <a href="/l/eastbourne" class="authority-link box-shadow-hover">
+                      Eastbourne
+                    </a>
+                    <a href="/l/eastleigh" class="authority-link box-shadow-hover">
+                      Eastleigh
+                    </a>
+                    <a href="/l/elmbridge" class="authority-link box-shadow-hover">
+                      Elmbridge
+                    </a>
+                    <a href="/l/epsom-and-ewell" class="authority-link box-shadow-hover">
+                      Epsom and Ewell
+                    </a>
+                    <a href="/l/fareham" class="authority-link box-shadow-hover">
+                      Fareham
+                    </a>
+                    <a href="/l/folkestone-and-hythe" class="authority-link box-shadow-hover">
+                      Folkestone and Hythe
+                    </a>
+                    <a href="/l/gosport" class="authority-link box-shadow-hover">
+                      Gosport
+                    </a>
+                    <a href="/l/gravesham" class="authority-link box-shadow-hover">
+                      Gravesham
+                    </a>
+                    <a href="/l/guildford" class="authority-link box-shadow-hover">
+                      Guildford
+                    </a>
+                    <a href="/l/hart" class="authority-link box-shadow-hover">
+                      Hart
+                    </a>
+                    <a href="/l/hastings" class="authority-link box-shadow-hover">
+                      Hastings
+                    </a>
+                    <a href="/l/havant" class="authority-link box-shadow-hover">
+                      Havant
+                    </a>
+                    <a href="/l/horsham" class="authority-link box-shadow-hover">
+                      Horsham
+                    </a>
+                    <a href="/l/isle-of-wight" class="authority-link box-shadow-hover">
+                      Isle of Wight
+                    </a>
+                    <a href="/l/lewes" class="authority-link box-shadow-hover">
+                      Lewes
+                    </a>
+                    <a href="/l/maidstone" class="authority-link box-shadow-hover">
+                      Maidstone
+                    </a>
+                    <a href="/l/medway" class="authority-link box-shadow-hover">
+                      Medway
+                    </a>
+                    <a href="/l/mid-sussex" class="authority-link box-shadow-hover">
+                      Mid Sussex
+                    </a>
+                    <a href="/l/milton-keynes" class="authority-link box-shadow-hover">
+                      Milton Keynes
+                    </a>
+                    <a href="/l/mole-valley" class="authority-link box-shadow-hover">
+                      Mole Valley
+                    </a>
+                    <a href="/l/new-forest" class="authority-link box-shadow-hover">
+                      New Forest
+                    </a>
+                    <a href="/l/oxford-city" class="authority-link box-shadow-hover">
+                      Oxford City
+                    </a>
+                    <a href="/l/portsmouth" class="authority-link box-shadow-hover">
+                      Portsmouth
+                    </a>
+                    <a href="/l/reading" class="authority-link box-shadow-hover">
+                      Reading
+                    </a>
+                    <a href="/l/reigate-and-banstead" class="authority-link box-shadow-hover">
+                      Reigate and Banstead
+                    </a>
+                    <a href="/l/rother" class="authority-link box-shadow-hover">
+                      Rother
+                    </a>
+                    <a href="/l/runnymede" class="authority-link box-shadow-hover">
+                      Runnymede
+                    </a>
+                    <a href="/l/rushmoor" class="authority-link box-shadow-hover">
+                      Rushmoor
+                    </a>
+                    <a href="/l/sevenoaks" class="authority-link box-shadow-hover">
+                      Sevenoaks
+                    </a>
+                    <a href="/l/slough" class="authority-link box-shadow-hover">
+                      Slough
+                    </a>
+                    <a href="/l/south-oxfordshire" class="authority-link box-shadow-hover">
+                      South Oxfordshire
+                    </a>
+                    <a href="/l/southampton" class="authority-link box-shadow-hover">
+                      Southampton
+                    </a>
+                    <a href="/l/spelthorne" class="authority-link box-shadow-hover">
+                      Spelthorne
+                    </a>
+                    <a href="/l/surrey-heath" class="authority-link box-shadow-hover">
+                      Surrey Heath
+                    </a>
+                    <a href="/l/swale" class="authority-link box-shadow-hover">
+                      Swale
+                    </a>
+                    <a href="/l/tandridge" class="authority-link box-shadow-hover">
+                      Tandridge
+                    </a>
+                    <a href="/l/test-valley" class="authority-link box-shadow-hover">
+                      Test Valley
+                    </a>
+                    <a href="/l/thanet" class="authority-link box-shadow-hover">
+                      Thanet
+                    </a>
+                    <a href="/l/tonbridge-and-malling" class="authority-link box-shadow-hover">
+                      Tonbridge and Malling
+                    </a>
+                    <a href="/l/tunbridge-wells" class="authority-link box-shadow-hover">
+                      Tunbridge Wells
+                    </a>
+                    <a href="/l/vale-of-white-horse" class="authority-link box-shadow-hover">
+                      Vale of White Horse
+                    </a>
+                    <a href="/l/waverley" class="authority-link box-shadow-hover">
+                      Waverley
+                    </a>
+                    <a href="/l/wealden" class="authority-link box-shadow-hover">
+                      Wealden
+                    </a>
+                    <a href="/l/west-berkshire" class="authority-link box-shadow-hover">
+                      West Berkshire
+                    </a>
+                    <a href="/l/west-oxfordshire" class="authority-link box-shadow-hover">
+                      West Oxfordshire
+                    </a>
+                    <a href="/l/winchester-city" class="authority-link box-shadow-hover">
+                      Winchester City
+                    </a>
+                    <a href="/l/windsor-and-maidenhead" class="authority-link box-shadow-hover">
+                      Windsor and Maidenhead
+                    </a>
+                    <a href="/l/woking" class="authority-link box-shadow-hover">
+                      Woking
+                    </a>
+                    <a href="/l/wokingham" class="authority-link box-shadow-hover">
+                      Wokingham
+                    </a>
+                    <a href="/l/worthing" class="authority-link box-shadow-hover">
+                      Worthing
+                    </a>
+                </div>
+              </div>
+            </section>
+            <section class="authorities box-shadow">
+              <div class="region-group">
+                <h3>South West</h3>
+                <div class="authority-grid">
+                    <a href="/l/bath-and-north-east-somerset" class="authority-link box-shadow-hover">
+                      Bath and North East Somerset
+                    </a>
+                    <a href="/l/bournemouth-christchurch-and-poole" class="authority-link box-shadow-hover">
+                      Bournemouth, Christchurch and Poole
+                    </a>
+                    <a href="/l/bristol" class="authority-link box-shadow-hover">
+                      Bristol
+                    </a>
+                    <a href="/l/cheltenham" class="authority-link box-shadow-hover">
+                      Cheltenham
+                    </a>
+                    <a href="/l/cornwall" class="authority-link box-shadow-hover">
+                      Cornwall
+                    </a>
+                    <a href="/l/cotswold" class="authority-link box-shadow-hover">
+                      Cotswold
+                    </a>
+                    <a href="/l/dorset" class="authority-link box-shadow-hover">
+                      Dorset
+                    </a>
+                    <a href="/l/east-devon" class="authority-link box-shadow-hover">
+                      East Devon
+                    </a>
+                    <a href="/l/exeter-city" class="authority-link box-shadow-hover">
+                      Exeter City
+                    </a>
+                    <a href="/l/forest-of-dean" class="authority-link box-shadow-hover">
+                      Forest of Dean
+                    </a>
+                    <a href="/l/gloucester-city" class="authority-link box-shadow-hover">
+                      Gloucester City
+                    </a>
+                    <a href="/l/isles-of-scilly" class="authority-link box-shadow-hover">
+                      Isles of Scilly
+                    </a>
+                    <a href="/l/mid-devon" class="authority-link box-shadow-hover">
+                      Mid Devon
+                    </a>
+                    <a href="/l/north-devon" class="authority-link box-shadow-hover">
+                      North Devon
+                    </a>
+                    <a href="/l/north-somerset" class="authority-link box-shadow-hover">
+                      North Somerset
+                    </a>
+                    <a href="/l/plymouth-city" class="authority-link box-shadow-hover">
+                      Plymouth City
+                    </a>
+                    <a href="/l/somerset" class="authority-link box-shadow-hover">
+                      Somerset
+                    </a>
+                    <a href="/l/south-gloucestershire" class="authority-link box-shadow-hover">
+                      South Gloucestershire
+                    </a>
+                    <a href="/l/south-hams" class="authority-link box-shadow-hover">
+                      South Hams
+                    </a>
+                    <a href="/l/stroud" class="authority-link box-shadow-hover">
+                      Stroud
+                    </a>
+                    <a href="/l/swindon" class="authority-link box-shadow-hover">
+                      Swindon
+                    </a>
+                    <a href="/l/teignbridge" class="authority-link box-shadow-hover">
+                      Teignbridge
+                    </a>
+                    <a href="/l/tewkesbury" class="authority-link box-shadow-hover">
+                      Tewkesbury
+                    </a>
+                    <a href="/l/torbay" class="authority-link box-shadow-hover">
+                      Torbay
+                    </a>
+                    <a href="/l/torridge" class="authority-link box-shadow-hover">
+                      Torridge
+                    </a>
+                    <a href="/l/west-devon" class="authority-link box-shadow-hover">
+                      West Devon
+                    </a>
+                    <a href="/l/wiltshire" class="authority-link box-shadow-hover">
+                      Wiltshire
+                    </a>
+                </div>
+              </div>
+            </section>
+            <section class="authorities box-shadow">
+              <div class="region-group">
+                <h3>West Midlands</h3>
+                <div class="authority-grid">
+                    <a href="/l/birmingham" class="authority-link box-shadow-hover">
+                      Birmingham
+                    </a>
+                    <a href="/l/bromsgrove" class="authority-link box-shadow-hover">
+                      Bromsgrove
+                    </a>
+                    <a href="/l/cannock-chase" class="authority-link box-shadow-hover">
+                      Cannock Chase
+                    </a>
+                    <a href="/l/coventry" class="authority-link box-shadow-hover">
+                      Coventry
+                    </a>
+                    <a href="/l/dudley" class="authority-link box-shadow-hover">
+                      Dudley
+                    </a>
+                    <a href="/l/east-staffordshire" class="authority-link box-shadow-hover">
+                      East Staffordshire
+                    </a>
+                    <a href="/l/herefordshire" class="authority-link box-shadow-hover">
+                      Herefordshire
+                    </a>
+                    <a href="/l/lichfield" class="authority-link box-shadow-hover">
+                      Lichfield
+                    </a>
+                    <a href="/l/malvern-hills" class="authority-link box-shadow-hover">
+                      Malvern Hills
+                    </a>
+                    <a href="/l/newcastle-under-lyme" class="authority-link box-shadow-hover">
+                      Newcastle-Under-Lyme
+                    </a>
+                    <a href="/l/north-warwickshire" class="authority-link box-shadow-hover">
+                      North Warwickshire
+                    </a>
+                    <a href="/l/nuneaton-and-bedworth" class="authority-link box-shadow-hover">
+                      Nuneaton and Bedworth
+                    </a>
+                    <a href="/l/redditch" class="authority-link box-shadow-hover">
+                      Redditch
+                    </a>
+                    <a href="/l/rugby" class="authority-link box-shadow-hover">
+                      Rugby
+                    </a>
+                    <a href="/l/sandwell" class="authority-link box-shadow-hover">
+                      Sandwell
+                    </a>
+                    <a href="/l/shropshire" class="authority-link box-shadow-hover">
+                      Shropshire
+                    </a>
+                    <a href="/l/solihull" class="authority-link box-shadow-hover">
+                      Solihull
+                    </a>
+                    <a href="/l/south-staffordshire" class="authority-link box-shadow-hover">
+                      South Staffordshire
+                    </a>
+                    <a href="/l/stafford" class="authority-link box-shadow-hover">
+                      Stafford
+                    </a>
+                    <a href="/l/staffordshire-moorlands" class="authority-link box-shadow-hover">
+                      Staffordshire Moorlands
+                    </a>
+                    <a href="/l/stoke-on-trent" class="authority-link box-shadow-hover">
+                      Stoke-On-Trent
+                    </a>
+                    <a href="/l/stratford-on-avon" class="authority-link box-shadow-hover">
+                      Stratford-on-Avon
+                    </a>
+                    <a href="/l/tamworth" class="authority-link box-shadow-hover">
+                      Tamworth
+                    </a>
+                    <a href="/l/telford-and-wrekin-council" class="authority-link box-shadow-hover">
+                      Telford and Wrekin Council
+                    </a>
+                    <a href="/l/walsall" class="authority-link box-shadow-hover">
+                      Walsall
+                    </a>
+                    <a href="/l/warwick" class="authority-link box-shadow-hover">
+                      Warwick
+                    </a>
+                    <a href="/l/wolverhampton" class="authority-link box-shadow-hover">
+                      Wolverhampton
+                    </a>
+                    <a href="/l/worcester-city" class="authority-link box-shadow-hover">
+                      Worcester City
+                    </a>
+                    <a href="/l/wychavon" class="authority-link box-shadow-hover">
+                      Wychavon
+                    </a>
+                    <a href="/l/wyre-forest" class="authority-link box-shadow-hover">
+                      Wyre Forest
+                    </a>
+                </div>
+              </div>
+            </section>
+            <section class="authorities box-shadow">
+              <div class="region-group">
+                <h3>Yorkshire and the Humber</h3>
+                <div class="authority-grid">
+                    <a href="/l/barnsley" class="authority-link box-shadow-hover">
+                      Barnsley
+                    </a>
+                    <a href="/l/bradford" class="authority-link box-shadow-hover">
+                      Bradford
+                    </a>
+                    <a href="/l/calderdale" class="authority-link box-shadow-hover">
+                      Calderdale
+                    </a>
+                    <a href="/l/doncaster" class="authority-link box-shadow-hover">
+                      Doncaster
+                    </a>
+                    <a href="/l/east-riding-of-yorkshire" class="authority-link box-shadow-hover">
+                      East Riding of Yorkshire
+                    </a>
+                    <a href="/l/hull-and-goole-port" class="authority-link box-shadow-hover">
+                      Hull and Goole Port
+                    </a>
+                    <a href="/l/hull-city" class="authority-link box-shadow-hover">
+                      Hull City
+                    </a>
+                    <a href="/l/kirklees" class="authority-link box-shadow-hover">
+                      Kirklees
+                    </a>
+                    <a href="/l/leeds" class="authority-link box-shadow-hover">
+                      Leeds
+                    </a>
+                    <a href="/l/north-east-lincolnshire" class="authority-link box-shadow-hover">
+                      North East Lincolnshire
+                    </a>
+                    <a href="/l/north-lincolnshire" class="authority-link box-shadow-hover">
+                      North Lincolnshire
+                    </a>
+                    <a href="/l/north-yorkshire" class="authority-link box-shadow-hover">
+                      North Yorkshire
+                    </a>
+                    <a href="/l/rotherham" class="authority-link box-shadow-hover">
+                      Rotherham
+                    </a>
+                    <a href="/l/sheffield" class="authority-link box-shadow-hover">
+                      Sheffield
+                    </a>
+                    <a href="/l/wakefield" class="authority-link box-shadow-hover">
+                      Wakefield
+                    </a>
+                    <a href="/l/york" class="authority-link box-shadow-hover">
+                      York
+                    </a>
+                </div>
+              </div>
+            </section>
+            <section class="authorities box-shadow">
+              <div class="region-group">
+                <h3>Northern Ireland</h3>
+                <div class="authority-grid">
+                    <a href="/l/antrim-and-newtownabbey" class="authority-link box-shadow-hover">
+                      Antrim and Newtownabbey
+                    </a>
+                    <a href="/l/ards-and-north-down" class="authority-link box-shadow-hover">
+                      Ards and North Down
+                    </a>
+                    <a href="/l/armagh-city-banbridge-and-craigavon" class="authority-link box-shadow-hover">
+                      Armagh City, Banbridge and Craigavon
+                    </a>
+                    <a href="/l/belfast-city" class="authority-link box-shadow-hover">
+                      Belfast City
+                    </a>
+                    <a href="/l/causeway-coast-and-glens" class="authority-link box-shadow-hover">
+                      Causeway Coast and Glens
+                    </a>
+                    <a href="/l/derry-city-and-strabane" class="authority-link box-shadow-hover">
+                      Derry City and Strabane
+                    </a>
+                    <a href="/l/fermanagh-and-omagh" class="authority-link box-shadow-hover">
+                      Fermanagh and Omagh
+                    </a>
+                    <a href="/l/lisburn-and-castlereagh-city" class="authority-link box-shadow-hover">
+                      Lisburn and Castlereagh City
+                    </a>
+                    <a href="/l/mid-and-east-antrim" class="authority-link box-shadow-hover">
+                      Mid and East Antrim
+                    </a>
+                    <a href="/l/mid-ulster" class="authority-link box-shadow-hover">
+                      Mid Ulster
+                    </a>
+                    <a href="/l/newry-mourne-and-down" class="authority-link box-shadow-hover">
+                      Newry, Mourne and Down
+                    </a>
+                </div>
+              </div>
+            </section>
+            <section class="authorities box-shadow">
+              <div class="region-group">
+                <h3>Scotland</h3>
+                <div class="authority-grid">
+                    <a href="/l/aberdeen-city" class="authority-link box-shadow-hover">
+                      Aberdeen City
+                    </a>
+                    <a href="/l/aberdeenshire" class="authority-link box-shadow-hover">
+                      Aberdeenshire
+                    </a>
+                    <a href="/l/angus" class="authority-link box-shadow-hover">
+                      Angus
+                    </a>
+                    <a href="/l/argyll-and-bute" class="authority-link box-shadow-hover">
+                      Argyll and Bute
+                    </a>
+                    <a href="/l/clackmannanshire" class="authority-link box-shadow-hover">
+                      Clackmannanshire
+                    </a>
+                    <a href="/l/comhairle-nan-eilean-siar--western-isles-" class="authority-link box-shadow-hover">
+                      Comhairle nan Eilean Siar (Western Isles)
+                    </a>
+                    <a href="/l/dumfries-and-galloway" class="authority-link box-shadow-hover">
+                      Dumfries and Galloway
+                    </a>
+                    <a href="/l/dundee-city" class="authority-link box-shadow-hover">
+                      Dundee City
+                    </a>
+                    <a href="/l/east-ayrshire" class="authority-link box-shadow-hover">
+                      East Ayrshire
+                    </a>
+                    <a href="/l/east-dunbartonshire" class="authority-link box-shadow-hover">
+                      East Dunbartonshire
+                    </a>
+                    <a href="/l/east-lothian" class="authority-link box-shadow-hover">
+                      East Lothian
+                    </a>
+                    <a href="/l/east-renfrewshire" class="authority-link box-shadow-hover">
+                      East Renfrewshire
+                    </a>
+                    <a href="/l/edinburgh--city-of-" class="authority-link box-shadow-hover">
+                      Edinburgh (City of)
+                    </a>
+                    <a href="/l/falkirk" class="authority-link box-shadow-hover">
+                      Falkirk
+                    </a>
+                    <a href="/l/fife" class="authority-link box-shadow-hover">
+                      Fife
+                    </a>
+                    <a href="/l/glasgow-city" class="authority-link box-shadow-hover">
+                      Glasgow City
+                    </a>
+                    <a href="/l/highland" class="authority-link box-shadow-hover">
+                      Highland
+                    </a>
+                    <a href="/l/inverclyde" class="authority-link box-shadow-hover">
+                      Inverclyde
+                    </a>
+                    <a href="/l/midlothian" class="authority-link box-shadow-hover">
+                      Midlothian
+                    </a>
+                    <a href="/l/moray" class="authority-link box-shadow-hover">
+                      Moray
+                    </a>
+                    <a href="/l/north-ayrshire" class="authority-link box-shadow-hover">
+                      North Ayrshire
+                    </a>
+                    <a href="/l/north-lanarkshire" class="authority-link box-shadow-hover">
+                      North Lanarkshire
+                    </a>
+                    <a href="/l/orkney-islands" class="authority-link box-shadow-hover">
+                      Orkney Islands
+                    </a>
+                    <a href="/l/perth-and-kinross" class="authority-link box-shadow-hover">
+                      Perth and Kinross
+                    </a>
+                    <a href="/l/renfrewshire" class="authority-link box-shadow-hover">
+                      Renfrewshire
+                    </a>
+                    <a href="/l/scottish-borders" class="authority-link box-shadow-hover">
+                      Scottish Borders
+                    </a>
+                    <a href="/l/shetland-islands" class="authority-link box-shadow-hover">
+                      Shetland Islands
+                    </a>
+                    <a href="/l/south-ayrshire" class="authority-link box-shadow-hover">
+                      South Ayrshire
+                    </a>
+                    <a href="/l/south-lanarkshire" class="authority-link box-shadow-hover">
+                      South Lanarkshire
+                    </a>
+                    <a href="/l/stirling" class="authority-link box-shadow-hover">
+                      Stirling
+                    </a>
+                    <a href="/l/west-dunbartonshire" class="authority-link box-shadow-hover">
+                      West Dunbartonshire
+                    </a>
+                    <a href="/l/west-lothian" class="authority-link box-shadow-hover">
+                      West Lothian
+                    </a>
+                </div>
+              </div>
+            </section>
+            <section class="authorities box-shadow">
+              <div class="region-group">
+                <h3>Wales</h3>
+                <div class="authority-grid">
+                    <a href="/l/anglesey" class="authority-link box-shadow-hover">
+                      Anglesey
+                    </a>
+                    <a href="/l/blaenau-gwent" class="authority-link box-shadow-hover">
+                      Blaenau Gwent
+                    </a>
+                    <a href="/l/bridgend" class="authority-link box-shadow-hover">
+                      Bridgend
+                    </a>
+                    <a href="/l/caerphilly" class="authority-link box-shadow-hover">
+                      Caerphilly
+                    </a>
+                    <a href="/l/cardiff" class="authority-link box-shadow-hover">
+                      Cardiff
+                    </a>
+                    <a href="/l/carmarthenshire" class="authority-link box-shadow-hover">
+                      Carmarthenshire
+                    </a>
+                    <a href="/l/ceredigion" class="authority-link box-shadow-hover">
+                      Ceredigion
+                    </a>
+                    <a href="/l/conwy" class="authority-link box-shadow-hover">
+                      Conwy
+                    </a>
+                    <a href="/l/denbighshire" class="authority-link box-shadow-hover">
+                      Denbighshire
+                    </a>
+                    <a href="/l/flintshire" class="authority-link box-shadow-hover">
+                      Flintshire
+                    </a>
+                    <a href="/l/gwynedd" class="authority-link box-shadow-hover">
+                      Gwynedd
+                    </a>
+                    <a href="/l/merthyr-tydfil" class="authority-link box-shadow-hover">
+                      Merthyr Tydfil
+                    </a>
+                    <a href="/l/monmouthshire" class="authority-link box-shadow-hover">
+                      Monmouthshire
+                    </a>
+                    <a href="/l/neath-port-talbot" class="authority-link box-shadow-hover">
+                      Neath Port Talbot
+                    </a>
+                    <a href="/l/newport" class="authority-link box-shadow-hover">
+                      Newport
+                    </a>
+                    <a href="/l/pembrokeshire" class="authority-link box-shadow-hover">
+                      Pembrokeshire
+                    </a>
+                    <a href="/l/powys" class="authority-link box-shadow-hover">
+                      Powys
+                    </a>
+                    <a href="/l/rhondda-cynon-taf" class="authority-link box-shadow-hover">
+                      Rhondda Cynon Taf
+                    </a>
+                    <a href="/l/swansea" class="authority-link box-shadow-hover">
+                      Swansea
+                    </a>
+                    <a href="/l/torfaen" class="authority-link box-shadow-hover">
+                      Torfaen
+                    </a>
+                    <a href="/l/vale-of-glamorgan" class="authority-link box-shadow-hover">
+                      Vale of Glamorgan
+                    </a>
+                    <a href="/l/wrexham" class="authority-link box-shadow-hover">
+                      Wrexham
+                    </a>
+                </div>
+              </div>
+            </section>
+        </article>
+        </div>
+
+        <div class="component-footer-ct9m2i" data-suffix="ct9m2i">
+  <footer>
+    <div class="container footer-columns">
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/l/">Regions</a></li>
+          <li><a href="/search/">Search</a></li>
+          <li><a href="/lists/">My Lists</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>About</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Project</h4>
+        <ul>
+          <li><a href="https://github.com/food-hygiene-uk/main-site-builder">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      Copyright © 2025 the Food Hygiene UK authors.
+    </div>
+  </footer>
+</div>
+
+
+        <script type="module">
+          /* Minified JavaScript */
+document.addEventListener("DOMContentLoaded",()=>{let i=document.querySelector(".filter-group");i.querySelector("#filterInput").addEventListener("input",e=>{var t,o=e.target.value.toLowerCase();for(t of document.querySelectorAll(".authorities")){var l=t.querySelectorAll(".authority-link");if(t.querySelector("h3").textContent.toLowerCase().includes(o)){t.style.display="block";for(var r of l)r.style.display="block"}else{for(var n of l){var a=n.textContent.toLowerCase();n.style.display=a.includes(o)?"block":"none"}l=0===t.querySelectorAll(".authority-link:not([style*='display: none'])").length;t.style.display=l?"none":"block"}}var e=0===document.querySelectorAll(".authorities:not([style*='display: none'])").length,s=document.querySelector("#noMatchesMessage");e?s||((e=document.createElement("p")).id="noMatchesMessage",e.textContent="No matches found.",e.style.textAlign="center",e.style.marginTop="1rem",i.parentNode.append(e)):s&&s.remove()}),i.removeAttribute("inert")});
+        </script>
+    </body>
+</html>
