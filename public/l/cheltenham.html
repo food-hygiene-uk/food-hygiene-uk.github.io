@@ -19,9 +19,9 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(var(--text-color),#757575);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:1px solid light-dark(#dedede,#393939);box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1),rgba(0,0,0,.15));box-sizing:border-box}.box-shadow-hover:hover{box-shadow:0 4px 8px light-dark(rgba(0,0,0,.15),rgba(0,0,0,.25))}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(var(--text-color),#757575);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-background:light-dark(#fff,#2d2d2d);--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-color:light-dark(#666,#aaa);--card-border:1px solid light-dark(#ddd,#444);--box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1),rgba(0,0,0,.15));--box-shadow-hover:0 4px 8px light-dark(rgba(0,0,0,.15),rgba(0,0,0,.25));--box-shadow-border:1px solid light-dark(#dedede,#393939)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
-    .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34 img{height:50px}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
+    .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid hsla(0,0%,100%,.2);color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid hsla(0,0%,100%,.3);color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
   </style>
 </head>
@@ -32,7 +32,40 @@
     <nav class="navbar-h3ad34">
       <div class="logo-h3ad34">
         <a href="/">
-          <img src="/images/logo.svg" alt="Site Logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
+  <!-- Icon -->
+  <g transform="translate(0.5, 14)">
+    <rect width="32" height="32" fill="#84be00" stroke="#000" rx="6" />
+    <circle cx="16" cy="16" r="12" />
+    <text
+      x="16"
+      y="16"
+      fill="#fff"
+      dominant-baseline="central"
+      font-family="sans-serif"
+      font-size="20"
+      font-weight="bold"
+      text-anchor="middle"
+    >?</text>
+  </g>
+
+  <!-- Main text -->
+  <g transform="translate(174, 33)" class="text">
+    <text
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="system-ui, sans-serif"
+      font-size="30"
+      font-weight="600"
+      letter-spacing="1.2px"
+      style="text-rendering: geometricPrecision"
+      text-transform="uppercase"
+    >
+      Food Hygiene UK
+    </text>
+  </g>
+</svg>
+
         </a>
       </div>
       <input type="checkbox" id="menu-toggle-h3ad34" class="menu-toggle-h3ad34">
@@ -50,6 +83,7 @@
     </nav>
   </header>
 </div>
+
     <div class="content-k3nm4l">
       <div class="container">
         <article class="local-authority" itemscope itemtype="https://schema.org/GovernmentOrganization">
@@ -109,27 +143,26 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="62129">
-                <h3>Abbeyfield Gloucestershire Society</h3>
+<hr>              <div class="establishment" data-establishment-id="1912659">
+                <h3>Abbeyfield Wessex Society Limited</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>326 Prestbury Road</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL52 3DD</span>
   </address>
 </div>
 
-                <a href="/region-south-west/abbeyfield-gloucestershire-society-62129" class="details-link">
+                <a href="/region-south-west/abbeyfield-wessex-society-limited-1912659" class="details-link">
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="32062">
-                <h3>Abbeyfield Gloucestershire Society</h3>
+<hr>              <div class="establishment" data-establishment-id="1912660">
+                <h3>Abbeyfield Wessex Society Limited</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Heathercroft</span><br>          <span>37 St Lukes Road</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL53 7JF</span>
-  </address>
+          <span>Housekeepers Flat</span><br>          <span>37 St Lukes Road</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span>  </address>
 </div>
 
-                <a href="/region-south-west/abbeyfield-gloucestershire-society-32062" class="details-link">
+                <a href="/region-south-west/abbeyfield-wessex-society-limited-1912660" class="details-link">
                   More
                 </a>
               </div>
@@ -2027,6 +2060,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912663">
+                <h3>Chapter Six Bar Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>201 London Road</span><br>          <span>Charlton Kings</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL52 6HU</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/chapter-six-bar-ltd-1912663" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1651193">
                 <h3>Charles Takeaway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -2048,18 +2093,6 @@
 </div>
 
                 <a href="/region-south-west/charlie-bears-1717374" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1690479">
-                <h3>Charlies Catering</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/charlies-catering-1690479" class="details-link">
                   More
                 </a>
               </div>
@@ -2783,15 +2816,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1558355">
-                <h3>COBO Coffee</h3>
+<hr>              <div class="establishment" data-establishment-id="1912656">
+                <h3>Cobo Coffee</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
       <div>No address information available</div>
   </address>
 </div>
 
-                <a href="/region-south-west/cobo-coffee-1558355" class="details-link">
+                <a href="/region-south-west/cobo-coffee-1912656" class="details-link">
                   More
                 </a>
               </div>
@@ -3298,6 +3331,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912648">
+                <h3>Dal Fornaiolo</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/dal-fornaiolo-1912648" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="615409">
                 <h3>Dalkeith Rest Home</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -3523,18 +3568,6 @@
 </div>
 
                 <a href="/region-south-west/doubletree-by-hilton-842311" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1677020">
-                <h3>Downtown Urban Farm</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/downtown-urban-farm-1677020" class="details-link">
                   More
                 </a>
               </div>
@@ -4473,18 +4506,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="55072">
-                <h3>Grevill House/Ashley Intermediate Care Centre</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Grevill House</span><br>          <span>London Road</span><br>          <span>Charlton Kings</span><br>          <span>Cheltenham</span><br>        <span itemprop="postalCode">GL52 6YL</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/grevill-houseashley-intermediate-care-centre-55072" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1593210">
                 <h3>Guilt Trip</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4506,6 +4527,18 @@
 </div>
 
                 <a href="/region-south-west/guru-js-1629934" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912664">
+                <h3>H Cooks</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/h-cooks-1912664" class="details-link">
                   More
                 </a>
               </div>
@@ -5193,18 +5226,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1684670">
-                <h3>Indian Vegetarian</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/indian-vegetarian-1684670" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1908937">
                 <h3>Indian Vegetarian Catering</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -5382,6 +5403,18 @@
 </div>
 
                 <a href="/region-south-west/jumpin-fun-1542995" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912647">
+                <h3>Jumping Beans</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 1</span><br>          <span>Katherine Court</span><br>          <span>Salisbury Avenue</span><br>          <span>Cheltenham</span><br>        <span itemprop="postalCode">GL51 3GA</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/jumping-beans-1912647" class="details-link">
                   More
                 </a>
               </div>
@@ -5622,6 +5655,18 @@
 </div>
 
                 <a href="/region-south-west/krumb-1836714" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912662">
+                <h3>La Bobina Cheltenham</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>La Bobina</span><br>          <span>8 Suffolk Parade</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL50 2AB</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/la-bobina-cheltenham-1912662" class="details-link">
                   More
                 </a>
               </div>
@@ -5900,18 +5945,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1273223">
-                <h3>Lidl</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Lidl Great Britain Limited</span><br>          <span>Swindon Road</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL50 4AH</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/lidl-1273223" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1589824">
                 <h3>Lidl</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -5921,6 +5954,18 @@
 </div>
 
                 <a href="/region-south-west/lidl-1589824" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1273223">
+                <h3>Lidl</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Lidl Great Britain Limited</span><br>          <span>Swindon Road</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL50 4AH</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/lidl-1273223" class="details-link">
                   More
                 </a>
               </div>
@@ -6245,6 +6290,18 @@
 </div>
 
                 <a href="/region-south-west/m-and-s-stores-49800" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912661">
+                <h3>MacSt Diner</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/macst-diner-1912661" class="details-link">
                   More
                 </a>
               </div>
@@ -6739,18 +6796,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="4961">
-                <h3>Morrisons</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Wm Morrison Supermarkets PLC</span><br>          <span>Caernarvon Road</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL51 3BW</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/morrisons-4961" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="631968">
                 <h3>Morrisons</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6760,6 +6805,18 @@
 </div>
 
                 <a href="/region-south-west/morrisons-631968" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="4961">
+                <h3>Morrisons</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Wm Morrison Supermarkets PLC</span><br>          <span>Caernarvon Road</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL51 3BW</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/morrisons-4961" class="details-link">
                   More
                 </a>
               </div>
@@ -9257,18 +9314,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1196472">
-                <h3>Sixways Wine Bar</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>201 London Road</span><br>          <span>Charlton Kings</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL52 6HU</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/sixways-wine-bar-1196472" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1856590">
                 <h3>SKY BLU SHOP</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -10010,18 +10055,6 @@
 </div>
 
                 <a href="/region-south-west/suffolk-coffee-cheltenham-ltd-1434314" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1216234">
-                <h3>Suffolk Rock</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>8 Suffolk Parade</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL50 2AB</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/suffolk-rock-1216234" class="details-link">
                   More
                 </a>
               </div>
@@ -10901,6 +10934,102 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912651">
+                <h3>The COOP</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>10 Hesters Way Road</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL51 0DA</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-coop-1912651" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912650">
+                <h3>The Coop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>229 London Road</span><br>          <span>Charlton Kings</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL52 6HZ</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-coop-1912650" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912654">
+                <h3>The COOP</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Beatrice Von Tresckow Designs</span><br>          <span>8 Montpellier Walk</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL50 1SD</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-coop-1912654" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912653">
+                <h3>The COOP</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>The Co-operative Food</span><br>          <span>192 Bath Road</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL53 7NE</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-coop-1912653" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912657">
+                <h3>The COOP</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-coop-1912657" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912655">
+                <h3>The COOP</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-coop-1912655" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912649">
+                <h3>The COOP</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>The Co-operative Food</span><br>          <span>143 Leckhampton Road</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL53 0DQ</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-coop-1912649" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912652">
+                <h3>The Coop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>The Mid Counties Cooperative</span><br>          <span>86 - 88 Salisbury Avenue</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL51 3BY</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-coop-1912652" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="13859">
                 <h3>The Co-operative Food</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11427,18 +11556,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1756636">
-                <h3>The Mahal Restaurant</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Montpellier House</span><br>          <span>Montpellier Drive</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL50 1TY</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-mahal-restaurant-1756636" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1054769">
                 <h3>The Meadow Cafe</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11556,6 +11673,18 @@
 </div>
 
                 <a href="/region-south-west/the-nursery-school-52310" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912658">
+                <h3>The Old Chapel Cheltenham</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-old-chapel-cheltenham-1912658" class="details-link">
                   More
                 </a>
               </div>
@@ -11832,18 +11961,6 @@
 </div>
 
                 <a href="/region-south-west/the-scandinavian-coffee-pod-912052" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1898637">
-                <h3>The Scran Van</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>10 Bushy Way</span><br>          <span>Cheltenham</span><br>          <span>Gloucestershire</span><br>        <span itemprop="postalCode">GL51 0QS</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-scran-van-1898637" class="details-link">
                   More
                 </a>
               </div>
@@ -12730,18 +12847,6 @@
 </div>
 
                 <a href="/region-south-west/woodkraft-1099731" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1212359">
-                <h3>Wrap It</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/wrap-it-1212359" class="details-link">
                   More
                 </a>
               </div>

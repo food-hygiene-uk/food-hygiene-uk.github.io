@@ -19,9 +19,9 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(var(--text-color),#757575);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:1px solid light-dark(#dedede,#393939);box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1),rgba(0,0,0,.15));box-sizing:border-box}.box-shadow-hover:hover{box-shadow:0 4px 8px light-dark(rgba(0,0,0,.15),rgba(0,0,0,.25))}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(var(--text-color),#757575);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-background:light-dark(#fff,#2d2d2d);--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-color:light-dark(#666,#aaa);--card-border:1px solid light-dark(#ddd,#444);--box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1),rgba(0,0,0,.15));--box-shadow-hover:0 4px 8px light-dark(rgba(0,0,0,.15),rgba(0,0,0,.25));--box-shadow-border:1px solid light-dark(#dedede,#393939)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
-    .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34 img{height:50px}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
+    .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid hsla(0,0%,100%,.2);color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid hsla(0,0%,100%,.3);color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
   </style>
 </head>
@@ -32,7 +32,40 @@
     <nav class="navbar-h3ad34">
       <div class="logo-h3ad34">
         <a href="/">
-          <img src="/images/logo.svg" alt="Site Logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
+  <!-- Icon -->
+  <g transform="translate(0.5, 14)">
+    <rect width="32" height="32" fill="#84be00" stroke="#000" rx="6" />
+    <circle cx="16" cy="16" r="12" />
+    <text
+      x="16"
+      y="16"
+      fill="#fff"
+      dominant-baseline="central"
+      font-family="sans-serif"
+      font-size="20"
+      font-weight="bold"
+      text-anchor="middle"
+    >?</text>
+  </g>
+
+  <!-- Main text -->
+  <g transform="translate(174, 33)" class="text">
+    <text
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="system-ui, sans-serif"
+      font-size="30"
+      font-weight="600"
+      letter-spacing="1.2px"
+      style="text-rendering: geometricPrecision"
+      text-transform="uppercase"
+    >
+      Food Hygiene UK
+    </text>
+  </g>
+</svg>
+
         </a>
       </div>
       <input type="checkbox" id="menu-toggle-h3ad34" class="menu-toggle-h3ad34">
@@ -50,6 +83,7 @@
     </nav>
   </header>
 </div>
+
     <div class="content-k3nm4l">
       <div class="container">
         <article class="local-authority" itemscope itemtype="https://schema.org/GovernmentOrganization">
@@ -409,6 +443,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912824">
+                <h3>abm catering @ Trent House Bet 365</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Trent House</span><br>          <span>Media Way</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 5SZ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/abm-catering-trent-house-bet-365-1912824" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="947108">
                 <h3>ABM Catering Solutions</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -745,15 +791,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="139330">
+<hr>              <div class="establishment" data-establishment-id="802482">
                 <h3>Aldi</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Stanley Matthews Way</span><br>          <span>Stoke-on-Trent</span><br>        <span itemprop="postalCode">ST4 8GR</span>
+          <span>Whittle Road</span><br>          <span>Meir</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 7TU</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/aldi-139330" class="details-link">
+                <a href="/region-west-midlands/aldi-802482" class="details-link">
                   More
                 </a>
               </div>
@@ -781,15 +827,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="802482">
+<hr>              <div class="establishment" data-establishment-id="139330">
                 <h3>Aldi</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Whittle Road</span><br>          <span>Meir</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 7TU</span>
+          <span>Stanley Matthews Way</span><br>          <span>Stoke-on-Trent</span><br>        <span itemprop="postalCode">ST4 8GR</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/aldi-802482" class="details-link">
+                <a href="/region-west-midlands/aldi-139330" class="details-link">
                   More
                 </a>
               </div>
@@ -1477,18 +1523,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1727725">
-                <h3>Ayi&#39;s Natural Drink</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/ayis-natural-drink-1727725" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1639841">
                 <h3>Aynsley Tea Rooms</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -1813,15 +1847,39 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1789698">
+<hr>              <div class="establishment" data-establishment-id="459530">
                 <h3>Bargain Booze</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>8a Joyce Avenue</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 7PF</span>
+          <span>27 Dividy Road</span><br>          <span>Bentilee</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 9JQ</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/bargain-booze-1789698" class="details-link">
+                <a href="/region-west-midlands/bargain-booze-459530" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="130542">
+                <h3>Bargain Booze</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>25 Tower Square</span><br>          <span>Tunstall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 5AB</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/bargain-booze-130542" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1436386">
+                <h3>Bargain Booze</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>449-451 Hartshill Road</span><br>          <span>Hartshill</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 6AB</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/bargain-booze-1436386" class="details-link">
                   More
                 </a>
               </div>
@@ -1837,15 +1895,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1436386">
+<hr>              <div class="establishment" data-establishment-id="1789698">
                 <h3>Bargain Booze</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>449-451 Hartshill Road</span><br>          <span>Hartshill</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 6AB</span>
+          <span>8a Joyce Avenue</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 7PF</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/bargain-booze-1436386" class="details-link">
+                <a href="/region-west-midlands/bargain-booze-1789698" class="details-link">
                   More
                 </a>
               </div>
@@ -1906,30 +1964,6 @@
 </div>
 
                 <a href="/region-west-midlands/bargain-booze-1617209" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="459530">
-                <h3>Bargain Booze</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>27 Dividy Road</span><br>          <span>Bentilee</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 9JQ</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/bargain-booze-459530" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="130542">
-                <h3>Bargain Booze</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>25 Tower Square</span><br>          <span>Tunstall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 5AB</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/bargain-booze-130542" class="details-link">
                   More
                 </a>
               </div>
@@ -2125,6 +2159,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1591488">
+                <h3>Becky’s Playhouse Childminding</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>15 Kestrel Avenue</span><br>          <span>Meir</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 7RD</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/beckys-playhouse-childminding-1591488" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1617207">
                 <h3>Becs Cakes</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -2182,6 +2228,18 @@
 </div>
 
                 <a href="/region-west-midlands/bench-bar-1748424" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1682923">
+                <h3>Bengal Spice</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>325 Hartshill Road</span><br>          <span>Hartshill</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 7NR</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/bengal-spice-1682923" class="details-link">
                   More
                 </a>
               </div>
@@ -3421,18 +3479,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="141570">
-                <h3>Buzz Bingo</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Victoria Road</span><br>          <span>Fenton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2HS</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/buzz-bingo-141570" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="140417">
                 <h3>Buzz Bingo</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -3442,6 +3488,18 @@
 </div>
 
                 <a href="/region-west-midlands/buzz-bingo-140417" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="141570">
+                <h3>Buzz Bingo</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Victoria Road</span><br>          <span>Fenton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2HS</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/buzz-bingo-141570" class="details-link">
                   More
                 </a>
               </div>
@@ -4093,18 +4151,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1605104">
-                <h3>Cheesious Pizza</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>5 Adelaide Street</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 2BD</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/cheesious-pizza-1605104" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1901863">
                 <h3>Cheesious Pizza</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4114,6 +4160,18 @@
 </div>
 
                 <a href="/region-west-midlands/cheesious-pizza-1901863" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1605104">
+                <h3>Cheesious Pizza</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>5 Adelaide Street</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 2BD</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/cheesious-pizza-1605104" class="details-link">
                   More
                 </a>
               </div>
@@ -4261,6 +4319,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1101089">
+                <h3>Childcare 4 U</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>25 Margaret Avenue</span><br>          <span>Trentham</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 8EE</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/childcare-4-u-1101089" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1862826">
                 <h3>Children 1st Meir Park Nursery School</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4309,18 +4379,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="982195">
-                <h3>China Garden</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>11 Belgrave Road</span><br>          <span>Dresden</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 4PR</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/china-garden-982195" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1842990">
                 <h3>China Garden</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4330,6 +4388,18 @@
 </div>
 
                 <a href="/region-west-midlands/china-garden-1842990" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="982195">
+                <h3>China Garden</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>11 Belgrave Road</span><br>          <span>Dresden</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 4PR</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/china-garden-982195" class="details-link">
                   More
                 </a>
               </div>
@@ -4417,18 +4487,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="111992">
-                <h3>Choices Housing Association</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>535 High Lane</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 7EP</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/choices-housing-association-111992" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="962847">
                 <h3>Choices Housing Association</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4438,6 +4496,18 @@
 </div>
 
                 <a href="/region-west-midlands/choices-housing-association-962847" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="111992">
+                <h3>Choices Housing Association</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>535 High Lane</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 7EP</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/choices-housing-association-111992" class="details-link">
                   More
                 </a>
               </div>
@@ -4678,6 +4748,18 @@
 </div>
 
                 <a href="/region-west-midlands/claybourne-residential-home-120133" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912822">
+                <h3>Cleanse</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Units D1 - D2 Trentham Business Quarter</span><br>          <span>Bellringer Road</span><br>          <span>Trentham</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 8GB</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/cleanse-1912822" class="details-link">
                   More
                 </a>
               </div>
@@ -5941,6 +6023,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="135497">
+                <h3>Deborah Baker Childminding</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>28 Gordon Road</span><br>          <span>Sandyford</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 5QA</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/deborah-baker-childminding-135497" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1898778">
                 <h3>Dee’Zert Lab</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -5989,18 +6083,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1367962">
-                <h3>Delectable</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/delectable-1367962" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="134325">
                 <h3>Delta Cafe &amp; Restaurant</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6022,6 +6104,18 @@
 </div>
 
                 <a href="/region-west-midlands/derby-street-pharmacy-1595427" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1648091">
+                <h3>Derry Daycare</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>63 Blackbird Way</span><br>          <span>Packmoor</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST7 4GA</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/derry-daycare-1648091" class="details-link">
                   More
                 </a>
               </div>
@@ -6113,7 +6207,7 @@
                 <h3>Dez&#39;s Kitchen</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Hub</span><br>          <span>Fegg Hayes Road</span><br>          <span>Fegg Hayes</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 6QR</span>
+          <span>Whitfield Valley Centre</span><br>          <span>Fegg Hayes Road</span><br>          <span>Fegg Hayes</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 6QR</span>
   </address>
 </div>
 
@@ -6457,18 +6551,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1399816">
-                <h3>Dunelm (Soft Furnishings) Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/dunelm-soft-furnishings-ltd-1399816" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="874781">
                 <h3>Dunelm (Soft Furnishings) Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6478,6 +6560,18 @@
 </div>
 
                 <a href="/region-west-midlands/dunelm-soft-furnishings-ltd-874781" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1399816">
+                <h3>Dunelm (Soft Furnishings) Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/dunelm-soft-furnishings-ltd-1399816" class="details-link">
                   More
                 </a>
               </div>
@@ -7129,18 +7223,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="563800">
-                <h3>Farmfoods</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 1 Edensor Road</span><br>          <span>Longton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 2NU</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/farmfoods-563800" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="681159">
                 <h3>Farmfoods</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -7150,6 +7232,18 @@
 </div>
 
                 <a href="/region-west-midlands/farmfoods-681159" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="563800">
+                <h3>Farmfoods</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 1 Edensor Road</span><br>          <span>Longton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 2NU</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/farmfoods-563800" class="details-link">
                   More
                 </a>
               </div>
@@ -7849,18 +7943,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1801300">
-                <h3>Funky Chicken</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>17 Sandon Road</span><br>          <span>Meir</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 7DJ</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/funky-chicken-1801300" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1210389">
                 <h3>Funky Chicken</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -7870,6 +7952,18 @@
 </div>
 
                 <a href="/region-west-midlands/funky-chicken-1210389" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1801300">
+                <h3>Funky Chicken</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>17 Sandon Road</span><br>          <span>Meir</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 7DJ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/funky-chicken-1801300" class="details-link">
                   More
                 </a>
               </div>
@@ -8137,6 +8231,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1699989">
+                <h3>Go Local Extra</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>367-369 Blurton Road</span><br>          <span>Blurton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 3AY</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/go-local-extra-1699989" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1814293">
                 <h3>Go Local Extra</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -8149,15 +8255,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1699989">
+<hr>              <div class="establishment" data-establishment-id="1912829">
                 <h3>Go Local Extra</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>367-369 Blurton Road</span><br>          <span>Blurton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 3AY</span>
+          <span>274a Trent Valley Road</span><br>          <span>Oakhill</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 5NW</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/go-local-extra-1699989" class="details-link">
+                <a href="/region-west-midlands/go-local-extra-1912829" class="details-link">
                   More
                 </a>
               </div>
@@ -8629,18 +8735,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1898777">
-                <h3>Greggs</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>6-8 Market Square</span><br>          <span>Hanley</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 1NU</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/greggs-1898777" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1898773">
                 <h3>Greggs</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -8650,6 +8744,18 @@
 </div>
 
                 <a href="/region-west-midlands/greggs-1898773" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1898777">
+                <h3>Greggs</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>6-8 Market Square</span><br>          <span>Hanley</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 1NU</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/greggs-1898777" class="details-link">
                   More
                 </a>
               </div>
@@ -9073,6 +9179,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1797090">
+                <h3>Happy Hands Tiney Home Nursery</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>29 Thomas Street</span><br>          <span>Packmoor</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST7 4SS</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/happy-hands-tiney-home-nursery-1797090" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="511253">
                 <h3>Happy Hours</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9457,6 +9575,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="132870">
+                <h3>Heron Foods Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>30 Devonshire Square</span><br>          <span>Bentilee</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 0ES</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/heron-foods-ltd-132870" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1006111">
                 <h3>Heron Foods Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9478,18 +9608,6 @@
 </div>
 
                 <a href="/region-west-midlands/heron-foods-ltd-199663" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="132870">
-                <h3>Heron Foods Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>30 Devonshire Square</span><br>          <span>Bentilee</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 0ES</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/heron-foods-ltd-132870" class="details-link">
                   More
                 </a>
               </div>
@@ -9937,18 +10055,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1430180">
-                <h3>Home Foodz</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/home-foodz-1430180" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1906483">
                 <h3>Home Made Caters</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -10261,18 +10367,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1856958">
-                <h3>Imperial Phoenix</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>227 High Street</span><br>          <span>Tunstall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 5EG</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/imperial-phoenix-1856958" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1375257">
                 <h3>Imranz</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -10282,6 +10376,18 @@
 </div>
 
                 <a href="/region-west-midlands/imranz-1375257" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912830">
+                <h3>Imzys</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>35 Snow Hill</span><br>          <span>Shelton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 4LU</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/imzys-1912830" class="details-link">
                   More
                 </a>
               </div>
@@ -10957,6 +11063,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="467778">
+                <h3>Joy&#39;s Childminding Services</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>37 Godwin Way</span><br>          <span>Trent Vale</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 6JP</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/joys-childminding-services-467778" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1630961">
                 <h3>Julita&#39;s Cakes</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11377,15 +11495,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1053785">
+<hr>              <div class="establishment" data-establishment-id="1215541">
                 <h3>KFC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>High Street</span><br>          <span>Tunstall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 5EN</span>
+          <span>2 Parliament Row</span><br>          <span>Hanley</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 1QD</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/kfc-1053785" class="details-link">
+                <a href="/region-west-midlands/kfc-1215541" class="details-link">
                   More
                 </a>
               </div>
@@ -11401,15 +11519,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1215541">
+<hr>              <div class="establishment" data-establishment-id="1053785">
                 <h3>KFC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2 Parliament Row</span><br>          <span>Hanley</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 1QD</span>
+          <span>High Street</span><br>          <span>Tunstall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 5EN</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/kfc-1215541" class="details-link">
+                <a href="/region-west-midlands/kfc-1053785" class="details-link">
                   More
                 </a>
               </div>
@@ -11881,6 +11999,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1797089">
+                <h3>Lakeside Crèche Tiney Home</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>18 Mannin Close</span><br>          <span>Longton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 5QR</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/lakeside-crche-tiney-home-1797089" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1217288">
                 <h3>Lal&#39;s Newsagents</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11914,6 +12044,18 @@
 </div>
 
                 <a href="/region-west-midlands/last-orders-1036391" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1576346">
+                <h3>Laura Jayne Cope</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>3 Torridon Close</span><br>          <span>Trentham</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 8YA</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/laura-jayne-cope-1576346" class="details-link">
                   More
                 </a>
               </div>
@@ -12061,18 +12203,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="134307">
-                <h3>Lidl</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>High Street</span><br>          <span>Stoke-on-Trent</span><br>        <span itemprop="postalCode">ST6 5EG</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/lidl-134307" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="318305">
                 <h3>Lidl</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12097,15 +12227,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1210390">
+<hr>              <div class="establishment" data-establishment-id="134307">
                 <h3>Lidl</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Trentham Road</span><br>          <span>Longton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 4DY</span>
+          <span>High Street</span><br>          <span>Stoke-on-Trent</span><br>        <span itemprop="postalCode">ST6 5EG</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/lidl-1210390" class="details-link">
+                <a href="/region-west-midlands/lidl-134307" class="details-link">
                   More
                 </a>
               </div>
@@ -12118,6 +12248,18 @@
 </div>
 
                 <a href="/region-west-midlands/lidl-1300222" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1210390">
+                <h3>Lidl</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Trentham Road</span><br>          <span>Longton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 4DY</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/lidl-1210390" class="details-link">
                   More
                 </a>
               </div>
@@ -12145,18 +12287,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1137921">
-                <h3>Lifeways</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>216 Lightwood Road</span><br>          <span>Lightwood</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 4JZ</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/lifeways-1137921" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1137922">
                 <h3>Lifeways</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12166,6 +12296,18 @@
 </div>
 
                 <a href="/region-west-midlands/lifeways-1137922" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1137921">
+                <h3>Lifeways</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>216 Lightwood Road</span><br>          <span>Lightwood</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 4JZ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/lifeways-1137921" class="details-link">
                   More
                 </a>
               </div>
@@ -12274,6 +12416,18 @@
 </div>
 
                 <a href="/region-west-midlands/little-dreamers-987927" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="125405">
+                <h3>Little Ducks Childminding Service</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>7 Bowfell Grove</span><br>          <span>Sandford Hill</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 5XR</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/little-ducks-childminding-service-125405" class="details-link">
                   More
                 </a>
               </div>
@@ -12397,18 +12551,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="950206">
-                <h3>Lloyds Pharmacy</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>29 Derby Street</span><br>          <span>Hanley</span><br>          <span>Stoke-on-Trent</span><br>        <span itemprop="postalCode">ST1 3LE</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/lloyds-pharmacy-950206" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="116151">
                 <h3>Lloyds Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12418,6 +12560,18 @@
 </div>
 
                 <a href="/region-west-midlands/lloyds-pharmacy-116151" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="950206">
+                <h3>Lloyds Pharmacy</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>29 Derby Street</span><br>          <span>Hanley</span><br>          <span>Stoke-on-Trent</span><br>        <span itemprop="postalCode">ST1 3LE</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/lloyds-pharmacy-950206" class="details-link">
                   More
                 </a>
               </div>
@@ -12457,30 +12611,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1357959">
-                <h3>Londis</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>117 Carlton Avenue</span><br>          <span>Chell</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 7HF</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/londis-1357959" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="681181">
-                <h3>Londis</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>274a Trent Valley Road</span><br>          <span>Oakhill</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 5NW</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/londis-681181" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1605674">
                 <h3>Londis</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12490,6 +12620,18 @@
 </div>
 
                 <a href="/region-west-midlands/londis-1605674" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1357959">
+                <h3>Londis</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>117 Carlton Avenue</span><br>          <span>Chell</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 7HF</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/londis-1357959" class="details-link">
                   More
                 </a>
               </div>
@@ -12757,6 +12899,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="511229">
+                <h3>Lorna&#39;s Daycare</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>8 Trevithick Close</span><br>          <span>Adderley Green</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 0TE</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/lornas-daycare-511229" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="221292">
                 <h3>Lotus Blossom</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12817,7 +12971,7 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1300218">
+<hr>              <div class="establishment" data-establishment-id="1912831">
                 <h3>Lucky House</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
@@ -12825,7 +12979,7 @@
   </address>
 </div>
 
-                <a href="/region-west-midlands/lucky-house-1300218" class="details-link">
+                <a href="/region-west-midlands/lucky-house-1912831" class="details-link">
                   More
                 </a>
               </div>
@@ -13090,18 +13244,6 @@
 </div>
 
                 <a href="/region-west-midlands/mahams-biryani-1744221" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1474499">
-                <h3>Maison Bakes</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/maison-bakes-1474499" class="details-link">
                   More
                 </a>
               </div>
@@ -13477,6 +13619,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1898781">
+                <h3>McDonalds</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Daisy Bank Road</span><br>          <span>Norton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 6AX</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mcdonalds-1898781" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1083237">
                 <h3>McDonalds</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13489,27 +13643,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1134779">
+<hr>              <div class="establishment" data-establishment-id="135849">
                 <h3>McDonalds</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Victoria Road</span><br>          <span>Fenton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2HX</span>
+          <span>29 Parliament Row</span><br>          <span>Hanley</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 1PW</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/mcdonalds-1134779" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1898781">
-                <h3>McDonalds</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Daisy Bank Road</span><br>          <span>Norton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 6AX</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/mcdonalds-1898781" class="details-link">
+                <a href="/region-west-midlands/mcdonalds-135849" class="details-link">
                   More
                 </a>
               </div>
@@ -13525,15 +13667,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="135849">
+<hr>              <div class="establishment" data-establishment-id="1134779">
                 <h3>McDonalds</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>29 Parliament Row</span><br>          <span>Hanley</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 1PW</span>
+          <span>Victoria Road</span><br>          <span>Fenton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2HX</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/mcdonalds-135849" class="details-link">
+                <a href="/region-west-midlands/mcdonalds-1134779" class="details-link">
                   More
                 </a>
               </div>
@@ -14173,6 +14315,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912827">
+                <h3>Mini Market</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>16 Piccadilly</span><br>          <span>Hanley</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 1DH</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mini-market-1912827" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1827212">
                 <h3>Mini Market</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -14365,6 +14519,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1669683">
+                <h3>Morrisons Daily</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>589-591 Leek Road</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 3HQ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/morrisons-daily-1669683" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1624108">
                 <h3>Morrisons Daily</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -14386,18 +14552,6 @@
 </div>
 
                 <a href="/region-west-midlands/morrisons-daily-1656068" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1669683">
-                <h3>Morrisons Daily</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>589-591 Leek Road</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 3HQ</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/morrisons-daily-1669683" class="details-link">
                   More
                 </a>
               </div>
@@ -14557,6 +14711,174 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="135149">
+                <h3>Mrs Alison Jayne Gordon</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>96 Haslemere Avenue</span><br>          <span>Milton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 7AU</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-alison-jayne-gordon-135149" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="125453">
+                <h3>Mrs Alma Presutti</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>26 Seymour Street</span><br>          <span>Hanley</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 3NX</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-alma-presutti-125453" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="903112">
+                <h3>Mrs Carol White</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>28 Duesbury Green</span><br>          <span>Longton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 2RZ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-carol-white-903112" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="136498">
+                <h3>Mrs Carole Graham</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>59 Harington Drive</span><br>          <span>Weston Coyney</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 5SU</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-carole-graham-136498" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="136538">
+                <h3>Mrs Christina Bailey</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>35 Sproston Road</span><br>          <span>Little Chell</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 6NE</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-christina-bailey-136538" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="125494">
+                <h3>Mrs Dawn Warrender</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>37 Constance Avenue</span><br>          <span>Trentham</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 8TE</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-dawn-warrender-125494" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="950208">
+                <h3>Mrs Deborah Sutton</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>24 Hawthorne Avenue</span><br>          <span>Trent Vale</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 6NZ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-deborah-sutton-950208" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="769681">
+                <h3>Mrs Diana Coia</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>1 Bradwell Street</span><br>          <span>Longport</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 4NP</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-diana-coia-769681" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="125478">
+                <h3>Mrs J Snowdon</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>21 Summerville Road</span><br>          <span>Trent Vale</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 6LT</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-j-snowdon-125478" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="135150">
+                <h3>Mrs Julie Ann Grocott</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>22 West Avenue</span><br>          <span>Hartshill</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 7EU</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-julie-ann-grocott-135150" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="136519">
+                <h3>Mrs Julie Walton</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>24 Mars Street</span><br>          <span>Smallthorne</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 1PA</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-julie-walton-136519" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="125472">
+                <h3>Mrs L Sherratt</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>261 Campbell Road</span><br>          <span>Stoke</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 4EN</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-l-sherratt-125472" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="125373">
+                <h3>Mrs Lynn Holland</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>58 Louise Street</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 1BG</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-lynn-holland-125373" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1206475">
+                <h3>Mrs Machaela Davina Frost</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>8 Field Place</span><br>          <span>Longton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 1AR</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-machaela-davina-frost-1206475" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1053738">
                 <h3>Mrs Noreen Green</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -14569,27 +14891,147 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1493610">
-                <h3>Mrs Robyn Owen</h3>
+<hr>              <div class="establishment" data-establishment-id="1733866">
+                <h3>Mrs Patricia Hankey</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>370 Dividy Road</span><br>          <span>Bentilee</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 9JY</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/mrs-robyn-owen-1493610" class="details-link">
+                <a href="/region-west-midlands/mrs-patricia-hankey-1733866" class="details-link">
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1563759">
-                <h3>Ms Amreen Qurban</h3>
+<hr>              <div class="establishment" data-establishment-id="135125">
+                <h3>Mrs Paula Bentley</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>370 Weston Road</span><br>          <span>Weston Coyney</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 6HD</span>
+          <span>11 Roundway</span><br>          <span>Blurton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 2BH</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/ms-amreen-qurban-1563759" class="details-link">
+                <a href="/region-west-midlands/mrs-paula-bentley-135125" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="135124">
+                <h3>Mrs S Webster</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>30 Field Avenue</span><br>          <span>Baddeley Green</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 7AS</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-s-webster-135124" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="125440">
+                <h3>Mrs Sandra Parry</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>15 Baddeley Green Lane</span><br>          <span>Baddeley Green</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 7LL</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-sandra-parry-125440" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="125236">
+                <h3>Mrs Sarah Ball</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>75 Sutherland Avenue</span><br>          <span>Longton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 4EQ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-sarah-ball-125236" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="906456">
+                <h3>Mrs Sharon Myatt</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>3 Crawfurd Street</span><br>          <span>Fenton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 3QN</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-sharon-myatt-906456" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1395623">
+                <h3>Mrs Sharon Smith</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>68 Zodiac Drive</span><br>          <span>Packmoor</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 6QJ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-sharon-smith-1395623" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="125352">
+                <h3>Mrs Susan Gotham</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>4 Queensberry Road</span><br>          <span>Longton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 1QZ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-susan-gotham-125352" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="125409">
+                <h3>Mrs Susan Lockett</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>1 Lamotte Close</span><br>          <span>Fenton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 3QR</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-susan-lockett-125409" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="143165">
+                <h3>Mrs Tracey Joanne Key</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>7 Forest Road</span><br>          <span>Meir</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 7BY</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mrs-tracey-joanne-key-143165" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="421304">
+                <h3>Ms Angela Newbon</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>13 Laski Crescent</span><br>          <span>Meir</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 6LW</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ms-angela-newbon-421304" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1870866">
+                <h3>Ms Clair Elizabeth Horton</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>219 Newcastle Road</span><br>          <span>Trent Vale</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 6PU</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ms-clair-elizabeth-horton-1870866" class="details-link">
                   More
                 </a>
               </div>
@@ -14617,6 +15059,42 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1733875">
+                <h3>Ms Hayley Ellams</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>64 Emsworth Road</span><br>          <span>Blurton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 3EX</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ms-hayley-ellams-1733875" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1545693">
+                <h3>Ms Janine Lawton</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>11 Chillington Way</span><br>          <span>Norton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 8GJ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ms-janine-lawton-1545693" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1576343">
+                <h3>Ms Jennifer Bamford</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>11 Little Cliffe Road</span><br>          <span>Fenton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 2DW</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ms-jennifer-bamford-1576343" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1785128">
                 <h3>Ms Julie Foy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -14629,6 +15107,30 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1591486">
+                <h3>Ms Kathryn Groves</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>9 Christine Street</span><br>          <span>Bucknall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 9DB</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ms-kathryn-groves-1591486" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1206479">
+                <h3>Ms Lara Green</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>1 Hayner Grove</span><br>          <span>Weston Coyney</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 6PH</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ms-lara-green-1206479" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1213213">
                 <h3>Ms Laura Malpass</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -14638,6 +15140,18 @@
 </div>
 
                 <a href="/region-west-midlands/ms-laura-malpass-1213213" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1591489">
+                <h3>Ms Laura Oldfield</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>2 The Greenways</span><br>          <span>Edge View Road</span><br>          <span>Baddeley Green</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 7HT</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ms-laura-oldfield-1591489" class="details-link">
                   More
                 </a>
               </div>
@@ -14677,6 +15191,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1580195">
+                <h3>Ms Rachel Elizabeth Pugh</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>5 Helena Repton Place</span><br>          <span>Trentham</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 8ZX</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ms-rachel-elizabeth-pugh-1580195" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1621258">
                 <h3>Ms Sara Whitfield</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -14686,6 +15212,30 @@
 </div>
 
                 <a href="/region-west-midlands/ms-sara-whitfield-1621258" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1751812">
+                <h3>Ms Sarah Brunetti</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>19 Swan Grove</span><br>          <span>Tunstall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 4SG</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ms-sarah-brunetti-1751812" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1737979">
+                <h3>Ms Sarah Louise Hulse</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>39 Widecombe Road</span><br>          <span>Birches Head</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 6SL</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ms-sarah-louise-hulse-1737979" class="details-link">
                   More
                 </a>
               </div>
@@ -14710,6 +15260,42 @@
 </div>
 
                 <a href="/region-west-midlands/ms-sharron-fallows-1875038" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1395625">
+                <h3>Ms Tina Lowndes</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>94 Barber Road</span><br>          <span>Chell</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 6JL</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ms-tina-lowndes-1395625" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1617198">
+                <h3>Ms Tina Lowndes</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>60 Bank Hall Road</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 7DP</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ms-tina-lowndes-1617198" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="955502">
+                <h3>Ms Tracey Lockett</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>36 Dorset Close</span><br>          <span>Bucknall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 9AA</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ms-tracey-lockett-955502" class="details-link">
                   More
                 </a>
               </div>
@@ -14809,6 +15395,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912821">
+                <h3>Nam Jai Thai</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>74 Victoria Road</span><br>          <span>Fenton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2JX</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/nam-jai-thai-1912821" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1581153">
                 <h3>Namaste Dine</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -14902,18 +15500,6 @@
 </div>
 
                 <a href="/region-west-midlands/nefertiti-pizza-kebab-house-ltd-1527348" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1906475">
-                <h3>Neighbourhood Slice</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/neighbourhood-slice-1906475" class="details-link">
                   More
                 </a>
               </div>
@@ -15082,6 +15668,18 @@
 </div>
 
                 <a href="/region-west-midlands/new-great-wall-1040736" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912828">
+                <h3>New Imperial Phoenix</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>227 High Street</span><br>          <span>Tunstall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 5EG</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/new-imperial-phoenix-1912828" class="details-link">
                   More
                 </a>
               </div>
@@ -15718,6 +16316,18 @@
 </div>
 
                 <a href="/region-west-midlands/nurtured-tunstall-1679743" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1055320">
+                <h3>Nurtury Childminders</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>21 Lawton Street</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 1AZ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/nurtury-childminders-1055320" class="details-link">
                   More
                 </a>
               </div>
@@ -16597,6 +17207,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912832">
+                <h3>Peak Essence</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/peak-essence-1912832" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="126427">
                 <h3>Peking Palace</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -17305,6 +17927,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="132871">
+                <h3>Premier</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>42/44 Stansmore Road</span><br>          <span>Meir</span><br>          <span>Stoke-on-Trent</span><br>        <span itemprop="postalCode">ST3 6LX</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/premier-132871" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="809640">
                 <h3>Premier</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -17326,18 +17960,6 @@
 </div>
 
                 <a href="/region-west-midlands/premier-1455469" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="132871">
-                <h3>Premier</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>42/44 Stansmore Road</span><br>          <span>Meir</span><br>          <span>Stoke-on-Trent</span><br>        <span itemprop="postalCode">ST3 6LX</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/premier-132871" class="details-link">
                   More
                 </a>
               </div>
@@ -17964,18 +18586,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1797093">
-                <h3>Rose Bakery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/rose-bakery-1797093" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1695977">
                 <h3>Rose Evelyn Cakes</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -17985,6 +18595,18 @@
 </div>
 
                 <a href="/region-west-midlands/rose-evelyn-cakes-1695977" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912823">
+                <h3>Rose Grill</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>160 Newcastle Street</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 3QN</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/rose-grill-1912823" class="details-link">
                   More
                 </a>
               </div>
@@ -18081,18 +18703,6 @@
 </div>
 
                 <a href="/region-west-midlands/rowan-village-store-1031146" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1682923">
-                <h3>Royal Bahaar</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>325 Hartshill Road</span><br>          <span>Hartshill</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 7NR</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/royal-bahaar-1682923" class="details-link">
                   More
                 </a>
               </div>
@@ -20688,15 +21298,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="802483">
+<hr>              <div class="establishment" data-establishment-id="707169">
                 <h3>Subway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>15 Howard Place</span><br>          <span>Shelton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 4NJ</span>
+          <span>Victoria Road</span><br>          <span>Fenton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2HS</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/subway-802483" class="details-link">
+                <a href="/region-west-midlands/subway-707169" class="details-link">
                   More
                 </a>
               </div>
@@ -20712,15 +21322,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="707169">
+<hr>              <div class="establishment" data-establishment-id="802483">
                 <h3>Subway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Victoria Road</span><br>          <span>Fenton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2HS</span>
+          <span>15 Howard Place</span><br>          <span>Shelton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 4NJ</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/subway-707169" class="details-link">
+                <a href="/region-west-midlands/subway-802483" class="details-link">
                   More
                 </a>
               </div>
@@ -20988,18 +21598,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1660320">
-                <h3>Superdrug</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/superdrug-1660320" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="459526">
                 <h3>Superdrug</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -21009,6 +21607,18 @@
 </div>
 
                 <a href="/region-west-midlands/superdrug-459526" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1660320">
+                <h3>Superdrug</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/superdrug-1660320" class="details-link">
                   More
                 </a>
               </div>
@@ -21141,6 +21751,18 @@
 </div>
 
                 <a href="/region-west-midlands/sweet-and-spice-1624107" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1797093">
+                <h3>Sweet Creations by Stacy</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/sweet-creations-by-stacy-1797093" class="details-link">
                   More
                 </a>
               </div>
@@ -21309,6 +21931,18 @@
 </div>
 
                 <a href="/region-west-midlands/sweet-treats-by-viktorija-1387565" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912826">
+                <h3>Sweetifi</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/sweetifi-1912826" class="details-link">
                   More
                 </a>
               </div>
@@ -21528,7 +22162,7 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1789689">
+<hr>              <div class="establishment" data-establishment-id="1912833">
                 <h3>Tasty Links</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
@@ -21536,7 +22170,7 @@
   </address>
 </div>
 
-                <a href="/region-west-midlands/tasty-links-1789689" class="details-link">
+                <a href="/region-west-midlands/tasty-links-1912833" class="details-link">
                   More
                 </a>
               </div>
@@ -21672,18 +22306,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="118508">
-                <h3>Tesco</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Lysander Road</span><br>          <span>Meir Park</span><br>          <span>Stoke-on-Trent</span><br>        <span itemprop="postalCode">ST3 7WB</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/tesco-118508" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="136812">
                 <h3>Tesco</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -21693,18 +22315,6 @@
 </div>
 
                 <a href="/region-west-midlands/tesco-136812" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1576345">
-                <h3>Tesco</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Chell Street</span><br>          <span>Hanley</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 6AZ</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/tesco-1576345" class="details-link">
                   More
                 </a>
               </div>
@@ -21732,6 +22342,30 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="118508">
+                <h3>Tesco</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Lysander Road</span><br>          <span>Meir Park</span><br>          <span>Stoke-on-Trent</span><br>        <span itemprop="postalCode">ST3 7WB</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/tesco-118508" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1576345">
+                <h3>Tesco</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Chell Street</span><br>          <span>Hanley</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 6AZ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/tesco-1576345" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1493603">
                 <h3>Tesco</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -21756,18 +22390,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1493608">
-                <h3>Tesco Customer Cafe</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Lysander Road</span><br>          <span>Meir</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 7WB</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/tesco-customer-cafe-1493608" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="769699">
                 <h3>Tesco Customer Cafe</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -21777,6 +22399,18 @@
 </div>
 
                 <a href="/region-west-midlands/tesco-customer-cafe-769699" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1493608">
+                <h3>Tesco Customer Cafe</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Lysander Road</span><br>          <span>Meir</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 7WB</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/tesco-customer-cafe-1493608" class="details-link">
                   More
                 </a>
               </div>
@@ -21885,18 +22519,6 @@
 </div>
 
                 <a href="/region-west-midlands/the-auctioneer-656266" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1419034">
-                <h3>The Avenue</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Queensberry Road</span><br>          <span>Longton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 1QZ</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/the-avenue-1419034" class="details-link">
                   More
                 </a>
               </div>
@@ -22140,15 +22762,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="531230">
-                <h3>The Bulls Head</h3>
+<hr>              <div class="establishment" data-establishment-id="1912825">
+                <h3>The Brisket Fellas</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>14 St Johns Square</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 3AJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
-                <a href="/region-west-midlands/the-bulls-head-531230" class="details-link">
+                <a href="/region-west-midlands/the-brisket-fellas-1912825" class="details-link">
                   More
                 </a>
               </div>
@@ -22161,6 +22783,18 @@
 </div>
 
                 <a href="/region-west-midlands/the-bulls-head-853799" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="531230">
+                <h3>The Bulls Head</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>14 St Johns Square</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 3AJ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/the-bulls-head-531230" class="details-link">
                   More
                 </a>
               </div>
@@ -23388,18 +24022,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="715976">
-                <h3>The Park Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Dartmouth Street</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 1HA</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/the-park-inn-715976" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="114562">
                 <h3>The Park Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -23409,6 +24031,18 @@
 </div>
 
                 <a href="/region-west-midlands/the-park-inn-114562" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="715976">
+                <h3>The Park Inn</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>1 Dartmouth Street</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 1HA</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/the-park-inn-715976" class="details-link">
                   More
                 </a>
               </div>
@@ -23796,18 +24430,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="421300">
-                <h3>The Terrace Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>185 Leek Road</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2BW</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/the-terrace-inn-421300" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1893875">
                 <h3>The Terrace Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -23817,6 +24439,18 @@
 </div>
 
                 <a href="/region-west-midlands/the-terrace-inn-1893875" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="421300">
+                <h3>The Terrace Inn</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>185 Leek Road</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2BW</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/the-terrace-inn-421300" class="details-link">
                   More
                 </a>
               </div>
@@ -23856,18 +24490,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1797103">
-                <h3>The Travellers Rest</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>248 Werrington Road</span><br>          <span>Bucknall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 9AW</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/the-travellers-rest-1797103" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1563774">
                 <h3>The Travellers Rest</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -23877,6 +24499,18 @@
 </div>
 
                 <a href="/region-west-midlands/the-travellers-rest-1563774" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1797103">
+                <h3>The Travellers Rest</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>248 Werrington Road</span><br>          <span>Bucknall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 9AW</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/the-travellers-rest-1797103" class="details-link">
                   More
                 </a>
               </div>
@@ -24096,18 +24730,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1690544">
-                <h3>The Wild Oatcake</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>62 Boughey Road</span><br>          <span>Shelton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2BB</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/the-wild-oatcake-1690544" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1545704">
                 <h3>The Wild Oatcake</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -24117,6 +24739,18 @@
 </div>
 
                 <a href="/region-west-midlands/the-wild-oatcake-1545704" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1690544">
+                <h3>The Wild Oatcake</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>62 Boughey Road</span><br>          <span>Shelton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2BB</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/the-wild-oatcake-1690544" class="details-link">
                   More
                 </a>
               </div>
@@ -24168,18 +24802,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1582022">
-                <h3>Thera East Midlands</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>16 Malthouse Road</span><br>          <span>Bucknall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 9HY</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/thera-east-midlands-1582022" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1582023">
                 <h3>Thera East Midlands</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -24189,6 +24811,18 @@
 </div>
 
                 <a href="/region-west-midlands/thera-east-midlands-1582023" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1582022">
+                <h3>Thera East Midlands</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>16 Malthouse Road</span><br>          <span>Bucknall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST2 9HY</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/thera-east-midlands-1582022" class="details-link">
                   More
                 </a>
               </div>
@@ -24252,18 +24886,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1804366">
-                <h3>Thyme for a Byte</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/thyme-for-a-byte-1804366" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1291645">
                 <h3>Tickled Fancies</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -24309,18 +24931,6 @@
 </div>
 
                 <a href="/region-west-midlands/tigerbite-meir-1852818" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1717813">
-                <h3>Timmie&#39;s Tasty Creations</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/timmies-tasty-creations-1717813" class="details-link">
                   More
                 </a>
               </div>
@@ -25511,18 +26121,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1538584">
-                <h3>Well Pharmacy</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>974-976 London Road</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 5NX</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/well-pharmacy-1538584" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1883761">
                 <h3>Well Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -25532,18 +26130,6 @@
 </div>
 
                 <a href="/region-west-midlands/well-pharmacy-1883761" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="776362">
-                <h3>Well Pharmacy</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>27 Weston Road</span><br>          <span>Weston Coyney</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 6AB</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/well-pharmacy-776362" class="details-link">
                   More
                 </a>
               </div>
@@ -25559,18 +26145,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="769706">
-                <h3>Well Pharmacy</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>42 Dunning Street</span><br>          <span>Tunstall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 5AP</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/well-pharmacy-769706" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="769708">
                 <h3>Well Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -25580,6 +26154,42 @@
 </div>
 
                 <a href="/region-west-midlands/well-pharmacy-769708" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="776362">
+                <h3>Well Pharmacy</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>27 Weston Road</span><br>          <span>Weston Coyney</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST3 6AB</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/well-pharmacy-776362" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1538584">
+                <h3>Well Pharmacy</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>974-976 London Road</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 5NX</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/well-pharmacy-1538584" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="769706">
+                <h3>Well Pharmacy</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>42 Dunning Street</span><br>          <span>Tunstall</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 5AP</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/well-pharmacy-769706" class="details-link">
                   More
                 </a>
               </div>
@@ -26075,15 +26685,39 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="911412">
+<hr>              <div class="establishment" data-establishment-id="1630958">
                 <h3>Wrights</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>87 Biddulph Road</span><br>          <span>Chell</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 6SH</span>
+          <span>8 Campbell Place</span><br>          <span>Stoke</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 1LX</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/wrights-911412" class="details-link">
+                <a href="/region-west-midlands/wrights-1630958" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1134764">
+                <h3>Wrights</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>18 Tontine Street</span><br>          <span>Hanley</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 1NQ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/wrights-1134764" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="619948">
+                <h3>Wrights</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>11 Market Place</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 3AA</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/wrights-619948" class="details-link">
                   More
                 </a>
               </div>
@@ -26099,15 +26733,27 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="112875">
+<hr>              <div class="establishment" data-establishment-id="911412">
                 <h3>Wrights</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>55 Victoria Road</span><br>          <span>Fenton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2HG</span>
+          <span>87 Biddulph Road</span><br>          <span>Chell</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 6SH</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/wrights-112875" class="details-link">
+                <a href="/region-west-midlands/wrights-911412" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="117430">
+                <h3>Wrights</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>127 College Road</span><br>          <span>Shelton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2EF</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/wrights-117430" class="details-link">
                   More
                 </a>
               </div>
@@ -26123,15 +26769,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="117430">
+<hr>              <div class="establishment" data-establishment-id="112875">
                 <h3>Wrights</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>127 College Road</span><br>          <span>Shelton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2EF</span>
+          <span>55 Victoria Road</span><br>          <span>Fenton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 2HG</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/wrights-117430" class="details-link">
+                <a href="/region-west-midlands/wrights-112875" class="details-link">
                   More
                 </a>
               </div>
@@ -26156,42 +26802,6 @@
 </div>
 
                 <a href="/region-west-midlands/wrights-110430" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="619948">
-                <h3>Wrights</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>11 Market Place</span><br>          <span>Burslem</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST6 3AA</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/wrights-619948" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1134764">
-                <h3>Wrights</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>18 Tontine Street</span><br>          <span>Hanley</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 1NQ</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/wrights-1134764" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1630958">
-                <h3>Wrights</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>8 Campbell Place</span><br>          <span>Stoke</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST4 1LX</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/wrights-1630958" class="details-link">
                   More
                 </a>
               </div>
@@ -26363,6 +26973,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1755385">
+                <h3>Yo! To Go!</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/yo-to-go-1755385" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1898790">
                 <h3>Yo! To Go!</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -26384,18 +27006,6 @@
 </div>
 
                 <a href="/region-west-midlands/yo-to-go-1898789" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1755385">
-                <h3>Yo! To Go!</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/yo-to-go-1755385" class="details-link">
                   More
                 </a>
               </div>
@@ -26492,18 +27102,6 @@
 </div>
 
                 <a href="/region-west-midlands/zagros-1553445" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1801298">
-                <h3>Zaika</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>35 Snow Hill</span><br>          <span>Shelton</span><br>          <span>Stoke-On-Trent</span><br>        <span itemprop="postalCode">ST1 4LU</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/zaika-1801298" class="details-link">
                   More
                 </a>
               </div>

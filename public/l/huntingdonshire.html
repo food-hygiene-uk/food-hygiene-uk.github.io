@@ -19,9 +19,9 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(var(--text-color),#757575);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:1px solid light-dark(#dedede,#393939);box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1),rgba(0,0,0,.15));box-sizing:border-box}.box-shadow-hover:hover{box-shadow:0 4px 8px light-dark(rgba(0,0,0,.15),rgba(0,0,0,.25))}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(var(--text-color),#757575);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-background:light-dark(#fff,#2d2d2d);--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-color:light-dark(#666,#aaa);--card-border:1px solid light-dark(#ddd,#444);--box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1),rgba(0,0,0,.15));--box-shadow-hover:0 4px 8px light-dark(rgba(0,0,0,.15),rgba(0,0,0,.25));--box-shadow-border:1px solid light-dark(#dedede,#393939)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
-    .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34 img{height:50px}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
+    .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid hsla(0,0%,100%,.2);color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid hsla(0,0%,100%,.3);color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
   </style>
 </head>
@@ -32,7 +32,40 @@
     <nav class="navbar-h3ad34">
       <div class="logo-h3ad34">
         <a href="/">
-          <img src="/images/logo.svg" alt="Site Logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
+  <!-- Icon -->
+  <g transform="translate(0.5, 14)">
+    <rect width="32" height="32" fill="#84be00" stroke="#000" rx="6" />
+    <circle cx="16" cy="16" r="12" />
+    <text
+      x="16"
+      y="16"
+      fill="#fff"
+      dominant-baseline="central"
+      font-family="sans-serif"
+      font-size="20"
+      font-weight="bold"
+      text-anchor="middle"
+    >?</text>
+  </g>
+
+  <!-- Main text -->
+  <g transform="translate(174, 33)" class="text">
+    <text
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="system-ui, sans-serif"
+      font-size="30"
+      font-weight="600"
+      letter-spacing="1.2px"
+      style="text-rendering: geometricPrecision"
+      text-transform="uppercase"
+    >
+      Food Hygiene UK
+    </text>
+  </g>
+</svg>
+
         </a>
       </div>
       <input type="checkbox" id="menu-toggle-h3ad34" class="menu-toggle-h3ad34">
@@ -50,6 +83,7 @@
     </nav>
   </header>
 </div>
+
     <div class="content-k3nm4l">
       <div class="container">
         <article class="local-authority" itemscope itemtype="https://schema.org/GovernmentOrganization">
@@ -478,6 +512,18 @@
 </div>
 
                 <a href="/region-east-of-england/aldi-stores-ltd-869883" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912856">
+                <h3>Alexa Bear Bakes</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-east-of-england/alexa-bear-bakes-1912856" class="details-link">
                   More
                 </a>
               </div>
@@ -1211,6 +1257,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912858">
+                <h3>Baked by O</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-east-of-england/baked-by-o-1912858" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1856531">
                 <h3>Baked Escape Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -1256,18 +1314,6 @@
 </div>
 
                 <a href="/region-east-of-england/bakes-by-sandra-jane-1357030" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1516718">
-                <h3>Balloons by lynne</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-east-of-england/balloons-by-lynne-1516718" class="details-link">
                   More
                 </a>
               </div>
@@ -2468,6 +2514,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912851">
+                <h3>Buttter&amp;Batch</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-east-of-england/buttterbatch-1912851" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1172435">
                 <h3>Cafe Du Gallery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -2656,6 +2714,18 @@
 </div>
 
                 <a href="/region-east-of-england/cakesmith-1423679" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912867">
+                <h3>Cambridge bethel pentecostal church</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-east-of-england/cambridge-bethel-pentecostal-church-1912867" class="details-link">
                   More
                 </a>
               </div>
@@ -3522,6 +3592,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912850">
+                <h3>Claires Catering &amp; Bakes</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-east-of-england/claires-catering-bakes-1912850" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="341502">
                 <h3>Clarence House Day Nursery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -3953,17 +4035,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1094467">
-                <h3>Crawfords</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>15 High Street</span><br>          <span>Kimbolton</span><br>          <span>Cambridgeshire</span>  </address>
-</div>
-
-                <a href="/region-east-of-england/crawfords-1094467" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="709489">
                 <h3>Cromwell Academy Kids Club</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4372,18 +4443,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1898645">
-                <h3>Dolly&#39;s Bakes</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-east-of-england/dollys-bakes-1898645" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1781351">
                 <h3>Dominos Pizza</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4489,18 +4548,6 @@
 </div>
 
                 <a href="/region-east-of-england/dreamy-cake-1856524" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1423694">
-                <h3>Drizzles &amp; Swirls</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-east-of-england/drizzles-swirls-1423694" class="details-link">
                   More
                 </a>
               </div>
@@ -5735,18 +5782,6 @@
 </div>
 
                 <a href="/region-east-of-england/geannas-1531016" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1881187">
-                <h3>Geebs Kitchen</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-east-of-england/geebs-kitchen-1881187" class="details-link">
                   More
                 </a>
               </div>
@@ -7969,6 +8004,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912857">
+                <h3>Jayjo</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>6 Broadway</span><br>          <span>Yaxley</span><br>          <span>Cambridgeshire</span><br>        <span itemprop="postalCode">PE7 3EW</span>
+  </address>
+</div>
+
+                <a href="/region-east-of-england/jayjo-1912857" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="577313">
                 <h3>Jazzy&#39;s Super Whippy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -8053,18 +8100,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="922765">
-                <h3>Jiggers Steak House</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Johnsons Of Old Hurst Church Farm Johnsons Of Old Hurst Church Street</span><br>          <span>Old Hurst</span><br>          <span>Cambridgeshire</span><br>        <span itemprop="postalCode">PE28 3AF</span>
-  </address>
-</div>
-
-                <a href="/region-east-of-england/jiggers-steak-house-922765" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1796744">
                 <h3>Jigsaw Nursery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -8110,6 +8145,30 @@
 </div>
 
                 <a href="/region-east-of-england/johnsons-of-oldhurst-341537" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="922765">
+                <h3>Johnsons Steak House</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Johnsons Of Old Hurst Church Farm Johnsons Of Old Hurst Church Street</span><br>          <span>Old Hurst</span><br>          <span>Cambridgeshire</span><br>        <span itemprop="postalCode">PE28 3AF</span>
+  </address>
+</div>
+
+                <a href="/region-east-of-england/johnsons-steak-house-922765" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912855">
+                <h3>Jo&#39;s Bakes &amp; Sweet Treats</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-east-of-england/jos-bakes-sweet-treats-1912855" class="details-link">
                   More
                 </a>
               </div>
@@ -8533,18 +8592,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1596093">
-                <h3>Kirstie&#39;s Catering</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-east-of-england/kirsties-catering-1596093" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="418698">
                 <h3>Kitchen Range Foods Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -8963,18 +9010,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1596096">
-                <h3>Little Window Cooks</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>17 Halcyon Court</span><br>          <span>Huntingdon</span><br>          <span>Cambridgeshire</span><br>        <span itemprop="postalCode">PE29 6DG</span>
-  </address>
-</div>
-
-                <a href="/region-east-of-england/little-window-cooks-1596096" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="340971">
                 <h3>Littlehey Prison Lakeside Kitchen</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9322,18 +9357,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="341200">
-                <h3>Mandy&#39;s Meals on Wheels</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-east-of-england/mandys-meals-on-wheels-341200" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1771502">
                 <h3>Mannat Indian Restaurant</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9502,7 +9525,7 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1423672">
+<hr>              <div class="establishment" data-establishment-id="1912854">
                 <h3>Matt Riley Private Chef</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
@@ -9510,7 +9533,7 @@
   </address>
 </div>
 
-                <a href="/region-east-of-england/matt-riley-private-chef-1423672" class="details-link">
+                <a href="/region-east-of-england/matt-riley-private-chef-1912854" class="details-link">
                   More
                 </a>
               </div>
@@ -10070,7 +10093,7 @@
                 <h3>Mrs Helen Howlett</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>8 Bramble End</span><br>          <span>Alconbury</span><br>          <span>Cambridgeshire</span><br>        <span itemprop="postalCode">PE28 4EZ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -11445,6 +11468,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912852">
+                <h3>Plant’d Kitchen</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-east-of-england/plantd-kitchen-1912852" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="341272">
                 <h3>Platters</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11817,6 +11852,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912866">
+                <h3>Queens fish &amp;tikka</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>18 Queens Gardens</span><br>          <span>Eaton Socon</span><br>          <span>Cambridgeshire</span><br>        <span itemprop="postalCode">PE19 8BY</span>
+  </address>
+</div>
+
+                <a href="/region-east-of-england/queens-fish-tikka-1912866" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1663067">
                 <h3>Quick Shop One Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12140,18 +12187,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1871414">
-                <h3>Really Awesome Coffee - Huntingdon</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-east-of-england/really-awesome-coffee-huntingdon-1871414" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1771501">
                 <h3>Redolence</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12305,18 +12340,6 @@
 </div>
 
                 <a href="/region-east-of-england/robyns-cosy-kitchen-1243434" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="521920">
-                <h3>Rockabilly Sandwich Shop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 6 Cromwell Mews</span><br>          <span>St Ives</span><br>          <span>Cambridgeshire</span><br>        <span itemprop="postalCode">PE27 5HJ</span>
-  </address>
-</div>
-
-                <a href="/region-east-of-england/rockabilly-sandwich-shop-521920" class="details-link">
                   More
                 </a>
               </div>
@@ -12783,6 +12806,18 @@
 </div>
 
                 <a href="/region-east-of-england/saxon-manor-care-home-1646121" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912848">
+                <h3>Scarlett’s little coffee pod</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-east-of-england/scarletts-little-coffee-pod-1912848" class="details-link">
                   More
                 </a>
               </div>
@@ -13482,6 +13517,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912853">
+                <h3>SPORTS HUNTINGDON LIMITED</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Huntingdon Jubilee Park Kings Ripton Road</span><br>          <span>Sapley</span><br>          <span>Cambridgeshire</span><br>        <span itemprop="postalCode">PE28 2NU</span>
+  </address>
+</div>
+
+                <a href="/region-east-of-england/sports-huntingdon-limited-1912853" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1898644">
                 <h3>Spuds &amp; Toast</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13914,6 +13961,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912849">
+                <h3>St Neots Youth Cafe</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Loves Farm House 17 Kester Way</span><br>          <span>St Neots</span><br>          <span>Cambridgeshire</span><br>        <span itemprop="postalCode">PE19 6SL</span>
+  </address>
+</div>
+
+                <a href="/region-east-of-england/st-neots-youth-cafe-1912849" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1735710">
                 <h3>St Thomas a Becket Church</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13959,18 +14018,6 @@
 </div>
 
                 <a href="/region-east-of-england/stables-bungalow-1676046" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1743800">
-                <h3>Stacked &amp; Loaded Huntingdon</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-east-of-england/stacked-loaded-huntingdon-1743800" class="details-link">
                   More
                 </a>
               </div>
@@ -15797,18 +15844,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1889504">
-                <h3>The MindFocus Co.</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-east-of-england/the-mindfocus-co-1889504" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1639022">
                 <h3>The Mini Bar</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -16589,15 +16624,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="987048">
-                <h3>The Willow&#39;s</h3>
+<hr>              <div class="establishment" data-establishment-id="1912847">
+                <h3>The Willows Cafe</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>79 High Street</span><br>          <span>Brampton</span><br>          <span>Cambridgeshire</span><br>        <span itemprop="postalCode">PE28 4TQ</span>
   </address>
 </div>
 
-                <a href="/region-east-of-england/the-willows-987048" class="details-link">
+                <a href="/region-east-of-england/the-willows-cafe-1912847" class="details-link">
                   More
                 </a>
               </div>
@@ -16905,7 +16940,7 @@
                 <h3>Treasured Event Hire Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>4 Laurel Close</span><br>          <span>Yaxley</span><br>          <span>Cambridgeshire</span><br>        <span itemprop="postalCode">PE7 3LQ</span>
+          <span>4 Eden Way</span><br>          <span>Enterprise Park</span><br>          <span>Yaxley</span><br>          <span>Cambridgeshire</span><br>        <span itemprop="postalCode">PE7 7BY</span>
   </address>
 </div>
 
@@ -17042,6 +17077,18 @@
 </div>
 
                 <a href="/region-east-of-england/vantage-park-day-nursery-932371" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912859">
+                <h3>Velvet Batter</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-east-of-england/velvet-batter-1912859" class="details-link">
                   More
                 </a>
               </div>
@@ -17261,18 +17308,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1731719">
-                <h3>Warboys Mill Bakery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-east-of-england/warboys-mill-bakery-1731719" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="340972">
                 <h3>Warboys Sports and Social Club</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -17450,18 +17485,6 @@
 </div>
 
                 <a href="/region-east-of-england/wheatfields-primary-school-554699" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1544164">
-                <h3>Wheatsheaf Brewery Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>17 Halcyon Court</span><br>          <span>Huntingdon</span><br>          <span>Cambridgeshire</span><br>        <span itemprop="postalCode">PE29 6DG</span>
-  </address>
-</div>
-
-                <a href="/region-east-of-england/wheatsheaf-brewery-ltd-1544164" class="details-link">
                   More
                 </a>
               </div>

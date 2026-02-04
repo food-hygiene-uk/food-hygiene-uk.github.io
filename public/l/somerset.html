@@ -19,9 +19,9 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(var(--text-color),#757575);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:1px solid light-dark(#dedede,#393939);box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1),rgba(0,0,0,.15));box-sizing:border-box}.box-shadow-hover:hover{box-shadow:0 4px 8px light-dark(rgba(0,0,0,.15),rgba(0,0,0,.25))}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(var(--text-color),#757575);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-background:light-dark(#fff,#2d2d2d);--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-color:light-dark(#666,#aaa);--card-border:1px solid light-dark(#ddd,#444);--box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1),rgba(0,0,0,.15));--box-shadow-hover:0 4px 8px light-dark(rgba(0,0,0,.15),rgba(0,0,0,.25));--box-shadow-border:1px solid light-dark(#dedede,#393939)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
-    .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34 img{height:50px}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
+    .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid hsla(0,0%,100%,.2);color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid hsla(0,0%,100%,.3);color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
   </style>
 </head>
@@ -32,7 +32,40 @@
     <nav class="navbar-h3ad34">
       <div class="logo-h3ad34">
         <a href="/">
-          <img src="/images/logo.svg" alt="Site Logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
+  <!-- Icon -->
+  <g transform="translate(0.5, 14)">
+    <rect width="32" height="32" fill="#84be00" stroke="#000" rx="6" />
+    <circle cx="16" cy="16" r="12" />
+    <text
+      x="16"
+      y="16"
+      fill="#fff"
+      dominant-baseline="central"
+      font-family="sans-serif"
+      font-size="20"
+      font-weight="bold"
+      text-anchor="middle"
+    >?</text>
+  </g>
+
+  <!-- Main text -->
+  <g transform="translate(174, 33)" class="text">
+    <text
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="system-ui, sans-serif"
+      font-size="30"
+      font-weight="600"
+      letter-spacing="1.2px"
+      style="text-rendering: geometricPrecision"
+      text-transform="uppercase"
+    >
+      Food Hygiene UK
+    </text>
+  </g>
+</svg>
+
         </a>
       </div>
       <input type="checkbox" id="menu-toggle-h3ad34" class="menu-toggle-h3ad34">
@@ -50,6 +83,7 @@
     </nav>
   </header>
 </div>
+
     <div class="content-k3nm4l">
       <div class="container">
         <article class="local-authority" itemscope itemtype="https://schema.org/GovernmentOrganization">
@@ -2460,15 +2494,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="55958">
+<hr>              <div class="establishment" data-establishment-id="67841">
                 <h3>Asda</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Longforth Road</span><br>          <span>Wellington</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA21 8RQ</span>
+          <span>East Quay</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 5AZ</span>
   </address>
 </div>
 
-                <a href="/region-south-west/asda-55958" class="details-link">
+                <a href="/region-south-west/asda-67841" class="details-link">
                   More
                 </a>
               </div>
@@ -2484,15 +2518,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="67841">
+<hr>              <div class="establishment" data-establishment-id="55958">
                 <h3>Asda</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>East Quay</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 5AZ</span>
+          <span>Longforth Road</span><br>          <span>Wellington</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA21 8RQ</span>
   </address>
 </div>
 
-                <a href="/region-south-west/asda-67841" class="details-link">
+                <a href="/region-south-west/asda-55958" class="details-link">
                   More
                 </a>
               </div>
@@ -3996,6 +4030,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912872">
+                <h3>Ballifants Produce</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/ballifants-produce-1912872" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="89691">
                 <h3>Balti House Tandoori Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -5460,6 +5506,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912840">
+                <h3>Betty&#39;s</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>33 Silver Street</span><br>          <span>Ilminster</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA19 0DW</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/bettys-1912840" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1377618">
                 <h3>Betty&#39;s Preserves</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6767,18 +6825,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1847079">
-                <h3>Bow Bakes</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/bow-bakes-1847079" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="91279">
                 <h3>Bowden Bees on Label</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -8003,18 +8049,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="93296">
-                <h3>Brocks</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>67 Beech Hill</span><br>          <span>Wellington</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA21 8ER</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/brocks-93296" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="142499">
                 <h3>Brocks</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -8024,6 +8058,18 @@
 </div>
 
                 <a href="/region-south-west/brocks-142499" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="93296">
+                <h3>Brocks</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>67 Beech Hill</span><br>          <span>Wellington</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA21 8ER</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/brocks-93296" class="details-link">
                   More
                 </a>
               </div>
@@ -9515,18 +9561,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1331978">
-                <h3>Cafe Licious</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>3 Market Square</span><br>          <span>South Petherton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA13 5BT</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/cafe-licious-1331978" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="56916">
                 <h3>Cafe Licious</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9536,6 +9570,18 @@
 </div>
 
                 <a href="/region-south-west/cafe-licious-56916" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1331978">
+                <h3>Cafe Licious</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>3 Market Square</span><br>          <span>South Petherton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA13 5BT</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/cafe-licious-1331978" class="details-link">
                   More
                 </a>
               </div>
@@ -10823,6 +10869,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="999122">
+                <h3>Central Stores</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>St Michaels Road</span><br>          <span>Creech St Michael</span><br>          <span>Taunton</span><br>        <span itemprop="postalCode">TA3 5DP</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/central-stores-999122" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="105254">
                 <h3>Central Stores</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -10844,18 +10902,6 @@
 </div>
 
                 <a href="/region-south-west/central-stores-91930" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="999122">
-                <h3>Central Stores</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>St Michaels Road</span><br>          <span>Creech St Michael</span><br>          <span>Taunton</span><br>        <span itemprop="postalCode">TA3 5DP</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/central-stores-999122" class="details-link">
                   More
                 </a>
               </div>
@@ -12539,18 +12585,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1892669">
-                <h3>Chutney All Year Round</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/chutney-all-year-round-1892669" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1757944">
                 <h3>Chutney All Year Round</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12560,6 +12594,18 @@
 </div>
 
                 <a href="/region-south-west/chutney-all-year-round-1757944" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1892669">
+                <h3>Chutney All Year Round</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/chutney-all-year-round-1892669" class="details-link">
                   More
                 </a>
               </div>
@@ -12934,18 +12980,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="409012">
-                <h3>Coffee # 1</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>32 North Street</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 1LW</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/coffee-1-409012" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="409013">
                 <h3>Coffee # 1</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12955,6 +12989,18 @@
 </div>
 
                 <a href="/region-south-west/coffee-1-409013" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="409012">
+                <h3>Coffee # 1</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>32 North Street</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 1LW</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/coffee-1-409012" class="details-link">
                   More
                 </a>
               </div>
@@ -13654,6 +13700,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="61392">
+                <h3>Co-Op</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>4-6 Fore Street</span><br>          <span>Wellington</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA21 8AQ</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/co-op-61392" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="91546">
                 <h3>Co-op</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13666,27 +13724,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="124431">
+<hr>              <div class="establishment" data-establishment-id="1215157">
                 <h3>Co-op</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>72 Stiby Road</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA21 3EG</span>
+          <span>Gainsborough</span><br>          <span>Milborne Port</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">DT9 5BB</span>
   </address>
 </div>
 
-                <a href="/region-south-west/co-op-124431" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="61392">
-                <h3>Co-Op</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>4-6 Fore Street</span><br>          <span>Wellington</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA21 8AQ</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/co-op-61392" class="details-link">
+                <a href="/region-south-west/co-op-1215157" class="details-link">
                   More
                 </a>
               </div>
@@ -13702,15 +13748,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1215157">
+<hr>              <div class="establishment" data-establishment-id="124431">
                 <h3>Co-op</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Gainsborough</span><br>          <span>Milborne Port</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">DT9 5BB</span>
+          <span>72 Stiby Road</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA21 3EG</span>
   </address>
 </div>
 
-                <a href="/region-south-west/co-op-1215157" class="details-link">
+                <a href="/region-south-west/co-op-124431" class="details-link">
                   More
                 </a>
               </div>
@@ -13858,15 +13904,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="129502">
+<hr>              <div class="establishment" data-establishment-id="127240">
                 <h3>Co-Operative Food</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>6-8 Priorswood Place</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA2 7JW</span>
+          <span>169 Cheddon Road</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA2 7AH</span>
   </address>
 </div>
 
-                <a href="/region-south-west/co-operative-food-129502" class="details-link">
+                <a href="/region-south-west/co-operative-food-127240" class="details-link">
                   More
                 </a>
               </div>
@@ -13882,15 +13928,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="127240">
+<hr>              <div class="establishment" data-establishment-id="129502">
                 <h3>Co-Operative Food</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>169 Cheddon Road</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA2 7AH</span>
+          <span>6-8 Priorswood Place</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA2 7JW</span>
   </address>
 </div>
 
-                <a href="/region-south-west/co-operative-food-127240" class="details-link">
+                <a href="/region-south-west/co-operative-food-129502" class="details-link">
                   More
                 </a>
               </div>
@@ -14109,18 +14155,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="97841">
-                <h3>Costa</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>56 East Street</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 3LX</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/costa-97841" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="559313">
                 <h3>Costa</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -14130,6 +14164,18 @@
 </div>
 
                 <a href="/region-south-west/costa-559313" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="97841">
+                <h3>Costa</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>56 East Street</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 3LX</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/costa-97841" class="details-link">
                   More
                 </a>
               </div>
@@ -14169,39 +14215,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1271916">
+<hr>              <div class="establishment" data-establishment-id="283357">
                 <h3>Costa Coffee</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 3</span><br>          <span>Enterprise Park</span><br>          <span>Jordans Road</span><br>        <span itemprop="postalCode">TA19 9FF</span>
+          <span>25b Fore Street</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 1JW</span>
   </address>
 </div>
 
-                <a href="/region-south-west/costa-coffee-1271916" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="873115">
-                <h3>Costa Coffee</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>11-12 Falkland Square</span><br>          <span>Crewkerne</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA18 7JS</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/costa-coffee-873115" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1371274">
-                <h3>Costa Coffee</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Carnival Way</span><br>          <span>North Petherton</span><br>        <span itemprop="postalCode">TA6 6GY</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/costa-coffee-1371274" class="details-link">
+                <a href="/region-south-west/costa-coffee-283357" class="details-link">
                   More
                 </a>
               </div>
@@ -14217,15 +14239,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="283357">
+<hr>              <div class="establishment" data-establishment-id="1371274">
                 <h3>Costa Coffee</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>25b Fore Street</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 1JW</span>
+          <span>Carnival Way</span><br>          <span>North Petherton</span><br>        <span itemprop="postalCode">TA6 6GY</span>
   </address>
 </div>
 
-                <a href="/region-south-west/costa-coffee-283357" class="details-link">
+                <a href="/region-south-west/costa-coffee-1371274" class="details-link">
                   More
                 </a>
               </div>
@@ -14250,6 +14272,30 @@
 </div>
 
                 <a href="/region-south-west/costa-coffee-1732532" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1271916">
+                <h3>Costa Coffee</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 3</span><br>          <span>Enterprise Park</span><br>          <span>Jordans Road</span><br>        <span itemprop="postalCode">TA19 9FF</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/costa-coffee-1271916" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="873115">
+                <h3>Costa Coffee</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>11-12 Falkland Square</span><br>          <span>Crewkerne</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA18 7JS</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/costa-coffee-873115" class="details-link">
                   More
                 </a>
               </div>
@@ -16509,6 +16555,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912874">
+                <h3>Dipped by Liv</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/dipped-by-liv-1912874" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1682886">
                 <h3>Dirty BBQ Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -16533,7 +16591,7 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1825072">
+<hr>              <div class="establishment" data-establishment-id="125678">
                 <h3>Discovery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
@@ -16541,7 +16599,7 @@
   </address>
 </div>
 
-                <a href="/region-south-west/discovery-1825072" class="details-link">
+                <a href="/region-south-west/discovery-125678" class="details-link">
                   More
                 </a>
               </div>
@@ -16557,7 +16615,7 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="125678">
+<hr>              <div class="establishment" data-establishment-id="1825072">
                 <h3>Discovery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
@@ -16565,7 +16623,7 @@
   </address>
 </div>
 
-                <a href="/region-south-west/discovery-125678" class="details-link">
+                <a href="/region-south-west/discovery-1825072" class="details-link">
                   More
                 </a>
               </div>
@@ -16773,15 +16831,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1423110">
+<hr>              <div class="establishment" data-establishment-id="965803">
                 <h3>Domino&#39;s Pizza</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>33 Victoria Street</span><br>          <span>Burnham-On-Sea</span><br>        <span itemprop="postalCode">TA8 1AN</span>
+          <span>145 South Street</span><br>          <span>Crewkerne</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA18 8AD</span>
   </address>
 </div>
 
-                <a href="/region-south-west/dominos-pizza-1423110" class="details-link">
+                <a href="/region-south-west/dominos-pizza-965803" class="details-link">
                   More
                 </a>
               </div>
@@ -16794,6 +16852,18 @@
 </div>
 
                 <a href="/region-south-west/dominos-pizza-124783" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="831420">
+                <h3>Domino&#39;s Pizza</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>East Street</span><br>          <span>Chard</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA20 1EP</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/dominos-pizza-831420" class="details-link">
                   More
                 </a>
               </div>
@@ -16821,27 +16891,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="831420">
+<hr>              <div class="establishment" data-establishment-id="1423110">
                 <h3>Domino&#39;s Pizza</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>East Street</span><br>          <span>Chard</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA20 1EP</span>
+          <span>33 Victoria Street</span><br>          <span>Burnham-On-Sea</span><br>        <span itemprop="postalCode">TA8 1AN</span>
   </address>
 </div>
 
-                <a href="/region-south-west/dominos-pizza-831420" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="965803">
-                <h3>Domino&#39;s Pizza</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>145 South Street</span><br>          <span>Crewkerne</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA18 8AD</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/dominos-pizza-965803" class="details-link">
+                <a href="/region-south-west/dominos-pizza-1423110" class="details-link">
                   More
                 </a>
               </div>
@@ -16953,18 +17011,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1860520">
-                <h3>DOSHA WELLNESS</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>18 Princess Road</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 4SY</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/dosha-wellness-1860520" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1898762">
                 <h3>DOSHA WELLNESS</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -16974,6 +17020,18 @@
 </div>
 
                 <a href="/region-south-west/dosha-wellness-1898762" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1860520">
+                <h3>DOSHA WELLNESS</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>18 Princess Road</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 4SY</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/dosha-wellness-1860520" class="details-link">
                   More
                 </a>
               </div>
@@ -20565,6 +20623,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912844">
+                <h3>Frankie’s Jars</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/frankies-jars-1912844" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1640154">
                 <h3>Frankie&#39;s Cookies</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -22713,15 +22783,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="131277">
+<hr>              <div class="establishment" data-establishment-id="1229493">
                 <h3>Greggs</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>35 High Street</span><br>          <span>Burnham-On-Sea</span><br>        <span itemprop="postalCode">TA8 1PA</span>
+          <span>5 Garrett Road</span><br>          <span>Lynx Trading Estate</span><br>          <span>Yeovil</span><br>        <span itemprop="postalCode">BA20 2TJ</span>
   </address>
 </div>
 
-                <a href="/region-south-west/greggs-131277" class="details-link">
+                <a href="/region-south-west/greggs-1229493" class="details-link">
                   More
                 </a>
               </div>
@@ -22737,15 +22807,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1229493">
+<hr>              <div class="establishment" data-establishment-id="131277">
                 <h3>Greggs</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>5 Garrett Road</span><br>          <span>Lynx Trading Estate</span><br>          <span>Yeovil</span><br>        <span itemprop="postalCode">BA20 2TJ</span>
+          <span>35 High Street</span><br>          <span>Burnham-On-Sea</span><br>        <span itemprop="postalCode">TA8 1PA</span>
   </address>
 </div>
 
-                <a href="/region-south-west/greggs-1229493" class="details-link">
+                <a href="/region-south-west/greggs-131277" class="details-link">
                   More
                 </a>
               </div>
@@ -23517,6 +23587,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912846">
+                <h3>Happy Bee Wincanton</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Victoria House</span><br>          <span>27 High Street</span><br>          <span>Wincanton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA9 9JU</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/happy-bee-wincanton-1912846" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="736220">
                 <h3>Happy Days Day Nursery and Pre School Yeovil</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -23874,18 +23956,6 @@
 </div>
 
                 <a href="/region-south-west/hayleys-cakes-1292587" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="122372">
-                <h3>Haynes Butchers</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>85 Princes Street</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA20 1EE</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/haynes-butchers-122372" class="details-link">
                   More
                 </a>
               </div>
@@ -24369,18 +24439,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="99294">
-                <h3>Herne View C of E Primary School</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Silver Street</span><br>          <span>Ilminster</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA19 0DS</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/herne-view-c-of-e-primary-school-99294" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="100372">
                 <h3>Herne View C of E Primary School</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -24390,6 +24448,18 @@
 </div>
 
                 <a href="/region-south-west/herne-view-c-of-e-primary-school-100372" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="99294">
+                <h3>Herne View C of E Primary School</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Silver Street</span><br>          <span>Ilminster</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA19 0DS</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/herne-view-c-of-e-primary-school-99294" class="details-link">
                   More
                 </a>
               </div>
@@ -26564,6 +26634,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912842">
+                <h3>Indian Street Food</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/indian-street-food-1912842" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1757582">
                 <h3>Indigo Herbs Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -26972,18 +27054,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="119030">
-                <h3>Jade Garden</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Pollard Road</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 4YA</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/jade-garden-119030" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="145352">
                 <h3>Jade Garden</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -26993,6 +27063,18 @@
 </div>
 
                 <a href="/region-south-west/jade-garden-145352" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="119030">
+                <h3>Jade Garden</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Pollard Road</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 4YA</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/jade-garden-119030" class="details-link">
                   More
                 </a>
               </div>
@@ -27728,6 +27810,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912871">
+                <h3>Julie’s Bakes</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/julies-bakes-1912871" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1756990">
                 <h3>Junction Cafe</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -28376,30 +28470,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="115382">
-                <h3>KFC</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 8 Western Avenue</span><br>          <span>Houndstone Business</span><br>          <span>Yeovil</span><br>        <span itemprop="postalCode">BA22 8YQ</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/kfc-115382" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="421610">
-                <h3>KFC</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Long Close</span><br>          <span>Lawrence Hill</span><br>          <span>Wincanton</span><br>        <span itemprop="postalCode">BA9 8AD</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/kfc-421610" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="127129">
                 <h3>KFC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -28421,6 +28491,30 @@
 </div>
 
                 <a href="/region-south-west/kfc-1580890" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="421610">
+                <h3>KFC</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Long Close</span><br>          <span>Lawrence Hill</span><br>          <span>Wincanton</span><br>        <span itemprop="postalCode">BA9 8AD</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/kfc-421610" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="115382">
+                <h3>KFC</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 8 Western Avenue</span><br>          <span>Houndstone Business</span><br>          <span>Yeovil</span><br>        <span itemprop="postalCode">BA22 8YQ</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/kfc-115382" class="details-link">
                   More
                 </a>
               </div>
@@ -29261,18 +29355,6 @@
 </div>
 
                 <a href="/region-south-west/kropka-59270" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1788836">
-                <h3>KSM Event Catering</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/ksm-event-catering-1788836" class="details-link">
                   More
                 </a>
               </div>
@@ -30260,18 +30342,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="69192">
-                <h3>Lidl</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>47a Oxford Street</span><br>          <span>Burnham-On-Sea</span><br>        <span itemprop="postalCode">TA8 1EL</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/lidl-69192" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="96952">
                 <h3>Lidl</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -30284,15 +30354,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1756922">
+<hr>              <div class="establishment" data-establishment-id="69192">
                 <h3>Lidl</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>47a Oxford Street</span><br>          <span>Burnham-On-Sea</span><br>        <span itemprop="postalCode">TA8 1EL</span>
   </address>
 </div>
 
-                <a href="/region-south-west/lidl-1756922" class="details-link">
+                <a href="/region-south-west/lidl-69192" class="details-link">
                   More
                 </a>
               </div>
@@ -30305,6 +30375,18 @@
 </div>
 
                 <a href="/region-south-west/lidl-1756833" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1756922">
+                <h3>Lidl</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/lidl-1756922" class="details-link">
                   More
                 </a>
               </div>
@@ -30392,18 +30474,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="910715">
-                <h3>Lidl UK GmbH</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>West Hendford</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA20 2AJ</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/lidl-uk-gmbh-910715" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="109230">
                 <h3>Lidl UK GmbH</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -30413,6 +30483,18 @@
 </div>
 
                 <a href="/region-south-west/lidl-uk-gmbh-109230" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="910715">
+                <h3>Lidl UK GmbH</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>West Hendford</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA20 2AJ</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/lidl-uk-gmbh-910715" class="details-link">
                   More
                 </a>
               </div>
@@ -30992,18 +31074,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1755597">
-                <h3>Little Poland</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Victoria House</span><br>          <span>27 High Street</span><br>          <span>Wincanton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA9 9JU</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/little-poland-1755597" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1619818">
                 <h3>Little P&#39;s Treat Boxes</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -31184,18 +31254,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1813699">
-                <h3>Live Naturally CIC</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/live-naturally-cic-1813699" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1813698">
                 <h3>Live Naturally CIC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -31205,6 +31263,18 @@
 </div>
 
                 <a href="/region-south-west/live-naturally-cic-1813698" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1813699">
+                <h3>Live Naturally CIC</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/live-naturally-cic-1813699" class="details-link">
                   More
                 </a>
               </div>
@@ -32348,18 +32418,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="121909">
-                <h3>Maisey&#39;s Bakery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>18-19 Market Street</span><br>          <span>Highbridge</span><br>        <span itemprop="postalCode">TA9 3BP</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/maiseys-bakery-121909" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="121195">
                 <h3>Maisey&#39;s Bakery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -32369,6 +32427,18 @@
 </div>
 
                 <a href="/region-south-west/maiseys-bakery-121195" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="121909">
+                <h3>Maisey&#39;s Bakery</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>18-19 Market Street</span><br>          <span>Highbridge</span><br>        <span itemprop="postalCode">TA9 3BP</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/maiseys-bakery-121909" class="details-link">
                   More
                 </a>
               </div>
@@ -33560,18 +33630,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="50451">
-                <h3>Mcdonalds Restaurants Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>58 East Street</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 3LX</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/mcdonalds-restaurants-ltd-50451" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="107082">
                 <h3>Mcdonalds Restaurants Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -33581,6 +33639,18 @@
 </div>
 
                 <a href="/region-south-west/mcdonalds-restaurants-ltd-107082" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="50451">
+                <h3>Mcdonalds Restaurants Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>58 East Street</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 3LX</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/mcdonalds-restaurants-ltd-50451" class="details-link">
                   More
                 </a>
               </div>
@@ -33931,18 +34001,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1788834">
-                <h3>Menkind</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>4 Orchard</span><br>          <span>Paul Street</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 3TP</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/menkind-1788834" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1758100">
                 <h3>Menkind</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -33979,6 +34037,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="146103">
+                <h3>Merkur Slots</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>8 Fore Street</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 3NF</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/merkur-slots-146103" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1789920">
                 <h3>Merkur Slots</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -33988,18 +34058,6 @@
 </div>
 
                 <a href="/region-south-west/merkur-slots-1789920" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="95585">
-                <h3>Merkur Slots</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>56-58 Middle Street</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA20 1LX</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/merkur-slots-95585" class="details-link">
                   More
                 </a>
               </div>
@@ -34015,15 +34073,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="146103">
+<hr>              <div class="establishment" data-establishment-id="95585">
                 <h3>Merkur Slots</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>8 Fore Street</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 3NF</span>
+          <span>56-58 Middle Street</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA20 1LX</span>
   </address>
 </div>
 
-                <a href="/region-south-west/merkur-slots-146103" class="details-link">
+                <a href="/region-south-west/merkur-slots-95585" class="details-link">
                   More
                 </a>
               </div>
@@ -35095,18 +35153,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="124493">
-                <h3>Mole Valley Farmers Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/mole-valley-farmers-ltd-124493" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="123201">
                 <h3>Mole Valley Farmers Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -35116,6 +35162,18 @@
 </div>
 
                 <a href="/region-south-west/mole-valley-farmers-ltd-123201" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="124493">
+                <h3>Mole Valley Farmers Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/mole-valley-farmers-ltd-124493" class="details-link">
                   More
                 </a>
               </div>
@@ -35515,51 +35573,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="122466">
+<hr>              <div class="establishment" data-establishment-id="701908">
                 <h3>Morrisons Daily</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>South Road</span><br>          <span>Brean</span><br>        <span itemprop="postalCode">TA8 2RE</span>
+          <span>Dyke Hill</span><br>          <span>Tatworth And Forton</span><br>          <span>Chard</span><br>        <span itemprop="postalCode">TA20 2PY</span>
   </address>
 </div>
 
-                <a href="/region-south-west/morrisons-daily-122466" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="127599">
-                <h3>Morrisons Daily</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>104 Kendale Road</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 3QF</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/morrisons-daily-127599" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="56392">
-                <h3>Morrisons Daily</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>131-135 Taunton Road</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 6BD</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/morrisons-daily-56392" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="100630">
-                <h3>Morrisons Daily</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>53 Glenthorne Avenue</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA21 4PN</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/morrisons-daily-100630" class="details-link">
+                <a href="/region-south-west/morrisons-daily-701908" class="details-link">
                   More
                 </a>
               </div>
@@ -35575,15 +35597,51 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="701908">
+<hr>              <div class="establishment" data-establishment-id="100630">
                 <h3>Morrisons Daily</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Dyke Hill</span><br>          <span>Tatworth And Forton</span><br>          <span>Chard</span><br>        <span itemprop="postalCode">TA20 2PY</span>
+          <span>53 Glenthorne Avenue</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA21 4PN</span>
   </address>
 </div>
 
-                <a href="/region-south-west/morrisons-daily-701908" class="details-link">
+                <a href="/region-south-west/morrisons-daily-100630" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="127599">
+                <h3>Morrisons Daily</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>104 Kendale Road</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 3QF</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/morrisons-daily-127599" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="122466">
+                <h3>Morrisons Daily</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>South Road</span><br>          <span>Brean</span><br>        <span itemprop="postalCode">TA8 2RE</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/morrisons-daily-122466" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="56392">
+                <h3>Morrisons Daily</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>131-135 Taunton Road</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 6BD</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/morrisons-daily-56392" class="details-link">
                   More
                 </a>
               </div>
@@ -35791,18 +35849,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="118120">
-                <h3>Mortimers Bakery Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2 Gazelle Road</span><br>          <span>Lynx Trading Estate</span><br>          <span>Yeovil Somerset</span><br>        <span itemprop="postalCode">BA20 2PJ</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/mortimers-bakery-ltd-118120" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="91132">
                 <h3>Mortimers Bakery Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -35812,6 +35858,18 @@
 </div>
 
                 <a href="/region-south-west/mortimers-bakery-ltd-91132" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="118120">
+                <h3>Mortimers Bakery Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>2 Gazelle Road</span><br>          <span>Lynx Trading Estate</span><br>          <span>Yeovil Somerset</span><br>        <span itemprop="postalCode">BA20 2PJ</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/mortimers-bakery-ltd-118120" class="details-link">
                   More
                 </a>
               </div>
@@ -37111,18 +37169,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1804974">
-                <h3>Next Thing Education Camps</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>59 Fore Street</span><br>          <span>Chard</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA20 1QA</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/next-thing-education-camps-1804974" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1813400">
                 <h3>Next Thing Education Camps</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -37132,6 +37178,18 @@
 </div>
 
                 <a href="/region-south-west/next-thing-education-camps-1813400" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1804974">
+                <h3>Next Thing Education Camps</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>59 Fore Street</span><br>          <span>Chard</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA20 1QA</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/next-thing-education-camps-1804974" class="details-link">
                   More
                 </a>
               </div>
@@ -37348,18 +37406,6 @@
 </div>
 
                 <a href="/region-south-west/nisaascona-retail-ltd-87660" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1593655">
-                <h3>NJ Cox T/A Pendragonwood Fruit and Veg</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/nj-cox-ta-pendragonwood-fruit-and-veg-1593655" class="details-link">
                   More
                 </a>
               </div>
@@ -38815,39 +38861,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="65173">
+<hr>              <div class="establishment" data-establishment-id="1250530">
                 <h3>One Stop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>12b-14 Market Street</span><br>          <span>Highbridge</span><br>        <span itemprop="postalCode">TA9 3BP</span>
+          <span>91-93 Galmington Road</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 5NP</span>
   </address>
 </div>
 
-                <a href="/region-south-west/one-stop-65173" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="125413">
-                <h3>One Stop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2 Allen Road</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 6YA</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/one-stop-125413" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1135232">
-                <h3>One Stop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>80 West Street</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 3RW</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/one-stop-1135232" class="details-link">
+                <a href="/region-south-west/one-stop-1250530" class="details-link">
                   More
                 </a>
               </div>
@@ -38860,30 +38882,6 @@
 </div>
 
                 <a href="/region-south-west/one-stop-95404" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="128950">
-                <h3>One Stop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>69 Rosebery Avenue</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA21 5LQ</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/one-stop-128950" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="127072">
-                <h3>One Stop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2/6 Runnymede Road</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA21 5RF</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/one-stop-127072" class="details-link">
                   More
                 </a>
               </div>
@@ -38935,15 +38933,63 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1250530">
+<hr>              <div class="establishment" data-establishment-id="128950">
                 <h3>One Stop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>91-93 Galmington Road</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 5NP</span>
+          <span>69 Rosebery Avenue</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA21 5LQ</span>
   </address>
 </div>
 
-                <a href="/region-south-west/one-stop-1250530" class="details-link">
+                <a href="/region-south-west/one-stop-128950" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="127072">
+                <h3>One Stop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>2/6 Runnymede Road</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA21 5RF</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/one-stop-127072" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="125413">
+                <h3>One Stop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>2 Allen Road</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 6YA</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/one-stop-125413" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="65173">
+                <h3>One Stop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>12b-14 Market Street</span><br>          <span>Highbridge</span><br>        <span itemprop="postalCode">TA9 3BP</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/one-stop-65173" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1135232">
+                <h3>One Stop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>80 West Street</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 3RW</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/one-stop-1135232" class="details-link">
                   More
                 </a>
               </div>
@@ -41802,6 +41848,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1675824">
+                <h3>Poundland</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>3 Market Street</span><br>          <span>Crewkerne</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA18 7JP</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/poundland-1675824" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="656736">
                 <h3>Poundland</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -41823,18 +41881,6 @@
 </div>
 
                 <a href="/region-south-west/poundland-114573" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1675824">
-                <h3>Poundland</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>3 Market Street</span><br>          <span>Crewkerne</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA18 7JP</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/poundland-1675824" class="details-link">
                   More
                 </a>
               </div>
@@ -42378,30 +42424,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="129482">
-                <h3>Proper Job</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Southwell Crescent</span><br>          <span>Highbridge</span><br>        <span itemprop="postalCode">TA9 3BN</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/proper-job-129482" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="85313">
-                <h3>Proper Job</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>18-20 Eastover</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 5AB</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/proper-job-85313" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1594763">
                 <h3>Proper Job</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -42423,6 +42445,30 @@
 </div>
 
                 <a href="/region-south-west/proper-job-1675826" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="85313">
+                <h3>Proper Job</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>18-20 Eastover</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 5AB</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/proper-job-85313" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="129482">
+                <h3>Proper Job</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Southwell Crescent</span><br>          <span>Highbridge</span><br>        <span itemprop="postalCode">TA9 3BN</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/proper-job-129482" class="details-link">
                   More
                 </a>
               </div>
@@ -43674,6 +43720,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912843">
+                <h3>Reeds Chocolatiering &amp; Desserts</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 17 Lawrence Hill Business Centre</span><br>          <span>Saxon Way</span><br>          <span>Wincanton Business Park</span><br>          <span>Wincanton</span><br>        <span itemprop="postalCode">BA9 9RT</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/reeds-chocolatiering-desserts-1912843" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1255281">
                 <h3>Relish Foods T/A Pop-Up Pasties</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -44127,6 +44185,18 @@
 </div>
 
                 <a href="/region-south-west/robert-dyas-1860528" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912845">
+                <h3>Robinson the Fishmonger</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Mountfields Farm</span><br>          <span>Higher Road</span><br>          <span>Shepton Beauchamp</span><br>          <span>Ilminster</span><br>        <span itemprop="postalCode">TA19 0JT</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/robinson-the-fishmonger-1912845" class="details-link">
                   More
                 </a>
               </div>
@@ -45054,6 +45124,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912870">
+                <h3>Sabaidee P&amp;M Laos and Thai Food</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/sabaidee-pm-laos-and-thai-food-1912870" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="551457">
                 <h3>Sabeez</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -45174,18 +45256,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="75990">
-                <h3>Sainsbury&#39;s</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Clink</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 4AB</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/sainsburys-75990" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="97829">
                 <h3>Sainsbury&#39;s</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -45207,6 +45277,18 @@
 </div>
 
                 <a href="/region-south-west/sainsburys-107052" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="75990">
+                <h3>Sainsbury&#39;s</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>The Clink</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 4AB</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/sainsburys-75990" class="details-link">
                   More
                 </a>
               </div>
@@ -45750,18 +45832,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1860529">
-                <h3>Screwfix</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>8 Oxford Road</span><br>          <span>Pen Mill Trading Estate</span><br>          <span>Yeovil Somerset</span><br>        <span itemprop="postalCode">BA21 5HR</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/screwfix-1860529" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1860537">
                 <h3>Screwfix</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -45771,6 +45841,18 @@
 </div>
 
                 <a href="/region-south-west/screwfix-1860537" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1860529">
+                <h3>Screwfix</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>8 Oxford Road</span><br>          <span>Pen Mill Trading Estate</span><br>          <span>Yeovil Somerset</span><br>        <span itemprop="postalCode">BA21 5HR</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/screwfix-1860529" class="details-link">
                   More
                 </a>
               </div>
@@ -46974,6 +47056,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="122372">
+                <h3>SJ Haynes Butchers</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>85 Princes Street</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA20 1EE</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/sj-haynes-butchers-122372" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="936900">
                 <h3>Skewer House</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -47607,6 +47701,18 @@
 </div>
 
                 <a href="/region-south-west/somerset-cultural-centre-950172" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912841">
+                <h3>Somerset Drugs and Alcohol Service (SDAS)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Maltravers House</span><br>          <span>Petters Way</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA20 1SH</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/somerset-drugs-and-alcohol-service-sdas-1912841" class="details-link">
                   More
                 </a>
               </div>
@@ -48414,15 +48520,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="124208">
+<hr>              <div class="establishment" data-establishment-id="936901">
                 <h3>Spar</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>59 West Coker Road</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA20 2LZ</span>
+          <span>46 Station Road</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 1NS</span>
   </address>
 </div>
 
-                <a href="/region-south-west/spar-124208" class="details-link">
+                <a href="/region-south-west/spar-936901" class="details-link">
                   More
                 </a>
               </div>
@@ -48438,15 +48544,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="936901">
+<hr>              <div class="establishment" data-establishment-id="124208">
                 <h3>Spar</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>46 Station Road</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 1NS</span>
+          <span>59 West Coker Road</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA20 2LZ</span>
   </address>
 </div>
 
-                <a href="/region-south-west/spar-936901" class="details-link">
+                <a href="/region-south-west/spar-124208" class="details-link">
                   More
                 </a>
               </div>
@@ -50946,15 +51052,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1042256">
+<hr>              <div class="establishment" data-establishment-id="1580895">
                 <h3>Subway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>14 The Bridge</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 1UG</span>
+      <div>No address information available</div>
   </address>
 </div>
 
-                <a href="/region-south-west/subway-1042256" class="details-link">
+                <a href="/region-south-west/subway-1580895" class="details-link">
                   More
                 </a>
               </div>
@@ -50970,15 +51076,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1580895">
+<hr>              <div class="establishment" data-establishment-id="83771">
                 <h3>Subway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>21 High Street</span><br>          <span>Burnham-On-Sea</span><br>        <span itemprop="postalCode">TA8 1NX</span>
   </address>
 </div>
 
-                <a href="/region-south-west/subway-1580895" class="details-link">
+                <a href="/region-south-west/subway-83771" class="details-link">
                   More
                 </a>
               </div>
@@ -50994,15 +51100,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="83771">
+<hr>              <div class="establishment" data-establishment-id="1042256">
                 <h3>Subway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>21 High Street</span><br>          <span>Burnham-On-Sea</span><br>        <span itemprop="postalCode">TA8 1NX</span>
+          <span>14 The Bridge</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 1UG</span>
   </address>
 </div>
 
-                <a href="/region-south-west/subway-83771" class="details-link">
+                <a href="/region-south-west/subway-1042256" class="details-link">
                   More
                 </a>
               </div>
@@ -52638,18 +52744,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1695875">
-                <h3>Taunton Market</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Taunton Market</span><br>          <span>80 Station Road</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 1PD</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/taunton-market-1695875" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="101166">
                 <h3>Taunton Masonic Hall</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -52902,30 +52996,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="119375">
-                <h3>Tesco</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Queensway Place</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA20 1DL</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/tesco-119375" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="575981">
-                <h3>Tesco</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>147 Ilchester Road</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA21 3BG</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/tesco-575981" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="128247">
                 <h3>Tesco</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -52938,6 +53008,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="119375">
+                <h3>Tesco</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Queensway Place</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA20 1DL</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/tesco-119375" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="97297">
                 <h3>Tesco</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -52947,6 +53029,18 @@
 </div>
 
                 <a href="/region-south-west/tesco-97297" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="575981">
+                <h3>Tesco</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>147 Ilchester Road</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA21 3BG</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/tesco-575981" class="details-link">
                   More
                 </a>
               </div>
@@ -53022,6 +53116,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="126995">
+                <h3>Tesco Express</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>2 Cavalier Way</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA21 5UB</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/tesco-express-126995" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="42301">
                 <h3>Tesco Express</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -53031,18 +53137,6 @@
 </div>
 
                 <a href="/region-south-west/tesco-express-42301" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="460204">
-                <h3>Tesco Express</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>68 Fore Street</span><br>          <span>North Petherton</span><br>        <span itemprop="postalCode">TA6 6QA</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/tesco-express-460204" class="details-link">
                   More
                 </a>
               </div>
@@ -53070,15 +53164,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="126995">
+<hr>              <div class="establishment" data-establishment-id="460204">
                 <h3>Tesco Express</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2 Cavalier Way</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA21 5UB</span>
+          <span>68 Fore Street</span><br>          <span>North Petherton</span><br>        <span itemprop="postalCode">TA6 6QA</span>
   </address>
 </div>
 
-                <a href="/region-south-west/tesco-express-126995" class="details-link">
+                <a href="/region-south-west/tesco-express-460204" class="details-link">
                   More
                 </a>
               </div>
@@ -53886,18 +53980,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="95345">
-                <h3>The Bell Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Higher Street</span><br>          <span>Curry Mallet</span><br>          <span>Taunton Somerset</span><br>        <span itemprop="postalCode">TA3 6SY</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-bell-inn-95345" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="52272">
                 <h3>The Bell Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -53907,6 +53989,18 @@
 </div>
 
                 <a href="/region-south-west/the-bell-inn-52272" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="95345">
+                <h3>The Bell Inn</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Higher Street</span><br>          <span>Curry Mallet</span><br>          <span>Taunton Somerset</span><br>        <span itemprop="postalCode">TA3 6SY</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-bell-inn-95345" class="details-link">
                   More
                 </a>
               </div>
@@ -55398,6 +55492,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912873">
+                <h3>The Cosy Cart by G and L</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-cosy-cart-by-g-and-l-1912873" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="112449">
                 <h3>The Cotley Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -56598,15 +56704,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="122003">
+<hr>              <div class="establishment" data-establishment-id="108122">
                 <h3>The Globe Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>17 Newtown Road</span><br>          <span>Highbridge</span><br>        <span itemprop="postalCode">TA9 3HX</span>
+          <span>Market Place</span><br>          <span>Somerton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA11 7LX</span>
   </address>
 </div>
 
-                <a href="/region-south-west/the-globe-inn-122003" class="details-link">
+                <a href="/region-south-west/the-globe-inn-108122" class="details-link">
                   More
                 </a>
               </div>
@@ -56622,15 +56728,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="108122">
+<hr>              <div class="establishment" data-establishment-id="122003">
                 <h3>The Globe Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Market Place</span><br>          <span>Somerton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA11 7LX</span>
+          <span>17 Newtown Road</span><br>          <span>Highbridge</span><br>        <span itemprop="postalCode">TA9 3HX</span>
   </address>
 </div>
 
-                <a href="/region-south-west/the-globe-inn-108122" class="details-link">
+                <a href="/region-south-west/the-globe-inn-122003" class="details-link">
                   More
                 </a>
               </div>
@@ -57594,18 +57700,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="124049">
-                <h3>The Kings Head</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Silver Street</span><br>          <span>Cheddar</span><br>        <span itemprop="postalCode">BS27 3LE</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-kings-head-124049" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="105148">
                 <h3>The Kings Head</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -57615,6 +57709,18 @@
 </div>
 
                 <a href="/region-south-west/the-kings-head-105148" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="124049">
+                <h3>The Kings Head</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>1 Silver Street</span><br>          <span>Cheddar</span><br>        <span itemprop="postalCode">BS27 3LE</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-kings-head-124049" class="details-link">
                   More
                 </a>
               </div>
@@ -57990,18 +58096,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="127036">
-                <h3>The Lime Kiln Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>38 Salmon Parade</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 5LU</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-lime-kiln-inn-127036" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="102948">
                 <h3>The Lime Kiln Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -58011,6 +58105,18 @@
 </div>
 
                 <a href="/region-south-west/the-lime-kiln-inn-102948" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="127036">
+                <h3>The Lime Kiln Inn</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>38 Salmon Parade</span><br>          <span>Bridgwater</span><br>        <span itemprop="postalCode">TA6 5LU</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-lime-kiln-inn-127036" class="details-link">
                   More
                 </a>
               </div>
@@ -58227,18 +58333,6 @@
 </div>
 
                 <a href="/region-south-west/the-lodge-109910" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1881248">
-                <h3>The Long Road Bakery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-long-road-bakery-1881248" class="details-link">
                   More
                 </a>
               </div>
@@ -58566,18 +58660,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1814533">
-                <h3>The Mendip School</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-mendip-school-1814533" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="939312">
                 <h3>The Mendip School</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -58587,6 +58669,18 @@
 </div>
 
                 <a href="/region-south-west/the-mendip-school-939312" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1814533">
+                <h3>The Mendip School</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-mendip-school-1814533" class="details-link">
                   More
                 </a>
               </div>
@@ -58854,18 +58948,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="127924">
-                <h3>The New Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Main Street</span><br>          <span>Dowlish Wake</span><br>          <span>Ilminster Somerset</span><br>        <span itemprop="postalCode">TA19 0NZ</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-new-inn-127924" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1560503">
                 <h3>The New Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -58875,6 +58957,18 @@
 </div>
 
                 <a href="/region-south-west/the-new-inn-1560503" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="127924">
+                <h3>The New Inn</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Main Street</span><br>          <span>Dowlish Wake</span><br>          <span>Ilminster Somerset</span><br>        <span itemprop="postalCode">TA19 0NZ</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-new-inn-127924" class="details-link">
                   More
                 </a>
               </div>
@@ -60353,15 +60447,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="108585">
+<hr>              <div class="establishment" data-establishment-id="110057">
                 <h3>The Royal Oak</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>West Street</span><br>          <span>Somerton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA11 6NA</span>
+          <span>Over Stratton Road</span><br>          <span>South Petherton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA13 5LQ</span>
   </address>
 </div>
 
-                <a href="/region-south-west/the-royal-oak-108585" class="details-link">
+                <a href="/region-south-west/the-royal-oak-110057" class="details-link">
                   More
                 </a>
               </div>
@@ -60377,15 +60471,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="110057">
+<hr>              <div class="establishment" data-establishment-id="108585">
                 <h3>The Royal Oak</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Over Stratton Road</span><br>          <span>South Petherton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA13 5LQ</span>
+          <span>West Street</span><br>          <span>Somerton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA11 6NA</span>
   </address>
 </div>
 
-                <a href="/region-south-west/the-royal-oak-110057" class="details-link">
+                <a href="/region-south-west/the-royal-oak-108585" class="details-link">
                   More
                 </a>
               </div>
@@ -60750,14 +60844,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="930100">
-                <h3>The Silver Cake/The Martock Pickle</h3>
+                <h3>The Silver Cake</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
       <div>No address information available</div>
   </address>
 </div>
 
-                <a href="/region-south-west/the-silver-cakethe-martock-pickle-930100" class="details-link">
+                <a href="/region-south-west/the-silver-cake-930100" class="details-link">
                   More
                 </a>
               </div>
@@ -60866,18 +60960,6 @@
 </div>
 
                 <a href="/region-south-west/the-somerset-catch-1346575" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1536307">
-                <h3>The Somerset Cheesecakery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>33 Silver Street</span><br>          <span>Ilminster</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA19 0DW</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-somerset-cheesecakery-1536307" class="details-link">
                   More
                 </a>
               </div>
@@ -61013,18 +61095,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="855420">
-                <h3>The Southern Co-operative Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Morse Road</span><br>          <span>Norton Fitzwarren</span><br>          <span>Taunton</span><br>        <span itemprop="postalCode">TA2 6DG</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-southern-co-operative-ltd-855420" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="951361">
                 <h3>The Southern Co-Operative Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -61034,6 +61104,18 @@
 </div>
 
                 <a href="/region-south-west/the-southern-co-operative-ltd-951361" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="855420">
+                <h3>The Southern Co-operative Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Morse Road</span><br>          <span>Norton Fitzwarren</span><br>          <span>Taunton</span><br>        <span itemprop="postalCode">TA2 6DG</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-southern-co-operative-ltd-855420" class="details-link">
                   More
                 </a>
               </div>
@@ -61157,18 +61239,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1679004">
-                <h3>The Star Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>13 Middle Street</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 1SJ</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-star-inn-1679004" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="121650">
                 <h3>The Star Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -61178,6 +61248,18 @@
 </div>
 
                 <a href="/region-south-west/the-star-inn-121650" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1679004">
+                <h3>The Star Inn</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>13 Middle Street</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 1SJ</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-star-inn-1679004" class="details-link">
                   More
                 </a>
               </div>
@@ -62009,6 +62091,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="110950">
+                <h3>The White Hart</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>51-52 East Reach</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 3EZ</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-white-hart-110950" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="108113">
                 <h3>The White Hart</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -62030,18 +62124,6 @@
 </div>
 
                 <a href="/region-south-west/the-white-hart-83879" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="110950">
-                <h3>The White Hart</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>51-52 East Reach</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 3EZ</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-white-hart-110950" class="details-link">
                   More
                 </a>
               </div>
@@ -62234,6 +62316,18 @@
 </div>
 
                 <a href="/region-south-west/the-wild-picnic-company-1757631" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1881248">
+                <h3>The Wildflower Bakery</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-wildflower-bakery-1881248" class="details-link">
                   More
                 </a>
               </div>
@@ -63077,18 +63171,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1894165">
-                <h3>Top Market</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>73 Station Road</span><br>          <span>Taunton</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">TA1 1PA</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/top-market-1894165" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="126838">
                 <h3>Tops Day Nurseries</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -63413,18 +63495,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="127268">
-                <h3>Travelodge Hotels Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Podimore Road</span><br>          <span>Yeovilton</span><br>          <span>Yeovil Somerset</span><br>        <span itemprop="postalCode">BA22 8JF</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/travelodge-hotels-ltd-127268" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="421612">
                 <h3>Travelodge Hotels Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -63446,6 +63516,18 @@
 </div>
 
                 <a href="/region-south-west/travelodge-hotels-ltd-96237" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="127268">
+                <h3>Travelodge Hotels Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Podimore Road</span><br>          <span>Yeovilton</span><br>          <span>Yeovil Somerset</span><br>        <span itemprop="postalCode">BA22 8JF</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/travelodge-hotels-ltd-127268" class="details-link">
                   More
                 </a>
               </div>
@@ -66281,18 +66363,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="740089">
-                <h3>West Country Water Buffalo Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Higher Oakley Farm</span><br>          <span>Ilchester Road</span><br>          <span>Chilthorne Domer</span><br>          <span>Yeovil</span><br>        <span itemprop="postalCode">BA22 8LS</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/west-country-water-buffalo-ltd-740089" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1732546">
                 <h3>West Country Water Buffalo Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -66302,6 +66372,18 @@
 </div>
 
                 <a href="/region-south-west/west-country-water-buffalo-ltd-1732546" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="740089">
+                <h3>West Country Water Buffalo Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Higher Oakley Farm</span><br>          <span>Ilchester Road</span><br>          <span>Chilthorne Domer</span><br>          <span>Yeovil</span><br>        <span itemprop="postalCode">BA22 8LS</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/west-country-water-buffalo-ltd-740089" class="details-link">
                   More
                 </a>
               </div>
@@ -67805,18 +67887,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="125285">
-                <h3>Wm Morrison Supermarkets Limited</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Lysander Road</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA20 2AU</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/wm-morrison-supermarkets-limited-125285" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="115887">
                 <h3>Wm Morrison Supermarkets Limited</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -67826,6 +67896,18 @@
 </div>
 
                 <a href="/region-south-west/wm-morrison-supermarkets-limited-115887" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="125285">
+                <h3>Wm Morrison Supermarkets Limited</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Lysander Road</span><br>          <span>Yeovil</span><br>          <span>Somerset</span><br>        <span itemprop="postalCode">BA20 2AU</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/wm-morrison-supermarkets-limited-125285" class="details-link">
                   More
                 </a>
               </div>
@@ -68909,18 +68991,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1804960">
-                <h3>You First Support Services CIC</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/you-first-support-services-cic-1804960" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1799075">
                 <h3>You First Support Services CIC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -68930,6 +69000,18 @@
 </div>
 
                 <a href="/region-south-west/you-first-support-services-cic-1799075" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1804960">
+                <h3>You First Support Services CIC</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/you-first-support-services-cic-1804960" class="details-link">
                   More
                 </a>
               </div>

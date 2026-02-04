@@ -19,9 +19,9 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(var(--text-color),#757575);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:1px solid light-dark(#dedede,#393939);box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1),rgba(0,0,0,.15));box-sizing:border-box}.box-shadow-hover:hover{box-shadow:0 4px 8px light-dark(rgba(0,0,0,.15),rgba(0,0,0,.25))}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(var(--text-color),#757575);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-background:light-dark(#fff,#2d2d2d);--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-color:light-dark(#666,#aaa);--card-border:1px solid light-dark(#ddd,#444);--box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1),rgba(0,0,0,.15));--box-shadow-hover:0 4px 8px light-dark(rgba(0,0,0,.15),rgba(0,0,0,.25));--box-shadow-border:1px solid light-dark(#dedede,#393939)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
-    .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34 img{height:50px}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
+    .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid hsla(0,0%,100%,.2);color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid hsla(0,0%,100%,.3);color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
   </style>
 </head>
@@ -32,7 +32,40 @@
     <nav class="navbar-h3ad34">
       <div class="logo-h3ad34">
         <a href="/">
-          <img src="/images/logo.svg" alt="Site Logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
+  <!-- Icon -->
+  <g transform="translate(0.5, 14)">
+    <rect width="32" height="32" fill="#84be00" stroke="#000" rx="6" />
+    <circle cx="16" cy="16" r="12" />
+    <text
+      x="16"
+      y="16"
+      fill="#fff"
+      dominant-baseline="central"
+      font-family="sans-serif"
+      font-size="20"
+      font-weight="bold"
+      text-anchor="middle"
+    >?</text>
+  </g>
+
+  <!-- Main text -->
+  <g transform="translate(174, 33)" class="text">
+    <text
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="system-ui, sans-serif"
+      font-size="30"
+      font-weight="600"
+      letter-spacing="1.2px"
+      style="text-rendering: geometricPrecision"
+      text-transform="uppercase"
+    >
+      Food Hygiene UK
+    </text>
+  </g>
+</svg>
+
         </a>
       </div>
       <input type="checkbox" id="menu-toggle-h3ad34" class="menu-toggle-h3ad34">
@@ -50,6 +83,7 @@
     </nav>
   </header>
 </div>
+
     <div class="content-k3nm4l">
       <div class="container">
         <article class="local-authority" itemscope itemtype="https://schema.org/GovernmentOrganization">
@@ -3168,18 +3202,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1500079">
-                <h3>Churro Bella</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Soar At Intu Braehead</span><br>          <span>King's Inch Road</span><br>          <span>Renfrew</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA4 8XQ</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/churro-bella-1500079" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1693823">
                 <h3>CJA</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4056,18 +4078,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="879155">
-                <h3>Day Today</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>18 High Street</span><br>          <span>Renfrew</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA4 8QR</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/day-today-879155" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="138184">
                 <h3>Day Today</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4089,6 +4099,18 @@
 </div>
 
                 <a href="/region-scotland/day-today-110725" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="879155">
+                <h3>Day Today</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>18 High Street</span><br>          <span>Renfrew</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA4 8QR</span>
+  </address>
+</div>
+
+                <a href="/region-scotland/day-today-879155" class="details-link">
                   More
                 </a>
               </div>
@@ -4932,18 +4954,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1068079">
-                <h3>Favourites</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit A</span><br>          <span>44 Graham Street</span><br>          <span>Johnstone</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA5 8QY</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/favourites-1068079" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1649497">
                 <h3>Ferguslie After School Care</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -5312,18 +5322,6 @@
 </div>
 
                 <a href="/region-scotland/frankie-and-bennys-1671718" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="862868">
-                <h3>Frankie and Benny&#39;s</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Main Terminal</span><br>          <span>Glasgow Airport</span><br>          <span>Paisley</span><br>        <span itemprop="postalCode">PA3 2TJ</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/frankie-and-bennys-862868" class="details-link">
                   More
                 </a>
               </div>
@@ -6083,18 +6081,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="225580">
-                <h3>Greggs</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>11 High Street</span><br>          <span>Renfrew</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA4 8QL</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/greggs-225580" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="225565">
                 <h3>Greggs</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6119,15 +6105,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1387272">
+<hr>              <div class="establishment" data-establishment-id="225580">
                 <h3>Greggs</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>11 High Street</span><br>          <span>Renfrew</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA4 8QL</span>
   </address>
 </div>
 
-                <a href="/region-scotland/greggs-1387272" class="details-link">
+                <a href="/region-scotland/greggs-225580" class="details-link">
                   More
                 </a>
               </div>
@@ -6139,6 +6125,18 @@
 </div>
 
                 <a href="/region-scotland/greggs-739430" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1387272">
+                <h3>Greggs</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-scotland/greggs-1387272" class="details-link">
                   More
                 </a>
               </div>
@@ -6535,18 +6533,6 @@
 </div>
 
                 <a href="/region-scotland/heera-restaurant-135216" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="225541">
-                <h3>Helen McGrory</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>12 Laxford Road</span><br>          <span>Erskine</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA8 6HH</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/helen-mcgrory-225541" class="details-link">
                   More
                 </a>
               </div>
@@ -10963,6 +10949,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912810">
+                <h3>Olive Rise Imports</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>54 Lapwing Road</span><br>          <span>Renfrew</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA4 8FU</span>
+  </address>
+</div>
+
+                <a href="/region-scotland/olive-rise-imports-1912810" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1909326">
                 <h3>Olympus Fuel</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11056,18 +11054,6 @@
 </div>
 
                 <a href="/region-scotland/oriental-1181873" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="137159">
-                <h3>Oriental Express</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>26 Lady Lane</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA1 2LG</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/oriental-express-137159" class="details-link">
                   More
                 </a>
               </div>
@@ -11671,6 +11657,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912809">
+                <h3>Pita Gyros</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit A</span><br>          <span>9 Renfrew Road</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA3 4AF</span>
+  </address>
+</div>
+
+                <a href="/region-scotland/pita-gyros-1912809" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1711013">
                 <h3>Pizza Express</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11767,18 +11765,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="137268">
-                <h3>Poundland</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>5 Central Way</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA1 1EL</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/poundland-137268" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="225520">
                 <h3>Poundland</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11788,6 +11774,18 @@
 </div>
 
                 <a href="/region-scotland/poundland-225520" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="137268">
+                <h3>Poundland</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>5 Central Way</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA1 1EL</span>
+  </address>
+</div>
+
+                <a href="/region-scotland/poundland-137268" class="details-link">
                   More
                 </a>
               </div>
@@ -11827,15 +11825,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1761987">
+<hr>              <div class="establishment" data-establishment-id="1714971">
                 <h3>Premier</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>8 Lochaline Avenue</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA2 9ET</span>
+          <span>39 Caledonia Street</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA3 2JJ</span>
   </address>
 </div>
 
-                <a href="/region-scotland/premier-1761987" class="details-link">
+                <a href="/region-scotland/premier-1714971" class="details-link">
                   More
                 </a>
               </div>
@@ -11851,27 +11849,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1714971">
+<hr>              <div class="establishment" data-establishment-id="1761987">
                 <h3>Premier</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>39 Caledonia Street</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA3 2JJ</span>
+          <span>8 Lochaline Avenue</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA2 9ET</span>
   </address>
 </div>
 
-                <a href="/region-scotland/premier-1714971" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1718016">
-                <h3>Premier</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>19 High Street</span><br>          <span>Johnstone</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA5 8JU</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/premier-1718016" class="details-link">
+                <a href="/region-scotland/premier-1761987" class="details-link">
                   More
                 </a>
               </div>
@@ -11887,6 +11873,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1718016">
+                <h3>Premier</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>19 High Street</span><br>          <span>Johnstone</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA5 8JU</span>
+  </address>
+</div>
+
+                <a href="/region-scotland/premier-1718016" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1839202">
                 <h3>Premier Causeyside</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11899,18 +11897,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="134458">
-                <h3>Premier Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>White Cart Road</span><br>          <span>Glasgow Airport</span><br>          <span>Paisley Renfrewshire</span><br>        <span itemprop="postalCode">PA3 2TH</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/premier-inn-134458" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="225642">
                 <h3>Premier Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11920,6 +11906,18 @@
 </div>
 
                 <a href="/region-scotland/premier-inn-225642" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="134458">
+                <h3>Premier Inn</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>White Cart Road</span><br>          <span>Glasgow Airport</span><br>          <span>Paisley Renfrewshire</span><br>        <span itemprop="postalCode">PA3 2TH</span>
+  </address>
+</div>
+
+                <a href="/region-scotland/premier-inn-134458" class="details-link">
                   More
                 </a>
               </div>
@@ -13507,18 +13505,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1112439">
-                <h3>Snails and Tails (Morag Jackson)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>17 Semple View</span><br>          <span>Howwood</span><br>          <span>Johnstone</span><br>        <span itemprop="postalCode">PA9 1BT</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/snails-and-tails-morag-jackson-1112439" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1840963">
                 <h3>Snowflake Gelato</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13603,18 +13589,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1911127">
-                <h3>Spar</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>96 Causeyside Street</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA1 1TX</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/spar-1911127" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="111513">
                 <h3>Spar</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13624,6 +13598,18 @@
 </div>
 
                 <a href="/region-scotland/spar-111513" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1667653">
+                <h3>Spar</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>35 Greenhill Road</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA3 1RN</span>
+  </address>
+</div>
+
+                <a href="/region-scotland/spar-1667653" class="details-link">
                   More
                 </a>
               </div>
@@ -13639,15 +13625,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1667653">
+<hr>              <div class="establishment" data-establishment-id="1911127">
                 <h3>Spar</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>35 Greenhill Road</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA3 1RN</span>
+          <span>96 Causeyside Street</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA1 1TX</span>
   </address>
 </div>
 
-                <a href="/region-scotland/spar-1667653" class="details-link">
+                <a href="/region-scotland/spar-1911127" class="details-link">
                   More
                 </a>
               </div>
@@ -14430,27 +14416,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="584614">
+<hr>              <div class="establishment" data-establishment-id="1498306">
                 <h3>Subway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>7 Wellmeadow Street</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA1 2EF</span>
+          <span>19f Bridge Street</span><br>          <span>Linwood</span><br>          <span>Paisley</span><br>        <span itemprop="postalCode">PA3 3DB</span>
   </address>
 </div>
 
-                <a href="/region-scotland/subway-584614" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="137148">
-                <h3>Subway</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>21 Causeyside Street</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA1 1UH</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/subway-137148" class="details-link">
+                <a href="/region-scotland/subway-1498306" class="details-link">
                   More
                 </a>
               </div>
@@ -14466,27 +14440,27 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1202364">
+<hr>              <div class="establishment" data-establishment-id="1092113">
                 <h3>Subway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>12 Canal Street</span><br>          <span>Renfrew</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA4 8QD</span>
+          <span>20 High Street</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA1 2BS</span>
   </address>
 </div>
 
-                <a href="/region-scotland/subway-1202364" class="details-link">
+                <a href="/region-scotland/subway-1092113" class="details-link">
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="765450">
+<hr>              <div class="establishment" data-establishment-id="137148">
                 <h3>Subway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 120B Braehead Shopping Centre</span><br>          <span>King's Inch Road</span><br>        <span itemprop="postalCode">G51 3BN</span>
+          <span>21 Causeyside Street</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA1 1UH</span>
   </address>
 </div>
 
-                <a href="/region-scotland/subway-765450" class="details-link">
+                <a href="/region-scotland/subway-137148" class="details-link">
                   More
                 </a>
               </div>
@@ -14502,27 +14476,39 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1498306">
+<hr>              <div class="establishment" data-establishment-id="765450">
                 <h3>Subway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>19f Bridge Street</span><br>          <span>Linwood</span><br>          <span>Paisley</span><br>        <span itemprop="postalCode">PA3 3DB</span>
+          <span>Unit 120B Braehead Shopping Centre</span><br>          <span>King's Inch Road</span><br>        <span itemprop="postalCode">G51 3BN</span>
   </address>
 </div>
 
-                <a href="/region-scotland/subway-1498306" class="details-link">
+                <a href="/region-scotland/subway-765450" class="details-link">
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1092113">
+<hr>              <div class="establishment" data-establishment-id="584614">
                 <h3>Subway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>20 High Street</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA1 2BS</span>
+          <span>7 Wellmeadow Street</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA1 2EF</span>
   </address>
 </div>
 
-                <a href="/region-scotland/subway-1092113" class="details-link">
+                <a href="/region-scotland/subway-584614" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1202364">
+                <h3>Subway</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>12 Canal Street</span><br>          <span>Renfrew</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA4 8QD</span>
+  </address>
+</div>
+
+                <a href="/region-scotland/subway-1202364" class="details-link">
                   More
                 </a>
               </div>
@@ -16192,7 +16178,7 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1659553">
+<hr>              <div class="establishment" data-establishment-id="1912811">
                 <h3>The Ugly Duck</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
@@ -16200,7 +16186,7 @@
   </address>
 </div>
 
-                <a href="/region-scotland/the-ugly-duck-1659553" class="details-link">
+                <a href="/region-scotland/the-ugly-duck-1912811" class="details-link">
                   More
                 </a>
               </div>
@@ -16417,18 +16403,6 @@
 </div>
 
                 <a href="/region-scotland/tim-hortons-1206646" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1092115">
-                <h3>Tim Hortons</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Linwood Road</span><br>          <span>Paisley</span><br>        <span itemprop="postalCode">PA3 3AT</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/tim-hortons-1092115" class="details-link">
                   More
                 </a>
               </div>
@@ -16708,18 +16682,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1730136">
-                <h3>U Save</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>4 Barscube Terrace</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA2 6XA</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/u-save-1730136" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1703967">
                 <h3>U Save</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -16753,6 +16715,18 @@
 </div>
 
                 <a href="/region-scotland/u-save-1667663" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1730136">
+                <h3>U Save</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>4 Barscube Terrace</span><br>          <span>Paisley</span><br>          <span>Renfrewshire</span><br>        <span itemprop="postalCode">PA2 6XA</span>
+  </address>
+</div>
+
+                <a href="/region-scotland/u-save-1730136" class="details-link">
                   More
                 </a>
               </div>

@@ -19,9 +19,9 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(var(--text-color),#757575);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:1px solid light-dark(#dedede,#393939);box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1),rgba(0,0,0,.15));box-sizing:border-box}.box-shadow-hover:hover{box-shadow:0 4px 8px light-dark(rgba(0,0,0,.15),rgba(0,0,0,.25))}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(var(--text-color),#757575);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-background:light-dark(#fff,#2d2d2d);--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-color:light-dark(#666,#aaa);--card-border:1px solid light-dark(#ddd,#444);--box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1),rgba(0,0,0,.15));--box-shadow-hover:0 4px 8px light-dark(rgba(0,0,0,.15),rgba(0,0,0,.25));--box-shadow-border:1px solid light-dark(#dedede,#393939)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
-    .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34 img{height:50px}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
+    .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid hsla(0,0%,100%,.2);color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid hsla(0,0%,100%,.3);color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
   </style>
 </head>
@@ -32,7 +32,40 @@
     <nav class="navbar-h3ad34">
       <div class="logo-h3ad34">
         <a href="/">
-          <img src="/images/logo.svg" alt="Site Logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
+  <!-- Icon -->
+  <g transform="translate(0.5, 14)">
+    <rect width="32" height="32" fill="#84be00" stroke="#000" rx="6" />
+    <circle cx="16" cy="16" r="12" />
+    <text
+      x="16"
+      y="16"
+      fill="#fff"
+      dominant-baseline="central"
+      font-family="sans-serif"
+      font-size="20"
+      font-weight="bold"
+      text-anchor="middle"
+    >?</text>
+  </g>
+
+  <!-- Main text -->
+  <g transform="translate(174, 33)" class="text">
+    <text
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="system-ui, sans-serif"
+      font-size="30"
+      font-weight="600"
+      letter-spacing="1.2px"
+      style="text-rendering: geometricPrecision"
+      text-transform="uppercase"
+    >
+      Food Hygiene UK
+    </text>
+  </g>
+</svg>
+
         </a>
       </div>
       <input type="checkbox" id="menu-toggle-h3ad34" class="menu-toggle-h3ad34">
@@ -50,6 +83,7 @@
     </nav>
   </header>
 </div>
+
     <div class="content-k3nm4l">
       <div class="container">
         <article class="local-authority" itemscope itemtype="https://schema.org/GovernmentOrganization">
@@ -1381,6 +1415,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912718">
+                <h3>Camper Coffee Co</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/camper-coffee-co-1912718" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1763541">
                 <h3>Cam&#39;s Donuts</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -1861,18 +1907,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1892158">
-                <h3>Coach House</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Main Street</span><br>          <span>Clifton Campville</span><br>          <span>Tamworth</span><br>          <span>Staffordshire</span><br>        <span itemprop="postalCode">B79 0AX</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/coach-house-1892158" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1248819">
                 <h3>Coffee #1</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -1882,18 +1916,6 @@
 </div>
 
                 <a href="/region-west-midlands/coffee-1-1248819" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1544569">
-                <h3>Coffee &amp; Treats</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/coffee-treats-1544569" class="details-link">
                   More
                 </a>
               </div>
@@ -1966,18 +1988,6 @@
 </div>
 
                 <a href="/region-west-midlands/co-op-1249573" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1249191">
-                <h3>Co-operative Food</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>46 - 48 Thornhill Road</span><br>          <span>Streetly</span><br>          <span>Walsall</span><br>          <span>Staffordshire</span><br>        <span itemprop="postalCode">B74 3EH</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/co-operative-food-1249191" class="details-link">
                   More
                 </a>
               </div>
@@ -2929,15 +2939,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1558664">
-                <h3>Furlong Bakes</h3>
+<hr>              <div class="establishment" data-establishment-id="1912724">
+                <h3>Fusion Munchies</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>545 Watling Street</span><br>          <span>Mile Oak</span><br>          <span>Tamworth</span><br>          <span>Staffordshire</span><br>        <span itemprop="postalCode">B78 3NF</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/furlong-bakes-1558664" class="details-link">
+                <a href="/region-west-midlands/fusion-munchies-1912724" class="details-link">
                   More
                 </a>
               </div>
@@ -4561,15 +4571,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1249312">
-                <h3>Little People Nursery</h3>
+<hr>              <div class="establishment" data-establishment-id="1912722">
+                <h3>Little Pippins Gifts</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Boney Hay Primary School</span><br>          <span>Chorley Road</span><br>          <span>Burntwood</span><br>          <span>Staffordshire</span><br>        <span itemprop="postalCode">WS7 2PF</span>
+      <div>No address information available</div>
   </address>
 </div>
 
-                <a href="/region-west-midlands/little-people-nursery-1249312" class="details-link">
+                <a href="/region-west-midlands/little-pippins-gifts-1912722" class="details-link">
                   More
                 </a>
               </div>
@@ -4822,18 +4832,6 @@
 </div>
 
                 <a href="/region-west-midlands/major-curry-affair-1340211" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1360698">
-                <h3>Mangia Mangia</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/mangia-mangia-1360698" class="details-link">
                   More
                 </a>
               </div>
@@ -5545,18 +5543,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1586989">
-                <h3>One To One Diet</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/one-to-one-diet-1586989" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1731094">
                 <h3>Options Trent Acres School</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6169,18 +6155,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1777247">
-                <h3>Queens Head</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>4 Queen Street</span><br>          <span>Lichfield</span><br>          <span>Staffordshire</span><br>        <span itemprop="postalCode">WS13 6QD</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/queens-head-1777247" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1907078">
                 <h3>Queens Head</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6190,6 +6164,18 @@
 </div>
 
                 <a href="/region-west-midlands/queens-head-1907078" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1777247">
+                <h3>Queens Head</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>4 Queen Street</span><br>          <span>Lichfield</span><br>          <span>Staffordshire</span><br>        <span itemprop="postalCode">WS13 6QD</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/queens-head-1777247" class="details-link">
                   More
                 </a>
               </div>
@@ -6238,6 +6224,18 @@
 </div>
 
                 <a href="/region-west-midlands/r-meehan-family-butchers-1248802" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912719">
+                <h3>Railway Inn</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>4 Main Street</span><br>          <span>Shenstone</span><br>          <span>Lichfield</span><br>          <span>Staffordshire</span><br>        <span itemprop="postalCode">WS14 0LZ</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/railway-inn-1912719" class="details-link">
                   More
                 </a>
               </div>
@@ -6577,18 +6575,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1294707">
-                <h3>Saxon Hill Academy</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Kings Hill Road</span><br>          <span>Lichfield</span><br>          <span>Staffordshire</span><br>        <span itemprop="postalCode">WS14 9DE</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/saxon-hill-academy-1294707" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1871610">
                 <h3>Saxon Hill Academy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6598,6 +6584,18 @@
 </div>
 
                 <a href="/region-west-midlands/saxon-hill-academy-1871610" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1294707">
+                <h3>Saxon Hill Academy</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Kings Hill Road</span><br>          <span>Lichfield</span><br>          <span>Staffordshire</span><br>        <span itemprop="postalCode">WS14 9DE</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/saxon-hill-academy-1294707" class="details-link">
                   More
                 </a>
               </div>
@@ -6961,18 +6959,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1645222">
-                <h3>Slimming World</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/slimming-world-1645222" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1618119">
                 <h3>Slimming World</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6985,7 +6971,7 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1772024">
+<hr>              <div class="establishment" data-establishment-id="1645222">
                 <h3>Slimming World</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
@@ -6993,7 +6979,7 @@
   </address>
 </div>
 
-                <a href="/region-west-midlands/slimming-world-1772024" class="details-link">
+                <a href="/region-west-midlands/slimming-world-1645222" class="details-link">
                   More
                 </a>
               </div>
@@ -7006,6 +6992,18 @@
 </div>
 
                 <a href="/region-west-midlands/slimming-world-1661845" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1772024">
+                <h3>Slimming World</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/slimming-world-1772024" class="details-link">
                   More
                 </a>
               </div>
@@ -7726,18 +7724,6 @@
 </div>
 
                 <a href="/region-west-midlands/swan-island-fish-bar-1249303" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1568077">
-                <h3>Sweet Queens Treats &amp; Gifts</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/sweet-queens-treats-gifts-1568077" class="details-link">
                   More
                 </a>
               </div>
@@ -8677,15 +8663,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1654242">
-                <h3>The Green Man</h3>
+<hr>              <div class="establishment" data-establishment-id="1912720">
+                <h3>The Green Man &amp; Coach House</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>Main Street</span><br>          <span>Clifton Campville</span><br>          <span>Tamworth</span><br>          <span>Staffordshire</span><br>        <span itemprop="postalCode">B79 0AX</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/the-green-man-1654242" class="details-link">
+                <a href="/region-west-midlands/the-green-man-coach-house-1912720" class="details-link">
                   More
                 </a>
               </div>
@@ -9142,6 +9128,18 @@
 </div>
 
                 <a href="/region-west-midlands/the-pottery-shed-swinfen-1892155" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1912721">
+                <h3>The Proper Plate</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Mill Lane</span><br>          <span>Fazeley</span><br>          <span>Tamworth</span><br>          <span>Staffordshire</span><br>        <span itemprop="postalCode">B78 3QD</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/the-proper-plate-1912721" class="details-link">
                   More
                 </a>
               </div>
@@ -9673,6 +9671,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1912723">
+                <h3>Three Horseshoes</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>New Street</span><br>          <span>Fazeley</span><br>          <span>Tamworth</span><br>          <span>Staffordshire</span><br>        <span itemprop="postalCode">B78 3RD</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/three-horseshoes-1912723" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1486716">
                 <h3>Three Tuns</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9754,18 +9764,6 @@
 </div>
 
                 <a href="/region-west-midlands/toms-chinese-takeaway-1249375" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1560878">
-                <h3>Topped Fries</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/topped-fries-1560878" class="details-link">
                   More
                 </a>
               </div>
