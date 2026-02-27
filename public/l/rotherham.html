@@ -19,7 +19,7 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-background:light-dark(#fff,#2d2d2d);--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-color:light-dark(#666,#aaa);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-color:light-dark(#000,#fff);--card-background:light-dark(#fff,#2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-color-lowlight:#fff;--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939);--button-cta-bg:light-dark(var(--hygiene-green),var(--hygiene-green-lowlight));--button-cta-color:light-dark(#000,#000);--button-cta-bg-hover:light-dark(var(--hygiene-green-highlight),var(--hygiene-green));--button-cta-color-hover:light-dark(#000,#000)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
     .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid #fff3;color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid #ffffff4d;color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
@@ -515,15 +515,14 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="462227">
+<hr>              <div class="establishment" data-establishment-id="1259249">
                 <h3>Aldi</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Park Street</span><br>          <span>Masbrough</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 1RL</span>
-  </address>
+          <span>Muglet Lane</span><br>          <span>Maltby</span><br>          <span>Rotherham</span>  </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/aldi-462227" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/aldi-1259249" class="details-link">
                   More
                 </a>
               </div>
@@ -551,14 +550,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1259249">
+<hr>              <div class="establishment" data-establishment-id="462227">
                 <h3>Aldi</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Muglet Lane</span><br>          <span>Maltby</span><br>          <span>Rotherham</span>  </address>
+          <span>Park Street</span><br>          <span>Masbrough</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 1RL</span>
+  </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/aldi-1259249" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/aldi-462227" class="details-link">
                   More
                 </a>
               </div>
@@ -1114,18 +1114,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="462066">
-                <h3>Asda</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>107-111 High Street</span><br>          <span>Wath-Upon-Dearne</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S63 7PX</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/asda-462066" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="460845">
                 <h3>Asda</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -1138,15 +1126,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="460552">
+<hr>              <div class="establishment" data-establishment-id="462066">
                 <h3>Asda</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Aldwarke Lane</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 3SW</span>
+          <span>107-111 High Street</span><br>          <span>Wath-Upon-Dearne</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S63 7PX</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/asda-460552" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/asda-462066" class="details-link">
                   More
                 </a>
               </div>
@@ -1159,6 +1147,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/asda-460785" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="460552">
+                <h3>Asda</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Aldwarke Lane</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 3SW</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/asda-460552" class="details-link">
                   More
                 </a>
               </div>
@@ -2470,6 +2470,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="462348">
+                <h3>Boots</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>342 Herringthorpe Valley Road</span><br>          <span>Stag</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 4LA</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/boots-462348" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="460807">
                 <h3>Boots</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -2491,18 +2503,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/boots-462375" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="462348">
-                <h3>Boots</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>342 Herringthorpe Valley Road</span><br>          <span>Stag</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 4LA</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/boots-462348" class="details-link">
                   More
                 </a>
               </div>
@@ -3562,18 +3562,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="582710">
-                <h3>Card Factory</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>202 Bawtry Road</span><br>          <span>Wickersley</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 1AA</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/card-factory-582710" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="828687">
                 <h3>Card Factory</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -3583,6 +3571,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/card-factory-828687" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="582710">
+                <h3>Card Factory</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>202 Bawtry Road</span><br>          <span>Wickersley</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 1AA</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/card-factory-582710" class="details-link">
                   More
                 </a>
               </div>
@@ -4510,18 +4510,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461524">
-                <h3>Co-operative Food</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Chapel Way</span><br>          <span>Kiveton Park</span><br>          <span>Sheffield</span><br>        <span itemprop="postalCode">S26 6QU</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/co-operative-food-461524" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="460709">
                 <h3>Co-operative Food</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4531,6 +4519,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/co-operative-food-460709" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461524">
+                <h3>Co-operative Food</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Chapel Way</span><br>          <span>Kiveton Park</span><br>          <span>Sheffield</span><br>        <span itemprop="postalCode">S26 6QU</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/co-operative-food-461524" class="details-link">
                   More
                 </a>
               </div>
@@ -5781,18 +5781,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="460934">
-                <h3>Domino&#39;s Pizza</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit C Bawtry Road</span><br>          <span>Bramley</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 2TP</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/dominos-pizza-460934" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1697851">
                 <h3>Domino&#39;s Pizza</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -5802,6 +5790,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/dominos-pizza-1697851" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="460934">
+                <h3>Domino&#39;s Pizza</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit C Bawtry Road</span><br>          <span>Bramley</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 2TP</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/dominos-pizza-460934" class="details-link">
                   More
                 </a>
               </div>
@@ -6549,18 +6549,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="460702">
-                <h3>Family Shopper</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>18 Kilnhurst Road</span><br>          <span>Rawmarsh</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S62 5NE</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/family-shopper-460702" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="461570">
                 <h3>Family Shopper</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6570,6 +6558,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/family-shopper-461570" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="460702">
+                <h3>Family Shopper</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>18 Kilnhurst Road</span><br>          <span>Rawmarsh</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S62 5NE</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/family-shopper-460702" class="details-link">
                   More
                 </a>
               </div>
@@ -7820,18 +7820,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="462256">
-                <h3>Granby House Nursery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Aldwarke Road</span><br>          <span>Parkgate</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S62 6BU</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/granby-house-nursery-462256" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="462363">
                 <h3>Granby House Nursery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -7841,6 +7829,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/granby-house-nursery-462363" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="462256">
+                <h3>Granby House Nursery</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Aldwarke Road</span><br>          <span>Parkgate</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S62 6BU</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/granby-house-nursery-462256" class="details-link">
                   More
                 </a>
               </div>
@@ -8060,18 +8060,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461665">
-                <h3>Greggs</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2-6 Effingham Street</span><br>          <span>Rotherham Town Centre</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 1AJ</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/greggs-461665" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="460803">
                 <h3>Greggs</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -8081,6 +8069,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/greggs-460803" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461665">
+                <h3>Greggs</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>2-6 Effingham Street</span><br>          <span>Rotherham Town Centre</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 1AJ</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/greggs-461665" class="details-link">
                   More
                 </a>
               </div>
@@ -8791,6 +8791,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="462272">
+                <h3>Heron Foods</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>2-4 Howard Street</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 1QU</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/heron-foods-462272" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="903172">
                 <h3>Heron Foods</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -8800,18 +8812,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/heron-foods-903172" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="582721">
-                <h3>Heron Foods</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>72 High Street</span><br>          <span>Maltby</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 7BN</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/heron-foods-582721" class="details-link">
                   More
                 </a>
               </div>
@@ -8827,6 +8827,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="582721">
+                <h3>Heron Foods</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>72 High Street</span><br>          <span>Maltby</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 7BN</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/heron-foods-582721" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="699406">
                 <h3>Heron Foods</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -8836,18 +8848,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/heron-foods-699406" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="462272">
-                <h3>Heron Foods</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2-4 Howard Street</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 1QU</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/heron-foods-462272" class="details-link">
                   More
                 </a>
               </div>
@@ -9175,18 +9175,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1271826">
-                <h3>Home Caterer</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/home-caterer-1271826" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="898040">
                 <h3>Home Caterer</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9196,6 +9184,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/home-caterer-898040" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1271826">
+                <h3>Home Caterer</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/home-caterer-1271826" class="details-link">
                   More
                 </a>
               </div>
@@ -10279,18 +10279,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="485086">
-                <h3>KFC</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Canklow Road</span><br>          <span>Canklow</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 2JH</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/kfc-485086" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="921808">
                 <h3>KFC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -10300,6 +10288,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/kfc-921808" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="485086">
+                <h3>KFC</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Canklow Road</span><br>          <span>Canklow</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 2JH</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/kfc-485086" class="details-link">
                   More
                 </a>
               </div>
@@ -11143,18 +11143,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="460809">
-                <h3>Lidl</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>17 Masbrough Street</span><br>          <span>Masbrough</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 1EX</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/lidl-460809" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1170657">
                 <h3>Lidl</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11164,6 +11152,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/lidl-1170657" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="460809">
+                <h3>Lidl</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>17 Masbrough Street</span><br>          <span>Masbrough</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 1EX</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/lidl-460809" class="details-link">
                   More
                 </a>
               </div>
@@ -11550,18 +11550,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461478">
-                <h3>Lloyds Pharmacy</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>45c Rawmarsh Hill</span><br>          <span>Parkgate</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S62 6DP</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/lloyds-pharmacy-461478" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="462309">
                 <h3>Lloyds Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11571,6 +11559,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/lloyds-pharmacy-462309" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461478">
+                <h3>Lloyds Pharmacy</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>45c Rawmarsh Hill</span><br>          <span>Parkgate</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S62 6DP</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/lloyds-pharmacy-461478" class="details-link">
                   More
                 </a>
               </div>
@@ -12605,18 +12605,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="462395">
-                <h3>McDonalds Restaurants</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>West Bawtry Road</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 2XG</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/mcdonalds-restaurants-462395" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="462002">
                 <h3>McDonalds Restaurants</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12626,6 +12614,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/mcdonalds-restaurants-462002" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="462395">
+                <h3>McDonalds Restaurants</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>West Bawtry Road</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 2XG</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/mcdonalds-restaurants-462395" class="details-link">
                   More
                 </a>
               </div>
@@ -12665,18 +12665,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461892">
-                <h3>Mellors</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Catcliffe Primary School</span><br>          <span>Rotherham Road</span><br>          <span>Catcliffe</span><br>        <span itemprop="postalCode">S60 5SW</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/mellors-461892" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="461900">
                 <h3>Mellors</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12686,6 +12674,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/mellors-461900" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461892">
+                <h3>Mellors</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Catcliffe Primary School</span><br>          <span>Rotherham Road</span><br>          <span>Catcliffe</span><br>        <span itemprop="postalCode">S60 5SW</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/mellors-461892" class="details-link">
                   More
                 </a>
               </div>
@@ -12737,18 +12737,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461925">
-                <h3>Mellors Catering Services LTD</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>East Avenue</span><br>          <span>Swinton</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S64 8JW</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/mellors-catering-services-ltd-461925" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="461924">
                 <h3>Mellors Catering Services LTD</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12770,6 +12758,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/mellors-catering-services-ltd-461926" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461925">
+                <h3>Mellors Catering Services LTD</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>East Avenue</span><br>          <span>Swinton</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S64 8JW</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/mellors-catering-services-ltd-461925" class="details-link">
                   More
                 </a>
               </div>
@@ -13253,18 +13253,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="460648">
-                <h3>Morrisons</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Bawtry Road</span><br>          <span>Bramley</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 1YZ</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/morrisons-460648" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="462337">
                 <h3>Morrisons</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13286,6 +13274,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/morrisons-460802" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="460648">
+                <h3>Morrisons</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Bawtry Road</span><br>          <span>Bramley</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 1YZ</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/morrisons-460648" class="details-link">
                   More
                 </a>
               </div>
@@ -13313,18 +13313,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461413">
-                <h3>Morrisons Daily</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>21 St Johns Green</span><br>          <span>Kimberworth Park</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 3JL</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/morrisons-daily-461413" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="460751">
                 <h3>Morrisons Daily</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13334,6 +13322,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/morrisons-daily-460751" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461413">
+                <h3>Morrisons Daily</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>21 St Johns Green</span><br>          <span>Kimberworth Park</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 3JL</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/morrisons-daily-461413" class="details-link">
                   More
                 </a>
               </div>
@@ -13349,15 +13349,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461427">
+<hr>              <div class="establishment" data-establishment-id="461377">
                 <h3>Morrisons Daily</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>64 Union Street</span><br>          <span>Harthill</span><br>          <span>Sheffield</span><br>        <span itemprop="postalCode">S26 7YH</span>
+          <span>115 Oaks Lane</span><br>          <span>Kimberworth Park</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 3BA</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/morrisons-daily-461427" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/morrisons-daily-461377" class="details-link">
                   More
                 </a>
               </div>
@@ -13373,15 +13373,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461377">
+<hr>              <div class="establishment" data-establishment-id="461427">
                 <h3>Morrisons Daily</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>115 Oaks Lane</span><br>          <span>Kimberworth Park</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 3BA</span>
+          <span>64 Union Street</span><br>          <span>Harthill</span><br>          <span>Sheffield</span><br>        <span itemprop="postalCode">S26 7YH</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/morrisons-daily-461377" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/morrisons-daily-461427" class="details-link">
                   More
                 </a>
               </div>
@@ -14225,18 +14225,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="460897">
-                <h3>One Stop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>25 Station Road</span><br>          <span>Kiveton Park</span><br>          <span>Sheffield</span><br>        <span itemprop="postalCode">S26 6QP</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/one-stop-460897" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="461254">
                 <h3>One Stop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -14246,6 +14234,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/one-stop-461254" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="460897">
+                <h3>One Stop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>25 Station Road</span><br>          <span>Kiveton Park</span><br>          <span>Sheffield</span><br>        <span itemprop="postalCode">S26 6QP</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/one-stop-460897" class="details-link">
                   More
                 </a>
               </div>
@@ -15965,18 +15965,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461808">
-                <h3>Ring O Bells</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Fenton Road</span><br>          <span>Kimberworth Park</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 3RG</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/ring-o-bells-461808" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="462116">
                 <h3>Ring O Bells</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -15986,6 +15974,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/ring-o-bells-462116" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461808">
+                <h3>Ring O Bells</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Fenton Road</span><br>          <span>Kimberworth Park</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 3RG</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/ring-o-bells-461808" class="details-link">
                   More
                 </a>
               </div>
@@ -16061,6 +16061,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="461875">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Park Avenue</span><br>          <span>North Anston</span><br>          <span>Sheffield</span><br>        <span itemprop="postalCode">S25 2QZ</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461875" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="461873">
                 <h3>Riverside Catering (RMBC)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -16073,27 +16085,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461884">
+<hr>              <div class="establishment" data-establishment-id="461865">
                 <h3>Riverside Catering (RMBC)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Howard Road</span><br>          <span>Bramley</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 2SY</span>
+          <span>Sheffield Road</span><br>          <span>Woodhouse Mill</span><br>          <span>Sheffield</span><br>        <span itemprop="postalCode">S13 9ZD</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461884" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="858192">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Eldon Road</span><br>          <span>Eastwood</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 1RD</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-858192" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461865" class="details-link">
                   More
                 </a>
               </div>
@@ -16133,243 +16133,27 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461902">
+<hr>              <div class="establishment" data-establishment-id="461884">
                 <h3>Riverside Catering (RMBC)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>School Road</span><br>          <span>Laughton-En-Le-Morthen</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S25 1YP</span>
+          <span>Howard Road</span><br>          <span>Bramley</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 2SY</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461902" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461884" class="details-link">
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461888">
+<hr>              <div class="establishment" data-establishment-id="858192">
                 <h3>Riverside Catering (RMBC)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Whitehill Lane</span><br>          <span>Brinsworth</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 5JR</span>
+          <span>Eldon Road</span><br>          <span>Eastwood</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 1RD</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461888" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="460531">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Middle Lane</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 2SN</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-460531" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461875">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Park Avenue</span><br>          <span>North Anston</span><br>          <span>Sheffield</span><br>        <span itemprop="postalCode">S25 2QZ</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461875" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461944">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Sandygate</span><br>          <span>Wath-Upon-Dearne</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S63 7NW</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461944" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461936">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Locksley Drive</span><br>          <span>Thurcroft</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 9NT</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461936" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461865">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Sheffield Road</span><br>          <span>Woodhouse Mill</span><br>          <span>Sheffield</span><br>        <span itemprop="postalCode">S13 9ZD</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461865" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461842">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Ferham Road</span><br>          <span>Holmes</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 1AP</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461842" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461899">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Chatterton Drive</span><br>          <span>Herringthorpe</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 2JW</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461899" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461886">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Brinsworth Lane</span><br>          <span>Brinsworth</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 5BX</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461886" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461852">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Chapel Avenue</span><br>          <span>Brampton Bierlow</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S73 0XH</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461852" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461853">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Brampton Road</span><br>          <span>Wath-Upon-Dearne</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S63 6AN</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461853" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461846">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Locksley Drive</span><br>          <span>Thurcroft</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 9NT</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461846" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461860">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Kilnhurst Road</span><br>          <span>Rawmarsh</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S62 5QH</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461860" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461954">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Wingfield Road</span><br>          <span>Wingfield</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 4AU</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461954" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461890">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Broom Valley Road</span><br>          <span>Broom Valley</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 2QU</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461890" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461911">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Meadowhall Road</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 2JD</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461911" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461896">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Munsbrough Rise</span><br>          <span>Greasbrough</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 4RB</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461896" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="460815">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Sandal Court</span><br>          <span>Thornhill</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 1RH</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-460815" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="460843">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Bawtry Road</span><br>          <span>Wickersley</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 1JL</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-460843" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-858192" class="details-link">
                   More
                 </a>
               </div>
@@ -16385,15 +16169,99 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461946">
+<hr>              <div class="establishment" data-establishment-id="461888">
                 <h3>Riverside Catering (RMBC)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Fitzwilliam Street</span><br>          <span>Wath-Upon-Dearne</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S63 7HG</span>
+          <span>Whitehill Lane</span><br>          <span>Brinsworth</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 5JR</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461946" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461888" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461902">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>School Road</span><br>          <span>Laughton-En-Le-Morthen</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S25 1YP</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461902" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="460531">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Middle Lane</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 2SN</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-460531" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461911">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Meadowhall Road</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 2JD</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461911" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461919">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Roughwood Road</span><br>          <span>Kimberworth Park</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 3HL</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461919" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461896">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Munsbrough Rise</span><br>          <span>Greasbrough</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 4RB</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461896" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461890">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Broom Valley Road</span><br>          <span>Broom Valley</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 2QU</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461890" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461933">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Arran Hill</span><br>          <span>Thrybergh</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 4BJ</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461933" class="details-link">
                   More
                 </a>
               </div>
@@ -16421,6 +16289,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="461946">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Fitzwilliam Street</span><br>          <span>Wath-Upon-Dearne</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S63 7HG</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461946" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="461916">
                 <h3>Riverside Catering (RMBC)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -16430,30 +16310,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461916" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461933">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Arran Hill</span><br>          <span>Thrybergh</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 4BJ</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461933" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461919">
-                <h3>Riverside Catering (RMBC)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Roughwood Road</span><br>          <span>Kimberworth Park</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 3HL</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461919" class="details-link">
                   More
                 </a>
               </div>
@@ -16478,6 +16334,150 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461943" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="460815">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>1 Sandal Court</span><br>          <span>Thornhill</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 1RH</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-460815" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="460843">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Bawtry Road</span><br>          <span>Wickersley</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 1JL</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-460843" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461886">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Brinsworth Lane</span><br>          <span>Brinsworth</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 5BX</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461886" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461899">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Chatterton Drive</span><br>          <span>Herringthorpe</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 2JW</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461899" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461842">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Ferham Road</span><br>          <span>Holmes</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 1AP</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461842" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461944">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Sandygate</span><br>          <span>Wath-Upon-Dearne</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S63 7NW</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461944" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461936">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Locksley Drive</span><br>          <span>Thurcroft</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 9NT</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461936" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461954">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Wingfield Road</span><br>          <span>Wingfield</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 4AU</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461954" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461853">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Brampton Road</span><br>          <span>Wath-Upon-Dearne</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S63 6AN</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461853" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461852">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Chapel Avenue</span><br>          <span>Brampton Bierlow</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S73 0XH</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461852" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461846">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Locksley Drive</span><br>          <span>Thurcroft</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 9NT</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461846" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461860">
+                <h3>Riverside Catering (RMBC)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Kilnhurst Road</span><br>          <span>Rawmarsh</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S62 5QH</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/riverside-catering-rmbc-461860" class="details-link">
                   More
                 </a>
               </div>
@@ -16997,18 +16997,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461032">
-                <h3>Rotherham Hospice</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Broom Road</span><br>          <span>Broom</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 2SW</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/rotherham-hospice-461032" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="460820">
                 <h3>Rotherham Hospice</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -17018,6 +17006,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/rotherham-hospice-460820" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461032">
+                <h3>Rotherham Hospice</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Broom Road</span><br>          <span>Broom</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 2SW</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/rotherham-hospice-461032" class="details-link">
                   More
                 </a>
               </div>
@@ -17405,18 +17405,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461673">
-                <h3>Sainsbury&#39;s</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>100 Flanderwell Lane</span><br>          <span>Sunnyside</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 3QT</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/sainsburys-461673" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="461634">
                 <h3>Sainsbury&#39;s</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -17426,6 +17414,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/sainsburys-461634" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461673">
+                <h3>Sainsbury&#39;s</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>100 Flanderwell Lane</span><br>          <span>Sunnyside</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 3QT</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/sainsburys-461673" class="details-link">
                   More
                 </a>
               </div>
@@ -18233,6 +18233,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1107835">
+                <h3>Slimming World Franchise</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/slimming-world-franchise-1107835" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="972321">
                 <h3>Slimming World Franchise</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -18245,7 +18257,7 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1107835">
+<hr>              <div class="establishment" data-establishment-id="1024638">
                 <h3>Slimming World Franchise</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
@@ -18253,7 +18265,7 @@
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/slimming-world-franchise-1107835" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/slimming-world-franchise-1024638" class="details-link">
                   More
                 </a>
               </div>
@@ -18278,18 +18290,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/slimming-world-franchise-983478" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1024638">
-                <h3>Slimming World Franchise</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/slimming-world-franchise-1024638" class="details-link">
                   More
                 </a>
               </div>
@@ -18785,6 +18785,42 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="460710">
+                <h3>Staniforths (Rawmarsh) Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>83 Station Street</span><br>          <span>Swinton</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S64 8PZ</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/staniforths-rawmarsh-ltd-460710" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461517">
+                <h3>Staniforths (Rawmarsh) Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>7 Montgomery Square</span><br>          <span>Wath-Upon-Dearne</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S63 7RZ</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/staniforths-rawmarsh-ltd-461517" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461272">
+                <h3>Staniforths (Rawmarsh) Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>39 Effingham Square</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 1AP</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/staniforths-rawmarsh-ltd-461272" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="461518">
                 <h3>Staniforths (Rawmarsh) Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -18818,42 +18854,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/staniforths-rawmarsh-ltd-461539" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461272">
-                <h3>Staniforths (Rawmarsh) Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>39 Effingham Square</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 1AP</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/staniforths-rawmarsh-ltd-461272" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="461517">
-                <h3>Staniforths (Rawmarsh) Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>7 Montgomery Square</span><br>          <span>Wath-Upon-Dearne</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S63 7RZ</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/staniforths-rawmarsh-ltd-461517" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="460710">
-                <h3>Staniforths (Rawmarsh) Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>83 Station Street</span><br>          <span>Swinton</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S64 8PZ</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/staniforths-rawmarsh-ltd-460710" class="details-link">
                   More
                 </a>
               </div>
@@ -20165,18 +20165,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="633390">
-                <h3>Tesco</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>High Street</span><br>          <span>Rawmarsh</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S62 6LW</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/tesco-633390" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="537013">
                 <h3>Tesco</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -20186,6 +20174,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/tesco-537013" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="462107">
+                <h3>Tesco</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>17 East Bawtry Road</span><br>          <span>Whiston</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 4BX</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/tesco-462107" class="details-link">
                   More
                 </a>
               </div>
@@ -20201,15 +20201,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="462107">
+<hr>              <div class="establishment" data-establishment-id="633390">
                 <h3>Tesco</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>17 East Bawtry Road</span><br>          <span>Whiston</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S60 4BX</span>
+          <span>High Street</span><br>          <span>Rawmarsh</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S62 6LW</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/tesco-462107" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/tesco-633390" class="details-link">
                   More
                 </a>
               </div>
@@ -20933,18 +20933,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="460604">
-                <h3>The Co-operative Food</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Fenton Road</span><br>          <span>Kimberworth Park</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 3RG</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/the-co-operative-food-460604" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="461783">
                 <h3>The Co-operative Food</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -20966,6 +20954,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/the-co-operative-food-461031" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="460604">
+                <h3>The Co-operative Food</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Fenton Road</span><br>          <span>Kimberworth Park</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S61 3RG</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/the-co-operative-food-460604" class="details-link">
                   More
                 </a>
               </div>
@@ -22589,18 +22589,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="461580">
-                <h3>The Woodman</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>89 Warren Vale Road</span><br>          <span>Swinton</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S64 8UR</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/the-woodman-461580" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="460886">
                 <h3>The Woodman</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -22610,6 +22598,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/the-woodman-460886" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="461580">
+                <h3>The Woodman</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>89 Warren Vale Road</span><br>          <span>Swinton</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S64 8UR</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/the-woodman-461580" class="details-link">
                   More
                 </a>
               </div>
@@ -23261,18 +23261,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="462300">
-                <h3>Top Shop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>172 Aughton Road</span><br>          <span>Aughton</span><br>          <span>Sheffield</span><br>        <span itemprop="postalCode">S26 3XE</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/top-shop-462300" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="460662">
                 <h3>Top Shop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -23282,6 +23270,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/top-shop-460662" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="462300">
+                <h3>Top Shop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>172 Aughton Road</span><br>          <span>Aughton</span><br>          <span>Sheffield</span><br>        <span itemprop="postalCode">S26 3XE</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/top-shop-462300" class="details-link">
                   More
                 </a>
               </div>
@@ -23836,18 +23836,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1515918">
-                <h3>Viv&#39;s Sweet Treats</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/vivs-sweet-treats-1515918" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1271827">
                 <h3>Viv&#39;s Sweet Treats</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -23857,6 +23845,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/vivs-sweet-treats-1271827" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1515918">
+                <h3>Viv&#39;s Sweet Treats</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/vivs-sweet-treats-1515918" class="details-link">
                   More
                 </a>
               </div>
@@ -24411,6 +24411,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1805252">
+                <h3>Weldricks Pharmacy</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>3 Laburnum Parade</span><br>          <span>Maltby</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 8DP</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/weldricks-pharmacy-1805252" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="461838">
                 <h3>Weldricks Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -24444,18 +24456,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/weldricks-pharmacy-460515" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1805252">
-                <h3>Weldricks Pharmacy</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>3 Laburnum Parade</span><br>          <span>Maltby</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S66 8DP</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/weldricks-pharmacy-1805252" class="details-link">
                   More
                 </a>
               </div>
@@ -24495,18 +24495,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="460683">
-                <h3>Well Pharmacy Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>6 Hollings Lane</span><br>          <span>Thrybergh</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 4PU</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/well-pharmacy-ltd-460683" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="460681">
                 <h3>Well Pharmacy Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -24516,6 +24504,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/well-pharmacy-ltd-460681" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="460683">
+                <h3>Well Pharmacy Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>6 Hollings Lane</span><br>          <span>Thrybergh</span><br>          <span>Rotherham</span><br>        <span itemprop="postalCode">S65 4PU</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/well-pharmacy-ltd-460683" class="details-link">
                   More
                 </a>
               </div>

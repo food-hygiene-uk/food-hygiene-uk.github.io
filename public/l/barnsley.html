@@ -19,7 +19,7 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-background:light-dark(#fff,#2d2d2d);--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-color:light-dark(#666,#aaa);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-color:light-dark(#000,#fff);--card-background:light-dark(#fff,#2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-color-lowlight:#fff;--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939);--button-cta-bg:light-dark(var(--hygiene-green),var(--hygiene-green-lowlight));--button-cta-color:light-dark(#000,#000);--button-cta-bg-hover:light-dark(var(--hygiene-green-highlight),var(--hygiene-green));--button-cta-color-hover:light-dark(#000,#000)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
     .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid #fff3;color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid #ffffff4d;color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
@@ -179,18 +179,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1831958">
-                <h3>ABC Market</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>108-112 Sheffield Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1JB</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/abc-market-1831958" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1792224">
                 <h3>ABC Market</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -200,6 +188,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/abc-market-1792224" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1831958">
+                <h3>ABC Market</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>108-112 Sheffield Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1JB</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/abc-market-1831958" class="details-link">
                   More
                 </a>
               </div>
@@ -743,30 +743,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="398419">
-                <h3>Asda</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Asda</span><br>          <span>Welfare Road</span><br>          <span>Thurnscoe</span><br>        <span itemprop="postalCode">S63 0JZ</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/asda-398419" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="397679">
-                <h3>Asda</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Asda</span><br>          <span>3-5 High Street</span><br>          <span>Goldthorpe</span><br>        <span itemprop="postalCode">S63 9NQ</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/asda-397679" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="398308">
                 <h3>Asda</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -788,6 +764,30 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/asda-398263" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="398419">
+                <h3>Asda</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Asda</span><br>          <span>Welfare Road</span><br>          <span>Thurnscoe</span><br>        <span itemprop="postalCode">S63 0JZ</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/asda-398419" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="397679">
+                <h3>Asda</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Asda</span><br>          <span>3-5 High Street</span><br>          <span>Goldthorpe</span><br>        <span itemprop="postalCode">S63 9NQ</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/asda-397679" class="details-link">
                   More
                 </a>
               </div>
@@ -1223,18 +1223,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="397883">
-                <h3>Balti Palace</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>77 High Street</span><br>          <span>Wombwell</span><br>        <span itemprop="postalCode">S73 8HS</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/balti-palace-397883" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="397516">
                 <h3>Balti Palace</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -1244,6 +1232,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/balti-palace-397516" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="397883">
+                <h3>Balti Palace</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>77 High Street</span><br>          <span>Wombwell</span><br>        <span itemprop="postalCode">S73 8HS</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/balti-palace-397883" class="details-link">
                   More
                 </a>
               </div>
@@ -4139,18 +4139,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="397835">
-                <h3>Co-operative</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>16-22 Hoyland Road</span><br>          <span>Hoyland</span><br>        <span itemprop="postalCode">S74 0NE</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/co-operative-397835" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="397681">
                 <h3>Co-operative</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4163,15 +4151,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="398466">
+<hr>              <div class="establishment" data-establishment-id="397835">
                 <h3>Co-operative</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Co Operative Stores</span><br>          <span>High Street</span><br>          <span>Royston</span><br>        <span itemprop="postalCode">S71 4RF</span>
+          <span>16-22 Hoyland Road</span><br>          <span>Hoyland</span><br>        <span itemprop="postalCode">S74 0NE</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/co-operative-398466" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/co-operative-397835" class="details-link">
                   More
                 </a>
               </div>
@@ -4184,6 +4172,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/co-operative-397825" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="398466">
+                <h3>Co-operative</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Co Operative Stores</span><br>          <span>High Street</span><br>          <span>Royston</span><br>        <span itemprop="postalCode">S71 4RF</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/co-operative-398466" class="details-link">
                   More
                 </a>
               </div>
@@ -5639,15 +5639,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1732905">
+<hr>              <div class="establishment" data-establishment-id="398328">
                 <h3>Domino&#39;s Pizza</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>522a Doncaster Road</span><br>          <span>Stairfoot</span><br>        <span itemprop="postalCode">S70 3PE</span>
+          <span>53 Peel Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2RL</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/dominos-pizza-1732905" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/dominos-pizza-398328" class="details-link">
                   More
                 </a>
               </div>
@@ -5663,15 +5663,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="398328">
+<hr>              <div class="establishment" data-establishment-id="1732905">
                 <h3>Domino&#39;s Pizza</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>53 Peel Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2RL</span>
+          <span>522a Doncaster Road</span><br>          <span>Stairfoot</span><br>        <span itemprop="postalCode">S70 3PE</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/dominos-pizza-398328" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/dominos-pizza-1732905" class="details-link">
                   More
                 </a>
               </div>
@@ -7270,27 +7270,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1784306">
+<hr>              <div class="establishment" data-establishment-id="984003">
                 <h3>Go Local</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>13-15 Angel Street</span><br>          <span>Bolton Upon Dearne</span><br>        <span itemprop="postalCode">S63 8NA</span>
+          <span>343-345 Pontefract Road</span><br>          <span>Lundwood</span><br>        <span itemprop="postalCode">S71 5HS</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/go-local-1784306" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="397576">
-                <h3>Go Local</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>142 Darfield Road</span><br>          <span>Cudworth</span><br>        <span itemprop="postalCode">S72 8RL</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/go-local-397576" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/go-local-984003" class="details-link">
                   More
                 </a>
               </div>
@@ -7306,15 +7294,27 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="984003">
+<hr>              <div class="establishment" data-establishment-id="397576">
                 <h3>Go Local</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>343-345 Pontefract Road</span><br>          <span>Lundwood</span><br>        <span itemprop="postalCode">S71 5HS</span>
+          <span>142 Darfield Road</span><br>          <span>Cudworth</span><br>        <span itemprop="postalCode">S72 8RL</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/go-local-984003" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/go-local-397576" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1784306">
+                <h3>Go Local</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>13-15 Angel Street</span><br>          <span>Bolton Upon Dearne</span><br>        <span itemprop="postalCode">S63 8NA</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/go-local-1784306" class="details-link">
                   More
                 </a>
               </div>
@@ -7606,6 +7606,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="398824">
+                <h3>Greggs</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>5 Eldon Arcade</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2JP</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/greggs-398824" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="397772">
                 <h3>Greggs</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -7615,18 +7627,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/greggs-397772" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="397478">
-                <h3>Greggs</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 High Street</span><br>          <span>Penistone</span><br>        <span itemprop="postalCode">S36 6BR</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/greggs-397478" class="details-link">
                   More
                 </a>
               </div>
@@ -7642,15 +7642,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="398824">
+<hr>              <div class="establishment" data-establishment-id="397478">
                 <h3>Greggs</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>5 Eldon Arcade</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2JP</span>
+          <span>1 High Street</span><br>          <span>Penistone</span><br>        <span itemprop="postalCode">S36 6BR</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/greggs-398824" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/greggs-397478" class="details-link">
                   More
                 </a>
               </div>
@@ -8566,15 +8566,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="397560">
+<hr>              <div class="establishment" data-establishment-id="397489">
                 <h3>Home Farm Bakery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>230 Pontefract Road</span><br>          <span>Lundwood</span><br>        <span itemprop="postalCode">S71 5PN</span>
+          <span>234 Barnsley Road</span><br>          <span>Cudworth</span><br>        <span itemprop="postalCode">S72 8UH</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/home-farm-bakery-397560" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/home-farm-bakery-397489" class="details-link">
                   More
                 </a>
               </div>
@@ -8590,15 +8590,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="397489">
+<hr>              <div class="establishment" data-establishment-id="397560">
                 <h3>Home Farm Bakery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>234 Barnsley Road</span><br>          <span>Cudworth</span><br>        <span itemprop="postalCode">S72 8UH</span>
+          <span>230 Pontefract Road</span><br>          <span>Lundwood</span><br>        <span itemprop="postalCode">S71 5PN</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/home-farm-bakery-397489" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/home-farm-bakery-397560" class="details-link">
                   More
                 </a>
               </div>
@@ -9070,18 +9070,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="397460">
-                <h3>Iceland</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>244 Pontefract Road</span><br>          <span>Lundwood</span><br>        <span itemprop="postalCode">S71 5PN</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/iceland-397460" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="398529">
                 <h3>Iceland</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9103,6 +9091,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/iceland-397537" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="397460">
+                <h3>Iceland</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>244 Pontefract Road</span><br>          <span>Lundwood</span><br>        <span itemprop="postalCode">S71 5PN</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/iceland-397460" class="details-link">
                   More
                 </a>
               </div>
@@ -10629,18 +10629,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="941130">
-                <h3>Lifestyle Express</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>46-48 Windermere Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S71 1EF</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/lifestyle-express-941130" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="431025">
                 <h3>Lifestyle Express</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -10650,6 +10638,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/lifestyle-express-431025" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="941130">
+                <h3>Lifestyle Express</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>46-48 Windermere Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S71 1EF</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/lifestyle-express-941130" class="details-link">
                   More
                 </a>
               </div>
@@ -11529,18 +11529,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="397894">
-                <h3>McDonald&#39;s</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Mcdonalds Restaurants Ltd</span><br>          <span>Old Mill Lane</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2LP</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/mcdonalds-397894" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="397359">
                 <h3>McDonald&#39;s</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11550,6 +11538,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/mcdonalds-397359" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="397894">
+                <h3>McDonald&#39;s</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Mcdonalds Restaurants Ltd</span><br>          <span>Old Mill Lane</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2LP</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/mcdonalds-397894" class="details-link">
                   More
                 </a>
               </div>
@@ -11985,18 +11985,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="398513">
-                <h3>Moncy&#39;s Kitchen</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/moncys-kitchen-398513" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="397550">
                 <h3>Moncy&#39;s Kitchen</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12006,6 +11994,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/moncys-kitchen-397550" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="398513">
+                <h3>Moncy&#39;s Kitchen</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/moncys-kitchen-398513" class="details-link">
                   More
                 </a>
               </div>
@@ -12117,18 +12117,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="397611">
-                <h3>Morrisons Daily</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>73 High Street</span><br>          <span>Worsbrough Bridge</span><br>        <span itemprop="postalCode">S70 4SQ</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/morrisons-daily-397611" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="397683">
                 <h3>Morrisons Daily</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12138,6 +12126,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/morrisons-daily-397683" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="397611">
+                <h3>Morrisons Daily</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>73 High Street</span><br>          <span>Worsbrough Bridge</span><br>        <span itemprop="postalCode">S70 4SQ</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/morrisons-daily-397611" class="details-link">
                   More
                 </a>
               </div>
@@ -13065,6 +13065,30 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="397618">
+                <h3>One Stop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>26 Barugh Green Road</span><br>          <span>Barugh Green</span><br>        <span itemprop="postalCode">S75 1JT</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/one-stop-397618" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="397304">
+                <h3>One Stop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>3-23 Neville Avenue</span><br>          <span>Kendray Barnsley</span><br>        <span itemprop="postalCode">S70 3HB</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/one-stop-397304" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="397804">
                 <h3>One Stop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13074,18 +13098,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/one-stop-397804" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="398558">
-                <h3>One Stop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>125-127 Midland Road</span><br>          <span>Royston</span><br>        <span itemprop="postalCode">S71 4PX</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/one-stop-398558" class="details-link">
                   More
                 </a>
               </div>
@@ -13113,27 +13125,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="397618">
+<hr>              <div class="establishment" data-establishment-id="398558">
                 <h3>One Stop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>26 Barugh Green Road</span><br>          <span>Barugh Green</span><br>        <span itemprop="postalCode">S75 1JT</span>
+          <span>125-127 Midland Road</span><br>          <span>Royston</span><br>        <span itemprop="postalCode">S71 4PX</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/one-stop-397618" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="397304">
-                <h3>One Stop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>3-23 Neville Avenue</span><br>          <span>Kendray Barnsley</span><br>        <span itemprop="postalCode">S70 3HB</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/one-stop-397304" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/one-stop-398558" class="details-link">
                   More
                 </a>
               </div>
@@ -13161,18 +13161,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="398195">
-                <h3>One Stop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/one-stop-398195" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="397677">
                 <h3>One Stop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13182,6 +13170,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/one-stop-397677" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="398195">
+                <h3>One Stop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/one-stop-398195" class="details-link">
                   More
                 </a>
               </div>
@@ -14085,18 +14085,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="398273">
-                <h3>Pizza Palace</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>10 High Street</span><br>          <span>Grimethorpe</span><br>        <span itemprop="postalCode">S72 7LS</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/pizza-palace-398273" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="397963">
                 <h3>Pizza Palace</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -14106,6 +14094,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/pizza-palace-397963" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="398273">
+                <h3>Pizza Palace</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>10 High Street</span><br>          <span>Grimethorpe</span><br>        <span itemprop="postalCode">S72 7LS</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/pizza-palace-398273" class="details-link">
                   More
                 </a>
               </div>
@@ -14385,6 +14385,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="397580">
+                <h3>Premier</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>190a Pontefract Road</span><br>          <span>Cudworth</span><br>        <span itemprop="postalCode">S72 8AE</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/premier-397580" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="397450">
                 <h3>Premier</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -14397,18 +14409,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="398512">
-                <h3>Premier</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>210-212 Doncaster Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1UH</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/premier-398512" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="397900">
                 <h3>Premier</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -14418,6 +14418,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/premier-397900" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="398512">
+                <h3>Premier</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>210-212 Doncaster Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1UH</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/premier-398512" class="details-link">
                   More
                 </a>
               </div>
@@ -14442,18 +14454,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/premier-721916" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="397580">
-                <h3>Premier</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>190a Pontefract Road</span><br>          <span>Cudworth</span><br>        <span itemprop="postalCode">S72 8AE</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/premier-397580" class="details-link">
                   More
                 </a>
               </div>
@@ -15693,18 +15693,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="397673">
-                <h3>Sainsbury&#39;s</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Sainsburys</span><br>          <span>2 St Helens Way</span><br>          <span>Monk Bretton</span><br>        <span itemprop="postalCode">S71 2PR</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/sainsburys-397673" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="479173">
                 <h3>Sainsbury&#39;s</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -15714,6 +15702,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/sainsburys-479173" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="397673">
+                <h3>Sainsbury&#39;s</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Sainsburys</span><br>          <span>2 St Helens Way</span><br>          <span>Monk Bretton</span><br>        <span itemprop="postalCode">S71 2PR</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/sainsburys-397673" class="details-link">
                   More
                 </a>
               </div>
@@ -17024,18 +17024,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="397462">
-                <h3>Staniforths</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>46 High Street</span><br>          <span>Wombwell</span><br>        <span itemprop="postalCode">S73 8BH</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/staniforths-397462" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="397469">
                 <h3>Staniforths</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -17057,6 +17045,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/staniforths-397472" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="397462">
+                <h3>Staniforths</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>46 High Street</span><br>          <span>Wombwell</span><br>        <span itemprop="postalCode">S73 8BH</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/staniforths-397462" class="details-link">
                   More
                 </a>
               </div>
@@ -17996,18 +17996,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="398812">
-                <h3>Tesco</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Tesco</span><br>          <span>Market Lane</span><br>          <span>Penistone</span><br>        <span itemprop="postalCode">S36 6TS</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/tesco-398812" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="398791">
                 <h3>Tesco</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -18017,6 +18005,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/tesco-398791" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="398812">
+                <h3>Tesco</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Tesco</span><br>          <span>Market Lane</span><br>          <span>Penistone</span><br>        <span itemprop="postalCode">S36 6TS</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/tesco-398812" class="details-link">
                   More
                 </a>
               </div>
@@ -19628,18 +19628,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1357593">
-                <h3>The Old Bank</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2-4 Market Street</span><br>          <span>Hoyland</span><br>        <span itemprop="postalCode">S74 9QB</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/the-old-bank-1357593" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1728642">
                 <h3>The Old Bank</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -19649,6 +19637,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/the-old-bank-1728642" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1357593">
+                <h3>The Old Bank</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>2-4 Market Street</span><br>          <span>Hoyland</span><br>        <span itemprop="postalCode">S74 9QB</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/the-old-bank-1357593" class="details-link">
                   More
                 </a>
               </div>
@@ -20204,18 +20204,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="398076">
-                <h3>The Tap</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>40-42 Racecommon Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 6AF</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/the-tap-398076" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="397480">
                 <h3>The Tap</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -20225,6 +20213,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/the-tap-397480" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="398076">
+                <h3>The Tap</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>40-42 Racecommon Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 6AF</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/the-tap-398076" class="details-link">
                   More
                 </a>
               </div>
@@ -20936,18 +20936,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="397303">
-                <h3>Travellers Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Travellers Inn</span><br>          <span>124 Sheffield Road</span><br>          <span>Birdwell</span><br>        <span itemprop="postalCode">S70 5XB</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/travellers-inn-397303" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="397310">
                 <h3>Travellers Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -20957,6 +20945,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/travellers-inn-397310" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="397303">
+                <h3>Travellers Inn</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Travellers Inn</span><br>          <span>124 Sheffield Road</span><br>          <span>Birdwell</span><br>        <span itemprop="postalCode">S70 5XB</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/travellers-inn-397303" class="details-link">
                   More
                 </a>
               </div>
@@ -21320,18 +21320,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1451210">
-                <h3>Vault 27</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>25-27 Church Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2AH</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/vault-27-1451210" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1876211">
                 <h3>Vault 27</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -21341,6 +21329,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/vault-27-1876211" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1451210">
+                <h3>Vault 27</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>25-27 Church Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2AH</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/vault-27-1451210" class="details-link">
                   More
                 </a>
               </div>
@@ -21728,18 +21728,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="397532">
-                <h3>Well Pharmacy</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>11 Market Street</span><br>          <span>Penistone</span><br>        <span itemprop="postalCode">S36 6BZ</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/well-pharmacy-397532" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="397524">
                 <h3>Well Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -21749,6 +21737,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/well-pharmacy-397524" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="397532">
+                <h3>Well Pharmacy</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>11 Market Street</span><br>          <span>Penistone</span><br>        <span itemprop="postalCode">S36 6BZ</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/well-pharmacy-397532" class="details-link">
                   More
                 </a>
               </div>
@@ -22363,18 +22363,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="398673">
-                <h3>Wortley Golf Club</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Wortley Golf Club</span><br>          <span>Hermit Hill Lane</span><br>          <span>Wortley</span><br>        <span itemprop="postalCode">S35 7DF</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/wortley-golf-club-398673" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="767320">
                 <h3>Wortley Golf Club</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -22384,6 +22372,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/wortley-golf-club-767320" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="398673">
+                <h3>Wortley Golf Club</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Wortley Golf Club</span><br>          <span>Hermit Hill Lane</span><br>          <span>Wortley</span><br>        <span itemprop="postalCode">S35 7DF</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/wortley-golf-club-398673" class="details-link">
                   More
                 </a>
               </div>

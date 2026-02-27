@@ -19,7 +19,7 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-background:light-dark(#fff,#2d2d2d);--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-color:light-dark(#666,#aaa);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-color:light-dark(#000,#fff);--card-background:light-dark(#fff,#2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-color-lowlight:#fff;--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939);--button-cta-bg:light-dark(var(--hygiene-green),var(--hygiene-green-lowlight));--button-cta-color:light-dark(#000,#000);--button-cta-bg-hover:light-dark(var(--hygiene-green-highlight),var(--hygiene-green));--button-cta-color-hover:light-dark(#000,#000)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
     .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid #fff3;color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid #ffffff4d;color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
@@ -4315,18 +4315,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/asian-sweet-corn-1018268" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1859347">
-                <h3>Asiana, Sushi And Poke</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Ground Floor</span><br>          <span>Victoria Gate Shopping Mall</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS2 7AU</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/asiana-sushi-and-poke-1859347" class="details-link">
                   More
                 </a>
               </div>
@@ -12220,18 +12208,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="812315">
-                <h3>Caffe Nero</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>University Of Leeds</span><br>          <span>Laidlaw Library</span><br>          <span>181 Woodhouse Lane</span><br>          <span>Woodhouse</span><br>        <span itemprop="postalCode">LS2 3AR</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/caffe-nero-812315" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1215176">
                 <h3>Caffe Nero</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12241,6 +12217,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/caffe-nero-1215176" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="812315">
+                <h3>Caffe Nero</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>University Of Leeds</span><br>          <span>Laidlaw Library</span><br>          <span>181 Woodhouse Lane</span><br>          <span>Woodhouse</span><br>        <span itemprop="postalCode">LS2 3AR</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/caffe-nero-812315" class="details-link">
                   More
                 </a>
               </div>
@@ -13036,15 +13024,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1455991">
+<hr>              <div class="establishment" data-establishment-id="1919289">
                 <h3>Capri At The Containers</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 2 Pontefract Road Enterprise Park</span><br>          <span>Pontefract Road</span><br>          <span>Stourton</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS10 1FE</span>
+      <div>No address information available</div>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/capri-at-the-containers-1455991" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/capri-at-the-containers-1919289" class="details-link">
                   More
                 </a>
               </div>
@@ -19895,18 +19883,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1612303">
-                <h3>Costa Coffee</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Costa Coffee Drive Thru</span><br>          <span>Colton Retail Park</span><br>          <span>Stile Hill Way</span><br>          <span>Colton</span><br>        <span itemprop="postalCode">LS15 9JB</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/costa-coffee-1612303" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1601710">
                 <h3>Costa Coffee</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -19916,6 +19892,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/costa-coffee-1601710" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1612303">
+                <h3>Costa Coffee</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Costa Coffee Drive Thru</span><br>          <span>Colton Retail Park</span><br>          <span>Stile Hill Way</span><br>          <span>Colton</span><br>        <span itemprop="postalCode">LS15 9JB</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/costa-coffee-1612303" class="details-link">
                   More
                 </a>
               </div>
@@ -22818,18 +22806,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/dixy-chicken-1176170" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1761781">
-                <h3>Dixy Chicken</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>58 Town Street</span><br>          <span>Horsforth</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS18 4AP</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/dixy-chicken-1761781" class="details-link">
                   More
                 </a>
               </div>
@@ -30014,18 +29990,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1241772">
-                <h3>Greek Olives</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/greek-olives-1241772" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="658675">
                 <h3>Greek Olives</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -30035,6 +29999,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/greek-olives-658675" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1241772">
+                <h3>Greek Olives</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/greek-olives-1241772" class="details-link">
                   More
                 </a>
               </div>
@@ -32544,18 +32520,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="715334">
-                <h3>Headingley Country Markets Group</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/headingley-country-markets-group-715334" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="738486">
                 <h3>Headingley Country Markets Group</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -32565,6 +32529,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/headingley-country-markets-group-738486" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="715334">
+                <h3>Headingley Country Markets Group</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/headingley-country-markets-group-715334" class="details-link">
                   More
                 </a>
               </div>
@@ -36453,18 +36429,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1651878">
-                <h3>Izelias Chocolate</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/izelias-chocolate-1651878" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1875963">
                 <h3>Izelias Chocolate</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -36474,6 +36438,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/izelias-chocolate-1875963" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1651878">
+                <h3>Izelias Chocolate</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/izelias-chocolate-1651878" class="details-link">
                   More
                 </a>
               </div>
@@ -43746,15 +43722,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="438761">
+<hr>              <div class="establishment" data-establishment-id="1919288">
                 <h3>Lord Pizza</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Shop Adjacent 215 Bradford Road</span><br>          <span>East Ardsley</span><br>          <span>Wakefield</span><br>        <span itemprop="postalCode">WF3 2DN</span>
+          <span>Shop Adjacent</span><br>          <span>215 Bradford Road</span><br>          <span>East Ardsley</span><br>          <span>Wakefield</span><br>        <span itemprop="postalCode">WF3 2DN</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/lord-pizza-438761" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/lord-pizza-1919288" class="details-link">
                   More
                 </a>
               </div>
@@ -56282,6 +56258,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1919291">
+                <h3>Peacos</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>82 High Street</span><br>          <span>Kippax</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS25 7AJ</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/peacos-1919291" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1281867">
                 <h3>Peacos Tearoom</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -65025,6 +65013,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1587214">
+                <h3>Sheepscar Bar And Kitchen</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Woodhouse Street</span><br>          <span>Woodhouse</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS6 2JH</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/sheepscar-bar-and-kitchen-1587214" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="319907">
                 <h3>Sheesh Mahal Restaurant</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -65313,18 +65313,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1780359">
-                <h3>Shut Thi Pie &#39;Ole</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/shut-thi-pie-ole-1780359" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1915416">
                 <h3>Shut Thi Pie &#39;ole</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -65334,6 +65322,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/shut-thi-pie-ole-1915416" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1780359">
+                <h3>Shut Thi Pie &#39;Ole</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/shut-thi-pie-ole-1780359" class="details-link">
                   More
                 </a>
               </div>
@@ -66092,18 +66092,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1837993">
-                <h3>Slimming World</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/slimming-world-1837993" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1789769">
                 <h3>Slimming World</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -66113,18 +66101,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/slimming-world-1789769" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1843140">
-                <h3>Slimming World</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/slimming-world-1843140" class="details-link">
                   More
                 </a>
               </div>
@@ -66152,6 +66128,30 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1843140">
+                <h3>Slimming World</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/slimming-world-1843140" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1837993">
+                <h3>Slimming World</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/slimming-world-1837993" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1839709">
                 <h3>Slimming World Consultant</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -66176,6 +66176,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1785706">
+                <h3>Slimming World Franchise</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/slimming-world-franchise-1785706" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1800623">
                 <h3>Slimming World Franchise</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -66197,18 +66209,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/slimming-world-franchise-1758286" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1785706">
-                <h3>Slimming World Franchise</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/slimming-world-franchise-1785706" class="details-link">
                   More
                 </a>
               </div>
@@ -67196,6 +67196,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1919280">
+                <h3>SPLMNTS</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>62A Burley Road</span><br>          <span>Burley</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS3 1JX</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/splmnts-1919280" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1697884">
                 <h3>Sports Direct</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -67385,6 +67397,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/springwell-leeds-north-1681462" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1919287">
+                <h3>Springwell Leeds South</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Middleton Road</span><br>          <span>Belle Isle</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS10 3JA</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/springwell-leeds-south-1919287" class="details-link">
                   More
                 </a>
               </div>
@@ -69055,18 +69079,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="320089">
-                <h3>Student Union Coffee Bar</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Campus Central</span><br>          <span>Headingley Campus</span><br>          <span>Church Wood Avenue</span><br>          <span>West Park</span><br>        <span itemprop="postalCode">LS6 3HJ</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/student-union-coffee-bar-320089" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1081221">
                 <h3>Student Union Shop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -70027,15 +70039,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="405911">
+<hr>              <div class="establishment" data-establishment-id="1919292">
                 <h3>Superdrug</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 5A White Rose Shopping Centre</span><br>          <span>Dewsbury Road</span><br>          <span>Morley</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS11 8LL</span>
+          <span>Units 45 And 46 White Rose Shopping Centre</span><br>          <span>Dewsbury Road</span><br>          <span>Beeston</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS11 8LL</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/superdrug-405911" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/superdrug-1919292" class="details-link">
                   More
                 </a>
               </div>
@@ -71059,15 +71071,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1695916">
+<hr>              <div class="establishment" data-establishment-id="1919285">
                 <h3>Table 26</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>12 Church Lane</span><br>          <span>Swillington</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS26 8DX</span>
+          <span>Table 26 Restaurant</span><br>          <span>12 Church Lane</span><br>          <span>Swillington</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS26 8DX</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/table-26-1695916" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/table-26-1919285" class="details-link">
                   More
                 </a>
               </div>
@@ -73347,6 +73359,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/the-balti-house-322168" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1919281">
+                <h3>The Banana Pudding Co</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/the-banana-pudding-co-1919281" class="details-link">
                   More
                 </a>
               </div>
@@ -75663,18 +75687,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="323031">
-                <h3>The Funeral Home</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Stony Royd</span><br>          <span>Farsley</span><br>          <span>Pudsey</span><br>        <span itemprop="postalCode">LS28 5JA</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/the-funeral-home-323031" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1284711">
                 <h3>The Funky Indian</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -75684,6 +75696,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/the-funky-indian-1284711" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1919282">
+                <h3>The Funky Indian &amp; GetFunkd, Funky Cafe</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>116 - 118 Richardshaw Lane</span><br>          <span>Stanningley</span><br>          <span>Pudsey</span><br>        <span itemprop="postalCode">LS28 6BN</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/the-funky-indian-getfunkd-funky-cafe-1919282" class="details-link">
                   More
                 </a>
               </div>
@@ -77823,18 +77847,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1553195">
-                <h3>The Peckish Penguin</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/the-peckish-penguin-1553195" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="844040">
                 <h3>The Penny Hill</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -78875,6 +78887,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/the-sweet-quarter-1717699" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1919284">
+                <h3>The Sweet Spot</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/the-sweet-spot-1919284" class="details-link">
                   More
                 </a>
               </div>
@@ -80210,6 +80234,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="320089">
+                <h3>Tiki</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Campus Central</span><br>          <span>Headingley Campus</span><br>          <span>Church Wood Avenue</span><br>          <span>West Park</span><br>        <span itemprop="postalCode">LS6 3HJ</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/tiki-320089" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1887666">
                 <h3>Tikka Nation</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -80486,18 +80522,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1587214">
-                <h3>TJ&#39;s Bar /Sheepscar Bar And Kitchen</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Woodhouse Street</span><br>          <span>Woodhouse</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS6 2JH</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/tjs-bar-sheepscar-bar-and-kitchen-1587214" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1828098">
                 <h3>TKR</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -80699,6 +80723,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/tony-woods-family-butchers-320483" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1919283">
+                <h3>Tooty Treats</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/tooty-treats-1919283" class="details-link">
                   More
                 </a>
               </div>
@@ -85500,15 +85536,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1007028">
-                <h3>Woodend Fish Shop</h3>
+<hr>              <div class="establishment" data-establishment-id="1919286">
+                <h3>Woodend Fish And Chip Shop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>57 Leeds Road</span><br>          <span>Allerton Bywater</span><br>          <span>Castleford</span><br>        <span itemprop="postalCode">WF10 2ES</span>
+          <span>Woodend Traditional Fish And Chips</span><br>          <span>57 Leeds Road</span><br>          <span>Allerton Bywater</span><br>          <span>Castleford</span><br>        <span itemprop="postalCode">WF10 2ES</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/woodend-fish-shop-1007028" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/woodend-fish-and-chip-shop-1919286" class="details-link">
                   More
                 </a>
               </div>
@@ -86448,6 +86484,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1919290">
+                <h3>Yorkshire Waffles</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/yorkshire-waffles-1919290" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1744089">
                 <h3>Yorkshire Wrapper</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -86556,18 +86604,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1837980">
-                <h3>Yum Yum Pizza</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>67 Town Street</span><br>          <span>Armley</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS12 3HD</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/yum-yum-pizza-1837980" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1830996">
                 <h3>Yum Yum Pizza</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -86577,6 +86613,18 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/yum-yum-pizza-1830996" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1837980">
+                <h3>Yum Yum Pizza</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>67 Town Street</span><br>          <span>Armley</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS12 3HD</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/yum-yum-pizza-1837980" class="details-link">
                   More
                 </a>
               </div>
@@ -86744,18 +86792,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/zan-asian-1796775" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1885575">
-                <h3>Zanziani</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/zanziani-1885575" class="details-link">
                   More
                 </a>
               </div>
@@ -86972,18 +87008,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/zoya-morley-1284697" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="735593">
-                <h3>Zoya Restaurant</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>76 Aberford Road</span><br>          <span>Oulton</span><br>          <span>Leeds</span><br>        <span itemprop="postalCode">LS26 8HP</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/zoya-restaurant-735593" class="details-link">
                   More
                 </a>
               </div>

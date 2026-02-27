@@ -19,7 +19,7 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-background:light-dark(#fff,#2d2d2d);--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-color:light-dark(#666,#aaa);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-color:light-dark(#000,#fff);--card-background:light-dark(#fff,#2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-color-lowlight:#fff;--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939);--button-cta-bg:light-dark(var(--hygiene-green),var(--hygiene-green-lowlight));--button-cta-color:light-dark(#000,#000);--button-cta-bg-hover:light-dark(var(--hygiene-green-highlight),var(--hygiene-green));--button-cta-color-hover:light-dark(#000,#000)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
     .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid #fff3;color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid #ffffff4d;color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
@@ -1594,18 +1594,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1223802">
-                <h3>Bespoke Care Group Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-wales/bespoke-care-group-ltd-1223802" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1250119">
                 <h3>Bespoke Care Group Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -1615,6 +1603,18 @@
 </div>
 
                 <a href="/region-wales/bespoke-care-group-ltd-1250119" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1223802">
+                <h3>Bespoke Care Group Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-wales/bespoke-care-group-ltd-1223802" class="details-link">
                   More
                 </a>
               </div>
@@ -4546,18 +4546,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="57610">
-                <h3>CK&#39;s Supermarket</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>38-39 Swansea Road</span><br>          <span>Waunarlwydd</span><br>        <span itemprop="postalCode">SA5 4TQ</span>
-  </address>
-</div>
-
-                <a href="/region-wales/cks-supermarket-57610" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="56193">
                 <h3>CK&#39;s Supermarket</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4567,6 +4555,18 @@
 </div>
 
                 <a href="/region-wales/cks-supermarket-56193" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="57610">
+                <h3>CK&#39;s Supermarket</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>38-39 Swansea Road</span><br>          <span>Waunarlwydd</span><br>        <span itemprop="postalCode">SA5 4TQ</span>
+  </address>
+</div>
+
+                <a href="/region-wales/cks-supermarket-57610" class="details-link">
                   More
                 </a>
               </div>
@@ -5170,18 +5170,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="129858">
-                <h3>Commercial Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>311 Neath Road</span><br>          <span>Plasmarl</span><br>        <span itemprop="postalCode">SA6 8JU</span>
-  </address>
-</div>
-
-                <a href="/region-wales/commercial-inn-129858" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1722799">
                 <h3>Commercial Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -5191,6 +5179,18 @@
 </div>
 
                 <a href="/region-wales/commercial-inn-1722799" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="129858">
+                <h3>Commercial Inn</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>311 Neath Road</span><br>          <span>Plasmarl</span><br>        <span itemprop="postalCode">SA6 8JU</span>
+  </address>
+</div>
+
+                <a href="/region-wales/commercial-inn-129858" class="details-link">
                   More
                 </a>
               </div>
@@ -5242,30 +5242,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1294672">
-                <h3>Co-op</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>127 Walter Road</span><br>          <span>City Centre</span><br>        <span itemprop="postalCode">SA1 5RG</span>
-  </address>
-</div>
-
-                <a href="/region-wales/co-op-1294672" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="839437">
-                <h3>Co-op</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>High Street</span><br>          <span>Clydach</span><br>        <span itemprop="postalCode">SA6 5LJ</span>
-  </address>
-</div>
-
-                <a href="/region-wales/co-op-839437" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1203008">
                 <h3>Co-op</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -5278,6 +5254,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1294672">
+                <h3>Co-op</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>127 Walter Road</span><br>          <span>City Centre</span><br>        <span itemprop="postalCode">SA1 5RG</span>
+  </address>
+</div>
+
+                <a href="/region-wales/co-op-1294672" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1734881">
                 <h3>Co-op</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -5287,6 +5275,18 @@
 </div>
 
                 <a href="/region-wales/co-op-1734881" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="839437">
+                <h3>Co-op</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>High Street</span><br>          <span>Clydach</span><br>        <span itemprop="postalCode">SA6 5LJ</span>
+  </address>
+</div>
+
+                <a href="/region-wales/co-op-839437" class="details-link">
                   More
                 </a>
               </div>
@@ -5422,18 +5422,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="338692">
-                <h3>Costa Coffee</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>9-11 White Walls</span><br>          <span>City Centre</span><br>        <span itemprop="postalCode">SA1 3AA</span>
-  </address>
-</div>
-
-                <a href="/region-wales/costa-coffee-338692" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="740883">
                 <h3>Costa Coffee</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -5443,6 +5431,18 @@
 </div>
 
                 <a href="/region-wales/costa-coffee-740883" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="338692">
+                <h3>Costa Coffee</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>9-11 White Walls</span><br>          <span>City Centre</span><br>        <span itemprop="postalCode">SA1 3AA</span>
+  </address>
+</div>
+
+                <a href="/region-wales/costa-coffee-338692" class="details-link">
                   More
                 </a>
               </div>
@@ -5530,18 +5530,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1106056">
-                <h3>Costa Coffee Drive Thru</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Parc Cwmdu</span><br>          <span>Carmarthen Road</span><br>        <span itemprop="postalCode">SA5 8LJ</span>
-  </address>
-</div>
-
-                <a href="/region-wales/costa-coffee-drive-thru-1106056" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1300757">
                 <h3>Costa Coffee Drive Thru</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -5551,6 +5539,18 @@
 </div>
 
                 <a href="/region-wales/costa-coffee-drive-thru-1300757" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1106056">
+                <h3>Costa Coffee Drive Thru</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Parc Cwmdu</span><br>          <span>Carmarthen Road</span><br>        <span itemprop="postalCode">SA5 8LJ</span>
+  </address>
+</div>
+
+                <a href="/region-wales/costa-coffee-drive-thru-1106056" class="details-link">
                   More
                 </a>
               </div>
@@ -5566,18 +5566,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1044021">
-                <h3>Costa Coffee Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Parc Tawe</span><br>          <span>City Centre</span><br>        <span itemprop="postalCode">SA1 2AL</span>
-  </address>
-</div>
-
-                <a href="/region-wales/costa-coffee-ltd-1044021" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="811426">
                 <h3>Costa Coffee Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -5587,6 +5575,18 @@
 </div>
 
                 <a href="/region-wales/costa-coffee-ltd-811426" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1044021">
+                <h3>Costa Coffee Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Parc Tawe</span><br>          <span>City Centre</span><br>        <span itemprop="postalCode">SA1 2AL</span>
+  </address>
+</div>
+
+                <a href="/region-wales/costa-coffee-ltd-1044021" class="details-link">
                   More
                 </a>
               </div>
@@ -6394,18 +6394,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="51582">
-                <h3>Davies of Mumbles</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>95 Eversley Road</span><br>          <span>Sketty</span><br>        <span itemprop="postalCode">SA2 9DE</span>
-  </address>
-</div>
-
-                <a href="/region-wales/davies-of-mumbles-51582" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1649000">
                 <h3>Davies Of Mumbles</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6415,6 +6403,18 @@
 </div>
 
                 <a href="/region-wales/davies-of-mumbles-1649000" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="51582">
+                <h3>Davies of Mumbles</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>95 Eversley Road</span><br>          <span>Sketty</span><br>        <span itemprop="postalCode">SA2 9DE</span>
+  </address>
+</div>
+
+                <a href="/region-wales/davies-of-mumbles-51582" class="details-link">
                   More
                 </a>
               </div>
@@ -6778,30 +6778,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="740931">
-                <h3>Domino&#39;s Pizza</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>5 Capel Buildings</span><br>          <span>Clydach</span><br>        <span itemprop="postalCode">SA6 5LW</span>
-  </address>
-</div>
-
-                <a href="/region-wales/dominos-pizza-740931" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="862253">
-                <h3>Domino&#39;s Pizza</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 2 White City Road</span><br>          <span>Fforestfach</span><br>        <span itemprop="postalCode">SA5 4EE</span>
-  </address>
-</div>
-
-                <a href="/region-wales/dominos-pizza-862253" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1333842">
                 <h3>Domino&#39;s Pizza</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6811,6 +6787,18 @@
 </div>
 
                 <a href="/region-wales/dominos-pizza-1333842" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="50066">
+                <h3>Domino&#39;s Pizza</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>10 Dillwyn Street</span><br>          <span>City Centre</span><br>        <span itemprop="postalCode">SA1 4AE</span>
+  </address>
+</div>
+
+                <a href="/region-wales/dominos-pizza-50066" class="details-link">
                   More
                 </a>
               </div>
@@ -6826,15 +6814,27 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="50066">
+<hr>              <div class="establishment" data-establishment-id="862253">
                 <h3>Domino&#39;s Pizza</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>10 Dillwyn Street</span><br>          <span>City Centre</span><br>        <span itemprop="postalCode">SA1 4AE</span>
+          <span>Unit 2 White City Road</span><br>          <span>Fforestfach</span><br>        <span itemprop="postalCode">SA5 4EE</span>
   </address>
 </div>
 
-                <a href="/region-wales/dominos-pizza-50066" class="details-link">
+                <a href="/region-wales/dominos-pizza-862253" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="740931">
+                <h3>Domino&#39;s Pizza</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>5 Capel Buildings</span><br>          <span>Clydach</span><br>        <span itemprop="postalCode">SA6 5LW</span>
+  </address>
+</div>
+
+                <a href="/region-wales/dominos-pizza-740931" class="details-link">
                   More
                 </a>
               </div>
@@ -7498,18 +7498,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1848743">
-                <h3>Ephesus Pizzeria</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>96 Clase Road</span><br>          <span>Morriston</span><br>        <span itemprop="postalCode">SA6 8DY</span>
-  </address>
-</div>
-
-                <a href="/region-wales/ephesus-pizzeria-1848743" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1908192">
                 <h3>Ephesus Pizzeria</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -7519,6 +7507,18 @@
 </div>
 
                 <a href="/region-wales/ephesus-pizzeria-1908192" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1848743">
+                <h3>Ephesus Pizzeria</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>96 Clase Road</span><br>          <span>Morriston</span><br>        <span itemprop="postalCode">SA6 8DY</span>
+  </address>
+</div>
+
+                <a href="/region-wales/ephesus-pizzeria-1848743" class="details-link">
                   More
                 </a>
               </div>
@@ -7726,15 +7726,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="811417">
+<hr>              <div class="establishment" data-establishment-id="1698898">
                 <h3>Family Shopper</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>27-29 St Teilo Street</span><br>          <span>Pontarddulais</span><br>        <span itemprop="postalCode">SA4 8SZ</span>
+          <span>5-6 Brynhyfryd Square</span><br>          <span>Brynhyfryd</span><br>        <span itemprop="postalCode">SA5 9EB</span>
   </address>
 </div>
 
-                <a href="/region-wales/family-shopper-811417" class="details-link">
+                <a href="/region-wales/family-shopper-1698898" class="details-link">
                   More
                 </a>
               </div>
@@ -7750,15 +7750,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1698898">
+<hr>              <div class="establishment" data-establishment-id="811417">
                 <h3>Family Shopper</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>5-6 Brynhyfryd Square</span><br>          <span>Brynhyfryd</span><br>        <span itemprop="postalCode">SA5 9EB</span>
+          <span>27-29 St Teilo Street</span><br>          <span>Pontarddulais</span><br>        <span itemprop="postalCode">SA4 8SZ</span>
   </address>
 </div>
 
-                <a href="/region-wales/family-shopper-1698898" class="details-link">
+                <a href="/region-wales/family-shopper-811417" class="details-link">
                   More
                 </a>
               </div>
@@ -7822,18 +7822,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1247355">
-                <h3>Farmfoods Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Farm Foods Ltd</span><br>          <span>Lion Way</span><br>          <span>Swansea Enterprise Park</span><br>        <span itemprop="postalCode">SA7 9FB</span>
-  </address>
-</div>
-
-                <a href="/region-wales/farmfoods-ltd-1247355" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1082035">
                 <h3>Farmfoods Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -7843,6 +7831,18 @@
 </div>
 
                 <a href="/region-wales/farmfoods-ltd-1082035" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1247355">
+                <h3>Farmfoods Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Farm Foods Ltd</span><br>          <span>Lion Way</span><br>          <span>Swansea Enterprise Park</span><br>        <span itemprop="postalCode">SA7 9FB</span>
+  </address>
+</div>
+
+                <a href="/region-wales/farmfoods-ltd-1247355" class="details-link">
                   More
                 </a>
               </div>
@@ -8278,18 +8278,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1351054">
-                <h3>Fountain Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>12 Woodfield Street</span><br>          <span>Morriston</span><br>        <span itemprop="postalCode">SA6 8AQ</span>
-  </address>
-</div>
-
-                <a href="/region-wales/fountain-inn-1351054" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="108125">
                 <h3>Fountain Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -8299,6 +8287,18 @@
 </div>
 
                 <a href="/region-wales/fountain-inn-108125" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1351054">
+                <h3>Fountain Inn</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>12 Woodfield Street</span><br>          <span>Morriston</span><br>        <span itemprop="postalCode">SA6 8AQ</span>
+  </address>
+</div>
+
+                <a href="/region-wales/fountain-inn-1351054" class="details-link">
                   More
                 </a>
               </div>
@@ -9226,18 +9226,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1823496">
-                <h3>Gourmet Pastry Shop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-wales/gourmet-pastry-shop-1823496" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1908186">
                 <h3>Gourmet Pastry Shop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9247,6 +9235,18 @@
 </div>
 
                 <a href="/region-wales/gourmet-pastry-shop-1908186" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1823496">
+                <h3>Gourmet Pastry Shop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-wales/gourmet-pastry-shop-1823496" class="details-link">
                   More
                 </a>
               </div>
@@ -10018,18 +10018,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="63067">
-                <h3>Greggs</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>241 Oxford Street</span><br>          <span>Swansea</span><br>        <span itemprop="postalCode">SA1 3BL</span>
-  </address>
-</div>
-
-                <a href="/region-wales/greggs-63067" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1214364">
                 <h3>Greggs</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -10039,6 +10027,42 @@
 </div>
 
                 <a href="/region-wales/greggs-1214364" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1044027">
+                <h3>Greggs</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 4 New Cut Road</span><br>          <span>Swansea</span><br>        <span itemprop="postalCode">SA1 8AP</span>
+  </address>
+</div>
+
+                <a href="/region-wales/greggs-1044027" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="869124">
+                <h3>Greggs</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 1 Heron Way</span><br>          <span>Llansamlet</span><br>        <span itemprop="postalCode">SA6 8PS</span>
+  </address>
+</div>
+
+                <a href="/region-wales/greggs-869124" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="63067">
+                <h3>Greggs</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>241 Oxford Street</span><br>          <span>Swansea</span><br>        <span itemprop="postalCode">SA1 3BL</span>
+  </address>
+</div>
+
+                <a href="/region-wales/greggs-63067" class="details-link">
                   More
                 </a>
               </div>
@@ -10063,30 +10087,6 @@
 </div>
 
                 <a href="/region-wales/greggs-120562" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="869124">
-                <h3>Greggs</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 1 Heron Way</span><br>          <span>Llansamlet</span><br>        <span itemprop="postalCode">SA6 8PS</span>
-  </address>
-</div>
-
-                <a href="/region-wales/greggs-869124" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1044027">
-                <h3>Greggs</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 4 New Cut Road</span><br>          <span>Swansea</span><br>        <span itemprop="postalCode">SA1 8AP</span>
-  </address>
-</div>
-
-                <a href="/region-wales/greggs-1044027" class="details-link">
                   More
                 </a>
               </div>
@@ -10138,30 +10138,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1709633">
-                <h3>Greggs PLC</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>106 Sterry Road</span><br>          <span>Gowerton</span><br>        <span itemprop="postalCode">SA4 3BW</span>
-  </address>
-</div>
-
-                <a href="/region-wales/greggs-plc-1709633" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1765980">
-                <h3>Greggs PLC</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>270 Cockett Road</span><br>          <span>Cockett</span><br>        <span itemprop="postalCode">SA2 0FN</span>
-  </address>
-</div>
-
-                <a href="/region-wales/greggs-plc-1765980" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1432397">
                 <h3>Greggs PLC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -10174,15 +10150,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1669752">
+<hr>              <div class="establishment" data-establishment-id="1908191">
                 <h3>Greggs PLC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 2 Rhodfa Fadog</span><br>          <span>Cwmrhydyceirw</span><br>        <span itemprop="postalCode">SA6 6LQ</span>
+          <span>254 Oxford Street</span><br>          <span>City Centre</span><br>        <span itemprop="postalCode">SA1 3BN</span>
   </address>
 </div>
 
-                <a href="/region-wales/greggs-plc-1669752" class="details-link">
+                <a href="/region-wales/greggs-plc-1908191" class="details-link">
                   More
                 </a>
               </div>
@@ -10198,18 +10174,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1734894">
-                <h3>Greggs PLC</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-wales/greggs-plc-1734894" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1557338">
                 <h3>Greggs PLC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -10222,15 +10186,51 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1908191">
+<hr>              <div class="establishment" data-establishment-id="1669752">
                 <h3>Greggs PLC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>254 Oxford Street</span><br>          <span>City Centre</span><br>        <span itemprop="postalCode">SA1 3BN</span>
+          <span>Unit 2 Rhodfa Fadog</span><br>          <span>Cwmrhydyceirw</span><br>        <span itemprop="postalCode">SA6 6LQ</span>
   </address>
 </div>
 
-                <a href="/region-wales/greggs-plc-1908191" class="details-link">
+                <a href="/region-wales/greggs-plc-1669752" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1709633">
+                <h3>Greggs PLC</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>106 Sterry Road</span><br>          <span>Gowerton</span><br>        <span itemprop="postalCode">SA4 3BW</span>
+  </address>
+</div>
+
+                <a href="/region-wales/greggs-plc-1709633" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1734894">
+                <h3>Greggs PLC</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-wales/greggs-plc-1734894" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1765980">
+                <h3>Greggs PLC</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>270 Cockett Road</span><br>          <span>Cockett</span><br>        <span itemprop="postalCode">SA2 0FN</span>
+  </address>
+</div>
+
+                <a href="/region-wales/greggs-plc-1765980" class="details-link">
                   More
                 </a>
               </div>
@@ -11698,18 +11698,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1787034">
-                <h3>Jak&#39;s Stores</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-wales/jaks-stores-1787034" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1855976">
                 <h3>Jak&#39;s Stores</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11719,6 +11707,18 @@
 </div>
 
                 <a href="/region-wales/jaks-stores-1855976" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1787034">
+                <h3>Jak&#39;s Stores</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-wales/jaks-stores-1787034" class="details-link">
                   More
                 </a>
               </div>
@@ -11806,39 +11806,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1316170">
+<hr>              <div class="establishment" data-establishment-id="110273">
                 <h3>Jenkins Bakery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit B</span><br>          <span>692 Llangyfelach Road</span><br>        <span itemprop="postalCode">SA5 9EL</span>
+          <span>40 St Teilo Street</span><br>          <span>Pontarddulais</span><br>        <span itemprop="postalCode">SA4 8SZ</span>
   </address>
 </div>
 
-                <a href="/region-wales/jenkins-bakery-1316170" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="63964">
-                <h3>Jenkins Bakery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>64 High Street</span><br>          <span>Gorseinon</span><br>        <span itemprop="postalCode">SA4 4BP</span>
-  </address>
-</div>
-
-                <a href="/region-wales/jenkins-bakery-63964" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="54026">
-                <h3>Jenkins Bakery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>26 Woodfield Street</span><br>          <span>Morriston</span><br>        <span itemprop="postalCode">SA6 8AB</span>
-  </address>
-</div>
-
-                <a href="/region-wales/jenkins-bakery-54026" class="details-link">
+                <a href="/region-wales/jenkins-bakery-110273" class="details-link">
                   More
                 </a>
               </div>
@@ -11854,39 +11830,39 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="61908">
+<hr>              <div class="establishment" data-establishment-id="1316170">
                 <h3>Jenkins Bakery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>18 White Walls</span><br>          <span>City Centre</span><br>        <span itemprop="postalCode">SA1 3AA</span>
+          <span>Unit B</span><br>          <span>692 Llangyfelach Road</span><br>        <span itemprop="postalCode">SA5 9EL</span>
   </address>
 </div>
 
-                <a href="/region-wales/jenkins-bakery-61908" class="details-link">
+                <a href="/region-wales/jenkins-bakery-1316170" class="details-link">
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="110273">
+<hr>              <div class="establishment" data-establishment-id="54026">
                 <h3>Jenkins Bakery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>40 St Teilo Street</span><br>          <span>Pontarddulais</span><br>        <span itemprop="postalCode">SA4 8SZ</span>
+          <span>26 Woodfield Street</span><br>          <span>Morriston</span><br>        <span itemprop="postalCode">SA6 8AB</span>
   </address>
 </div>
 
-                <a href="/region-wales/jenkins-bakery-110273" class="details-link">
+                <a href="/region-wales/jenkins-bakery-54026" class="details-link">
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="654806">
+<hr>              <div class="establishment" data-establishment-id="63964">
                 <h3>Jenkins Bakery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>703 Pentregethin Road</span><br>          <span>Portmead</span><br>        <span itemprop="postalCode">SA5 5EY</span>
+          <span>64 High Street</span><br>          <span>Gorseinon</span><br>        <span itemprop="postalCode">SA4 4BP</span>
   </address>
 </div>
 
-                <a href="/region-wales/jenkins-bakery-654806" class="details-link">
+                <a href="/region-wales/jenkins-bakery-63964" class="details-link">
                   More
                 </a>
               </div>
@@ -11899,6 +11875,30 @@
 </div>
 
                 <a href="/region-wales/jenkins-bakery-61791" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="61908">
+                <h3>Jenkins Bakery</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>18 White Walls</span><br>          <span>City Centre</span><br>        <span itemprop="postalCode">SA1 3AA</span>
+  </address>
+</div>
+
+                <a href="/region-wales/jenkins-bakery-61908" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="654806">
+                <h3>Jenkins Bakery</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>703 Pentregethin Road</span><br>          <span>Portmead</span><br>        <span itemprop="postalCode">SA5 5EY</span>
+  </address>
+</div>
+
+                <a href="/region-wales/jenkins-bakery-654806" class="details-link">
                   More
                 </a>
               </div>
@@ -13186,18 +13186,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="869143">
-                <h3>Lidl Great Britain Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Sway Road</span><br>          <span>Morriston</span><br>        <span itemprop="postalCode">SA6 6JA</span>
-  </address>
-</div>
-
-                <a href="/region-wales/lidl-great-britain-ltd-869143" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="869138">
                 <h3>Lidl Great Britain Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13222,6 +13210,42 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="869143">
+                <h3>Lidl Great Britain Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Sway Road</span><br>          <span>Morriston</span><br>        <span itemprop="postalCode">SA6 6JA</span>
+  </address>
+</div>
+
+                <a href="/region-wales/lidl-great-britain-ltd-869143" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1551761">
+                <h3>Lifestyle Express</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>187 Middle Road</span><br>          <span>Cwmdu</span><br>        <span itemprop="postalCode">SA5 8EZ</span>
+  </address>
+</div>
+
+                <a href="/region-wales/lifestyle-express-1551761" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1294689">
+                <h3>Lifestyle Express</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>861-863 Llangyfelach Road</span><br>          <span>Treboeth</span><br>        <span itemprop="postalCode">SA5 9AU</span>
+  </address>
+</div>
+
+                <a href="/region-wales/lifestyle-express-1294689" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="616072">
                 <h3>Lifestyle Express</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13243,30 +13267,6 @@
 </div>
 
                 <a href="/region-wales/lifestyle-express-63134" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1294689">
-                <h3>Lifestyle Express</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>861-863 Llangyfelach Road</span><br>          <span>Treboeth</span><br>        <span itemprop="postalCode">SA5 9AU</span>
-  </address>
-</div>
-
-                <a href="/region-wales/lifestyle-express-1294689" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1551761">
-                <h3>Lifestyle Express</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>187 Middle Road</span><br>          <span>Cwmdu</span><br>        <span itemprop="postalCode">SA5 8EZ</span>
-  </address>
-</div>
-
-                <a href="/region-wales/lifestyle-express-1551761" class="details-link">
                   More
                 </a>
               </div>
@@ -14818,18 +14818,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="52746">
-                <h3>McDonalds</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Mcdonalds Restaurants Ltd</span><br>          <span>Fabian Way</span><br>          <span>Port Tennant</span><br>        <span itemprop="postalCode">SA1 8LD</span>
-  </address>
-</div>
-
-                <a href="/region-wales/mcdonalds-52746" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="130118">
                 <h3>McDonalds</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -14839,6 +14827,18 @@
 </div>
 
                 <a href="/region-wales/mcdonalds-130118" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="52746">
+                <h3>McDonalds</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Mcdonalds Restaurants Ltd</span><br>          <span>Fabian Way</span><br>          <span>Port Tennant</span><br>        <span itemprop="postalCode">SA1 8LD</span>
+  </address>
+</div>
+
+                <a href="/region-wales/mcdonalds-52746" class="details-link">
                   More
                 </a>
               </div>
@@ -15394,18 +15394,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1366124">
-                <h3>Mister Softee</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-wales/mister-softee-1366124" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="758852">
                 <h3>Mister Softee</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -15415,6 +15403,18 @@
 </div>
 
                 <a href="/region-wales/mister-softee-758852" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1366124">
+                <h3>Mister Softee</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-wales/mister-softee-1366124" class="details-link">
                   More
                 </a>
               </div>
@@ -16857,18 +16857,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="539892">
-                <h3>Nisa Local</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>169 Ravenhill Road</span><br>          <span>Ravenhill</span><br>        <span itemprop="postalCode">SA5 5AJ</span>
-  </address>
-</div>
-
-                <a href="/region-wales/nisa-local-539892" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="62114">
                 <h3>Nisa Local</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -16878,6 +16866,18 @@
 </div>
 
                 <a href="/region-wales/nisa-local-62114" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="539892">
+                <h3>Nisa Local</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>169 Ravenhill Road</span><br>          <span>Ravenhill</span><br>        <span itemprop="postalCode">SA5 5AJ</span>
+  </address>
+</div>
+
+                <a href="/region-wales/nisa-local-539892" class="details-link">
                   More
                 </a>
               </div>
@@ -17457,18 +17457,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1519529">
-                <h3>One Stop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>98 Port Tennant Road</span><br>          <span>Port Tennant</span><br>        <span itemprop="postalCode">SA1 8JG</span>
-  </address>
-</div>
-
-                <a href="/region-wales/one-stop-1519529" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="745767">
                 <h3>One Stop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -17490,6 +17478,18 @@
 </div>
 
                 <a href="/region-wales/one-stop-1494600" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1519529">
+                <h3>One Stop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>98 Port Tennant Road</span><br>          <span>Port Tennant</span><br>        <span itemprop="postalCode">SA1 8JG</span>
+  </address>
+</div>
+
+                <a href="/region-wales/one-stop-1519529" class="details-link">
                   More
                 </a>
               </div>
@@ -18980,18 +18980,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1563122">
-                <h3>Plough and Harrow</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-wales/plough-and-harrow-1563122" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1842509">
                 <h3>Plough and Harrow</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -19001,6 +18989,18 @@
 </div>
 
                 <a href="/region-wales/plough-and-harrow-1842509" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1563122">
+                <h3>Plough and Harrow</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-wales/plough-and-harrow-1563122" class="details-link">
                   More
                 </a>
               </div>
@@ -19376,18 +19376,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1408907">
-                <h3>Poundland</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>18 Oxford Street</span><br>          <span>Swansea</span><br>        <span itemprop="postalCode">SA1 3AL</span>
-  </address>
-</div>
-
-                <a href="/region-wales/poundland-1408907" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="869120">
                 <h3>Poundland</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -19397,6 +19385,18 @@
 </div>
 
                 <a href="/region-wales/poundland-869120" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1408907">
+                <h3>Poundland</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>18 Oxford Street</span><br>          <span>Swansea</span><br>        <span itemprop="postalCode">SA1 3AL</span>
+  </address>
+</div>
+
+                <a href="/region-wales/poundland-1408907" class="details-link">
                   More
                 </a>
               </div>
@@ -19424,18 +19424,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="63988">
-                <h3>Premier</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>361 Townhill Road</span><br>          <span>Mayhill</span><br>        <span itemprop="postalCode">SA1 6PA</span>
-  </address>
-</div>
-
-                <a href="/region-wales/premier-63988" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="66013">
                 <h3>Premier</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -19445,6 +19433,18 @@
 </div>
 
                 <a href="/region-wales/premier-66013" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="63988">
+                <h3>Premier</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>361 Townhill Road</span><br>          <span>Mayhill</span><br>        <span itemprop="postalCode">SA1 6PA</span>
+  </address>
+</div>
+
+                <a href="/region-wales/premier-63988" class="details-link">
                   More
                 </a>
               </div>
@@ -19568,18 +19568,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1289251">
-                <h3>Priority Childcare Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-wales/priority-childcare-ltd-1289251" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1351065">
                 <h3>Priority Childcare Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -19613,6 +19601,18 @@
 </div>
 
                 <a href="/region-wales/priority-childcare-ltd-1351063" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1289251">
+                <h3>Priority Childcare Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-wales/priority-childcare-ltd-1289251" class="details-link">
                   More
                 </a>
               </div>
@@ -20564,18 +20564,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="63129">
-                <h3>Sainsburys</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>14 Alexandra Road</span><br>          <span>Gorseinon</span><br>        <span itemprop="postalCode">SA4 4NW</span>
-  </address>
-</div>
-
-                <a href="/region-wales/sainsburys-63129" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="219011">
                 <h3>Sainsburys</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -20585,6 +20573,18 @@
 </div>
 
                 <a href="/region-wales/sainsburys-219011" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="63129">
+                <h3>Sainsburys</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>14 Alexandra Road</span><br>          <span>Gorseinon</span><br>        <span itemprop="postalCode">SA4 4NW</span>
+  </address>
+</div>
+
+                <a href="/region-wales/sainsburys-63129" class="details-link">
                   More
                 </a>
               </div>
@@ -22015,30 +22015,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="64283">
-                <h3>Spar</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>67 St Helens Avenue</span><br>          <span>Brynmill</span><br>        <span itemprop="postalCode">SA1 4NN</span>
-  </address>
-</div>
-
-                <a href="/region-wales/spar-64283" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="745757">
-                <h3>Spar</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>128a Westcross Lane</span><br>          <span>West Cross</span><br>        <span itemprop="postalCode">SA3 5NG</span>
-  </address>
-</div>
-
-                <a href="/region-wales/spar-745757" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1797767">
                 <h3>Spar</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -22060,6 +22036,30 @@
 </div>
 
                 <a href="/region-wales/spar-1316178" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="745757">
+                <h3>Spar</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>128a Westcross Lane</span><br>          <span>West Cross</span><br>        <span itemprop="postalCode">SA3 5NG</span>
+  </address>
+</div>
+
+                <a href="/region-wales/spar-745757" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="64283">
+                <h3>Spar</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>67 St Helens Avenue</span><br>          <span>Brynmill</span><br>        <span itemprop="postalCode">SA1 4NN</span>
+  </address>
+</div>
+
+                <a href="/region-wales/spar-64283" class="details-link">
                   More
                 </a>
               </div>
@@ -22794,18 +22794,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="61767">
-                <h3>Subway</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>50 Uplands Crescent</span><br>          <span>Uplands</span><br>        <span itemprop="postalCode">SA2 0PG</span>
-  </address>
-</div>
-
-                <a href="/region-wales/subway-61767" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="61138">
                 <h3>Subway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -22815,6 +22803,18 @@
 </div>
 
                 <a href="/region-wales/subway-61138" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="61767">
+                <h3>Subway</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>50 Uplands Crescent</span><br>          <span>Uplands</span><br>        <span itemprop="postalCode">SA2 0PG</span>
+  </address>
+</div>
+
+                <a href="/region-wales/subway-61767" class="details-link">
                   More
                 </a>
               </div>
@@ -23070,18 +23070,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1610686">
-                <h3>Swan Catering</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Tirpenry Street</span><br>          <span>Morriston</span><br>        <span itemprop="postalCode">SA6 8EB</span>
-  </address>
-</div>
-
-                <a href="/region-wales/swan-catering-1610686" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1519533">
                 <h3>Swan Catering</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -23091,6 +23079,18 @@
 </div>
 
                 <a href="/region-wales/swan-catering-1519533" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1610686">
+                <h3>Swan Catering</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>1 Tirpenry Street</span><br>          <span>Morriston</span><br>        <span itemprop="postalCode">SA6 8EB</span>
+  </address>
+</div>
+
+                <a href="/region-wales/swan-catering-1610686" class="details-link">
                   More
                 </a>
               </div>
@@ -23706,18 +23706,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1641343">
-                <h3>TA Centre</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-wales/ta-centre-1641343" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1641291">
                 <h3>TA Centre</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -23727,6 +23715,18 @@
 </div>
 
                 <a href="/region-wales/ta-centre-1641291" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1641343">
+                <h3>TA Centre</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-wales/ta-centre-1641343" class="details-link">
                   More
                 </a>
               </div>
@@ -24042,15 +24042,27 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="912468">
+<hr>              <div class="establishment" data-establishment-id="56437">
                 <h3>Tesco Express</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>31-33 Newton Road</span><br>          <span>Mumbles</span><br>        <span itemprop="postalCode">SA3 4BB</span>
+          <span>62 Brynymor Road</span><br>          <span>Gowerton</span><br>        <span itemprop="postalCode">SA4 3EZ</span>
   </address>
 </div>
 
-                <a href="/region-wales/tesco-express-912468" class="details-link">
+                <a href="/region-wales/tesco-express-56437" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="815864">
+                <h3>Tesco Express</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>11-12 De La Beche Street</span><br>          <span>Swansea</span><br>        <span itemprop="postalCode">SA1 3HA</span>
+  </address>
+</div>
+
+                <a href="/region-wales/tesco-express-815864" class="details-link">
                   More
                 </a>
               </div>
@@ -24066,15 +24078,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="56437">
+<hr>              <div class="establishment" data-establishment-id="912468">
                 <h3>Tesco Express</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>62 Brynymor Road</span><br>          <span>Gowerton</span><br>        <span itemprop="postalCode">SA4 3EZ</span>
+          <span>31-33 Newton Road</span><br>          <span>Mumbles</span><br>        <span itemprop="postalCode">SA3 4BB</span>
   </address>
 </div>
 
-                <a href="/region-wales/tesco-express-56437" class="details-link">
+                <a href="/region-wales/tesco-express-912468" class="details-link">
                   More
                 </a>
               </div>
@@ -24099,18 +24111,6 @@
 </div>
 
                 <a href="/region-wales/tesco-express-1333856" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="815864">
-                <h3>Tesco Express</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>11-12 De La Beche Street</span><br>          <span>Swansea</span><br>        <span itemprop="postalCode">SA1 3HA</span>
-  </address>
-</div>
-
-                <a href="/region-wales/tesco-express-815864" class="details-link">
                   More
                 </a>
               </div>
@@ -25242,18 +25242,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1542143">
-                <h3>The farmers Arms</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>284 Swansea Road</span><br>          <span>Waunarlwydd</span><br>        <span itemprop="postalCode">SA5 4SL</span>
-  </address>
-</div>
-
-                <a href="/region-wales/the-farmers-arms-1542143" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1677719">
                 <h3>The Farmers Arms</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -25263,6 +25251,18 @@
 </div>
 
                 <a href="/region-wales/the-farmers-arms-1677719" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1542143">
+                <h3>The farmers Arms</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>284 Swansea Road</span><br>          <span>Waunarlwydd</span><br>        <span itemprop="postalCode">SA5 4SL</span>
+  </address>
+</div>
+
+                <a href="/region-wales/the-farmers-arms-1542143" class="details-link">
                   More
                 </a>
               </div>

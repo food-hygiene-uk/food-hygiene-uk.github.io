@@ -19,7 +19,7 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-background:light-dark(#fff,#2d2d2d);--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-color:light-dark(#666,#aaa);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-color:light-dark(#000,#fff);--card-background:light-dark(#fff,#2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-color-lowlight:#fff;--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939);--button-cta-bg:light-dark(var(--hygiene-green),var(--hygiene-green-lowlight));--button-cta-color:light-dark(#000,#000);--button-cta-bg-hover:light-dark(var(--hygiene-green-highlight),var(--hygiene-green));--button-cta-color-hover:light-dark(#000,#000)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
     .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid #fff3;color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid #ffffff4d;color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
@@ -2831,18 +2831,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1825016">
-                <h3>Benny&#39;s Chicken</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>14 Oldbury Road</span><br>          <span>Rowley Regis</span><br>        <span itemprop="postalCode">B65 0JN</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/bennys-chicken-1825016" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="737410">
                 <h3>Ben&#39;s Whippy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -3488,18 +3476,6 @@
 </div>
 
                 <a href="/region-west-midlands/bobby-supermarket-1702276" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1783253">
-                <h3>Bobs Curry Hut</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/bobs-curry-hut-1783253" class="details-link">
                   More
                 </a>
               </div>
@@ -4616,18 +4592,6 @@
 </div>
 
                 <a href="/region-west-midlands/caldene-rest-home-119785" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1862491">
-                <h3>Candy Cartel</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/candy-cartel-1862491" class="details-link">
                   More
                 </a>
               </div>
@@ -8111,6 +8075,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1913939">
+                <h3>DS Treats</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ds-treats-1913939" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1650993">
                 <h3>Ducafe Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -10124,18 +10100,6 @@
 </div>
 
                 <a href="/region-west-midlands/gough-arms-1777758" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="977042">
-                <h3>Goulash Taste of Hungary</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/goulash-taste-of-hungary-977042" class="details-link">
                   More
                 </a>
               </div>
@@ -12983,18 +12947,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1862475">
-                <h3>Jerk n Juice</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/jerk-n-juice-1862475" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1910392">
                 <h3>Jerk n Juice</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13004,6 +12956,18 @@
 </div>
 
                 <a href="/region-west-midlands/jerk-n-juice-1910392" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1862475">
+                <h3>Jerk n Juice</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/jerk-n-juice-1862475" class="details-link">
                   More
                 </a>
               </div>
@@ -15923,6 +15887,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1658540">
+                <h3>Mango Tree Bar and Grill</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span> 34 Bromford Lane</span><br>          <span>West Bromwich</span><br>        <span itemprop="postalCode">B70 7HW</span>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/mango-tree-bar-and-grill-1658540" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1403252">
                 <h3>Manila Artisan Breads</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -16067,18 +16043,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="918046">
-                <h3>Martha&#39;s Bites</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/marthas-bites-918046" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="141318">
                 <h3>Marty&#39;s Convenience</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -16184,18 +16148,6 @@
 </div>
 
                 <a href="/region-west-midlands/matchaii-1882496" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1884156">
-                <h3>Matin F Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/matin-f-ltd-1884156" class="details-link">
                   More
                 </a>
               </div>
@@ -17039,18 +16991,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1913939">
-                <h3>Mockijtos</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/mockijtos-1913939" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="944747">
                 <h3>Mohammed Yasin Butchery Counter C/O Mustafa Supermarket</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -17720,6 +17660,18 @@
 </div>
 
                 <a href="/region-west-midlands/nayla-news-502658" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1919262">
+                <h3>N&#39;dulgent Buttercream Cakes by Nash</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/ndulgent-buttercream-cakes-by-nash-1919262" class="details-link">
                   More
                 </a>
               </div>
@@ -20758,6 +20710,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1855082">
+                <h3>PumpUp Nutrition</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/pumpup-nutrition-1855082" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1917471">
                 <h3>Punjab Chaap</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -22939,18 +22903,6 @@
 </div>
 
                 <a href="/region-west-midlands/sea-fresh-chippy-1751128" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1370597">
-                <h3>Seasonal Treats Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/seasonal-treats-ltd-1370597" class="details-link">
                   More
                 </a>
               </div>
@@ -25846,18 +25798,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1523326">
-                <h3>Taste di Flava</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/taste-di-flava-1523326" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="575837">
                 <h3>Taste of America Food Court</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -27082,18 +27022,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="89837">
-                <h3>The Gap</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/the-gap-89837" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1687618">
                 <h3>The George</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -27631,18 +27559,6 @@
 </div>
 
                 <a href="/region-west-midlands/the-munch-box-639421" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1453472">
-                <h3>The Neighbourhood Coop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/the-neighbourhood-coop-1453472" class="details-link">
                   More
                 </a>
               </div>
@@ -28558,18 +28474,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1658540">
-                <h3>The White Swan (Kitchen)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span> 34 Bromford Lane</span><br>          <span>West Bromwich</span><br>        <span itemprop="postalCode">B70 7HW</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/the-white-swan-kitchen-1658540" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1396286">
                 <h3>The William Archer</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -29350,6 +29254,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1919263">
+                <h3>Touba Darou Minam Business</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/touba-darou-minam-business-1919263" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1913946">
                 <h3>Tower Road Convenience</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -29551,18 +29467,6 @@
 </div>
 
                 <a href="/region-west-midlands/true-punjab-foods-1870427" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1360707">
-                <h3>Tulip Day Nursery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/tulip-day-nursery-1360707" class="details-link">
                   More
                 </a>
               </div>
@@ -29854,18 +29758,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1387292">
-                <h3>Urban Catering</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/urban-catering-1387292" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1898693">
                 <h3>US Candy King</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -29983,6 +29875,18 @@
 </div>
 
                 <a href="/region-west-midlands/vape-zone-1680373" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1919264">
+                <h3>VASE Academy</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-west-midlands/vase-academy-1919264" class="details-link">
                   More
                 </a>
               </div>
@@ -30619,18 +30523,6 @@
 </div>
 
                 <a href="/region-west-midlands/wednesbury-town-hall-100742" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1523325">
-                <h3>Wee Pam&#39;s Van</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span> Kelvin Way Trading Estate</span><br>          <span>West Bromwich</span><br>        <span itemprop="postalCode">B70 7TP</span>
-  </address>
-</div>
-
-                <a href="/region-west-midlands/wee-pams-van-1523325" class="details-link">
                   More
                 </a>
               </div>
@@ -31546,15 +31438,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1218841">
+<hr>              <div class="establishment" data-establishment-id="1919265">
                 <h3>Zahra Spice</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span> 91 Owen Street</span><br>          <span>Tipton</span><br>        <span itemprop="postalCode">DY4 8ET</span>
+          <span>91  Owen Street</span><br>          <span>Tipton</span><br>        <span itemprop="postalCode">DY4 8ET</span>
   </address>
 </div>
 
-                <a href="/region-west-midlands/zahra-spice-1218841" class="details-link">
+                <a href="/region-west-midlands/zahra-spice-1919265" class="details-link">
                   More
                 </a>
               </div>

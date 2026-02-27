@@ -19,7 +19,7 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-background:light-dark(#fff,#2d2d2d);--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-color:light-dark(#666,#aaa);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-color:light-dark(#000,#fff);--card-background:light-dark(#fff,#2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-color-lowlight:#fff;--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939);--button-cta-bg:light-dark(var(--hygiene-green),var(--hygiene-green-lowlight));--button-cta-color:light-dark(#000,#000);--button-cta-bg-hover:light-dark(var(--hygiene-green-highlight),var(--hygiene-green));--button-cta-color-hover:light-dark(#000,#000)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
     .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid #fff3;color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid #ffffff4d;color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
@@ -527,18 +527,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="200538">
-                <h3>Aldi Stores</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Aldi</span><br>          <span>Leech Street</span><br>          <span>Stalybridge</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK15 1SD</span>
-  </address>
-</div>
-
-                <a href="/region-north-west/aldi-stores-200538" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="200471">
                 <h3>Aldi Stores</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -548,6 +536,18 @@
 </div>
 
                 <a href="/region-north-west/aldi-stores-200471" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="200538">
+                <h3>Aldi Stores</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Aldi</span><br>          <span>Leech Street</span><br>          <span>Stalybridge</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK15 1SD</span>
+  </address>
+</div>
+
+                <a href="/region-north-west/aldi-stores-200538" class="details-link">
                   More
                 </a>
               </div>
@@ -579,7 +579,7 @@
                 <h3>Aldwinians Rugby Union Football Club (RUFC)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Old Aldwinians</span><br>          <span>Droylsden Road</span><br>          <span>Audenshaw</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">M34 5SN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -1175,18 +1175,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1176605">
-                <h3>Astley Arms</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Astley Arms Public House</span><br>          <span>35 Robinson Street</span><br>          <span>Stalybridge</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK15 1TF</span>
-  </address>
-</div>
-
-                <a href="/region-north-west/astley-arms-1176605" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1803">
                 <h3>Astley Arms</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -1196,6 +1184,18 @@
 </div>
 
                 <a href="/region-north-west/astley-arms-1803" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1176605">
+                <h3>Astley Arms</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Astley Arms Public House</span><br>          <span>35 Robinson Street</span><br>          <span>Stalybridge</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK15 1TF</span>
+  </address>
+</div>
+
+                <a href="/region-north-west/astley-arms-1176605" class="details-link">
                   More
                 </a>
               </div>
@@ -3814,6 +3814,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1919243">
+                <h3>Costcutter Hyde</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Costcutter Hyde</span><br>          <span>27 Stockport Road</span><br>          <span>Hyde</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK14 1RH</span>
+  </address>
+</div>
+
+                <a href="/region-north-west/costcutter-hyde-1919243" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="13683">
                 <h3>Cosy Cafe And Takeaway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4675,18 +4687,6 @@
 </div>
 
                 <a href="/region-north-west/dolce-limited-at-st-peters-church-of-england-primary-school-14398" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="4877">
-                <h3>Dolce Limited At St Stephens Roman Catholic Primary School</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>St Stephens Roman Catholic Primary School</span><br>          <span>Chappell Road</span><br>          <span>Droylsden</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">M43 7NA</span>
-  </address>
-</div>
-
-                <a href="/region-north-west/dolce-limited-at-st-stephens-roman-catholic-primary-school-4877" class="details-link">
                   More
                 </a>
               </div>
@@ -5651,14 +5651,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1900887">
-                <h3>Flame And Ice</h3>
+                <h3>Flame And Ice Also Trading As Greek Twist</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>Ground Floor</span><br>          <span>5 The Square</span><br>          <span>Hyde</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK14 2QR</span>
   </address>
 </div>
 
-                <a href="/region-north-west/flame-and-ice-1900887" class="details-link">
+                <a href="/region-north-west/flame-and-ice-also-trading-as-greek-twist-1900887" class="details-link">
                   More
                 </a>
               </div>
@@ -5750,7 +5750,7 @@
                 <h3>Food And Thorn Bistro</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Food And Thorn Bistro</span><br>          <span>119 Stamford Street Central</span><br>          <span>Ashton-under-lyne</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">OL6 6XJ</span>
+          <span>Food And Thorn</span><br>          <span>117 Stamford Street Central</span><br>          <span>Ashton-under-lyne</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">OL6 6XJ</span>
   </address>
 </div>
 
@@ -6254,7 +6254,7 @@
                 <h3>Georgie Porgies</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Georgie Porgies</span><br>          <span>17 Market Street</span><br>          <span>Denton</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">M34 2FH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -6295,18 +6295,6 @@
 </div>
 
                 <a href="/region-north-west/gibsons-music-backstage-cafe-1176600" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1911907">
-                <h3>Gina&#39;s Wafers</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 3 - B And A Susca Factory Delicatessen</span><br>          <span>Pine Street</span><br>          <span>Hyde</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK14 4TG</span>
-  </address>
-</div>
-
-                <a href="/region-north-west/ginas-wafers-1911907" class="details-link">
                   More
                 </a>
               </div>
@@ -6826,18 +6814,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="13543">
-                <h3>Greggs</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Greggs</span><br>          <span>17 Manchester Road</span><br>          <span>Denton</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">M34 3JU</span>
-  </address>
-</div>
-
-                <a href="/region-north-west/greggs-13543" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="27810">
                 <h3>Greggs</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6859,6 +6835,18 @@
 </div>
 
                 <a href="/region-north-west/greggs-16897" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="13543">
+                <h3>Greggs</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Greggs</span><br>          <span>17 Manchester Road</span><br>          <span>Denton</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">M34 3JU</span>
+  </address>
+</div>
+
+                <a href="/region-north-west/greggs-13543" class="details-link">
                   More
                 </a>
               </div>
@@ -8806,18 +8794,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="581877">
-                <h3>KFC</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>KFC</span><br>          <span>Alphagate Drive</span><br>          <span>Denton</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">M34 3SH</span>
-  </address>
-</div>
-
-                <a href="/region-north-west/kfc-581877" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="717470">
                 <h3>KFC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -8827,6 +8803,18 @@
 </div>
 
                 <a href="/region-north-west/kfc-717470" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="581877">
+                <h3>KFC</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>KFC</span><br>          <span>Alphagate Drive</span><br>          <span>Denton</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">M34 3SH</span>
+  </address>
+</div>
+
+                <a href="/region-north-west/kfc-581877" class="details-link">
                   More
                 </a>
               </div>
@@ -8882,7 +8870,7 @@
                 <h3>Kiddi Day Kare</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Kiddi Day Kare</span><br>          <span>126 Clarendon Road</span><br>          <span>Hyde</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK14 2LJ</span>
+          <span>Kiddi Day Care</span><br>          <span>126 Clarendon Road</span><br>          <span>Hyde</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK14 2LJ</span>
   </address>
 </div>
 
@@ -9538,18 +9526,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1845098">
-                <h3>Loafers</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Loafers</span><br>          <span>200 Stockport Road</span><br>          <span>Ashton-under-lyne</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">OL7 0NS</span>
-  </address>
-</div>
-
-                <a href="/region-north-west/loafers-1845098" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1783440">
                 <h3>Loafers</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9571,6 +9547,18 @@
 </div>
 
                 <a href="/region-north-west/loafers-1776517" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1845098">
+                <h3>Loafers</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Loafers</span><br>          <span>200 Stockport Road</span><br>          <span>Ashton-under-lyne</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">OL7 0NS</span>
+  </address>
+</div>
+
+                <a href="/region-north-west/loafers-1845098" class="details-link">
                   More
                 </a>
               </div>
@@ -10370,7 +10358,7 @@
                 <h3>Mellors Bakers</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Mellors Bakers</span><br>          <span>87 Stocks Lane</span><br>          <span>Stalybridge</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK15 2LN</span>
+          <span>Mellors Bakery</span><br>          <span>87 Stocks Lane</span><br>          <span>Stalybridge</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK15 2LN</span>
   </address>
 </div>
 
@@ -10714,18 +10702,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="189423">
-                <h3>Morrisons Daily</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Morrisons Daily</span><br>          <span>173 Thornley Lane South</span><br>          <span>Stockport</span><br>          <span>Stockport</span><br>        <span itemprop="postalCode">SK5 6QG</span>
-  </address>
-</div>
-
-                <a href="/region-north-west/morrisons-daily-189423" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="955931">
                 <h3>Morrisons Daily</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -10735,6 +10711,18 @@
 </div>
 
                 <a href="/region-north-west/morrisons-daily-955931" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="189423">
+                <h3>Morrisons Daily</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Morrisons Daily</span><br>          <span>173 Thornley Lane South</span><br>          <span>Stockport</span><br>          <span>Stockport</span><br>        <span itemprop="postalCode">SK5 6QG</span>
+  </address>
+</div>
+
+                <a href="/region-north-west/morrisons-daily-189423" class="details-link">
                   More
                 </a>
               </div>
@@ -11266,6 +11254,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1919242">
+                <h3>Nani&#39;s Zero Salt Spices</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-north-west/nanis-zero-salt-spices-1919242" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="493593">
                 <h3>Nats Bombay Kitchen</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11758,15 +11758,15 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1690808">
+<hr>              <div class="establishment" data-establishment-id="1001263">
                 <h3>One Stop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>One Stop</span><br>          <span>24 - 26 Concord Way</span><br>          <span>Dukinfield</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK16 4DB</span>
+          <span>One Stop</span><br>          <span>102 Mill Lane</span><br>          <span>Denton</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">M34 7RU</span>
   </address>
 </div>
 
-                <a href="/region-north-west/one-stop-1690808" class="details-link">
+                <a href="/region-north-west/one-stop-1001263" class="details-link">
                   More
                 </a>
               </div>
@@ -11779,6 +11779,18 @@
 </div>
 
                 <a href="/region-north-west/one-stop-1152910" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1690808">
+                <h3>One Stop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>One Stop</span><br>          <span>24 - 26 Concord Way</span><br>          <span>Dukinfield</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK16 4DB</span>
+  </address>
+</div>
+
+                <a href="/region-north-west/one-stop-1690808" class="details-link">
                   More
                 </a>
               </div>
@@ -11803,18 +11815,6 @@
 </div>
 
                 <a href="/region-north-west/one-stop-13684" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1001263">
-                <h3>One Stop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>One Stop</span><br>          <span>102 Mill Lane</span><br>          <span>Denton</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">M34 7RU</span>
-  </address>
-</div>
-
-                <a href="/region-north-west/one-stop-1001263" class="details-link">
                   More
                 </a>
               </div>
@@ -13030,30 +13030,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1051562">
-                <h3>Raja Brothers</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Raja Brothers</span><br>          <span>4 Ladysmith Road</span><br>          <span>Stalybridge</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK15 1HB</span>
-  </address>
-</div>
-
-                <a href="/region-north-west/raja-brothers-1051562" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="27823">
-                <h3>Raja Brothers</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Raja Brothers</span><br>          <span>88 Stockport Road</span><br>          <span>Ashton-Under-Lyne</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">OL7 0LH</span>
-  </address>
-</div>
-
-                <a href="/region-north-west/raja-brothers-27823" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="200390">
                 <h3>Raja Brothers</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13075,6 +13051,30 @@
 </div>
 
                 <a href="/region-north-west/raja-brothers-959955" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="27823">
+                <h3>Raja Brothers</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Raja Brothers</span><br>          <span>88 Stockport Road</span><br>          <span>Ashton-Under-Lyne</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">OL7 0LH</span>
+  </address>
+</div>
+
+                <a href="/region-north-west/raja-brothers-27823" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1051562">
+                <h3>Raja Brothers</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Raja Brothers</span><br>          <span>4 Ladysmith Road</span><br>          <span>Stalybridge</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK15 1HB</span>
+  </address>
+</div>
+
+                <a href="/region-north-west/raja-brothers-1051562" class="details-link">
                   More
                 </a>
               </div>
@@ -13915,6 +13915,18 @@
 </div>
 
                 <a href="/region-north-west/saleha-queen-of-the-kitchen-1629865" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1919240">
+                <h3>Sally Jean Wedding Cakes</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-north-west/sally-jean-wedding-cakes-1919240" class="details-link">
                   More
                 </a>
               </div>
@@ -15946,6 +15958,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="4877">
+                <h3>Taylor Shaw Ltd At St Stephens Roman Catholic Primary School</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>St Stephens Roman Catholic Primary School</span><br>          <span>Chappell Road</span><br>          <span>Droylsden</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">M43 7NA</span>
+  </address>
+</div>
+
+                <a href="/region-north-west/taylor-shaw-ltd-at-st-stephens-roman-catholic-primary-school-4877" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1269359">
                 <h3>Tea At No. 77</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -16006,18 +16030,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="444657">
-                <h3>Tesco Express</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Tesco Express</span><br>          <span>397 Oldham Road</span><br>          <span>Ashton-under-lyne</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">OL7 9NR</span>
-  </address>
-</div>
-
-                <a href="/region-north-west/tesco-express-444657" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="27862">
                 <h3>Tesco Express</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -16027,6 +16039,18 @@
 </div>
 
                 <a href="/region-north-west/tesco-express-27862" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="444657">
+                <h3>Tesco Express</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Tesco Express</span><br>          <span>397 Oldham Road</span><br>          <span>Ashton-under-lyne</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">OL7 9NR</span>
+  </address>
+</div>
+
+                <a href="/region-north-west/tesco-express-444657" class="details-link">
                   More
                 </a>
               </div>
@@ -16534,18 +16558,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1035559">
-                <h3>The Canadian Charcoal Pit</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Canadian Charcoal Pit</span><br>          <span>97 Market Street</span><br>          <span>Stalybridge</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK15 2AA</span>
-  </address>
-</div>
-
-                <a href="/region-north-west/the-canadian-charcoal-pit-1035559" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1776216">
                 <h3>The Canadian Charcoal Pit</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -16555,6 +16567,18 @@
 </div>
 
                 <a href="/region-north-west/the-canadian-charcoal-pit-1776216" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1035559">
+                <h3>The Canadian Charcoal Pit</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>The Canadian Charcoal Pit</span><br>          <span>97 Market Street</span><br>          <span>Stalybridge</span><br>          <span>Tameside</span><br>        <span itemprop="postalCode">SK15 2AA</span>
+  </address>
+</div>
+
+                <a href="/region-north-west/the-canadian-charcoal-pit-1035559" class="details-link">
                   More
                 </a>
               </div>
@@ -18079,6 +18103,18 @@
 </div>
 
                 <a href="/region-north-west/the-ukrainian-centre-982249" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1919241">
+                <h3>The Vanilla Whisk</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-north-west/the-vanilla-whisk-1919241" class="details-link">
                   More
                 </a>
               </div>
