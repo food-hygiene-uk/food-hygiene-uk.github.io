@@ -19,7 +19,29 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-color:light-dark(#000,#fff);--card-background:light-dark(#fff,#2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-color-lowlight:#fff;--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939);--button-cta-bg:light-dark(var(--hygiene-green),var(--hygiene-green-lowlight));--button-cta-color:light-dark(#000,#000);--button-cta-bg-hover:light-dark(var(--hygiene-green-highlight),var(--hygiene-green));--button-cta-color-hover:light-dark(#000,#000)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132, 190, 0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(
+    in oklab,
+    var(--hygiene-green) 50%,
+    #fff 50%
+  );--hygiene-green-lowlight:color-mix(
+    in oklab,
+    var(--hygiene-green) 75%,
+    #000 25%
+  );--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(
+    in oklab,
+    var(--card-background) 80%,
+    #fff 20%
+  );--card-color-lowlight:#fff;--card-background-lowlight:color-mix(
+    in oklab,
+    var(--card-background) 95%,
+    #000 5%
+  );--card-border:1px solid light-dark(#ddd, #444);--card-link-color:light-dark(#00e, #9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a, #00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026, #00000040);--box-shadow-border:1px solid light-dark(#dedede, #393939);--button-cta-bg:light-dark(
+    var(--hygiene-green),
+    var(--hygiene-green-lowlight)
+  );--button-cta-color:light-dark(#000, #000);--button-cta-bg-hover:light-dark(
+    var(--hygiene-green-highlight),
+    var(--hygiene-green)
+  );--button-cta-color-hover:light-dark(#000, #000)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
     .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid #fff3;color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid #ffffff4d;color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
@@ -397,7 +419,7 @@
                 <h3>William Hill Plc</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>William Hill Bookmakers Pen Llyn</span><br>          <span>Caernarfon</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL55 1NW</span>
   </address>
 </div>
 
@@ -1645,7 +1667,7 @@
                 <h3>Coral</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>10 Stryd Y Llyn</span><br>          <span>Caernarfon</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL55 2AB</span>
   </address>
 </div>
 
@@ -1693,7 +1715,7 @@
                 <h3>Rowlands Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Cors Y Gedol Arms Stryd Fawr</span><br>          <span>Abermaw</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL42 1DP</span>
   </address>
 </div>
 
@@ -2425,7 +2447,7 @@
                 <h3>Paganuzzi</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Paganutzi 101 Stryd Fawr</span><br>          <span>Porthmadog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL49 9EU</span>
   </address>
 </div>
 
@@ -3193,7 +3215,7 @@
                 <h3>Boots The Chemist</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Boots 1 - 3 Pen Y Graig</span><br>          <span>Caernarfon</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL55 2AL</span>
   </address>
 </div>
 
@@ -4081,7 +4103,7 @@
                 <h3>William Hill Plc</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>William Hill 270 Stryd Fawr</span><br>          <span>Bangor</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL57 1PD</span>
   </address>
 </div>
 
@@ -4693,7 +4715,7 @@
                 <h3>L Rowland &amp; Co (Retail) LTD</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Former Rowlands Chemist Shop 40 Y Stryd Fawr</span><br>          <span>Y Bala</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL23 7AB</span>
   </address>
 </div>
 
@@ -5185,7 +5207,7 @@
                 <h3>Glasfryn Shoot</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Tyddyn Bach</span><br>          <span>Pencaenewydd</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL53 6RD</span>
   </address>
 </div>
 
@@ -5557,7 +5579,7 @@
                 <h3>V12 Outdoor</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>V12 Outdoor Stryd Fawr</span><br>          <span>Llanberis</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL55 4EN</span>
   </address>
 </div>
 
@@ -5725,7 +5747,7 @@
                 <h3>Corris Railway Museum</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Museum Station Yard Bridge Street</span><br>          <span>Corris</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">SY20 9SH</span>
   </address>
 </div>
 
@@ -7032,7 +7054,7 @@
                 <h3>Quayside Supermarket-Hafan Y Mor</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Hafan Y Môr Holiday Park Hafan Y Mor</span><br>          <span>Chwilog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL53 6HX</span>
   </address>
 </div>
 
@@ -7680,7 +7702,7 @@
                 <h3>6292 and Frens</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>1 Stryd Fawr</span><br>          <span>Porthmadog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL49 9LR</span>
   </address>
 </div>
 
@@ -7704,7 +7726,7 @@
                 <h3>Next plc</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Next Ffordd Caernarfon</span><br>          <span>Bangor</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL57 4SU</span>
   </address>
 </div>
 
@@ -7740,7 +7762,7 @@
                 <h3>Travis Perkins</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Travis Perkins Trading Co Ffordd Penamser</span><br>          <span>Porthmadog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL49 9HG</span>
   </address>
 </div>
 
@@ -7812,7 +7834,7 @@
                 <h3>Premier Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Premier Inn Doc Fictoria</span><br>          <span>Caernarfon</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL55 1TH</span>
   </address>
 </div>
 
@@ -7824,7 +7846,7 @@
                 <h3>Whsmith</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>5 - 7 Stryd Y Llyn</span><br>          <span>Caernarfon</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL55 2AD</span>
   </address>
 </div>
 
@@ -7836,7 +7858,7 @@
                 <h3>Post Office Trefor</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Post Office 27 Ffordd Yr Eifl</span><br>          <span>Trefor</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL54 5LW</span>
   </address>
 </div>
 
@@ -7884,7 +7906,7 @@
                 <h3>Ffestiniog Railway Co(Shop)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Gorsaf Yr Harbwr</span><br>          <span>Porthmadog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL49 9NF</span>
   </address>
 </div>
 
@@ -7896,7 +7918,7 @@
                 <h3>Rowlands Pharmacy (L Rowlands &amp; Co. (Retail) Ltd)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>L Rowland & Co 3 Rhes Eldon Stryd Fawr</span><br>          <span>Dolgellau</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL40 1PY</span>
   </address>
 </div>
 
@@ -7908,7 +7930,7 @@
                 <h3>Golf Llyn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Canolfan Golff Llyn</span><br>          <span>Penrhos</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL53 7HG</span>
   </address>
 </div>
 
@@ -7968,7 +7990,7 @@
                 <h3>The Fat Buddha Company</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>1 Tyn Y Coed Buildings Stryd Fawr</span><br>          <span>Abermaw</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL42 1DS</span>
   </address>
 </div>
 
@@ -7980,7 +8002,7 @@
                 <h3>Rowlands</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Fferyllfa L Rowland & Co Fferyllfa Cambria</span><br>          <span>Penrhyndeudraeth</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL48 6AL</span>
   </address>
 </div>
 
@@ -8148,7 +8170,7 @@
                 <h3>Tk Maxx</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>T K Maxx Menai Retail Park Ffordd Caernarfon</span><br>          <span>Bangor</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL57 4SJ</span>
   </address>
 </div>
 
@@ -8244,7 +8266,7 @@
                 <h3>Portmeirion</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Portmerion Shops 51 Stryd Fawr</span><br>          <span>Porthmadog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL49 9LR</span>
   </address>
 </div>
 
@@ -8256,7 +8278,7 @@
                 <h3>L Rowlands &amp; Co (Retail) Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Office 68 Stryd Fawr</span><br>          <span>Porthmadog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL49 9NW</span>
   </address>
 </div>
 
@@ -8268,7 +8290,7 @@
                 <h3>Castell Criccieth</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Castell Criccieth Lôn Y Castell</span><br>          <span>Criccieth</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL52 0DP</span>
   </address>
 </div>
 
@@ -8292,7 +8314,7 @@
                 <h3>Travelodge</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Gwesty Travelodge Ystâd Ddiwydiannol Penamser</span><br>          <span>Porthmadog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL49 9GB</span>
   </address>
 </div>
 
@@ -8304,7 +8326,7 @@
                 <h3>Boots Uk Limited</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Canolfan Meddygol Yr Hen Orsaf Ffordd Y Stesion</span><br>          <span>Bethesda</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL57 3NE</span>
   </address>
 </div>
 
@@ -8328,7 +8350,7 @@
                 <h3>L Rowlands &amp; Co (Retail) Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>L Rowland & Co 127 Stryd Fawr</span><br>          <span>Porthmadog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL49 9HA</span>
   </address>
 </div>
 
@@ -8436,7 +8458,7 @@
                 <h3>Fferyllwr Llyn Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Pharmacy</span><br>          <span>Llanbedrog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL53 7TH</span>
   </address>
 </div>
 
@@ -8520,7 +8542,7 @@
                 <h3>Cadw Welsh Government Harlech Castle</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Harlech Castle Sgwâr Y Castell</span><br>          <span>Harlech</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL46 2YH</span>
   </address>
 </div>
 
@@ -8532,7 +8554,7 @@
                 <h3>L Rowlands &amp; Co Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>L Rowland & Co Y Maes</span><br>          <span>Pwllheli</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL53 5HA</span>
   </address>
 </div>
 
@@ -8880,7 +8902,7 @@
                 <h3>Siop Y Ddraig</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>8 Pen Deitsh</span><br>          <span>Caernarfon</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL55 2AU</span>
   </address>
 </div>
 
@@ -9060,7 +9082,7 @@
                 <h3>Superdrug Stores Plc</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 6 Canolfan Menai Ffordd Garth</span><br>          <span>Bangor</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL57 1DN</span>
   </address>
 </div>
 
@@ -9180,7 +9202,7 @@
                 <h3>Crib Goch Outdoor World</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Regent House 58 Stryd Fawr</span><br>          <span>Llanberis</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL55 4EU</span>
   </address>
 </div>
 
@@ -9407,7 +9429,7 @@
                 <h3>Sports Direct</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Sports Direct Ffordd Caernarfon</span><br>          <span>Bangor</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL57 4SU</span>
   </address>
 </div>
 
@@ -9563,7 +9585,7 @@
                 <h3>St Mary&#39;S Hostel(North Wales Housing)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>St Mary's House Lôn Cariadon</span><br>          <span>Bangor</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL57 2TE</span>
   </address>
 </div>
 
@@ -9826,7 +9848,7 @@
                 <h3>National Trust Enterprises</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Shop Castell Penrhyn Ffordd Llandygai</span><br>          <span>Llandygai</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL57 4HW</span>
   </address>
 </div>
 
@@ -9922,7 +9944,7 @@
                 <h3>Idwal Cottage Yha Hostel</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Youth Hostels Association Idwal Cottage Youth Hostel</span><br>          <span>Nant Ffrancon</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL57 3LZ</span>
   </address>
 </div>
 
@@ -9934,7 +9956,7 @@
                 <h3>Y Fferyllfa / The Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>37 Heol Y Dwr</span><br>          <span>Penygroes</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL54 6LR</span>
   </address>
 </div>
 
@@ -9946,7 +9968,7 @@
                 <h3>Siop Y Gloddfa</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Siop Y Gloddfa 40 - 42 Heol Yr Eglwys</span><br>          <span>Blaenau Ffestiniog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL41 3HD</span>
   </address>
 </div>
 
@@ -10006,7 +10028,7 @@
                 <h3>L. Rowland &amp; Co. Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>L Rowland & Co 4 Ty Gwyn Chapel Street</span><br>          <span>Trawsfynydd</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL41 4RW</span>
   </address>
 </div>
 
@@ -10054,7 +10076,7 @@
                 <h3>Fferyllfa D Powys Davies</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>26 Stryd Fawr</span><br>          <span>Blaenau Ffestiniog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL41 3AA</span>
   </address>
 </div>
 
@@ -10078,7 +10100,7 @@
                 <h3>Medical Hall(Rowlands Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Chemist Dorvil Stryd Fawr</span><br>          <span>Harlech</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL46 2YA</span>
   </address>
 </div>
 
@@ -10102,7 +10124,7 @@
                 <h3>Boots Dolgellau</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>The Pharmacy Llys Owain</span><br>          <span>Dolgellau</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL40 1AL</span>
   </address>
 </div>
 
@@ -10126,7 +10148,7 @@
                 <h3>Nicks Basics</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Nicks Basics Discount Store Eastwood House 1 Stryd Fawr</span><br>          <span>Tywyn</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL36 9AA</span>
   </address>
 </div>
 
@@ -10186,7 +10208,7 @@
                 <h3>L Rowlands &amp; Co Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Rowland & Co Pharmacy Llys Y Gwynt 11 Stryd Fawr</span><br>          <span>Tywyn</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL36 9AD</span>
   </address>
 </div>
 
@@ -10690,7 +10712,7 @@
                 <h3>Penrallt Youth Centre</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Canolfan Ieuenctid A Cymunedol Penrallt Isaf</span><br>          <span>Caernarfon</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL55 1NS</span>
   </address>
 </div>
 
@@ -10990,7 +11012,7 @@
                 <h3>Alpha Unit</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Yr Hen Hufenfa</span><br>          <span>Rhydymain</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL40 2AY</span>
   </address>
 </div>
 
@@ -11446,7 +11468,7 @@
                 <h3>Moelwyn Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>24 Stryd Fawr</span><br>          <span>Blaenau Ffestiniog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL41 3AA</span>
   </address>
 </div>
 
@@ -11494,7 +11516,7 @@
                 <h3>Manon</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>9 Stryd Y Plas</span><br>          <span>Caernarfon</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL55 1RR</span>
   </address>
 </div>
 
@@ -11914,7 +11936,7 @@
                 <h3>The Card Factory</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 15 Canolfan Deiniol Stryd Fawr</span><br>          <span>Bangor</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL57 1NW</span>
   </address>
 </div>
 
@@ -14169,7 +14191,7 @@
                 <h3>Slimming World Pwllheli</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Brymer House Ffordd Bro Pedr Fardd</span><br>          <span>Garndolbenmaen</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL51 9NJ</span>
   </address>
 </div>
 
@@ -15309,8 +15331,7 @@
                 <h3>Air Vape Store Bangor</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
+          <span>213 Stryd Fawr</span><br>          <span>Bangor</span><br>          <span>Gwynedd</span>  </address>
 </div>
 
                 <a href="/region-wales/air-vape-store-bangor-1544433" class="details-link">
@@ -15836,7 +15857,7 @@
                 <h3>The Snowdonia Honey Company</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Tyddyn Whisgin Bach</span><br>          <span>Waunfawr</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL55 2TL</span>
   </address>
 </div>
 
@@ -15860,7 +15881,7 @@
                 <h3>Fferyllfa H.H Parry Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>The Pharmacy Stryd Fawr</span><br>          <span>Abersoch</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL53 7DY</span>
   </address>
 </div>
 
@@ -16520,7 +16541,7 @@
                 <h3>Savers Health &amp; Beauty Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>111 Stryd Fawr</span><br>          <span>Porthmadog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL49 9HA</span>
   </address>
 </div>
 
@@ -16808,7 +16829,7 @@
                 <h3>Edinburgh Woollen Mill</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Edinburgh Woollen Mill Stryd Fawr</span><br>          <span>Porthmadog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL49 9LP</span>
   </address>
 </div>
 
@@ -16844,7 +16865,7 @@
                 <h3>Fferyllfa ER Hughes Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>The Pharmacy 32 Stryd Fawr</span><br>          <span>Criccieth</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL52 0BT</span>
   </address>
 </div>
 
@@ -16988,7 +17009,7 @@
                 <h3>Go Express</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Outdoor World Ystâd Ddiwydiannol Penamser</span><br>          <span>Porthmadog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL49 9NZ</span>
   </address>
 </div>
 
@@ -17156,7 +17177,7 @@
                 <h3>Slimming World</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>36 Ffordd Garnedd</span><br>          <span>Y Felinheli</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL56 4QY</span>
   </address>
 </div>
 
@@ -17276,8 +17297,7 @@
                 <h3>Dejavu Bangor limited</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
+          <span>216 Stryd Fawr</span><br>          <span>Bangor</span><br>          <span>Gwynedd</span>  </address>
 </div>
 
                 <a href="/region-wales/dejavu-bangor-limited-1658520" class="details-link">
@@ -17492,7 +17512,7 @@
                 <h3>The Ship Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Ship Inn Ffordd Pedrog</span><br>          <span>Llanbedrog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL53 7PE</span>
   </address>
 </div>
 
@@ -17540,7 +17560,7 @@
                 <h3>Slimming World Franchise</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>69 Rhodfa'r Frenhines</span><br>          <span>Maesgeirchen</span><br>          <span>Bangor</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL57 1NH</span>
   </address>
 </div>
 
@@ -18224,7 +18244,7 @@
                 <h3>No 1 Golf shop Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Clwb Golff Aberdyfi Station Road</span><br>          <span>Aberdyfi</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL35 0RT</span>
   </address>
 </div>
 
@@ -18572,7 +18592,7 @@
                 <h3>Morawel LL36</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Morawel Stryd Fawr</span><br>          <span>Tywyn</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL36 9AD</span>
   </address>
 </div>
 
@@ -18967,7 +18987,7 @@
                 <h3>The Little Wren (Wren Wellness)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>39 Stryd Y Llyn</span><br>          <span>Caernarfon</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL55 2AE</span>
   </address>
 </div>
 
@@ -19087,7 +19107,7 @@
                 <h3>Currys Pc World</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Currys Menai Retail Park Ffordd Caernarfon</span><br>          <span>Bangor</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL57 4SJ</span>
   </address>
 </div>
 
@@ -19123,7 +19143,7 @@
                 <h3>Pro Shop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Clwb Golff Royal St Davids Ffordd Newydd</span><br>          <span>Harlech</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL46 2UB</span>
   </address>
 </div>
 
@@ -19459,7 +19479,7 @@
                 <h3>Glanaber</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Books Maps Ect Pencob Maes Yr Orsaf</span><br>          <span>Pwllheli</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL53 5HG</span>
   </address>
 </div>
 
@@ -20634,7 +20654,7 @@
                 <h3>Babipur</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Gelert House Ffordd Penamser</span><br>          <span>Porthmadog</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL49 9NX</span>
   </address>
 </div>
 
@@ -21546,7 +21566,7 @@
                 <h3>Castell Caernarfon</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Castell Caernarfon Pen Deitsh</span><br>          <span>Caernarfon</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL55 2AY</span>
   </address>
 </div>
 
@@ -21750,7 +21770,7 @@
                 <h3>DD Trading (NW) Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>6 St Anne's Square</span><br>          <span>Abermaw</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL42 1DL</span>
   </address>
 </div>
 
@@ -25422,7 +25442,7 @@
                 <h3>Barmouth Kebab House</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Barmouth Kebab & Pizza House 5 Stryd Fawr</span><br>          <span>Abermaw</span><br>          <span>Gwynedd</span><br>        <span itemprop="postalCode">LL42 1DL</span>
   </address>
 </div>
 

@@ -19,7 +19,29 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-color:light-dark(#000,#fff);--card-background:light-dark(#fff,#2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-color-lowlight:#fff;--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939);--button-cta-bg:light-dark(var(--hygiene-green),var(--hygiene-green-lowlight));--button-cta-color:light-dark(#000,#000);--button-cta-bg-hover:light-dark(var(--hygiene-green-highlight),var(--hygiene-green));--button-cta-color-hover:light-dark(#000,#000)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132, 190, 0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(
+    in oklab,
+    var(--hygiene-green) 50%,
+    #fff 50%
+  );--hygiene-green-lowlight:color-mix(
+    in oklab,
+    var(--hygiene-green) 75%,
+    #000 25%
+  );--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(
+    in oklab,
+    var(--card-background) 80%,
+    #fff 20%
+  );--card-color-lowlight:#fff;--card-background-lowlight:color-mix(
+    in oklab,
+    var(--card-background) 95%,
+    #000 5%
+  );--card-border:1px solid light-dark(#ddd, #444);--card-link-color:light-dark(#00e, #9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a, #00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026, #00000040);--box-shadow-border:1px solid light-dark(#dedede, #393939);--button-cta-bg:light-dark(
+    var(--hygiene-green),
+    var(--hygiene-green-lowlight)
+  );--button-cta-color:light-dark(#000, #000);--button-cta-bg-hover:light-dark(
+    var(--hygiene-green-highlight),
+    var(--hygiene-green)
+  );--button-cta-color-hover:light-dark(#000, #000)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
     .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid #fff3;color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid #ffffff4d;color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
@@ -193,7 +215,7 @@
                 <h3>Cross Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>7 Summer Lane</span><br>          <span>Royston</span><br>        <span itemprop="postalCode">S71 4SE</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -229,7 +251,7 @@
                 <h3>Bolton On Dearne Post office</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Post Office</span><br>          <span>St Andrews Square</span><br>          <span>Bolton Upon Dearne</span><br>        <span itemprop="postalCode">S63 8BA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -1729,7 +1751,7 @@
                 <h3>Albions</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>120 Midland Road</span><br>          <span>Royston</span><br>        <span itemprop="postalCode">S71 4QT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2161,7 +2183,7 @@
                 <h3>Walkers Newsagents</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>22-24 High Street</span><br>          <span>Hoyland</span><br>        <span itemprop="postalCode">S74 9AB</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2353,7 +2375,7 @@
                 <h3>Premier Stairfoot Convenience Store</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>494 Doncaster Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 3PH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2377,7 +2399,7 @@
                 <h3>The Purple Mango</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>265-267 Doncaster Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 3RH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2557,7 +2579,7 @@
                 <h3>Lotus Garden</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>62 Churchfield Lane</span><br>          <span>Kexbrough</span><br>        <span itemprop="postalCode">S75 5DJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2665,7 +2687,7 @@
                 <h3>Boots UK Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>34-40 Cheapside</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1RT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2677,7 +2699,7 @@
                 <h3>Well Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>244 Barnsley Road</span><br>          <span>Cudworth</span><br>        <span itemprop="postalCode">S72 8SS</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2689,7 +2711,7 @@
                 <h3>Weldricks Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Weldricks Chemist</span><br>          <span>St Andrews Square</span><br>          <span>Bolton Upon Dearne</span><br>        <span itemprop="postalCode">S63 8BA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2701,7 +2723,7 @@
                 <h3>Well Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Cooperative Pharmacy</span><br>          <span>12 Hoyland Road</span><br>          <span>Hoyland Common</span><br>        <span itemprop="postalCode">S74 0LY</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2713,7 +2735,7 @@
                 <h3>Z A Akram Chemist</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>22 High Street</span><br>          <span>Wombwell</span><br>        <span itemprop="postalCode">S73 0AA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2725,7 +2747,7 @@
                 <h3>Well Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>11 Market Street</span><br>          <span>Penistone</span><br>        <span itemprop="postalCode">S36 6BZ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2749,23 +2771,11 @@
                 <h3>Gooseacre Primary Academy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Catering Services Gooseacre Primary Academy</span><br>          <span>Gooseacre Avenue</span><br>          <span>Thurnscoe</span><br>        <span itemprop="postalCode">S63 0NU</span>
+      <div>No address information available</div>
   </address>
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/gooseacre-primary-academy-397535" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="397537">
-                <h3>Iceland</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>13-17 Peel Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2RA</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/iceland-397537" class="details-link">
                   More
                 </a>
               </div>
@@ -2845,7 +2855,7 @@
                 <h3>Huddersfield Road Post Office</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Post Office</span><br>          <span>81 Huddersfield Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S75 1AA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3229,7 +3239,7 @@
                 <h3>Brierley Post Office</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Post Office</span><br>          <span>8 Church Street</span><br>          <span>Brierley</span><br>        <span itemprop="postalCode">S72 9JR</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3289,7 +3299,7 @@
                 <h3>Faisal Curry &amp; Desert Bar</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>17 Hoyland Road</span><br>          <span>Hoyland Common</span><br>        <span itemprop="postalCode">S74 0LT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3385,7 +3395,7 @@
                 <h3>Queensway Stores</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>9 Queensway</span><br>          <span>Worsbrough Bridge</span><br>        <span itemprop="postalCode">S70 5EN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3637,7 +3647,7 @@
                 <h3>The Original Tudor Pizza</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>6 Ballfield Lane</span><br>          <span>Kexbrough</span><br>        <span itemprop="postalCode">S75 5EF</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3973,7 +3983,7 @@
                 <h3>Supernews</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>4 Peel Square</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1YA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4069,7 +4079,7 @@
                 <h3>Age UK Barnsley</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>36a Queens Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S71 1AR</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4093,7 +4103,7 @@
                 <h3>Park Court</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2 Park Court</span><br>          <span>Thurnscoe</span><br>        <span itemprop="postalCode">S63 0NA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4165,7 +4175,7 @@
                 <h3>Wonderland  Day Nursery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Old Pond School</span><br>          <span>Barnsley Road</span><br>          <span>Cudworth Barnsley</span><br>        <span itemprop="postalCode">S72 8UT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4429,7 +4439,7 @@
                 <h3>Gallagher&#39;s of Barnsley</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>8-10 The Arcade</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2QN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4501,7 +4511,7 @@
                 <h3>Penistone Post Office</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>17-19 Market Street</span><br>          <span>Penistone</span><br>        <span itemprop="postalCode">S36 6BZ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4681,7 +4691,7 @@
                 <h3>Wells Post Office</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Wells Post Office</span><br>          <span>2a High Street</span><br>          <span>Royston</span><br>        <span itemprop="postalCode">S71 4RA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4741,7 +4751,7 @@
                 <h3>The Masonic Hall</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Masonic Hall</span><br>          <span>Cockerham Lane</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S75 1AT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -5137,7 +5147,7 @@
                 <h3>Gentleman Jacks/Funny Gals</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Theatre Royal</span><br>          <span>Wellington Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1SS</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -5365,7 +5375,7 @@
                 <h3>Aldi</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Aldi Foodstores Ltd</span><br>          <span>Hunningley Lane</span><br>          <span>Stairfoot</span><br>        <span itemprop="postalCode">S70 3PE</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -5401,7 +5411,7 @@
                 <h3>H I Weldrick Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>26-28 Barnsley Road</span><br>          <span>Goldthorpe</span><br>        <span itemprop="postalCode">S63 9NF</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -6013,7 +6023,7 @@
                 <h3>Community Places</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>43 John Street</span><br>          <span>Great Houghton</span><br>        <span itemprop="postalCode">S72 0EA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -6229,7 +6239,7 @@
                 <h3>H I Weldrick</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>48a High Street</span><br>          <span>Royston</span><br>        <span itemprop="postalCode">S71 4RF</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -6397,7 +6407,7 @@
                 <h3>Hope House Church</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Hope House Church And Christian School</span><br>          <span>Blucher Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1AP</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -6769,7 +6779,7 @@
                 <h3>Cohens Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>7 Cemetery Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1XS</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -7057,7 +7067,7 @@
                 <h3>Everlast Gym</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 7</span><br>          <span>Dryden Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S71 1JE</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -7357,7 +7367,7 @@
                 <h3>Signori&#39;s Pizzas</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Signoris Pizzas</span><br>          <span>Houghton Road</span><br>          <span>Thurnscoe</span><br>        <span itemprop="postalCode">S63 0NG</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -7429,7 +7439,7 @@
                 <h3>Primark</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 36 The Alhambra Shopping Centre</span><br>          <span>Cheapside</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1SB</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -7813,7 +7823,7 @@
                 <h3>The Limes</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Barnsley Golf Course</span><br>          <span>Wakefield Road</span><br>          <span>Staincross</span><br>        <span itemprop="postalCode">S75 6JZ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -8137,7 +8147,7 @@
                 <h3>Taylor Shaw @ Worsbrough Bank End Primary School</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Catering Services Worsbrough Bank End Primary School</span><br>          <span>Underwood Avenue</span><br>          <span>Worsbrough Dale</span><br>        <span itemprop="postalCode">S70 4AZ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -8869,7 +8879,7 @@
                 <h3>Thaal</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Thai Restaurant</span><br>          <span>18 Doncaster Road</span><br>          <span>Darfield</span><br>        <span itemprop="postalCode">S73 9HH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -9085,7 +9095,7 @@
                 <h3>Superdrug</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 1</span><br>          <span>24-32 Cheapside</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1RR</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -9313,7 +9323,7 @@
                 <h3>H. I. Weldrick</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Pharmacy</span><br>          <span>65c Midland Road</span><br>          <span>Royston</span><br>        <span itemprop="postalCode">S71 4QW</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -10453,7 +10463,7 @@
                 <h3>Lo’s Pharmacy.</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Thornton Road</span><br>          <span>Kendray</span><br>        <span itemprop="postalCode">S70 3NE</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -10621,7 +10631,7 @@
                 <h3>H I Weldrick Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Pharmacy The Thurnscoe Centre</span><br>          <span>Holly Bush Drive</span><br>          <span>Thurnscoe</span><br>        <span itemprop="postalCode">S63 0LU</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -10693,7 +10703,7 @@
                 <h3>Boots UK Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Alliance Pharmacy</span><br>          <span>Powell Street</span><br>          <span>Worsbrough Bridge</span><br>        <span itemprop="postalCode">S70 5NZ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -10789,7 +10799,7 @@
                 <h3>Furlong Road Premier</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>31 Furlong Road</span><br>          <span>Bolton Upon Dearne</span><br>        <span itemprop="postalCode">S63 8JA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -10945,7 +10955,7 @@
                 <h3>H I Weldrick Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Goldthorpe Centre</span><br>          <span>Goldthorpe Green</span><br>          <span>Goldthorpe</span><br>        <span itemprop="postalCode">S63 9EH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -11077,7 +11087,7 @@
                 <h3>Rowlands Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Rowlands Pharmacy Chapelfield Medical Centre</span><br>          <span>Mayflower Way</span><br>          <span>Wombwell</span><br>        <span itemprop="postalCode">S73 0AJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -11713,7 +11723,7 @@
                 <h3>Cohens Chemist</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>3 Victoria Crescent West</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S75 2AE</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -11879,7 +11889,7 @@
                 <h3>Daily News</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 33 The Alhambra Shopping Centre</span><br>          <span>Cheapside</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1SB</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -12119,7 +12129,7 @@
                 <h3>Northern Direct Supplies</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 24 To 25 Maple Estate</span><br>          <span>Stocks Lane</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S75 2BL</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -12275,7 +12285,7 @@
                 <h3>Silkstone Hotel</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Silkstone</span><br>          <span>Park Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1YG</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -12599,7 +12609,7 @@
                 <h3>New Street Fish Bar</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>5 New Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1RX</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -13139,7 +13149,7 @@
                 <h3>DCY Swim School</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Gillott Industrial Estate</span><br>          <span>Station Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 6DE</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -13187,7 +13197,7 @@
                 <h3>New Options</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Community Fitness Centre</span><br>          <span>St Lukes Road</span><br>          <span>Grimethorpe</span><br>        <span itemprop="postalCode">S72 7FN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -13211,7 +13221,7 @@
                 <h3>Barnsley Lawn Tennis Club</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Barnsley Lawn Tennis Club</span><br>          <span>The Crescent</span><br>          <span>Redbrook</span><br>        <span itemprop="postalCode">S75 1JH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -13343,7 +13353,7 @@
                 <h3>Temple Gym</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Salvation House</span><br>          <span>15 Station Road</span><br>          <span>Wombwell</span><br>        <span itemprop="postalCode">S73 0AH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -13451,7 +13461,7 @@
                 <h3>Rowlands Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Rowlands Pharmacy</span><br>          <span>5 George Street</span><br>          <span>Wombwell</span><br>        <span itemprop="postalCode">S73 0DD</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -13523,7 +13533,7 @@
                 <h3>Stairfoot Post Office</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Stairfoot Post Office</span><br>          <span>498 Doncaster Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 3PH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -13858,7 +13868,7 @@
                 <h3>Well Pharmacy Cudworth</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Cooperative Pharmacy The Cudworth C</span><br>          <span>Carlton Street</span><br>          <span>Cudworth</span><br>        <span itemprop="postalCode">S72 8ST</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -13954,7 +13964,7 @@
                 <h3>Market Hill Convenience store</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>11 Market Hill</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2PX</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14050,7 +14060,7 @@
                 <h3>Akram Chemists</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>17 Judy Row</span><br>          <span>Monk Bretton</span><br>        <span itemprop="postalCode">S71 2EJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14062,7 +14072,7 @@
                 <h3>Cohen&#39;s Chemist</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Chemist</span><br>          <span>16-18 Market Street</span><br>          <span>Hoyland</span><br>        <span itemprop="postalCode">S74 9QR</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14086,7 +14096,7 @@
                 <h3>Rotherham Road Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>4 Rotherham Road</span><br>          <span>Great Houghton</span><br>        <span itemprop="postalCode">S72 0DB</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14098,7 +14108,7 @@
                 <h3>Mapplewell Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Rowlands Pharmacy</span><br>          <span>393 Darton Lane</span><br>          <span>Mapplewell</span><br>        <span itemprop="postalCode">S75 6AL</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14122,7 +14132,7 @@
                 <h3>Lo&#39;s Pharmacy Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Health Centre</span><br>          <span>Queensway</span><br>          <span>Grimethorpe</span><br>        <span itemprop="postalCode">S72 7LJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14134,7 +14144,7 @@
                 <h3>Chinese Medical &amp; Skin Centre</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Kiosk 4</span><br>          <span>New Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1RX</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14326,7 +14336,7 @@
                 <h3>B &amp; M Express</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Heron Foods</span><br>          <span>Neville Avenue</span><br>          <span>Kendray</span><br>        <span itemprop="postalCode">S70 3HF</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14350,7 +14360,7 @@
                 <h3>Estabulo /Takeaway Hub /Greeky /Guac It /Nashville Chic /Bao&amp;Noodle</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>12a Regent Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2HG</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14395,14 +14405,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="804404">
-                <h3>BP Food &amp; Wine</h3>
+                <h3>Sinhs</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Post Office</span><br>          <span>42-44 Agnes Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1NH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/bp-food-wine-804404" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/sinhs-804404" class="details-link">
                   More
                 </a>
               </div>
@@ -14458,7 +14468,7 @@
                 <h3>Experience Barnsley</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Experience Barnsley Museum Barnsley Tow</span><br>          <span>Church Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2TA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14494,7 +14504,7 @@
                 <h3>Aldi</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Aldi Stores</span><br>          <span>Barnsley Road</span><br>          <span>Goldthorpe</span><br>        <span itemprop="postalCode">S63 9PJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14638,7 +14648,7 @@
                 <h3>The Jolly Tap</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>27-31 The Arcade</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2QP</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14686,7 +14696,7 @@
                 <h3>Card Factory</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 10 The Alhambra Shopping Centre</span><br>          <span>Cheapside</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1SB</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14710,7 +14720,7 @@
                 <h3>Visitors Centre</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 10 Lower Elsecar Heritage Centre</span><br>          <span>Wath Road</span><br>          <span>Elsecar</span><br>        <span itemprop="postalCode">S74 8HJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14722,7 +14732,8 @@
                 <h3>White Acres Farm</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>White Acres</span><br>          <span>Lane Head Road</span><br>          <span>Cawthorne</span>  </address>
+      <div>No address information available</div>
+  </address>
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/white-acres-farm-859525" class="details-link">
@@ -14757,7 +14768,7 @@
                 <h3>Savers Health &amp; Beauty</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 16 The Alhambra Shopping Centre</span><br>          <span>Cheapside</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1SB</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -14889,7 +14900,7 @@
                 <h3>Spartan Lifestyle Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Spartan Fitness Centre</span><br>          <span>Dyson Street</span><br>          <span>Kingstone</span><br>        <span itemprop="postalCode">S70 6LY</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -15189,7 +15200,7 @@
                 <h3>Iceland (The Food Warehouse)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 5</span><br>          <span>Dryden Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S71 1JE</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -15906,14 +15917,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1076472">
-                <h3>Fresh Shop</h3>
+                <h3>Top Shelf</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>55 Peel Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2RL</span>
+      <div>No address information available</div>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/fresh-shop-1076472" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/top-shelf-1076472" class="details-link">
                   More
                 </a>
               </div>
@@ -15957,7 +15968,7 @@
                 <h3>Becsco Limited</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 2 And Unit 3 And Unit 4 And Unit 5 Carlton Industrial Estate Plot 4</span><br>          <span>Albion Road</span><br>          <span>Carlton</span><br>        <span itemprop="postalCode">S71 3HW</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -16041,7 +16052,7 @@
                 <h3>Aldi Stores Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Aldi</span><br>          <span>Barnsley Road</span><br>          <span>Cudworth</span><br>        <span itemprop="postalCode">S72 8SU</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -16269,7 +16280,7 @@
                 <h3>Sunquest Tanning</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>First Floor</span><br>          <span>7-9 Peel Square</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2QT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -16389,7 +16400,7 @@
                 <h3>Bottle &amp; Co</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>33 Greenside</span><br>          <span>Staincross</span><br>        <span itemprop="postalCode">S75 6AU</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -16701,7 +16712,7 @@
                 <h3>Admiral Casino</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>20-22 Eldon Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2JB</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -16977,7 +16988,7 @@
                 <h3>Coffee Boy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>5 The Glass Works</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1GW</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -17241,7 +17252,7 @@
                 <h3>Wickes Building Supplies Plc</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Wickes Building Supplies Ltd</span><br>          <span>Old Mill Lane</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S71 1LS</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -17373,7 +17384,7 @@
                 <h3>D R Binns Butchery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Tenter House Farm</span><br>          <span>Tenter Lane</span><br>          <span>Snowden Hill</span><br>        <span itemprop="postalCode">S36 8YR</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -17661,7 +17672,7 @@
                 <h3>Riyat Organics</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>25 Wood Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1LU</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -18093,7 +18104,7 @@
                 <h3>Grillet/aChilli,Evoo,MexiGo,Ramenoodle Pastacraft,Chicken&amp;Co,UrbanGyro</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Grille Steakhouse</span><br>          <span>68 Market Street</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1SN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -18105,7 +18116,7 @@
                 <h3>Next</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>16 The Glass Works</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1GW</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -18261,7 +18272,7 @@
                 <h3>200 Degrees Coffee Shop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>20 The Glass Works</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1GW</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -18345,7 +18356,7 @@
                 <h3>New Look</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>14 The Glass Works</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 1GW</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -18429,7 +18440,7 @@
                 <h3>R D Hill Chemist Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>106 Rotherham Road</span><br>          <span>Monk Bretton</span><br>        <span itemprop="postalCode">S71 1UT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -18645,7 +18656,7 @@
                 <h3>Claire Taylor - Slimming World</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>93 Ward Street</span><br>          <span>Penistone</span><br>        <span itemprop="postalCode">S36 6LR</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -18825,7 +18836,7 @@
                 <h3>Joe Ling Catering Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Cannon Hall Open Farm</span><br>          <span>Bark House Lane</span><br>          <span>Cawthorne</span><br>        <span itemprop="postalCode">S75 4AT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -19077,7 +19088,7 @@
                 <h3>Snack Brands Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Finkle Green</span><br>          <span>Finkle Street Lane</span><br>          <span>Wortley</span><br>        <span itemprop="postalCode">S35 7DH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -19161,7 +19172,7 @@
                 <h3>Slimming World - Victoria Jennings</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>88 Wilthorpe Avenue</span><br>          <span>Wilthorpe</span><br>        <span itemprop="postalCode">S75 1EQ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -19377,7 +19388,7 @@
                 <h3>Santini 7 Sports/Hngry Protein</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>29 Ivy Bank Close</span><br>          <span>Ingbirchworth</span><br>        <span itemprop="postalCode">S36 7GT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -19425,7 +19436,7 @@
                 <h3>Synchroniiciity</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>338 Hough Lane</span><br>          <span>Wombwell</span><br>        <span itemprop="postalCode">S73 0LR</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -20109,7 +20120,7 @@
                 <h3>Barnsley Recovery Connections Good Food Pantry</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Mclintocks</span><br>          <span>Summer Lane</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S70 2NZ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -20373,7 +20384,7 @@
                 <h3>Currys Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 8</span><br>          <span>Dryden Road</span><br>          <span>Barnsley</span><br>        <span itemprop="postalCode">S71 1JE</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -21357,7 +21368,7 @@
                 <h3>Vape Space</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>23 Towngate</span><br>          <span>Mapplewell</span><br>        <span itemprop="postalCode">S75 6AT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -21801,7 +21812,7 @@
                 <h3>BFS Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Units 2 And 3 Barnsley Food Catering Stairfoot Business Park</span><br>          <span>Stairfoot Way</span><br>          <span>Stairfoot</span><br>        <span itemprop="postalCode">S70 3PA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -22713,7 +22724,7 @@
                 <h3>Monkstone Brew Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 21 Grange Lane Industrial Estate</span><br>          <span>Carrwood Road</span><br>          <span>Stairfoot</span><br>        <span itemprop="postalCode">S71 5AS</span>
+      <div>No address information available</div>
   </address>
 </div>
 

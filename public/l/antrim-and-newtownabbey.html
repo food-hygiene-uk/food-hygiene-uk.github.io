@@ -19,7 +19,29 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-color:light-dark(#000,#fff);--card-background:light-dark(#fff,#2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-color-lowlight:#fff;--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939);--button-cta-bg:light-dark(var(--hygiene-green),var(--hygiene-green-lowlight));--button-cta-color:light-dark(#000,#000);--button-cta-bg-hover:light-dark(var(--hygiene-green-highlight),var(--hygiene-green));--button-cta-color-hover:light-dark(#000,#000)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132, 190, 0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(
+    in oklab,
+    var(--hygiene-green) 50%,
+    #fff 50%
+  );--hygiene-green-lowlight:color-mix(
+    in oklab,
+    var(--hygiene-green) 75%,
+    #000 25%
+  );--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(
+    in oklab,
+    var(--card-background) 80%,
+    #fff 20%
+  );--card-color-lowlight:#fff;--card-background-lowlight:color-mix(
+    in oklab,
+    var(--card-background) 95%,
+    #000 5%
+  );--card-border:1px solid light-dark(#ddd, #444);--card-link-color:light-dark(#00e, #9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a, #00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026, #00000040);--box-shadow-border:1px solid light-dark(#dedede, #393939);--button-cta-bg:light-dark(
+    var(--hygiene-green),
+    var(--hygiene-green-lowlight)
+  );--button-cta-color:light-dark(#000, #000);--button-cta-bg-hover:light-dark(
+    var(--hygiene-green-highlight),
+    var(--hygiene-green)
+  );--button-cta-color-hover:light-dark(#000, #000)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
     .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid #fff3;color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid #ffffff4d;color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
@@ -829,7 +851,7 @@
                 <h3>Medicare Crumlin</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>42 Main Street</span><br>          <span>Ballytromery</span><br>          <span>Crumlin</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT29 4UR</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -853,7 +875,7 @@
                 <h3>Crumlin Presbyterian Church,</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>91 Main Street</span><br>          <span>Ballytromery</span><br>          <span>Crumlin</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT29 4UU</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -1261,7 +1283,7 @@
                 <h3>Mckay Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Twelth Milestone</span><br>          <span>954 Antrim Road</span><br>          <span>Templepatrick</span><br>        <span itemprop="postalCode">BT39 0AT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -1357,7 +1379,7 @@
                 <h3>Anita Gribbin Pharmacy Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>55a Main Street</span><br>          <span>Toomebridge</span><br>          <span>Co Antrim</span><br>        <span itemprop="postalCode">BT41 3TF</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -1609,7 +1631,7 @@
                 <h3>Superdrug Stores Plc</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Market Square</span><br>          <span>Towns Parks</span><br>          <span>Antrim</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 4DN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -1657,7 +1679,7 @@
                 <h3>Gordons Chemist</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Market Square</span><br>          <span>Towns Parks</span><br>          <span>Antrim</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 4DN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -1693,7 +1715,7 @@
                 <h3>Escarmouche</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Shanes Street</span><br>          <span>Ballygrooby</span><br>          <span>Randalstown</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 2AD</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -1705,7 +1727,7 @@
                 <h3>Clear Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Fountain Hill</span><br>          <span>Park Hall</span><br>          <span>Antrim</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 1LZ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -1729,7 +1751,7 @@
                 <h3>Round Tower Meats</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>33a Dungonnell Road</span><br>          <span>Dungonnell</span><br>          <span>Crumlin</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT29 4DQ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2209,7 +2231,7 @@
                 <h3>Randalstown Pharmacies Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>46-48 Main Street</span><br>          <span>Randalstown</span><br>          <span>Randalstown</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 3AB</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2305,7 +2327,7 @@
                 <h3>Randalstown Pharmacies Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>5 Neillsbrook Road</span><br>          <span>Feehogue</span><br>          <span>Randalstown</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 3AE</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2317,7 +2339,7 @@
                 <h3>Boots UK Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>8 High Street</span><br>          <span>Towns Parks</span><br>          <span>Antrim</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 4AN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2449,7 +2471,7 @@
                 <h3>Killead Parish Church / St. Catherine&#39;s Parish Church</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>61 Crumlin Road</span><br>          <span>Seacash</span><br>          <span>Crumlin</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT29 4AQ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2569,7 +2591,7 @@
                 <h3>Hamilton Nursing Home</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>168 Ballycorr Road</span><br>          <span>Ballycor</span><br>          <span>Ballyclare</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT39 9DF</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2796,7 +2818,7 @@
                 <h3>Boots UK Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>6 The Square</span><br>          <span>Ballyclare</span><br>          <span>Ballyclare</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT39 9BB</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2832,7 +2854,7 @@
                 <h3>Medicare Beverley Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2 Beverley Road</span><br>          <span>Ballyduff</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 6QD</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -2892,7 +2914,7 @@
                 <h3>Card Factory</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>78-88 Ballyclare Road</span><br>          <span>Carnmoney Bog</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 5EA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3096,7 +3118,7 @@
                 <h3>Newtownabbey Foodbank</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>311 Carnmoney Road</span><br>          <span>Ballyduff</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 6JT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3216,7 +3238,7 @@
                 <h3>Spar Ballyduff</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>76 Fairview Road</span><br>          <span>Ballyduff</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 6QN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3492,7 +3514,7 @@
                 <h3>Rathcoole Presbyterian Church</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Rathmore Drive</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 9AQ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3516,7 +3538,7 @@
                 <h3>Apprentice Boys Memorial Hall</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>557 Doagh Road</span><br>          <span>Carntall</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 5BT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3576,7 +3598,7 @@
                 <h3>Carnmoney Parish Church</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>75 Church Road</span><br>          <span>Carnmoney</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 6DJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3600,7 +3622,7 @@
                 <h3>Kilbride / St Brides Parish Church</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Kilbride Road</span><br>          <span>Ballyhamage</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT39 0QA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3696,7 +3718,7 @@
                 <h3>Gordon&#39;s Chemist</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>32 The Diamond</span><br>          <span>White House</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 9BJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3816,7 +3838,7 @@
                 <h3>Need for Speed Karting</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>11 Kilbride Road</span><br>          <span>Kilbride</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT39 0QA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3828,7 +3850,7 @@
                 <h3>Ballynure Methodist Church Hall</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Larne Road</span><br>          <span>Toberdowney</span><br>          <span>Ballyclare</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT39 9UA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -3996,7 +4018,7 @@
                 <h3>Well Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>11-12 Abbots Cross</span><br>          <span>White Abbey</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 9QU</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4128,7 +4150,7 @@
                 <h3>T K Maxx</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 2 Longwood Retail Park</span><br>          <span>Drumnadrough</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 9UF</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4212,7 +4234,7 @@
                 <h3>Boots UK Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>6 Hillview Avenue</span><br>          <span>Croghfern</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 6AE</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4236,7 +4258,7 @@
                 <h3>Medicare</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>343 Carnmoney Road</span><br>          <span>Ballyduff</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 6JT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4272,7 +4294,7 @@
                 <h3>Medicare Woodford Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>13 Woodford Road</span><br>          <span>Ballyduff</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 6TS</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4344,7 +4366,7 @@
                 <h3>Boots UK Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Longwood Road</span><br>          <span>Drumnadrough</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 9UH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4524,7 +4546,7 @@
                 <h3>Clear Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>32 Rashee Road</span><br>          <span>Ballyclare</span><br>          <span>Ballyclare</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT39 9HJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4728,7 +4750,7 @@
                 <h3>MediCare Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>10 Richmond Gardens</span><br>          <span>Carnmoney</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 5LA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -4980,7 +5002,7 @@
                 <h3>Doagh Methodist Church</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Riverside</span><br>          <span>Doagh</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT39 0QW</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -5076,7 +5098,7 @@
                 <h3>Whiteabbey Methodist Church</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>566-568 Shore Road</span><br>          <span>Jordanstown</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 0SL</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -5100,7 +5122,7 @@
                 <h3>Whitehouse Gospel Hall</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>29 Whitehouse Park</span><br>          <span>White House</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 9SQ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -5376,7 +5398,7 @@
                 <h3>Calvary Pentecostal Church</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>102 Doagh Road</span><br>          <span>White Abbey</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 9QW</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -5484,7 +5506,7 @@
                 <h3>Superdrug Stores PLC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Longwood Road</span><br>          <span>Drumnadrough</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 9UH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -5532,7 +5554,7 @@
                 <h3>Medicare Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Ballyclare Road</span><br>          <span>Glengormly</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 5EX</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -5664,7 +5686,7 @@
                 <h3>Medicare Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Ballyclare Road</span><br>          <span>Carnmoney Bog</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 5HD</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -5736,7 +5758,7 @@
                 <h3>W J Beatty &amp; Son</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>446 Ballyclare Road</span><br>          <span>Kingsbog</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 4TH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -5832,7 +5854,7 @@
                 <h3>Pure Gym</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>62 Shore Road</span><br>          <span>Ballygolan</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 7DJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -5844,7 +5866,7 @@
                 <h3>Newtownabbey Foodbank</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>91 Doagh Road</span><br>          <span>White Abbey</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 9QN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -5904,7 +5926,7 @@
                 <h3>The Scuttlebutt</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>637 Shore Road</span><br>          <span>Newtownabbey</span><br>          <span>Whiteabbey</span><br>        <span itemprop="postalCode">BT37 0SN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -5928,7 +5950,7 @@
                 <h3>B Craig &amp; Co Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>79 Main Street</span><br>          <span>Ballyclare</span><br>          <span>Ballyclare</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT39 9AA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -6012,7 +6034,7 @@
                 <h3>Killead Presbyterian Church,</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>50 Killead Road</span><br>          <span>Tully</span><br>          <span>Crumlin</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT29 4EN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -6036,7 +6058,7 @@
                 <h3>Volt Retail Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>7 Crosskennan Road</span><br>          <span>Rathmore</span><br>          <span>Antrim</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 2QJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -6132,7 +6154,7 @@
                 <h3>Clear Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>32a Station Road</span><br>          <span>Towns Parks</span><br>          <span>Antrim</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 4AB</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -6384,7 +6406,7 @@
                 <h3>Rathfern Social Activity Centre</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>43 Knockenagh Avenue</span><br>          <span>Croghfern</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 6BE</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -6564,7 +6586,7 @@
                 <h3>Medicare Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Farmley Road</span><br>          <span>Collinward</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 7TS</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -6792,7 +6814,7 @@
                 <h3>Fareshare NI</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 3 Central Park</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 4FS</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -6852,7 +6874,7 @@
                 <h3>Global Trek Aviation</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>18 Seacash Road</span><br>          <span>Seacash</span><br>          <span>Crumlin</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT29 4DL</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -6864,7 +6886,7 @@
                 <h3>Woodgate Aviation</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>20 Seacash Road</span><br>          <span>Seacash</span><br>          <span>Crumlin</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT29 4DL</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -7020,7 +7042,7 @@
                 <h3>Reform Health and Performance</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Blackwater Road</span><br>          <span>Grange Of Mallusk</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 4TZ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -7164,7 +7186,7 @@
                 <h3>Aldergrove House Of Prayer</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>16 Crooked Stone Road</span><br>          <span>Killealy</span><br>          <span>Crumlin</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT29 4EH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -7596,7 +7618,7 @@
                 <h3>Lylehill Presbyterian Church</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Lylehill Road</span><br>          <span>Ballynabarnish</span><br>          <span>Templepatrick</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT39 0HL</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -7620,7 +7642,7 @@
                 <h3>D Foods</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>8 Portland Avenue</span><br>          <span>Glengormly</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 5EY</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -7644,7 +7666,7 @@
                 <h3>Spice O&#39;Life UK Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 4 Craigstown Industrial Estate</span><br>          <span>Craigstown</span><br>        <span itemprop="postalCode">BT41 2PT</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -7848,7 +7870,7 @@
                 <h3>Nationwide Produce</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 5 The Ferguson Centre 57-59 Manse Road</span><br>          <span>Newtownabbey</span><br>        <span itemprop="postalCode">BT36 6RW</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -7872,7 +7894,7 @@
                 <h3>Primark Stores Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 1 Abbeycentre</span><br>          <span>Newtownabbey</span><br>          <span>County Antrim</span><br>        <span itemprop="postalCode">BT37 9UH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -7944,7 +7966,7 @@
                 <h3>Aircraft Services Swissport BFS</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Belfast International Airport Belfast International Airport</span><br>          <span>Belfast</span><br>        <span itemprop="postalCode">BT29 4AA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -8604,23 +8626,11 @@
                 <h3>Bond Freight Trading Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>19 Sentry Lane</span><br>          <span>Grange Of Mallusk</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 4XX</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/bond-freight-trading-ltd-1412065" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1412071">
-                <h3>Cake Me Away</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
       <div>No address information available</div>
   </address>
 </div>
 
-                <a href="/region-northern-ireland/cake-me-away-1412071" class="details-link">
+                <a href="/region-northern-ireland/bond-freight-trading-ltd-1412065" class="details-link">
                   More
                 </a>
               </div>
@@ -8640,7 +8650,7 @@
                 <h3>Whiteabbey Storehouse</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Shore Road</span><br>          <span>Jordanstown</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 0SN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -8652,7 +8662,7 @@
                 <h3>Newtownabbey Foodbank (Ballyclare Distribution Centre)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Foundry Lane</span><br>          <span>Ballyclare</span><br>        <span itemprop="postalCode">BT39 9BQ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -8760,7 +8770,7 @@
                 <h3>Sally&#39;s Hair &amp; Beauty</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Longwood Road</span><br>          <span>Drumnadrough</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 9UH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -8816,18 +8826,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1451021">
-                <h3>Royal Thai</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>377 Antrim Road</span><br>          <span>Carnmoney Bog</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 5EB</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/royal-thai-1451021" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1455913">
                 <h3>Academy lunches</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -8844,7 +8842,7 @@
                 <h3>Cafe2U</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>B33 Valley Business Centre</span><br>          <span>Church Rd</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT367LS</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -8952,7 +8950,7 @@
                 <h3>Fernagh Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>3 Kings Crescent</span><br>          <span>Croghfern</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 0DH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -9156,7 +9154,7 @@
                 <h3>MPDA</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1a Limetree Avenue</span><br>          <span>Ballycraigy</span><br>          <span>Antrim</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 1NP</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -9192,7 +9190,7 @@
                 <h3>Vape Venue</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>6 Rashee Road</span><br>          <span>Ballyclare</span><br>          <span>Ballyclare</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT39 9HJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -9204,7 +9202,7 @@
                 <h3>Maxfit</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 6 Glenwell Road</span><br>          <span>Collinward</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 7RF</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -9288,7 +9286,7 @@
                 <h3>Collinward Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2-4 Glengormley Park</span><br>          <span>Newtownabbey</span><br>          <span>County Antrim</span><br>        <span itemprop="postalCode">BT36 7RE</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -9312,7 +9310,7 @@
                 <h3>Hobbycraft</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 5b Longwood Retail Park</span><br>          <span>Drumnadrough</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 9UF</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -10068,7 +10066,7 @@
                 <h3>Montgomery Distribution Limited</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Doagh Road</span><br>          <span>Newtownabbey</span><br>        <span itemprop="postalCode">BT36 4TP</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -10152,7 +10150,7 @@
                 <h3>Reaper Inc</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Doagh Business Park 11 Kilbride Road Doagh</span><br>          <span>Ballyclare</span><br>        <span itemprop="postalCode">BT39 0QA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -10236,7 +10234,7 @@
                 <h3>Sports Direct Newtownabbey</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Units 11-13 Longwood Retail Park</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 9UF</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -10296,7 +10294,7 @@
                 <h3>FOCUS</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>15 Market Square</span><br>          <span>Towns Parks</span><br>          <span>Antrim</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 4AW</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -10313,18 +10311,6 @@
 </div>
 
                 <a href="/region-northern-ireland/masala-fusion-1697377" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1697378">
-                <h3>Platform Coffee Co Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>38 Station Road</span><br>          <span>Towns Parks</span><br>          <span>Antrim</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 4AB</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/platform-coffee-co-ltd-1697378" class="details-link">
                   More
                 </a>
               </div>
@@ -10440,7 +10426,7 @@
                 <h3>Antrim Foodbank</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>58 Greystone Road Greystone Road</span><br>        <span itemprop="postalCode">BT41 1JZ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -10464,7 +10450,7 @@
                 <h3>STL Logistics</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Central Park</span><br>          <span>Grange Of Mallusk</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 4FS</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -10725,14 +10711,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1736210">
-                <h3>Nanny Plum’s Bakery &amp; Deli</h3>
+                <h3>Nanny Plums Abbots Cross</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>20 Abbots Cross</span><br>          <span>White Abbey</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 9QU</span>
+      <div>No address information available</div>
   </address>
 </div>
 
-                <a href="/region-northern-ireland/nanny-plums-bakery-deli-1736210" class="details-link">
+                <a href="/region-northern-ireland/nanny-plums-abbots-cross-1736210" class="details-link">
                   More
                 </a>
               </div>
@@ -10992,7 +10978,7 @@
                 <h3>Sharon’s confectionery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1a Orchard Road</span><br>          <span>Ballytromery</span><br>          <span>Crumlin</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT29 4SD</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -11304,7 +11290,7 @@
                 <h3>Pharmacy Plus</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>40 Rashee Road</span><br>          <span>Ballyclare</span><br>          <span>Ballyclare</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT39 9HJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -11328,7 +11314,7 @@
                 <h3>Colin Lyttle Golf</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>25 Springvale Road</span><br>          <span>Rashee</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT39 9JW</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -11568,7 +11554,7 @@
                 <h3>Stoneworks Sports and supplements</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>41 High Street</span><br>          <span>Towns Parks</span><br>          <span>Antrim</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 4AY</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -11580,7 +11566,7 @@
                 <h3>Poundstretcher</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Market Square</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 4DN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -11648,18 +11634,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1837770">
-                <h3>Little Izzies Play Cafe</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>9 John Street</span><br>          <span>Randalstown</span><br>          <span>Randalstown</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 3AD</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/little-izzies-play-cafe-1837770" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1841412">
                 <h3>Jude Bakes</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11700,7 +11674,7 @@
                 <h3>Ollie&#39;s Snackbox</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Randalstown</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 3AF</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -11916,7 +11890,7 @@
                 <h3>Well Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>26 The Diamond</span><br>          <span>White House</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 9BJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -12276,7 +12250,7 @@
                 <h3>Calvon</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>40 Carnvue Avenue</span><br>          <span>Carnmoney</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 6RA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -12288,7 +12262,7 @@
                 <h3>McCormick UK</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>605 Antrim Road Newtownabbey</span><br>          <span>Newtownabbey</span><br>        <span itemprop="postalCode">BT36 4RY</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -12648,7 +12622,7 @@
                 <h3>Rent a reality</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>7 St. Quentin Avenue</span><br>          <span>Newtownabbey</span><br>        <span itemprop="postalCode">BT36 6EN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -12696,7 +12670,7 @@
                 <h3>LJG dairy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>16 Carnbeg Meadows</span><br>          <span>Dunsilly</span><br>          <span>Antrim</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 4RG</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -12732,7 +12706,7 @@
                 <h3>S’mores and Snaps</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>16 Kilgavanagh Road</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT41 2LJ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -12756,7 +12730,7 @@
                 <h3>Slimming World</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>9 Rosemount Crescent</span><br>          <span>Monkstown</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 0NH</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -12948,7 +12922,7 @@
                 <h3>Ellouise Moore</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>46 Victoria Manor</span><br>          <span>Ballyclare</span><br>        <span itemprop="postalCode">BT39 9YW</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -12984,7 +12958,7 @@
                 <h3>Boots</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Airport Road</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT29 4AB</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -13092,7 +13066,7 @@
                 <h3>The Paper Shop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>4 The Square</span><br>          <span>Ballyclare</span><br>          <span>Ballyclare</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT39 9BB</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -13176,7 +13150,7 @@
                 <h3>KOKO</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>13-14 Monkstown Village Centre</span><br>          <span>Monkstown</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT37 0HS</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -13196,23 +13170,11 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1978086">
-                <h3>Spice Bag</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>331a Antrim Road</span><br>          <span>Glengormly</span><br>          <span>Newtownabbey</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT36 5DY</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/spice-bag-1978086" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1978087">
                 <h3>Dixies</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Square</span><br>          <span>Ballyclare</span><br>          <span>Antrim</span><br>        <span itemprop="postalCode">BT39 9BB</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -13277,6 +13239,126 @@
 </div>
 
                 <a href="/region-northern-ireland/rebel-ruse-tacos-1978092" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1982682">
+                <h3>Little Izzies</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/little-izzies-1982682" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1982683">
+                <h3>Stanleys Family Butchers</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/stanleys-family-butchers-1982683" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1982685">
+                <h3>Lisa&#39;s Childcare</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/lisas-childcare-1982685" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1982686">
+                <h3>THE SIX MEADOWS</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/the-six-meadows-1982686" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1982687">
+                <h3>Royal Thai</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/royal-thai-1982687" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1982688">
+                <h3>Grind</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/grind-1982688" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1982689">
+                <h3>Bamboo House</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/bamboo-house-1982689" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1982690">
+                <h3>Pablo&#39;s espresso bar 2</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/pablos-espresso-bar-2-1982690" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1982691">
+                <h3>Bear bites</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/bear-bites-1982691" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1982692">
+                <h3>The Olive Tree Deli</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/the-olive-tree-deli-1982692" class="details-link">
                   More
                 </a>
               </div>

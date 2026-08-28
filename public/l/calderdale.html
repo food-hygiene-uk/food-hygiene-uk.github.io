@@ -19,7 +19,29 @@
 {let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
   </script>
   <style>
-    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132,190,0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(in oklab,var(--hygiene-green) 50%,#fff 50%);--hygiene-green-lowlight:color-mix(in oklab,var(--hygiene-green) 75%,#000 25%);--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue),#000);--text-color:light-dark(#000,#ddd);--header-background-color:light-dark(#f8f9fa,#0d0d0d);--header-text-color:light-dark(#000,#9c9c9c);--header-rule-color:light-dark(#e0e0e0,#383838);--background-highlight-color:light-dark(#e5e8f1,var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff,#444);--input-border:light-dark(#ccc,#555);--card-color:light-dark(#000,#fff);--card-background:light-dark(#fff,#2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(in oklab,var(--card-background) 80%,#fff 20%);--card-color-lowlight:#fff;--card-background-lowlight:color-mix(in oklab,var(--card-background) 95%,#000 5%);--card-border:1px solid light-dark(#ddd,#444);--card-link-color:light-dark(#00e,#9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a,#00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026,#00000040);--box-shadow-border:1px solid light-dark(#dedede,#393939);--button-cta-bg:light-dark(var(--hygiene-green),var(--hygiene-green-lowlight));--button-cta-color:light-dark(#000,#000);--button-cta-bg-hover:light-dark(var(--hygiene-green-highlight),var(--hygiene-green));--button-cta-color-hover:light-dark(#000,#000)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    html{color-scheme:only light}@media (not (scripting:none)) or (prefers-color-scheme:dark){html:not([data-color-scheme=light]){color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132, 190, 0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(
+    in oklab,
+    var(--hygiene-green) 50%,
+    #fff 50%
+  );--hygiene-green-lowlight:color-mix(
+    in oklab,
+    var(--hygiene-green) 75%,
+    #000 25%
+  );--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(
+    in oklab,
+    var(--card-background) 80%,
+    #fff 20%
+  );--card-color-lowlight:#fff;--card-background-lowlight:color-mix(
+    in oklab,
+    var(--card-background) 95%,
+    #000 5%
+  );--card-border:1px solid light-dark(#ddd, #444);--card-link-color:light-dark(#00e, #9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a, #00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026, #00000040);--box-shadow-border:1px solid light-dark(#dedede, #393939);--button-cta-bg:light-dark(
+    var(--hygiene-green),
+    var(--hygiene-green-lowlight)
+  );--button-cta-color:light-dark(#000, #000);--button-cta-bg-hover:light-dark(
+    var(--hygiene-green-highlight),
+    var(--hygiene-green)
+  );--button-cta-color-hover:light-dark(#000, #000)}[inert],[inert] *{cursor:default;opacity:.5;pointer-events:none;user-select:none}body{background-color:var(--body-background);color:var(--text-color);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0}a{color:#0052a3;text-decoration:none}a:hover{text-decoration:underline}.container{margin:0 auto;max-width:1200px;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text-color);font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{border-bottom:1px solid var(--hygiene-green);font-size:2em}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{margin-bottom:1rem;padding:.5rem;width:100%}.establishment{display:block;padding:1rem 0;position:relative;&.hidden{display:none}.details-link{display:block;inset:0;position:absolute;text-indent:-9999px;z-index:1;&:hover{display:flex;flex-direction:column-reverse;padding-bottom:1rem;padding-right:1rem;text-align:right}}&:has(a:hover){background-color:var(--background-highlight-color);border-radius:9px;color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
     .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);border-bottom:1px solid var(--header-rule-color);box-sizing:border-box;max-width:100vw;overflow:hidden;padding:1rem calc(50vw - 600px);position:relative;@media (width <= 1240px){max-width:100vw;padding-bottom:1rem;padding-left:20px;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{align-items:center;display:flex;justify-content:space-between}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;display:flex;gap:1.5rem;list-style:none;li{display:inline;a{color:var(--header-text-color);font-weight:700;text-decoration:none}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{cursor:pointer;display:none;flex-direction:column;height:21px;justify-content:space-between;width:30px;z-index:2}.hamburger-h3ad34 span{background-color:var(--header-text-color);border-radius:3px;display:block;height:3px;transition:all .3s ease-in-out;width:100%}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{background-color:var(--header-background-color);box-sizing:border-box;flex-direction:column;gap:2rem;height:calc(100vh - 84px);padding:2rem;position:fixed;right:-100%;text-align:right;top:84px;transition:right .3s ease-in-out;width:100%;z-index:1;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
     .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);margin-top:2rem;padding-bottom:2rem;padding-top:2rem;.container.footer-columns{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-around;margin-bottom:2rem;text-align:left}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{border-bottom:1px solid #fff3;color:#fff;font-weight:700;margin-bottom:.5rem}ul{list-style:none;margin:0;padding:0;li{margin-bottom:.25rem}}}a{border-bottom:1px solid #ffffff4d;color:#fff;text-decoration:none;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{font-size:.9rem;margin-top:1rem;padding-top:1rem;text-align:center;p{margin:.25rem 0}}}}
@@ -253,7 +275,7 @@
                 <h3>Aachen Brook</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Aachen Brook St Anne's Community Services</span><br>          <span>Burnley Road</span><br>          <span>Luddenden Foot</span><br>          <span>Sowerby Bridge</span><br>        <span itemprop="postalCode">HX2 6AU</span>
   </address>
 </div>
 
@@ -373,7 +395,7 @@
                 <h3>Rosier Cakes</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>13 Dyson Road</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 4RJ</span>
   </address>
 </div>
 
@@ -529,7 +551,7 @@
                 <h3>Something Sweet</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>11B Bridge Gate</span><br>          <span>Hebden Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX7 8EX</span>
   </address>
 </div>
 
@@ -577,7 +599,7 @@
                 <h3>Ada Social Club</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>66 - 68 Battinson Road</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 4RW</span>
   </address>
 </div>
 
@@ -601,7 +623,7 @@
                 <h3>Old Rishworthians RUFC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Copley Lane</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 0UG</span>
   </address>
 </div>
 
@@ -721,7 +743,7 @@
                 <h3>Royd Ices</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Royds Ice Cream</span><br>          <span>Cragg Road Works</span><br>          <span>Cragg Road</span><br>          <span>Mytholmroyd</span><br>        <span itemprop="postalCode">HX7 5HR</span>
   </address>
 </div>
 
@@ -853,7 +875,7 @@
                 <h3>Ryburn Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>79 Elizabeth Street</span><br>          <span>Elland</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX5 0JH</span>
   </address>
 </div>
 
@@ -1141,7 +1163,7 @@
                 <h3>St Matthews Methodist And Anglican Church</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Church Street</span><br>          <span>Rastrick</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 3NF</span>
   </address>
 </div>
 
@@ -1405,7 +1427,7 @@
                 <h3>Sams Mini Market</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>32 Bank Top</span><br>          <span>Southowram</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 9NJ</span>
   </address>
 </div>
 
@@ -1609,7 +1631,7 @@
                 <h3>Sarah Harrison</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>21 Park Road</span><br>          <span>Elland</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX5 9HZ</span>
   </address>
 </div>
 
@@ -1669,7 +1691,7 @@
                 <h3>SSt Annes Shelter</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>1 Sutherland Court</span><br>          <span>Upper Sutherland Road</span><br>          <span>Hipperholme</span><br>          <span>Brighouse</span><br>        <span itemprop="postalCode">HX3 8NT</span>
   </address>
 </div>
 
@@ -1729,7 +1751,7 @@
                 <h3>Savers Health &amp; Beauty</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>31 Westgate House</span><br>          <span>Market Street</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 1PD</span>
   </address>
 </div>
 
@@ -2041,7 +2063,7 @@
                 <h3>Park Lane Stores</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>2 Park Lane</span><br>          <span>Siddal</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 9ED</span>
   </address>
 </div>
 
@@ -2197,7 +2219,7 @@
                 <h3>Stafford Bowling Club</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Stafford Avenue</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 0BH</span>
   </address>
 </div>
 
@@ -2293,7 +2315,7 @@
                 <h3>Sowerby Bridge Church Inst CC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Sbic Cricket Club</span><br>          <span>Blackwall Lane</span><br>          <span>Sowerby Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX6 2UB</span>
   </address>
 </div>
 
@@ -2329,7 +2351,7 @@
                 <h3>Southwood Masonic Hall</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Southwood</span><br>          <span>Birdcage Lane</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 0JQ</span>
   </address>
 </div>
 
@@ -2365,7 +2387,7 @@
                 <h3>Stainland Village Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>350 Stainland Road</span><br>          <span>Elland</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX4 9EH</span>
   </address>
 </div>
 
@@ -2377,7 +2399,7 @@
                 <h3>Vue Cinema Halifax</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>6 Broad Street Plaza</span><br>          <span>Broad Street Plaza</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 1UX</span>
   </address>
 </div>
 
@@ -2401,7 +2423,7 @@
                 <h3>Standard Of Freedom</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Standard Of Freedom Inn</span><br>          <span>2 New Lane</span><br>          <span>Skircoat Green</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX3 0TE</span>
   </address>
 </div>
 
@@ -2437,7 +2459,7 @@
                 <h3>W Boyes \&amp; Co Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>19 - 21 King Street</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 1NX</span>
   </address>
 </div>
 
@@ -2509,7 +2531,7 @@
                 <h3>Pellon Lane Service Station</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>151 Pellon Lane</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 5RL</span>
   </address>
 </div>
 
@@ -2605,7 +2627,7 @@
                 <h3>Pennine Tea &amp; Coffee Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>6 Hall Street</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 5AY</span>
   </address>
 </div>
 
@@ -2629,7 +2651,7 @@
                 <h3>Nini Convenience Store Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>35 - 41 Thornhill Road</span><br>          <span>Rastrick</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 3AX</span>
   </address>
 </div>
 
@@ -2761,7 +2783,7 @@
                 <h3>Porcus People Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Height Top Barn</span><br>          <span>Tower Causeway</span><br>          <span>Todmorden</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">OL14 7JE</span>
   </address>
 </div>
 
@@ -2977,7 +2999,7 @@
                 <h3>Queen Hotel</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>97 Stainland Road</span><br>          <span>Elland</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX4 8BD</span>
   </address>
 </div>
 
@@ -3049,7 +3071,7 @@
                 <h3>Bread &amp; Butter Co</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 11A</span><br>          <span>Top Land Country Business Park</span><br>          <span>Cragg Road</span><br>          <span>Mytholmroyd</span><br>        <span itemprop="postalCode">HX7 5RW</span>
   </address>
 </div>
 
@@ -3133,7 +3155,7 @@
                 <h3>Eagles Crag Brewery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 21</span><br>          <span>Robinwood Mill</span><br>          <span>Burnley Road</span><br>          <span>Todmorden</span><br>        <span itemprop="postalCode">OL14 8JA</span>
   </address>
 </div>
 
@@ -3589,7 +3611,7 @@
                 <h3>Rastrick Convenience Store</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>2 Church Street</span><br>          <span>Rastrick</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 3NF</span>
   </address>
 </div>
 
@@ -3613,7 +3635,7 @@
                 <h3>Rex Cinema</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Coronation Street</span><br>          <span>Elland</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX5 0DF</span>
   </address>
 </div>
 
@@ -3673,7 +3695,7 @@
                 <h3>Ash Green After School Club</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Ash Green Community Primary School</span><br>          <span>Mixenden Road</span><br>          <span>Mixenden</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX2 8QD</span>
   </address>
 </div>
 
@@ -3901,7 +3923,7 @@
                 <h3>Bridges Fitness Centre</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Birkby House</span><br>          <span>Birkby Lane</span><br>          <span>Bailiff Bridge</span><br>          <span>Brighouse</span><br>        <span itemprop="postalCode">HD6 4EN</span>
   </address>
 </div>
 
@@ -3961,7 +3983,7 @@
                 <h3>Bankfield Social Club</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Bankfield House</span><br>          <span>Huddersfield Road</span><br>          <span>Elland</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX5 9DW</span>
   </address>
 </div>
 
@@ -3997,7 +4019,7 @@
                 <h3>Bar Rouge</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>12 - 16 Silver Street</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 1HS</span>
   </address>
 </div>
 
@@ -4237,7 +4259,7 @@
                 <h3>Savile Bowling Club</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Savile Road</span><br>          <span>Hebden Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX7 6ND</span>
   </address>
 </div>
 
@@ -4261,7 +4283,7 @@
                 <h3>Savile Park Off-Lic</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>125 Savile Park Road</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 2XH</span>
   </address>
 </div>
 
@@ -4705,7 +4727,7 @@
                 <h3>Siddal Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>115 Oxford Lane</span><br>          <span>Siddal</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 9DG</span>
   </address>
 </div>
 
@@ -4801,7 +4823,7 @@
                 <h3>TC Supplies Halifax Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 4</span><br>          <span>The Market Business Centre</span><br>          <span>Hanson Lane</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX1 5PF</span>
   </address>
 </div>
 
@@ -4813,7 +4835,7 @@
                 <h3>T K Maxx</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 1</span><br>          <span>Greenmount Retail Park</span><br>          <span>Pellon Lane</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX1 5QN</span>
   </address>
 </div>
 
@@ -4897,7 +4919,7 @@
                 <h3>Card Factory</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>5 Woolshops</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 1RU</span>
   </address>
 </div>
 
@@ -4933,7 +4955,7 @@
                 <h3>Card Factory</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>32 - 34 Commercial Street</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 1AQ</span>
   </address>
 </div>
 
@@ -4945,7 +4967,7 @@
                 <h3>Intaz&#39;s General Store</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>31 Wellington Road</span><br>          <span>Todmorden</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">OL14 5HN</span>
   </address>
 </div>
 
@@ -5593,7 +5615,7 @@
                 <h3>Mandy Moo Cakes</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Beech Grove</span><br>          <span>Broad Carr Lane</span><br>          <span>Holywell Green</span><br>          <span>Elland</span><br>        <span itemprop="postalCode">HX4 9BS</span>
   </address>
 </div>
 
@@ -5701,7 +5723,7 @@
                 <h3>Wright &amp; Co</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Bridge End Works</span><br>          <span>Bramston Street</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 3AA</span>
   </address>
 </div>
 
@@ -5845,7 +5867,7 @@
                 <h3>The Enchanted Tea Garden</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Cafe</span><br>          <span>The Nurseries</span><br>          <span>Halifax Road</span><br>          <span>Brighouse</span><br>        <span itemprop="postalCode">HD6 2QD</span>
   </address>
 </div>
 
@@ -6133,7 +6155,7 @@
                 <h3>The Paper Shop &amp; Home Delivery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>4 Church Street</span><br>          <span>Rastrick</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 3NF</span>
   </address>
 </div>
 
@@ -6169,7 +6191,7 @@
                 <h3>The Peters</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>12 Trenance Gardens</span><br>          <span>Greetland</span><br>          <span>Elland</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX4 8NN</span>
   </address>
 </div>
 
@@ -6325,7 +6347,7 @@
                 <h3>The Tonic Tribe Limited</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 8</span><br>          <span>Bridge Mill</span><br>          <span>St Georges Square</span><br>          <span>Hebden Bridge</span><br>        <span itemprop="postalCode">HX7 8ET</span>
   </address>
 </div>
 
@@ -6505,7 +6527,7 @@
                 <h3>Browns News</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>47 Lee Mount Road</span><br>          <span>Lee Mount</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 5BQ</span>
   </address>
 </div>
 
@@ -6529,7 +6551,7 @@
                 <h3>Nestle UK</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Bailey Hall Mills</span><br>          <span>Bailey Hall Road</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 9XJ</span>
   </address>
 </div>
 
@@ -6697,7 +6719,7 @@
                 <h3>New Street Hotel</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>38 Sutcliffe Street</span><br>          <span>Pellon</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX2 0HG</span>
   </address>
 </div>
 
@@ -6721,7 +6743,7 @@
                 <h3>King Cross Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>206 King Cross Road</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 3JP</span>
   </address>
 </div>
 
@@ -7321,7 +7343,7 @@
                 <h3>Total Meat Supplies</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Units 7 And 8</span><br>          <span>Brow Mills Industrial Estate</span><br>          <span>Brighouse Road</span><br>          <span>Hipperholme</span><br>        <span itemprop="postalCode">HX3 8EF</span>
   </address>
 </div>
 
@@ -7597,7 +7619,7 @@
                 <h3>Greetland Social Club</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>222 Rochdale Road</span><br>          <span>Greetland</span><br>          <span>Elland</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX4 8JE</span>
   </address>
 </div>
 
@@ -7741,7 +7763,7 @@
                 <h3>Diane McAlpin</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>17 Heath Lea</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 2BX</span>
   </address>
 </div>
 
@@ -7753,7 +7775,7 @@
                 <h3>Dianne Turner</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>2 Sunnydene</span><br>          <span>Rastrick Common</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 3EL</span>
   </address>
 </div>
 
@@ -7801,7 +7823,7 @@
                 <h3>Jayne Lawrance</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>57 Coley View</span><br>          <span>Northowram</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 7EB</span>
   </address>
 </div>
 
@@ -8089,7 +8111,7 @@
                 <h3>Esso Burnley Road</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Cote Hill Service Station</span><br>          <span>Burnley Road</span><br>          <span>Warley</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX2 7NB</span>
   </address>
 </div>
 
@@ -8197,7 +8219,7 @@
                 <h3>Khan News</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>51 Commercial Street</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 1AF</span>
   </address>
 </div>
 
@@ -8245,7 +8267,7 @@
                 <h3>Circle Lounge</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>59 Commercial Street</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 1BE</span>
   </address>
 </div>
 
@@ -8353,7 +8375,7 @@
                 <h3>Voyage Care T/A North View</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>North View</span><br>          <span>Halifax Road</span><br>          <span>Todmorden</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">OL14 5QG</span>
   </address>
 </div>
 
@@ -8389,7 +8411,7 @@
                 <h3>Cryers Newsagent</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>15 Bridge Street</span><br>          <span>Todmorden</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">OL14 5AQ</span>
   </address>
 </div>
 
@@ -8449,7 +8471,7 @@
                 <h3>Danish Crown Halifax</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 9</span><br>          <span>Moderna Business Park</span><br>          <span>Moderna Way</span><br>          <span>Mytholmroyd</span><br>        <span itemprop="postalCode">HX7 5QQ</span>
   </address>
 </div>
 
@@ -8461,7 +8483,7 @@
                 <h3>Darkland Brewery Limited</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 4C</span><br>          <span>Ladyship Business Park</span><br>          <span>Old Lane</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX3 6TA</span>
   </address>
 </div>
 
@@ -8473,7 +8495,7 @@
                 <h3>Julie Wood @ Barn Owls</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Ridings Barn</span><br>          <span>Saltonstall Lane</span><br>          <span>Wainstalls</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX2 7TR</span>
   </address>
 </div>
 
@@ -8497,7 +8519,7 @@
                 <h3>Beckly House</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>56 Cooper Lane</span><br>          <span>Shelf</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 7RG</span>
   </address>
 </div>
 
@@ -8509,7 +8531,7 @@
                 <h3>Days Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Hartshead Moor M62 Service Area Eastbound</span><br>          <span>Highmoor Lane</span><br>          <span>Clifton</span><br>          <span>Brighouse</span><br>        <span itemprop="postalCode">HD6 4JX</span>
   </address>
 </div>
 
@@ -8713,7 +8735,7 @@
                 <h3>Boots The Chemist Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>59 Commercial Street</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 1AF</span>
   </address>
 </div>
 
@@ -8773,7 +8795,7 @@
                 <h3>Boothtown Post Office</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>38 Boothtown Road</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 6NE</span>
   </address>
 </div>
 
@@ -8941,7 +8963,7 @@
                 <h3>Mishri Foods Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 11</span><br>          <span>Hanson Lane Enterprise Centre</span><br>          <span>Hanson Lane</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX1 5PG</span>
   </address>
 </div>
 
@@ -9133,7 +9155,7 @@
                 <h3>Mixenden Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>101 Mixenden Road</span><br>          <span>Mixenden</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX2 8PU</span>
   </address>
 </div>
 
@@ -9481,7 +9503,7 @@
                 <h3>Fiona Griffith</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>17 Regent Street</span><br>          <span>Hebden Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX7 7DG</span>
   </address>
 </div>
 
@@ -9685,7 +9707,7 @@
                 <h3>Flower Of Life Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 8</span><br>          <span>Sowerby Bridge Business Park</span><br>          <span>Victoria Road</span><br>          <span>Sowerby Bridge</span><br>        <span itemprop="postalCode">HX6 3AE</span>
   </address>
 </div>
 
@@ -9697,7 +9719,7 @@
                 <h3>Flower Of Life Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 10</span><br>          <span>Sowerby Bridge Business Park</span><br>          <span>Victoria Road</span><br>          <span>Sowerby Bridge</span><br>        <span itemprop="postalCode">HX6 3AE</span>
   </address>
 </div>
 
@@ -10009,7 +10031,7 @@
                 <h3>League Of Friends Teabar</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Calderdale Royal Hospital</span><br>          <span>Dryclough Lane</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 0PW</span>
   </address>
 </div>
 
@@ -10045,7 +10067,7 @@
                 <h3>Living Care Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Livingcare Pharmacy</span><br>          <span>Southowram Surgery</span><br>          <span>Law Lane</span><br>          <span>Southowram</span><br>        <span itemprop="postalCode">HX3 9QB</span>
   </address>
 </div>
 
@@ -10201,7 +10223,7 @@
                 <h3>La Salsa</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>First And Second Floors</span><br>          <span>24 - 26 Silver Street</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 1HS</span>
   </address>
 </div>
 
@@ -10225,7 +10247,7 @@
                 <h3>Knowl End Farm 143 Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Brearley Mill</span><br>          <span>Halifax Road</span><br>          <span>Todmorden</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">OL14 6EF</span>
   </address>
 </div>
 
@@ -10453,7 +10475,7 @@
                 <h3>James Clay &amp; Sons</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 1</span><br>          <span>River Street Business Park</span><br>          <span>River Street</span><br>          <span>Brighouse</span><br>        <span itemprop="postalCode">HD6 1LY</span>
   </address>
 </div>
 
@@ -10597,7 +10619,7 @@
                 <h3>Copley Cricket Club</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Copley Lane</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 0UG</span>
   </address>
 </div>
 
@@ -10969,7 +10991,7 @@
                 <h3>G &amp; M Tasty Limited</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 1</span><br>          <span>River Street Business Park</span><br>          <span>River Street</span><br>          <span>Brighouse</span><br>        <span itemprop="postalCode">HD6 1LY</span>
   </address>
 </div>
 
@@ -11701,7 +11723,7 @@
                 <h3>Higgins Close Day Centre</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Higgins Close</span><br>          <span>Savile Park Road</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 2ES</span>
   </address>
 </div>
 
@@ -12373,7 +12395,7 @@
                 <h3>Equinox Kombucha</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 11</span><br>          <span>Sowerby Bridge Business Park</span><br>          <span>Victoria Road</span><br>          <span>Sowerby Bridge</span><br>        <span itemprop="postalCode">HX6 3AE</span>
   </address>
 </div>
 
@@ -12457,7 +12479,7 @@
                 <h3>McVities</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Kingston Mills</span><br>          <span>Hopwood Lane</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 4EY</span>
   </address>
 </div>
 
@@ -13057,7 +13079,7 @@
                 <h3>NP Dev Limited</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit NM 1R</span><br>          <span>Netherton Mill</span><br>          <span>Holdsworth Road</span><br>          <span>Holmfield</span><br>        <span itemprop="postalCode">HX3 6FD</span>
   </address>
 </div>
 
@@ -13249,7 +13271,7 @@
                 <h3>Tamanna&#39;s</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>11 New Road</span><br>          <span>Mytholmroyd</span><br>          <span>Hebden Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX7 5DZ</span>
   </address>
 </div>
 
@@ -13393,7 +13415,7 @@
                 <h3>The Barge</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>37 Mill Lane</span><br>          <span>Brighouse</span><br>        <span itemprop="postalCode">HD6 1PA</span>
   </address>
 </div>
 
@@ -13609,7 +13631,7 @@
                 <h3>Pennine Pasties</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>14A Oxford Street</span><br>          <span>Todmorden</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">OL14 5PU</span>
   </address>
 </div>
 
@@ -13729,7 +13751,7 @@
                 <h3>Flower Of Life Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 14</span><br>          <span>Sowerby Bridge Business Park</span><br>          <span>Victoria Road</span><br>          <span>Sowerby Bridge</span><br>        <span itemprop="postalCode">HX6 3AE</span>
   </address>
 </div>
 
@@ -13921,7 +13943,7 @@
                 <h3>Go Outdoors Halifax</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>2 Crown Street</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 1TT</span>
   </address>
 </div>
 
@@ -14209,7 +14231,7 @@
                 <h3>East Corner Mini-Market</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>226 Pellon Lane</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 5RU</span>
   </address>
 </div>
 
@@ -14365,7 +14387,7 @@
                 <h3>JR News \&amp; Convenience</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>440 Gibbet Street</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX2 0AX</span>
   </address>
 </div>
 
@@ -14701,7 +14723,7 @@
                 <h3>Park Road Food \&amp; Wine</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>35 Clifton Street</span><br>          <span>Sowerby Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX6 2DQ</span>
   </address>
 </div>
 
@@ -14797,7 +14819,7 @@
                 <h3>T &amp; J G Smith</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Bradley Mill Farm</span><br>          <span>Bradley Lane</span><br>          <span>West Vale</span><br>          <span>Elland</span><br>        <span itemprop="postalCode">HX4 8NL</span>
   </address>
 </div>
 
@@ -15001,7 +15023,7 @@
                 <h3>Dixons Milk Ices</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 2</span><br>          <span>Brookfoot Business Park</span><br>          <span>Elland Road</span><br>          <span>Brighouse</span><br>        <span itemprop="postalCode">HD6 2SD</span>
   </address>
 </div>
 
@@ -15097,7 +15119,7 @@
                 <h3>Crystal VAPE LOUNGE</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>5 Southgate</span><br>          <span>Elland</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX5 0BW</span>
   </address>
 </div>
 
@@ -15529,7 +15551,7 @@
                 <h3>SK Off Licence Store</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>13-17 St James Road</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 1YS</span>
   </address>
 </div>
 
@@ -15805,7 +15827,7 @@
                 <h3>The Wild &#39;Uns</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Cooper House</span><br>          <span>Cooper Lane</span><br>          <span>Shelf</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX3 7BG</span>
   </address>
 </div>
 
@@ -16021,7 +16043,7 @@
                 <h3>Blue Sky Baker - Bakery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 1</span><br>          <span>Pennine Industrial Park</span><br>          <span>Valley Road</span><br>          <span>Hebden Bridge</span><br>        <span itemprop="postalCode">HX7 7BZ</span>
   </address>
 </div>
 
@@ -16033,7 +16055,7 @@
                 <h3>Dorethy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 2</span><br>          <span>7 Martin Street</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 1DA</span>
   </address>
 </div>
 
@@ -16297,7 +16319,7 @@
                 <h3>Lezan&#39;s Store</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>3 Tower Hill</span><br>          <span>Sowerby Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX6 2EQ</span>
   </address>
 </div>
 
@@ -16405,7 +16427,7 @@
                 <h3>Social By Distinct Coffee</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>371 Skircoat Green Road</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 0RP</span>
   </address>
 </div>
 
@@ -16489,7 +16511,7 @@
                 <h3>Kalm</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Ground Floor</span><br>          <span>24 - 26 Commercial Street</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 1AQ</span>
   </address>
 </div>
 
@@ -16525,7 +16547,7 @@
                 <h3>Cardamon At The Bridge</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>9-11 Albert Street</span><br>          <span>Hebden Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX7 8AH</span>
   </address>
 </div>
 
@@ -17845,7 +17867,7 @@
                 <h3>The Bridgewood Trust</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Hostel</span><br>          <span>25 Wheatley Lane</span><br>          <span>Lee Mount</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX3 5HN</span>
   </address>
 </div>
 
@@ -18755,7 +18777,7 @@
                 <h3>Future Manufacturing Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>1C Shelf Mills</span><br>          <span>Wade House Road</span><br>          <span>Shelf</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX3 7BJ</span>
   </address>
 </div>
 
@@ -19269,7 +19291,7 @@
                 <h3>Cafe Di Lusso</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>217 King Cross Road</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 3JL</span>
   </address>
 </div>
 
@@ -19639,7 +19661,7 @@
                 <h3>Secret Cocktail Bar</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>2 Ashley Villas</span><br>          <span>Hebden Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX7 7DR</span>
   </address>
 </div>
 
@@ -19783,7 +19805,7 @@
                 <h3>Mighty Distribution</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 13</span><br>          <span>Branxholme Industrial Estate</span><br>          <span>Wyke Old Lane</span><br>          <span>Bailiff Bridge</span><br>        <span itemprop="postalCode">HD6 4EA</span>
   </address>
 </div>
 
@@ -19843,7 +19865,7 @@
                 <h3>Lucky Dog Honey</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>16 Gledhill Street</span><br>          <span>Todmorden</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">OL14 5LL</span>
   </address>
 </div>
 
@@ -20239,7 +20261,7 @@
                 <h3>Ayka Wellness</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>48 Howard Street</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 5RP</span>
   </address>
 </div>
 
@@ -20599,7 +20621,7 @@
                 <h3>We Do Brands</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Shaw Lodge Mills</span><br>          <span>Shaw Lane</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 9ET</span>
   </address>
 </div>
 
@@ -21438,7 +21460,7 @@
                 <h3>Gains Nutrition</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 4</span><br>          <span>Victoria Park</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 5ND</span>
   </address>
 </div>
 
@@ -21762,7 +21784,7 @@
                 <h3>Elias Indulge Cravings</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>9 Wharf Street</span><br>          <span>Sowerby Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX6 2EG</span>
   </address>
 </div>
 
@@ -21942,7 +21964,7 @@
                 <h3>Viceroy Brighouse Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>6 Huddersfield Road</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 1JZ</span>
   </address>
 </div>
 
@@ -21978,7 +22000,7 @@
                 <h3>Greggs</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Belmont Garage</span><br>          <span>Rochdale Road</span><br>          <span>Sowerby Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX6 3BL</span>
   </address>
 </div>
 
@@ -22241,7 +22263,7 @@
                 <h3>The Lemon Drop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>5 Rugby Mount</span><br>          <span>Ovenden</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 5SU</span>
   </address>
 </div>
 
@@ -22277,7 +22299,7 @@
                 <h3>Valor Solutions</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 2</span><br>          <span>Clifton Mills</span><br>          <span>Bradford Road</span><br>          <span>Brighouse</span><br>        <span itemprop="postalCode">HD6 4JJ</span>
   </address>
 </div>
 
@@ -22301,7 +22323,7 @@
                 <h3>Esso Rontec</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Sun Wood Service Station</span><br>          <span>Halifax Road</span><br>          <span>Shelf</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX3 7JT</span>
   </address>
 </div>
 
@@ -22349,7 +22371,7 @@
                 <h3>Good Neighbour</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Youth House</span><br>          <span>Carlton Street</span><br>          <span>Hebden Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX7 8ER</span>
   </address>
 </div>
 
@@ -22397,7 +22419,7 @@
                 <h3>Optimise Health</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 6</span><br>          <span>Lock Hill Mills</span><br>          <span>Holmes Road</span><br>          <span>Sowerby Bridge</span><br>        <span itemprop="postalCode">HX6 3LD</span>
   </address>
 </div>
 
@@ -22421,7 +22443,7 @@
                 <h3>The Next Step Trust</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Marsh Meadows</span><br>          <span>31 Marsh Lane</span><br>          <span>Southowram</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX3 9UF</span>
   </address>
 </div>
 
@@ -22433,7 +22455,7 @@
                 <h3>Gooder Lane Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>32 Gooder Lane</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 1HT</span>
   </address>
 </div>
 
@@ -22445,7 +22467,7 @@
                 <h3>By Efendi</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Broadway Retail Park</span><br>          <span>Queens Road</span><br>          <span>King Cross</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX1 3BJ</span>
   </address>
 </div>
 
@@ -22492,7 +22514,7 @@
                 <h3>Rollo Lounge</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Horton House</span><br>          <span>7 Horton Street</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 1PU</span>
   </address>
 </div>
 
@@ -22624,7 +22646,7 @@
                 <h3>L.A. Krispy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Broadway Retail Park</span><br>          <span>Queens Road</span><br>          <span>King Cross</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX1 3BJ</span>
   </address>
 </div>
 
@@ -22636,7 +22658,7 @@
                 <h3>Bell Hall Convenience Store</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>194 Savile Park Road</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 2XP</span>
   </address>
 </div>
 
@@ -22768,7 +22790,7 @@
                 <h3>God&#39;s Own Grub</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>2 Sod House Green</span><br>          <span>Ovenden</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 6QR</span>
   </address>
 </div>
 
@@ -22780,7 +22802,7 @@
                 <h3>Hannah&#39;s Waroeng</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Trades Club</span><br>          <span>Holme Street</span><br>          <span>Hebden Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX7 8EE</span>
   </address>
 </div>
 
@@ -22804,7 +22826,7 @@
                 <h3>Lee Mount Breakfast Stop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>4 Wheatley Lane</span><br>          <span>Lee Mount</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 5EU</span>
   </address>
 </div>
 
@@ -22816,7 +22838,7 @@
                 <h3>Dans Fish Bar</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>2 Waterhouse Street</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 1UQ</span>
   </address>
 </div>
 
@@ -22828,7 +22850,7 @@
                 <h3>Icmo Wholesale</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>17 Regency Gardens</span><br>          <span>Mount Terrace</span><br>          <span>Pellon</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX2 0HB</span>
   </address>
 </div>
 
@@ -22840,7 +22862,7 @@
                 <h3>Mantra House Modern Indian Dining &amp; Bar</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>83 Stainland Road</span><br>          <span>Elland</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX4 8BD</span>
   </address>
 </div>
 
@@ -22852,7 +22874,7 @@
                 <h3>The Watchmakers Bar &amp; Grill</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>20 - 22 Cheapside</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 1TQ</span>
   </address>
 </div>
 
@@ -22864,7 +22886,7 @@
                 <h3>Home Made Bites</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>3 Quiller Drive</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 5UB</span>
   </address>
 </div>
 
@@ -22876,8 +22898,7 @@
                 <h3>Premier Inn Halifax Town Centre</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
+          <span>Property Known As</span><br>          <span>3 - 5 Broad Street Plaza</span><br>          <span>Broad Street Plaza</span><br>          <span>Halifax</span>  </address>
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/premier-inn-halifax-town-centre-1981682" class="details-link">
@@ -22888,7 +22909,7 @@
                 <h3>The Fluffy Butt Hut</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>186 Claremount Road</span><br>          <span>Boothtown</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 6JP</span>
   </address>
 </div>
 
@@ -22924,7 +22945,7 @@
                 <h3>Crafted Platter</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>New Grange House</span><br>          <span>Ingham Lane</span><br>          <span>Bradshaw</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX2 9PE</span>
   </address>
 </div>
 
@@ -22960,7 +22981,7 @@
                 <h3>Apothecafe</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>20 Claremount Road</span><br>          <span>Boothtown</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX3 6JQ</span>
   </address>
 </div>
 
@@ -22972,7 +22993,7 @@
                 <h3>ELLAND CHRISTIAN CENTRE</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Providence Chapel</span><br>          <span>Huddersfield Road</span><br>          <span>Elland</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX5 9DW</span>
   </address>
 </div>
 
@@ -22984,7 +23005,7 @@
                 <h3>Br Food And Wine</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>12 Elsinore Avenue</span><br>          <span>Elland</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX5 0LT</span>
   </address>
 </div>
 
@@ -22996,7 +23017,7 @@
                 <h3>Vinoteca Brighouse</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>35 Bradford Road</span><br>          <span>Brighouse</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HD6 1RW</span>
   </address>
 </div>
 
@@ -23008,7 +23029,7 @@
                 <h3>Shakespeare Hotel</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Shakespeare Inn</span><br>          <span>3 Horton Street</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 1PU</span>
   </address>
 </div>
 
@@ -23020,7 +23041,7 @@
                 <h3>Your Local</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>25 Town Hall Street</span><br>          <span>Sowerby Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX6 2EA</span>
   </address>
 </div>
 
@@ -23032,7 +23053,7 @@
                 <h3>Goat Haus</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>South Lane Mills</span><br>          <span>South Lane</span><br>          <span>Elland</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX5 0HQ</span>
   </address>
 </div>
 
@@ -23056,7 +23077,7 @@
                 <h3>Fruitanicals</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Workspace Unit 17</span><br>          <span>Hanson Lane Enterprise Centre</span><br>          <span>Hanson Lane</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX1 5PG</span>
   </address>
 </div>
 
@@ -23068,7 +23089,7 @@
                 <h3>Ginger Panther</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>18 New Road</span><br>          <span>Hebden Bridge</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX7 8AD</span>
   </address>
 </div>
 
@@ -23080,8 +23101,7 @@
                 <h3>Opie&#39;s Cafe</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
+          <span>Sidhil Business Park</span><br>          <span>Holmfield Industrial Estate</span><br>          <span>Holmfield</span><br>          <span>Halifax</span>  </address>
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/opies-cafe-1981699" class="details-link">
@@ -23092,7 +23112,7 @@
                 <h3>Yorkshire Crumb &amp; Crust Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Unit 4</span><br>          <span>Lee Bridge Industrial Estate</span><br>          <span>Lee Bridge</span><br>          <span>Halifax</span><br>        <span itemprop="postalCode">HX3 5AT</span>
   </address>
 </div>
 
@@ -23116,7 +23136,7 @@
                 <h3>The Angels Rest</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Former</span><br>          <span>15 Crossley Street</span><br>          <span>Halifax</span><br>          <span>Calderdale</span><br>        <span itemprop="postalCode">HX1 1UG</span>
   </address>
 </div>
 
