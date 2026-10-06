@@ -16,7 +16,7 @@
   </script>
   <script>
     /* Minified JavaScript */
-{let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
+{let e=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e},t=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");t?.addEventListener("change",()=>{e(t)}),e(t)}
   </script>
   <style>
     html{--csstools-color-scheme--light:initial;color-scheme:only light}@media (prefers-color-scheme:dark),(scripting:enabled),(scripting:initial-only){html:not([data-color-scheme=light]){--csstools-color-scheme--light:;color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132, 190, 0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(
@@ -35,7 +35,7 @@
     in oklab,
     var(--card-background) 95%,
     #000 5%
-  );--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) rgba(0,0,0,.15);--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, rgba(0,0,0,.1));--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) rgba(0,0,0,.25);--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, rgba(0,0,0,.15));--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #000;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #000;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000);@supports not (color:light-dark(tan,tan)){& *{--csstools-light-dark-toggle--0:var(--csstools-color-scheme--light) #000;--body-background:var(--csstools-light-dark-toggle--0, var(--light-blue));--csstools-light-dark-toggle--1:var(--csstools-color-scheme--light) #ddd;--text-color:var(--csstools-light-dark-toggle--1, #000);--csstools-light-dark-toggle--2:var(--csstools-color-scheme--light) #0d0d0d;--header-background-color:var(--csstools-light-dark-toggle--2, #f8f9fa);--csstools-light-dark-toggle--3:var(--csstools-color-scheme--light) #9c9c9c;--header-text-color:var(--csstools-light-dark-toggle--3, #000);--csstools-light-dark-toggle--4:var(--csstools-color-scheme--light) #383838;--header-rule-color:var(--csstools-light-dark-toggle--4, #e0e0e0);--csstools-light-dark-toggle--5:var(--csstools-color-scheme--light) var(--light-blue);--background-highlight-color:var(--csstools-light-dark-toggle--5, #e5e8f1);--csstools-light-dark-toggle--6:var(--csstools-color-scheme--light) #444;--input-bg:var(--csstools-light-dark-toggle--6, #fff);--csstools-light-dark-toggle--7:var(--csstools-color-scheme--light) #555;--input-border:var(--csstools-light-dark-toggle--7, #ccc);--csstools-light-dark-toggle--8:var(--csstools-color-scheme--light) #fff;--card-color:var(--csstools-light-dark-toggle--8, #000);--csstools-light-dark-toggle--9:var(--csstools-color-scheme--light) #2d2d2d;--card-background:var(--csstools-light-dark-toggle--9, #fff);--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) rgba(0,0,0,.15);--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, rgba(0,0,0,.1));--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) rgba(0,0,0,.25);--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, rgba(0,0,0,.15));--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #000;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #000;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000)}}}@supports (color:light-dark(red,red)){:root{--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-border:1px solid light-dark(#ddd, #444);--card-link-color:light-dark(#00e, #9e9eff)}}@supports (color:light-dark(red,red)) and (color:rgb(0 0 0/0)){:root{--box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1), rgba(0,0,0,.15));--box-shadow-hover:0 4px 8px light-dark(rgba(0,0,0,.15), rgba(0,0,0,.25))}}@supports (color:light-dark(red,red)){:root{--box-shadow-border:1px solid light-dark(#dedede, #393939);--button-cta-bg:light-dark(
+  );--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) #00000026;--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, #0000001a);--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) #00000040;--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, #00000026);--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #000;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #000;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000);@supports not (color:light-dark(tan,tan)){& *{--csstools-light-dark-toggle--0:var(--csstools-color-scheme--light) #000;--body-background:var(--csstools-light-dark-toggle--0, var(--light-blue));--csstools-light-dark-toggle--1:var(--csstools-color-scheme--light) #ddd;--text-color:var(--csstools-light-dark-toggle--1, #000);--csstools-light-dark-toggle--2:var(--csstools-color-scheme--light) #0d0d0d;--header-background-color:var(--csstools-light-dark-toggle--2, #f8f9fa);--csstools-light-dark-toggle--3:var(--csstools-color-scheme--light) #9c9c9c;--header-text-color:var(--csstools-light-dark-toggle--3, #000);--csstools-light-dark-toggle--4:var(--csstools-color-scheme--light) #383838;--header-rule-color:var(--csstools-light-dark-toggle--4, #e0e0e0);--csstools-light-dark-toggle--5:var(--csstools-color-scheme--light) var(--light-blue);--background-highlight-color:var(--csstools-light-dark-toggle--5, #e5e8f1);--csstools-light-dark-toggle--6:var(--csstools-color-scheme--light) #444;--input-bg:var(--csstools-light-dark-toggle--6, #fff);--csstools-light-dark-toggle--7:var(--csstools-color-scheme--light) #555;--input-border:var(--csstools-light-dark-toggle--7, #ccc);--csstools-light-dark-toggle--8:var(--csstools-color-scheme--light) #fff;--card-color:var(--csstools-light-dark-toggle--8, #000);--csstools-light-dark-toggle--9:var(--csstools-color-scheme--light) #2d2d2d;--card-background:var(--csstools-light-dark-toggle--9, #fff);--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) #00000026;--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, #0000001a);--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) #00000040;--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, #00000026);--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #000;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #000;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000)}}}@supports (color:light-dark(red,red)){:root{--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-border:1px solid light-dark(#ddd, #444);--card-link-color:light-dark(#00e, #9e9eff)}}@supports (color:light-dark(red,red)) and (color:rgb(0 0 0/0)){:root{--box-shadow:0 2px 4px light-dark(#0000001a, #00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026, #00000040)}}@supports (color:light-dark(red,red)){:root{--box-shadow-border:1px solid light-dark(#dedede, #393939);--button-cta-bg:light-dark(
     var(--hygiene-green),
     var(--hygiene-green-lowlight)
   );--button-cta-color:light-dark(#000, #000);--button-cta-bg-hover:light-dark(
@@ -44,7 +44,7 @@
   );--button-cta-color-hover:light-dark(#000, #000)}}[inert],[inert] *{opacity:.5;pointer-events:none;cursor:default;-webkit-user-select:none;user-select:none}body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0;background-color:var(--body-background);color:var(--text-color)}a{color:#0052a3;-webkit-text-decoration:none;text-decoration:none}a:hover{-webkit-text-decoration:underline;text-decoration:underline}.container{max-width:1200px;margin:0 auto;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);color:var(--text-color);border-radius:4px;font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{font-size:2em;border-bottom:1px solid var(--hygiene-green)}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{width:100%;padding:.5rem;margin-bottom:1rem}.establishment{padding:1rem 0;display:block;&.hidden{display:none}position:relative;.details-link{display:block;position:absolute;inset:0;z-index:1;text-indent:-9999px;&:hover{display:flex;flex-direction:column-reverse;text-align:right;padding-right:1rem;padding-bottom:1rem}}&:has(a:hover){background-color:var(--background-highlight-color);color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem;border-radius:9px}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
     .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);padding:1rem calc(50vw - 600px);border-bottom:1px solid var(--header-rule-color);position:relative;max-width:100dvw;box-sizing:border-box;overflow:hidden;@media (width <= 1240px){max-width:100dvw;padding-left:20px;padding-bottom:1rem;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{display:flex;justify-content:space-between;align-items:center}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;list-style:none;display:flex;gap:1.5rem;li{display:inline;a{-webkit-text-decoration:none;text-decoration:none;color:var(--header-text-color);font-weight:700}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{display:none;flex-direction:column;justify-content:space-between;width:30px;height:21px;cursor:pointer;z-index:10}.hamburger-h3ad34 span{display:block;height:3px;width:100%;background-color:var(--header-text-color);border-radius:3px;transition:transform .3s ease-in-out,opacity .3s ease-in-out}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{box-sizing:border-box;position:fixed;top:84px;right:-100%;width:100%;height:calc(100dvh - 84px);flex-direction:column;background-color:var(--header-background-color);padding:2rem;transition:right .3s ease-in-out;z-index:5;text-align:right;gap:2rem;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
-    .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);padding-top:2rem;padding-bottom:2rem;margin-top:2rem;.container.footer-columns{display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem;text-align:left;margin-bottom:2rem}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{color:#fff;margin-bottom:.5rem;font-weight:700;border-bottom:1px solid hsla(0,0%,100%,.2)}ul{list-style:none;padding:0;margin:0;li{margin-bottom:.25rem}}}a{color:#fff;-webkit-text-decoration:none;text-decoration:none;border-bottom:1px solid hsla(0,0%,100%,.3);transition:border-color .3s;&:hover{border-color:#fff}}.copyright{text-align:center;margin-top:1rem;padding-top:1rem;font-size:.9rem;p{margin:.25rem 0}}}}
+    .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);padding-top:2rem;padding-bottom:2rem;margin-top:2rem;.container.footer-columns{display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem;text-align:left;margin-bottom:2rem}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{color:#fff;margin-bottom:.5rem;font-weight:700;border-bottom:1px solid #fff3}ul{list-style:none;padding:0;margin:0;li{margin-bottom:.25rem}}}a{color:#fff;-webkit-text-decoration:none;text-decoration:none;border-bottom:1px solid #ffffff4d;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{text-align:center;margin-top:1rem;padding-top:1rem;font-size:.9rem;p{margin:.25rem 0}}}}
   </style>
 </head>
 
@@ -2411,7 +2411,7 @@
                 <h3>Wilsons Cafe</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>54A Trelowarren Street</span><br>          <span>Camborne</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">TR14 8AH</span>
+          <span>Cornwall Patisserie</span><br>          <span>54 Trelowarren Street</span><br>          <span>Camborne</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">TR14 8AH</span>
   </address>
 </div>
 
@@ -2428,18 +2428,6 @@
 </div>
 
                 <a href="/region-south-west/st-john-the-baptist-catholic-primary-school-402732" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="402736">
-                <h3>Warrens</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Warrens Bakery</span><br>          <span>77 Fore Street</span><br>          <span>Redruth</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">TR15 2BL</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/warrens-402736" class="details-link">
                   More
                 </a>
               </div>
@@ -2968,18 +2956,6 @@
 </div>
 
                 <a href="/region-south-west/warrens-bakery-limited-415125" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="415136">
-                <h3>Mr Billy&#39;s</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Mr Billys</span><br>          <span>Unit 3</span><br>          <span>13 - 14 Market Place</span><br>          <span>Penzance</span><br>        <span itemprop="postalCode">TR18 2JB</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/mr-billys-415136" class="details-link">
                   More
                 </a>
               </div>
@@ -11092,18 +11068,6 @@
 </div>
 
                 <a href="/region-south-west/upper-deck-571167" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="571168">
-                <h3>Probus School Filling Station</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Fore Street</span><br>          <span>Probus</span><br>          <span>Truro</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">TR2 4LZ</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/probus-school-filling-station-571168" class="details-link">
                   More
                 </a>
               </div>
@@ -23983,18 +23947,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="990775">
-                <h3>The Crumplehorn Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Crumplehorn Inn</span><br>          <span>The Coombes</span><br>          <span>Polperro</span><br>          <span>Looe</span><br>        <span itemprop="postalCode">PL13 2RJ</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-crumplehorn-inn-990775" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="990778">
                 <h3>KC&#39;s Fish And Chips</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -25123,30 +25075,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1031308">
-                <h3>Sanders Fish And Chips Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Sanders Fish And Chip Shop</span><br>          <span>126 - 128 Agar Road</span><br>          <span>Illogan Highway</span><br>          <span>Redruth</span><br>        <span itemprop="postalCode">TR15 3NE</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/sanders-fish-and-chips-ltd-1031308" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1031309">
-                <h3>The Old Pilchard Press Cafe</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Old Pilchard Press</span><br>          <span>Portland Place</span><br>          <span>Mousehole</span><br>          <span>Penzance</span><br>        <span itemprop="postalCode">TR19 6RY</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-old-pilchard-press-cafe-1031309" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1031318">
                 <h3>Port And Starboard</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -25528,6 +25456,18 @@
 </div>
 
                 <a href="/region-south-west/philps-pasties-1045858" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1045859">
+                <h3>Bakers Cornish Bakehouse</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 12</span><br>          <span>Tamar View Industrial Estate</span><br>          <span>Prideaux Close</span><br>          <span>Saltash</span><br>        <span itemprop="postalCode">PL12 6LD</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/bakers-cornish-bakehouse-1045859" class="details-link">
                   More
                 </a>
               </div>
@@ -26959,18 +26899,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1089785">
-                <h3>Westgate Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Westgate Street</span><br>          <span>Launceston</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">PL15 7AD</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/westgate-inn-1089785" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1089786">
                 <h3>Tiny Tots</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -28120,6 +28048,18 @@
 </div>
 
                 <a href="/region-south-west/the-hangout-1149497" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1150807">
+                <h3>Lidl</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Lidl Uk Gmbh</span><br>          <span>Gilston Road</span><br>          <span>Saltash</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">PL12 6TW</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/lidl-1150807" class="details-link">
                   More
                 </a>
               </div>
@@ -29911,18 +29851,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1229717">
-                <h3>The Clementine Cakery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Clementine Cakey</span><br>          <span>1 Trevanson Street</span><br>          <span>Wadebridge</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">PL27 7AW</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-clementine-cakery-1229717" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1229718">
                 <h3>Charlestown Fish Co</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -30231,18 +30159,6 @@
 </div>
 
                 <a href="/region-south-west/trerhose-bb-1256607" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1256620">
-                <h3>Saputo Canteen Davidstow</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Dairycrest Canteen</span><br>          <span>Dairy Crest</span><br>          <span>Davidstow</span><br>          <span>Camelford</span><br>        <span itemprop="postalCode">PL32 9XW</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/saputo-canteen-davidstow-1256620" class="details-link">
                   More
                 </a>
               </div>
@@ -40169,6 +40085,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1613638">
+                <h3>Torpoint Athletic Football Club</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Torpoint AFC</span><br>          <span>Mill Lane</span><br>          <span>Torpoint</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">PL11 2RE</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/torpoint-athletic-football-club-1613638" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1613642">
                 <h3>Cafe 89</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -43625,6 +43553,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1664198">
+                <h3>Sarah&#39;s Pasty Shop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>The Pasty Shop</span><br>          <span>5 - 6 Buller Street</span><br>          <span>East Looe</span><br>          <span>Looe</span><br>        <span itemprop="postalCode">PL13 1AS</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/sarahs-pasty-shop-1664198" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1664201">
                 <h3>Potters Fish N Things</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -43778,18 +43718,6 @@
 </div>
 
                 <a href="/region-south-west/hayloft-bar-trekenning-tourist-park-1666204" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1666205">
-                <h3>Bisty&#39;s Proper Grilled Cheese</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/bistys-proper-grilled-cheese-1666205" class="details-link">
                   More
                 </a>
               </div>
@@ -44174,18 +44102,6 @@
 </div>
 
                 <a href="/region-south-west/little-tree-woodland-school-1676443" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1676446">
-                <h3>The Upper Deck</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>5 Beachside</span><br>          <span>Rock Road</span><br>          <span>Rock</span><br>          <span>Wadebridge</span><br>        <span itemprop="postalCode">PL27 6FD</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-upper-deck-1676446" class="details-link">
                   More
                 </a>
               </div>
@@ -45446,18 +45362,6 @@
 </div>
 
                 <a href="/region-south-west/butterflies-montessori-nursery-1698908" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1698910">
-                <h3>Buns On The Run</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/buns-on-the-run-1698910" class="details-link">
                   More
                 </a>
               </div>
@@ -48704,7 +48608,7 @@
                 <h3>The Cornish Barista - Mobile</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Old Count House</span><br>          <span>Filtrick Lane</span><br>          <span>Piece</span><br>          <span>Carnkie</span><br>        <span itemprop="postalCode">TR16 6JX</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -49373,14 +49277,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1747289">
-                <h3>Caterlink @ St Neots Primary School</h3>
+                <h3>St Neots Primary School</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>St Neot Community Primary School</span><br>          <span>Loveny Road</span><br>          <span>St Neot</span><br>          <span>Liskeard</span><br>        <span itemprop="postalCode">PL14 6NL</span>
   </address>
 </div>
 
-                <a href="/region-south-west/caterlink-st-neots-primary-school-1747289" class="details-link">
+                <a href="/region-south-west/st-neots-primary-school-1747289" class="details-link">
                   More
                 </a>
               </div>
@@ -49573,18 +49477,6 @@
 </div>
 
                 <a href="/region-south-west/rest-harrow-caravan-site-1751055" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1752982">
-                <h3>China Palace</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/china-palace-1752982" class="details-link">
                   More
                 </a>
               </div>
@@ -49933,18 +49825,6 @@
 </div>
 
                 <a href="/region-south-west/sennen-community-primary-academy-1754188" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1754189">
-                <h3>House Of Glass</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Cribbar Yard</span><br>          <span>Bank Street</span><br>          <span>Newquay</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">TR7 1EP</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/house-of-glass-1754189" class="details-link">
                   More
                 </a>
               </div>
@@ -51640,18 +51520,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1777672">
-                <h3>The Flavour Junction</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>5 White Hart Arcade</span><br>          <span>Broad Street</span><br>          <span>Launceston</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">PL15 8AA</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-flavour-junction-1777672" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1777674">
                 <h3>Farm To Fork</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -52192,18 +52060,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1786319">
-                <h3>Penryn Traditional Fish And Chips</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>4 St Thomas Street</span><br>          <span>Penryn</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">TR10 8JN</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/penryn-traditional-fish-and-chips-1786319" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1786320">
                 <h3>MK Coffee And Nata</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -52477,18 +52333,6 @@
 </div>
 
                 <a href="/region-south-west/casa-tapa-1792555" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1794284">
-                <h3>Highway 39 Cafe And Lounge</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Highway 39</span><br>          <span>Titchsborough Hill</span><br>          <span>Otterham Station</span><br>          <span>Camelford</span><br>        <span itemprop="postalCode">PL32 9SW</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/highway-39-cafe-and-lounge-1794284" class="details-link">
                   More
                 </a>
               </div>
@@ -54377,14 +54221,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1814095">
-                <h3>Gather &amp; Gather Ltd , Pall Newquay</h3>
+                <h3>14forty</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>Pall (Newquay) Ltd</span><br>          <span>St Columb Major Industrial Estate</span><br>          <span>St Columb</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">TR9 6TT</span>
   </address>
 </div>
 
-                <a href="/region-south-west/gather-gather-ltd-pall-newquay-1814095" class="details-link">
+                <a href="/region-south-west/14forty-1814095" class="details-link">
                   More
                 </a>
               </div>
@@ -54733,18 +54577,6 @@
 </div>
 
                 <a href="/region-south-west/bf-adventure-1816083" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1816084">
-                <h3>Saltsheds Bar And Bistro</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>12 Beach Road</span><br>          <span>Newquay</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">TR7 1ES</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/saltsheds-bar-and-bistro-1816084" class="details-link">
                   More
                 </a>
               </div>
@@ -56536,6 +56368,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1848144">
+                <h3>Surf Club Restaurant &amp; Bar</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/surf-club-restaurant-bar-1848144" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1848146">
                 <h3>La Pepa Street Food</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -57552,18 +57396,6 @@
 </div>
 
                 <a href="/region-south-west/meadows-bakery-1857882" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1857883">
-                <h3>The Rebellion Coffee House Limited</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>32 Cliff Road</span><br>          <span>Newquay</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">TR7 2ND</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/the-rebellion-coffee-house-limited-1857883" class="details-link">
                   More
                 </a>
               </div>
@@ -59558,18 +59390,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1890979">
-                <h3>Cob</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit BC-07 (K3)</span><br>          <span>The Buttermarket</span><br>          <span>Station Hill</span><br>          <span>Redruth</span><br>        <span itemprop="postalCode">TR15 2PP</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/cob-1890979" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1893105">
                 <h3>Kelliwik Childcare Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -60554,18 +60374,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1911962">
-                <h3>Zagros Kebab</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>23 Fore Street</span><br>          <span>Torpoint</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">PL11 2AD</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/zagros-kebab-1911962" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1911963">
                 <h3>Crumble And Cream Cheesecakes</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -60587,6 +60395,18 @@
 </div>
 
                 <a href="/region-south-west/silver-birch-cafe-1911964" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1911965">
+                <h3>Grain And Wild</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/grain-and-wild-1911965" class="details-link">
                   More
                 </a>
               </div>
@@ -61406,6 +61226,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1922019">
+                <h3>KD Kernow Delights</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/kd-kernow-delights-1922019" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1922022">
                 <h3>Delaksha Convenience (premier)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -61859,18 +61691,6 @@
 </div>
 
                 <a href="/region-south-west/the-london-inn-1935465" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1935467">
-                <h3>Daisy Fays Nursery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Station Road</span><br>          <span>Perranwell Station</span><br>          <span>Truro</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">TR3 7PT</span>
-  </address>
-</div>
-
-                <a href="/region-south-west/daisy-fays-nursery-1935467" class="details-link">
                   More
                 </a>
               </div>
@@ -62870,18 +62690,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1945551">
-                <h3>Field To Fork Farmshop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-south-west/field-to-fork-farmshop-1945551" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1945552">
                 <h3>Sheila&#39;s Ice Cream</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -63314,6 +63122,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1950473">
+                <h3>Cloud Desserts</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>1 High Street</span><br>          <span>Launceston</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">PL15 8ER</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/cloud-desserts-1950473" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1950475">
                 <h3>Shorebreak</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -63407,6 +63227,18 @@
 </div>
 
                 <a href="/region-south-west/jaws-pizza-1950486" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1956172">
+                <h3>Hitch And Graze</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Polmear</span><br>          <span>Roughtor Road</span><br>          <span>Camelford</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">PL32 9PS</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/hitch-and-graze-1956172" class="details-link">
                   More
                 </a>
               </div>
@@ -63539,6 +63371,18 @@
 </div>
 
                 <a href="/region-south-west/cargo-ltd-1957073" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1957074">
+                <h3>The Lugger Inn</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Fore Street</span><br>          <span>Polruan</span><br>          <span>Fowey</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">PL23 1PA</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-lugger-inn-1957074" class="details-link">
                   More
                 </a>
               </div>
@@ -63794,6 +63638,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1969862">
+                <h3>Oldepennys Tearooms</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/oldepennys-tearooms-1969862" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1969865">
                 <h3>Roskillys Newquay</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -63803,6 +63659,18 @@
 </div>
 
                 <a href="/region-south-west/roskillys-newquay-1969865" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1969867">
+                <h3>La Parra</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Fowey Boat Yard</span><br>          <span>10 Passage Street</span><br>          <span>Fowey</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">PL23 1DE</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/la-parra-1969867" class="details-link">
                   More
                 </a>
               </div>
@@ -63839,6 +63707,18 @@
 </div>
 
                 <a href="/region-south-west/stop-by-1969881" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1969882">
+                <h3>Host X Pizza Fuori</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Host St Ives</span><br>          <span>Tregenna Hill</span><br>          <span>St Ives</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">TR26 1SE</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/host-x-pizza-fuori-1969882" class="details-link">
                   More
                 </a>
               </div>
@@ -64079,6 +63959,18 @@
 </div>
 
                 <a href="/region-south-west/new-delhi-indian-palace-and-ricardos-pizzas-1972123" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1972126">
+                <h3>Pennans Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/pennans-ltd-1972126" class="details-link">
                   More
                 </a>
               </div>
@@ -64550,6 +64442,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1983101">
+                <h3>Tevi Golow</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>4 Southgate Street</span><br>          <span>Launceston</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">PL15 9DP</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/tevi-golow-1983101" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1983102">
                 <h3>Putting On The Ritz</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -64562,6 +64466,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1983106">
+                <h3>Royal Cinema</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/royal-cinema-1983106" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1983107">
                 <h3>Flora Cinema</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -64571,6 +64487,18 @@
 </div>
 
                 <a href="/region-south-west/flora-cinema-1983107" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1983111">
+                <h3>The Attic</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 9</span><br>          <span>Tor Road</span><br>          <span>Newquay</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">TR7 1RL</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/the-attic-1983111" class="details-link">
                   More
                 </a>
               </div>
@@ -64682,6 +64610,30 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1989311">
+                <h3>Mounts Bay Academy</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Boscathnoe Lane</span><br>          <span>Heamoor</span><br>          <span>Penzance</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">TR18 3JT</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/mounts-bay-academy-1989311" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1989320">
+                <h3>Leven Rye</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Kota Restaurant</span><br>          <span>Harbour Head</span><br>          <span>Porthleven</span><br>          <span>Helston</span><br>        <span itemprop="postalCode">TR13 9JA</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/leven-rye-1989320" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1989323">
                 <h3>Quintrell Inn</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -64706,11 +64658,23 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1991337">
+                <h3>Princes Community Hall Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-south-west/princes-community-hall-ltd-1991337" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1991343">
                 <h3>Newtown Service Station</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Spar</span><br>          <span>Newton Services</span><br>          <span>Newtown</span><br>          <span>Germoe</span><br>        <span itemprop="postalCode">TR20 9AB</span>
+          <span>Londis</span><br>          <span>Newton Services</span><br>          <span>Newtown</span><br>          <span>Germoe</span><br>        <span itemprop="postalCode">TR20 9AB</span>
   </address>
 </div>
 
@@ -64730,13 +64694,49 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1994180">
+                <h3>Premier Uplands Store</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Uplands Store</span><br>          <span>27 Upland Crescent</span><br>          <span>Truro</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">TR1 1LZ</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/premier-uplands-store-1994180" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1994188">
+                <h3>St Issey Church Of England Primary School</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>St Issey Church Of England School</span><br>          <span>Gardeners Way</span><br>          <span>St Issey</span><br>          <span>Wadebridge</span><br>        <span itemprop="postalCode">PL27 7RN</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/st-issey-church-of-england-primary-school-1994188" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1994211">
+                <h3>Rock Distillery Shop</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Cornwall Rock Gin Co Ltd</span><br>          <span>30 Fore Street</span><br>          <span>Fowey</span><br>          <span>Cornwall</span><br>        <span itemprop="postalCode">PL23 1AQ</span>
+  </address>
+</div>
+
+                <a href="/region-south-west/rock-distillery-shop-1994211" class="details-link">
+                  More
+                </a>
+              </div>
           </div>
         </article>
       </div>
     </div>
     <script type="module">
       /* Minified JavaScript */
-var e=document.querySelector(".content-k3nm4l #filter-input");let a=document.querySelector(".establishments-container"),o=[...a.querySelectorAll(".establishment")].map(e=>({element:e,name:(e.querySelector("h3")?.textContent||"").toLowerCase(),address:(e.querySelector("address")?.textContent||"").toLowerCase(),clone:e.cloneNode(!0)}));let s=(e,t)=>{e.replaceChildren();var r,l=document.createDocumentFragment(),n=document.createElement("hr");for(r of t)l.append(r.clone),l.append(n.cloneNode());l.lastChild&&l.lastChild.remove(),e.append(l)},c=new Set,i=(t,e,r,l)=>{let n=Math.min(t+e,o.length);for(let e=t;e<n;e++){let t=o[e];r.every(e=>t.name.includes(e)||t.address.includes(e))&&c.add(t)}n>=o.length?requestAnimationFrame(()=>{s(a,c),l()}):(t=()=>i(n,e,r,l),(globalThis.requestIdleCallback?requestIdleCallback:requestAnimationFrame)(t))};e.addEventListener("input",((t,r)=>{let l;return(...e)=>{clearTimeout(l),l=setTimeout(()=>{clearTimeout(l),t(...e)},r)}})(e=>{(async e=>{let r=(e=>{for(var t,r=/"([^"]+)"|(\S+)/g,l=[];null!==(t=r.exec(e));){let e=(t[1]||t[2]).toLowerCase();e=e.replaceAll(/^"+|"+$/g,""),l.push(e)}return l})(e);if(0!==r.length)return new Promise(e=>{let t=Math.min(50,Math.ceil(o.length/4));requestAnimationFrame(()=>{c.clear(),i(0,t,r,e)})});requestAnimationFrame(()=>{s(a,o)})})(e.target.value.toLowerCase())},150));
+let e=document.querySelector(".content-k3nm4l #filter-input"),a=document.querySelector(".establishments-container");if(!(e instanceof HTMLInputElement&&a instanceof HTMLElement))throw new TypeError("Establishment search elements were not found");let o=[...a.querySelectorAll(".establishment")].map(e=>({element:e,name:(e.querySelector("h3")?.textContent||"").toLowerCase(),address:(e.querySelector("address")?.textContent||"").toLowerCase(),clone:e.cloneNode(!0)}));let s=(e,t)=>{e.replaceChildren();var n,l=document.createDocumentFragment(),r=document.createElement("hr");for(n of t)l.append(n.clone),l.append(r.cloneNode());l.lastChild&&l.lastChild.remove(),e.append(l)},i=new Set,c=(t,e,n,l)=>{let r=Math.min(t+e,o.length);for(let e=t;e<r;e++){let t=o[e];n.every(e=>t.name.includes(e)||t.address.includes(e))&&i.add(t)}r>=o.length?requestAnimationFrame(()=>{s(a,i),l()}):(t=()=>c(r,e,n,l),"function"==typeof globalThis.requestIdleCallback?globalThis.requestIdleCallback(t):requestAnimationFrame(t))};e.addEventListener("input",((t,n)=>{let l;return(...e)=>{void 0!==l&&clearTimeout(l),l=setTimeout(()=>{void 0!==l&&clearTimeout(l),t(...e)},n)}})(()=>{(async e=>{let n=(e=>{for(var t,n=/"([^"]+)"|(\S+)/g,l=[];null!==(t=n.exec(e));){let e=(t[1]||t[2]).toLowerCase();e=e.replaceAll(/^"+|"+$/g,""),l.push(e)}return l})(e);if(0!==n.length)return new Promise(e=>{let t=Math.min(50,Math.ceil(o.length/4));requestAnimationFrame(()=>{i.clear(),c(0,t,n,e)})});requestAnimationFrame(()=>{s(a,o)})})(e.value.toLowerCase())},150));
     </script>
     <div class="component-footer-8fpz1b" data-suffix="8fpz1b">
   <footer>

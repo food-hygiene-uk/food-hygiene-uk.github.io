@@ -1,0 +1,1 @@
+export const getReference=(e,n,r=document)=>{const o=r.querySelector(e);if(!(o instanceof n))throw new TypeError(`Reference ${e} not found in DOM`);return o};

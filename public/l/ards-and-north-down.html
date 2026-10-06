@@ -16,7 +16,7 @@
   </script>
   <script>
     /* Minified JavaScript */
-{let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
+{let e=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e},t=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");t?.addEventListener("change",()=>{e(t)}),e(t)}
   </script>
   <style>
     html{--csstools-color-scheme--light:initial;color-scheme:only light}@media (prefers-color-scheme:dark),(scripting:enabled),(scripting:initial-only){html:not([data-color-scheme=light]){--csstools-color-scheme--light:;color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132, 190, 0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(
@@ -35,7 +35,7 @@
     in oklab,
     var(--card-background) 95%,
     #000 5%
-  );--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) rgba(0,0,0,.15);--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, rgba(0,0,0,.1));--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) rgba(0,0,0,.25);--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, rgba(0,0,0,.15));--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #000;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #000;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000);@supports not (color:light-dark(tan,tan)){& *{--csstools-light-dark-toggle--0:var(--csstools-color-scheme--light) #000;--body-background:var(--csstools-light-dark-toggle--0, var(--light-blue));--csstools-light-dark-toggle--1:var(--csstools-color-scheme--light) #ddd;--text-color:var(--csstools-light-dark-toggle--1, #000);--csstools-light-dark-toggle--2:var(--csstools-color-scheme--light) #0d0d0d;--header-background-color:var(--csstools-light-dark-toggle--2, #f8f9fa);--csstools-light-dark-toggle--3:var(--csstools-color-scheme--light) #9c9c9c;--header-text-color:var(--csstools-light-dark-toggle--3, #000);--csstools-light-dark-toggle--4:var(--csstools-color-scheme--light) #383838;--header-rule-color:var(--csstools-light-dark-toggle--4, #e0e0e0);--csstools-light-dark-toggle--5:var(--csstools-color-scheme--light) var(--light-blue);--background-highlight-color:var(--csstools-light-dark-toggle--5, #e5e8f1);--csstools-light-dark-toggle--6:var(--csstools-color-scheme--light) #444;--input-bg:var(--csstools-light-dark-toggle--6, #fff);--csstools-light-dark-toggle--7:var(--csstools-color-scheme--light) #555;--input-border:var(--csstools-light-dark-toggle--7, #ccc);--csstools-light-dark-toggle--8:var(--csstools-color-scheme--light) #fff;--card-color:var(--csstools-light-dark-toggle--8, #000);--csstools-light-dark-toggle--9:var(--csstools-color-scheme--light) #2d2d2d;--card-background:var(--csstools-light-dark-toggle--9, #fff);--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) rgba(0,0,0,.15);--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, rgba(0,0,0,.1));--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) rgba(0,0,0,.25);--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, rgba(0,0,0,.15));--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #000;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #000;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000)}}}@supports (color:light-dark(red,red)){:root{--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-border:1px solid light-dark(#ddd, #444);--card-link-color:light-dark(#00e, #9e9eff)}}@supports (color:light-dark(red,red)) and (color:rgb(0 0 0/0)){:root{--box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1), rgba(0,0,0,.15));--box-shadow-hover:0 4px 8px light-dark(rgba(0,0,0,.15), rgba(0,0,0,.25))}}@supports (color:light-dark(red,red)){:root{--box-shadow-border:1px solid light-dark(#dedede, #393939);--button-cta-bg:light-dark(
+  );--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) #00000026;--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, #0000001a);--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) #00000040;--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, #00000026);--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #000;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #000;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000);@supports not (color:light-dark(tan,tan)){& *{--csstools-light-dark-toggle--0:var(--csstools-color-scheme--light) #000;--body-background:var(--csstools-light-dark-toggle--0, var(--light-blue));--csstools-light-dark-toggle--1:var(--csstools-color-scheme--light) #ddd;--text-color:var(--csstools-light-dark-toggle--1, #000);--csstools-light-dark-toggle--2:var(--csstools-color-scheme--light) #0d0d0d;--header-background-color:var(--csstools-light-dark-toggle--2, #f8f9fa);--csstools-light-dark-toggle--3:var(--csstools-color-scheme--light) #9c9c9c;--header-text-color:var(--csstools-light-dark-toggle--3, #000);--csstools-light-dark-toggle--4:var(--csstools-color-scheme--light) #383838;--header-rule-color:var(--csstools-light-dark-toggle--4, #e0e0e0);--csstools-light-dark-toggle--5:var(--csstools-color-scheme--light) var(--light-blue);--background-highlight-color:var(--csstools-light-dark-toggle--5, #e5e8f1);--csstools-light-dark-toggle--6:var(--csstools-color-scheme--light) #444;--input-bg:var(--csstools-light-dark-toggle--6, #fff);--csstools-light-dark-toggle--7:var(--csstools-color-scheme--light) #555;--input-border:var(--csstools-light-dark-toggle--7, #ccc);--csstools-light-dark-toggle--8:var(--csstools-color-scheme--light) #fff;--card-color:var(--csstools-light-dark-toggle--8, #000);--csstools-light-dark-toggle--9:var(--csstools-color-scheme--light) #2d2d2d;--card-background:var(--csstools-light-dark-toggle--9, #fff);--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) #00000026;--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, #0000001a);--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) #00000040;--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, #00000026);--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #000;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #000;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000)}}}@supports (color:light-dark(red,red)){:root{--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-border:1px solid light-dark(#ddd, #444);--card-link-color:light-dark(#00e, #9e9eff)}}@supports (color:light-dark(red,red)) and (color:rgb(0 0 0/0)){:root{--box-shadow:0 2px 4px light-dark(#0000001a, #00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026, #00000040)}}@supports (color:light-dark(red,red)){:root{--box-shadow-border:1px solid light-dark(#dedede, #393939);--button-cta-bg:light-dark(
     var(--hygiene-green),
     var(--hygiene-green-lowlight)
   );--button-cta-color:light-dark(#000, #000);--button-cta-bg-hover:light-dark(
@@ -44,7 +44,7 @@
   );--button-cta-color-hover:light-dark(#000, #000)}}[inert],[inert] *{opacity:.5;pointer-events:none;cursor:default;-webkit-user-select:none;user-select:none}body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0;background-color:var(--body-background);color:var(--text-color)}a{color:#0052a3;-webkit-text-decoration:none;text-decoration:none}a:hover{-webkit-text-decoration:underline;text-decoration:underline}.container{max-width:1200px;margin:0 auto;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);color:var(--text-color);border-radius:4px;font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{font-size:2em;border-bottom:1px solid var(--hygiene-green)}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{width:100%;padding:.5rem;margin-bottom:1rem}.establishment{padding:1rem 0;display:block;&.hidden{display:none}position:relative;.details-link{display:block;position:absolute;inset:0;z-index:1;text-indent:-9999px;&:hover{display:flex;flex-direction:column-reverse;text-align:right;padding-right:1rem;padding-bottom:1rem}}&:has(a:hover){background-color:var(--background-highlight-color);color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem;border-radius:9px}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
     .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);padding:1rem calc(50vw - 600px);border-bottom:1px solid var(--header-rule-color);position:relative;max-width:100dvw;box-sizing:border-box;overflow:hidden;@media (width <= 1240px){max-width:100dvw;padding-left:20px;padding-bottom:1rem;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{display:flex;justify-content:space-between;align-items:center}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;list-style:none;display:flex;gap:1.5rem;li{display:inline;a{-webkit-text-decoration:none;text-decoration:none;color:var(--header-text-color);font-weight:700}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{display:none;flex-direction:column;justify-content:space-between;width:30px;height:21px;cursor:pointer;z-index:10}.hamburger-h3ad34 span{display:block;height:3px;width:100%;background-color:var(--header-text-color);border-radius:3px;transition:transform .3s ease-in-out,opacity .3s ease-in-out}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{box-sizing:border-box;position:fixed;top:84px;right:-100%;width:100%;height:calc(100dvh - 84px);flex-direction:column;background-color:var(--header-background-color);padding:2rem;transition:right .3s ease-in-out;z-index:5;text-align:right;gap:2rem;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
-    .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);padding-top:2rem;padding-bottom:2rem;margin-top:2rem;.container.footer-columns{display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem;text-align:left;margin-bottom:2rem}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{color:#fff;margin-bottom:.5rem;font-weight:700;border-bottom:1px solid hsla(0,0%,100%,.2)}ul{list-style:none;padding:0;margin:0;li{margin-bottom:.25rem}}}a{color:#fff;-webkit-text-decoration:none;text-decoration:none;border-bottom:1px solid hsla(0,0%,100%,.3);transition:border-color .3s;&:hover{border-color:#fff}}.copyright{text-align:center;margin-top:1rem;padding-top:1rem;font-size:.9rem;p{margin:.25rem 0}}}}
+    .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);padding-top:2rem;padding-bottom:2rem;margin-top:2rem;.container.footer-columns{display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem;text-align:left;margin-bottom:2rem}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{color:#fff;margin-bottom:.5rem;font-weight:700;border-bottom:1px solid #fff3}ul{list-style:none;padding:0;margin:0;li{margin-bottom:.25rem}}}a{color:#fff;-webkit-text-decoration:none;text-decoration:none;border-bottom:1px solid #ffffff4d;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{text-align:center;margin-top:1rem;padding-top:1rem;font-size:.9rem;p{margin:.25rem 0}}}}
   </style>
 </head>
 
@@ -2935,18 +2935,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="952836">
-                <h3>OASIS</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Main Street</span><br>          <span>Corporation</span><br>          <span>Bangor</span><br>          <span>Down</span><br>        <span itemprop="postalCode">BT20 5AF</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/oasis-952836" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="952837">
                 <h3>COPELAND FOLD</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -3452,14 +3440,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="952982">
-                <h3>FAYRE</h3>
+                <h3>CORRIES FARM BUTCHERS/KNOTTS</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>40-42 High Street</span><br>          <span>Holywood</span><br>          <span>Holywood</span><br>          <span>Down</span><br>        <span itemprop="postalCode">BT18 9AD</span>
   </address>
 </div>
 
-                <a href="/region-northern-ireland/fayre-952982" class="details-link">
+                <a href="/region-northern-ireland/corries-farm-butchersknotts-952982" class="details-link">
                   More
                 </a>
               </div>
@@ -3904,18 +3892,6 @@
 </div>
 
                 <a href="/region-northern-ireland/mace-clandeboye-filling-station-953095" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="953096">
-                <h3>GRANSHA SUBWAY</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>66 Gransha Road</span><br>          <span>Ballymagee</span><br>          <span>Bangor</span><br>          <span>Down</span><br>        <span itemprop="postalCode">BT19 7PU</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/gransha-subway-953096" class="details-link">
                   More
                 </a>
               </div>
@@ -4651,18 +4627,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="953253">
-                <h3>RUSSELL&#39;S SHOP 4 YOU</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>56 Donaghadee Road</span><br>          <span>Corporation North</span><br>          <span>Newtownards</span><br>          <span>Down</span><br>        <span itemprop="postalCode">BT23 7EU</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/russells-shop-4-you-953253" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="953257">
                 <h3>THE IMPERIAL</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4864,18 +4828,6 @@
 </div>
 
                 <a href="/region-northern-ireland/paul-arthurs-restaurant-953287" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="953288">
-                <h3>PINECROFT (BED AND BREAKFAST)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>180 Moss Road</span><br>          <span>Killaghy</span><br>          <span>Millisle</span><br>          <span>Down</span><br>        <span itemprop="postalCode">BT22 2DX</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/pinecroft-bed-and-breakfast-953288" class="details-link">
                   More
                 </a>
               </div>
@@ -8671,30 +8623,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1271973">
-                <h3>Little Kingdom Kids Carrowdore</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2 Manse Road</span><br>          <span>Carrowdore Newtownards</span><br>        <span itemprop="postalCode">BT22 2EY</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/little-kingdom-kids-carrowdore-1271973" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1271975">
-                <h3>Litttle Kingdom Kids Carrowdore</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2 Manse Road</span><br>          <span>Ballyboley</span><br>          <span>Carrowdore</span><br>          <span>Down</span><br>        <span itemprop="postalCode">BT22 2EY</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/litttle-kingdom-kids-carrowdore-1271975" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1271977">
                 <h3>Ladybirds Childcare Springhill</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9004,18 +8932,6 @@
 </div>
 
                 <a href="/region-northern-ireland/lauren-taylor-bakes-1349373" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1349374">
-                <h3>The Willowtree Cafe Gallery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>10 The Square Comber</span><br>          <span>Co Down</span><br>        <span itemprop="postalCode">BT23 5TD</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/the-willowtree-cafe-gallery-1349374" class="details-link">
                   More
                 </a>
               </div>
@@ -9403,18 +9319,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1402622">
-                <h3>Grattan&#39;s test</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2 Broadway</span><br>          <span>Ballywalter</span><br>          <span>Ballywalter</span><br>          <span>Down</span><br>        <span itemprop="postalCode">BT22 2NH</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/grattans-test-1402622" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1410280">
                 <h3>Spar Ballygowan Service Station</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9652,18 +9556,6 @@
 </div>
 
                 <a href="/region-northern-ireland/simple-simons-1450179" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1450183">
-                <h3>The Singing Kettle Bakery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>88 Church Street</span><br>          <span>Bangor</span><br>        <span itemprop="postalCode">BT20 3HY</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/the-singing-kettle-bakery-1450183" class="details-link">
                   More
                 </a>
               </div>
@@ -10339,18 +10231,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1551213">
-                <h3>Grannys Farm</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/grannys-farm-1551213" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1551214">
                 <h3>ParkLife</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -10615,18 +10495,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1584601">
-                <h3>The Sandpiper / Nonnas Cafe</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>64 Main Street</span><br>          <span>Ballywalter</span><br>          <span>Ballywalter</span><br>          <span>Down</span><br>        <span itemprop="postalCode">BT22 2PQ</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/the-sandpiper-nonnas-cafe-1584601" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1584602">
                 <h3>Tim Hortons</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -10756,18 +10624,6 @@
 </div>
 
                 <a href="/region-northern-ireland/the-good-food-and-wine-company-1591076" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1591082">
-                <h3>The Street Duck , Food Trailer</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2-4 Kinnegar Road</span><br>          <span>Holywood</span><br>        <span itemprop="postalCode">BT18 9JN</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/the-street-duck-food-trailer-1591082" class="details-link">
                   More
                 </a>
               </div>
@@ -10999,30 +10855,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1619807">
-                <h3>Conlig Newsagents</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>26-28 Main Street</span><br>          <span>Conlig</span><br>          <span>Newtownards</span><br>          <span>Down</span><br>        <span itemprop="postalCode">BT23 7PT</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/conlig-newsagents-1619807" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1619808">
-                <h3>Conlig Newsagents</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>26-28 Main Street</span><br>          <span>Conlig</span><br>          <span>Newtownards</span><br>          <span>Down</span><br>        <span itemprop="postalCode">BT23 7PT</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/conlig-newsagents-1619808" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1619809">
                 <h3>Conlig Newsagents</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11104,18 +10936,6 @@
 </div>
 
                 <a href="/region-northern-ireland/the-griddle-1630028" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1630030">
-                <h3>Rebel dough on the go</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Juniper Avenue</span><br>          <span>Corporation North</span><br>          <span>Newtownards</span><br>          <span>Down</span><br>        <span itemprop="postalCode">BT23 4HW</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/rebel-dough-on-the-go-1630030" class="details-link">
                   More
                 </a>
               </div>
@@ -11320,30 +11140,6 @@
 </div>
 
                 <a href="/region-northern-ireland/saints-sinners-1649207" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1652332">
-                <h3>Oasis Casino</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>39a High Street</span><br>          <span>Corporation North</span><br>          <span>Newtownards</span><br>          <span>Down</span><br>        <span itemprop="postalCode">BT23 7HS</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/oasis-casino-1652332" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1652334">
-                <h3>V-Gang Fancies</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/v-gang-fancies-1652334" class="details-link">
                   More
                 </a>
               </div>
@@ -11992,18 +11788,6 @@
 </div>
 
                 <a href="/region-northern-ireland/the-stables-1719653" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1719654">
-                <h3>Base 48 Pizzeria</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>48 Bingham Street</span><br>          <span>Bangor</span><br>        <span itemprop="postalCode">BT20 5DN</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/base-48-pizzeria-1719654" class="details-link">
                   More
                 </a>
               </div>
@@ -13012,18 +12796,6 @@
 </div>
 
                 <a href="/region-northern-ireland/orchardville-1788162" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1788163">
-                <h3>The Chippery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>47 Main Street</span><br>          <span>Bangor</span><br>        <span itemprop="postalCode">BT20 5AF</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/the-chippery-1788163" class="details-link">
                   More
                 </a>
               </div>
@@ -14563,18 +14335,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1924678">
-                <h3>The Ganges</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>69 Court Street</span><br>          <span>Corporation North</span><br>          <span>Newtownards</span><br>          <span>Down</span><br>        <span itemprop="postalCode">BT23 7NX</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/the-ganges-1924678" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1924679">
                 <h3>The Ganges</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -15655,54 +15415,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1990518">
-                <h3>FREDDY&#39;S</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>42-44 Abbey Street</span><br>          <span>Corporation</span><br>          <span>Bangor</span><br>          <span>Down</span><br>        <span itemprop="postalCode">BT20 4JA</span>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/freddys-1990518" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1990519">
-                <h3>Paparella Panzerotti</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/paparella-panzerotti-1990519" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1990520">
-                <h3>Coffee Angels</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/coffee-angels-1990520" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1990521">
-                <h3>Olive by Cafolla&#39;s</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-northern-ireland/olive-by-cafollas-1990521" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1990523">
                 <h3>Apache Pizza Bangor</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -15823,13 +15535,73 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1994298">
+                <h3>Becca&#39;s Cakes and Bakes</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/beccas-cakes-and-bakes-1994298" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1994299">
+                <h3>Drift Coffee</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/drift-coffee-1994299" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1994300">
+                <h3>Wee Crumbs</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/wee-crumbs-1994300" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1994301">
+                <h3>ThePartyBoxCo</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/thepartyboxco-1994301" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1994302">
+                <h3>Jo’s bakes</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-northern-ireland/jos-bakes-1994302" class="details-link">
+                  More
+                </a>
+              </div>
           </div>
         </article>
       </div>
     </div>
     <script type="module">
       /* Minified JavaScript */
-var e=document.querySelector(".content-k3nm4l #filter-input");let a=document.querySelector(".establishments-container"),o=[...a.querySelectorAll(".establishment")].map(e=>({element:e,name:(e.querySelector("h3")?.textContent||"").toLowerCase(),address:(e.querySelector("address")?.textContent||"").toLowerCase(),clone:e.cloneNode(!0)}));let s=(e,t)=>{e.replaceChildren();var r,l=document.createDocumentFragment(),n=document.createElement("hr");for(r of t)l.append(r.clone),l.append(n.cloneNode());l.lastChild&&l.lastChild.remove(),e.append(l)},c=new Set,i=(t,e,r,l)=>{let n=Math.min(t+e,o.length);for(let e=t;e<n;e++){let t=o[e];r.every(e=>t.name.includes(e)||t.address.includes(e))&&c.add(t)}n>=o.length?requestAnimationFrame(()=>{s(a,c),l()}):(t=()=>i(n,e,r,l),(globalThis.requestIdleCallback?requestIdleCallback:requestAnimationFrame)(t))};e.addEventListener("input",((t,r)=>{let l;return(...e)=>{clearTimeout(l),l=setTimeout(()=>{clearTimeout(l),t(...e)},r)}})(e=>{(async e=>{let r=(e=>{for(var t,r=/"([^"]+)"|(\S+)/g,l=[];null!==(t=r.exec(e));){let e=(t[1]||t[2]).toLowerCase();e=e.replaceAll(/^"+|"+$/g,""),l.push(e)}return l})(e);if(0!==r.length)return new Promise(e=>{let t=Math.min(50,Math.ceil(o.length/4));requestAnimationFrame(()=>{c.clear(),i(0,t,r,e)})});requestAnimationFrame(()=>{s(a,o)})})(e.target.value.toLowerCase())},150));
+let e=document.querySelector(".content-k3nm4l #filter-input"),a=document.querySelector(".establishments-container");if(!(e instanceof HTMLInputElement&&a instanceof HTMLElement))throw new TypeError("Establishment search elements were not found");let o=[...a.querySelectorAll(".establishment")].map(e=>({element:e,name:(e.querySelector("h3")?.textContent||"").toLowerCase(),address:(e.querySelector("address")?.textContent||"").toLowerCase(),clone:e.cloneNode(!0)}));let s=(e,t)=>{e.replaceChildren();var n,l=document.createDocumentFragment(),r=document.createElement("hr");for(n of t)l.append(n.clone),l.append(r.cloneNode());l.lastChild&&l.lastChild.remove(),e.append(l)},i=new Set,c=(t,e,n,l)=>{let r=Math.min(t+e,o.length);for(let e=t;e<r;e++){let t=o[e];n.every(e=>t.name.includes(e)||t.address.includes(e))&&i.add(t)}r>=o.length?requestAnimationFrame(()=>{s(a,i),l()}):(t=()=>c(r,e,n,l),"function"==typeof globalThis.requestIdleCallback?globalThis.requestIdleCallback(t):requestAnimationFrame(t))};e.addEventListener("input",((t,n)=>{let l;return(...e)=>{void 0!==l&&clearTimeout(l),l=setTimeout(()=>{void 0!==l&&clearTimeout(l),t(...e)},n)}})(()=>{(async e=>{let n=(e=>{for(var t,n=/"([^"]+)"|(\S+)/g,l=[];null!==(t=n.exec(e));){let e=(t[1]||t[2]).toLowerCase();e=e.replaceAll(/^"+|"+$/g,""),l.push(e)}return l})(e);if(0!==n.length)return new Promise(e=>{let t=Math.min(50,Math.ceil(o.length/4));requestAnimationFrame(()=>{i.clear(),c(0,t,n,e)})});requestAnimationFrame(()=>{s(a,o)})})(e.value.toLowerCase())},150));
     </script>
     <div class="component-footer-8fpz1b" data-suffix="8fpz1b">
   <footer>

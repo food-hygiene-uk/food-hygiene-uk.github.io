@@ -16,7 +16,7 @@
   </script>
   <script>
     /* Minified JavaScript */
-{let t=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e};var e=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");e.addEventListener("change",function(e){t(e)}),t(e)}
+{let e=e=>{var e=e?.matches?"dark":"light",t=localStorage.getItem("color-scheme");document.documentElement.dataset.colorScheme=t??e},t=globalThis?.matchMedia?.("(prefers-color-scheme:dark)");t?.addEventListener("change",()=>{e(t)}),e(t)}
   </script>
   <style>
     html{--csstools-color-scheme--light:initial;color-scheme:only light}@media (prefers-color-scheme:dark),(scripting:enabled),(scripting:initial-only){html:not([data-color-scheme=light]){--csstools-color-scheme--light:;color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132, 190, 0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(
@@ -35,7 +35,7 @@
     in oklab,
     var(--card-background) 95%,
     #000 5%
-  );--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) rgba(0,0,0,.15);--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, rgba(0,0,0,.1));--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) rgba(0,0,0,.25);--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, rgba(0,0,0,.15));--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #000;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #000;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000);@supports not (color:light-dark(tan,tan)){& *{--csstools-light-dark-toggle--0:var(--csstools-color-scheme--light) #000;--body-background:var(--csstools-light-dark-toggle--0, var(--light-blue));--csstools-light-dark-toggle--1:var(--csstools-color-scheme--light) #ddd;--text-color:var(--csstools-light-dark-toggle--1, #000);--csstools-light-dark-toggle--2:var(--csstools-color-scheme--light) #0d0d0d;--header-background-color:var(--csstools-light-dark-toggle--2, #f8f9fa);--csstools-light-dark-toggle--3:var(--csstools-color-scheme--light) #9c9c9c;--header-text-color:var(--csstools-light-dark-toggle--3, #000);--csstools-light-dark-toggle--4:var(--csstools-color-scheme--light) #383838;--header-rule-color:var(--csstools-light-dark-toggle--4, #e0e0e0);--csstools-light-dark-toggle--5:var(--csstools-color-scheme--light) var(--light-blue);--background-highlight-color:var(--csstools-light-dark-toggle--5, #e5e8f1);--csstools-light-dark-toggle--6:var(--csstools-color-scheme--light) #444;--input-bg:var(--csstools-light-dark-toggle--6, #fff);--csstools-light-dark-toggle--7:var(--csstools-color-scheme--light) #555;--input-border:var(--csstools-light-dark-toggle--7, #ccc);--csstools-light-dark-toggle--8:var(--csstools-color-scheme--light) #fff;--card-color:var(--csstools-light-dark-toggle--8, #000);--csstools-light-dark-toggle--9:var(--csstools-color-scheme--light) #2d2d2d;--card-background:var(--csstools-light-dark-toggle--9, #fff);--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) rgba(0,0,0,.15);--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, rgba(0,0,0,.1));--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) rgba(0,0,0,.25);--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, rgba(0,0,0,.15));--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #000;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #000;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000)}}}@supports (color:light-dark(red,red)){:root{--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-border:1px solid light-dark(#ddd, #444);--card-link-color:light-dark(#00e, #9e9eff)}}@supports (color:light-dark(red,red)) and (color:rgb(0 0 0/0)){:root{--box-shadow:0 2px 4px light-dark(rgba(0,0,0,.1), rgba(0,0,0,.15));--box-shadow-hover:0 4px 8px light-dark(rgba(0,0,0,.15), rgba(0,0,0,.25))}}@supports (color:light-dark(red,red)){:root{--box-shadow-border:1px solid light-dark(#dedede, #393939);--button-cta-bg:light-dark(
+  );--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) #00000026;--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, #0000001a);--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) #00000040;--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, #00000026);--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #000;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #000;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000);@supports not (color:light-dark(tan,tan)){& *{--csstools-light-dark-toggle--0:var(--csstools-color-scheme--light) #000;--body-background:var(--csstools-light-dark-toggle--0, var(--light-blue));--csstools-light-dark-toggle--1:var(--csstools-color-scheme--light) #ddd;--text-color:var(--csstools-light-dark-toggle--1, #000);--csstools-light-dark-toggle--2:var(--csstools-color-scheme--light) #0d0d0d;--header-background-color:var(--csstools-light-dark-toggle--2, #f8f9fa);--csstools-light-dark-toggle--3:var(--csstools-color-scheme--light) #9c9c9c;--header-text-color:var(--csstools-light-dark-toggle--3, #000);--csstools-light-dark-toggle--4:var(--csstools-color-scheme--light) #383838;--header-rule-color:var(--csstools-light-dark-toggle--4, #e0e0e0);--csstools-light-dark-toggle--5:var(--csstools-color-scheme--light) var(--light-blue);--background-highlight-color:var(--csstools-light-dark-toggle--5, #e5e8f1);--csstools-light-dark-toggle--6:var(--csstools-color-scheme--light) #444;--input-bg:var(--csstools-light-dark-toggle--6, #fff);--csstools-light-dark-toggle--7:var(--csstools-color-scheme--light) #555;--input-border:var(--csstools-light-dark-toggle--7, #ccc);--csstools-light-dark-toggle--8:var(--csstools-color-scheme--light) #fff;--card-color:var(--csstools-light-dark-toggle--8, #000);--csstools-light-dark-toggle--9:var(--csstools-color-scheme--light) #2d2d2d;--card-background:var(--csstools-light-dark-toggle--9, #fff);--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) #00000026;--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, #0000001a);--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) #00000040;--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, #00000026);--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #000;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #000;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000)}}}@supports (color:light-dark(red,red)){:root{--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-border:1px solid light-dark(#ddd, #444);--card-link-color:light-dark(#00e, #9e9eff)}}@supports (color:light-dark(red,red)) and (color:rgb(0 0 0/0)){:root{--box-shadow:0 2px 4px light-dark(#0000001a, #00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026, #00000040)}}@supports (color:light-dark(red,red)){:root{--box-shadow-border:1px solid light-dark(#dedede, #393939);--button-cta-bg:light-dark(
     var(--hygiene-green),
     var(--hygiene-green-lowlight)
   );--button-cta-color:light-dark(#000, #000);--button-cta-bg-hover:light-dark(
@@ -44,7 +44,7 @@
   );--button-cta-color-hover:light-dark(#000, #000)}}[inert],[inert] *{opacity:.5;pointer-events:none;cursor:default;-webkit-user-select:none;user-select:none}body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0;background-color:var(--body-background);color:var(--text-color)}a{color:#0052a3;-webkit-text-decoration:none;text-decoration:none}a:hover{-webkit-text-decoration:underline;text-decoration:underline}.container{max-width:1200px;margin:0 auto;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);color:var(--text-color);border-radius:4px;font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     .content-k3nm4l{display:contents;h1{font-size:2em;border-bottom:1px solid var(--hygiene-green)}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{width:100%;padding:.5rem;margin-bottom:1rem}.establishment{padding:1rem 0;display:block;&.hidden{display:none}position:relative;.details-link{display:block;position:absolute;inset:0;z-index:1;text-indent:-9999px;&:hover{display:flex;flex-direction:column-reverse;text-align:right;padding-right:1rem;padding-bottom:1rem}}&:has(a:hover){background-color:var(--background-highlight-color);color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem;border-radius:9px}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
     .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);padding:1rem calc(50vw - 600px);border-bottom:1px solid var(--header-rule-color);position:relative;max-width:100dvw;box-sizing:border-box;overflow:hidden;@media (width <= 1240px){max-width:100dvw;padding-left:20px;padding-bottom:1rem;padding-right:20px;padding-top:1rem}}.navbar-h3ad34{display:flex;justify-content:space-between;align-items:center}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;list-style:none;display:flex;gap:1.5rem;li{display:inline;a{-webkit-text-decoration:none;text-decoration:none;color:var(--header-text-color);font-weight:700}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{display:none;flex-direction:column;justify-content:space-between;width:30px;height:21px;cursor:pointer;z-index:10}.hamburger-h3ad34 span{display:block;height:3px;width:100%;background-color:var(--header-text-color);border-radius:3px;transition:transform .3s ease-in-out,opacity .3s ease-in-out}@media (width <= 768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{box-sizing:border-box;position:fixed;top:84px;right:-100%;width:100%;height:calc(100dvh - 84px);flex-direction:column;background-color:var(--header-background-color);padding:2rem;transition:right .3s ease-in-out;z-index:5;text-align:right;gap:2rem;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
-    .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);padding-top:2rem;padding-bottom:2rem;margin-top:2rem;.container.footer-columns{display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem;text-align:left;margin-bottom:2rem}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{color:#fff;margin-bottom:.5rem;font-weight:700;border-bottom:1px solid hsla(0,0%,100%,.2)}ul{list-style:none;padding:0;margin:0;li{margin-bottom:.25rem}}}a{color:#fff;-webkit-text-decoration:none;text-decoration:none;border-bottom:1px solid hsla(0,0%,100%,.3);transition:border-color .3s;&:hover{border-color:#fff}}.copyright{text-align:center;margin-top:1rem;padding-top:1rem;font-size:.9rem;p{margin:.25rem 0}}}}
+    .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);padding-top:2rem;padding-bottom:2rem;margin-top:2rem;.container.footer-columns{display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem;text-align:left;margin-bottom:2rem}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{color:#fff;margin-bottom:.5rem;font-weight:700;border-bottom:1px solid #fff3}ul{list-style:none;padding:0;margin:0;li{margin-bottom:.25rem}}}a{color:#fff;-webkit-text-decoration:none;text-decoration:none;border-bottom:1px solid #ffffff4d;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{text-align:center;margin-top:1rem;padding-top:1rem;font-size:.9rem;p{margin:.25rem 0}}}}
   </style>
 </head>
 
@@ -3779,7 +3779,7 @@
                 <h3>Aroma</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Redwoods 8 - 9 Albert Crescent</span><br>          <span>Chingford</span><br>          <span>London</span><br>        <span itemprop="postalCode">E4 6SH</span>
+          <span>8 - 9 Albert Crescent</span><br>          <span>Chingford</span><br>          <span>London</span><br>        <span itemprop="postalCode">E4 6SH</span>
   </address>
 </div>
 
@@ -8323,18 +8323,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="899268">
-                <h3>Evolution Bay/Annie&#39;s</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>177 Capworth Street</span><br>          <span>Leyton</span><br>          <span>London</span><br>        <span itemprop="postalCode">E10 5AR</span>
-  </address>
-</div>
-
-                <a href="/region-london/evolution-bayannies-899268" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="899270">
                 <h3>E17 Kebabish</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -8483,8 +8471,7 @@
                 <h3>Well Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>147 - 151 Wood Street</span><br>          <span>Walthamstow</span><br>          <span>London</span><br>        <span itemprop="postalCode">E17 3LX</span>
-  </address>
+          <span>147 - 151 Wood Street</span><br>          <span>Walthamstow</span><br>          <span>London</span>  </address>
 </div>
 
                 <a href="/region-london/well-pharmacy-926882" class="details-link">
@@ -9535,18 +9522,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1017849">
-                <h3>Foodiez</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>394 Lea Bridge Road</span><br>          <span>Leyton</span><br>          <span>London</span><br>        <span itemprop="postalCode">E10 7DY</span>
-  </address>
-</div>
-
-                <a href="/region-london/foodiez-1017849" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1022652">
                 <h3>Hugs With Mugs Store</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9616,18 +9591,6 @@
 </div>
 
                 <a href="/region-london/lidl-uk-1025296" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1025305">
-                <h3>Crazy 4 Kids</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>5 Frederic Street</span><br>          <span>Walthamstow</span><br>          <span>London</span><br>        <span itemprop="postalCode">E17 7LF</span>
-  </address>
-</div>
-
-                <a href="/region-london/crazy-4-kids-1025305" class="details-link">
                   More
                 </a>
               </div>
@@ -13307,8 +13270,7 @@
                 <h3>Clapton Craft Depot</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>147 - 151 Wood Street</span><br>          <span>Walthamstow</span><br>          <span>London</span><br>        <span itemprop="postalCode">E17 3LX</span>
-  </address>
+          <span>147 - 151 Wood Street</span><br>          <span>Walthamstow</span><br>          <span>London</span>  </address>
 </div>
 
                 <a href="/region-london/clapton-craft-depot-1371581" class="details-link">
@@ -16603,18 +16565,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1673020">
-                <h3>Maghreb Bites</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>545A Lea Bridge Road</span><br>          <span>Leyton</span><br>          <span>London</span><br>        <span itemprop="postalCode">E10 7EB</span>
-  </address>
-</div>
-
-                <a href="/region-london/maghreb-bites-1673020" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1673021">
                 <h3>PACA VIBEZZ</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -17899,18 +17849,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1735239">
-                <h3>Coffee Club</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Ground Floor 699 High Road Leyton</span><br>          <span>Leyton</span><br>          <span>London</span><br>        <span itemprop="postalCode">E10 6RA</span>
-  </address>
-</div>
-
-                <a href="/region-london/coffee-club-1735239" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1735240">
                 <h3>Elite Cafe</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -18283,18 +18221,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1751659">
-                <h3>Dimi Services</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-london/dimi-services-1751659" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1751661">
                 <h3>Big Boba</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -18424,18 +18350,6 @@
 </div>
 
                 <a href="/region-london/gails-walthamstow-village-1760799" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1760800">
-                <h3>Auntie Anne&#39;s Pretzels</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-london/auntie-annes-pretzels-1760800" class="details-link">
                   More
                 </a>
               </div>
@@ -19075,6 +18989,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1802378">
+                <h3>E17 The Cafe</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>112A High Street</span><br>          <span>Walthamstow</span><br>          <span>London</span><br>        <span itemprop="postalCode">E17 7JY</span>
+  </address>
+</div>
+
+                <a href="/region-london/e17-the-cafe-1802378" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1802380">
                 <h3>Food 4 Less</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -19156,18 +19082,6 @@
 </div>
 
                 <a href="/region-london/fluffy-fluffy-1804591" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1804592">
-                <h3>The European</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Drum Public House 557 - 559 Lea Bridge Road</span><br>          <span>Leyton</span><br>          <span>London</span><br>        <span itemprop="postalCode">E10 7EQ</span>
-  </address>
-</div>
-
-                <a href="/region-london/the-european-1804592" class="details-link">
                   More
                 </a>
               </div>
@@ -19312,6 +19226,18 @@
 </div>
 
                 <a href="/region-london/forno-leytonstone-1804606" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1809797">
+                <h3>The Ferm</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 29 Fairways Business Park 4 Lammas Road</span><br>          <span>Leyton</span><br>          <span>London</span><br>        <span itemprop="postalCode">E10 7QB</span>
+  </address>
+</div>
+
+                <a href="/region-london/the-ferm-1809797" class="details-link">
                   More
                 </a>
               </div>
@@ -20347,18 +20273,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1852482">
-                <h3>Slumped</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>345A Lea Bridge Road</span><br>          <span>Leyton</span><br>          <span>London</span><br>        <span itemprop="postalCode">E10 7LA</span>
-  </address>
-</div>
-
-                <a href="/region-london/slumped-1852482" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1852484">
                 <h3>Proper Pizza Leytonstone</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -20908,18 +20822,6 @@
 </div>
 
                 <a href="/region-london/grace-pot-jerk-center-1883540" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1883541">
-                <h3>Blackstar Bar &amp; Grill</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>54 St James Street</span><br>          <span>Walthamstow</span><br>          <span>London</span><br>        <span itemprop="postalCode">E17 7PE</span>
-  </address>
-</div>
-
-                <a href="/region-london/blackstar-bar-grill-1883541" class="details-link">
                   More
                 </a>
               </div>
@@ -21931,18 +21833,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1930012">
-                <h3>KENNY’S MENU CATERING AND SERVICES</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>597 Lea Bridge Road</span><br>          <span>Leyton</span><br>          <span>London</span><br>        <span itemprop="postalCode">E10 6AJ</span>
-  </address>
-</div>
-
-                <a href="/region-london/kennys-menu-catering-and-services-1930012" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1930013">
                 <h3>Juniper Pursuits at George Tomlinson Primary School</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -22163,7 +22053,7 @@
                 <h3>Cake By Slice</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>629 High Road Leytonstone</span><br>          <span>Leytonstone</span><br>          <span>London</span><br>        <span itemprop="postalCode">E11 4PA</span>
+          <span>Ground Floor 629 High Road Leytonstone</span><br>          <span>Leytonstone</span><br>          <span>London</span><br>        <span itemprop="postalCode">E11 4PA</span>
   </address>
 </div>
 
@@ -22264,18 +22154,6 @@
 </div>
 
                 <a href="/region-london/olive-dining-at-our-lady-and-st-georges-primary-school-1933816" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1933817">
-                <h3>Kaspa&#39;s Walthamstow</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>86 Markhouse Road</span><br>          <span>Walthamstow</span><br>          <span>London</span><br>        <span itemprop="postalCode">E17 8BG</span>
-  </address>
-</div>
-
-                <a href="/region-london/kaspas-walthamstow-1933817" class="details-link">
                   More
                 </a>
               </div>
@@ -23267,7 +23145,7 @@
                 <h3>The Gilded Lounge</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>104 Cann Hall Road</span><br>          <span>Leytonstone</span><br>          <span>London</span><br>        <span itemprop="postalCode">E11 3NH</span>
+          <span>Ground Floor 104 Cann Hall Road</span><br>          <span>Leytonstone</span><br>          <span>London</span><br>        <span itemprop="postalCode">E11 3NH</span>
   </address>
 </div>
 
@@ -23555,8 +23433,7 @@
                 <h3>The Curry Mistress at Clapton Craft</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>147 - 151 Wood Street</span><br>          <span>Walthamstow</span><br>          <span>London</span><br>        <span itemprop="postalCode">E17 3LX</span>
-  </address>
+          <span>147 - 151 Wood Street</span><br>          <span>Walthamstow</span><br>          <span>London</span>  </address>
 </div>
 
                 <a href="/region-london/the-curry-mistress-at-clapton-craft-1968651" class="details-link">
@@ -23680,18 +23557,6 @@
 </div>
 
                 <a href="/region-london/azra-kitchen-1979263" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1979264">
-                <h3>The Jurnie</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>116A Wood Street</span><br>          <span>Walthamstow</span><br>          <span>London</span><br>        <span itemprop="postalCode">E17 3HX</span>
-  </address>
-</div>
-
-                <a href="/region-london/the-jurnie-1979264" class="details-link">
                   More
                 </a>
               </div>
@@ -23827,13 +23692,108 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1994005">
+                <h3>Highams Park Butchers</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>3 The Broadway</span><br>          <span>Chingford</span><br>          <span>London</span><br>        <span itemprop="postalCode">E4 9LQ</span>
+  </address>
+</div>
+
+                <a href="/region-london/highams-park-butchers-1994005" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1994006">
+                <h3>Bonjour Cafe &amp; Patisserie</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>232 High Road Leyton</span><br>          <span>Leyton</span><br>          <span>London</span>  </address>
+</div>
+
+                <a href="/region-london/bonjour-cafe-patisserie-1994006" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1994007">
+                <h3>Maison Misba</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>512 Lea Bridge Road</span><br>          <span>Leyton</span><br>          <span>London</span><br>        <span itemprop="postalCode">E10 7DT</span>
+  </address>
+</div>
+
+                <a href="/region-london/maison-misba-1994007" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1994008">
+                <h3>Caphe</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>129 Hoe Street</span><br>          <span>Walthamstow</span><br>          <span>London</span><br>        <span itemprop="postalCode">E17 4RX</span>
+  </address>
+</div>
+
+                <a href="/region-london/caphe-1994008" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1994009">
+                <h3>Leyton Trinity Methodist Church Foodbank</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>280 High Road Leyton</span><br>          <span>Leyton</span><br>          <span>London</span><br>        <span itemprop="postalCode">E10 5PW</span>
+  </address>
+</div>
+
+                <a href="/region-london/leyton-trinity-methodist-church-foodbank-1994009" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1994010">
+                <h3>E17 Breakfast House/Griddle Yard</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>116B High Street</span><br>          <span>Walthamstow</span><br>          <span>London</span><br>        <span itemprop="postalCode">E17 7JY</span>
+  </address>
+</div>
+
+                <a href="/region-london/e17-breakfast-housegriddle-yard-1994010" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1994011">
+                <h3>Melo Coffee House Co</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>9 The Broadway</span><br>          <span>Chingford</span><br>          <span>London</span><br>        <span itemprop="postalCode">E4 9LQ</span>
+  </address>
+</div>
+
+                <a href="/region-london/melo-coffee-house-co-1994011" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="1994012">
+                <h3>Krystal Lounge</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>285 High Road Leytonstone</span><br>          <span>Leytonstone</span><br>          <span>London</span><br>        <span itemprop="postalCode">E11 4HH</span>
+  </address>
+</div>
+
+                <a href="/region-london/krystal-lounge-1994012" class="details-link">
+                  More
+                </a>
+              </div>
           </div>
         </article>
       </div>
     </div>
     <script type="module">
       /* Minified JavaScript */
-var e=document.querySelector(".content-k3nm4l #filter-input");let a=document.querySelector(".establishments-container"),o=[...a.querySelectorAll(".establishment")].map(e=>({element:e,name:(e.querySelector("h3")?.textContent||"").toLowerCase(),address:(e.querySelector("address")?.textContent||"").toLowerCase(),clone:e.cloneNode(!0)}));let s=(e,t)=>{e.replaceChildren();var r,l=document.createDocumentFragment(),n=document.createElement("hr");for(r of t)l.append(r.clone),l.append(n.cloneNode());l.lastChild&&l.lastChild.remove(),e.append(l)},c=new Set,i=(t,e,r,l)=>{let n=Math.min(t+e,o.length);for(let e=t;e<n;e++){let t=o[e];r.every(e=>t.name.includes(e)||t.address.includes(e))&&c.add(t)}n>=o.length?requestAnimationFrame(()=>{s(a,c),l()}):(t=()=>i(n,e,r,l),(globalThis.requestIdleCallback?requestIdleCallback:requestAnimationFrame)(t))};e.addEventListener("input",((t,r)=>{let l;return(...e)=>{clearTimeout(l),l=setTimeout(()=>{clearTimeout(l),t(...e)},r)}})(e=>{(async e=>{let r=(e=>{for(var t,r=/"([^"]+)"|(\S+)/g,l=[];null!==(t=r.exec(e));){let e=(t[1]||t[2]).toLowerCase();e=e.replaceAll(/^"+|"+$/g,""),l.push(e)}return l})(e);if(0!==r.length)return new Promise(e=>{let t=Math.min(50,Math.ceil(o.length/4));requestAnimationFrame(()=>{c.clear(),i(0,t,r,e)})});requestAnimationFrame(()=>{s(a,o)})})(e.target.value.toLowerCase())},150));
+let e=document.querySelector(".content-k3nm4l #filter-input"),a=document.querySelector(".establishments-container");if(!(e instanceof HTMLInputElement&&a instanceof HTMLElement))throw new TypeError("Establishment search elements were not found");let o=[...a.querySelectorAll(".establishment")].map(e=>({element:e,name:(e.querySelector("h3")?.textContent||"").toLowerCase(),address:(e.querySelector("address")?.textContent||"").toLowerCase(),clone:e.cloneNode(!0)}));let s=(e,t)=>{e.replaceChildren();var n,l=document.createDocumentFragment(),r=document.createElement("hr");for(n of t)l.append(n.clone),l.append(r.cloneNode());l.lastChild&&l.lastChild.remove(),e.append(l)},i=new Set,c=(t,e,n,l)=>{let r=Math.min(t+e,o.length);for(let e=t;e<r;e++){let t=o[e];n.every(e=>t.name.includes(e)||t.address.includes(e))&&i.add(t)}r>=o.length?requestAnimationFrame(()=>{s(a,i),l()}):(t=()=>c(r,e,n,l),"function"==typeof globalThis.requestIdleCallback?globalThis.requestIdleCallback(t):requestAnimationFrame(t))};e.addEventListener("input",((t,n)=>{let l;return(...e)=>{void 0!==l&&clearTimeout(l),l=setTimeout(()=>{void 0!==l&&clearTimeout(l),t(...e)},n)}})(()=>{(async e=>{let n=(e=>{for(var t,n=/"([^"]+)"|(\S+)/g,l=[];null!==(t=n.exec(e));){let e=(t[1]||t[2]).toLowerCase();e=e.replaceAll(/^"+|"+$/g,""),l.push(e)}return l})(e);if(0!==n.length)return new Promise(e=>{let t=Math.min(50,Math.ceil(o.length/4));requestAnimationFrame(()=>{i.clear(),c(0,t,n,e)})});requestAnimationFrame(()=>{s(a,o)})})(e.value.toLowerCase())},150));
     </script>
     <div class="component-footer-8fpz1b" data-suffix="8fpz1b">
   <footer>
