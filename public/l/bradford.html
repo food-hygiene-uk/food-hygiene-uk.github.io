@@ -20,7 +20,7 @@
 {let a=globalThis?.matchMedia?.("(prefers-color-scheme:dark)"),e=()=>{var e=localStorage.getItem("color-scheme"),t=a?.matches?"dark":"light";document.documentElement.dataset.colorScheme=e??t};a?.addEventListener("change",()=>{e()}),e()}
   </script>
   <style>
-    html{--csstools-color-scheme--light:initial;color-scheme:only light}@media(prefers-color-scheme:dark),(scripting:enabled),(scripting:initial-only){html:not([data-color-scheme=light]){--csstools-color-scheme--light:  ;color-scheme:only dark}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green-rgb:132, 190, 0;--hygiene-green:rgb(var(--hygiene-green-rgb));--hygiene-green-highlight:color-mix(
+    html{--csstools-color-scheme--light:initial;color-scheme:only light;@media(prefers-color-scheme:dark),(scripting:enabled),(scripting:initial-only){&:not([data-color-scheme=light]){--csstools-color-scheme--light:  ;color-scheme:only dark}}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green:#84be00;--hygiene-green-highlight:color-mix(
     in oklab,
     var(--hygiene-green) 50%,
     #fff 50%
@@ -36,16 +36,16 @@
     in oklab,
     var(--card-background) 95%,
     #000 5%
-  );--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) #00000026;--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, #0000001a);--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) #00000040;--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, #00000026);--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #000;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #000;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000);@supports not (color:light-dark(tan,tan)){& *{--csstools-light-dark-toggle--0:var(--csstools-color-scheme--light) #000;--body-background:var(--csstools-light-dark-toggle--0, var(--light-blue));--csstools-light-dark-toggle--1:var(--csstools-color-scheme--light) #ddd;--text-color:var(--csstools-light-dark-toggle--1, #000);--csstools-light-dark-toggle--2:var(--csstools-color-scheme--light) #0d0d0d;--header-background-color:var(--csstools-light-dark-toggle--2, #f8f9fa);--csstools-light-dark-toggle--3:var(--csstools-color-scheme--light) #9c9c9c;--header-text-color:var(--csstools-light-dark-toggle--3, #000);--csstools-light-dark-toggle--4:var(--csstools-color-scheme--light) #383838;--header-rule-color:var(--csstools-light-dark-toggle--4, #e0e0e0);--csstools-light-dark-toggle--5:var(--csstools-color-scheme--light) var(--light-blue);--background-highlight-color:var(--csstools-light-dark-toggle--5, #e5e8f1);--csstools-light-dark-toggle--6:var(--csstools-color-scheme--light) #444;--input-bg:var(--csstools-light-dark-toggle--6, #fff);--csstools-light-dark-toggle--7:var(--csstools-color-scheme--light) #555;--input-border:var(--csstools-light-dark-toggle--7, #ccc);--csstools-light-dark-toggle--8:var(--csstools-color-scheme--light) #fff;--card-color:var(--csstools-light-dark-toggle--8, #000);--csstools-light-dark-toggle--9:var(--csstools-color-scheme--light) #2d2d2d;--card-background:var(--csstools-light-dark-toggle--9, #fff);--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) #00000026;--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, #0000001a);--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) #00000040;--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, #00000026);--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #000;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #000;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000)}}}@supports(color:light-dark(red,red)){:root{--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-border:1px solid light-dark(#ddd, #444);--card-link-color:light-dark(#00e, #9e9eff);--box-shadow-border:1px solid light-dark(#dedede, #393939);--button-cta-bg:light-dark(
+  );--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) #00000026;--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, #0000001a);--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) #00000040;--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, #00000026);--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #001;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #001;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000);@supports not (color:light-dark(tan,tan)){& *{--csstools-light-dark-toggle--0:var(--csstools-color-scheme--light) #000;--body-background:var(--csstools-light-dark-toggle--0, var(--light-blue));--csstools-light-dark-toggle--1:var(--csstools-color-scheme--light) #ddd;--text-color:var(--csstools-light-dark-toggle--1, #000);--csstools-light-dark-toggle--2:var(--csstools-color-scheme--light) #0d0d0d;--header-background-color:var(--csstools-light-dark-toggle--2, #f8f9fa);--csstools-light-dark-toggle--3:var(--csstools-color-scheme--light) #9c9c9c;--header-text-color:var(--csstools-light-dark-toggle--3, #000);--csstools-light-dark-toggle--4:var(--csstools-color-scheme--light) #383838;--header-rule-color:var(--csstools-light-dark-toggle--4, #e0e0e0);--csstools-light-dark-toggle--5:var(--csstools-color-scheme--light) var(--light-blue);--background-highlight-color:var(--csstools-light-dark-toggle--5, #e5e8f1);--csstools-light-dark-toggle--6:var(--csstools-color-scheme--light) #444;--input-bg:var(--csstools-light-dark-toggle--6, #fff);--csstools-light-dark-toggle--7:var(--csstools-color-scheme--light) #555;--input-border:var(--csstools-light-dark-toggle--7, #ccc);--csstools-light-dark-toggle--8:var(--csstools-color-scheme--light) #fff;--card-color:var(--csstools-light-dark-toggle--8, #000);--csstools-light-dark-toggle--9:var(--csstools-color-scheme--light) #2d2d2d;--card-background:var(--csstools-light-dark-toggle--9, #fff);--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) #00000026;--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, #0000001a);--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) #00000040;--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, #00000026);--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #001;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #001;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000)}}}@supports(color:light-dark(red,red)){:root{--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-border:1px solid light-dark(#ddd, #444);--card-link-color:light-dark(#00e, #9e9eff);--box-shadow-border:1px solid light-dark(#dedede, #393939);--button-cta-bg:light-dark(
     var(--hygiene-green),
     var(--hygiene-green-lowlight)
-  );--button-cta-color:light-dark(#000, #000);--button-cta-bg-hover:light-dark(
+  );--button-cta-color:light-dark(#000, #001);--button-cta-bg-hover:light-dark(
     var(--hygiene-green-highlight),
     var(--hygiene-green)
-  );--button-cta-color-hover:light-dark(#000, #000)}}@supports(color:light-dark(red,red)) and (color:rgb(0 0 0/0)){:root{--box-shadow:0 2px 4px light-dark(#0000001a, #00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026, #00000040)}}[inert],[inert] *{opacity:.5;pointer-events:none;cursor:default;-webkit-user-select:none;user-select:none}body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0;background-color:var(--body-background);color:var(--text-color)}a{color:#0052a3;-webkit-text-decoration:none;text-decoration:none}a:hover{-webkit-text-decoration:underline;text-decoration:underline}.container{max-width:1200px;margin:0 auto;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);color:var(--text-color);border-radius:4px;font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
-    .content-k3nm4l{display:contents;h1{font-size:2em;border-bottom:1px solid var(--hygiene-green)}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{width:100%;padding:.5rem;margin-bottom:1rem}.establishment{padding:1rem 0;display:block;&.hidden{display:none}position:relative;.details-link{display:block;position:absolute;inset:0;z-index:1;text-indent:-9999px;&:hover{display:flex;flex-direction:column-reverse;text-align:right;padding-right:1rem;padding-bottom:1rem}}&:has(a:hover){background-color:var(--background-highlight-color);color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem;border-radius:9px}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
-    .component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);padding:1rem calc(50vw - 600px);border-bottom:1px solid var(--header-rule-color);position:relative;max-width:100dvw;box-sizing:border-box;overflow:hidden;@media(width<=1240px){max-width:100dvw;padding:1rem 20px}}.navbar-h3ad34{display:flex;justify-content:space-between;align-items:center}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;list-style:none;display:flex;gap:1.5rem;li{display:inline;a{-webkit-text-decoration:none;text-decoration:none;color:var(--header-text-color);font-weight:700}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{display:none;flex-direction:column;justify-content:space-between;width:30px;height:21px;cursor:pointer;z-index:10}.hamburger-h3ad34 span{display:block;height:3px;width:100%;background-color:var(--header-text-color);border-radius:3px;transition:transform .3s ease-in-out,opacity .3s ease-in-out}@media(width<=768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{box-sizing:border-box;position:fixed;top:84px;right:-100%;width:100%;height:calc(100dvh - 84px);flex-direction:column;background-color:var(--header-background-color);padding:2rem;transition:right .3s ease-in-out;z-index:5;text-align:right;gap:2rem;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{transform:translateY(9px) rotate(45deg)}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}}}
-    .component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);padding-top:2rem;padding-bottom:2rem;margin-top:2rem;.container.footer-columns{display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem;text-align:left;margin-bottom:2rem}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{color:#fff;margin-bottom:.5rem;font-weight:700;border-bottom:1px solid #fff3}ul{list-style:none;padding:0;margin:0;li{margin-bottom:.25rem}}}a{color:#fff;-webkit-text-decoration:none;text-decoration:none;border-bottom:1px solid #ffffff4d;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{text-align:center;margin-top:1rem;padding-top:1rem;font-size:.9rem;p{margin:.25rem 0}}}}
+  );--button-cta-color-hover:light-dark(#000, #001)}}@supports(color:light-dark(red,red)) and (color:rgb(0 0 0/0)){:root{--box-shadow:0 2px 4px light-dark(#0000001a, #00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026, #00000040)}}[inert],[inert] *{opacity:.5;pointer-events:none;cursor:default;-webkit-user-select:none;user-select:none}body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0;background-color:var(--body-background);color:var(--text-color)}a{color:#0052a3;-webkit-text-decoration:none;text-decoration:none;&:hover{text-decoration-line:underline}}.container{max-width:1200px;margin:0 auto;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);color:var(--text-color);border-radius:4px;font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+    #globals{--hygiene-green:#0000;--background-highlight-color:#0000;--text-highlight-color:#0000}.content-k3nm4l{display:contents;h1{font-size:2em;border-bottom:1px solid var(--hygiene-green)}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{width:100%;padding:.5rem;margin-bottom:1rem}.establishment{padding:1rem 0;display:block;position:relative;&.hidden{display:none}.details-link{display:block;position:absolute;inset:0;z-index:1;text-indent:-9999px;&:hover{display:flex;flex-direction:column-reverse;text-align:right;padding-right:1rem;padding-bottom:1rem}}&:has(a:hover){background-color:var(--background-highlight-color);color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem;border-radius:9px}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
+    #globals{--header-background-color:#0000;--header-text-color:#0000;--header-rule-color:#0000}.component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);padding:1rem calc(50vw - 600px);border-bottom:1px solid var(--header-rule-color);position:relative;max-width:100dvw;box-sizing:border-box;overflow:hidden;@media(width<=1240px){max-width:100dvw;padding:1rem 20px}}.navbar-h3ad34{display:flex;justify-content:space-between;align-items:center}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;list-style:none;display:flex;gap:1.5rem;li{display:inline;a{-webkit-text-decoration:none;text-decoration:none;color:var(--header-text-color);font-weight:700}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{display:none;flex-direction:column;justify-content:space-between;width:30px;height:21px;cursor:pointer;z-index:10;span{display:block;height:3px;width:100%;background-color:var(--header-text-color);border-radius:3px;transition:transform .3s ease-in-out,opacity .3s ease-in-out}}@media(width<=768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{box-sizing:border-box;position:fixed;top:84px;right:-100%;width:100%;height:calc(100dvh - 84px);flex-direction:column;background-color:var(--header-background-color);padding:2rem;transition:right .3s ease-in-out;z-index:5;text-align:right;gap:2rem;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{translate:0 9px;rotate:45deg}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){translate:0 -9px;rotate:-45deg}}}
+    #globals{--primary-blue:#0000;--light-blue:#0000}.component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);padding-top:2rem;padding-bottom:2rem;margin-top:2rem;.container.footer-columns{display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem;text-align:left;margin-bottom:2rem}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{color:#fff;margin-bottom:.5rem;font-weight:700;border-bottom:1px solid #fff3}ul{list-style:none;padding:0;margin:0;li{margin-bottom:.25rem}}}a{color:#fff;-webkit-text-decoration:none;text-decoration:none;border-bottom:1px solid #ffffff4d;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{text-align:center;margin-top:1rem;padding-top:1rem;font-size:.9rem;p{margin:.25rem 0}}}}
   </style>
 </head>
 
@@ -249,14 +249,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="324577">
-                <h3>HK Allerton Off Licence</h3>
+                <h3>ex HK Allerton Off Licence</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>111-113 Saffron Drive</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD15 7NQ</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/hk-allerton-off-licence-324577" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/ex-hk-allerton-off-licence-324577" class="details-link">
                   More
                 </a>
               </div>
@@ -1893,14 +1893,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="324836">
-                <h3>GH Grab and Go</h3>
+                <h3>Cha Cha Chai</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>Great Horton Petrol Filling Station</span><br>          <span>472 Great Horton Road</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD7 3HR</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/gh-grab-and-go-324836" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/cha-cha-chai-324836" class="details-link">
                   More
                 </a>
               </div>
@@ -2469,14 +2469,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="324949">
-                <h3>Fresh Fruit &amp; Veg</h3>
+                <h3>Nisar Fresh Fruit &amp; Veg</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
       <div>No address information available</div>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/fresh-fruit-veg-324949" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/nisar-fresh-fruit-veg-324949" class="details-link">
                   More
                 </a>
               </div>
@@ -7236,7 +7236,7 @@
                 <h3>Morgans Catering</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>241 Hall Lane</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD4 7DN</span>
   </address>
 </div>
 
@@ -8969,18 +8969,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/the-woodman-bar-only-326065" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="326066">
-                <h3>Beacon Road Fisheries</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>47 Beacon Road</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD6 3ET</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/beacon-road-fisheries-326066" class="details-link">
                   More
                 </a>
               </div>
@@ -13137,14 +13125,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="326625">
-                <h3>Bradford Street Food BD3</h3>
+                <h3>Chaat Heaven</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>31-33 Bradford Lane</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD3 8LP</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/bradford-street-food-bd3-326625" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/chaat-heaven-326625" class="details-link">
                   More
                 </a>
               </div>
@@ -13493,18 +13481,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/greggs-326662" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="326663">
-                <h3>Savers</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>22 Brook Street</span><br>          <span>Ilkley</span><br>        <span itemprop="postalCode">LS29 8DE</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/savers-326663" class="details-link">
                   More
                 </a>
               </div>
@@ -15977,18 +15953,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/writers-bloc-327008" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="327009">
-                <h3>The Registry On The Cobbles</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2-6 Main Street</span><br>          <span>Haworth</span><br>          <span>Keighley</span><br>        <span itemprop="postalCode">BD22 8DA</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/the-registry-on-the-cobbles-327009" class="details-link">
                   More
                 </a>
               </div>
@@ -27092,6 +27056,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="448672">
+                <h3>Kashmir Halal Meat</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>64 Aberdeen Place</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD7 2HQ</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/kashmir-halal-meat-448672" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="448676">
                 <h3>Euro Market</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -27345,14 +27321,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="484810">
-                <h3>Mario’s Pizzaz</h3>
+                <h3>Amaan&#39;s Bd6</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>82a Fenwick Drive</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD6 2RZ</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/marios-pizzaz-484810" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/amaans-bd6-484810" class="details-link">
                   More
                 </a>
               </div>
@@ -33477,14 +33453,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="950093">
-                <h3>Engine Room on Aire</h3>
+                <h3>Engine Room</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>Market Street</span><br>          <span>Bingley</span><br>        <span itemprop="postalCode">BD16 2HP</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/engine-room-on-aire-950093" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/engine-room-950093" class="details-link">
                   More
                 </a>
               </div>
@@ -34197,14 +34173,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1002657">
-                <h3>Main Street Cafe &amp; Deli</h3>
+                <h3>Club Cafe</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>65 Main Street</span><br>          <span>Bingley</span><br>        <span itemprop="postalCode">BD16 2HZ</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/main-street-cafe-deli-1002657" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/club-cafe-1002657" class="details-link">
                   More
                 </a>
               </div>
@@ -37844,18 +37820,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1273605">
-                <h3>Choni’s Inc, You Want Beef?</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>76 Manningham Lane</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD1 3EP</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/chonis-inc-you-want-beef-1273605" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1273606">
                 <h3>Hania Desi Cafe</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -41205,14 +41169,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1488599">
-                <h3>Dreamy Desserts</h3>
+                <h3>Pit-Stop Desserts</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>528 Thornton Road</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD8 9NB</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/dreamy-desserts-1488599" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/pit-stop-desserts-1488599" class="details-link">
                   More
                 </a>
               </div>
@@ -48621,14 +48585,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1827566">
-                <h3>SONIK’S Deli &amp; Desserts</h3>
+                <h3>Taste Of Kingston</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>413 Cutler Heights Lane</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD4 9JL</span>
   </address>
 </div>
 
-                <a href="/region-yorkshire-and-the-humber/soniks-deli-desserts-1827566" class="details-link">
+                <a href="/region-yorkshire-and-the-humber/taste-of-kingston-1827566" class="details-link">
                   More
                 </a>
               </div>
@@ -53180,6 +53144,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1941063">
+                <h3>Heaven Scent Gifts</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>7-9 Briggate</span><br>          <span>Silsden</span><br>          <span>Keighley</span><br>        <span itemprop="postalCode">BD20 9JS</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/heaven-scent-gifts-1941063" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1941065">
                 <h3>AWS Europe Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -54020,18 +53996,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1961488">
-                <h3>Coqfighter</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>3 Sunbridge Road</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD1 2AZ</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/coqfighter-1961488" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1961489">
                 <h3>Sauced</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -54341,18 +54305,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/arzina-cafe-1968461" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1968463">
-                <h3>Batch’d Bakes</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/batchd-bakes-1968463" class="details-link">
                   More
                 </a>
               </div>
@@ -54677,18 +54629,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/paratha-stop-express-1975350" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1975351">
-                <h3>Amanda Hardcastle Slimming World</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/amanda-hardcastle-slimming-world-1975351" class="details-link">
                   More
                 </a>
               </div>
@@ -55832,18 +55772,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="2006154">
-                <h3>SabrStudies</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/sabrstudies-2006154" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="2006155">
                 <h3>Afro Pantry</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -56057,18 +55985,6 @@
 </div>
 
                 <a href="/region-yorkshire-and-the-humber/the-yorkshire-fudge-company-2008508" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="2008509">
-                <h3>The Chapel of Art</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>The Old Chapel</span><br>          <span>Denholme Road</span><br>          <span>Oxenhope</span><br>          <span>Keighley</span><br>        <span itemprop="postalCode">BD22 9NU</span>
-  </address>
-</div>
-
-                <a href="/region-yorkshire-and-the-humber/the-chapel-of-art-2008509" class="details-link">
                   More
                 </a>
               </div>
@@ -56348,13 +56264,205 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="2010661">
+                <h3>Corner</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>40 Toller Lane</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD8 8QL</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/corner-2010661" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010662">
+                <h3>Independent Artist Support</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/independent-artist-support-2010662" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010663">
+                <h3>Annah’s Sweet House</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/annahs-sweet-house-2010663" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010664">
+                <h3>Maison Marie</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/maison-marie-2010664" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010665">
+                <h3>Mai Açaí</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/mai-aa-2010665" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010666">
+                <h3>Butter And Bakes</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/butter-and-bakes-2010666" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010667">
+                <h3>Rapido Cocina</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/rapido-cocina-2010667" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010668">
+                <h3>Carryfresh Bradford</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>5 Hardaker Street</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD8 8EP</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/carryfresh-bradford-2010668" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010669">
+                <h3>Zahra &amp; Naveed Farms</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/zahra-naveed-farms-2010669" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010670">
+                <h3>DESI 4X4</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>6 Upper Millergate</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD1 1SX</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/desi-4x4-2010670" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010671">
+                <h3>MG Global</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>852 Little Horton Lane</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD5 9DG</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/mg-global-2010671" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010672">
+                <h3>BAYB UK</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>1 Chapel Fold</span><br>          <span>Slack Lane</span><br>          <span>Oakworth</span><br>          <span>Keighley</span><br>        <span itemprop="postalCode">BD22 0RQ</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/bayb-uk-2010672" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010673">
+                <h3>Aromes on the Go</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/aromes-on-the-go-2010673" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010674">
+                <h3>Jelly Beans</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/jelly-beans-2010674" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010675">
+                <h3>Share Community Cafe</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/share-community-cafe-2010675" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2010676">
+                <h3>Rajas Frozen Food Producers</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 8 Barnes Road Industrial Estate</span><br>          <span>Barnes Road</span><br>          <span>Bradford</span><br>        <span itemprop="postalCode">BD8 9TG</span>
+  </address>
+</div>
+
+                <a href="/region-yorkshire-and-the-humber/rajas-frozen-food-producers-2010676" class="details-link">
+                  More
+                </a>
+              </div>
           </div>
         </article>
       </div>
     </div>
     <script type="module">
       /* Minified JavaScript */
-let e=document.querySelector(".content-k3nm4l #filter-input"),r=document.querySelector(".establishments-container");if(!(e instanceof HTMLInputElement&&r instanceof HTMLElement))throw new TypeError("Establishment search elements were not found");let a=[...r.querySelectorAll(".establishment")].map(e=>({element:e,name:(e.querySelector("h3")?.textContent||"").toLowerCase(),address:(e.querySelector("address")?.textContent||"").toLowerCase(),clone:e.cloneNode(!0)}));let o=e=>{r.replaceChildren();var t,n=document.createDocumentFragment(),l=document.createElement("hr");for(t of e)n.append(t.clone),n.append(l.cloneNode());n.lastChild&&n.lastChild.remove(),r.append(n)},s=new Set,i=(t,e,n,l)=>{let r=Math.min(t+e,a.length);for(let e=t;e<r;e++){let t=a[e];n.every(e=>t.name.includes(e)||t.address.includes(e))&&s.add(t)}r>=a.length?requestAnimationFrame(()=>{o(s),l()}):(t=()=>i(r,e,n,l),"function"==typeof globalThis.requestIdleCallback?globalThis.requestIdleCallback(t):requestAnimationFrame(t))};e.addEventListener("input",((t,n)=>{let l;return(...e)=>{void 0!==l&&clearTimeout(l),l=setTimeout(()=>{void 0!==l&&clearTimeout(l),t(...e)},n)}})(()=>{(async e=>{let n=(e=>{for(var t,n=/"([^"]+)"|(\S+)/g,l=[];null!==(t=n.exec(e));){let e=(t[1]||t[2]).toLowerCase();e=e.replaceAll(/^"+|"+$/g,""),l.push(e)}return l})(e);if(0!==n.length)return new Promise(e=>{let t=Math.min(50,Math.ceil(a.length/4));requestAnimationFrame(()=>{s.clear(),i(0,t,n,e)})});requestAnimationFrame(()=>{o(a)})})(e.value.toLowerCase())},150));
+let e=document.querySelector(".content-k3nm4l #filter-input"),l=document.querySelector(".establishments-container");if(!(e instanceof HTMLInputElement&&l instanceof HTMLElement))throw new TypeError("Establishment search elements were not found");let a=[...l.querySelectorAll(".establishment")].map(e=>({element:e,name:(e.querySelector("h3")?.textContent||"").toLowerCase(),address:(e.querySelector("address")?.textContent||"").toLowerCase(),clone:e.cloneNode(!0)}));let o=e=>{l.replaceChildren();var t,n=document.createDocumentFragment(),r=document.createElement("hr");for(t of e)n.append(t.clone),n.append(r.cloneNode());n.lastChild&&n.lastChild.remove(),l.append(n)},s=new Set,i=(t,e,n,r)=>{let l=Math.min(t+e,a.length);for(let e=t;e<l;e++){let t=a[e];n.every(e=>t.name.includes(e)||t.address.includes(e))&&s.add(t)}l>=a.length?requestAnimationFrame(()=>{o(s),r()}):(t=()=>i(l,e,n,r),("function"==typeof requestIdleCallback?requestIdleCallback:requestAnimationFrame)(t))};e.addEventListener("input",((t,n)=>{let r;return(...e)=>{void 0!==r&&clearTimeout(r),r=setTimeout(()=>{void 0!==r&&clearTimeout(r),t(...e)},n)}})(()=>{(async e=>{let n=(e=>{for(var t,n=/"([^"]+)"|(\S+)/g,r=[];null!==(t=n.exec(e));){let e=(t[1]||t[2]).toLowerCase();e=e.replaceAll(/^"+|"+$/g,""),r.push(e)}return r})(e);if(0!==n.length)return new Promise(e=>{let t=Math.min(50,Math.ceil(a.length/4));requestAnimationFrame(()=>{s.clear(),i(0,t,n,e)})});requestAnimationFrame(()=>{o(a)})})(e.value.toLowerCase())},150));
     </script>
     <div class="component-footer-8fpz1b" data-suffix="8fpz1b">
   <footer>
