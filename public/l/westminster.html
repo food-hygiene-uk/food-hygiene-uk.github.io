@@ -20,7 +20,7 @@
 {let a=globalThis?.matchMedia?.("(prefers-color-scheme:dark)"),e=()=>{var e=localStorage.getItem("color-scheme"),t=a?.matches?"dark":"light";document.documentElement.dataset.colorScheme=e??t};a?.addEventListener("change",()=>{e()}),e()}
   </script>
   <style>
-    html{--csstools-color-scheme--light:initial;color-scheme:only light;@media(prefers-color-scheme:dark),(scripting:enabled),(scripting:initial-only){&:not([data-color-scheme=light]){--csstools-color-scheme--light:  ;color-scheme:only dark}}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green:#84be00;--hygiene-green-highlight:color-mix(
+    html{color-scheme:only light;@media(prefers-color-scheme:dark),(scripting:enabled),(scripting:initial-only){&:not([data-color-scheme=light]){color-scheme:only dark}}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green:#84be00;--hygiene-green-highlight:color-mix(
     in oklab,
     var(--hygiene-green) 50%,
     #fff 50%
@@ -28,7 +28,7 @@
     in oklab,
     var(--hygiene-green) 75%,
     #000 25%
-  );--cta-default:#9e66ff;--csstools-light-dark-toggle--0:var(--csstools-color-scheme--light) #000;--body-background:var(--csstools-light-dark-toggle--0, var(--light-blue));--csstools-light-dark-toggle--1:var(--csstools-color-scheme--light) #ddd;--text-color:var(--csstools-light-dark-toggle--1, #000);--csstools-light-dark-toggle--2:var(--csstools-color-scheme--light) #0d0d0d;--header-background-color:var(--csstools-light-dark-toggle--2, #f8f9fa);--csstools-light-dark-toggle--3:var(--csstools-color-scheme--light) #9c9c9c;--header-text-color:var(--csstools-light-dark-toggle--3, #000);--csstools-light-dark-toggle--4:var(--csstools-color-scheme--light) #383838;--header-rule-color:var(--csstools-light-dark-toggle--4, #e0e0e0);--csstools-light-dark-toggle--5:var(--csstools-color-scheme--light) var(--light-blue);--background-highlight-color:var(--csstools-light-dark-toggle--5, #e5e8f1);--text-highlight-color:var(--text-color);--input-color:var(--text-color);--csstools-light-dark-toggle--6:var(--csstools-color-scheme--light) #444;--input-bg:var(--csstools-light-dark-toggle--6, #fff);--csstools-light-dark-toggle--7:var(--csstools-color-scheme--light) #555;--input-border:var(--csstools-light-dark-toggle--7, #ccc);--csstools-light-dark-toggle--8:var(--csstools-color-scheme--light) #fff;--card-color:var(--csstools-light-dark-toggle--8, #000);--csstools-light-dark-toggle--9:var(--csstools-color-scheme--light) #2d2d2d;--card-background:var(--csstools-light-dark-toggle--9, #fff);--card-color-highlight:#000;--card-background-highlight:color-mix(
+  );--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(
     in oklab,
     var(--card-background) 80%,
     #fff 20%
@@ -36,13 +36,13 @@
     in oklab,
     var(--card-background) 95%,
     #000 5%
-  );--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) #00000026;--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, #0000001a);--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) #00000040;--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, #00000026);--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #001;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #001;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000);@supports not (color:light-dark(tan,tan)){& *{--csstools-light-dark-toggle--0:var(--csstools-color-scheme--light) #000;--body-background:var(--csstools-light-dark-toggle--0, var(--light-blue));--csstools-light-dark-toggle--1:var(--csstools-color-scheme--light) #ddd;--text-color:var(--csstools-light-dark-toggle--1, #000);--csstools-light-dark-toggle--2:var(--csstools-color-scheme--light) #0d0d0d;--header-background-color:var(--csstools-light-dark-toggle--2, #f8f9fa);--csstools-light-dark-toggle--3:var(--csstools-color-scheme--light) #9c9c9c;--header-text-color:var(--csstools-light-dark-toggle--3, #000);--csstools-light-dark-toggle--4:var(--csstools-color-scheme--light) #383838;--header-rule-color:var(--csstools-light-dark-toggle--4, #e0e0e0);--csstools-light-dark-toggle--5:var(--csstools-color-scheme--light) var(--light-blue);--background-highlight-color:var(--csstools-light-dark-toggle--5, #e5e8f1);--csstools-light-dark-toggle--6:var(--csstools-color-scheme--light) #444;--input-bg:var(--csstools-light-dark-toggle--6, #fff);--csstools-light-dark-toggle--7:var(--csstools-color-scheme--light) #555;--input-border:var(--csstools-light-dark-toggle--7, #ccc);--csstools-light-dark-toggle--8:var(--csstools-color-scheme--light) #fff;--card-color:var(--csstools-light-dark-toggle--8, #000);--csstools-light-dark-toggle--9:var(--csstools-color-scheme--light) #2d2d2d;--card-background:var(--csstools-light-dark-toggle--9, #fff);--csstools-light-dark-toggle--10:var(--csstools-color-scheme--light) #444;--card-border:1px solid var(--csstools-light-dark-toggle--10, #ddd);--csstools-light-dark-toggle--11:var(--csstools-color-scheme--light) #9e9eff;--card-link-color:var(--csstools-light-dark-toggle--11, #00e);--csstools-light-dark-toggle--12:var(--csstools-color-scheme--light) #00000026;--box-shadow:0 2px 4px var(--csstools-light-dark-toggle--12, #0000001a);--csstools-light-dark-toggle--13:var(--csstools-color-scheme--light) #00000040;--box-shadow-hover:0 4px 8px var(--csstools-light-dark-toggle--13, #00000026);--csstools-light-dark-toggle--14:var(--csstools-color-scheme--light) #393939;--box-shadow-border:1px solid var(--csstools-light-dark-toggle--14, #dedede);--csstools-light-dark-toggle--15:var(--csstools-color-scheme--light) var(--hygiene-green-lowlight);--button-cta-bg:var(--csstools-light-dark-toggle--15, var(--hygiene-green));--csstools-light-dark-toggle--16:var(--csstools-color-scheme--light) #001;--button-cta-color:var(--csstools-light-dark-toggle--16, #000);--csstools-light-dark-toggle--17:var(--csstools-color-scheme--light) var(--hygiene-green);--button-cta-bg-hover:var(--csstools-light-dark-toggle--17, var(--hygiene-green-highlight));--csstools-light-dark-toggle--18:var(--csstools-color-scheme--light) #001;--button-cta-color-hover:var(--csstools-light-dark-toggle--18, #000)}}}@supports(color:light-dark(red,red)){:root{--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-border:1px solid light-dark(#ddd, #444);--card-link-color:light-dark(#00e, #9e9eff);--box-shadow-border:1px solid light-dark(#dedede, #393939);--button-cta-bg:light-dark(
+  );--card-border:1px solid light-dark(#ddd, #444);--card-link-color:light-dark(#00e, #9e9eff);--box-shadow:0 2px 4px light-dark(#0000001a, #00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026, #00000040);--box-shadow-border:1px solid light-dark(#dedede, #393939);--button-cta-bg:light-dark(
     var(--hygiene-green),
     var(--hygiene-green-lowlight)
   );--button-cta-color:light-dark(#000, #001);--button-cta-bg-hover:light-dark(
     var(--hygiene-green-highlight),
     var(--hygiene-green)
-  );--button-cta-color-hover:light-dark(#000, #001)}}@supports(color:light-dark(red,red)) and (color:rgb(0 0 0/0)){:root{--box-shadow:0 2px 4px light-dark(#0000001a, #00000026);--box-shadow-hover:0 4px 8px light-dark(#00000026, #00000040)}}[inert],[inert] *{opacity:.5;pointer-events:none;cursor:default;-webkit-user-select:none;user-select:none}body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0;background-color:var(--body-background);color:var(--text-color)}a{color:#0052a3;-webkit-text-decoration:none;text-decoration:none;&:hover{text-decoration-line:underline}}.container{max-width:1200px;margin:0 auto;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);color:var(--text-color);border-radius:4px;font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+  );--button-cta-color-hover:light-dark(#000, #001)}[inert],[inert] *{opacity:.5;pointer-events:none;cursor:default;-webkit-user-select:none;user-select:none}body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0;background-color:var(--body-background);color:var(--text-color)}a{color:#0052a3;-webkit-text-decoration:none;text-decoration:none;&:hover{text-decoration-line:underline}}.container{max-width:1200px;margin:0 auto;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);color:var(--text-color);border-radius:4px;font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     #globals{--hygiene-green:#0000;--background-highlight-color:#0000;--text-highlight-color:#0000}.content-k3nm4l{display:contents;h1{font-size:2em;border-bottom:1px solid var(--hygiene-green)}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{width:100%;padding:.5rem;margin-bottom:1rem}.establishment{padding:1rem 0;display:block;position:relative;&.hidden{display:none}.details-link{display:block;position:absolute;inset:0;z-index:1;text-indent:-9999px;&:hover{display:flex;flex-direction:column-reverse;text-align:right;padding-right:1rem;padding-bottom:1rem}}&:has(a:hover){background-color:var(--background-highlight-color);color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem;border-radius:9px}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
     #globals{--header-background-color:#0000;--header-text-color:#0000;--header-rule-color:#0000}.component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);padding:1rem calc(50vw - 600px);border-bottom:1px solid var(--header-rule-color);position:relative;max-width:100dvw;box-sizing:border-box;overflow:hidden;@media(width<=1240px){max-width:100dvw;padding:1rem 20px}}.navbar-h3ad34{display:flex;justify-content:space-between;align-items:center}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;list-style:none;display:flex;gap:1.5rem;li{display:inline;a{-webkit-text-decoration:none;text-decoration:none;color:var(--header-text-color);font-weight:700}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{display:none;flex-direction:column;justify-content:space-between;width:30px;height:21px;cursor:pointer;z-index:10;span{display:block;height:3px;width:100%;background-color:var(--header-text-color);border-radius:3px;transition:transform .3s ease-in-out,opacity .3s ease-in-out}}@media(width<=768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{box-sizing:border-box;position:fixed;top:84px;right:-100%;width:100%;height:calc(100dvh - 84px);flex-direction:column;background-color:var(--header-background-color);padding:2rem;transition:right .3s ease-in-out;z-index:5;text-align:right;gap:2rem;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{translate:0 9px;rotate:45deg}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){translate:0 -9px;rotate:-45deg}}}
     #globals{--primary-blue:#0000;--light-blue:#0000}.component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);padding-top:2rem;padding-bottom:2rem;margin-top:2rem;.container.footer-columns{display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem;text-align:left;margin-bottom:2rem}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{color:#fff;margin-bottom:.5rem;font-weight:700;border-bottom:1px solid #fff3}ul{list-style:none;padding:0;margin:0;li{margin-bottom:.25rem}}}a{color:#fff;-webkit-text-decoration:none;text-decoration:none;border-bottom:1px solid #ffffff4d;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{text-align:center;margin-top:1rem;padding-top:1rem;font-size:.9rem;p{margin:.25rem 0}}}}
@@ -6868,18 +6868,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="412217">
-                <h3>Be At One</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>23 WELLINGTON STREET</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">WC2E 7DA</span>
-  </address>
-</div>
-
-                <a href="/region-london/be-at-one-412217" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="412221">
                 <h3>Bella Italia also t/a Super Nonna &amp; Mac n Shack</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6997,18 +6985,6 @@
 </div>
 
                 <a href="/region-london/angus-steak-house-412234" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="412239">
-                <h3>China White</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>WHOLE BUILDING MAPPIN HOUSE 4 WINSLEY STREET</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1W 8HF</span>
-  </address>
-</div>
-
-                <a href="/region-london/china-white-412239" class="details-link">
                   More
                 </a>
               </div>
@@ -9933,18 +9909,6 @@
 </div>
 
                 <a href="/region-london/washington-mayfair-hotel-412839" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="412841">
-                <h3>Benugo</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>13-14 CURZON STREET</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1J 5HN</span>
-  </address>
-</div>
-
-                <a href="/region-london/benugo-412841" class="details-link">
                   More
                 </a>
               </div>
@@ -18162,18 +18126,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="414542">
-                <h3>Bridges</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>3 KNIGHTSBRIDGE GREEN</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">SW1X 7QA</span>
-  </address>
-</div>
-
-                <a href="/region-london/bridges-414542" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="414543">
                 <h3>Vue Cinemas</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -22549,6 +22501,18 @@
 </div>
 
                 <a href="/region-london/pret-a-manger-433687" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="444719">
+                <h3>The Lansdowne Club</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>GROUND FLOOR 9 FITZMAURICE PLACE</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1J 5JD</span>
+  </address>
+</div>
+
+                <a href="/region-london/the-lansdowne-club-444719" class="details-link">
                   More
                 </a>
               </div>
@@ -28848,18 +28812,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1002126">
-                <h3>Notes Coffee</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>UNIT C14 WEST ONE SHOPPING CENTRE 381 OXFORD STREET</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1C 2JS</span>
-  </address>
-</div>
-
-                <a href="/region-london/notes-coffee-1002126" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1003955">
                 <h3>Pret A Manger</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -29363,18 +29315,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1036535">
-                <h3>Benugo</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>CLIVE HOUSE 70-78 PETTY FRANCE</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">SW1H 9EX</span>
-  </address>
-</div>
-
-                <a href="/region-london/benugo-1036535" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1036538">
                 <h3>Inko Nito</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -29396,18 +29336,6 @@
 </div>
 
                 <a href="/region-london/swingers-west-end-1036539" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1036540">
-                <h3>Crosstown</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>5 PICTON PLACE</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1U 1BH</span>
-  </address>
-</div>
-
-                <a href="/region-london/crosstown-1036540" class="details-link">
                   More
                 </a>
               </div>
@@ -33130,18 +33058,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1221038">
-                <h3>Caravan Coffee Roasters</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 SAVOY COURT</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">WC2R 0EX</span>
-  </address>
-</div>
-
-                <a href="/region-london/caravan-coffee-roasters-1221038" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1223905">
                 <h3>Club Mexicana</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -34389,14 +34305,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1269068">
-                <h3>Yunique Tea</h3>
+                <h3>Modo</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>10 LITTLE NEWPORT STREET</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">WC2H 7JJ</span>
   </address>
 </div>
 
-                <a href="/region-london/yunique-tea-1269068" class="details-link">
+                <a href="/region-london/modo-1269068" class="details-link">
                   More
                 </a>
               </div>
@@ -34653,7 +34569,7 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1285527">
-                <h3>Qeqm Coffee Shop</h3>
+                <h3>QEQM Coffee Shop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
       <div>No address information available</div>
@@ -35996,18 +35912,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1366261">
-                <h3>Goodness In A Box</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-london/goodness-in-a-box-1366261" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1368045">
                 <h3>Benugo@Van Gogh Alive</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -37040,18 +36944,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1396534">
-                <h3>House Of Cinn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>134-136 SEYMOUR PLACE</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1H 1NT</span>
-  </address>
-</div>
-
-                <a href="/region-london/house-of-cinn-1396534" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1398547">
                 <h3>Bessborough Day Nursery</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -37865,30 +37757,6 @@
 </div>
 
                 <a href="/region-london/park-lane-club-casino-1413618" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1413619">
-                <h3>Convenience Local</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>BASEMENT 22-25 PORTMAN CLOSE</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1H 6BS</span>
-  </address>
-</div>
-
-                <a href="/region-london/convenience-local-1413619" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1413624">
-                <h3>Seven Cookies</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-london/seven-cookies-1413624" class="details-link">
                   More
                 </a>
               </div>
@@ -38733,14 +38601,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1435820">
-                <h3>Piccadilly Circus Food Limited</h3>
+                <h3>Piccadilly Hot Dog Spot</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
       <div>No address information available</div>
   </address>
 </div>
 
-                <a href="/region-london/piccadilly-circus-food-limited-1435820" class="details-link">
+                <a href="/region-london/piccadilly-hot-dog-spot-1435820" class="details-link">
                   More
                 </a>
               </div>
@@ -40003,18 +39871,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1499830">
-                <h3>Kenafeh Cupcake</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-london/kenafeh-cupcake-1499830" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1499831">
                 <h3>Med Salleh Kopitiam</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -40180,18 +40036,6 @@
 </div>
 
                 <a href="/region-london/socca-1502822" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1502823">
-                <h3>Boshang</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>BASEMENT AND GROUND FLOOR 115 BAKER STREET</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1U 6RT</span>
-  </address>
-</div>
-
-                <a href="/region-london/boshang-1502823" class="details-link">
                   More
                 </a>
               </div>
@@ -43313,18 +43157,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1587813">
-                <h3>Home Of Tiramisu</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-london/home-of-tiramisu-1587813" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1587816">
                 <h3>Bubala Soho</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -43898,18 +43730,6 @@
 </div>
 
                 <a href="/region-london/frameless-1602059" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1602060">
-                <h3>BAHRI Moss</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-london/bahri-moss-1602060" class="details-link">
                   More
                 </a>
               </div>
@@ -46140,18 +45960,6 @@
 </div>
 
                 <a href="/region-london/beast-and-field-1650758" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1650761">
-                <h3>Linekela Confections</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-london/linekela-confections-1650761" class="details-link">
                   More
                 </a>
               </div>
@@ -49955,18 +49763,6 @@
 </div>
 
                 <a href="/region-london/bindas-eatery-1711401" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1711402">
-                <h3>Candy Land</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-london/candy-land-1711402" class="details-link">
                   More
                 </a>
               </div>
@@ -54807,14 +54603,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1789550">
-                <h3>CHERRY TREE YARD CAFE BAR</h3>
+                <h3>Cherry Tree Yard Cafe / Miss Boulangerie</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>BASEMENT AND GROUND FLOOR 50 SHEPHERD MARKET</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1J 7QT</span>
   </address>
 </div>
 
-                <a href="/region-london/cherry-tree-yard-cafe-bar-1789550" class="details-link">
+                <a href="/region-london/cherry-tree-yard-cafe-miss-boulangerie-1789550" class="details-link">
                   More
                 </a>
               </div>
@@ -59806,6 +59602,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1864500">
+                <h3>Pretty. Bakes . By Tasha</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-london/pretty-bakes-by-tasha-1864500" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1866375">
                 <h3>Pizza GoGo Bayswater</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -61183,18 +60991,6 @@
 </div>
 
                 <a href="/region-london/the-albert-1886365" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1886366">
-                <h3>Queen?s park Food Bank</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-london/queens-park-food-bank-1886366" class="details-link">
                   More
                 </a>
               </div>
@@ -66058,14 +65854,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1957709">
-                <h3>LARK AND BERRY LTD</h3>
+                <h3>Snowfall</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>52A GEORGE STREET</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1U 7EA</span>
   </address>
 </div>
 
-                <a href="/region-london/lark-and-berry-ltd-1957709" class="details-link">
+                <a href="/region-london/snowfall-1957709" class="details-link">
                   More
                 </a>
               </div>
@@ -68972,6 +68768,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="1991836">
+                <h3>Bartlett Mitchell Ltd c/o Colliers International</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>FOURTH FLOOR 95 WIGMORE STREET</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1U 1FD</span>
+  </address>
+</div>
+
+                <a href="/region-london/bartlett-mitchell-ltd-co-colliers-international-1991836" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="1991837">
                 <h3>Dari&#39;s Dinners</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -69005,6 +68813,18 @@
 </div>
 
                 <a href="/region-london/the-barley-mow-2000223" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2000229">
+                <h3>Jersey Mike&#39;s</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>SEVENTH FLOOR PALLADIUM HOUSE 1-4 ARGYLL STREET</span><br>          <span>WEST END</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1F 7TA</span>
+  </address>
+</div>
+
+                <a href="/region-london/jersey-mikes-2000229" class="details-link">
                   More
                 </a>
               </div>
@@ -69053,6 +68873,18 @@
 </div>
 
                 <a href="/region-london/cordelias-mayfair-2000236" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2000237">
+                <h3>Nebbia e Luce Ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>51A CLEVELAND STREET</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1T 4JH</span>
+  </address>
+</div>
+
+                <a href="/region-london/nebbia-e-luce-ltd-2000237" class="details-link">
                   More
                 </a>
               </div>
@@ -69108,7 +68940,7 @@
                 <h3>Steytler and co</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>96A BRAVINGTON ROAD</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W9 3AL</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -69152,6 +68984,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="2000253">
+                <h3>Sit with us</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>2A CHEPSTOW ROAD</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W2 5BH</span>
+  </address>
+</div>
+
+                <a href="/region-london/sit-with-us-2000253" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="2000254">
                 <h3>The Thomas Cubitt</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -69173,6 +69017,18 @@
 </div>
 
                 <a href="/region-london/the-grazing-goat-pub-2000255" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2000257">
+                <h3>Hide and Greek</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-london/hide-and-greek-2000257" class="details-link">
                   More
                 </a>
               </div>
@@ -69224,15 +69080,27 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="2000265">
+                <h3>Mello</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>SELFRIDGES 400 OXFORD STREET</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1A 1AB</span>
+  </address>
+</div>
+
+                <a href="/region-london/mello-2000265" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="2000267">
-                <h3>PETIT JOIE</h3>
+                <h3>PETITES JOIES</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
       <div>No address information available</div>
   </address>
 </div>
 
-                <a href="/region-london/petit-joie-2000267" class="details-link">
+                <a href="/region-london/petites-joies-2000267" class="details-link">
                   More
                 </a>
               </div>
@@ -69344,6 +69212,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="2001316">
+                <h3>Shifa alyemen</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>BASEMENT AND GROUND FLOOR 238 EDGWARE ROAD</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W2 1DW</span>
+  </address>
+</div>
+
+                <a href="/region-london/shifa-alyemen-2001316" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="2001321">
                 <h3>OORJA</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -69353,6 +69233,18 @@
 </div>
 
                 <a href="/region-london/oorja-2001321" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2001323">
+                <h3>ERGON HOUSE LONDON</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>26 KING STREET</span><br>          <span>COVENT GARDEN</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">WC2E 8HN</span>
+  </address>
+</div>
+
+                <a href="/region-london/ergon-house-london-2001323" class="details-link">
                   More
                 </a>
               </div>
@@ -69560,6 +69452,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="2008924">
+                <h3>Miles of Flavours</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-london/miles-of-flavours-2008924" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="2008934">
                 <h3>Far East Restaurant</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -69596,6 +69500,18 @@
                   More
                 </a>
               </div>
+<hr>              <div class="establishment" data-establishment-id="2011083">
+                <h3>Kiss the Hippo</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>GROUND FLOOR 2 GEORGE STREET</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1U 3QR</span>
+  </address>
+</div>
+
+                <a href="/region-london/kiss-the-hippo-2011083" class="details-link">
+                  More
+                </a>
+              </div>
 <hr>              <div class="establishment" data-establishment-id="2011084">
                 <h3>RISE &amp; BUN - SPECIALTY BUN BAKERY - SOHO</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -69629,6 +69545,18 @@
 </div>
 
                 <a href="/region-london/erbil-middle-eastern-2011106" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2013695">
+                <h3>Gucci</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>144-146 NEW BOND STREET</span><br>          <span>LONDON</span><br>        <span itemprop="postalCode">W1S 2TR</span>
+  </address>
+</div>
+
+                <a href="/region-london/gucci-2013695" class="details-link">
                   More
                 </a>
               </div>
