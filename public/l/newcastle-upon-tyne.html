@@ -16,11 +16,10 @@
     }
   </script>
   <script>
-    /* Minified JavaScript */
-{let a=globalThis?.matchMedia?.("(prefers-color-scheme:dark)"),e=()=>{var e=localStorage.getItem("color-scheme"),t=a?.matches?"dark":"light";document.documentElement.dataset.colorScheme=e??t};a?.addEventListener("change",()=>{e()}),e()}
+    
   </script>
   <style>
-    html{color-scheme:only light;@media(prefers-color-scheme:dark),(scripting:enabled),(scripting:initial-only){&:not([data-color-scheme=light]){color-scheme:only dark}}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green:#84be00;--hygiene-green-highlight:color-mix(
+    html{color-scheme:only light;@media(prefers-color-scheme:dark),(scripting:enabled),(scripting:initial-only){&:not([data-color-scheme=light]){color-scheme:only dark}}}html{--motion:reduce;@media(prefers-reduced-motion:no-preference){&:not([data-motion-preference=reduce]){--motion:no-preference}}&[data-motion-preference=no-preference]{--motion:no-preference}}:root{--primary-blue:#2c4c6b;--primary-blue-highlight:oklch(from var(--primary-blue) 70% c h);--primary-blue-lowlight:oklch(from var(--primary-blue) 20% c h);--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green:#84be00;--hygiene-green-lighter:oklch(from var(--hygiene-green) 95% 15% h);--hygiene-green-darker:oklch(from var(--hygiene-green) 80% c h);--hygiene-green-highlight:color-mix(
     in oklab,
     var(--hygiene-green) 50%,
     #fff 50%
@@ -28,7 +27,10 @@
     in oklab,
     var(--hygiene-green) 75%,
     #000 25%
-  );--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(
+  );--near-white:#e6e8f0;--near-white-lighter:oklch(from var(--near-white) 10% c h);--near-white-darker:oklch(from var(--near-white) 80% c h);--near-black:#22242a;--near-black-lighter:oklch(from var(--near-black) 29% c h);--near-black-darker:oklch(from var(--near-black) 10% c h);--cta-default:#8e4dff;--body-background:light-dark(var(--near-white), var(--near-black));--text-color:light-dark(var(--near-black), var(--near-white));--header-background-color:light-dark(#f8f9fa, var(--near-black-lighter));--header-nav-text-color:light-dark(#0d0d0d, #f8f9fa);--header-nav-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, var(--near-white-darker));--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--heading-color:light-dark(
+    var(--primary-blue),
+    var(--hygiene-green-lighter)
+  );--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(
     in oklab,
     var(--card-background) 80%,
     #fff 20%
@@ -42,20 +44,21 @@
   );--button-cta-color:light-dark(#000, #001);--button-cta-bg-hover:light-dark(
     var(--hygiene-green-highlight),
     var(--hygiene-green)
-  );--button-cta-color-hover:light-dark(#000, #001)}[inert],[inert] *{opacity:.5;pointer-events:none;cursor:default;-webkit-user-select:none;user-select:none}body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0;background-color:var(--body-background);color:var(--text-color)}a{color:#0052a3;-webkit-text-decoration:none;text-decoration:none;&:hover{text-decoration-line:underline}}.container{max-width:1200px;margin:0 auto;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);color:var(--text-color);border-radius:4px;font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+  );--button-cta-color-hover:light-dark(#000, #001)}[inert],[inert] *{opacity:.5;pointer-events:none;cursor:default;-webkit-user-select:none;user-select:none}body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0;background-color:var(--body-background);color:var(--text-color)}a{color:light-dark(var(--primary-blue-lowlight),var(--primary-blue-highlight));-webkit-text-decoration:none;text-decoration:none;&:hover{text-decoration-line:underline}}.container{max-width:1200px;margin:0 auto;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);color:var(--text-color);border-radius:4px;font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     #globals{--hygiene-green:#0000;--background-highlight-color:#0000;--text-highlight-color:#0000}.content-k3nm4l{display:contents;h1{font-size:2em;border-bottom:1px solid var(--hygiene-green)}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{width:100%;padding:.5rem;margin-bottom:1rem}.establishment{padding:1rem 0;display:block;position:relative;&.hidden{display:none}.details-link{display:block;position:absolute;inset:0;z-index:1;text-indent:-9999px;&:hover{display:flex;flex-direction:column-reverse;text-align:right;padding-right:1rem;padding-bottom:1rem}}&:has(a:hover){background-color:var(--background-highlight-color);color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem;border-radius:9px}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
-    #globals{--header-background-color:#0000;--header-text-color:#0000;--header-rule-color:#0000}.component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);padding:1rem calc(50vw - 600px);border-bottom:1px solid var(--header-rule-color);position:relative;max-width:100dvw;box-sizing:border-box;overflow:hidden;@media(width<=1240px){max-width:100dvw;padding:1rem 20px}}.navbar-h3ad34{display:flex;justify-content:space-between;align-items:center}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;list-style:none;display:flex;gap:1.5rem;li{display:inline;a{-webkit-text-decoration:none;text-decoration:none;color:var(--header-text-color);font-weight:700}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{display:none;flex-direction:column;justify-content:space-between;width:30px;height:21px;cursor:pointer;z-index:10;span{display:block;height:3px;width:100%;background-color:var(--header-text-color);border-radius:3px;transition:transform .3s ease-in-out,opacity .3s ease-in-out}}@media(width<=768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{box-sizing:border-box;position:fixed;top:84px;right:-100%;width:100%;height:calc(100dvh - 84px);flex-direction:column;background-color:var(--header-background-color);padding:2rem;transition:right .3s ease-in-out;z-index:5;text-align:right;gap:2rem;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{translate:0 9px;rotate:45deg}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){translate:0 -9px;rotate:-45deg}}}
-    #globals{--primary-blue:#0000;--light-blue:#0000}.component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);padding-top:2rem;padding-bottom:2rem;margin-top:2rem;.container.footer-columns{display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem;text-align:left;margin-bottom:2rem}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{color:#fff;margin-bottom:.5rem;font-weight:700;border-bottom:1px solid #fff3}ul{list-style:none;padding:0;margin:0;li{margin-bottom:.25rem}}}a{color:#fff;-webkit-text-decoration:none;text-decoration:none;border-bottom:1px solid #ffffff4d;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{text-align:center;margin-top:1rem;padding-top:1rem;font-size:.9rem;p{margin:.25rem 0}}}}
+    #globals{--header-background-color:#0000;--header-text-color:#0000;--header-rule-color:#0000}html{container-type:scroll-state;container-name:html}.component-header-h3ad34{--header-vertical-padding:1rem;display:contents;.site-header-wrapper{container-type:scroll-state;container-name:header;position:sticky;top:0;z-index:100;overflow-x:clip}.site-header{background-color:var(--header-background-color);padding:var(--header-vertical-padding) calc(50vw - 600px);border-bottom:1px solid var(--header-rule-color);position:relative;max-width:100dvw;box-sizing:border-box;@media(width<=1240px){max-width:100dvw;padding:var(--header-vertical-padding) 20px}translate:0 0;@container style(--motion: no-preference){transition:translate .3s cubic-bezier(.22,1,.36,1),box-shadow .3s}&:has(:popover-open){translate:0 0!important}@container header scroll-state(stuck: top){-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 10px light-dark(#00000014,#0000004d)}@container html scroll-state(scrolled: block-end){&:not(:focus-within){translate:0 -100%}}@container html scroll-state(scrolled: block-start){&:not(:focus-within){translate:0 0}}}.navbar{display:flex;justify-content:space-between;align-items:center;position:relative}.logo{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links{box-sizing:border-box;list-style:none;display:flex;gap:1.5rem;margin:0;padding:0;background-color:var(--header-background-color);li{display:inline;a{-webkit-text-decoration:none;text-decoration:none;color:var(--header-text-color);font-weight:700;position:relative;&:before{content:"";position:absolute;width:100%;height:4px;border-radius:4px;background-color:var(--hygiene-green);bottom:-3px;left:0;transform-origin:right;transform:scaleX(0);@container style(--motion: no-preference){transition:transform .2s ease-in-out}}&:focus:before,&:hover:before{transform-origin:left;transform:scaleX(1)}}}}.btn-placeholder,.hamburger{display:none}@media(width>=768px){.site-nav:not(:popover-open),.site-nav:popover-open{all:unset;display:flex;align-items:center}.nav-links{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}.btn-placeholder,.hamburger,.site-nav::backdrop{display:none}}@media(width<=767px){.site-nav:not(:popover-open),.site-nav:popover-open{position:fixed;inset:0;display:block;width:auto;height:auto;margin:0;padding:0;border:0;background:#0000;overflow:visible;pointer-events:none}.hamburger{position:fixed;top:1rem;right:20px;display:flex;width:44px;height:44px;padding:0;align-items:center;justify-content:center;cursor:pointer;pointer-events:auto;border:0;background:#0000;z-index:1;@container style(--motion: no-preference){transition:translate .3s}span{position:absolute;top:50%;left:50%;width:30px;height:3px;border-radius:3px;background-color:var(--header-text-color);translate:-50% -50%;@container style(--motion: no-preference){transition:rotate .3s,opacity .3s,translate .3s,background-color .3s}}span:first-child{translate:-50% calc(-50% - 9px)}span:nth-child(3){translate:-50% calc(-50% + 9px)}}.nav-links{position:fixed;inset:0 0 0 auto;box-sizing:border-box;width:calc(min(80vw,320px));height:100dvh;margin:0;padding:5rem 2rem 2rem;flex-direction:column;gap:2rem;background-color:var(--header-nav-background-color);text-align:right;overflow-y:auto;overscroll-behavior:contain;translate:100%;visibility:hidden;pointer-events:none;@container style(--motion: no-preference){transition:translate .35s cubic-bezier(.16,1,.3,1),visibility .35s allow-discrete}li{display:block;margin:0;a{color:var(--header-nav-text-color);font-size:1.2rem}}}.site-nav:popover-open .nav-links{translate:0;visibility:visible;pointer-events:auto}.btn-placeholder{display:block;width:44px;height:44px}.site-nav::backdrop{display:block;background:light-dark(#0006,#0009);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.site-nav:popover-open .hamburger{span{background-color:var(--header-nav-text-color)}span:first-child{rotate:45deg;translate:-50% -50%}span:nth-child(2){opacity:0}span:nth-child(3){rotate:-45deg;translate:-50% -50%}}@container html scroll-state(scrolled: block-end){.site-nav:not(:popover-open) .hamburger{translate:0 -150%}}}}
+    #globals{--primary-blue:#0000;--text-color:#0000}.component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--text-color);padding-top:2rem;padding-bottom:2rem;margin-top:2rem;.container.footer-columns{display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem;text-align:left;margin-bottom:2rem}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{color:#fff;margin-bottom:.5rem;font-weight:700;border-bottom:1px solid #fff3}ul{list-style:none;padding:0;margin:0;li{margin-bottom:.25rem}}}a{color:#fff;-webkit-text-decoration:none;text-decoration:none;border-bottom:1px solid #ffffff4d;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{text-align:center;margin-top:1rem;padding-top:1rem;font-size:.9rem;p{margin:.25rem 0}}}}
   </style>
 </head>
 
   <body>
     <div class="component-header-h3ad34" data-suffix="h3ad34">
-  <header class="container">
-    <nav class="navbar-h3ad34">
-      <div class="logo-h3ad34">
-        <a href="/">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
+  <div class="site-header-wrapper">
+    <header class="site-header container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
   <!-- Icon -->
   <g transform="translate(0.5, 14)">
     <rect width="32" height="32" fill="#84be00" stroke="#000" rx="6" />
@@ -87,22 +90,25 @@
   </g>
 </svg>
 
-        </a>
+          </a>
+        </div>
+        <nav id="site-nav-h3ad34" popover="auto" class="site-nav" aria-label="Primary">
+          <button type="button" popovertarget="site-nav-h3ad34" class="hamburger" aria-controls="site-nav-h3ad34" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="/about/">About</a></li>
+            <li><a href="/l/">Regions</a></li>
+            <li><a href="/search/">Search</a></li>
+            <li><a href="/lists/">My Lists</a></li>
+          </ul>
+        </nav>
+        <div class="btn-placeholder" aria-hidden="true"></div>
       </div>
-      <input type="checkbox" id="menu-toggle-h3ad34" class="menu-toggle-h3ad34">
-      <label for="menu-toggle-h3ad34" class="hamburger-h3ad34">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <ul class="nav-links-h3ad34">
-        <li><a href="/about/">About</a></li>
-        <li><a href="/l/">Regions</a></li>
-        <li><a href="/search/">Search</a></li>
-        <li><a href="/lists/">My Lists</a></li>
-      </ul>
-    </nav>
-  </header>
+    </header>
+  </div>
 </div>
 
     <div class="content-k3nm4l">
@@ -8086,7 +8092,7 @@
                 <h3>Spar</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>39 Halewood Avenue</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE3 3RX</span>
+          <span>37 - 39 Halewood Avenue</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE3 3RX</span>
   </address>
 </div>
 
@@ -9031,14 +9037,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="617744">
-                <h3>Shieldfield Community Nursery</h3>
+                <h3>Castle Nursery @ Shieldfield</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Shieldfield Community Nursery 8 Clarence Walk</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE2 1AD</span>
+          <span>8 Clarence Walk</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE2 1AD</span>
   </address>
 </div>
 
-                <a href="/region-north-east/shieldfield-community-nursery-617744" class="details-link">
+                <a href="/region-north-east/castle-nursery-shieldfield-617744" class="details-link">
                   More
                 </a>
               </div>
@@ -11622,18 +11628,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="972088">
-                <h3>One Stop Stores</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>215 - 221 Two Ball Lonnen</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE4 9RX</span>
-  </address>
-</div>
-
-                <a href="/region-north-east/one-stop-stores-972088" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="972100">
                 <h3>Jakkis</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12874,7 +12868,7 @@
                 <h3>Brinkburn St. Brewery Bar &amp; Kitchen</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Ford Street</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE6 1NW</span>
+          <span>Unit 1A Ford Street</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE6 1NW</span>
   </address>
 </div>
 
@@ -13591,14 +13585,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1112996">
-                <h3>Scream For Pizza</h3>
+                <h3>Gilda&#39;s Pizza &amp; Pasta Bar</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span>21 Starbeck Avenue</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE2 1RJ</span>
   </address>
 </div>
 
-                <a href="/region-north-east/scream-for-pizza-1112996" class="details-link">
+                <a href="/region-north-east/gildas-pizza-pasta-bar-1112996" class="details-link">
                   More
                 </a>
               </div>
@@ -14331,18 +14325,6 @@
 </div>
 
                 <a href="/region-north-east/the-catalyst-1198418" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1198422">
-                <h3>Snowshock Ltd.</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 2 Whitehouse Road Industrial Estate Whitehouse Road</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE15 6LN</span>
-  </address>
-</div>
-
-                <a href="/region-north-east/snowshock-ltd-1198422" class="details-link">
                   More
                 </a>
               </div>
@@ -16221,7 +16203,7 @@
                 <h3>Baba</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit135-43 George Street</span><br>          <span>Newcastle</span><br>        <span itemprop="postalCode">Ne47jn</span>
+          <span>Ground Floor Unit 1 35 - 43 George Street</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE4 7JN</span>
   </address>
 </div>
 
@@ -16657,18 +16639,6 @@
 </div>
 
                 <a href="/region-north-east/german-doner-kebab-1422286" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1422295">
-                <h3>Walbotl Coffee House</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 1 Co-op Buildings Hexham Road</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE15 9SR</span>
-  </address>
-</div>
-
-                <a href="/region-north-east/walbotl-coffee-house-1422295" class="details-link">
                   More
                 </a>
               </div>
@@ -17179,7 +17149,7 @@
                 <h3>Cafe One, Stella House</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Goldcrest Way</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE15 8NY</span>
+          <span>Stella House Goldcrest Way</span><br>          <span>Newburn Riverside</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE15 8NY</span>
   </address>
 </div>
 
@@ -17395,7 +17365,7 @@
                 <h3>Newcastle Castle</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Castle Garth</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE1 1RQ</span>
+          <span>The Black Gate Castle Garth</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE1 1RQ</span>
   </address>
 </div>
 
@@ -17815,7 +17785,7 @@
                 <h3>Miso Newcastle</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Ford Street Byker</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE6 1NW</span>
+          <span>1 Ford Street</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE6 1NW</span>
   </address>
 </div>
 
@@ -17971,7 +17941,7 @@
                 <h3>Kimchi Planet/ The Fat Koreanz</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Claremont Road</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE1 7RU</span>
+          <span>Newcastle University Students Union Kings Walk</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE1 8QB</span>
   </address>
 </div>
 
@@ -21086,18 +21056,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1691846">
-                <h3>Coffee Stop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-north-east/coffee-stop-1691846" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1691847">
                 <h3>AL-HALAL FOOD STORE</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -23174,18 +23132,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1768742">
-                <h3>Christine&#39;s Cakery</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-north-east/christines-cakery-1768742" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1768744">
                 <h3>The Tipsy Cow</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -23447,18 +23393,6 @@
 </div>
 
                 <a href="/region-north-east/najib-halal-supermarket-1775488" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1776416">
-                <h3>Cono Pizza</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>111 Wharrier Street</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE6 3BR</span>
-  </address>
-</div>
-
-                <a href="/region-north-east/cono-pizza-1776416" class="details-link">
                   More
                 </a>
               </div>
@@ -24599,18 +24533,6 @@
 </div>
 
                 <a href="/region-north-east/enterprise-caf-1801704" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1801705">
-                <h3>Londis Airport Way</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-north-east/londis-airport-way-1801705" class="details-link">
                   More
                 </a>
               </div>
@@ -31897,18 +31819,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1985042">
-                <h3>City Retreat Salon &amp; Spa Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>17 The Gosforth Centre</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE3 1JZ</span>
-  </address>
-</div>
-
-                <a href="/region-north-east/city-retreat-salon-spa-ltd-1985042" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1985043">
                 <h3>Family Mental Fitness North East CIC</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -32038,18 +31948,6 @@
 </div>
 
                 <a href="/region-north-east/two-little-birdies-play-cafe-1992724" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1992725">
-                <h3>Mother Hubbard&#39;s</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>100 - 102 Clayton Street</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE1 5PG</span>
-  </address>
-</div>
-
-                <a href="/region-north-east/mother-hubbards-1992725" class="details-link">
                   More
                 </a>
               </div>
@@ -32986,6 +32884,342 @@
 </div>
 
                 <a href="/region-north-east/doner-direct-2013479" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018702">
+                <h3>Smok&#39;d and Smash&#39;d</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>41 West Road</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE4 9PX</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/smokd-and-smashd-2018702" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018703">
+                <h3>Smash &amp; Sauce</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>101 Benfield Road</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE6 5XA</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/smash-sauce-2018703" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018704">
+                <h3>Castle Nursery @ Shiedlfield</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>8 Clarence Walk</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE2 1AD</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/castle-nursery-shiedlfield-2018704" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018705">
+                <h3>Angel Hill Food Co.</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-north-east/angel-hill-food-co-2018705" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018706">
+                <h3>Dragon foodservices ltd</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 7 Mercia Way</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE15 6UG</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/dragon-foodservices-ltd-2018706" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018707">
+                <h3>Coza Nostra</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 4 Tree Top Village Walker Road</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE6 3JW</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/coza-nostra-2018707" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018708">
+                <h3>MERA CAFE</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Mera Cafe 83 Westgate Road</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE1 1SQ</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/mera-cafe-2018708" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018709">
+                <h3>Fish and Chips At No.1</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-north-east/fish-and-chips-at-no1-2018709" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018710">
+                <h3>Costa Coffee</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>28 Saint Andrews Way</span><br>          <span>Intu Eldon Square</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE1 7XD</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/costa-coffee-2018710" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018711">
+                <h3>plantpots Playgroup and Preschool</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-north-east/plantpots-playgroup-and-preschool-2018711" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018712">
+                <h3>injera</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-north-east/injera-2018712" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018713">
+                <h3>Sunflower Bakery</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>413 Chillingham Road</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE6 5QU</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/sunflower-bakery-2018713" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018714">
+                <h3>Suda Lounge</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>281 Westgate Road</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE4 6AJ</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/suda-lounge-2018714" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018715">
+                <h3>PEPES PIRI PIRI</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>293 - 295 Chillingham Road</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE6 5LL</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/pepes-piri-piri-2018715" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018716">
+                <h3>Rao&#39;s Spice N Bites</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>41 - 43 Adelaide Terrace</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE4 8BN</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/raos-spice-n-bites-2018716" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018717">
+                <h3>Wings&#39;N More - Newcastle</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>13A Percy Street</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE1 4PW</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/wingsn-more-newcastle-2018717" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018718">
+                <h3>plantpots havannah</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-north-east/plantpots-havannah-2018718" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018719">
+                <h3>Inspire Youth Tyne and Wear CIC</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Tyne View</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE15 8RZ</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/inspire-youth-tyne-and-wear-cic-2018719" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018720">
+                <h3>Londis Airport Way Petrol Station</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-north-east/londis-airport-way-petrol-station-2018720" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018721">
+                <h3>Morrisons Petrol Station</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Petrol Station 200 Two Ball Lonnen</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE4 9SZ</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/morrisons-petrol-station-2018721" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018722">
+                <h3>Spudmonkey</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>23 Springfield Road</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE5 3DX</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/spudmonkey-2018722" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018723">
+                <h3>MamarBariRosherHari</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-north-east/mamarbarirosherhari-2018723" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018724">
+                <h3>The Geordie Chef</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-north-east/the-geordie-chef-2018724" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018725">
+                <h3>Flamingo pamper parties</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>122A The Roman Way</span><br>          <span>West Denton</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE5 5AD</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/flamingo-pamper-parties-2018725" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018726">
+                <h3>Home bakery</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-north-east/home-bakery-2018726" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018727">
+                <h3>Snowshock LTD</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Unit 15 Riversdale Court</span><br>          <span>Newburn Haugh Industrial Estate</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE15 8SG</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/snowshock-ltd-2018727" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018728">
+                <h3>Jellytots Pre-School</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span>Dinnington Village Hall Main Road</span><br>          <span>Dinnington</span><br>          <span>Newcastle Upon Tyne</span><br>        <span itemprop="postalCode">NE13 7JW</span>
+  </address>
+</div>
+
+                <a href="/region-north-east/jellytots-pre-school-2018728" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2018729">
+                <h3>Valora</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-north-east/valora-2018729" class="details-link">
                   More
                 </a>
               </div>

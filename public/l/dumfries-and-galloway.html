@@ -16,11 +16,10 @@
     }
   </script>
   <script>
-    /* Minified JavaScript */
-{let a=globalThis?.matchMedia?.("(prefers-color-scheme:dark)"),e=()=>{var e=localStorage.getItem("color-scheme"),t=a?.matches?"dark":"light";document.documentElement.dataset.colorScheme=e??t};a?.addEventListener("change",()=>{e()}),e()}
+    
   </script>
   <style>
-    html{color-scheme:only light;@media(prefers-color-scheme:dark),(scripting:enabled),(scripting:initial-only){&:not([data-color-scheme=light]){color-scheme:only dark}}}:root{--primary-blue:#2c4c6b;--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green:#84be00;--hygiene-green-highlight:color-mix(
+    html{color-scheme:only light;@media(prefers-color-scheme:dark),(scripting:enabled),(scripting:initial-only){&:not([data-color-scheme=light]){color-scheme:only dark}}}html{--motion:reduce;@media(prefers-reduced-motion:no-preference){&:not([data-motion-preference=reduce]){--motion:no-preference}}&[data-motion-preference=no-preference]{--motion:no-preference}}:root{--primary-blue:#2c4c6b;--primary-blue-highlight:oklch(from var(--primary-blue) 70% c h);--primary-blue-lowlight:oklch(from var(--primary-blue) 20% c h);--light-blue:#f5f7fa;--teal:#3c7b8e;--grey:#687789;--light-grey:#eef2f6;--hygiene-green:#84be00;--hygiene-green-lighter:oklch(from var(--hygiene-green) 95% 15% h);--hygiene-green-darker:oklch(from var(--hygiene-green) 80% c h);--hygiene-green-highlight:color-mix(
     in oklab,
     var(--hygiene-green) 50%,
     #fff 50%
@@ -28,7 +27,10 @@
     in oklab,
     var(--hygiene-green) 75%,
     #000 25%
-  );--cta-default:#9e66ff;--body-background:light-dark(var(--light-blue), #000);--text-color:light-dark(#000, #ddd);--header-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, #9c9c9c);--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(
+  );--near-white:#e6e8f0;--near-white-lighter:oklch(from var(--near-white) 10% c h);--near-white-darker:oklch(from var(--near-white) 80% c h);--near-black:#22242a;--near-black-lighter:oklch(from var(--near-black) 29% c h);--near-black-darker:oklch(from var(--near-black) 10% c h);--cta-default:#8e4dff;--body-background:light-dark(var(--near-white), var(--near-black));--text-color:light-dark(var(--near-black), var(--near-white));--header-background-color:light-dark(#f8f9fa, var(--near-black-lighter));--header-nav-text-color:light-dark(#0d0d0d, #f8f9fa);--header-nav-background-color:light-dark(#f8f9fa, #0d0d0d);--header-text-color:light-dark(#000, var(--near-white-darker));--header-rule-color:light-dark(#e0e0e0, #383838);--background-highlight-color:light-dark(#e5e8f1, var(--light-blue));--text-highlight-color:var(--text-color);--input-color:var(--text-color);--input-bg:light-dark(#fff, #444);--input-border:light-dark(#ccc, #555);--heading-color:light-dark(
+    var(--primary-blue),
+    var(--hygiene-green-lighter)
+  );--card-color:light-dark(#000, #fff);--card-background:light-dark(#fff, #2d2d2d);--card-color-highlight:#000;--card-background-highlight:color-mix(
     in oklab,
     var(--card-background) 80%,
     #fff 20%
@@ -42,20 +44,21 @@
   );--button-cta-color:light-dark(#000, #001);--button-cta-bg-hover:light-dark(
     var(--hygiene-green-highlight),
     var(--hygiene-green)
-  );--button-cta-color-hover:light-dark(#000, #001)}[inert],[inert] *{opacity:.5;pointer-events:none;cursor:default;-webkit-user-select:none;user-select:none}body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0;background-color:var(--body-background);color:var(--text-color)}a{color:#0052a3;-webkit-text-decoration:none;text-decoration:none;&:hover{text-decoration-line:underline}}.container{max-width:1200px;margin:0 auto;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);color:var(--text-color);border-radius:4px;font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
+  );--button-cta-color-hover:light-dark(#000, #001)}[inert],[inert] *{opacity:.5;pointer-events:none;cursor:default;-webkit-user-select:none;user-select:none}body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;margin:0;padding:0;background-color:var(--body-background);color:var(--text-color)}a{color:light-dark(var(--primary-blue-lowlight),var(--primary-blue-highlight));-webkit-text-decoration:none;text-decoration:none;&:hover{text-decoration-line:underline}}.container{max-width:1200px;margin:0 auto;padding:0 20px}.box-shadow,.box-shadow-hover{border:var(--box-shadow-border);box-shadow:var(--box-shadow);box-sizing:border-box}.box-shadow-hover:hover{box-shadow:var(--box-shadow-hover)}.input{background-color:var(--input-bg);border:1px solid var(--input-border);color:var(--text-color);border-radius:4px;font-size:1em;padding:10px}[hidden]:not([hidden=until-found]){display:none!important}
     #globals{--hygiene-green:#0000;--background-highlight-color:#0000;--text-highlight-color:#0000}.content-k3nm4l{display:contents;h1{font-size:2em;border-bottom:1px solid var(--hygiene-green)}h3{font-size:1em;font-weight:700;margin-top:0}label[for=filter-input]{display:block;margin-bottom:.5rem}#filter-input{width:100%;padding:.5rem;margin-bottom:1rem}.establishment{padding:1rem 0;display:block;position:relative;&.hidden{display:none}.details-link{display:block;position:absolute;inset:0;z-index:1;text-indent:-9999px;&:hover{display:flex;flex-direction:column-reverse;text-align:right;padding-right:1rem;padding-bottom:1rem}}&:has(a:hover){background-color:var(--background-highlight-color);color:var(--text-highlight-color);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem;border-radius:9px}}.map-link{position:relative;z-index:2}hr{border:none;border-top:1px solid var(--hygiene-green);display:none}.establishment:not(.hidden)~hr:has(+.establishment:not(.hidden)){display:block}.component-address-bm1bdvu{display:contents;address{font-style:normal}}}
-    #globals{--header-background-color:#0000;--header-text-color:#0000;--header-rule-color:#0000}.component-header-h3ad34{display:contents;header{background-color:var(--header-background-color);padding:1rem calc(50vw - 600px);border-bottom:1px solid var(--header-rule-color);position:relative;max-width:100dvw;box-sizing:border-box;overflow:hidden;@media(width<=1240px){max-width:100dvw;padding:1rem 20px}}.navbar-h3ad34{display:flex;justify-content:space-between;align-items:center}.logo-h3ad34{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links-h3ad34{box-sizing:border-box;list-style:none;display:flex;gap:1.5rem;li{display:inline;a{-webkit-text-decoration:none;text-decoration:none;color:var(--header-text-color);font-weight:700}}}.menu-toggle-h3ad34{display:none}.hamburger-h3ad34{display:none;flex-direction:column;justify-content:space-between;width:30px;height:21px;cursor:pointer;z-index:10;span{display:block;height:3px;width:100%;background-color:var(--header-text-color);border-radius:3px;transition:transform .3s ease-in-out,opacity .3s ease-in-out}}@media(width<=768px){.hamburger-h3ad34{display:flex}.nav-links-h3ad34{box-sizing:border-box;position:fixed;top:84px;right:-100%;width:100%;height:calc(100dvh - 84px);flex-direction:column;background-color:var(--header-background-color);padding:2rem;transition:right .3s ease-in-out;z-index:5;text-align:right;gap:2rem;li{display:block;margin-bottom:1.5rem;a{font-size:1.2rem}}}.menu-toggle-h3ad34:checked~.nav-links-h3ad34{right:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:first-child{translate:0 9px;rotate:45deg}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(2){opacity:0}.menu-toggle-h3ad34:checked~.hamburger-h3ad34 span:nth-child(3){translate:0 -9px;rotate:-45deg}}}
-    #globals{--primary-blue:#0000;--light-blue:#0000}.component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--light-blue);padding-top:2rem;padding-bottom:2rem;margin-top:2rem;.container.footer-columns{display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem;text-align:left;margin-bottom:2rem}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{color:#fff;margin-bottom:.5rem;font-weight:700;border-bottom:1px solid #fff3}ul{list-style:none;padding:0;margin:0;li{margin-bottom:.25rem}}}a{color:#fff;-webkit-text-decoration:none;text-decoration:none;border-bottom:1px solid #ffffff4d;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{text-align:center;margin-top:1rem;padding-top:1rem;font-size:.9rem;p{margin:.25rem 0}}}}
+    #globals{--header-background-color:#0000;--header-text-color:#0000;--header-rule-color:#0000}html{container-type:scroll-state;container-name:html}.component-header-h3ad34{--header-vertical-padding:1rem;display:contents;.site-header-wrapper{container-type:scroll-state;container-name:header;position:sticky;top:0;z-index:100;overflow-x:clip}.site-header{background-color:var(--header-background-color);padding:var(--header-vertical-padding) calc(50vw - 600px);border-bottom:1px solid var(--header-rule-color);position:relative;max-width:100dvw;box-sizing:border-box;@media(width<=1240px){max-width:100dvw;padding:var(--header-vertical-padding) 20px}translate:0 0;@container style(--motion: no-preference){transition:translate .3s cubic-bezier(.22,1,.36,1),box-shadow .3s}&:has(:popover-open){translate:0 0!important}@container header scroll-state(stuck: top){-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 10px light-dark(#00000014,#0000004d)}@container html scroll-state(scrolled: block-end){&:not(:focus-within){translate:0 -100%}}@container html scroll-state(scrolled: block-start){&:not(:focus-within){translate:0 0}}}.navbar{display:flex;justify-content:space-between;align-items:center;position:relative}.logo{height:50px;width:250px;svg{.text{fill:var(--header-text-color)}}}.nav-links{box-sizing:border-box;list-style:none;display:flex;gap:1.5rem;margin:0;padding:0;background-color:var(--header-background-color);li{display:inline;a{-webkit-text-decoration:none;text-decoration:none;color:var(--header-text-color);font-weight:700;position:relative;&:before{content:"";position:absolute;width:100%;height:4px;border-radius:4px;background-color:var(--hygiene-green);bottom:-3px;left:0;transform-origin:right;transform:scaleX(0);@container style(--motion: no-preference){transition:transform .2s ease-in-out}}&:focus:before,&:hover:before{transform-origin:left;transform:scaleX(1)}}}}.btn-placeholder,.hamburger{display:none}@media(width>=768px){.site-nav:not(:popover-open),.site-nav:popover-open{all:unset;display:flex;align-items:center}.nav-links{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}.btn-placeholder,.hamburger,.site-nav::backdrop{display:none}}@media(width<=767px){.site-nav:not(:popover-open),.site-nav:popover-open{position:fixed;inset:0;display:block;width:auto;height:auto;margin:0;padding:0;border:0;background:#0000;overflow:visible;pointer-events:none}.hamburger{position:fixed;top:1rem;right:20px;display:flex;width:44px;height:44px;padding:0;align-items:center;justify-content:center;cursor:pointer;pointer-events:auto;border:0;background:#0000;z-index:1;@container style(--motion: no-preference){transition:translate .3s}span{position:absolute;top:50%;left:50%;width:30px;height:3px;border-radius:3px;background-color:var(--header-text-color);translate:-50% -50%;@container style(--motion: no-preference){transition:rotate .3s,opacity .3s,translate .3s,background-color .3s}}span:first-child{translate:-50% calc(-50% - 9px)}span:nth-child(3){translate:-50% calc(-50% + 9px)}}.nav-links{position:fixed;inset:0 0 0 auto;box-sizing:border-box;width:calc(min(80vw,320px));height:100dvh;margin:0;padding:5rem 2rem 2rem;flex-direction:column;gap:2rem;background-color:var(--header-nav-background-color);text-align:right;overflow-y:auto;overscroll-behavior:contain;translate:100%;visibility:hidden;pointer-events:none;@container style(--motion: no-preference){transition:translate .35s cubic-bezier(.16,1,.3,1),visibility .35s allow-discrete}li{display:block;margin:0;a{color:var(--header-nav-text-color);font-size:1.2rem}}}.site-nav:popover-open .nav-links{translate:0;visibility:visible;pointer-events:auto}.btn-placeholder{display:block;width:44px;height:44px}.site-nav::backdrop{display:block;background:light-dark(#0006,#0009);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.site-nav:popover-open .hamburger{span{background-color:var(--header-nav-text-color)}span:first-child{rotate:45deg;translate:-50% -50%}span:nth-child(2){opacity:0}span:nth-child(3){rotate:-45deg;translate:-50% -50%}}@container html scroll-state(scrolled: block-end){.site-nav:not(:popover-open) .hamburger{translate:0 -150%}}}}
+    #globals{--primary-blue:#0000;--text-color:#0000}.component-footer-8fpz1b{display:contents;footer{background-color:var(--primary-blue);color:var(--text-color);padding-top:2rem;padding-bottom:2rem;margin-top:2rem;.container.footer-columns{display:flex;justify-content:space-around;flex-wrap:wrap;gap:1rem;text-align:left;margin-bottom:2rem}.footer-column{flex:1;min-width:150px;padding:0 1rem;h4{color:#fff;margin-bottom:.5rem;font-weight:700;border-bottom:1px solid #fff3}ul{list-style:none;padding:0;margin:0;li{margin-bottom:.25rem}}}a{color:#fff;-webkit-text-decoration:none;text-decoration:none;border-bottom:1px solid #ffffff4d;transition:border-color .3s;&:hover{border-color:#fff}}.copyright{text-align:center;margin-top:1rem;padding-top:1rem;font-size:.9rem;p{margin:.25rem 0}}}}
   </style>
 </head>
 
   <body>
     <div class="component-header-h3ad34" data-suffix="h3ad34">
-  <header class="container">
-    <nav class="navbar-h3ad34">
-      <div class="logo-h3ad34">
-        <a href="/">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
+  <div class="site-header-wrapper">
+    <header class="site-header container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
   <!-- Icon -->
   <g transform="translate(0.5, 14)">
     <rect width="32" height="32" fill="#84be00" stroke="#000" rx="6" />
@@ -87,22 +90,25 @@
   </g>
 </svg>
 
-        </a>
+          </a>
+        </div>
+        <nav id="site-nav-h3ad34" popover="auto" class="site-nav" aria-label="Primary">
+          <button type="button" popovertarget="site-nav-h3ad34" class="hamburger" aria-controls="site-nav-h3ad34" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="/about/">About</a></li>
+            <li><a href="/l/">Regions</a></li>
+            <li><a href="/search/">Search</a></li>
+            <li><a href="/lists/">My Lists</a></li>
+          </ul>
+        </nav>
+        <div class="btn-placeholder" aria-hidden="true"></div>
       </div>
-      <input type="checkbox" id="menu-toggle-h3ad34" class="menu-toggle-h3ad34">
-      <label for="menu-toggle-h3ad34" class="hamburger-h3ad34">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <ul class="nav-links-h3ad34">
-        <li><a href="/about/">About</a></li>
-        <li><a href="/l/">Regions</a></li>
-        <li><a href="/search/">Search</a></li>
-        <li><a href="/lists/">My Lists</a></li>
-      </ul>
-    </nav>
-  </header>
+    </header>
+  </div>
 </div>
 
     <div class="content-k3nm4l">
@@ -437,18 +443,6 @@
 </div>
 
                 <a href="/region-scotland/moffat-lunch-club-666277" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="666278">
-                <h3>The Moffat Chippy</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>6 Church Street</span><br>          <span>Moffat</span><br>        <span itemprop="postalCode">DG10 9HD</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-moffat-chippy-666278" class="details-link">
                   More
                 </a>
               </div>
@@ -824,18 +818,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="666332">
-                <h3>The Green Frog (Moffat) Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Hammerlands</span><br>          <span>Moffat</span><br>        <span itemprop="postalCode">DG10 9QL</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-green-frog-moffat-ltd-666332" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="666336">
                 <h3>Scottish Co-op</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -857,18 +839,6 @@
 </div>
 
                 <a href="/region-scotland/the-village-restaurant-666337" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="666341">
-                <h3>The Homestead</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-homestead-666341" class="details-link">
                   More
                 </a>
               </div>
@@ -932,18 +902,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="689276">
-                <h3>The Bonnington Hotel</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-bonnington-hotel-689276" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="689280">
                 <h3>Market Inn Hotel</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -965,18 +923,6 @@
 </div>
 
                 <a href="/region-scotland/irvings-homestyle-bakery-689281" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="689282">
-                <h3>Wrap &#39;n&#39; Roll Deli Bar</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>203 King St</span><br>          <span>Castle Douglas</span><br>        <span itemprop="postalCode">DG7 1DT</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/wrap-n-roll-deli-bar-689282" class="details-link">
                   More
                 </a>
               </div>
@@ -1092,7 +1038,7 @@
                 <h3>The Black Bull</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>11-13 Station Road</span><br>          <span>Lockerbie</span><br>        <span itemprop="postalCode">DG11 2HA</span>
+          <span>11 - 13 Station Road</span><br>          <span>Lockerbie</span><br>          <span>Dumfries And Galloway</span><br>        <span itemprop="postalCode">DG11 2HA</span>
   </address>
 </div>
 
@@ -1193,18 +1139,6 @@
 </div>
 
                 <a href="/region-scotland/ernespie-house-hotel-689326" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="689327">
-                <h3>Tesco</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Ernespie Road</span><br>          <span>Castle Douglas</span><br>        <span itemprop="postalCode">DG7 1LD</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/tesco-689327" class="details-link">
                   More
                 </a>
               </div>
@@ -2024,18 +1958,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="712193">
-                <h3>The Galloway Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>23 South Main Street</span><br>          <span>Newton Stewart</span><br>          <span>Wigtown</span><br>        <span itemprop="postalCode">DG8 9EH</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-galloway-inn-712193" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="712195">
                 <h3>Craft Hotel</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -2660,18 +2582,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="743770">
-                <h3>Yummy Cupcake Company</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/yummy-cupcake-company-743770" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="743771">
                 <h3>Kirkpatrick&#39;s Catering</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -2765,18 +2675,6 @@
 </div>
 
                 <a href="/region-scotland/crown-hotel-743783" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="743788">
-                <h3>The Co-operative</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>31 Victoria Street</span><br>          <span>Newton Stewart</span><br>        <span itemprop="postalCode">DG8 6NL</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-co-operative-743788" class="details-link">
                   More
                 </a>
               </div>
@@ -2912,18 +2810,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="754618">
-                <h3>The Flying Pig</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-flying-pig-754618" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="754619">
                 <h3>Wanlockhead Museum Trust</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -2936,18 +2822,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="754621">
-                <h3>Wilson General Store</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/wilson-general-store-754621" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="754625">
                 <h3>Wigtown Road Service Station</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -2957,18 +2831,6 @@
 </div>
 
                 <a href="/region-scotland/wigtown-road-service-station-754625" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="754626">
-                <h3>The Potting Shed Bistro</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Logan Botanic Gardens</span><br>          <span>Stranraer</span><br>          <span>Ardwell</span><br>        <span itemprop="postalCode">DG9 9ND</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-potting-shed-bistro-754626" class="details-link">
                   More
                 </a>
               </div>
@@ -3176,18 +3038,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="772352">
-                <h3>The Chip Shop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>4 Mill Street</span><br>          <span>Dalbeattie</span><br>        <span itemprop="postalCode">DG5 4HE</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-chip-shop-772352" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="772357">
                 <h3>Dundrennan Range Camp</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -3197,18 +3047,6 @@
 </div>
 
                 <a href="/region-scotland/dundrennan-range-camp-772357" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="772358">
-                <h3>The Hightae Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>High Road</span><br>          <span>Lockerbie</span><br>          <span>Hightae</span><br>        <span itemprop="postalCode">DG11 1JS</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-hightae-inn-772358" class="details-link">
                   More
                 </a>
               </div>
@@ -3233,18 +3071,6 @@
 </div>
 
                 <a href="/region-scotland/eurest-foodservices-772360" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="772361">
-                <h3>The Mini Mart</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-mini-mart-772361" class="details-link">
                   More
                 </a>
               </div>
@@ -3440,18 +3266,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="772390">
-                <h3>The Smithy</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>High Street</span><br>          <span>Castle Douglas</span><br>          <span>New Galloway</span><br>        <span itemprop="postalCode">DG7 3RN</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-smithy-772390" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="772393">
                 <h3>The Old Schoolhouse</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -3605,18 +3419,6 @@
 </div>
 
                 <a href="/region-scotland/building-healthy-communities-781946" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="781950">
-                <h3>Whascals</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Wallacehall School Station Road</span><br>          <span>Thornhill</span><br>        <span itemprop="postalCode">DG3 5DS</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/whascals-781950" class="details-link">
                   More
                 </a>
               </div>
@@ -4196,18 +3998,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="803624">
-                <h3>The Ship Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Fleet Street</span><br>          <span>Castle Douglas</span><br>          <span>Gatehouse Of Fleet</span><br>        <span itemprop="postalCode">DG7 2JT</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-ship-inn-803624" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="803625">
                 <h3>Bank O&#39; Fleet Hotel</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -4253,18 +4043,6 @@
 </div>
 
                 <a href="/region-scotland/birchvale-nursery-803635" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="803637">
-                <h3>The Cocoa Bean Company Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Ashland</span><br>          <span>Kirkcudbright</span><br>          <span>Twynholm</span><br>        <span itemprop="postalCode">DG6 4NP</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-cocoa-bean-company-ltd-803637" class="details-link">
                   More
                 </a>
               </div>
@@ -4481,18 +4259,6 @@
 </div>
 
                 <a href="/region-scotland/blossom-buddies-childminding-849246" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="849247">
-                <h3>The Old School Cafe &amp; Bistro</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-old-school-cafe-bistro-849247" class="details-link">
                   More
                 </a>
               </div>
@@ -5120,18 +4886,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="876140">
-                <h3>The Bunker</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-bunker-876140" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="876141">
                 <h3>Rowallan</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -5141,18 +4895,6 @@
 </div>
 
                 <a href="/region-scotland/rowallan-876141" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="876154">
-                <h3>Tammy&#39;s Snack Box</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>45 High Street</span><br>          <span>Annan</span><br>        <span itemprop="postalCode">DG12 6AD</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/tammys-snack-box-876154" class="details-link">
                   More
                 </a>
               </div>
@@ -5400,7 +5142,7 @@
                 <h3>The Shed</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Corner House Hotel 1 Lady Street</span><br>          <span>Annan</span><br>        <span itemprop="postalCode">DG12 5DA</span>
+          <span>1 Lady Street</span><br>          <span>Annan</span><br>          <span>Dumfries And Galloway</span><br>        <span itemprop="postalCode">DG12 5DA</span>
   </address>
 </div>
 
@@ -5700,7 +5442,7 @@
                 <h3>The New Dragon</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>91 English Street</span><br>          <span>Dumfries</span><br>        <span itemprop="postalCode">DG1 2DA</span>
+          <span>91 English Street</span><br>          <span>Dumfries</span><br>          <span>Dumfries And Galloway</span><br>        <span itemprop="postalCode">DG1 2DA</span>
   </address>
 </div>
 
@@ -6008,23 +5750,11 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="876289">
-                <h3>Worlds End</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>27-29 Whitesands</span><br>          <span>Dumfries</span><br>        <span itemprop="postalCode">DG1 2RR</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/worlds-end-876289" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="876292">
-                <h3>The Coach and Horses</h3>
+                <h3>The Coach And Horses</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>66 Whitesands</span><br>          <span>Dumfries</span><br>        <span itemprop="postalCode">DG1 2RS</span>
+          <span>66 Whitesands</span><br>          <span>Dumfries</span><br>          <span>Dumfries And Galloway</span><br>        <span itemprop="postalCode">DG1 2RS</span>
   </address>
 </div>
 
@@ -6236,18 +5966,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="876342">
-                <h3>Woodlands House Hotel</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Irongray Road</span><br>          <span>Dumfries</span><br>        <span itemprop="postalCode">DG2 0HZ</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/woodlands-house-hotel-876342" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="876344">
                 <h3>Marchbank Bakers</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6317,18 +6035,6 @@
 </div>
 
                 <a href="/region-scotland/waverley-bar-876353" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="876354">
-                <h3>The Orchard Nature Nursery Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Eskdale House</span><br>          <span>The Crichton</span><br>          <span>Dumfries</span><br>          <span>Glencaple Road</span><br>        <span itemprop="postalCode">DG1 4ZZ</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-orchard-nature-nursery-ltd-876354" class="details-link">
                   More
                 </a>
               </div>
@@ -6545,18 +6251,6 @@
 </div>
 
                 <a href="/region-scotland/drysdales-catering-bars-876383" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="876384">
-                <h3>Tesco Stores</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>52 St Cuthbert's Street</span><br>          <span>Kirkcudbright</span><br>        <span itemprop="postalCode">DG6 4DZ</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/tesco-stores-876384" class="details-link">
                   More
                 </a>
               </div>
@@ -6872,18 +6566,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="876440">
-                <h3>The Grapes</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>4-6 Bridge Street</span><br>          <span>Stranraer</span><br>        <span itemprop="postalCode">DG9 7HY</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-grapes-876440" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="876441">
                 <h3>The Original Factory Shop</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -6905,18 +6587,6 @@
 </div>
 
                 <a href="/region-scotland/boots-uk-ltd-876442" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="876443">
-                <h3>The Royal Cafe</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>27</span><br>          <span>Castle Street</span><br>          <span>Stranraer</span><br>        <span itemprop="postalCode">DG9 7RR</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-royal-cafe-876443" class="details-link">
                   More
                 </a>
               </div>
@@ -6972,23 +6642,11 @@
                 <h3>Tesco Stores Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Charlotte Street</span><br>          <span>Stranraer</span><br>        <span itemprop="postalCode">DG9 7EF</span>
+      <div>No address information available</div>
   </address>
 </div>
 
                 <a href="/region-scotland/tesco-stores-ltd-876452" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="876453">
-                <h3>The Arkhouse Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>17-21 Church Street</span><br>          <span>Stranraer</span><br>        <span itemprop="postalCode">DG9 7JG</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-arkhouse-inn-876453" class="details-link">
                   More
                 </a>
               </div>
@@ -7028,18 +6686,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="876460">
-                <h3>The Golden Cross</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>58 George Street</span><br>          <span>Stranraer</span><br>        <span itemprop="postalCode">DG9 7RH</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-golden-cross-876460" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="876466">
                 <h3>The Ivy Leaf</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -7061,18 +6707,6 @@
 </div>
 
                 <a href="/region-scotland/the-meeting-place-876468" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="876469">
-                <h3>Wok Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>77A Hanover Street</span><br>          <span>Stranraer</span><br>        <span itemprop="postalCode">DG9 7RX</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/wok-inn-876469" class="details-link">
                   More
                 </a>
               </div>
@@ -7604,18 +7238,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="913301">
-                <h3>Thai Orchid &amp; Murray Arms</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/thai-orchid-murray-arms-913301" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="913302">
                 <h3>Aldi Stores Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -7757,18 +7379,6 @@
 </div>
 
                 <a href="/region-scotland/back-to-the-buck-931641" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="931642">
-                <h3>The Corner House Hotel</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>1 Lady Street</span><br>          <span>Annan</span><br>        <span itemprop="postalCode">DG12 5DA</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-corner-house-hotel-931642" class="details-link">
                   More
                 </a>
               </div>
@@ -8057,18 +7667,6 @@
 </div>
 
                 <a href="/region-scotland/the-cake-fairy-boutique-954979" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="954985">
-                <h3>West Maryfield B&amp;B</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>West Maryfield New Abbey</span><br>          <span>Dumfries</span><br>        <span itemprop="postalCode">DG2 8HH</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/west-maryfield-bb-954985" class="details-link">
                   More
                 </a>
               </div>
@@ -8376,7 +7974,7 @@
                 <h3>William Hill Organisation Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>80 High Street</span><br>          <span>Annan</span><br>        <span itemprop="postalCode">DG12 6DW</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -8888,18 +8486,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="955107">
-                <h3>The Fullarton (formerly Lochside Theatre)</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Lochside Road</span><br>          <span>Castle Douglas</span><br>        <span itemprop="postalCode">DG7 1EU</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-fullarton-formerly-lochside-theatre-955107" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="955108">
                 <h3>Thistle Products Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9164,18 +8750,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="990096">
-                <h3>Your Sweet Home</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>42 Brooke Street</span><br>          <span>Dumfries</span><br>        <span itemprop="postalCode">DG1 2JL</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/your-sweet-home-990096" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="990098">
                 <h3>Sharon&#39;s Bakes</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9197,18 +8771,6 @@
 </div>
 
                 <a href="/region-scotland/fabby-cakes-990100" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="990101">
-                <h3>The Old School B&amp;B</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Dundrennan</span><br>          <span>Kirkcudbright</span><br>        <span itemprop="postalCode">DG6 4QH</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-old-school-bb-990101" class="details-link">
                   More
                 </a>
               </div>
@@ -9320,18 +8882,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="990133">
-                <h3>T A Francis &amp; Son</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>39 High Street</span><br>          <span>Annan</span><br>        <span itemprop="postalCode">DG12 6AD</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/t-a-francis-son-990133" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="990135">
                 <h3>Farmers Den</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9377,18 +8927,6 @@
 </div>
 
                 <a href="/region-scotland/gretna-bowling-club-990139" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="990140">
-                <h3>Westerkirk Ex-Servicemans Public Hall</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/westerkirk-ex-servicemans-public-hall-990140" class="details-link">
                   More
                 </a>
               </div>
@@ -9716,18 +9254,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1011456">
-                <h3>Tanya Gardiner Childminder</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/tanya-gardiner-childminder-1011456" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1011460">
                 <h3>Adventurers Childminding</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -9984,7 +9510,7 @@
                 <h3>The Pizza Wagon</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Crockencally</span><br>          <span>Dumfries</span><br>          <span>Kirkbean</span><br>        <span itemprop="postalCode">DG2 8AA</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -10349,18 +9875,6 @@
 </div>
 
                 <a href="/region-scotland/slimming-world-1059546" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1059548">
-                <h3>The Boathouse Restaurant</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-boathouse-restaurant-1059548" class="details-link">
                   More
                 </a>
               </div>
@@ -10913,18 +10427,6 @@
 </div>
 
                 <a href="/region-scotland/p-n-amin-1099042" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1099043">
-                <h3>William Simpson &amp; Son</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>5 Sheuchan Street</span><br>          <span>Stranraer</span><br>        <span itemprop="postalCode">DG9 0DU</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/william-simpson-son-1099043" class="details-link">
                   More
                 </a>
               </div>
@@ -11876,18 +11378,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1180912">
-                <h3>Tennant House Stores</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>High Street</span><br>          <span>Lockerbie</span><br>          <span>Ecclefechan</span><br>        <span itemprop="postalCode">DG11 3DF</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/tennant-house-stores-1180912" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1180913">
                 <h3>The Bruce Hotel</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -11904,7 +11394,7 @@
                 <h3>The Bank Bar And Tapas</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>68</span><br>          <span>Whitesands</span><br>          <span>Dumfries</span><br>        <span itemprop="postalCode">DG1 2RS</span>
+          <span>68 Whitesands</span><br>          <span>Dumfries</span><br>          <span>Dumfries And Galloway</span><br>        <span itemprop="postalCode">DG1 2RS</span>
   </address>
 </div>
 
@@ -12068,18 +11558,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1180938">
-                <h3>Terally Equestrian Centre</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/terally-equestrian-centre-1180938" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1180940">
                 <h3>Millairies Farm (Dairy)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12164,18 +11642,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1180950">
-                <h3>The Paper Shop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>48-50 High Street</span><br>          <span>Langholm</span><br>        <span itemprop="postalCode">DG13 0JH</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-paper-shop-1180950" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1180951">
                 <h3>Langholm Old Town Bowling Club</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -12221,18 +11687,6 @@
 </div>
 
                 <a href="/region-scotland/buccleuch-estates-game-larder-1180955" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1180956">
-                <h3>The Old Hall</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-old-hall-1180956" class="details-link">
                   More
                 </a>
               </div>
@@ -13076,18 +12530,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1181058">
-                <h3>T A Centre</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Nunfield House 65 Edinburgh Road</span><br>          <span>Dumfries</span><br>        <span itemprop="postalCode">DG1 1JX</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/t-a-centre-1181058" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1181059">
                 <h3>Marchmount Bowling Club</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -13128,7 +12570,7 @@
                 <h3>Wickes</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 1 College Mains Retail Park</span><br>          <span>Dumfries</span><br>          <span>College Mains Road</span><br>        <span itemprop="postalCode">DG2 0NU</span>
+          <span>Unit 1 College Mains Road</span><br>          <span>Dumfries</span><br>          <span>Dumfries And Galloway</span><br>        <span itemprop="postalCode">DG2 0NU</span>
   </address>
 </div>
 
@@ -13145,18 +12587,6 @@
 </div>
 
                 <a href="/region-scotland/visit-scotland-1181064" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1181065">
-                <h3>T K Maxx</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Unit 5/6 Peel Centre</span><br>          <span>Dumfries</span><br>          <span>Lockerbie Road</span><br>        <span itemprop="postalCode">DG1 3QJ</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/t-k-maxx-1181065" class="details-link">
                   More
                 </a>
               </div>
@@ -14252,18 +13682,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1281349">
-                <h3>The Olive Tree Tearoom</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>318 High Street</span><br>          <span>Dalbeattie</span><br>        <span itemprop="postalCode">DG5 4DS</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-olive-tree-tearoom-1281349" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1281351">
                 <h3>Poppy&#39;s Home Baking</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -14376,7 +13794,7 @@
                 <h3>Tasty Tides Takeaway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>43 St Cuthbert's Street</span><br>          <span>Kirkcudbright</span><br>        <span itemprop="postalCode">DG6 4DX</span>
+          <span>43 - 45 St Cuthbert's Street</span><br>          <span>Kirkcudbright</span><br>          <span>Dumfries And Galloway</span><br>        <span itemprop="postalCode">DG6 4DX</span>
   </address>
 </div>
 
@@ -14453,18 +13871,6 @@
 </div>
 
                 <a href="/region-scotland/the-pizza-wagon-2-1281384" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1281387">
-                <h3>Yvonne Taylor- Childminder</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/yvonne-taylor-childminder-1281387" class="details-link">
                   More
                 </a>
               </div>
@@ -14717,30 +14123,6 @@
 </div>
 
                 <a href="/region-scotland/yummi-mummy-bakes-ltd-1429429" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1429431">
-                <h3>The Brig</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>37 Bridge Street</span><br>          <span>Lockerbie</span><br>        <span itemprop="postalCode">DG11 2HE</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-brig-1429431" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1429432">
-                <h3>The Munchie Box</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-munchie-box-1429432" class="details-link">
                   More
                 </a>
               </div>
@@ -15188,18 +14570,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1429502">
-                <h3>Wise Owls Nursery &amp; Out Of School Club</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/wise-owls-nursery-out-of-school-club-1429502" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1429503">
                 <h3>Kinmount House Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -15584,18 +14954,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1434469">
-                <h3>Woodlyn Guest House</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Woodlyn Castramont Road</span><br>          <span>Castle Douglas</span><br>          <span>Gatehouse Of Fleet</span><br>        <span itemprop="postalCode">DG7 2JE</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/woodlyn-guest-house-1434469" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1434471">
                 <h3>Moos &amp; Chews</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -15605,18 +14963,6 @@
 </div>
 
                 <a href="/region-scotland/moos-chews-1434471" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1434472">
-                <h3>The Lime Bothy</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>71</span><br>          <span>Victoria Street</span><br>          <span>Newton Stewart</span><br>        <span itemprop="postalCode">DG8 6NL</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-lime-bothy-1434472" class="details-link">
                   More
                 </a>
               </div>
@@ -15896,18 +15242,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1434503">
-                <h3>The Range</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-range-1434503" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1434505">
                 <h3>Cinebar Cafe</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -15984,7 +15318,7 @@
                 <h3>Yamas Deli</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>35 Bank Street</span><br>          <span>Dumfries</span><br>        <span itemprop="postalCode">DG1 2PA</span>
+          <span>35 Bank Street</span><br>          <span>Dumfries</span><br>          <span>Dumfries And Galloway</span><br>        <span itemprop="postalCode">DG1 2PA</span>
   </address>
 </div>
 
@@ -16121,18 +15455,6 @@
 </div>
 
                 <a href="/region-scotland/the-snooks-1434525" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1434528">
-                <h3>The Leaf and Oil Company Ltd</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Glebe House 39 Glebe Street</span><br>          <span>Dumfries</span><br>        <span itemprop="postalCode">DG1 2LQ</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-leaf-and-oil-company-ltd-1434528" class="details-link">
                   More
                 </a>
               </div>
@@ -16536,7 +15858,7 @@
                 <h3>Wickedly Wonderful Crafts</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>12 Sunderries Avenue</span><br>          <span>Dumfries</span><br>        <span itemprop="postalCode">DG2 0AZ</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -16577,18 +15899,6 @@
 </div>
 
                 <a href="/region-scotland/beauty-aesthetics-by-jo-williams-1434577" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1434578">
-                <h3>The Station</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Lockerbie</span><br>          <span>Kirkpatrick Fleming</span><br>        <span itemprop="postalCode">DG11 3AU</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-station-1434578" class="details-link">
                   More
                 </a>
               </div>
@@ -16640,18 +15950,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1434586">
-                <h3>The Beagle Country Pub</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-beagle-country-pub-1434586" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1434590">
                 <h3>Scroggiehill Farming</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -16668,7 +15966,7 @@
                 <h3>The Portpatrick Brewery Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>24 Main Street</span><br>          <span>Stranraer</span><br>          <span>Kirkcolm</span><br>        <span itemprop="postalCode">DG9 0NN</span>
+          <span>24 Main Street</span><br>          <span>Kirkcolm</span><br>          <span>Dumfries And Galloway</span><br>        <span itemprop="postalCode">DG9 0NN</span>
   </address>
 </div>
 
@@ -16829,18 +16127,6 @@
 </div>
 
                 <a href="/region-scotland/taylor-made-foods-1434611" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1434613">
-                <h3>The Dock Park Hut</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-dock-park-hut-1434613" class="details-link">
                   More
                 </a>
               </div>
@@ -17264,18 +16550,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1515671">
-                <h3>YM Cafe</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/ym-cafe-1515671" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1515672">
                 <h3>Rana Kebab House</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -17420,18 +16694,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1515687">
-                <h3>The Auld Kirk B&amp;B</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-auld-kirk-bb-1515687" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1515688">
                 <h3>Shambellie House Trust</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -17445,7 +16707,7 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1515691">
-                <h3>The Hog and Berry</h3>
+                <h3>The Hog And Berry</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
       <div>No address information available</div>
@@ -17621,18 +16883,6 @@
 </div>
 
                 <a href="/region-scotland/cock-inn-1515709" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1515712">
-                <h3>The George</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-george-1515712" class="details-link">
                   More
                 </a>
               </div>
@@ -17816,18 +17066,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1515731">
-                <h3>The Fed Up Community Cafe</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>12</span><br>          <span>Bridge Street</span><br>          <span>Stranraer</span><br>        <span itemprop="postalCode">DG9 7HY</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-fed-up-community-cafe-1515731" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1515733">
                 <h3>Stacy Hannah Chocolate</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -17856,7 +17094,7 @@
                 <h3>Whithorn Pharmacy</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>67-69 St John Street</span><br>          <span>Newton Stewart</span><br>          <span>Whithorn</span><br>        <span itemprop="postalCode">DG8 8PD</span>
+          <span>67 St John Street</span><br>          <span>Whithorn</span><br>          <span>Dumfries And Galloway</span><br>        <span itemprop="postalCode">DG8 8PD</span>
   </address>
 </div>
 
@@ -17900,18 +17138,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1560051">
-                <h3>Wigtown Food Festival</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/wigtown-food-festival-1560051" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1560052">
                 <h3>Bouldover Climbing Centre</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -17933,18 +17159,6 @@
 </div>
 
                 <a href="/region-scotland/co-co-co-1560053" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1560054">
-                <h3>Wrights Store</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>17-19 Main Street</span><br>          <span>Castle Douglas</span><br>          <span>St Johns Town Of Dalry</span><br>        <span itemprop="postalCode">DG7 3UP</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/wrights-store-1560054" class="details-link">
                   More
                 </a>
               </div>
@@ -18608,18 +17822,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1615940">
-                <h3>The Queensberry Bar &amp; Restaurant</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Queensberry Hotel 12-16 English Street</span><br>          <span>Dumfries</span><br>        <span itemprop="postalCode">DG1 2BT</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-queensberry-bar-restaurant-1615940" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1615942">
                 <h3>Subway</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -18725,18 +17927,6 @@
 </div>
 
                 <a href="/region-scotland/glentrool-hive-1615956" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1615957">
-                <h3>Ye Olde Friars Vaults</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>8 Friars Vennel</span><br>          <span>Dumfries</span><br>          <span>Town Centre</span><br>        <span itemprop="postalCode">DG1 2RL</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/ye-olde-friars-vaults-1615957" class="details-link">
                   More
                 </a>
               </div>
@@ -18860,18 +18050,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1615969">
-                <h3>The Maltings Coffee Shop</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-maltings-coffee-shop-1615969" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1615971">
                 <h3>Deer Manor Gourmet Mushrooms</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -18953,18 +18131,6 @@
 </div>
 
                 <a href="/region-scotland/knockenhair-hospitality-1615984" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1615985">
-                <h3>The Food Train</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>118 English Street</span><br>          <span>Dumfries</span><br>        <span itemprop="postalCode">DG1 2DE</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-food-train-1615985" class="details-link">
                   More
                 </a>
               </div>
@@ -19289,18 +18455,6 @@
 </div>
 
                 <a href="/region-scotland/queensberry-arms-hotel-1673126" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1673127">
-                <h3>Dunskey House</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/dunskey-house-1673127" class="details-link">
                   More
                 </a>
               </div>
@@ -19664,30 +18818,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1673166">
-                <h3>The Art Room Cafe</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Old St. Andrews Primary Brooke Street</span><br>          <span>Dumfries</span><br>        <span itemprop="postalCode">DG1 2JL</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-art-room-cafe-1673166" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1673167">
-                <h3>The Good Breakfast</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-good-breakfast-1673167" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1673168">
                 <h3>SnaQ Catering Limited</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -19836,7 +18966,7 @@
                 <h3>The Iron Brew</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>High Street</span><br>          <span>Gatehouse of Fleet</span><br>        <span itemprop="postalCode">DG7 2HR</span>
+          <span>29 High Street</span><br>          <span>Gatehouse Of Fleet</span><br>          <span>Dumfries And Galloway</span><br>        <span itemprop="postalCode">DG7 2HR</span>
   </address>
 </div>
 
@@ -19884,7 +19014,7 @@
                 <h3>Wigtown Festival Company</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>11 North Main Street</span><br>          <span>Wigtown</span><br>          <span>Dumfries And Galloway</span><br>        <span itemprop="postalCode">DG8 9HN</span>
   </address>
 </div>
 
@@ -21312,7 +20442,7 @@
                 <h3>T P Niven</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Lockerbie Creamery Lochmaben</span><br>          <span>Lockerbie</span><br>        <span itemprop="postalCode">DG11 1LW</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -21413,18 +20543,6 @@
 </div>
 
                 <a href="/region-scotland/belhaven-brewery-company-ltd-1694688" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1694689">
-                <h3>The McMillan Hall</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Dashwood Square</span><br>          <span>Newton Stewart</span><br>        <span itemprop="postalCode">DG8 6EQ</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-mcmillan-hall-1694689" class="details-link">
                   More
                 </a>
               </div>
@@ -21560,18 +20678,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="1694709">
-                <h3>Whauphill Hall</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/whauphill-hall-1694709" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="1694710">
                 <h3>J &amp; W Cowan Ltd (Dairy)</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -21636,7 +20742,7 @@
                 <h3>Tarff Valley Ltd</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Old Station Yard Main Street</span><br>          <span>Newton Stewart</span><br>          <span>Whauphill</span><br>        <span itemprop="postalCode">DG8 9QB</span>
+          <span>Old Station Yard</span><br>          <span>Main Street</span><br>          <span>Newton Stewart</span><br>          <span>Whauphill</span><br>        <span itemprop="postalCode">DG8 9QB</span>
   </address>
 </div>
 
@@ -21792,7 +20898,7 @@
                 <h3>The Pantry</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>2 Butts Street</span><br>          <span>Annan</span><br>        <span itemprop="postalCode">DG12 5AN</span>
+      <div>No address information available</div>
   </address>
 </div>
 
@@ -22013,18 +21119,6 @@
 </div>
 
                 <a href="/region-scotland/the-hill-hotel-1722024" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1722025">
-                <h3>The Camping and Caravanning Club</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-camping-and-caravanning-club-1722025" class="details-link">
                   More
                 </a>
               </div>
@@ -23436,7 +22530,7 @@
                 <h3>Morrisons Daily Dumfries</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <div>No address information available</div>
+          <span>Brooms Road</span><br>          <span>Dumfries</span><br>          <span>Dumfries And Galloway</span><br>        <span itemprop="postalCode">DG1 2SH</span>
   </address>
 </div>
 
@@ -23501,30 +22595,6 @@
 </div>
 
                 <a href="/region-scotland/martin-jolly-transport-1768793" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1768794">
-                <h3>The Crown Inn</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>60 High Street</span><br>          <span>Sanquhar</span><br>        <span itemprop="postalCode">DG4 6BL</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/the-crown-inn-1768794" class="details-link">
-                  More
-                </a>
-              </div>
-<hr>              <div class="establishment" data-establishment-id="1768795">
-                <h3>Yo! To Go!</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>Tesco Superstore Cuckoo Bridge Retail Park</span><br>          <span>Dumfries</span><br>          <span>Glasgow Road</span><br>        <span itemprop="postalCode">DG2 9BF</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/yo-to-go-1768795" class="details-link">
                   More
                 </a>
               </div>
@@ -23769,14 +22839,14 @@
                 </a>
               </div>
 <hr>              <div class="establishment" data-establishment-id="1768818">
-                <h3>MLR Crossways</h3>
+                <h3>Crossways Filling Station</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
   <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
       <div>No address information available</div>
   </address>
 </div>
 
-                <a href="/region-scotland/mlr-crossways-1768818" class="details-link">
+                <a href="/region-scotland/crossways-filling-station-1768818" class="details-link">
                   More
                 </a>
               </div>
@@ -29887,18 +28957,6 @@
                   More
                 </a>
               </div>
-<hr>              <div class="establishment" data-establishment-id="2012841">
-                <h3>Coach &amp; Horses</h3>
-                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
-  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span>66 Whitesands</span><br>          <span>Dumfries</span><br>          <span>Dumfries And Galloway</span><br>        <span itemprop="postalCode">DG1 2RS</span>
-  </address>
-</div>
-
-                <a href="/region-scotland/coach-horses-2012841" class="details-link">
-                  More
-                </a>
-              </div>
 <hr>              <div class="establishment" data-establishment-id="2012842">
                 <h3>Nith Hotel</h3>
                 <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
@@ -30040,6 +29098,30 @@
 </div>
 
                 <a href="/region-scotland/the-wee-thistle-cafe-2017829" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2019217">
+                <h3>Tarff Valley Ltd (Feeding Stuffs)</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-scotland/tarff-valley-ltd-feeding-stuffs-2019217" class="details-link">
+                  More
+                </a>
+              </div>
+<hr>              <div class="establishment" data-establishment-id="2019218">
+                <h3>The Galloway Fudge Company</h3>
+                <div class="component-address-bm1bdvu" data-suffix="bm1bdvu">
+  <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <div>No address information available</div>
+  </address>
+</div>
+
+                <a href="/region-scotland/the-galloway-fudge-company-2019218" class="details-link">
                   More
                 </a>
               </div>
